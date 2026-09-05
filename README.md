@@ -191,7 +191,7 @@ Telegram R&D is observer-only for most people. Discord `#development` / `#resear
 
 ## 8. Intel pack (2026-09-04) — public facts only
 
-Folded from `kaspa-high-value-intel-master.md` (community + founder index). **Local Telegram/Discord dump paths stay private.** Mentions ≠ endorsement. Recheck DAA/supply/PR state before quoting.
+Folded from the community intel pack. Full dated text: [`intel-pack.md`](intel-pack.md). **Local Telegram/Discord dump paths in that file are this machine, not public dumps.** Mentions ≠ endorsement. Recheck DAA/supply/PR state before quoting.
 
 ### L1 snapshot (api.kaspa.org, 4 Sep 2026)
 

@@ -1,0 +1,157 @@
+# Kaspa master file
+
+**Not Kaspa core. Not official KNS.** Public pin list by [@StppStp](https://x.com/StppStp) / [STP-KAS](https://github.com/STP-KAS). Freeze: **5 Sep 2026**.
+
+This is a map. Merged Active KIP = law. Open PR, personal wiki, Discord rumor ≠ a pin. Gramlane tab: http://127.0.0.1:8081/masterfile
+
+Repo: **kaspa-master-file** (the “kaspa mister fil”).
+
+---
+
+## 1. Official sites
+
+| What | URL | Note |
+| --- | --- | --- |
+| kaspa.org | https://kaspa.org | Real-time decentralization. Fair launch. |
+| LORE | https://kaspa.org/lore | History + shipped (Crescendo, Toccata). |
+| Wiki | https://wiki.kaspa.org | Community wiki. Wallets: https://wiki.kaspa.org/wallet |
+| Docs | https://github.com/kaspanet/docs | kaspanet docs repo |
+| Research forum | https://research.kas.pa | vProgs, sequencing, bridges |
+| Explorer | https://explorer.kaspa.org | L1 txs |
+| Node API | https://api.kaspa.org | Public REST. Not kasdomain. |
+| Tracker | https://kaspaexplained.com/kips | Human KIP/KCC map, not law |
+| Toccata status | https://kaspaexplained.com/toccata-status | Live claims table |
+
+---
+
+## 2. kaspanet GitHub (core org)
+
+Org: https://github.com/kaspanet — 26 public repos. **Use these first.**
+
+| Repo | URL | Status 5 Sep 2026 |
+| --- | --- | --- |
+| rusty-kaspa | https://github.com/kaspanet/rusty-kaspa | Reference node. Toccata **v2.0.0** (5 Jun 2026), **v2.0.1** (15 Jun). `master` 24 Aug. `dagknight` branch **4 Sep** — unmerged. |
+| kips | https://github.com/kaspanet/kips | Improvement proposals |
+| silverscript | https://github.com/kaspanet/silverscript | Covenant language. Pin **[v1-rc1](https://github.com/kaspanet/silverscript/releases/tag/v1-rc1)** (30 Aug, `c7d17a1`). No tagged `v1`. Not master. |
+| kccs | https://github.com/kaspanet/kccs | Conventions. All **Draft**. |
+| vprogs | https://github.com/kaspanet/vprogs | Provable computation. Research. No public testnet as product. |
+| kaspa-python-sdk | https://github.com/kaspanet/kaspa-python-sdk | Python bindings |
+| docs | https://github.com/kaspanet/docs | Documentation |
+| research | https://github.com/kaspanet/research | Papers (vProgs yellow paper) |
+| kaspad | https://github.com/kaspanet/kaspad | **Deprecated** Go node. Use rusty-kaspa. |
+| cpuminer | https://github.com/kaspanet/cpuminer | CPU miner |
+| dnsseeder | https://github.com/kaspanet/dnsseeder | DNS seeder |
+
+Rusty tags: https://github.com/kaspanet/rusty-kaspa/releases/tag/v2.0.0 · https://github.com/kaspanet/rusty-kaspa/releases/tag/v2.0.1
+
+---
+
+## 3. KIPs (law vs not)
+
+Source: https://github.com/kaspanet/kips — tracker https://kaspaexplained.com/kips
+
+**Active / implemented (use):** 1, 4, 5, 9, 10, 13, 14 (Crescendo), 15, **16, 17, 20, 21** (Toccata, Active 15 Jul 2026).
+
+Toccata PRs: [KIP-16 #31](https://github.com/kaspanet/kips/pull/31) · [17 #32](https://github.com/kaspanet/kips/pull/32) · [20 #35](https://github.com/kaspanet/kips/pull/35) · [21 #36](https://github.com/kaspanet/kips/pull/36)
+
+**Proposed / draft / not product:** KIP-2 DAGKnight (Proposed since 2022; rusty `dagknight` open PRs #1120 #1119 #1104 as of 4 Sep 2026). KIP-6 Draft. KIP-3 Rejected.
+
+KIP-21 lanes are 20-byte `subnetwork_id`s, ≤50 non-coinbase lanes/block, 1e9 gas/lane. **Not** Gramlane book stamps MSG1/SEQ1.
+
+100 sompi/gram is **min-relay policy**, not a KIP number.
+
+---
+
+## 4. Interesting GitHubs (not kaspanet)
+
+| Repo | URL | Honest |
+| --- | --- | --- |
+| argent-lang/argent | https://github.com/argent-lang/argent | Multi-actor covenants. Not production SC. |
+| KaspaKii/Portrait | https://github.com/KaspaKii/Portrait | Public 1 Sep 2026. Testnet-only, unaudited. |
+| STP-KAS/gramlane | https://github.com/STP-KAS/gramlane | This desk. Grams, kasdomain. |
+| STP-KAS/project-delusional | https://github.com/STP-KAS/project-delusional | Stack index |
+| STP-KAS/kaspa-till | https://github.com/STP-KAS/kaspa-till | Reserved kUSD till. Not a peg. |
+| STP-KAS/kns | https://github.com/STP-KAS/kns | Indexer names. Not kasdomain. |
+| vsmirn0v/KaChat | https://github.com/vsmirn0v/KaChat | Other product. Gramlane does not clone E2E. |
+| KASRANKS/KASSWORD | https://github.com/KASRANKS/KASSWORD | Other vault. Pointer only. |
+| aglov413/kaspa-pqv | https://github.com/aglov413/kaspa-pqv | PQ P2SH, TN10. |
+| thesheepcat/K | https://github.com/thesheepcat/K | Decentralized microblog. Not this desk. |
+| coderofstuff/rusty-kaspa | https://github.com/coderofstuff/rusty-kaspa | Unofficial DAGKnight work. **Not a pin.** |
+| coderofstuff/dk-wiki | https://github.com/coderofstuff/dk-wiki | Unofficial wiki. **Not a pin.** |
+| parker2017code/kaspa-explained | https://github.com/parker2017code/kaspa-explained | Tracker source for kaspaexplained.com |
+
+L2 (out of Gramlane path): Igra, Kasplex — live elsewhere. This stack stays L1.
+
+---
+
+## 5. Core + builder X handles
+
+Yonatan’s own “rough core” list (30 Apr 2025): michaelsutton, hashdag, coderofstuff_, someone235, freshair08, biryukovmaxim, reshmem, aspect, tiram88, elichai, tmrlvi, D-Stacks. Inspect https://github.com/kaspanet and https://research.kas.pa — DYOR. **“Core” is not a legal title.**
+
+| Person | X | Role (public) |
+| --- | --- | --- |
+| Yonatan Sompolinsky | [@hashdag](https://x.com/hashdag) | Founder / research |
+| Michael Sutton | [@michaelsuttonil](https://x.com/michaelsuttonil) | Lead protocol |
+| Ori Newman | [@OriNewman](https://x.com/OriNewman) | Core (GitHub someone235) |
+| coderofstuff | [@coderofstuff_](https://x.com/coderofstuff_) | Core contributor |
+| FreshAir08 | [@FreshAir08](https://x.com/FreshAir08) | Research / fees |
+| Hans Moog | [@hus_qy](https://x.com/hus_qy) | Core / KEF-funded |
+| Romain Billot | [@IzioDev](https://x.com/IzioDev) | Core / KEF-funded |
+| Maxim Biryukov | [@biryukovmaxim](https://x.com/biryukovmaxim) | Core (KIP-21) |
+| Shai Wyborski | [@DesheShai](https://x.com/DesheShai) | GHOSTDAG co-author; later left core (his 2025 farewell). Not a current pin as “core”. |
+| Aviv Zohar | [@Avivz78](https://x.com/Avivz78) | Co-author GHOST / research |
+| Kaspa (community X) | [@kaspaunchained](https://x.com/kaspaunchained) | Non-representative community account |
+| This project | [@StppStp](https://x.com/StppStp) | Gramlane / project delusional. **Never DMs you.** |
+
+---
+
+## 6. Discord + Telegram (channels and APIs)
+
+### Discord (Kaspa)
+
+| | |
+| --- | --- |
+| Invite | https://discord.gg/kaspa |
+| Guild id | `599153230659846165` |
+| Public widget API | `GET https://discord.com/api/guilds/599153230659846165/widget.json` (only if widget is on) |
+| Bot API docs | https://discord.com/developers/docs/intro |
+| Gateway | https://discord.com/developers/docs/topics/gateway |
+
+Dev fund votes live in Discord `#funding-pools` / `#votes` (community process, not consensus). This file does **not** run a Discord bot.
+
+### Telegram (Kaspa groups — Telegram Inc. product)
+
+| Group | URL | Note |
+| --- | --- | --- |
+| Main | https://t.me/kaspa | General |
+| English | https://t.me/kaspaenglish | Community English |
+| Core R&D (public, mostly observe) | https://t.me/kasparnd | Core write-restricted |
+
+Telegram Bot API (platform, not Kaspa): https://core.telegram.org/bots/api · https://core.telegram.org/bots
+
+**Gramlane “Telegram” is a joke name** for AES-GCM notes paid in grams. It is **not** Telegram Messenger, **not** this Bot API, **not** KaChat E2E.
+
+---
+
+## 7. News freeze (5 Sep 2026)
+
+- Toccata **live** on mainnet (DAA `474_165_565`, ~30 Jun 2026). KIPs 16/17/20/21 Active 15 Jul 2026.
+- rusty-kaspa **v2.0.1** is the Toccata maintenance tag.
+- silverscript **v1-rc1** only release. `#234` foreign `readInputState` **closed unmerged**. `#243` consume() budget still open.
+- KCC-0020 **Draft**. Issue [#14](https://github.com/kaspanet/kccs/issues/14) supply-split still open. Not a gram token.
+- Portrait (Kii) public **1 Sep 2026**, testnet-only.
+- DAGKnight: KIP-2 still Proposed; `dagknight` branch moving (PRs 4 Sep) — **not shipped**.
+- kaspa.org rebuilt around “real-time decentralization” (2026). 10 BPS live. 100 BPS is a target, not a spec.
+
+---
+
+## 8. Gramlane (this stack)
+
+- Live local: http://127.0.0.1:8081
+- Pins: http://127.0.0.1:8081/sources · http://127.0.0.1:8081/kip-21
+- This file in the dApp: http://127.0.0.1:8081/masterfile
+- Unit: 1 gram = 1 KIP-21 mass unit. Fill jar = KAS to desk. No convert-back. Shops take **KAS**.
+
+Machine copy: [`master.json`](master.json)
+
+JSON on the dApp: http://127.0.0.1:8081/api/masterfile

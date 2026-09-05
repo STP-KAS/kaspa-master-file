@@ -108,6 +108,28 @@ Yonatan’s own “rough core” list (30 Apr 2025): michaelsutton, hashdag, cod
 | Kaspa global | [@KASPAglobal](https://x.com/KASPAglobal) | 3 Sep 2026: Toccata live, not “coming soon”. |
 | Kaspa Commons | [@Kaspa_Commons](https://x.com/Kaspa_Commons) | Relays Discord (e.g. Ori Newman TN10 notes). Not core. |
 | This project | [@StppStp](https://x.com/StppStp) | Gramlane / project delusional. **Never DMs you.** |
+| Luke Dunshea | [@elldeeone](https://x.com/elldeeone) | SilverScript v1-rc1 credit. GitHub [elldeeone](https://github.com/elldeeone). |
+| Sivan Helfer | [@manyfest_](https://x.com/manyfest_) | SilverScript v1-rc1. GitHub [Manyfestation](https://github.com/Manyfestation). |
+
+---
+
+## 5b. SilverScript v1-rc1 people (ties)
+
+Source: [releases/tag/v1-rc1](https://github.com/kaspanet/silverscript/releases/tag/v1-rc1) (tagged by **someone235** = Ori Newman, 30 Aug 2026) + GitHub contributor counts on `kaspanet/silverscript`. Copilot bot omitted. Heart on the release from `mw-pearson` is **not** a credit.
+
+| GitHub | commits* | X | Who | Ties |
+| --- | --- | --- | --- | --- |
+| [someone235](https://github.com/someone235) | 134 | [@OriNewman](https://x.com/OriNewman) | Ori Newman | **Lead.** Tagged v1-rc1. KIP-17. rusty-kaspa. Medium someone235. |
+| [michaelsutton](https://github.com/michaelsutton) | 20 | [@michaelsuttonil](https://x.com/michaelsuttonil) | Michael Sutton | Review. KIP-21. **Argent** (argent-lang). KCC-0020 co-author. rusty-kaspa. |
+| [IzioDev](https://github.com/IzioDev) | 10 | [@IzioDev](https://x.com/IzioDev) | Romain Billot | Review. KEF-funded (from ~Dec 2025). KCC-0020 co-author. KIP-25 (draft, with Ori+Sutton). izio.fr. |
+| [Manyfestation](https://github.com/Manyfestation) | 9 | [@manyfest_](https://x.com/manyfest_) | Sivan Helfer | Compiler, DAP debugger, PR #130 state decode. **KCC-0020** co-author. Kas-Smiths. Argent RPS demo. |
+| [elldeeone](https://github.com/elldeeone) | 2 | [@elldeeone](https://x.com/elldeeone) | Luke Dunshea | Groth16 builtin [PR #138](https://github.com/kaspanet/silverscript/pull/138). Node connectivity. Kaspa x402. dunshea.au. |
+
+\*Contributor API on the live repo (5 Sep 2026), not a legal ranking.
+
+**Graph (honest):** Ori writes the language → Manyfestation tools + KCC conventions with Izio + Sutton → Sutton also owns Argent (emits SilverScript) → elldeeone ZK builtin. Language grammar is **CashScript-inspired** (Rosco Kalis, MIT) — CREDITS.md, not a Kaspa person.
+
+KCC-0020 authors overlap this table: Manyfestation, Sutton, Billot. That is why Gramlane treats KCC-20 as a **draft to refuse**, not as GRAM.
 
 ---
 

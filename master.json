@@ -60,7 +60,9 @@
         {"name": "@kaspaunchained", "url": "https://x.com/kaspaunchained", "chip": "community", "note": "Non-representative community X."},
         {"name": "@KASPAglobal", "url": "https://x.com/KASPAglobal", "chip": "community", "note": "3 Sep 2026: Toccata live, not coming soon."},
         {"name": "@Kaspa_Commons", "url": "https://x.com/Kaspa_Commons", "chip": "community", "note": "Relays Discord. Not core."},
-        {"name": "@StppStp", "url": "https://x.com/StppStp", "chip": "this", "note": "This project. Never DMs you."}
+        {"name": "@StppStp", "url": "https://x.com/StppStp", "chip": "this", "note": "This project. Never DMs you."},
+        {"name": "@elldeeone", "url": "https://x.com/elldeeone", "chip": "ss", "note": "Luke Dunshea. GitHub elldeeone. v1-rc1 credit. Groth16 PR 138."},
+        {"name": "@manyfest_", "url": "https://x.com/manyfest_", "chip": "ss", "note": "Sivan Helfer. GitHub Manyfestation. Compiler + KCC-0020."}
       ]
     },
     {
@@ -87,6 +89,19 @@
         {"name": "gramlane", "url": "https://github.com/STP-KAS/gramlane", "chip": "this", "note": "L1 grams dApp."},
         {"name": "KaChat", "url": "https://github.com/vsmirn0v/KaChat", "chip": "other", "note": "Not cloned."},
         {"name": "coderofstuff dk-wiki", "url": "https://github.com/coderofstuff/dk-wiki", "chip": "wrong", "note": "Unofficial. Not a pin."}
+      ]
+    },
+    {
+      "id": "silverscript-people",
+      "title": "SilverScript v1-rc1 contributors",
+      "rows": [
+        {"name": "someone235 / Ori Newman", "url": "https://github.com/someone235", "chip": "lead", "note": "134 commits. Tagged v1-rc1. X @OriNewman. KIP-17. rusty-kaspa."},
+        {"name": "michaelsutton", "url": "https://github.com/michaelsutton", "chip": "review", "note": "20 commits. X @michaelsuttonil. Argent + KCC-0020 + KIP-21."},
+        {"name": "IzioDev / Romain Billot", "url": "https://github.com/IzioDev", "chip": "review", "note": "10 commits. X @IzioDev. KEF-funded. KCC-0020 + KIP-25 draft. izio.fr."},
+        {"name": "Manyfestation / Sivan Helfer", "url": "https://github.com/Manyfestation", "chip": "compiler", "note": "9 commits. X @manyfest_. Debugger, KCC-0020, Kas-Smiths."},
+        {"name": "elldeeone / Luke Dunshea", "url": "https://github.com/elldeeone", "chip": "zk", "note": "2 commits. X @elldeeone. g16.verify PR 138. dunshea.au. x402."},
+        {"name": "v1-rc1 release", "url": "https://github.com/kaspanet/silverscript/releases/tag/v1-rc1", "chip": "pin", "note": "The credit list. Copilot bot omitted. mw-pearson only reacted."},
+        {"name": "CashScript (inspiration)", "url": "https://cashscript.org/", "chip": "credit", "note": "Rosco Kalis MIT. Grammar ancestor. Not Kaspa core."}
       ]
     },
     {

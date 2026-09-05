@@ -16,7 +16,10 @@ Repo: **kaspa-master-file** (the “kaspa mister fil”).
 | LORE | https://kaspa.org/lore | History + shipped (Crescendo, Toccata). |
 | Wiki | https://wiki.kaspa.org | Community wiki. Wallets: https://wiki.kaspa.org/wallet |
 | Docs | https://github.com/kaspanet/docs | kaspanet docs repo |
+| Toccata guide | https://docs.kaspa.org/toccata | Official programmability guide. Live on mainnet. Tooling still young. |
 | Research forum | https://research.kas.pa | vProgs, sequencing, bridges |
+| kaspa.news | https://kaspa.news | Public recaps of Core R&D Telegram (not the channel itself). |
+| Kaspalytics | https://www.kaspalytics.com | Learn: Toccata, SilverScript. Not core. |
 | Explorer | https://explorer.kaspa.org | L1 txs |
 | Node API | https://api.kaspa.org | Public REST. Not kasdomain. |
 | Tracker | https://kaspaexplained.com/kips | Human KIP/KCC map, not law |
@@ -74,7 +77,8 @@ KIP-21 lanes are 20-byte `subnetwork_id`s, ≤50 non-coinbase lanes/block, 1e9 g
 | STP-KAS/kns | https://github.com/STP-KAS/kns | Indexer names. Not kasdomain. |
 | vsmirn0v/KaChat | https://github.com/vsmirn0v/KaChat | Other product. Gramlane does not clone E2E. |
 | KASRANKS/KASSWORD | https://github.com/KASRANKS/KASSWORD | Other vault. Pointer only. |
-| aglov413/kaspa-pqv | https://github.com/aglov413/kaspa-pqv | PQ P2SH, TN10. |
+| aglov413/kaspa-pqv | https://github.com/aglov413/kaspa-pqv | Posted to Core R&D **27 Aug 2026**. Hash-based PQ vault, **TN10 only**, unaudited. |
+| trillskillz/OpenSilver | https://github.com/trillskillz/OpenSilver | Community SilverScript pattern lib (22 patterns). **Not kaspanet. Not externally audited.** Pins its own silverc, not always v1-rc1. |
 | thesheepcat/K | https://github.com/thesheepcat/K | Decentralized microblog. Not this desk. |
 | coderofstuff/rusty-kaspa | https://github.com/coderofstuff/rusty-kaspa | Unofficial DAGKnight work. **Not a pin.** |
 | coderofstuff/dk-wiki | https://github.com/coderofstuff/dk-wiki | Unofficial wiki. **Not a pin.** |
@@ -101,6 +105,8 @@ Yonatan’s own “rough core” list (30 Apr 2025): michaelsutton, hashdag, cod
 | Shai Wyborski | [@DesheShai](https://x.com/DesheShai) | GHOSTDAG co-author; later left core (his 2025 farewell). Not a current pin as “core”. |
 | Aviv Zohar | [@Avivz78](https://x.com/Avivz78) | Co-author GHOST / research |
 | Kaspa (community X) | [@kaspaunchained](https://x.com/kaspaunchained) | Non-representative community account |
+| Kaspa global | [@KASPAglobal](https://x.com/KASPAglobal) | 3 Sep 2026: Toccata live, not “coming soon”. |
+| Kaspa Commons | [@Kaspa_Commons](https://x.com/Kaspa_Commons) | Relays Discord (e.g. Ori Newman TN10 notes). Not core. |
 | This project | [@StppStp](https://x.com/StppStp) | Gramlane / project delusional. **Never DMs you.** |
 
 ---
@@ -113,7 +119,7 @@ Yonatan’s own “rough core” list (30 Apr 2025): michaelsutton, hashdag, cod
 | --- | --- |
 | Invite | https://discord.gg/kaspa |
 | Guild id | `599153230659846165` |
-| Public widget API | `GET https://discord.com/api/guilds/599153230659846165/widget.json` (only if widget is on) |
+| Public widget API | `GET https://discord.com/api/guilds/599153230659846165/widget.json` | **Disabled** (HTTP 50004) as of 5 Sep 2026. No public member JSON. |
 | Bot API docs | https://discord.com/developers/docs/intro |
 | Gateway | https://discord.com/developers/docs/topics/gateway |
 
@@ -125,7 +131,7 @@ Dev fund votes live in Discord `#funding-pools` / `#votes` (community process, n
 | --- | --- | --- |
 | Main | https://t.me/kaspa | General |
 | English | https://t.me/kaspaenglish | Community English |
-| Core R&D (public, mostly observe) | https://t.me/kasparnd | Core write-restricted |
+| Core R&D (public, mostly observe) | https://t.me/kasparnd | Core write-restricted. **~2,958 members** (5 Sep). `t.me/s/kasparnd` does **not** show a public message archive — join in Telegram. Recaps: [kaspa.news](https://kaspa.news). |
 
 Telegram Bot API (platform, not Kaspa): https://core.telegram.org/bots/api · https://core.telegram.org/bots
 
@@ -142,6 +148,21 @@ Telegram Bot API (platform, not Kaspa): https://core.telegram.org/bots/api · ht
 - Portrait (Kii) public **1 Sep 2026**, testnet-only.
 - DAGKnight: KIP-2 still Proposed; `dagknight` branch moving (PRs 4 Sep) — **not shipped**.
 - kaspa.org rebuilt around “real-time decentralization” (2026). 10 BPS live. 100 BPS is a target, not a spec.
+- Official Toccata guide: https://docs.kaspa.org/toccata — consensus live; SilverScript/Argent/vProgs tooling still early.
+- **v1-rc1 + 7 days** would be ~6 Sep. As of **5 Sep 2026 there is still no tagged `v1`**.
+
+### From Core R&D Telegram (via public recaps — not a scrape of private Discord)
+
+Telegram R&D is observer-only for most people. Discord `#development` / `#research-general` is the other core room. Widget API is off, so this file does not invent Discord counts.
+
+| When | What | Source |
+| --- | --- | --- |
+| 27 Aug 2026 | PQ vault spend on **TN10** (ordinary script, no ZK opcode). Repo `kaspa-pqv`. | Posted in Core R&D; [kaspa.news](https://kaspa.news/articles/post-quantum-vault-spends-on-kaspa-testnet-using-existing-script) |
+| 22–23 Aug | Argent synced to current SilverScript (Sutton merge). | kaspa.news |
+| 23 Aug | KaspaKaha testnet AMM against **draft** KCC-0020. Experiment, not a standard. | kaspa.news |
+| 3 Sep | `@KASPAglobal`: Toccata is live (DAA 474,165,565). Not coming soon. | X |
+| 3–4 Sep | Framing / foreign-state reads: Sutton says `#234` closed because history assumptions; Scopio/supertypo tests still show slide on unmodified silverc. **Gramlane still never `readInputState`s a foreign UTXO.** | kaspa.news 4 Sep |
+| 4 Sep | rusty-kaspa `dagknight` PRs still **open/draft**. | GitHub |
 
 ---
 

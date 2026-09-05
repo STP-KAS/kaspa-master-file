@@ -12,7 +12,10 @@
         {"name": "LORE", "url": "https://kaspa.org/lore", "chip": "official", "note": "Shipped: Crescendo, Toccata."},
         {"name": "Wiki", "url": "https://wiki.kaspa.org", "chip": "wiki", "note": "Wallets: wiki.kaspa.org/wallet"},
         {"name": "kaspanet/docs", "url": "https://github.com/kaspanet/docs", "chip": "docs", "note": "Core docs repo."},
+        {"name": "docs.kaspa.org/toccata", "url": "https://docs.kaspa.org/toccata", "chip": "official", "note": "Toccata guide. Consensus live; tooling young."},
         {"name": "research.kas.pa", "url": "https://research.kas.pa", "chip": "forum", "note": "vProgs, sequencing, bridges."},
+        {"name": "kaspa.news", "url": "https://kaspa.news", "chip": "recap", "note": "Public recaps of Core R&D Telegram."},
+        {"name": "Kaspalytics", "url": "https://www.kaspalytics.com", "chip": "learn", "note": "Toccata / SilverScript explainers. Not core."},
         {"name": "Explorer", "url": "https://explorer.kaspa.org", "chip": "live", "note": "L1 txs."},
         {"name": "api.kaspa.org", "url": "https://api.kaspa.org", "chip": "live", "note": "Public node REST. Not kasdomain."},
         {"name": "kaspaexplained.com/kips", "url": "https://kaspaexplained.com/kips", "chip": "tracker", "note": "Human map. Not law."},
@@ -55,6 +58,8 @@
         {"name": "@IzioDev", "url": "https://x.com/IzioDev", "chip": "core", "note": "Romain Billot."},
         {"name": "@biryukovmaxim", "url": "https://x.com/biryukovmaxim", "chip": "core", "note": "KIP-21."},
         {"name": "@kaspaunchained", "url": "https://x.com/kaspaunchained", "chip": "community", "note": "Non-representative community X."},
+        {"name": "@KASPAglobal", "url": "https://x.com/KASPAglobal", "chip": "community", "note": "3 Sep 2026: Toccata live, not coming soon."},
+        {"name": "@Kaspa_Commons", "url": "https://x.com/Kaspa_Commons", "chip": "community", "note": "Relays Discord. Not core."},
         {"name": "@StppStp", "url": "https://x.com/StppStp", "chip": "this", "note": "This project. Never DMs you."}
       ]
     },
@@ -63,11 +68,11 @@
       "title": "Discord + Telegram",
       "rows": [
         {"name": "Discord invite", "url": "https://discord.gg/kaspa", "chip": "discord", "note": "Guild 599153230659846165."},
-        {"name": "Discord widget API", "url": "https://discord.com/api/guilds/599153230659846165/widget.json", "chip": "api", "note": "Public widget JSON if enabled."},
+        {"name": "Discord widget API", "url": "https://discord.com/api/guilds/599153230659846165/widget.json", "chip": "off", "note": "Disabled (50004) 5 Sep 2026. No public member JSON."},
         {"name": "Discord bot docs", "url": "https://discord.com/developers/docs/intro", "chip": "api", "note": "Platform API. This desk is not a Discord bot."},
         {"name": "t.me/kaspa", "url": "https://t.me/kaspa", "chip": "telegram", "note": "Main group. Telegram Inc."},
         {"name": "t.me/kaspaenglish", "url": "https://t.me/kaspaenglish", "chip": "telegram", "note": "English community."},
-        {"name": "t.me/kasparnd", "url": "https://t.me/kasparnd", "chip": "rnd", "note": "Core R&D, mostly observe."},
+        {"name": "t.me/kasparnd", "url": "https://t.me/kasparnd", "chip": "rnd", "note": "Core R&D. ~2958 members. No public web archive. Recaps: kaspa.news."},
         {"name": "Telegram Bot API", "url": "https://core.telegram.org/bots/api", "chip": "api", "note": "Telegram Inc. Not Gramlane Telegram notes."}
       ]
     },
@@ -76,10 +81,24 @@
       "title": "Other GitHubs",
       "rows": [
         {"name": "Portrait", "url": "https://github.com/KaspaKii/Portrait", "chip": "testnet", "note": "Public 1 Sep 2026. Unaudited."},
+        {"name": "OpenSilver", "url": "https://github.com/trillskillz/OpenSilver", "chip": "community", "note": "22 SilverScript patterns. Not kaspanet. Not audited."},
+        {"name": "kaspa-pqv", "url": "https://github.com/aglov413/kaspa-pqv", "chip": "TN10", "note": "Posted Core R&D 27 Aug. Hash-based PQ vault. Unaudited."},
         {"name": "Argent", "url": "https://github.com/argent-lang/argent", "chip": "external", "note": "Not this desk."},
         {"name": "gramlane", "url": "https://github.com/STP-KAS/gramlane", "chip": "this", "note": "L1 grams dApp."},
         {"name": "KaChat", "url": "https://github.com/vsmirn0v/KaChat", "chip": "other", "note": "Not cloned."},
         {"name": "coderofstuff dk-wiki", "url": "https://github.com/coderofstuff/dk-wiki", "chip": "wrong", "note": "Unofficial. Not a pin."}
+      ]
+    },
+    {
+      "id": "rnd-log",
+      "title": "R&D / Discord log (public recaps)",
+      "rows": [
+        {"name": "27 Aug PQ vault TN10", "url": "https://kaspa.news/articles/post-quantum-vault-spends-on-kaspa-testnet-using-existing-script", "chip": "rnd", "note": "Aglovale in Core R&D Telegram. Ordinary script, no ZK opcode."},
+        {"name": "22 Aug Argent sync", "url": "https://kaspa.news/articles", "chip": "rnd", "note": "Sutton merged Argent onto current SilverScript."},
+        {"name": "23 Aug KCC-0020 AMM test", "url": "https://kaspa.news/articles", "chip": "draft", "note": "KaspaKaha testnet AMM. Not the standard."},
+        {"name": "3 Sep Toccata live post", "url": "https://x.com/KASPAglobal", "chip": "live", "note": "DAA 474165565. Not coming soon."},
+        {"name": "4 Sep framing article", "url": "https://kaspa.news/articles/why-reading-a-number-is-not-the-same-as-trusting-it", "chip": "234", "note": "Foreign reads still unsafe. Gramlane only validateOutputState."},
+        {"name": "4 Sep dagknight PRs", "url": "https://github.com/kaspanet/rusty-kaspa/pulls", "chip": "research", "note": "Open/draft. KIP-2 not shipped."}
       ]
     }
   ]

@@ -46,7 +46,7 @@ Live L1 snapshot (api.kaspa.org, this date) plus kaspaexplained.com / rusty-kasp
 | **R-GITHUB** | `kaspa-github-repos-*.csv/json/md` (this folder) | All GitHub repos mentioned in TG+Discord | Code map / dependency radar |
 | **R-DOCS** | docs.kaspa.org, **kaspaexplained.com** | Canonical + builder framing | Spec truth + status labels |
 | **R-DOCS-REFRESH** | `kaspaexplained-com-REFRESH-2026-08.txt` | Aug 2026 site refresh (adoption, fact-check, demos) | Prefer for current numbers |
-| **R-DOCS-REPO** | https://github.com/parker2017code/kaspa-explained · local `Documents\kaspa-explained` · site kaspaexplained.com | Site source + CLAIMS.yml + demos + publish gates | Machine-checkable status referee |
+| **R-DOCS-REPO** | https://github.com/parker2017code/kaspa-explained · site kaspaexplained.com | Site source + CLAIMS.yml + demos + publish gates | Machine-checkable status referee |
 | **R-KASSMITHS** | `C:\Users\Remco\Documents\aaapikassmith\` | Kas-Smiths forum API dump | KCC20 / standards workshop |
 | **R-AGENC** | `C:\Users\Remco\Documents\aatelegram agenC sol\` | AgenC Solana Telegram export + cleans | Agent-economy case study |
 | **R-ARGENT** | https://github.com/orgs/argent-lang/repositories | Argent org (compiler, playground, template) | Multi-covenant app language tooling |
@@ -58,7 +58,7 @@ Live L1 snapshot (api.kaspa.org, this date) plus kaspaexplained.com / rusty-kasp
 | **R-PORTRAIT** | https://github.com/KaspaKii/Portrait · https://portrait.kaspa-kii.org | Portrait language + covenant pattern library (Kii) | TN-only. User paste `Portraitt.co/{fmry9yu4sB,tb0y7uozNe}` 404s; canonical repo is `Portrait`. |
 | **R-PQV** | https://github.com/aglov413/kaspa-pqv | Post-quantum hash-based P2SH vault | SLH-DSA (stateless) + LMS (stateful). TN10. Toccata opcodes only. |
 | **R-KASSWORD** | https://github.com/KASRANKS/KASSWORD | PQ password vault + Kaspa Locker | External PWA. Pointer only. |
-| **R-X-PARKER** | https://x.com/parker2017 | Parker Schmidt (kaspaexplained.com) | Credible explainer X + site lane |
+| **R-DOCS-GH** | https://github.com/parker2017code/kaspa-explained | kaspaexplained.com site source | GitHub only |
 | **R-X-IZIO** | https://x.com/IzioDev · https://progdoc.izio.fr | IzioDev / programmability tree | Builder path + tooling education |
 | **R-X** | `x-handles-credible-sources-insert-index.txt` | Tiered Kaspa X handles | Pointer sources (not primary proof) |
 | **R-NARRATIVE-2026** | `C:\Users\Remco\Documents\kaspa-attenborough-2026\` | Attenborough Kaspa film (Sep 2026 remake of Apr 2025 CryptoQTK piece) | Public-facing ethos + fact-checked VO |
@@ -82,7 +82,7 @@ Live L1 snapshot (api.kaspa.org, this date) plus kaspaexplained.com / rusty-kasp
 | `atranscriptskaspa-insert-index.txt` | Transcript folder inventory (Sutton vProgs + Yonatan S16E41) |
 | `argent-lang-github-insert-index.txt` | argent-lang org: argent / playground / template |
 | `argent-template-episode-01-insert-index.txt` | episode-01 Event/Ticket ticketing demo |
-| `x-handles-credible-sources-insert-index.txt` | X handles: @parker2017 + tiered core builders |
+| `x-handles-credible-sources-insert-index.txt` | X handles: tiered core builders |
 | `kas-smiths-api-insert-index.txt` | Kas-Smiths dump inventory + KCC20/x402 signals |
 | `kaspa-opportunity-reevaluation-agenc-and-beyond.txt` | AgenC + open opportunity re-eval |
 | `agenc-on-kaspa-idea-brief.txt` | AgenC→Kaspa architectural brief |

@@ -108,7 +108,6 @@ Yonatan’s own “rough core” list (30 Apr 2025): michaelsutton, hashdag, cod
 | Kaspa global | [@KASPAglobal](https://x.com/KASPAglobal) | 3 Sep 2026: Toccata live, not “coming soon”. |
 | Kaspa Commons | [@Kaspa_Commons](https://x.com/Kaspa_Commons) | Relays Discord (e.g. Ori Newman TN10 notes). Not core. |
 | This project | [@StppStp](https://x.com/StppStp) | Gramlane / project delusional. **Never DMs you.** |
-| Parker Schmidt | [@parker2017](https://x.com/parker2017) | kaspaexplained.com |
 | Luke Dunshea | [@elldeeone](https://x.com/elldeeone) | SilverScript v1-rc1 credit. GitHub [elldeeone](https://github.com/elldeeone). |
 | Sivan Helfer | [@manyfest_](https://x.com/manyfest_) | SilverScript v1-rc1. GitHub [Manyfestation](https://github.com/Manyfestation). |
 
@@ -232,7 +231,7 @@ TG-dense, Discord-light: silverscript, vprogs, Argent, kccs, python-sdk — trea
 
 | Who | Where |
 | --- | --- |
-| [@parker2017](https://x.com/parker2017) | kaspaexplained.com (parker2017code) |
+| [parker2017code/kaspa-explained](https://github.com/parker2017code/kaspa-explained) | Site source for kaspaexplained.com |
 | [progdoc.izio.fr](https://progdoc.izio.fr) | IzioDev programmability tree |
 | [kas-smiths.org](https://kas-smiths.org) | KCC workshop (Manyfestation). Not a KIP. |
 | [portrait.kaspa-kii.org](https://portrait.kaspa-kii.org) | Portrait site. Opaque `Portraitt.co/…` tokens **404**. |

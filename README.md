@@ -108,6 +108,7 @@ Yonatan’s own “rough core” list (30 Apr 2025): michaelsutton, hashdag, cod
 | Kaspa global | [@KASPAglobal](https://x.com/KASPAglobal) | 3 Sep 2026: Toccata live, not “coming soon”. |
 | Kaspa Commons | [@Kaspa_Commons](https://x.com/Kaspa_Commons) | Relays Discord (e.g. Ori Newman TN10 notes). Not core. |
 | This project | [@StppStp](https://x.com/StppStp) | Gramlane / project delusional. **Never DMs you.** |
+| Parker Schmidt | [@parker2017](https://x.com/parker2017) | kaspaexplained.com |
 | Luke Dunshea | [@elldeeone](https://x.com/elldeeone) | SilverScript v1-rc1 credit. GitHub [elldeeone](https://github.com/elldeeone). |
 | Sivan Helfer | [@manyfest_](https://x.com/manyfest_) | SilverScript v1-rc1. GitHub [Manyfestation](https://github.com/Manyfestation). |
 
@@ -188,7 +189,70 @@ Telegram R&D is observer-only for most people. Discord `#development` / `#resear
 
 ---
 
-## 8. Gramlane (this stack)
+## 8. Intel pack (2026-09-04) — public facts only
+
+Folded from `kaspa-high-value-intel-master.md` (community + founder index). **Local Telegram/Discord dump paths stay private.** Mentions ≠ endorsement. Recheck DAA/supply/PR state before quoting.
+
+### L1 snapshot (api.kaspa.org, 4 Sep 2026)
+
+| Item | Number | Recheck |
+| --- | --- | --- |
+| Virtual DAA | **530,957,175** | `/info/blockdag` |
+| Circulating | **~27.681B KAS** of ~28.704B max | `/info/coinsupply` |
+| Block reward | **2.31246515 KAS** (~23.12 KAS/s). Next step DAA **531,207,000** | coinbase / blockreward |
+| Hashrate | **~315 PH/s** (treat API field carefully) | `/info/hashrate` |
+| Covenants (Aug 24 baseline) | **28,125** ever, **519** still active, **~1.53M KAS** in active covenants. TN10 still dominates. | kaspaexplained Aug refresh |
+
+**Do not claim:** 100 BPS live; instant irreversible payments; DAGKnight is consensus; mature native SC; KCC-0020/0021/0402 adopted; Silverscript v1 stable; vProgs live; Portrait or kaspa-pqv on mainnet; Gramlane is Kassword / KCC-20 / Argent.
+
+### Filters (transcripts)
+
+Yonatan (digital cash, cohesive tooling, core ≠ product) → Sutton (L1 covenant / single based app **now**; multi-program vProgs **later**) → Telegram R&D (how) → Discord (wallet/fee/merchant demand). vProgs: sequencing+DA on L1, execution off L1, validity proofs. Solana-shaped accounts, not EVM.
+
+### Extra GitHubs (high-signal, not all 565)
+
+| Repo | Why |
+| --- | --- |
+| [argent-lang/argent](https://github.com/argent-lang/argent) | Sutton multi-actor frontend. **#55 merged 2 Sep** actor template identity. Unaudited demos. |
+| [argent-lang/argent-playground](https://github.com/argent-lang/argent-playground) | Examples |
+| [argent-lang/argent-template](https://github.com/argent-lang/argent-template) | Episode-01 ticketing demo |
+| [kaspanet/vprogs#139](https://github.com/kaspanet/vprogs/pull/139) | **Open.** ExitLeaf + claim kit. Also #138/#140. No testnet. |
+| [kaspanet/kccs#20](https://github.com/kaspanet/kccs/pull/20) | **Open draft.** KCC-20 vectors. Transfer sig unconfirmed. |
+| [kaspanet/silverscript#223](https://github.com/kaspanet/silverscript/pull/223) | **Merged.** Dispatch tags ↔ KCC-1 (IzioDev). |
+| [supertypo/simply-kaspa-indexer](https://github.com/supertypo/simply-kaspa-indexer) | Indexer (TG+Discord overlap) |
+| [aspectron](https://github.com/aspectron) kdx / kaspa-ng | Wallet gravity |
+| [azbuky/kaspium_wallet](https://github.com/azbuky/kaspium_wallet) | Mobile |
+| [someone235/native-assets-zk-poc](https://github.com/someone235/native-assets-zk-poc) | Native assets + ZK (TG) |
+| [risc0/risc0](https://github.com/risc0/risc0) | Prover stack referenced in R&D |
+| [hmoog/kas-l2](https://github.com/hmoog/kas-l2) | L2 adjacency. **Out of Gramlane path.** |
+
+TG-dense, Discord-light: silverscript, vprogs, Argent, kccs, python-sdk — treat as R&D map.
+
+### Extra people / X
+
+| Who | Where |
+| --- | --- |
+| [@parker2017](https://x.com/parker2017) | kaspaexplained.com (parker2017code) |
+| [progdoc.izio.fr](https://progdoc.izio.fr) | IzioDev programmability tree |
+| [kas-smiths.org](https://kas-smiths.org) | KCC workshop (Manyfestation). Not a KIP. |
+| [portrait.kaspa-kii.org](https://portrait.kaspa-kii.org) | Portrait site. Opaque `Portraitt.co/…` tokens **404**. |
+| supertypo | Sil #234 (closed); kccs #23; indexer |
+| ShawnPearce | kccs #20 |
+| Knitser | KCC-0021; kccs issue #14 |
+| biryukovmaxim | vProgs + rusty Toccata cleanup |
+| hmoog / @hus_qy | vProgs earlier node/bridge |
+| saefstroem | KCC-0; rusty ZK SDK |
+| D-Stacks | rusty #991 UTXO index (open) |
+| palacharlanarendra, Drcryptodee | Sil #238 / #244 open — skip until v1 |
+
+### Gramlane filter (from that pack)
+
+**Now:** pinned v1-rc1 WorkCredit (`validateOutputState` only); grams not KCC-20; POS/Pay; one kasdomain; `/234`; pointers to Kassword/pqv/Portrait.  
+**Not us:** DAGKnight, silverc master, #234 retry, guessed compute budget, Argent ICC, vProg exits, L2 stables.
+
+---
+
+## 9. Gramlane (this stack)
 
 - Live local: http://127.0.0.1:8081
 - Pins: http://127.0.0.1:8081/sources · http://127.0.0.1:8081/kip-21

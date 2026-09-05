@@ -261,3 +261,44 @@ TG-dense, Discord-light: silverscript, vprogs, Argent, kccs, python-sdk — trea
 Machine copy: [`master.json`](master.json)
 
 JSON on the dApp: http://127.0.0.1:8081/api/masterfile
+
+---
+
+## 10. Local corpora (26–27 Jul 2026) — extracted, not uploaded
+
+Raw dumps stay on this machine. **No chat logs, photos, or DiscordKit files in this repo.**
+
+| Dump | What it actually is |
+| --- | --- |
+| `Downloads\Telegram Desktop\ChatExport_2026-07-27` | Telegram export titled **【A G E N C . D E V】** (15 Mar–27 Jul 2026). **Not** `t.me/kasparnd`. Solana agent marketplace. |
+| `Documents\adiscord api` | 41 Kaspa Discord channel dumps (cut ~25–26 Jul 2026). Guild Kaspa. |
+
+### Discord (Kaspa) — high-signal
+
+Channels that matter for builders: `development`, `covenants`, `research-general`, `zero-knowledge`, `ecosystem-projects`, `explorer-and-rest-api`, `help-wallet`, `merchants`, `layer-2s`. Mining/off-topic are volume, not app design.
+
+| Signal | Detail |
+| --- | --- |
+| Token uniqueness | `#covenants` Dec 2025: Ori points to [CAT Protocol](https://catprotocol.org/) (parent+grandparent UTXO). Later L1 answer is **KIP-20 covenant id** (outpoint), not a copied script. |
+| TN12 vs TN10 | IzioDev 6 Jun 2026: **do not use testnet-12**. Toccata is on **testnet-10**. |
+| Silverscript builtins | Discord → [silverscript#122](https://github.com/kaspanet/silverscript/issues/122): expose `OpCheckSigFromStack` (0xd7) and `OpZkPrecompile` (0xa6). Ori: open an issue. elldeeone later landed Groth16 as #138. |
+| Workshop | [IzioDev/workshop-london-2026](https://github.com/IzioDev/workshop-london-2026) — SilverScript runtime notes. |
+| Indexer / REST | [lAmeR1/kaspa-rest-server](https://github.com/lAmeR1/kaspa-rest-server), [lAmeR1/kaspa-explorer](https://github.com/lAmeR1/kaspa-explorer) |
+| Wallets (who-what-where) | kaspium, kaspaper, kaspa-ng / aspectron, [forbole/kastle](https://github.com/forbole/kastle) |
+| Node monitor | [imalfect/KaspaNodeMonitor](https://github.com/imalfect/KaspaNodeMonitor) |
+| Tax CSV | [coderofstuff/kaspa-transaction-report](https://github.com/coderofstuff/kaspa-transaction-report) |
+| Contributors page | https://kaspa.org/contributors/ + rusty-kaspa graphs |
+| L2 (out of Gramlane) | Kasplex indexer, [hmoog/kas-l2](https://github.com/hmoog/kas-l2), kastle — Discord `#layer-2s` |
+
+Demand that matches the intel pack: wallet UX, fees, merchants, “is SilverScript the hardfork?” (no: Toccata is consensus; silverc is a compiler).
+
+### Telegram export — AgenC (Solana), not Kaspa R&D
+
+| | |
+| --- | --- |
+| GitHub org | [tetsuo-ai/AgenC](https://github.com/tetsuo-ai/AgenC) · [agenc-core](https://github.com/tetsuo-ai/agenc-core) · [agenc-protocol](https://github.com/tetsuo-ai/agenc-protocol) · [agenc-marketplace-agent-kit](https://github.com/tetsuo-ai/agenc-marketplace-agent-kit) |
+| Sites | agenc.tech · docs.agenc.tech · agencone.com |
+| Rails | Solana + x402. Ledger Agent Stack. Their notes claim OtterSec on a program — **verify on-chain, do not copy the claim**. |
+| Gramlane | **Not integrated.** Same filter as the intel pack: AgenC is a Solana agent marketplace. |
+
+---

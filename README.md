@@ -2,7 +2,7 @@
 
 **Not Kaspa core. Not official KNS.** Public pin list by [@StppStp](https://x.com/StppStp) / [STP-KAS](https://github.com/STP-KAS). Freeze: **6 Sep 2026**.
 
-Gramlane vision: **skip centralised stablecoins for dapps.** Cheap L1 grams instead of USDC-for-dApps. Intelligent people should look. Still a delusional idea. Fill is not a business: this desk keeps 0. Leftover output is Kaspa growth (Kasware needs an output). The rest is miner fee. Anyone can run the binary worldwide. The jar is not Nakamoto.
+Gramlane vision: **skip centralised stablecoins for dapps.** Cheap L1 grams instead of USDC-for-dApps. Intelligent people should look. Still a delusional idea. Fill is not a business: this desk keeps 0. Any Kaspa wallet (QR / kaspa: URI). In-page inject is only Kasware/Kastle. Anyone can run the binary worldwide. The jar is not Nakamoto.
 
 This is a map. Merged Active KIP = law. Open PR, personal wiki, Discord rumor ≠ a pin. Gramlane tab: http://127.0.0.1:8081/masterfile
 

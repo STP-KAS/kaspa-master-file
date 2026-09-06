@@ -1,6 +1,8 @@
 # Kaspa master file
 
-**Not Kaspa core. Not official KNS.** Public pin list by [@StppStp](https://x.com/StppStp) / [STP-KAS](https://github.com/STP-KAS). Freeze: **5 Sep 2026**.
+**Not Kaspa core. Not official KNS.** Public pin list by [@StppStp](https://x.com/StppStp) / [STP-KAS](https://github.com/STP-KAS). Freeze: **6 Sep 2026**.
+
+Gramlane vision: **skip centralized stablecoins for dapps.** Cheap L1 grams instead of USDC-for-dApps. Still a delusional idea. Fill is one Kaspa tx: miners get the fee (security budget); the amount is whoever hosts. Anyone can run the binary. The jar is not Nakamoto.
 
 This is a map. Merged Active KIP = law. Open PR, personal wiki, Discord rumor ≠ a pin. Gramlane tab: http://127.0.0.1:8081/masterfile
 

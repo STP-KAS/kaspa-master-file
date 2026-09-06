@@ -10,6 +10,24 @@ Repo: **kaspa-master-file** (the “kaspa mister fil”).
 
 ---
 
+## 0. If you just showed up
+
+Read first. Video second. Price talk is not a source.
+
+Kaspa is **proof of work**. Miners spend energy. There is no staking. Fair launch: no premine. Blocks can be found in parallel; GHOSTDAG keeps the honest ones and puts them in order. About **10 blocks per second** on mainnet today. Toccata (spend rules / covenants) is **live**; wallets and tools are still catching up. A merged Active KIP is law. A tweet is not.
+
+| What | URL | Note |
+| --- | --- | --- |
+| Kaspa Explained — start here | https://kaspaexplained.com/start-here | New to crypto, or already know it. Independent. Not kaspanet. |
+| What is Kaspa? | https://kaspaexplained.com/what-is-kaspa | PoW, blockDAG, GHOSTDAG. Live vs roadmap. |
+| Kaspa Explained | https://kaspaexplained.com/ | Short page, same facts. |
+| FAQ | https://kaspaexplained.com/faq | Short answers with links. |
+| kaspa.org | https://kaspa.org | Official. |
+| Wallets | https://wiki.kaspa.org/wallet | Hold KAS. Never paste a seed into a website. |
+| Video (community) | https://x.com/kaspaunchained/status/2096211914825285808 | @kaspaunchained, 5 Sep 2026. “Only gets better with age.” Older Odie clip. Not a spec. Not core. |
+
+---
+
 ## 1. Official sites
 
 | What | URL | Note |
@@ -24,6 +42,7 @@ Repo: **kaspa-master-file** (the “kaspa mister fil”).
 | Kaspalytics | https://www.kaspalytics.com | Learn: Toccata, SilverScript. Not core. |
 | Explorer | https://explorer.kaspa.org | L1 txs |
 | Node API | https://api.kaspa.org | Public REST. Not kasdomain. |
+| Kaspa Explained | https://kaspaexplained.com/ | Independent explainer. Not kaspanet. |
 | Tracker | https://kaspaexplained.com/kips | Human KIP/KCC map, not law |
 | Toccata status | https://kaspaexplained.com/toccata-status | Live claims table |
 

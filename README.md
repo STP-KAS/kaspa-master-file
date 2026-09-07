@@ -1,6 +1,6 @@
 # Kaspa master file
 
-**Not Kaspa core. Not official KNS.** Public pin list by [@StppStp](https://x.com/StppStp) / [STP-KAS](https://github.com/STP-KAS). Freeze: **6 Sep 2026**.
+**Not Kaspa core. Not official KNS.** Public pin list by [@StppStp](https://x.com/StppStp) / [STP-KAS](https://github.com/STP-KAS). Freeze: **7 Sep 2026**.
 
 **project delusional.** Kaspa master file — pins, ideas, principles. One principle: skip centralised stablecoins for dapps. Fill is not a business: this desk keeps 0. Any Kaspa wallet (QR / kaspa: URI). In-page inject is only Kasware/Kastle. The jar is not Nakamoto.
 
@@ -37,7 +37,7 @@ Kaspa is **proof of work**. Miners spend energy. There is no staking. Fair launc
 | Wiki | https://wiki.kaspa.org | Community wiki. Wallets: https://wiki.kaspa.org/wallet |
 | Docs | https://github.com/kaspanet/docs | kaspanet docs repo |
 | Toccata guide | https://docs.kaspa.org/toccata | Official programmability guide. Live on mainnet. Tooling still young. |
-| Research forum | https://research.kas.pa | vProgs, sequencing, bridges |
+| Research forum | https://research.kas.pa | Official Discourse. Threads ≠ KIPs. Catalog: §1b. |
 | kaspa.news | https://kaspa.news | Public recaps of Core R&D Telegram (not the channel itself). |
 | Kaspalytics | https://www.kaspalytics.com | Learn: Toccata, SilverScript. Not core. |
 | Explorer | https://explorer.kaspa.org | L1 txs |
@@ -45,6 +45,70 @@ Kaspa is **proof of work**. Miners spend energy. There is no staking. Fair launc
 | Kaspa Explained | https://kaspaexplained.com/ | Independent explainer. Not kaspanet. |
 | Tracker | https://kaspaexplained.com/kips | Human KIP/KCC map, not law |
 | Toccata status | https://kaspaexplained.com/toccata-status | Live claims table |
+
+---
+
+## 1b. research.kas.pa
+
+Official research forum (Discourse). **A thread is not a KIP. A KIP is not product until Active.** vProgs, Kurrent, elastic throughput, tail emission, adaptive block size are **research**. Gramlane stays L1 covenants; L2 / vProgs / channels are out of path.
+
+JSON API if you want to re-check: `https://research.kas.pa/latest.json` · `https://research.kas.pa/categories.json` · `https://research.kas.pa/top.json?period=all`
+
+### Forum + categories (7 Sep 2026)
+
+| What | URL | Honest |
+| --- | --- | --- |
+| Forum home | https://research.kas.pa | ~50 public topics. Pinned welcome (2019) is closed. |
+| L1/L2 | https://research.kas.pa/c/l1-l2/11 | 17 topics. Bridge, vProgs, sequencing, DA, Kurrent. |
+| Consensus | https://research.kas.pa/c/consensus/9 | 5 topics. Crescendo, KIP-10, red-block txs. |
+| Economics | https://research.kas.pa/c/economics/6 | 4 topics. Issuance, adaptive size, tail emission. |
+| Mining | https://research.kas.pa/c/mining/7 | 6 topics. Not this desk. |
+| kaspanet/research | https://github.com/kaspanet/research | Papers (vProgs yellow paper). Not the forum. |
+
+### 2026 threads (newest first)
+
+| Thread | URL | Honest |
+| --- | --- | --- |
+| Kurrent (23 Jun 2026) | https://research.kas.pa/t/kurrent-an-eltoo-inspired-latest-state-channel-on-kaspa/494 | a19q3 (Arthur Zhang). Eltoo-inspired latest-state **bilateral** channel on KIP-17/20 + DAA-relative sequence. Non-confiscatory, **not watch-free**. Repo [a19q3/Kurrent](https://github.com/a19q3/Kurrent). Local-devnet evidence only. **Not product. Not Gramlane.** |
+| Dynamic tail emission (6 Apr 2026) | https://research.kas.pa/t/dynamic-tail-emission-that-preserves-the-maximum-supply-to-secure-mining/473 | swarmshine. Economics. **Not a KIP. Kaspa has a max supply; this is a proposal.** |
+| Adaptive block sizes (16 Feb 2026) | https://research.kas.pa/t/adaptive-block-sizes/464 | Bit_Cat; hashdag replied. Economics. **Not shipped.** |
+
+### vProgs / L1↔L2 (design, not product)
+
+Read these if you want the official research map. **No public vProgs testnet as product.**
+
+| Thread | URL | Who / note |
+| --- | --- | --- |
+| Concrete vProgs architecture | https://research.kas.pa/t/concrete-proposal-for-a-synchronously-composable-verifiable-programs-architecture/387 | hashdag, Aug 2025. ~4k views. The vProgs pin. |
+| Zoom-in: vProg computation DAG | https://research.kas.pa/t/zoom-in-a-formal-backbone-model-for-the-vprog-computation-dag/407 | michaelsutton, Aug 2025. |
+| Transaction scopes / object DAG | https://research.kas.pa/t/on-transaction-scopes-and-the-visibility-of-the-object-dag/410 | hashdag, Aug 2025. |
+| Pruning safety in vProgs | https://research.kas.pa/t/pruning-safety-in-the-vprogs-architecture/411 | FreshAir08. |
+| Based ZK rollups over UTXO DAG | https://research.kas.pa/t/on-the-design-of-based-zk-rollups-over-kaspas-utxo-based-dag-consensus/208 | michaelsutton, Dec 2024. ~4k views. |
+| Atomic composability (L1/L2) | https://research.kas.pa/t/atomic-composability-and-other-considerations-for-l1-l2-support/193 | hashdag, Nov 2024. Highest views on the forum (~6.6k). |
+| L1↔L2 canonical bridge | https://research.kas.pa/t/l1-l2-canonical-bridge-entry-exit-mechanism/258 | michaelsutton. |
+| Covenant + async message std | https://research.kas.pa/t/thoughts-about-covenant-and-async-message-standardization/293 | michaelsutton, Jan 2025. |
+| Subnets sequencing commitments | https://research.kas.pa/t/subnets-sequencing-commitments/274 | FreshAir08 / Sutton. |
+| Fees and throughput regulation | https://research.kas.pa/t/fees-and-throughput-regulation-dynamics/247 | hashdag. |
+| L1↔L2 topics still open | https://research.kas.pa/t/updateable-list-of-l1-l2-topics-to-flesh-out-before-finalizing-design/237 | hashdag checklist. |
+| Data availability | https://research.kas.pa/t/data-availability-concerns/375 | Hans_Moog. |
+| Proofs stitching | https://research.kas.pa/t/a-basic-framework-for-proofs-stitching/323 | FreshAir08. |
+| Multileader vs inclusion-time proving | https://research.kas.pa/t/on-the-inherent-tension-between-multileader-consensus-and-inclusion-time-proving/347 | michaelsutton. |
+| Elastic throughput | https://research.kas.pa/t/a-proposal-towards-elastic-throughput/295 | hashdag. **Not 100 BPS. Not a spec.** |
+
+### Forum threads that became KIPs (law is the KIP, not the thread)
+
+| Thread | URL | Became |
+| --- | --- | --- |
+| Quadratic storage mass | https://research.kas.pa/t/quadratic-storage-mass-and-kip9/159 | **KIP-9 Active** |
+| Additive addresses | https://research.kas.pa/t/auto-compounding-additive-addresses-kip10-draft/168 | **KIP-10 Active** |
+| Hash / ZK opcodes | https://research.kas.pa/t/additional-practical-considerations-re-hash-function-and-zk-opcodes/219 | Toccata **KIP-16** discussion (most-liked thread) |
+| Crescendo hardfork | https://research.kas.pa/t/crescendo-hardfork-discussion-thread/279 | **KIP-14** era. 10 BPS is live. |
+| KIP-15 discussion | https://research.kas.pa/t/kip-15-discussion-thread/303 | **KIP-15 Active** (someone235) |
+| KIP-6 discussion | https://research.kas.pa/t/kip-6-discussion-thread/189 | **KIP-6 still Draft** |
+
+Older DAG/mining threads (2019–2022: pruning, DAA, ASIC mimicking, twelve-minutes) stay on the forum. They are history, not this freeze.
+
+**Do not claim from this forum:** vProgs live, Kurrent mainnet, Lightning on Kaspa, tail emission changed, 100 BPS, DAGKnight.
 
 ---
 
@@ -104,8 +168,9 @@ KIP-21 lanes are 20-byte `subnetwork_id`s, ≤50 non-coinbase lanes/block, 1e9 g
 | coderofstuff/rusty-kaspa | https://github.com/coderofstuff/rusty-kaspa | Unofficial DAGKnight work. **Not a pin.** |
 | coderofstuff/dk-wiki | https://github.com/coderofstuff/dk-wiki | Unofficial wiki. **Not a pin.** |
 | parker2017code/kaspa-explained | https://github.com/parker2017code/kaspa-explained | Tracker source for kaspaexplained.com |
+| a19q3/Kurrent | https://github.com/a19q3/Kurrent | Eltoo-inspired latest-state channel. Forum [494](https://research.kas.pa/t/kurrent-an-eltoo-inspired-latest-state-channel-on-kaspa/494). Devnet evidence. **Not product.** |
 
-L2 (out of Gramlane path): Igra, Kasplex — live elsewhere. This stack stays L1.
+L2 (out of Gramlane path): Igra, Kasplex — live elsewhere. This stack stays L1. Kurrent is L1-channel research, still out of Gramlane path.
 
 ---
 
@@ -192,7 +257,8 @@ Telegram Bot API (platform, not Kaspa): https://core.telegram.org/bots/api · ht
 - DAGKnight: KIP-2 still Proposed; `dagknight` branch moving (PRs 4 Sep) — **not shipped**.
 - kaspa.org rebuilt around “real-time decentralization” (2026). 10 BPS live. 100 BPS is a target, not a spec.
 - Official Toccata guide: https://docs.kaspa.org/toccata — consensus live; SilverScript/Argent/vProgs tooling still early.
-- **v1-rc1 + 7 days** would be ~6 Sep. As of **5 Sep 2026 there is still no tagged `v1`**.
+- **v1-rc1 + 7 days** would be ~6 Sep. As of **7 Sep 2026 there is still no tagged `v1`**.
+- research.kas.pa catalogued in this file (**7 Sep**). Newest thread: **Kurrent** (23 Jun 2026). Not product.
 
 ### From Core R&D Telegram (via public recaps — not a scrape of private Discord)
 
@@ -268,7 +334,7 @@ TG-dense, Discord-light: silverscript, vprogs, Argent, kccs, python-sdk — trea
 ### Gramlane filter (from that pack)
 
 **Now:** pinned v1-rc1 WorkCredit (`validateOutputState` only); grams not KCC-20; POS/Pay; one kasdomain; `/234`; pointers to Kassword/pqv/Portrait.  
-**Not us:** DAGKnight, silverc master, #234 retry, guessed compute budget, Argent ICC, vProg exits, L2 stables.
+**Not us:** DAGKnight, silverc master, #234 retry, guessed compute budget, Argent ICC, vProg exits, L2 stables, Kurrent channels.
 
 ---
 

@@ -25,6 +25,22 @@ Kaspa is **proof of work**. Miners spend energy. There is no staking. Fair launc
 | kaspa.org | https://kaspa.org | Official. |
 | Wallets | https://wiki.kaspa.org/wallet | Hold KAS. Never paste a seed into a website. |
 | Video (community) | https://x.com/kaspaunchained/status/2096211914825285808 | @kaspaunchained, 5 Sep 2026. “Only gets better with age.” Older Odie clip. Not a spec. Not core. |
+| Grok share (X) | https://x.com/i/grok/share/c59cba827c574d028607693855b2e5fc | Community share. Not a KIP. Recheck before quoting. |
+| Faucets and mining | https://kaspa.aspectron.org/faucets-mining.html | Aspectron. Testnet faucets, mining entry, PNN. Not kaspanet. |
+| Kaspa Q&A | https://qa.kas.pa/ | Community Q&A. Answers are not KIPs. |
+| Kaspa Silver (YouTube) | https://www.youtube.com/channel/UCv8-2oyrfqDigJAKjZ_RCzQ | Honest protocol explainers. Not core. Not a price channel. |
+| Kaspa Graph Inspector | https://kgi.kaspad.net/ | Live blockDAG view. Default visual for doors. |
+| kaspa.stream | https://kaspa.stream/ | Explorer for ordinary reading of blocks and txs. |
+| Testnet-10 faucet | https://faucet-testnet.kaspanet.io | Official-shaped TN10 faucet. Toy coins. |
+| kaspa.org/build | https://kaspa.org/build | Official builder door: WASM, node, docs, faucet. |
+| Grok share (build notes) | https://grok.com/share/bGVnYWN5_13075cb2-2ed7-48ac-9e88-861102ca4b4b | Community share. Not a KIP. |
+| @manyfest_ note | https://x.com/manyfest_/status/2096312480586748371 | SilverScript / builder note. Not law. |
+| The Book of Kaspa | https://www.amazon.com/Book-Kaspa-Realizing-Nakamoto-Dream/dp/B0CCCJ3936 | Guest book. Not consensus evidence. |
+| Kaspa Ghost Knight | https://www.amazon.com/Kaspa-Ghost-Knight-blockchains-plight-ebook/dp/B0D2VK4PVR | Guest book. Not consensus evidence. |
+| Kas Smiths | https://kas-smiths.org | Builder workshop (Manyfestation). kasmith.org is the same desk name; use this URL. Not a KIP. |
+| Aviv Zohar | https://avivz.net | @Avivz78. GHOST co-author / research. |
+| Discord (help) | https://discord.com/channels/599153230659846165/960905681832140850 | Kaspa Discord. Dedicated rooms exist. Invite: https://discord.gg/kaspa |
+| Core R&D Telegram | https://t.me/kasparnd | Observer-first. Recaps: kaspa.news. |
 
 ---
 

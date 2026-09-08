@@ -14,7 +14,23 @@
         {"name": "FAQ", "url": "https://kaspaexplained.com/faq", "chip": "read", "note": "Is it PoW? What is 10 blocks/s? Is Toccata live? Answers with links so you can check."},
         {"name": "kaspa.org", "url": "https://kaspa.org", "chip": "official", "note": "Official site. Fair launch. No premine."},
         {"name": "Wallets", "url": "https://wiki.kaspa.org/wallet", "chip": "wiki", "note": "How to hold KAS. Nobody from a website should ask for your seed."},
-        {"name": "Video (community)", "url": "https://x.com/kaspaunchained/status/2096211914825285808", "chip": "watch", "note": "@kaspaunchained, 5 Sep 2026. “Only gets better with age.” Older clip (Odie). Not a spec. Not core. Watch, then read the pages above."}
+        {"name": "Video (community)", "url": "https://x.com/kaspaunchained/status/2096211914825285808", "chip": "watch", "note": "@kaspaunchained, 5 Sep 2026. “Only gets better with age.” Older clip (Odie). Not a spec. Not core. Watch, then read the pages above."},
+        {"name": "Grok share (X)", "url": "https://x.com/i/grok/share/c59cba827c574d028607693855b2e5fc", "chip": "share", "note": "Community share. Not a KIP. Recheck before quoting."},
+        {"name": "Faucets and mining", "url": "https://kaspa.aspectron.org/faucets-mining.html", "chip": "ops", "note": "Aspectron. TN faucets, mining entry, public node network. Not kaspanet."},
+        {"name": "Kaspa Q&A", "url": "https://qa.kas.pa/", "chip": "qa", "note": "Community questions. Answers are not KIPs."},
+        {"name": "Kaspa Silver", "url": "https://www.youtube.com/channel/UCv8-2oyrfqDigJAKjZ_RCzQ", "chip": "watch", "note": "Honest protocol explainers. Not core. Not a price channel."},
+        {"name": "Kaspa Graph Inspector", "url": "https://kgi.kaspad.net/", "chip": "live", "note": "Live blockDAG. Default visual on every intel door."},
+        {"name": "kaspa.stream", "url": "https://kaspa.stream/", "chip": "explore", "note": "Explorer for ordinary reading of blocks and transactions."},
+        {"name": "Testnet-10 faucet", "url": "https://faucet-testnet.kaspanet.io", "chip": "tn10", "note": "Toy coins. Never mainnet."},
+        {"name": "kaspa.org/build", "url": "https://kaspa.org/build", "chip": "official", "note": "Official builder door: WASM, node, docs, faucet."},
+        {"name": "Grok share (build notes)", "url": "https://grok.com/share/bGVnYWN5_13075cb2-2ed7-48ac-9e88-861102ca4b4b", "chip": "share", "note": "Community share. Not a KIP."},
+        {"name": "@manyfest_ note", "url": "https://x.com/manyfest_/status/2096312480586748371", "chip": "ss", "note": "SilverScript / builder note. Not law."},
+        {"name": "The Book of Kaspa", "url": "https://www.amazon.com/Book-Kaspa-Realizing-Nakamoto-Dream/dp/B0CCCJ3936", "chip": "book", "note": "Guest book. Not consensus evidence."},
+        {"name": "Kaspa Ghost Knight", "url": "https://www.amazon.com/Kaspa-Ghost-Knight-blockchains-plight-ebook/dp/B0D2VK4PVR", "chip": "book", "note": "Guest book. Not consensus evidence."},
+        {"name": "Kas Smiths", "url": "https://kas-smiths.org", "chip": "workshop", "note": "Builder workshop. kasmith.org is the same desk name; use this URL. Not a KIP."},
+        {"name": "Aviv Zohar", "url": "https://avivz.net", "chip": "research", "note": "@Avivz78. GHOST co-author / research."},
+        {"name": "Discord help room", "url": "https://discord.com/channels/599153230659846165/960905681832140850", "chip": "discord", "note": "Dedicated rooms exist. Browse, then ask. Invite: https://discord.gg/kaspa"},
+        {"name": "Core R&D Telegram", "url": "https://t.me/kasparnd", "chip": "rnd", "note": "Observer-first. Recaps: kaspa.news."}
       ]
     },
     {
@@ -131,6 +147,8 @@
         {"name": "@hus_qy", "url": "https://x.com/hus_qy", "chip": "core", "note": "Hans Moog."},
         {"name": "@IzioDev", "url": "https://x.com/IzioDev", "chip": "core", "note": "Romain Billot."},
         {"name": "@biryukovmaxim", "url": "https://x.com/biryukovmaxim", "chip": "core", "note": "KIP-21."},
+        {"name": "@Avivz78", "url": "https://x.com/Avivz78", "chip": "research", "note": "Aviv Zohar. GHOST co-author. avivz.net."},
+        {"name": "@DesheShai", "url": "https://x.com/DesheShai", "chip": "history", "note": "GHOSTDAG co-author. Left core (2025 farewell). Not a current core pin."},
         {"name": "@kaspaunchained", "url": "https://x.com/kaspaunchained", "chip": "community", "note": "Non-representative community X."},
         {"name": "@KASPAglobal", "url": "https://x.com/KASPAglobal", "chip": "community", "note": "3 Sep 2026: Toccata live, not coming soon."},
         {"name": "@Kaspa_Commons", "url": "https://x.com/Kaspa_Commons", "chip": "community", "note": "Relays Discord. Not core."},

@@ -1,6 +1,6 @@
 # Kaspa master file
 
-**Not Kaspa core. Not official KNS.** Public pin list by [@StppStp](https://x.com/StppStp) / [STP-KAS](https://github.com/STP-KAS). Freeze: **7 Sep 2026**.
+**Not Kaspa core. Not official KNS.** Public pin list by [@StppStp](https://x.com/StppStp) / [STP-KAS](https://github.com/STP-KAS). Freeze: **9 Sep 2026**.
 
 **project delusional.** Kaspa master file — pins, ideas, principles. One principle: skip centralised stablecoins for dapps. Fill is not a business: this desk keeps 0. Any Kaspa wallet (QR / kaspa: URI). In-page inject is only Kasware/Kastle. The jar is not Nakamoto.
 
@@ -136,7 +136,7 @@ Org: https://github.com/kaspanet — 26 public repos. **Use these first.**
 | --- | --- | --- |
 | rusty-kaspa | https://github.com/kaspanet/rusty-kaspa | Reference node. Toccata **v2.0.0** (5 Jun 2026), **v2.0.1** (15 Jun). `master` 24 Aug. `dagknight` branch **4 Sep** — unmerged. |
 | kips | https://github.com/kaspanet/kips | Improvement proposals |
-| silverscript | https://github.com/kaspanet/silverscript | Covenant language. Pin **[v1-rc1](https://github.com/kaspanet/silverscript/releases/tag/v1-rc1)** (30 Aug, `c7d17a1`). No tagged `v1`. Not master. |
+| silverscript | https://github.com/kaspanet/silverscript | Covenant language. Pin **[v1.0.0](https://github.com/kaspanet/silverscript/releases/tag/v1.0.0)** (Ori / someone235, **9 Sep 2026**, `3ed9733`). Official SemVer v1. Windows zip SHA256 `3e0d660c15a9e7ac90f3960da24d348b076b1891481bfe758db18accc8a102e1`. Language pragma in examples is still `^0.1.0`. `#234` foreign `readInputState` still **closed unmerged**. |
 | kccs | https://github.com/kaspanet/kccs | Conventions. All **Draft**. |
 | vprogs | https://github.com/kaspanet/vprogs | Provable computation. Research. No public testnet as product. |
 | kaspa-python-sdk | https://github.com/kaspanet/kaspa-python-sdk | Python bindings |
@@ -176,6 +176,7 @@ KIP-21 lanes are 20-byte `subnetwork_id`s, ≤50 non-coinbase lanes/block, 1e9 g
 | STP-KAS/project-delusional | https://github.com/STP-KAS/project-delusional | Stack index |
 | STP-KAS/kaspa-till | https://github.com/STP-KAS/kaspa-till | Reserved kUSD till. Not a peg. |
 | STP-KAS/kns | https://github.com/STP-KAS/kns | Indexer names. Not kasdomain. |
+| STP-KAS/kns-spec | https://github.com/STP-KAS/kns-spec | Implementer kit. https://stp-kas.github.io/kns-spec/ KasName on silverc **v1.0.0**. |
 | vsmirn0v/KaChat | https://github.com/vsmirn0v/KaChat | Other product. Gramlane does not clone E2E. |
 | KASRANKS/KASSWORD | https://github.com/KASRANKS/KASSWORD | Other vault. Pointer only. |
 | aglov413/kaspa-pqv | https://github.com/aglov413/kaspa-pqv | Posted to Core R&D **27 Aug 2026**. Hash-based PQ vault, **TN10 only**, unaudited. |
@@ -215,13 +216,13 @@ Yonatan’s own “rough core” list (30 Apr 2025): michaelsutton, hashdag, cod
 
 ---
 
-## 5b. SilverScript v1-rc1 people (ties)
+## 5b. SilverScript v1 people (ties)
 
-Source: [releases/tag/v1-rc1](https://github.com/kaspanet/silverscript/releases/tag/v1-rc1) (tagged by **someone235** = Ori Newman, 30 Aug 2026) + GitHub contributor counts on `kaspanet/silverscript`. Copilot bot omitted. Heart on the release from `mw-pearson` is **not** a credit.
+Source: [releases/tag/v1.0.0](https://github.com/kaspanet/silverscript/releases/tag/v1.0.0) (tagged by **someone235** = Ori Newman, **9 Sep 2026**, commit `3ed9733`) and the earlier [v1-rc1](https://github.com/kaspanet/silverscript/releases/tag/v1-rc1) (30 Aug, `c7d17a1`). Credits on both tags: elldeeone, IzioDev, Manyfestation, michaelsutton. Copilot bot omitted.
 
 | GitHub | commits* | X | Who | Ties |
 | --- | --- | --- | --- | --- |
-| [someone235](https://github.com/someone235) | 134 | [@OriNewman](https://x.com/OriNewman) | Ori Newman | **Lead.** Tagged v1-rc1. KIP-17. rusty-kaspa. Medium someone235. |
+| [someone235](https://github.com/someone235) | 134 | [@OriNewman](https://x.com/OriNewman) | Ori Newman | **Lead.** Tagged **v1.0.0** (9 Sep) and v1-rc1 (30 Aug). KIP-17. rusty-kaspa. Medium someone235. |
 | [michaelsutton](https://github.com/michaelsutton) | 20 | [@michaelsuttonil](https://x.com/michaelsuttonil) | Michael Sutton | Review. KIP-21. **Argent** (argent-lang). KCC-0020 co-author. rusty-kaspa. |
 | [IzioDev](https://github.com/IzioDev) | 10 | [@IzioDev](https://x.com/IzioDev) | Romain Billot | Review. KEF-funded (from ~Dec 2025). KCC-0020 co-author. KIP-25 (draft, with Ori+Sutton). izio.fr. |
 | [Manyfestation](https://github.com/Manyfestation) | 9 | [@manyfest_](https://x.com/manyfest_) | Sivan Helfer | Compiler, DAP debugger, PR #130 state decode. **KCC-0020** co-author. Kas-Smiths. Argent RPS demo. |
@@ -263,18 +264,20 @@ Telegram Bot API (platform, not Kaspa): https://core.telegram.org/bots/api · ht
 
 ---
 
-## 7. News freeze (5 Sep 2026)
+## 7. News freeze (9 Sep 2026)
 
 - Toccata **live** on mainnet (DAA `474_165_565`, ~30 Jun 2026). KIPs 16/17/20/21 Active 15 Jul 2026.
 - rusty-kaspa **v2.0.1** is the Toccata maintenance tag.
-- silverscript **v1-rc1** only release. `#234` foreign `readInputState` **closed unmerged**. `#243` consume() budget still open.
+- silverscript **[v1.0.0](https://github.com/kaspanet/silverscript/releases/tag/v1.0.0)** tagged **9 Sep 2026** by Ori (someone235), commit `3ed9733`. SemVer starts here. Windows zip SHA256 `3e0d660c15a9e7ac90f3960da24d348b076b1891481bfe758db18accc8a102e1`. This is the pin. v1-rc1 (`c7d17a1`, 30 Aug) is history.
+- `#234` foreign `readInputState` framing guard still **closed unmerged**. Own-UTXO `validateOutputState` only.
+- `#243` compiled artifact has **no compute-budget estimate** — still **open**.
 - KCC-0020 **Draft**. Issue [#14](https://github.com/kaspanet/kccs/issues/14) supply-split still open. Not a gram token.
 - Portrait (Kii) public **1 Sep 2026**, testnet-only.
 - DAGKnight: KIP-2 still Proposed; `dagknight` branch moving (PRs 4 Sep) — **not shipped**.
 - kaspa.org rebuilt around “real-time decentralization” (2026). 10 BPS live. 100 BPS is a target, not a spec.
-- Official Toccata guide: https://docs.kaspa.org/toccata — consensus live; SilverScript/Argent/vProgs tooling still early.
-- **v1-rc1 + 7 days** would be ~6 Sep. As of **7 Sep 2026 there is still no tagged `v1`**.
-- research.kas.pa catalogued in this file (**7 Sep**). Newest thread: **Kurrent** (23 Jun 2026). Not product.
+- Official Toccata guide: https://docs.kaspa.org/toccata — consensus live; SilverScript v1 is tagged; Argent/vProgs tooling still early.
+- research.kas.pa catalogued in this file. Newest thread: **Kurrent** (23 Jun 2026). Not product.
+- STP-KAS implementer kit: https://stp-kas.github.io/kns-spec/ — KasWare/Kastle inscriptions + proven covenant txs. `KasName.sil` recompiled with silverc v1.0.0; template hash unchanged from rc1.
 
 ### From Core R&D Telegram (via public recaps — not a scrape of private Discord)
 
@@ -305,7 +308,7 @@ Folded from the community intel pack. Full dated text: [`intel-pack.md`](intel-p
 | Hashrate | **~315 PH/s** (treat API field carefully) | `/info/hashrate` |
 | Covenants (Aug 24 baseline) | **28,125** ever, **519** still active, **~1.53M KAS** in active covenants. TN10 still dominates. | kaspaexplained Aug refresh |
 
-**Do not claim:** 100 BPS live; instant irreversible payments; DAGKnight is consensus; mature native SC; KCC-0020/0021/0402 adopted; Silverscript v1 stable; vProgs live; Portrait or kaspa-pqv on mainnet; Gramlane is Kassword / KCC-20 / Argent.
+**Do not claim:** 100 BPS live; instant irreversible payments; DAGKnight is consensus; KCC-0020/0021/0402 adopted; foreign `readInputState` is safe; vProgs live; Portrait or kaspa-pqv on mainnet; Gramlane is Kassword / KCC-20 / Argent. SilverScript **v1.0.0 is tagged** (9 Sep 2026). That is the compiler pin, not a claim that every app is audited.
 
 ### Filters (transcripts)
 
@@ -349,8 +352,8 @@ TG-dense, Discord-light: silverscript, vprogs, Argent, kccs, python-sdk — trea
 
 ### Gramlane filter (from that pack)
 
-**Now:** pinned v1-rc1 WorkCredit (`validateOutputState` only); grams not KCC-20; POS/Pay; one kasdomain; `/234`; pointers to Kassword/pqv/Portrait.  
-**Not us:** DAGKnight, silverc master, #234 retry, guessed compute budget, Argent ICC, vProg exits, L2 stables, Kurrent channels.
+**Now:** pinned **silverc v1.0.0** (Ori, 9 Sep, `3ed9733`); WorkCredit / KasName via `validateOutputState` only; grams not KCC-20; POS/Pay; one kasdomain; `/234` still a hole; pointers to Kassword/pqv/Portrait.  
+**Not us:** DAGKnight, #234 retry, guessed compute budget, Argent ICC, vProg exits, L2 stables, Kurrent channels.
 
 ---
 

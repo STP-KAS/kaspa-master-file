@@ -1,7 +1,7 @@
 {
   "title": "Kaspa master file",
   "repo": "https://github.com/STP-KAS/kaspa-master-file",
-  "updated": "2026-09-07",
+  "updated": "2026-09-09",
   "disclaimer": "Not Kaspa core. Not official KNS. @StppStp. Merged Active KIP is law. Open PR is not.",
   "sections": [
     {
@@ -118,7 +118,7 @@
       "rows": [
         {"name": "rusty-kaspa", "url": "https://github.com/kaspanet/rusty-kaspa", "chip": "node", "note": "v2.0.0 Toccata · v2.0.1 · dagknight branch unmerged."},
         {"name": "kips", "url": "https://github.com/kaspanet/kips", "chip": "law", "note": "Improvement proposals."},
-        {"name": "silverscript", "url": "https://github.com/kaspanet/silverscript/releases", "chip": "v1-rc1", "note": "Only tag 30 Aug 2026. Not master."},
+        {"name": "silverscript", "url": "https://github.com/kaspanet/silverscript/releases/tag/v1.0.0", "chip": "v1.0.0", "note": "Ori / someone235 tagged 9 Sep 2026, commit 3ed9733. SemVer v1. Windows zip SHA256 3e0d660c15a9e7ac90f3960da24d348b076b1891481bfe758db18accc8a102e1. #234 still unmerged."},
         {"name": "kccs", "url": "https://github.com/kaspanet/kccs", "chip": "Draft", "note": "Refuse as a gram token."},
         {"name": "vprogs", "url": "https://github.com/kaspanet/vprogs", "chip": "research", "note": "No product testnet here."},
         {"name": "kaspad (Go)", "url": "https://github.com/kaspanet/kaspad", "chip": "deprecated", "note": "Use rusty-kaspa."}
@@ -179,6 +179,7 @@
         {"name": "kaspa-pqv", "url": "https://github.com/aglov413/kaspa-pqv", "chip": "TN10", "note": "Posted Core R&D 27 Aug. Hash-based PQ vault. Unaudited."},
         {"name": "Argent", "url": "https://github.com/argent-lang/argent", "chip": "external", "note": "Not this desk."},
         {"name": "gramlane", "url": "https://github.com/STP-KAS/gramlane", "chip": "this", "note": "skip centralised stablecoins for dapps. Cheap grams. Still delusional."},
+        {"name": "kns-spec", "url": "https://github.com/STP-KAS/kns-spec", "chip": "this", "note": "Implementer kit. URL https://stp-kas.github.io/kns-spec/ KasName recompiled with silverc v1.0.0."},
         {"name": "KaChat", "url": "https://github.com/vsmirn0v/KaChat", "chip": "other", "note": "Not cloned."},
         {"name": "coderofstuff dk-wiki", "url": "https://github.com/coderofstuff/dk-wiki", "chip": "wrong", "note": "Unofficial. Not a pin."},
         {"name": "a19q3/Kurrent", "url": "https://github.com/a19q3/Kurrent", "chip": "research", "note": "Latest-state channel. Forum 494. Devnet only. Not Gramlane."}
@@ -186,14 +187,15 @@
     },
     {
       "id": "silverscript-people",
-      "title": "SilverScript v1-rc1 contributors",
+      "title": "SilverScript v1 contributors",
       "rows": [
-        {"name": "someone235 / Ori Newman", "url": "https://github.com/someone235", "chip": "lead", "note": "134 commits. Tagged v1-rc1. X @OriNewman. KIP-17. rusty-kaspa."},
+        {"name": "someone235 / Ori Newman", "url": "https://github.com/someone235", "chip": "lead", "note": "Tagged v1.0.0 on 9 Sep 2026 (3ed9733) and v1-rc1 on 30 Aug. X @OriNewman. KIP-17. rusty-kaspa."},
         {"name": "michaelsutton", "url": "https://github.com/michaelsutton", "chip": "review", "note": "20 commits. X @michaelsuttonil. Argent + KCC-0020 + KIP-21."},
         {"name": "IzioDev / Romain Billot", "url": "https://github.com/IzioDev", "chip": "review", "note": "10 commits. X @IzioDev. KEF-funded. KCC-0020 + KIP-25 draft. izio.fr."},
         {"name": "Manyfestation / Sivan Helfer", "url": "https://github.com/Manyfestation", "chip": "compiler", "note": "9 commits. X @manyfest_. Debugger, KCC-0020, Kas-Smiths."},
         {"name": "elldeeone / Luke Dunshea", "url": "https://github.com/elldeeone", "chip": "zk", "note": "2 commits. X @elldeeone. g16.verify PR 138. dunshea.au. x402."},
-        {"name": "v1-rc1 release", "url": "https://github.com/kaspanet/silverscript/releases/tag/v1-rc1", "chip": "pin", "note": "The credit list. Copilot bot omitted. mw-pearson only reacted."},
+        {"name": "v1.0.0 release", "url": "https://github.com/kaspanet/silverscript/releases/tag/v1.0.0", "chip": "pin", "note": "Official SemVer v1. 9 Sep 2026. Credits: elldeeone, IzioDev, Manyfestation, michaelsutton."},
+        {"name": "v1-rc1 (history)", "url": "https://github.com/kaspanet/silverscript/releases/tag/v1-rc1", "chip": "history", "note": "30 Aug 2026, c7d17a1. Replaced by v1.0.0."},
         {"name": "CashScript (inspiration)", "url": "https://cashscript.org/", "chip": "credit", "note": "Rosco Kalis MIT. Grammar ancestor. Not Kaspa core."}
       ]
     },
@@ -207,6 +209,7 @@
         {"name": "3 Sep Toccata live post", "url": "https://x.com/KASPAglobal", "chip": "live", "note": "DAA 474165565. Not coming soon."},
         {"name": "4 Sep framing article", "url": "https://kaspa.news/articles/why-reading-a-number-is-not-the-same-as-trusting-it", "chip": "234", "note": "Foreign reads still unsafe. Gramlane only validateOutputState."},
         {"name": "4 Sep dagknight PRs", "url": "https://github.com/kaspanet/rusty-kaspa/pulls", "chip": "research", "note": "Open/draft. KIP-2 not shipped."},
+        {"name": "9 Sep SilverScript v1.0.0", "url": "https://github.com/kaspanet/silverscript/releases/tag/v1.0.0", "chip": "pin", "note": "Ori / someone235. Commit 3ed9733. SemVer v1. #234 still unmerged. #243 still open."},
         {"name": "23 Jun Kurrent RFC", "url": "https://research.kas.pa/t/kurrent-an-eltoo-inspired-latest-state-channel-on-kaspa/494", "chip": "research", "note": "a19q3 on research.kas.pa. Eltoo-inspired channel. Not product."}
       ]
     },

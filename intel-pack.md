@@ -1,7 +1,9 @@
 # Kaspa High-Value Intel Master Pack
 
-**Date:** 2026-07-26 (registry updated **2026-09-04**)  
+**Date:** 2026-07-26 (registry updated **2026-09-04**; SilverScript pin **2026-09-09**)  
 **Purpose:** Single index of community + founder intel for future projects.
+
+**9 Sep 2026:** Ori Newman (someone235) tagged **[silverscript v1.0.0](https://github.com/kaspanet/silverscript/releases/tag/v1.0.0)** (`3ed9733`). That is now the pin. v1-rc1 is history. `#234` still closed unmerged. `#243` still open.
 
 ---
 

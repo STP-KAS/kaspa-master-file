@@ -40,7 +40,8 @@
         {"name": "project delusional", "url": "https://github.com/STP-KAS/project-delusional", "chip": "headline", "note": "Kaspa master file, ideas and principles. Still a delusional idea."},
         {"name": "skip centralised stablecoins for dapps", "url": "https://github.com/STP-KAS/gramlane", "chip": "principle", "note": "One principle. Cheap L1 grams vs USDC-for-dApps. Not the headline."},
         {"name": "Fill is not a business", "url": "https://github.com/STP-KAS/gramlane", "chip": "security", "note": "This desk keeps 0. Any Kaspa wallet: QR / kaspa: URI / paste txid. Inject is only Kasware or Kastle."},
-        {"name": "Anyone hosts", "url": "https://github.com/STP-KAS/gramlane", "chip": "host", "note": "Same principle as a node: PC binary, PWA of that host, hardware signs the fill. Many desks ≠ Circle. The jar is not Nakamoto."}
+        {"name": "Anyone hosts", "url": "https://github.com/STP-KAS/gramlane", "chip": "host", "note": "Same principle as a node: PC binary, PWA of that host, hardware signs the fill. Many desks ≠ Circle. The jar is not Nakamoto."},
+        {"name": "Darwin battletest", "url": "https://github.com/STP-KAS/gramlanepeglab", "chip": "poc", "note": "Parker mix Darwin. Grams sequence dapps. PegLab depegs. MIX teaches. Compiler tag is not a dapp."}
       ]
     },
     {
@@ -180,6 +181,9 @@
         {"name": "Argent", "url": "https://github.com/argent-lang/argent", "chip": "external", "note": "Not this desk."},
         {"name": "gramlane", "url": "https://github.com/STP-KAS/gramlane", "chip": "this", "note": "skip centralised stablecoins for dapps. Cheap grams. Still delusional."},
         {"name": "kns-spec", "url": "https://github.com/STP-KAS/kns-spec", "chip": "this", "note": "Implementer kit. URL https://stp-kas.github.io/kns-spec/ KasName recompiled with silverc v1.0.0."},
+        {"name": "mixer-concept", "url": "https://github.com/STP-KAS/mixer-concept", "chip": "mix", "note": "Parker GitHub models + STP doors + PegLab classroom. Education. Not a token. Not kaspaexplained.com."},
+        {"name": "peglab-stp", "url": "https://github.com/STP-KAS/peglab-stp", "chip": "tn10", "note": "Toy that WILL depeg. Not USD. Not Gramlane grams."},
+        {"name": "gramlanepeglab", "url": "https://github.com/STP-KAS/gramlanepeglab", "chip": "darwin", "note": "Parker mix Darwin battletest. Sequencing PoC vs a depeg lab vs MIX doors."},
         {"name": "KaChat", "url": "https://github.com/vsmirn0v/KaChat", "chip": "other", "note": "Not cloned."},
         {"name": "coderofstuff dk-wiki", "url": "https://github.com/coderofstuff/dk-wiki", "chip": "wrong", "note": "Unofficial. Not a pin."},
         {"name": "a19q3/Kurrent", "url": "https://github.com/a19q3/Kurrent", "chip": "research", "note": "Latest-state channel. Forum 494. Devnet only. Not Gramlane."}

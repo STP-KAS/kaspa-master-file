@@ -191,6 +191,31 @@ L2 (out of Gramlane path): Igra, Kasplex — live elsewhere. This stack stays L1
 
 ---
 
+## 4b. KNS (official) — names are inscriptions
+
+Not kasdomain. Not this desk’s covenant P2SH. Source of truth is KNS GitBook.
+
+| What | URL | Honest |
+| --- | --- | --- |
+| Docs home | https://kns-2.gitbook.io/kns-docs-1/ | Official GitBook. Index: `/llms.txt` |
+| Inscriptions | https://kns-2.gitbook.io/kns-docs-1/inscriptions/overview | Commit-reveal. Envelope id `kns`. Resolver uses simply-kaspa-indexer. |
+| Create / transfer / list / send | https://kns-2.gitbook.io/kns-docs-1/inscriptions/operations | Ops + fee on reveal output 0 |
+| Supporting wallets | https://kns-2.gitbook.io/kns-docs-1/supporting-wallet | KasWare + Kastle **extension** inscribe. Kastle **mobile does not**. Kurncy + Kasanova mobile inscribe in-app. **No ECDSA addresses.** |
+| KasWare tutorial | https://kns-2.gitbook.io/kns-docs-1/supporting-wallet/kasware-wallet-tutorial.md | |
+| Kastle tutorial | https://kns-2.gitbook.io/kns-docs-1/supporting-wallet/kastle-wallet-tutorial.md | Two popups |
+| Kurncy tutorial | https://kns-2.gitbook.io/kns-docs-1/supporting-wallet/kurncy-wallet-tutorial.md | [@KurncySolutions](https://x.com/KurncySolutions) |
+| Kasanova tutorial | https://kns-2.gitbook.io/kns-docs-1/supporting-wallet/kasanova-wallet-mobile-tutorial.md | [@KasanovaWallet](https://x.com/KasanovaWallet) |
+| Indexer API | https://kns-2.gitbook.io/kns-docs-1/kns-indexer-api | Owner, check, profile, primary. OpenAPI https://apidoc.knsdomains.org/mainnet/ |
+| Integration rules | https://kns-2.gitbook.io/kns-docs-1/kns-indexer-api/integration-important-note | URL-encode, graphemer, ens-normalize, resolve warning |
+| App | https://app.knsdomains.org | Product |
+| API | https://api.knsdomains.org/mainnet | Resolver |
+| simply-kaspa-indexer | https://github.com/supertypo/simply-kaspa-indexer | L1 Postgres indexer (Supertypo). Not the KNS name API. |
+| Implementer kit | https://stp-kas.github.io/kns-spec/ | STP-KAS copy for wallets. Not official KNS. |
+
+FAQ still says “only KasWare” in places. Use the **supporting wallet** table.
+
+---
+
 ## 5. Core + builder X handles
 
 Yonatan’s own “rough core” list (30 Apr 2025): michaelsutton, hashdag, coderofstuff_, someone235, freshair08, biryukovmaxim, reshmem, aspect, tiram88, elichai, tmrlvi, D-Stacks. Inspect https://github.com/kaspanet and https://research.kas.pa — DYOR. **“Core” is not a legal title.**
@@ -328,7 +353,7 @@ Yonatan (digital cash, cohesive tooling, core ≠ product) → Sutton (L1 covena
 | [kaspanet/vprogs#139](https://github.com/kaspanet/vprogs/pull/139) | **Open.** ExitLeaf + claim kit. Also #138/#140. No testnet. |
 | [kaspanet/kccs#20](https://github.com/kaspanet/kccs/pull/20) | **Open draft.** KCC-20 vectors. Transfer sig unconfirmed. |
 | [kaspanet/silverscript#223](https://github.com/kaspanet/silverscript/pull/223) | **Merged.** Dispatch tags ↔ KCC-1 (IzioDev). |
-| [supertypo/simply-kaspa-indexer](https://github.com/supertypo/simply-kaspa-indexer) | Indexer (TG+Discord overlap) |
+| [supertypo/simply-kaspa-indexer](https://github.com/supertypo/simply-kaspa-indexer) | L1 Postgres indexer. KNS docs: the KNS resolver uses this. Not api.knsdomains.org. |
 | [aspectron](https://github.com/aspectron) kdx / kaspa-ng | Wallet gravity |
 | [azbuky/kaspium_wallet](https://github.com/azbuky/kaspium_wallet) | Mobile |
 | [someone235/native-assets-zk-poc](https://github.com/someone235/native-assets-zk-poc) | Native assets + ZK (TG) |

@@ -154,7 +154,8 @@
         {"name": "@KASPAglobal", "url": "https://x.com/KASPAglobal", "chip": "community", "note": "3 Sep 2026: Toccata live, not coming soon."},
         {"name": "@Kaspa_Commons", "url": "https://x.com/Kaspa_Commons", "chip": "community", "note": "Relays Discord. Not core."},
         {"name": "@StppStp", "url": "https://x.com/StppStp", "chip": "this", "note": "This project. Never DMs you."},
-        {"name": "@elldeeone", "url": "https://x.com/elldeeone", "chip": "ss", "note": "Luke Dunshea. GitHub elldeeone. v1-rc1 credit. Groth16 PR 138."},
+        {"name": "@elldeeone", "url": "https://x.com/elldeeone", "chip": "ss", "note": "Luke Dunshea. GitHub elldeeone. v1 credit. Groth16 PR 138."},
+        {"name": "@asaefstroem", "url": "https://x.com/asaefstroem", "chip": "ss", "note": "Alexander Säfström. Credited by Ori on v1-rc1 review. KCC-0."},
         {"name": "@manyfest_", "url": "https://x.com/manyfest_", "chip": "ss", "note": "Sivan Helfer. GitHub Manyfestation. Compiler + KCC-0020."}
       ]
     },
@@ -178,7 +179,7 @@
         {"name": "Portrait", "url": "https://github.com/KaspaKii/Portrait", "chip": "testnet", "note": "Public 1 Sep 2026. Unaudited."},
         {"name": "OpenSilver", "url": "https://github.com/trillskillz/OpenSilver", "chip": "community", "note": "22 SilverScript patterns. Not kaspanet. Not audited."},
         {"name": "kaspa-pqv", "url": "https://github.com/aglov413/kaspa-pqv", "chip": "TN10", "note": "Posted Core R&D 27 Aug. Hash-based PQ vault. Unaudited."},
-        {"name": "Argent", "url": "https://github.com/argent-lang/argent", "chip": "external", "note": "Not this desk."},
+        {"name": "Argent", "url": "https://github.com/argent-lang/argent", "chip": "preview", "note": "Sutton multi-actor layer above Silverscript. PR 60 (10 Sep) pins sil v1.0.0. Not release-ready."},
         {"name": "gramlane", "url": "https://github.com/STP-KAS/gramlane", "chip": "this", "note": "skip centralised stablecoins for dapps. Cheap grams. Still delusional."},
         {"name": "kns-spec", "url": "https://github.com/STP-KAS/kns-spec", "chip": "this", "note": "Implementer kit. URL https://stp-kas.github.io/kns-spec/ KasName recompiled with silverc v1.0.0."},
         {"name": "mixer-concept", "url": "https://github.com/STP-KAS/mixer-concept", "chip": "mix", "note": "Parker GitHub models + STP doors + PegLab classroom. Education. Not a token. Not kaspaexplained.com."},
@@ -214,6 +215,9 @@
         {"name": "4 Sep framing article", "url": "https://kaspa.news/articles/why-reading-a-number-is-not-the-same-as-trusting-it", "chip": "234", "note": "Foreign reads still unsafe. Gramlane only validateOutputState."},
         {"name": "4 Sep dagknight PRs", "url": "https://github.com/kaspanet/rusty-kaspa/pulls", "chip": "research", "note": "Open/draft. KIP-2 not shipped."},
         {"name": "9 Sep SilverScript v1.0.0", "url": "https://github.com/kaspanet/silverscript/releases/tag/v1.0.0", "chip": "pin", "note": "Ori / someone235. Commit 3ed9733. SemVer v1. #234 still unmerged. #243 still open."},
+        {"name": "Ori v1 X post", "url": "https://x.com/OriNewman/status/2097731203503640976", "chip": "x", "note": "9 Sep. Silverscript will evolve; Argent adds higher layers."},
+        {"name": "Sutton layer post", "url": "https://x.com/michaelsuttonil/status/2094140618045800510", "chip": "x", "note": "30 Aug. Silverscript = one contract. Argent = multi-actor."},
+        {"name": "Argent PR 60", "url": "https://github.com/argent-lang/argent/pull/60", "chip": "preview", "note": "Merged 10 Sep. Synced to sil v1.0.0. Not general production."},
         {"name": "23 Jun Kurrent RFC", "url": "https://research.kas.pa/t/kurrent-an-eltoo-inspired-latest-state-channel-on-kaspa/494", "chip": "research", "note": "a19q3 on research.kas.pa. Eltoo-inspired channel. Not product."}
       ]
     },

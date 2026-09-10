@@ -215,6 +215,22 @@ Not kasdomain. Not this desk’s covenant P2SH. Source of truth is KNS GitBook.
 
 FAQ still says “only KasWare” in places. Use the **supporting wallet** table.
 
+### 4c. `kns://` overlay (STP-KAS — not official KNS)
+
+Not a new chain. Not Tor-by-rebrand. **Kaspa settles. The name locates. The user machine runs the dApp.**
+
+| Plane | What | Live? |
+| --- | --- | --- |
+| Settle | KAS + optional `KasName.sil` | L1 yes. Name UTXO optional. |
+| Locate | Official KNS API or your simply-kaspa-indexer | yes |
+| Session | `peer` / `onion` / `noise` records | spec; names can publish keys |
+| Run | IPFS/KFS/contenthash in a local sandbox; pay KAS / 402 | spec |
+
+- Spec: https://github.com/STP-KAS/kns-spec/blob/main/OVERLAY.md
+- Page: https://stp-kas.github.io/kns-spec/overlay.html
+- `https://alice.kas.limo` leaks DNS. `kns://alice.kas` must not need ICANN or a CA.
+- Uniqueness is still indexer FCFS. Overlay does not fix that.
+
 ---
 
 ## 5. Core + builder X handles

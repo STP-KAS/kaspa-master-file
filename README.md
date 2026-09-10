@@ -170,7 +170,7 @@ KIP-21 lanes are 20-byte `subnetwork_id`s, ≤50 non-coinbase lanes/block, 1e9 g
 
 | Repo | URL | Honest |
 | --- | --- | --- |
-| argent-lang/argent | https://github.com/argent-lang/argent | Multi-actor covenants. Not production SC. |
+| argent-lang/argent | https://github.com/argent-lang/argent | Multi-actor layer **above** Silverscript (Sutton, 30 Aug 2026). [PR #60](https://github.com/argent-lang/argent/pull/60) merged **10 Sep** pins sil **v1.0.0**. README: **not release-ready**. |
 | KaspaKii/Portrait | https://github.com/KaspaKii/Portrait | Public 1 Sep 2026. Testnet-only, unaudited. |
 | STP-KAS/gramlane | https://github.com/STP-KAS/gramlane | This desk. Grams, kasdomain. |
 | STP-KAS/project-delusional | https://github.com/STP-KAS/project-delusional | Stack index |
@@ -211,8 +211,9 @@ Yonatan’s own “rough core” list (30 Apr 2025): michaelsutton, hashdag, cod
 | Kaspa global | [@KASPAglobal](https://x.com/KASPAglobal) | 3 Sep 2026: Toccata live, not “coming soon”. |
 | Kaspa Commons | [@Kaspa_Commons](https://x.com/Kaspa_Commons) | Relays Discord (e.g. Ori Newman TN10 notes). Not core. |
 | This project | [@StppStp](https://x.com/StppStp) | Gramlane / project delusional. **Never DMs you.** |
-| Luke Dunshea | [@elldeeone](https://x.com/elldeeone) | SilverScript v1-rc1 credit. GitHub [elldeeone](https://github.com/elldeeone). |
-| Sivan Helfer | [@manyfest_](https://x.com/manyfest_) | SilverScript v1-rc1. GitHub [Manyfestation](https://github.com/Manyfestation). |
+| Luke Dunshea | [@elldeeone](https://x.com/elldeeone) | SilverScript v1 credit. GitHub [elldeeone](https://github.com/elldeeone). |
+| Sivan Helfer | [@manyfest_](https://x.com/manyfest_) | SilverScript v1 / KCC-20. GitHub [Manyfestation](https://github.com/Manyfestation). |
+| Alexander Säfström | [@asaefstroem](https://x.com/asaefstroem) | Credited by Ori on the v1-rc1 review (30 Aug). KCC-0. |
 
 ---
 
@@ -277,7 +278,10 @@ Telegram Bot API (platform, not Kaspa): https://core.telegram.org/bots/api · ht
 - kaspa.org rebuilt around “real-time decentralization” (2026). 10 BPS live. 100 BPS is a target, not a spec.
 - Official Toccata guide: https://docs.kaspa.org/toccata — consensus live; SilverScript v1 is tagged; Argent/vProgs tooling still early.
 - research.kas.pa catalogued in this file. Newest thread: **Kurrent** (23 Jun 2026). Not product.
-- STP-KAS implementer kit: https://stp-kas.github.io/kns-spec/ — KasWare/Kastle inscriptions + proven covenant txs. `KasName.sil` recompiled with silverc v1.0.0; template hash unchanged from rc1.
+- STP-KAS implementer kit: https://stp-kas.github.io/kns-spec/ — KasWare/Kastle inscriptions + proven covenant txs. `KasName.sil` on silverc v1.0.0 with **value conservation** (v1 tutorial: `validateOutputState` does not lock amount).
+- Ori v1 post: https://x.com/OriNewman/status/2097731203503640976 — “Silverscript will evolve, Argent will add higher layers.”
+- Sutton layers: https://x.com/michaelsuttonil/status/2094140618045800510 — Silverscript = one contract; Argent = multi-actor, not the v1 pin.
+- Argent [PR #60](https://github.com/argent-lang/argent/pull/60) merged **10 Sep 2026**, synced to sil v1.0.0, still not a general-production compiler.
 
 ### From Core R&D Telegram (via public recaps — not a scrape of private Discord)
 

@@ -1,8 +1,8 @@
 # Kaspa master file
 
-**Not Kaspa core. Not official KNS.** Public pin list by [@StppStp](https://x.com/StppStp) / [STP-KAS](https://github.com/STP-KAS). Freeze: **9 Sep 2026**.
+**Not Kaspa core. Not official KNS.** Public pin list by [@StppStp](https://x.com/StppStp) / [STP-KAS](https://github.com/STP-KAS). Freeze: **10 Sep 2026**.
 
-**project delusional.** Kaspa master file — pins, ideas, principles. One principle: skip centralised stablecoins for dapps. Fill is not a business: this desk keeps 0. Any Kaspa wallet (QR / kaspa: URI). In-page inject is only Kasware/Kastle. The jar is not Nakamoto. Darwin battletest: [STP-KAS/gramlanepeglab](https://github.com/STP-KAS/gramlanepeglab).
+**project delusional.** Kaspa master file — pins, ideas, principles. One principle: skip centralised stablecoins for dapps. Fill is not a business: this desk keeps 0. Any Kaspa wallet (QR / kaspa: URI). In-page inject is only Kasware/Kastle. The jar is not Nakamoto. Darwin battletest: [STP-KAS/gramlanepeglab](https://github.com/STP-KAS/gramlanepeglab). Receipt PoC after battling PegLab vs Parker: [STP-KAS/peglab-poc](https://github.com/STP-KAS/peglab-poc).
 
 This is a map. Merged Active KIP = law. Open PR, personal wiki, Discord rumor ≠ a pin. Gramlane tab: http://127.0.0.1:8081/masterfile
 
@@ -184,7 +184,10 @@ KIP-21 lanes are 20-byte `subnetwork_id`s, ≤50 non-coinbase lanes/block, 1e9 g
 | thesheepcat/K | https://github.com/thesheepcat/K | Decentralized microblog. Not this desk. |
 | coderofstuff/rusty-kaspa | https://github.com/coderofstuff/rusty-kaspa | Unofficial DAGKnight work. **Not a pin.** |
 | coderofstuff/dk-wiki | https://github.com/coderofstuff/dk-wiki | Unofficial wiki. **Not a pin.** |
-| parker2017code/kaspa-explained | https://github.com/parker2017code/kaspa-explained | Tracker source for kaspaexplained.com |
+| parker2017code/kaspa-explained | https://github.com/parker2017code/kaspa-explained | Tracker source for kaspaexplained.com. Public README **10 Sep**: V6 local journey 26 accepted TN10 txs; Cloudflare host is a separate gate. Wrap: **wTestUSD cannot buy crops.** |
+| parker2017code/tn12-covenant-vault-demo | https://github.com/parker2017code/tn12-covenant-vault-demo | Historical escrow/vault evidence lab. **Do not use TN12 for Toccata product work** (IzioDev 6 Jun 2026). Steal rules; re-prove on TN10. |
+| STP-KAS/peglab-stp | https://github.com/STP-KAS/peglab-stp | tPEG classroom. Admin oracle + 2 tKAS pool. **WILL DEPEG.** Not money. |
+| STP-KAS/peglab-poc | https://github.com/STP-KAS/peglab-poc | Battle-tested receipt PoC. Parker unit + PegLab warning. Two tracks: public goods, or BTCPay-shaped software company. **Not USD.** ENGINE_SPEC until TN10 txids. |
 | a19q3/Kurrent | https://github.com/a19q3/Kurrent | Eltoo-inspired latest-state channel. Forum [494](https://research.kas.pa/t/kurrent-an-eltoo-inspired-latest-state-channel-on-kaspa/494). Devnet evidence. **Not product.** |
 
 L2 (out of Gramlane path): Igra, Kasplex — live elsewhere. This stack stays L1. Kurrent is L1-channel research, still out of Gramlane path.
@@ -307,7 +310,7 @@ Telegram Bot API (platform, not Kaspa): https://core.telegram.org/bots/api · ht
 
 ---
 
-## 7. News freeze (9 Sep 2026)
+## 7. News freeze (10 Sep 2026)
 
 - Toccata **live** on mainnet (DAA `474_165_565`, ~30 Jun 2026). KIPs 16/17/20/21 Active 15 Jul 2026.
 - rusty-kaspa **v2.0.1** is the Toccata maintenance tag.
@@ -324,6 +327,8 @@ Telegram Bot API (platform, not Kaspa): https://core.telegram.org/bots/api · ht
 - Ori v1 post: https://x.com/OriNewman/status/2097731203503640976 — “Silverscript will evolve, Argent will add higher layers.”
 - Sutton layers: https://x.com/michaelsuttonil/status/2094140618045800510 — Silverscript = one contract; Argent = multi-actor, not the v1 pin.
 - Argent [PR #60](https://github.com/argent-lang/argent/pull/60) merged **10 Sep 2026**, synced to sil v1.0.0, still not a general-production compiler.
+- Parker kaspa-explained public README **10 Sep**: V5/V6 Cloudflare migration in progress; V6 local browser journey **26 accepted TN10 txs** + 5 VM rejects. Hosted runtime is a separate gate. Economy order still dated 7 Sep (21 txs).
+- PegLab vs Parker battletest: receipts **1–0 Parker**; classroom **1–0 PegLab**; dollars **0–0**. Successor A is Parker’s 1-sompi receipt. New repo [STP-KAS/peglab-poc](https://github.com/STP-KAS/peglab-poc). Do not mainnet tPEG. Do not use TN12.
 
 ### From Core R&D Telegram (via public recaps — not a scrape of private Discord)
 

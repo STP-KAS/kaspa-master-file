@@ -211,6 +211,7 @@ Not kasdomain. Not this desk’s covenant P2SH. Source of truth is KNS GitBook.
 | API | https://api.knsdomains.org/mainnet | Resolver |
 | simply-kaspa-indexer | https://github.com/supertypo/simply-kaspa-indexer | L1 Postgres indexer (Supertypo). Not the KNS name API. |
 | Implementer kit | https://stp-kas.github.io/kns-spec/ | STP-KAS copy for wallets. Not official KNS. |
+| Overlay (`kns://`) | https://github.com/STP-KAS/kns-spec/blob/main/OVERLAY.md | Name-addressed layer: locate on KNS, settle on Kaspa, run dApps locally. Not a new chain. |
 
 FAQ still says “only KasWare” in places. Use the **supporting wallet** table.
 

@@ -246,6 +246,7 @@
         {"name": "KNS wallets", "url": "https://kns-2.gitbook.io/kns-docs-1/supporting-wallet", "chip": "kns", "note": "KasWare, Kastle extension, Kurncy, Kasanova. Kastle mobile cannot inscribe. No ECDSA."},
         {"name": "KNS indexer API", "url": "https://kns-2.gitbook.io/kns-docs-1/kns-indexer-api", "chip": "kns", "note": "api.knsdomains.org + apidoc.knsdomains.org."},
         {"name": "KNS app", "url": "https://app.knsdomains.org", "chip": "kns", "note": "Official product."},
+        {"name": "KNS overlay kns://", "url": "https://github.com/STP-KAS/kns-spec/blob/main/OVERLAY.md", "chip": "web4", "note": "Name-addressed layer above inscriptions. Not official KNS L2. Not a new chain."},
         {"name": "kaspium_wallet", "url": "https://github.com/azbuky/kaspium_wallet", "chip": "wallet", "note": "Mobile. Discord demand."},
         {"name": "native-assets-zk-poc", "url": "https://github.com/someone235/native-assets-zk-poc", "chip": "tg", "note": "Ori Newman. Native assets + ZK."},
         {"name": "risc0", "url": "https://github.com/risc0/risc0", "chip": "zk", "note": "Prover stack in R&D. Not a product here."},

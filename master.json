@@ -44,7 +44,8 @@
         {"name": "Darwin battletest", "url": "https://github.com/STP-KAS/gramlanepeglab", "chip": "poc", "note": "Parker mix Darwin. Grams sequence dapps. PegLab depegs. MIX teaches. Compiler tag is not a dapp."},
         {"name": "peglab-poc", "url": "https://github.com/STP-KAS/peglab-poc", "chip": "poc", "note": "Battle-tested receipt PoC. Parker unit + PegLab warning. Track 0 public goods, Track 1 BTCPay-shaped software. Not USD. ENGINE_SPEC until TN10 txids."},
         {"name": "Think big (do-this-next)", "url": "https://github.com/STP-KAS/kaspa-master-file/blob/main/THINK-BIG.md", "chip": "plan", "note": "11 Sep full-authority orders after freeze + grok review. Summary, steps, 13 propositions. Not a KIP. Not a Kaspa dollar."},
-        {"name": "Grok x Kaspa collab", "url": "https://github.com/STP-KAS/grok-kaspa-collab", "chip": "collab", "note": "Core idea, commercial uses, beyond-crypto scheme. Real vs delusional. Not a KIP."}
+        {"name": "Grok x Kaspa collab", "url": "https://github.com/STP-KAS/grok-kaspa-collab", "chip": "collab", "note": "Core idea, commercial uses, beyond-crypto scheme. Real vs delusional. Not a KIP."},
+        {"name": "xAI reasoning 3", "url": "https://github.com/STP-KAS/xai-reasoning-3", "chip": "desk", "note": "Dual-rail EUR till. SEPA EPC + optional kaspa QR. 402 refuses unverified txids. Not a dollar."}
       ]
     },
     {

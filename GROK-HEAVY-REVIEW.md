@@ -3,7 +3,7 @@
 **Repo:** [STP-KAS/kaspa-master-file](https://github.com/STP-KAS/kaspa-master-file)  
 **What this is:** adversarial pass on the 11 Sep freeze (covenants, Argent, SilverScript). Not Kaspa core. Not a KIP.
 
-**Verdict:** freeze is shippable. The 4 Sep intel pack was **wrong** on the compiler pin (`v1-rc1` after `v1.0.0` had tagged). That is fixed. Three holes on the live pin stay open and must not be papered over.
+**Verdict:** freeze is shippable. The 4 Sep intel pack was **wrong** on the compiler pin (`v1-rc1` after `v1.0.0` had tagged). That is fixed. **Four** holes on the live pin stay open and must not be papered over.
 
 ---
 
@@ -109,9 +109,27 @@ Kill if: foreign `readInputState`; silverc `master` replaces v1.0.0; tPEG listed
 What the freeze still got wrong or left out, now patched in README / `master.json` / intel-pack:
 
 - `/toccata-status` **Moved** → [`/status`](https://kaspaexplained.com/status)
-- Missing 402 pin: [elldeeone/kaspa-x402](https://github.com/elldeeone/kaspa-x402). k402 is a channel, not x402.
+- Missing 402 pin: [elldeeone/kaspa-x402](https://github.com/elldeeone/kaspa-x402). k402 is HTTP 402 + a `kaspa-channel` lock, **not** the x402 v2 binding.
 - vProgs **#142** open (lane-anchor). Still not product.
 - Public intel-pack had `C:\Users\…` paths. Redacted to `LOCAL`.
 - `#250` rechecked **open**. Tuple split still forbidden.
+
+---
+
+## Grok heavy review (machine pass, 11 Sep)
+
+Reviewer notes for `661d5bc..main` (freeze + second look). Headline pins **match live GitHub/APIs**. Residual registry copy would have sent a reader back to Aug 24 covenant numbers. Those issues are closed in this commit.
+
+| # | Severity | Finding | Status |
+| --- | --- | --- | --- |
+| 1 | bug | R-DOCS-REFRESH still “prefer for current numbers” (would revive 28,125) | **fixed** — marked superseded; live pin `/build-on-kaspa` |
+| 2 | bug | R-GITHUB said CSVs live “(this folder)” on GitHub | **fixed** — `LOCAL/…`, derived-files table says not in this repo |
+| 3 | suggestion | README §10 still had `Downloads\` / `Documents\` dump paths | **fixed** — `LOCAL/ChatExport_…`, `LOCAL/adiscord api` |
+| 4 | suggestion | R-ARGENT-EP01 still `Documents\argent-template` | **fixed** — `LOCAL/argent-template/` |
+| 5 | suggestion | `master.json` listed MWEB last; README newest-first | **fixed** — JSON order matches README |
+| 6 | suggestion | k402 flattened to “channel, not 402” | **fixed** — HTTP 402 + `kaspa-channel`; not x402 v2; not adopted KCC-0402 |
+| 7 | nit | “Three holes” vs four numbered | **fixed** — four holes |
+
+**Still open (not ours to merge):** silverscript #234, #243, #249/#250; Argent no tag + two unimplemented leader/delegate rules; KCC-20 Draft; vProgs #142.
 
 *Sources fetched 11 Sep 2026: api.kaspa.org (blockdag, coinsupply, blockreward, hashrate); kaspaexplained.com/status + /build-on-kaspa; GitHub APIs for kaspanet/silverscript, argent-lang/argent, kaspanet/rusty-kaspa, kaspanet/kccs, kaspanet/vprogs, elldeeone/kaspa-x402, Kali123411/k402; research.kas.pa/latest.json; core X (OriNewman, michaelsuttonil, IzioDev).*

@@ -80,7 +80,7 @@ Live L1 snapshot (api.kaspa.org, this date) plus kaspaexplained.com / rusty-kasp
 
 ### Derived files (LOCAL pack — not in this GitHub repo)
 
-These sit next to the weekly intel master on this machine. This GitHub repo only ships `README.md`, `master.json`, `intel-pack.md`, `GROK-HEAVY-REVIEW.md`, `LICENSE`.
+These sit next to the weekly intel master on this machine. This GitHub repo only ships `README.md`, `master.json`, `intel-pack.md`, `GROK-HEAVY-REVIEW.md`, `THINK-BIG.md`, `LICENSE`.
 
 | File | Contents |
 | --- | --- |

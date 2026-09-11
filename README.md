@@ -6,7 +6,7 @@
 
 This is a map. Merged Active KIP = law. Open PR, personal wiki, Discord rumor ≠ a pin. Gramlane tab: http://127.0.0.1:8081/masterfile
 
-Repo: **kaspa-master-file** (the “kaspa mister fil”). Grok heavy review of this freeze: [`GROK-HEAVY-REVIEW.md`](GROK-HEAVY-REVIEW.md). Think big / do-this-next: [`THINK-BIG.md`](THINK-BIG.md). Local URLs (`127.0.0.1`) are this machine, not GitHub.
+Repo: **kaspa-master-file** (the “kaspa mister fil”). Grok heavy review of this freeze: [`GROK-HEAVY-REVIEW.md`](GROK-HEAVY-REVIEW.md). Think big / do-this-next: [`THINK-BIG.md`](THINK-BIG.md). Grok collab (core idea, commercial uses, beyond crypto): [STP-KAS/grok-kaspa-collab](https://github.com/STP-KAS/grok-kaspa-collab). Local URLs (`127.0.0.1`) are this machine, not GitHub.
 
 ### What this pass did (11 Sep 2026, second look)
 
@@ -215,6 +215,7 @@ KIP-21 lanes are 20-byte `subnetwork_id`s, ≤50 non-coinbase lanes/block, 1e9 g
 | parker2017code/tn12-covenant-vault-demo | https://github.com/parker2017code/tn12-covenant-vault-demo | Historical escrow/vault evidence lab. **Do not use TN12 for Toccata product work** (IzioDev 6 Jun 2026). Steal rules; re-prove on TN10. |
 | STP-KAS/peglab-stp | https://github.com/STP-KAS/peglab-stp | tPEG classroom. Admin oracle + 2 tKAS pool. **WILL DEPEG.** Not money. |
 | STP-KAS/peglab-poc | https://github.com/STP-KAS/peglab-poc | Battle-tested receipt PoC. Parker unit + PegLab warning. Two tracks: public goods, or BTCPay-shaped software company. **Not USD.** ENGINE_SPEC until TN10 txids. |
+| STP-KAS/grok-kaspa-collab | https://github.com/STP-KAS/grok-kaspa-collab | Grok × Kaspa collab. Core idea, commercial uses, beyond-crypto scheme. Not a KIP. Not a dollar. |
 | a19q3/Kurrent | https://github.com/a19q3/Kurrent | Eltoo-inspired latest-state channel. Forum [494](https://research.kas.pa/t/kurrent-an-eltoo-inspired-latest-state-channel-on-kaspa/494). Devnet evidence. **Not product.** |
 | elldeeone/kaspa-x402 | https://github.com/elldeeone/kaspa-x402 | Intended **x402 v2** binding. TN10 alpha. Site [kaspa-x402.org](https://kaspa-x402.org). Bind this envelope; do not invent a fourth 402. |
 | Kali123411/k402 | https://github.com/Kali123411/k402 | HTTP 402 + `kaspa-channel` lock/voucher. [kccs#4](https://github.com/kaspanet/kccs/pull/4) still open. Steal the lock. **Not** elldeeone’s x402 v2 binding. **Not** adopted KCC-0402. |

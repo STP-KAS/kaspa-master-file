@@ -43,7 +43,8 @@
         {"name": "Anyone hosts", "url": "https://github.com/STP-KAS/gramlane", "chip": "host", "note": "Same principle as a node: PC binary, PWA of that host, hardware signs the fill. Many desks ≠ Circle. The jar is not Nakamoto."},
         {"name": "Darwin battletest", "url": "https://github.com/STP-KAS/gramlanepeglab", "chip": "poc", "note": "Parker mix Darwin. Grams sequence dapps. PegLab depegs. MIX teaches. Compiler tag is not a dapp."},
         {"name": "peglab-poc", "url": "https://github.com/STP-KAS/peglab-poc", "chip": "poc", "note": "Battle-tested receipt PoC. Parker unit + PegLab warning. Track 0 public goods, Track 1 BTCPay-shaped software. Not USD. ENGINE_SPEC until TN10 txids."},
-        {"name": "Think big (do-this-next)", "url": "https://github.com/STP-KAS/kaspa-master-file/blob/main/THINK-BIG.md", "chip": "plan", "note": "11 Sep full-authority orders after freeze + grok review. Summary, steps, 13 propositions. Not a KIP. Not a Kaspa dollar."}
+        {"name": "Think big (do-this-next)", "url": "https://github.com/STP-KAS/kaspa-master-file/blob/main/THINK-BIG.md", "chip": "plan", "note": "11 Sep full-authority orders after freeze + grok review. Summary, steps, 13 propositions. Not a KIP. Not a Kaspa dollar."},
+        {"name": "Grok x Kaspa collab", "url": "https://github.com/STP-KAS/grok-kaspa-collab", "chip": "collab", "note": "Core idea, commercial uses, beyond-crypto scheme. Real vs delusional. Not a KIP."}
       ]
     },
     {
@@ -254,6 +255,7 @@
         {"name": "elldeeone/kaspa-x402", "url": "https://github.com/elldeeone/kaspa-x402", "chip": "tn10", "note": "x402 v2 binding. Bind this. Do not invent a fourth envelope."},
         {"name": "Grok heavy review", "url": "https://github.com/STP-KAS/kaspa-master-file/blob/main/GROK-HEAVY-REVIEW.md", "chip": "review", "note": "11 Sep adversarial pass. Pin v1.0.0. Holes #234 #243 #249."},
         {"name": "Think big", "url": "https://github.com/STP-KAS/kaspa-master-file/blob/main/THINK-BIG.md", "chip": "plan", "note": "Do-this-next. Track 0 / Track 1. Bind kaspa-x402. Fill timeout journal. Not a dollar."},
+        {"name": "Grok x Kaspa collab", "url": "https://github.com/STP-KAS/grok-kaspa-collab", "chip": "collab", "note": "Core idea, commercial uses, beyond-crypto scheme. Not a dollar."},
         {"name": "kccs#20", "url": "https://github.com/kaspanet/kccs/pull/20", "chip": "draft", "note": "KCC-20 vectors. Transfer sig unconfirmed."},
         {"name": "silverscript#223", "url": "https://github.com/kaspanet/silverscript/pull/223", "chip": "merged", "note": "IzioDev dispatch tags ↔ KCC-1."},
         {"name": "simply-kaspa-indexer", "url": "https://github.com/supertypo/simply-kaspa-indexer", "chip": "indexer", "note": "L1 Postgres indexer. KNS resolver uses this class of indexer. Not api.knsdomains.org."},

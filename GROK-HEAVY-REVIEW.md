@@ -132,4 +132,6 @@ Reviewer notes for `661d5bc..main` (freeze + second look). Headline pins **match
 
 **Still open (not ours to merge):** silverscript #234, #243, #249/#250; Argent no tag + two unimplemented leader/delegate rules; KCC-20 Draft; vProgs #142.
 
+Orders after this review: [`THINK-BIG.md`](THINK-BIG.md).
+
 *Sources fetched 11 Sep 2026: api.kaspa.org (blockdag, coinsupply, blockreward, hashrate); kaspaexplained.com/status + /build-on-kaspa; GitHub APIs for kaspanet/silverscript, argent-lang/argent, kaspanet/rusty-kaspa, kaspanet/kccs, kaspanet/vprogs, elldeeone/kaspa-x402, Kali123411/k402; research.kas.pa/latest.json; core X (OriNewman, michaelsuttonil, IzioDev).*

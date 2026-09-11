@@ -102,4 +102,16 @@ Kill if: foreign `readInputState`; silverc `master` replaces v1.0.0; tPEG listed
 
 ---
 
-*Sources fetched 11 Sep 2026: api.kaspa.org (blockdag, coinsupply, blockreward, hashrate); kaspaexplained.com/status + /build-on-kaspa; GitHub APIs for kaspanet/silverscript, argent-lang/argent, kaspanet/rusty-kaspa, kaspanet/kccs, kaspanet/vprogs; research.kas.pa/latest.json; core X (OriNewman, michaelsuttonil, IzioDev).*
+---
+
+## Second look (same day, after merge)
+
+What the freeze still got wrong or left out, now patched in README / `master.json` / intel-pack:
+
+- `/toccata-status` **Moved** → [`/status`](https://kaspaexplained.com/status)
+- Missing 402 pin: [elldeeone/kaspa-x402](https://github.com/elldeeone/kaspa-x402). k402 is a channel, not x402.
+- vProgs **#142** open (lane-anchor). Still not product.
+- Public intel-pack had `C:\Users\…` paths. Redacted to `LOCAL`.
+- `#250` rechecked **open**. Tuple split still forbidden.
+
+*Sources fetched 11 Sep 2026: api.kaspa.org (blockdag, coinsupply, blockreward, hashrate); kaspaexplained.com/status + /build-on-kaspa; GitHub APIs for kaspanet/silverscript, argent-lang/argent, kaspanet/rusty-kaspa, kaspanet/kccs, kaspanet/vprogs, elldeeone/kaspa-x402, Kali123411/k402; research.kas.pa/latest.json; core X (OriNewman, michaelsuttonil, IzioDev).*

@@ -6,7 +6,24 @@
 
 This is a map. Merged Active KIP = law. Open PR, personal wiki, Discord rumor ≠ a pin. Gramlane tab: http://127.0.0.1:8081/masterfile
 
-Repo: **kaspa-master-file** (the “kaspa mister fil”). Grok heavy review of this freeze: [`GROK-HEAVY-REVIEW.md`](GROK-HEAVY-REVIEW.md).
+Repo: **kaspa-master-file** (the “kaspa mister fil”). Grok heavy review of this freeze: [`GROK-HEAVY-REVIEW.md`](GROK-HEAVY-REVIEW.md). Local URLs (`127.0.0.1`) are this machine, not GitHub.
+
+### What this pass did (11 Sep 2026, second look)
+
+Reviewed the freeze after it landed on `main` ([PR #1](https://github.com/STP-KAS/kaspa-master-file/pull/1)). Fixed what was still wrong or missing:
+
+| Found | Change |
+| --- | --- |
+| `kaspaexplained.com/toccata-status` **Moved** | Point at [`/status`](https://kaspaexplained.com/status) (live referee). |
+| Covenant counts had no official-sites row | Add [`/build-on-kaspa`](https://kaspaexplained.com/build-on-kaspa) (84,196 / 687 / ~1.56M KAS). |
+| 2026 forum threads not newest-first | MWEB-like (8 Sep) listed first. |
+| R&D log stopped at 4 Sep | Add 9–10 Sep: Sil v1.0.0, Argent #59/#60, Sil #249. |
+| 402 path missing from this map | Pin [elldeeone/kaspa-x402](https://github.com/elldeeone/kaspa-x402) (TN10 alpha, bind this). [Kali123411/k402](https://github.com/Kali123411/k402) is the **channel** primitive + [kccs#4](https://github.com/kaspanet/kccs/pull/4) draft — steal the lock, do not call it Kaspa’s x402. |
+| vProgs #142 missing | Bridge lane-anchor **open** (10 Sep). Still not product. |
+| Public intel-pack leaked `C:\Users\…` paths | Redact to `LOCAL`. Dumps stay off this repo. |
+| `#250` still unmerged | Rechecked. `State[].split()` tuples still forbidden on v1.0.0. |
+
+Pins **unchanged:** silverc **v1.0.0** (`3ed9733`); `#234` unmerged; `#243` open; Argent no tag; KCC-20 Draft; Toccata live; DAGKnight not shipped.
 
 ---
 
@@ -60,7 +77,8 @@ Kaspa is **proof of work**. Miners spend energy. There is no staking. Fair launc
 | Node API | https://api.kaspa.org | Public REST. Not kasdomain. |
 | Kaspa Explained | https://kaspaexplained.com/ | Independent explainer. Not kaspanet. |
 | Tracker | https://kaspaexplained.com/kips | Human KIP/KCC map, not law |
-| Toccata status | https://kaspaexplained.com/toccata-status | Live claims table |
+| Status referee | https://kaspaexplained.com/status | Live vs roadmap vs wrong. `/toccata-status` **Moved** here. |
+| Build / covenants | https://kaspaexplained.com/build-on-kaspa | Covenant counts + builder routes. Sep 1 indexer baseline. |
 
 ---
 
@@ -70,7 +88,7 @@ Official research forum (Discourse). **A thread is not a KIP. A KIP is not produ
 
 JSON API if you want to re-check: `https://research.kas.pa/latest.json` · `https://research.kas.pa/categories.json` · `https://research.kas.pa/top.json?period=all`
 
-### Forum + categories (7 Sep 2026)
+### Forum + categories (rechecked 11 Sep 2026)
 
 | What | URL | Honest |
 | --- | --- | --- |
@@ -85,10 +103,10 @@ JSON API if you want to re-check: `https://research.kas.pa/latest.json` · `http
 
 | Thread | URL | Honest |
 | --- | --- | --- |
+| Optional privacy / MWEB-like (8 Sep 2026) | https://research.kas.pa/t/optional-privacy-layer-for-kaspa-similar-to-litecoin-mweb/522 | JackKas. One post, ~11 views. **Not a KIP. Not product.** |
 | Kurrent (23 Jun 2026) | https://research.kas.pa/t/kurrent-an-eltoo-inspired-latest-state-channel-on-kaspa/494 | a19q3 (Arthur Zhang). Eltoo-inspired latest-state **bilateral** channel on KIP-17/20 + DAA-relative sequence. Non-confiscatory, **not watch-free**. Repo [a19q3/Kurrent](https://github.com/a19q3/Kurrent). Local-devnet evidence only. **Not product. Not Gramlane.** |
 | Dynamic tail emission (6 Apr 2026) | https://research.kas.pa/t/dynamic-tail-emission-that-preserves-the-maximum-supply-to-secure-mining/473 | swarmshine. Economics. **Not a KIP. Kaspa has a max supply; this is a proposal.** |
 | Adaptive block sizes (16 Feb 2026) | https://research.kas.pa/t/adaptive-block-sizes/464 | Bit_Cat; hashdag replied. Economics. **Not shipped.** |
-| Optional privacy / MWEB-like (8 Sep 2026) | https://research.kas.pa/t/optional-privacy-layer-for-kaspa-similar-to-litecoin-mweb/522 | JackKas. One post, ~11 views. **Not a KIP. Not product.** |
 
 ### vProgs / L1↔L2 (design, not product)
 
@@ -190,6 +208,8 @@ KIP-21 lanes are 20-byte `subnetwork_id`s, ≤50 non-coinbase lanes/block, 1e9 g
 | STP-KAS/peglab-stp | https://github.com/STP-KAS/peglab-stp | tPEG classroom. Admin oracle + 2 tKAS pool. **WILL DEPEG.** Not money. |
 | STP-KAS/peglab-poc | https://github.com/STP-KAS/peglab-poc | Battle-tested receipt PoC. Parker unit + PegLab warning. Two tracks: public goods, or BTCPay-shaped software company. **Not USD.** ENGINE_SPEC until TN10 txids. |
 | a19q3/Kurrent | https://github.com/a19q3/Kurrent | Eltoo-inspired latest-state channel. Forum [494](https://research.kas.pa/t/kurrent-an-eltoo-inspired-latest-state-channel-on-kaspa/494). Devnet evidence. **Not product.** |
+| elldeeone/kaspa-x402 | https://github.com/elldeeone/kaspa-x402 | Intended **x402 v2** binding. TN10 alpha. Site [kaspa-x402.org](https://kaspa-x402.org). Bind this envelope; do not invent a fourth 402. |
+| Kali123411/k402 | https://github.com/Kali123411/k402 | L1 covenant **payment channel** + [kccs#4](https://github.com/kaspanet/kccs/pull/4) draft. Steal the lock/voucher. **Not** Kaspa’s x402. |
 
 L2 (out of Gramlane path): Igra, Kasplex — live elsewhere. This stack stays L1. Kurrent is L1-channel research, still out of Gramlane path.
 
@@ -351,6 +371,9 @@ Telegram R&D is observer-only for most people. Discord `#development` / `#resear
 | 3 Sep | `@KASPAglobal`: Toccata is live (DAA 474,165,565). Not coming soon. | X |
 | 3–4 Sep | Framing / foreign-state reads: Sutton says `#234` closed because history assumptions; Scopio/supertypo tests still show slide on unmodified silverc. **Gramlane still never `readInputState`s a foreign UTXO.** | kaspa.news 4 Sep |
 | 4 Sep | rusty-kaspa `dagknight` PRs still **open/draft**. | GitHub |
+| 9 Sep | SilverScript **v1.0.0** tagged (`3ed9733`). Compiler pin. | GitHub release; Ori X |
+| 8–10 Sep | Argent #59 (state vectors) then #60 (sil v1.0.0 + leader/delegate). Two compiler rules still unimplemented. | GitHub |
+| 10 Sep | Sil #249 `State[].split()` tuple hole on the pin. Fix #250 **open**. | GitHub |
 
 ---
 
@@ -383,7 +406,8 @@ Yonatan (digital cash, cohesive tooling, core ≠ product) → Sutton (L1 covena
 | [argent-lang/argent](https://github.com/argent-lang/argent) | Sutton multi-actor frontend. **#59 merged 8 Sep** state vectors in `args!`. **#60 merged 10 Sep** sil v1.0.0 + leader/delegate guide (two rules still unimplemented). Unaudited. No tag. |
 | [argent-lang/argent-playground](https://github.com/argent-lang/argent-playground) | Examples |
 | [argent-lang/argent-template](https://github.com/argent-lang/argent-template) | Episode-01 ticketing demo |
-| [kaspanet/vprogs#139](https://github.com/kaspanet/vprogs/pull/139) | **Open.** ExitLeaf + claim kit. Also #138/#140. No testnet. |
+| [kaspanet/vprogs#139](https://github.com/kaspanet/vprogs/pull/139) | **Open.** ExitLeaf + claim kit. Also #138/#140. **#142** bridge lane-anchor (10 Sep). No product testnet. |
+| [elldeeone/kaspa-x402](https://github.com/elldeeone/kaspa-x402) | TN10 x402 v2 binding. Bind this. Not a fourth envelope. |
 | [kaspanet/kccs#20](https://github.com/kaspanet/kccs/pull/20) | **Open draft.** KCC-20 vectors. Transfer sig unconfirmed. |
 | [kaspanet/silverscript#223](https://github.com/kaspanet/silverscript/pull/223) | **Merged.** Dispatch tags ↔ KCC-1 (IzioDev). |
 | [supertypo/simply-kaspa-indexer](https://github.com/supertypo/simply-kaspa-indexer) | L1 Postgres indexer. KNS docs: the KNS resolver uses this. Not api.knsdomains.org. |
@@ -415,8 +439,8 @@ TG-dense, Discord-light: silverscript, vprogs, Argent, kccs, python-sdk — trea
 
 ### Gramlane filter (from that pack)
 
-**Now:** pinned **silverc v1.0.0** (Ori, 9 Sep, `3ed9733`); WorkCredit / KasName via `validateOutputState` only; grams not KCC-20; POS/Pay; one kasdomain; `/234` still a hole; no `State[].split()` tuples until #250; pointers to Kassword/pqv/Portrait.  
-**Not us:** DAGKnight, #234 retry, guessed compute budget, Argent ICC / leader-delegate, vProg exits, L2 stables, Kurrent channels, MWEB privacy thread.
+**Now:** pinned **silverc v1.0.0** (Ori, 9 Sep, `3ed9733`); WorkCredit / KasName via `validateOutputState` only; grams not KCC-20; POS/Pay; one kasdomain; `/234` still a hole; no `State[].split()` tuples until #250; HTTP 402 binds [elldeeone/kaspa-x402](https://github.com/elldeeone/kaspa-x402); pointers to Kassword/pqv/Portrait.  
+**Not us:** DAGKnight, #234 retry, guessed compute budget, Argent ICC / leader-delegate, vProg exits, L2 stables, Kurrent channels, MWEB privacy thread, a fourth 402 envelope, calling k402 “x402”.
 
 ---
 

@@ -1,7 +1,8 @@
 # Kaspa High-Value Intel Master Pack
 
 **Date:** 2026-07-26 (registry updated **2026-09-11**; SilverScript pin **2026-09-09**)  
-**Purpose:** Single index of community + founder intel for future projects.
+**Purpose:** Single index of community + founder intel for future projects.  
+**Public copy:** `LOCAL/…` paths are this machine. Chat dumps and CSVs are **not** in this GitHub repo.
 
 **9 Sep 2026:** Ori Newman (someone235) tagged **[silverscript v1.0.0](https://github.com/kaspanet/silverscript/releases/tag/v1.0.0)** (`3ed9733`). That is now the pin. v1-rc1 is history. `#234` still closed unmerged. `#243` still open. `#249` `State[].split()` tuple destructure is a live hole on this pin (fix `#250` open).
 
@@ -43,7 +44,7 @@ Live L1 snapshot (api.kaspa.org, this date) plus kaspaexplained.com / rusty-kasp
 
 **Do not claim:** 100 BPS live; instant irreversible payments; DAGKnight is current consensus; mature native smart contracts; KCC-0020/0021/0402 adopted; Argent production-ready; vProgs live; Portrait or kaspa-pqv on mainnet; Gramlane is Kassword / KCC-20 / Argent; `State[].split()` tuple destructure is safe on v1.0.0. SilverScript **v1.0.0 is tagged** — that is the compiler pin, not a claim that every app is audited.
 
-**Narrative asset (this update):** `C:\Users\Remco\Documents\kaspa-attenborough-2026\kaspa-a-natural-history-2026.mp4` — Attenborough wildlife-doc parody, updated from the Apr 2025 CryptoQTK clip (`x.com/CryptoQTK/status/1908285242412003694`). Ethos kept (fair launch vs memes/VC coins; Kaspa as the evolved predator). Facts updated: Crescendo 10 BPS, Toccata covenants/ZK live, vProgs still in the wings. Script: `SCRIPT.md` / `narration.txt`. 720p share copy: `kaspa-a-natural-history-2026-720p.mp4`.
+**Narrative asset (this update):** `LOCAL/kaspa-attenborough-2026/` (this machine, not uploaded) — Attenborough wildlife-doc parody, updated from the Apr 2025 CryptoQTK clip (`x.com/CryptoQTK/status/1908285242412003694`). Ethos kept (fair launch vs memes/VC coins; Kaspa as the evolved predator). Facts updated: Crescendo 10 BPS, Toccata covenants/ZK live, vProgs still in the wings.
 
 ---
 
@@ -51,15 +52,15 @@ Live L1 snapshot (api.kaspa.org, this date) plus kaspaexplained.com / rusty-kasp
 
 | ID | Path | What it is | Value |
 | --- | --- | --- | --- |
-| **R-TG-RND** | `C:\Users\Remco\Documents\atelgram rd\` | Core R&D Telegram cleans (11 files) | Critical protocol design |
-| **R-DISCORD** | `C:\Users\Remco\Documents\adiscord api\` | 41 Discord channel dumps | Ecosystem, product demand, timeline |
-| **R-TRANSCRIPTS** | `C:\Users\Remco\Documents\atranscriptskaspa\` | Founder/core deep dives | Architecture intent, narrative |
+| **R-TG-RND** | `LOCAL/atelgram rd/` | Core R&D Telegram cleans (11 files). Not in this repo. | Critical protocol design |
+| **R-DISCORD** | `LOCAL/adiscord api/` | 41 Discord channel dumps. Not in this repo. | Ecosystem, product demand, timeline |
+| **R-TRANSCRIPTS** | `LOCAL/atranscriptskaspa/` | Founder/core deep dives. Not in this repo. | Architecture intent, narrative |
 | **R-GITHUB** | `kaspa-github-repos-*.csv/json/md` (this folder) | All GitHub repos mentioned in TG+Discord | Code map / dependency radar |
 | **R-DOCS** | docs.kaspa.org, **kaspaexplained.com** | Canonical + builder framing | Spec truth + status labels |
 | **R-DOCS-REFRESH** | `kaspaexplained-com-REFRESH-2026-08.txt` | Aug 2026 site refresh (adoption, fact-check, demos) | Prefer for current numbers |
 | **R-DOCS-REPO** | https://github.com/parker2017code/kaspa-explained · site kaspaexplained.com | Site source + CLAIMS.yml + demos + publish gates | Machine-checkable status referee |
-| **R-KASSMITHS** | `C:\Users\Remco\Documents\aaapikassmith\` | Kas-Smiths forum API dump | KCC20 / standards workshop |
-| **R-AGENC** | `C:\Users\Remco\Documents\aatelegram agenC sol\` | AgenC Solana Telegram export + cleans | Agent-economy case study |
+| **R-KASSMITHS** | `LOCAL/aaapikassmith/` | Kas-Smiths forum API dump. Not in this repo. | KCC20 / standards workshop |
+| **R-AGENC** | `LOCAL/aatelegram agenC sol/` | AgenC Solana Telegram export + cleans. Not in this repo. | Agent-economy case study |
 | **R-ARGENT** | https://github.com/orgs/argent-lang/repositories | Argent org (compiler, playground, template) | Multi-covenant app language tooling |
 | **R-ARGENT-EP01** | https://github.com/argent-lang/argent-template/tree/episode-01 · local `Documents\argent-template` | Episode-01 ticketing (Event/Ticket) | Hands-on Argent multi-actor demo |
 | **R-SIL-ABI** | https://github.com/kaspanet/silverscript/pull/232 | Portable `SilAbiArtifact` (merged 28 Aug 2026) | Compiler/debugger/external tooling share one JSON ABI |
@@ -72,7 +73,9 @@ Live L1 snapshot (api.kaspa.org, this date) plus kaspaexplained.com / rusty-kasp
 | **R-DOCS-GH** | https://github.com/parker2017code/kaspa-explained | kaspaexplained.com site source | GitHub only |
 | **R-X-IZIO** | https://x.com/IzioDev · https://progdoc.izio.fr | IzioDev / programmability tree | Builder path + tooling education |
 | **R-X** | `x-handles-credible-sources-insert-index.txt` | Tiered Kaspa X handles | Pointer sources (not primary proof) |
-| **R-NARRATIVE-2026** | `C:\Users\Remco\Documents\kaspa-attenborough-2026\` | Attenborough Kaspa film (Sep 2026 remake of Apr 2025 CryptoQTK piece) | Public-facing ethos + fact-checked VO |
+| **R-NARRATIVE-2026** | `LOCAL/kaspa-attenborough-2026/` | Attenborough Kaspa film (Sep 2026 remake of Apr 2025 CryptoQTK piece). Not in this repo. | Public-facing ethos + fact-checked VO |
+| **R-SIL-249** | https://github.com/kaspanet/silverscript/issues/249 | `State[].split()` tuple destructure on v1.0.0 | **Open.** Fix #250 unmerged. Skip that syntax. |
+| **R-X402** | https://github.com/elldeeone/kaspa-x402 | Kaspa x402 v2 binding (TN10 alpha) | Bind this envelope. k402 is a different object (channel). |
 
 ### Derived files (this pack)
 
@@ -392,20 +395,13 @@ Score future ideas against:
 # Part D — Quick open commands
 
 ```powershell
-# Full repo table
-Invoke-Item "C:\Users\Remco\Documents\kaspa-github-repos-full.md"
+# CSVs live on this machine (not in this repo). Replace LOCAL with your copy.
+Invoke-Item "LOCAL/kaspa-github-repos-full.md"
 
-# Machine filter: programmability only
-Import-Csv "C:\Users\Remco\Documents\kaspa-github-repos-intel.csv" |
+Import-Csv "LOCAL/kaspa-github-repos-intel.csv" |
   Where-Object category -eq 'programmability-zk' |
   Sort-Object { [int]$_.mentions_total } -Descending |
   Format-Table mentions_total, mentions_telegram_rd, mentions_discord, repo
-
-# Both corpora
-Import-Csv "C:\Users\Remco\Documents\kaspa-github-repos-intel.csv" |
-  Where-Object { $_.in_both -eq 'True' } |
-  Sort-Object { [int]$_.mentions_total } -Descending |
-  Select-Object -First 40 repo, mentions_total, mentions_telegram_rd, mentions_discord
 ```
 
 ---

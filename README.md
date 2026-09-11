@@ -364,6 +364,7 @@ Telegram Bot API (platform, not Kaspa): https://core.telegram.org/bots/api · ht
 - STP-KAS implementer kit: https://stp-kas.github.io/kns-spec/ — KasWare/Kastle inscriptions + proven covenant txs. `KasName.sil` on silverc v1.0.0 with **value conservation** (v1 tutorial: `validateOutputState` does not lock amount).
 - Ori v1 post: https://x.com/OriNewman/status/2097731203503640976 — “Silverscript will evolve, Argent will add higher layers.”
 - Sutton: https://x.com/michaelsuttonil/status/2097360985442926740 (8 Sep) — “when Argent matures”, not if. Still no Argent tag.
+- Sutton **11 Sep** (00:17 UTC): [working hypothesis](https://x.com/michaelsuttonil/status/2098204180406026482) — global DeFi is **not sequential**; push apps into **partitioned / parallel / replicated** state, not a constant number of sequential bottlenecks. Consensus order still matters **inside related sub-series** (double-spend). **Not a KIP. Not product.** Same thread: if DeFi *must* go through shared-state bottlenecks, “nothing can really bring scalability, not even well designed zk” — essay **not written** yet (infra first). KIP-20 Qs on [kips#46](https://github.com/kaspanet/kips/issues/46): sibling `OpInputCovenantId` **yes** (Argent `observed`); 1-to-many split keeps the same `covenant_id` **yes** (distinguish by template hash / state; fan-out can be cross-tx). Pointers: [argent/docs](https://github.com/argent-lang/argent/tree/master/docs), [icc-semantics](https://github.com/argent-lang/argent/blob/master/docs/icc-semantics.md), dex `quote_id` open-ICC demo. **Gramlane stays one own-UTXO.** Do not start a DEX or a L1 dollar from this tweet.
 - IzioDev 10 Sep: SilverScript vs Argent vs KCC thread https://x.com/IzioDev/status/2097918399737139331 ; leader/delegator diagram https://x.com/IzioDev/status/2098087085051986330. KCC-02/03 not wallet-interoperable yet.
 - Argent [PR #59](https://github.com/argent-lang/argent/pull/59) merged **8 Sep** (state vectors in `args!`). [PR #60](https://github.com/argent-lang/argent/pull/60) merged **10 Sep**, synced to sil v1.0.0. Two leader/delegate compiler rules still **not implemented**. README: not release-ready.
 - kaspaexplained /build-on-kaspa (checked 11 Sep): mainnet **84,196** covenants ever, **687** still active, **~1.56M KAS**. TN10 ~88,493 active. Sep 1 indexer baseline; still the live page.
@@ -386,6 +387,7 @@ Telegram R&D is observer-only for most people. Discord `#development` / `#resear
 | 9 Sep | SilverScript **v1.0.0** tagged (`3ed9733`). Compiler pin. | GitHub release; Ori X |
 | 8–10 Sep | Argent #59 (state vectors) then #60 (sil v1.0.0 + leader/delegate). Two compiler rules still unimplemented. | GitHub |
 | 10 Sep | Sil #249 `State[].split()` tuple hole on the pin. Fix #250 **open**. | GitHub |
+| 11 Sep | Sutton: global DeFi not sequential; partitioned/replicated state. vProgs shared-state tension — missing essay. kips#46: sibling cov id + 1→N same id = yes. Argent docs / open ICC. **Research.** Not a pin for a DEX or kUSD. | [X](https://x.com/michaelsuttonil/status/2098204180406026482) |
 
 ---
 
@@ -452,7 +454,7 @@ TG-dense, Discord-light: silverscript, vprogs, Argent, kccs, python-sdk — trea
 ### Gramlane filter (from that pack)
 
 **Now:** pinned **silverc v1.0.0** (Ori, 9 Sep, `3ed9733`); WorkCredit / KasName via `validateOutputState` only; grams not KCC-20; POS/Pay; one kasdomain; `/234` still a hole; no `State[].split()` tuples until #250; HTTP 402 binds [elldeeone/kaspa-x402](https://github.com/elldeeone/kaspa-x402); pointers to Kassword/pqv/Portrait.  
-**Not us:** DAGKnight, #234 retry, guessed compute budget, Argent ICC / leader-delegate, vProg exits, L2 stables, Kurrent channels, MWEB privacy thread, a fourth 402 envelope, calling k402 “x402”.
+**Not us:** DAGKnight, #234 retry, guessed compute budget, Argent ICC / leader-delegate, vProg exits, L2 stables, Kurrent channels, MWEB privacy thread, a fourth 402 envelope, calling k402 “x402”, a DEX or L1 dollar from Sutton’s 11 Sep hypothesis.
 
 ---
 

@@ -362,6 +362,7 @@ Telegram Bot API (platform, not Kaspa): https://core.telegram.org/bots/api · ht
 - kaspaexplained /build-on-kaspa (checked 11 Sep): mainnet **84,196** covenants ever, **687** still active, **~1.56M KAS**. TN10 ~88,493 active. Sep 1 indexer baseline; still the live page.
 - Parker kaspa-explained public README **10 Sep**: V5/V6 Cloudflare migration in progress; V6 local browser journey **26 accepted TN10 txs** + 5 VM rejects. Hosted runtime is a separate gate. Economy order still dated 7 Sep (21 txs).
 - PegLab vs Parker battletest: receipts **1–0 Parker**; classroom **1–0 PegLab**; dollars **0–0**. Successor A is Parker’s 1-sompi receipt. New repo [STP-KAS/peglab-poc](https://github.com/STP-KAS/peglab-poc). Do not mainnet tPEG. Do not use TN12.
+- Stillpay split **11 Sep**: [STP-KAS/stillpay-tn10](https://github.com/STP-KAS/stillpay-tn10) (lab) and [STP-KAS/stillpay-mainnet](https://github.com/STP-KAS/stillpay-mainnet) (shape only, no submitter). Pulse: KaChat still `kchat:1:pay`; KasSigner **32-input max**; Parker V5/V6 **unlisted** from nav (8 Sep) but 26-tx local docs remain; elldeeone kaspa-x402 still **alpha.10** (no commits since 10 Aug).
 
 ### From Core R&D Telegram (via public recaps — not a scrape of private Discord)
 

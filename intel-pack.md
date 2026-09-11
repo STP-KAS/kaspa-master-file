@@ -55,14 +55,14 @@ Live L1 snapshot (api.kaspa.org, this date) plus kaspaexplained.com / rusty-kasp
 | **R-TG-RND** | `LOCAL/atelgram rd/` | Core R&D Telegram cleans (11 files). Not in this repo. | Critical protocol design |
 | **R-DISCORD** | `LOCAL/adiscord api/` | 41 Discord channel dumps. Not in this repo. | Ecosystem, product demand, timeline |
 | **R-TRANSCRIPTS** | `LOCAL/atranscriptskaspa/` | Founder/core deep dives. Not in this repo. | Architecture intent, narrative |
-| **R-GITHUB** | `kaspa-github-repos-*.csv/json/md` (this folder) | All GitHub repos mentioned in TG+Discord | Code map / dependency radar |
+| **R-GITHUB** | `LOCAL/kaspa-github-repos-*.csv/json/md` | All GitHub repos mentioned in TG+Discord. **Not in this GitHub repo.** | Code map / dependency radar |
 | **R-DOCS** | docs.kaspa.org, **kaspaexplained.com** | Canonical + builder framing | Spec truth + status labels |
-| **R-DOCS-REFRESH** | `kaspaexplained-com-REFRESH-2026-08.txt` | Aug 2026 site refresh (adoption, fact-check, demos) | Prefer for current numbers |
+| **R-DOCS-REFRESH** | `LOCAL/kaspaexplained-com-REFRESH-2026-08.txt` | Aug 2026 site refresh (adoption, fact-check, demos). Not in this repo. | **Superseded** for covenant counts. Do not quote 28,125. Live pin: kaspaexplained.com/build-on-kaspa (Sep 1: 84,196 / 687 / ~1.56M). |
 | **R-DOCS-REPO** | https://github.com/parker2017code/kaspa-explained · site kaspaexplained.com | Site source + CLAIMS.yml + demos + publish gates | Machine-checkable status referee |
 | **R-KASSMITHS** | `LOCAL/aaapikassmith/` | Kas-Smiths forum API dump. Not in this repo. | KCC20 / standards workshop |
 | **R-AGENC** | `LOCAL/aatelegram agenC sol/` | AgenC Solana Telegram export + cleans. Not in this repo. | Agent-economy case study |
 | **R-ARGENT** | https://github.com/orgs/argent-lang/repositories | Argent org (compiler, playground, template) | Multi-covenant app language tooling |
-| **R-ARGENT-EP01** | https://github.com/argent-lang/argent-template/tree/episode-01 · local `Documents\argent-template` | Episode-01 ticketing (Event/Ticket) | Hands-on Argent multi-actor demo |
+| **R-ARGENT-EP01** | https://github.com/argent-lang/argent-template/tree/episode-01 · `LOCAL/argent-template/` | Episode-01 ticketing (Event/Ticket). Local clone not in this repo. | Hands-on Argent multi-actor demo |
 | **R-SIL-ABI** | https://github.com/kaspanet/silverscript/pull/232 | Portable `SilAbiArtifact` (merged 28 Aug 2026) | Compiler/debugger/external tooling share one JSON ABI |
 | **R-SIL-234** | https://github.com/kaspanet/silverscript/pull/234 | Input-state framing guard | **Closed unmerged.** Foreign `readInputState` still the 42-byte class. |
 | **R-KCCS-P20** | https://github.com/kaspanet/kccs/pull/20 | KCC-0020 first-cut conformance vectors | **Open draft.** BLAKE3 state/dispatch/template vectors. Transfer tag pending. |
@@ -75,9 +75,12 @@ Live L1 snapshot (api.kaspa.org, this date) plus kaspaexplained.com / rusty-kasp
 | **R-X** | `x-handles-credible-sources-insert-index.txt` | Tiered Kaspa X handles | Pointer sources (not primary proof) |
 | **R-NARRATIVE-2026** | `LOCAL/kaspa-attenborough-2026/` | Attenborough Kaspa film (Sep 2026 remake of Apr 2025 CryptoQTK piece). Not in this repo. | Public-facing ethos + fact-checked VO |
 | **R-SIL-249** | https://github.com/kaspanet/silverscript/issues/249 | `State[].split()` tuple destructure on v1.0.0 | **Open.** Fix #250 unmerged. Skip that syntax. |
-| **R-X402** | https://github.com/elldeeone/kaspa-x402 | Kaspa x402 v2 binding (TN10 alpha) | Bind this envelope. k402 is a different object (channel). |
+| **R-X402** | https://github.com/elldeeone/kaspa-x402 | Kaspa x402 v2 binding (TN10 alpha) | Bind this envelope. |
+| **R-K402** | https://github.com/Kali123411/k402 | HTTP 402 + `kaspa-channel` lock/voucher. kccs#4 still open. | Steal the lock. Not Kaspa’s x402 v2 binding. Not adopted KCC-0402. |
 
-### Derived files (this pack)
+### Derived files (LOCAL pack — not in this GitHub repo)
+
+These sit next to the weekly intel master on this machine. This GitHub repo only ships `README.md`, `master.json`, `intel-pack.md`, `GROK-HEAVY-REVIEW.md`, `LICENSE`.
 
 | File | Contents |
 | --- | --- |
@@ -91,7 +94,7 @@ Live L1 snapshot (api.kaspa.org, this date) plus kaspaexplained.com / rusty-kasp
 | `kaspa-discord-future-projects-analysis.md` | Project radar from Discord |
 | `kaspa-post-toccata-1-everyday-life-consumer.md` | Everyday Life app map |
 | `kaspaexplained-com-insert-index.txt` | **kaspaexplained.com** page map, status model, builder tree |
-| `kaspaexplained-com-REFRESH-2026-08.txt` | Aug 2026 refresh: covenant adoption, claim table, demos |
+| `kaspaexplained-com-REFRESH-2026-08.txt` | Aug 2026 refresh. **Do not quote covenant 28,125.** Live counts: /build-on-kaspa. |
 | `parker2017code-kaspa-explained-repo-insert.txt` | github.com/parker2017code/kaspa-explained (site source) |
 | `atranscriptskaspa-insert-index.txt` | Transcript folder inventory (Sutton vProgs + Yonatan S16E41) |
 | `argent-lang-github-insert-index.txt` | argent-lang org: argent / playground / template |

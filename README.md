@@ -18,12 +18,16 @@ Reviewed the freeze after it landed on `main` ([PR #1](https://github.com/STP-KA
 | Covenant counts had no official-sites row | Add [`/build-on-kaspa`](https://kaspaexplained.com/build-on-kaspa) (84,196 / 687 / ~1.56M KAS). |
 | 2026 forum threads not newest-first | MWEB-like (8 Sep) listed first. |
 | R&D log stopped at 4 Sep | Add 9–10 Sep: Sil v1.0.0, Argent #59/#60, Sil #249. |
-| 402 path missing from this map | Pin [elldeeone/kaspa-x402](https://github.com/elldeeone/kaspa-x402) (TN10 alpha, bind this). [Kali123411/k402](https://github.com/Kali123411/k402) is the **channel** primitive + [kccs#4](https://github.com/kaspanet/kccs/pull/4) draft — steal the lock, do not call it Kaspa’s x402. |
+| 402 path missing from this map | Pin [elldeeone/kaspa-x402](https://github.com/elldeeone/kaspa-x402) (TN10 alpha, bind this). [Kali123411/k402](https://github.com/Kali123411/k402) is HTTP 402 + a `kaspa-channel` lock ([kccs#4](https://github.com/kaspanet/kccs/pull/4) still open) — steal the lock, do not treat it as Kaspa’s x402 v2 binding. |
 | vProgs #142 missing | Bridge lane-anchor **open** (10 Sep). Still not product. |
 | Public intel-pack leaked `C:\Users\…` paths | Redact to `LOCAL`. Dumps stay off this repo. |
 | `#250` still unmerged | Rechecked. `State[].split()` tuples still forbidden on v1.0.0. |
 
 Pins **unchanged:** silverc **v1.0.0** (`3ed9733`); `#234` unmerged; `#243` open; Argent no tag; KCC-20 Draft; Toccata live; DAGKnight not shipped.
+
+### Grok heavy review (after the freeze)
+
+Machine review of `661d5bc..main`. Full notes: [`GROK-HEAVY-REVIEW.md`](GROK-HEAVY-REVIEW.md#grok-heavy-review-machine-pass-11-sep). Closed: stale “prefer Aug 24 numbers”, CSVs claimed in this GitHub folder, leftover dump paths, MWEB JSON order, k402 wording, “three vs four holes.”
 
 ---
 
@@ -209,7 +213,7 @@ KIP-21 lanes are 20-byte `subnetwork_id`s, ≤50 non-coinbase lanes/block, 1e9 g
 | STP-KAS/peglab-poc | https://github.com/STP-KAS/peglab-poc | Battle-tested receipt PoC. Parker unit + PegLab warning. Two tracks: public goods, or BTCPay-shaped software company. **Not USD.** ENGINE_SPEC until TN10 txids. |
 | a19q3/Kurrent | https://github.com/a19q3/Kurrent | Eltoo-inspired latest-state channel. Forum [494](https://research.kas.pa/t/kurrent-an-eltoo-inspired-latest-state-channel-on-kaspa/494). Devnet evidence. **Not product.** |
 | elldeeone/kaspa-x402 | https://github.com/elldeeone/kaspa-x402 | Intended **x402 v2** binding. TN10 alpha. Site [kaspa-x402.org](https://kaspa-x402.org). Bind this envelope; do not invent a fourth 402. |
-| Kali123411/k402 | https://github.com/Kali123411/k402 | L1 covenant **payment channel** + [kccs#4](https://github.com/kaspanet/kccs/pull/4) draft. Steal the lock/voucher. **Not** Kaspa’s x402. |
+| Kali123411/k402 | https://github.com/Kali123411/k402 | HTTP 402 + `kaspa-channel` lock/voucher. [kccs#4](https://github.com/kaspanet/kccs/pull/4) still open. Steal the lock. **Not** elldeeone’s x402 v2 binding. **Not** adopted KCC-0402. |
 
 L2 (out of Gramlane path): Igra, Kasplex — live elsewhere. This stack stays L1. Kurrent is L1-channel research, still out of Gramlane path.
 
@@ -463,8 +467,8 @@ Raw dumps stay on this machine. **No chat logs, photos, or DiscordKit files in t
 
 | Dump | What it actually is |
 | --- | --- |
-| `Downloads\Telegram Desktop\ChatExport_2026-07-27` | Telegram export titled **【A G E N C . D E V】** (15 Mar–27 Jul 2026). **Not** `t.me/kasparnd`. Solana agent marketplace. |
-| `Documents\adiscord api` | 41 Kaspa Discord channel dumps (cut ~25–26 Jul 2026). Guild Kaspa. |
+| `LOCAL/ChatExport_2026-07-27` | Telegram export titled **【A G E N C . D E V】** (15 Mar–27 Jul 2026). **Not** `t.me/kasparnd`. Solana agent marketplace. Not in this repo. |
+| `LOCAL/adiscord api` | 41 Kaspa Discord channel dumps (cut ~25–26 Jul 2026). Guild Kaspa. Not in this repo. |
 
 ### Discord (Kaspa) — high-signal
 

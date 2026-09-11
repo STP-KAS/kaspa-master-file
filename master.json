@@ -76,11 +76,11 @@
         {"name": "Economics", "url": "https://research.kas.pa/c/economics/6", "chip": "forum", "note": "Issuance, adaptive size, tail emission. Not a KIP."},
         {"name": "Mining", "url": "https://research.kas.pa/c/mining/7", "chip": "forum", "note": "Not this desk."},
         {"name": "kaspanet/research", "url": "https://github.com/kaspanet/research", "chip": "papers", "note": "vProgs yellow paper. Not the forum."},
+        {"name": "Optional privacy / MWEB-like (8 Sep 2026)", "url": "https://research.kas.pa/t/optional-privacy-layer-for-kaspa-similar-to-litecoin-mweb/522", "chip": "research", "note": "JackKas. One post. Not a KIP. Not product."},
         {"name": "Kurrent (23 Jun 2026)", "url": "https://research.kas.pa/t/kurrent-an-eltoo-inspired-latest-state-channel-on-kaspa/494", "chip": "research", "note": "a19q3. Eltoo-inspired latest-state channel on KIP-17/20. Not watch-free. Not product."},
         {"name": "a19q3/Kurrent", "url": "https://github.com/a19q3/Kurrent", "chip": "research", "note": "Repo + thesis PDF. Local-devnet evidence. Unaudited."},
         {"name": "Dynamic tail emission", "url": "https://research.kas.pa/t/dynamic-tail-emission-that-preserves-the-maximum-supply-to-secure-mining/473", "chip": "wrong", "note": "Apr 2026 proposal. Kaspa still has a max supply. Not a KIP."},
-        {"name": "Adaptive block sizes", "url": "https://research.kas.pa/t/adaptive-block-sizes/464", "chip": "research", "note": "Bit_Cat, Feb 2026. hashdag replied. Not shipped."},
-        {"name": "Optional privacy / MWEB-like (8 Sep 2026)", "url": "https://research.kas.pa/t/optional-privacy-layer-for-kaspa-similar-to-litecoin-mweb/522", "chip": "research", "note": "JackKas. One post. Not a KIP. Not product."}
+        {"name": "Adaptive block sizes", "url": "https://research.kas.pa/t/adaptive-block-sizes/464", "chip": "research", "note": "Bit_Cat, Feb 2026. hashdag replied. Not shipped."}
       ]
     },
     {
@@ -184,7 +184,7 @@
         {"name": "kaspa-pqv", "url": "https://github.com/aglov413/kaspa-pqv", "chip": "TN10", "note": "Posted Core R&D 27 Aug. Hash-based PQ vault. Unaudited."},
         {"name": "Argent", "url": "https://github.com/argent-lang/argent", "chip": "preview", "note": "Sutton multi-actor layer above Silverscript. PR 59 (8 Sep) state vectors. PR 60 (10 Sep) pins sil v1.0.0. Two leader/delegate compiler rules still unimplemented. Not release-ready. No tag."},
         {"name": "kaspa-x402", "url": "https://github.com/elldeeone/kaspa-x402", "chip": "tn10", "note": "elldeeone. Intended x402 v2 binding. TN10 alpha. kaspa-x402.org. Bind this envelope."},
-        {"name": "k402", "url": "https://github.com/Kali123411/k402", "chip": "draft", "note": "Covenant payment channel + kccs#4. Steal the lock. Not Kaspa x402."},
+        {"name": "k402", "url": "https://github.com/Kali123411/k402", "chip": "draft", "note": "HTTP 402 + kaspa-channel lock/voucher. kccs#4 open. Steal the lock. Not elldeeone x402 v2. Not adopted KCC-0402."},
         {"name": "gramlane", "url": "https://github.com/STP-KAS/gramlane", "chip": "this", "note": "skip centralised stablecoins for dapps. Cheap grams. Still delusional."},
         {"name": "kns-spec", "url": "https://github.com/STP-KAS/kns-spec", "chip": "this", "note": "Implementer kit. URL https://stp-kas.github.io/kns-spec/ KasName recompiled with silverc v1.0.0."},
         {"name": "mixer-concept", "url": "https://github.com/STP-KAS/mixer-concept", "chip": "mix", "note": "Parker GitHub models + STP doors + PegLab classroom. Education. Not a token. Not kaspaexplained.com."},

@@ -6,7 +6,7 @@
 
 This is a map. Merged Active KIP = law. Open PR, personal wiki, Discord rumor ≠ a pin. Gramlane tab: http://127.0.0.1:8081/masterfile
 
-Repo: **kaspa-master-file** (the “kaspa mister fil”). Grok heavy review of this freeze: [`GROK-HEAVY-REVIEW.md`](GROK-HEAVY-REVIEW.md). Local URLs (`127.0.0.1`) are this machine, not GitHub.
+Repo: **kaspa-master-file** (the “kaspa mister fil”). Grok heavy review of this freeze: [`GROK-HEAVY-REVIEW.md`](GROK-HEAVY-REVIEW.md). Think big / do-this-next: [`THINK-BIG.md`](THINK-BIG.md). Local URLs (`127.0.0.1`) are this machine, not GitHub.
 
 ### What this pass did (11 Sep 2026, second look)
 
@@ -28,6 +28,10 @@ Pins **unchanged:** silverc **v1.0.0** (`3ed9733`); `#234` unmerged; `#243` open
 ### Grok heavy review (after the freeze)
 
 Machine review of `661d5bc..main`. Full notes: [`GROK-HEAVY-REVIEW.md`](GROK-HEAVY-REVIEW.md#grok-heavy-review-machine-pass-11-sep). Closed: stale “prefer Aug 24 numbers”, CSVs claimed in this GitHub folder, leftover dump paths, MWEB JSON order, k402 wording, “three vs four holes.”
+
+### Think big (after the review)
+
+The map is honest. The bottleneck is no TN10 receipt txids and no 402 that charges. Full authority orders: [`THINK-BIG.md`](THINK-BIG.md) — summary, step-by-step, 13 propositions. Track 0 public goods / Track 1 BTCPay-shaped software. Not a Kaspa dollar.
 
 ---
 

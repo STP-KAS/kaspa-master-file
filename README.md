@@ -1,12 +1,12 @@
 # Kaspa master file
 
-**Not Kaspa core. Not official KNS.** Public pin list by [@StppStp](https://x.com/StppStp) / [STP-KAS](https://github.com/STP-KAS). Freeze: **10 Sep 2026**.
+**Not Kaspa core. Not official KNS.** Public pin list by [@StppStp](https://x.com/StppStp) / [STP-KAS](https://github.com/STP-KAS). Freeze: **11 Sep 2026**.
 
 **project delusional.** Kaspa master file — pins, ideas, principles. One principle: skip centralised stablecoins for dapps. Fill is not a business: this desk keeps 0. Any Kaspa wallet (QR / kaspa: URI). In-page inject is only Kasware/Kastle. The jar is not Nakamoto. Darwin battletest: [STP-KAS/gramlanepeglab](https://github.com/STP-KAS/gramlanepeglab). Receipt PoC after battling PegLab vs Parker: [STP-KAS/peglab-poc](https://github.com/STP-KAS/peglab-poc).
 
 This is a map. Merged Active KIP = law. Open PR, personal wiki, Discord rumor ≠ a pin. Gramlane tab: http://127.0.0.1:8081/masterfile
 
-Repo: **kaspa-master-file** (the “kaspa mister fil”).
+Repo: **kaspa-master-file** (the “kaspa mister fil”). Grok heavy review of this freeze: [`GROK-HEAVY-REVIEW.md`](GROK-HEAVY-REVIEW.md).
 
 ---
 
@@ -88,6 +88,7 @@ JSON API if you want to re-check: `https://research.kas.pa/latest.json` · `http
 | Kurrent (23 Jun 2026) | https://research.kas.pa/t/kurrent-an-eltoo-inspired-latest-state-channel-on-kaspa/494 | a19q3 (Arthur Zhang). Eltoo-inspired latest-state **bilateral** channel on KIP-17/20 + DAA-relative sequence. Non-confiscatory, **not watch-free**. Repo [a19q3/Kurrent](https://github.com/a19q3/Kurrent). Local-devnet evidence only. **Not product. Not Gramlane.** |
 | Dynamic tail emission (6 Apr 2026) | https://research.kas.pa/t/dynamic-tail-emission-that-preserves-the-maximum-supply-to-secure-mining/473 | swarmshine. Economics. **Not a KIP. Kaspa has a max supply; this is a proposal.** |
 | Adaptive block sizes (16 Feb 2026) | https://research.kas.pa/t/adaptive-block-sizes/464 | Bit_Cat; hashdag replied. Economics. **Not shipped.** |
+| Optional privacy / MWEB-like (8 Sep 2026) | https://research.kas.pa/t/optional-privacy-layer-for-kaspa-similar-to-litecoin-mweb/522 | JackKas. One post, ~11 views. **Not a KIP. Not product.** |
 
 ### vProgs / L1↔L2 (design, not product)
 
@@ -132,11 +133,11 @@ Older DAG/mining threads (2019–2022: pruning, DAA, ASIC mimicking, twelve-minu
 
 Org: https://github.com/kaspanet — 26 public repos. **Use these first.**
 
-| Repo | URL | Status 5 Sep 2026 |
+| Repo | URL | Status 11 Sep 2026 |
 | --- | --- | --- |
-| rusty-kaspa | https://github.com/kaspanet/rusty-kaspa | Reference node. Toccata **v2.0.0** (5 Jun 2026), **v2.0.1** (15 Jun). `master` 24 Aug. `dagknight` branch **4 Sep** — unmerged. |
+| rusty-kaspa | https://github.com/kaspanet/rusty-kaspa | Reference node. Toccata **v2.0.0** (5 Jun 2026), **v2.0.1** (15 Jun). No newer node tag. `dagknight` still unmerged. New DK work: [#1127](https://github.com/kaspanet/rusty-kaspa/pull/1127) draft (bounded UMC, 8 Sep), [#1124](https://github.com/kaspanet/rusty-kaspa/pull/1124) simpa adversaries. **Not shipped.** |
 | kips | https://github.com/kaspanet/kips | Improvement proposals |
-| silverscript | https://github.com/kaspanet/silverscript | Covenant language. Pin **[v1.0.0](https://github.com/kaspanet/silverscript/releases/tag/v1.0.0)** (Ori / someone235, **9 Sep 2026**, `3ed9733`). Official SemVer v1. Windows zip SHA256 `3e0d660c15a9e7ac90f3960da24d348b076b1891481bfe758db18accc8a102e1`. Language pragma in examples is still `^0.1.0`. `#234` foreign `readInputState` still **closed unmerged**. |
+| silverscript | https://github.com/kaspanet/silverscript | Covenant language. Pin **[v1.0.0](https://github.com/kaspanet/silverscript/releases/tag/v1.0.0)** (Ori / someone235, **9 Sep 2026**, `3ed9733`). Official SemVer v1. Windows zip SHA256 `3e0d660c15a9e7ac90f3960da24d348b076b1891481bfe758db18accc8a102e1`. Language pragma in examples is still `^0.1.0`. `#234` foreign `readInputState` still **closed unmerged**. **New on this pin:** [#249](https://github.com/kaspanet/silverscript/issues/249) `State[].split()` tuple destructure fails (`__inline_*`); fix PR [#250](https://github.com/kaspanet/silverscript/pull/250) **open** (KaspaScopio, 10 Sep). `#243` compute-budget still **open**. |
 | kccs | https://github.com/kaspanet/kccs | Conventions. All **Draft**. |
 | vprogs | https://github.com/kaspanet/vprogs | Provable computation. Research. No public testnet as product. |
 | kaspa-python-sdk | https://github.com/kaspanet/kaspa-python-sdk | Python bindings |
@@ -158,7 +159,7 @@ Source: https://github.com/kaspanet/kips — tracker https://kaspaexplained.com/
 
 Toccata PRs: [KIP-16 #31](https://github.com/kaspanet/kips/pull/31) · [17 #32](https://github.com/kaspanet/kips/pull/32) · [20 #35](https://github.com/kaspanet/kips/pull/35) · [21 #36](https://github.com/kaspanet/kips/pull/36)
 
-**Proposed / draft / not product:** KIP-2 DAGKnight (Proposed since 2022; rusty `dagknight` open PRs #1120 #1119 #1104 as of 4 Sep 2026). KIP-6 Draft. KIP-3 Rejected.
+**Proposed / draft / not product:** KIP-2 DAGKnight (Proposed since 2022; rusty `dagknight` still unmerged. Open/draft as of 11 Sep: #1127 bounded UMC, #1124 simpa, plus older #1122 / #1120 / #1119 / #1104). KIP-6 Draft. KIP-3 Rejected.
 
 KIP-21 lanes are 20-byte `subnetwork_id`s, ≤50 non-coinbase lanes/block, 1e9 gas/lane. **Not** Gramlane book stamps MSG1/SEQ1.
 
@@ -170,7 +171,7 @@ KIP-21 lanes are 20-byte `subnetwork_id`s, ≤50 non-coinbase lanes/block, 1e9 g
 
 | Repo | URL | Honest |
 | --- | --- | --- |
-| argent-lang/argent | https://github.com/argent-lang/argent | Multi-actor layer **above** Silverscript (Sutton, 30 Aug 2026). [PR #60](https://github.com/argent-lang/argent/pull/60) merged **10 Sep** pins sil **v1.0.0**. README: **not release-ready**. |
+| argent-lang/argent | https://github.com/argent-lang/argent | Multi-actor layer **above** Silverscript (Sutton). [PR #59](https://github.com/argent-lang/argent/pull/59) merged **8 Sep** (state vectors in `args!`). [PR #60](https://github.com/argent-lang/argent/pull/60) merged **10 Sep** pins sil **v1.0.0** + leader/delegate security guide. Two compiler rules still **[NOT IMPLEMENTED]**: continuation-closure, first-input for zero-continuation ordinary entries. README: **not release-ready**. No tag. |
 | KaspaKii/Portrait | https://github.com/KaspaKii/Portrait | Public 1 Sep 2026. Testnet-only, unaudited. |
 | STP-KAS/gramlane | https://github.com/STP-KAS/gramlane | This desk. Grams, kasdomain. |
 | STP-KAS/project-delusional | https://github.com/STP-KAS/project-delusional | Stack index |
@@ -180,7 +181,7 @@ KIP-21 lanes are 20-byte `subnetwork_id`s, ≤50 non-coinbase lanes/block, 1e9 g
 | vsmirn0v/KaChat | https://github.com/vsmirn0v/KaChat | Other product. Gramlane does not clone E2E. |
 | KASRANKS/KASSWORD | https://github.com/KASRANKS/KASSWORD | Other vault. Pointer only. |
 | aglov413/kaspa-pqv | https://github.com/aglov413/kaspa-pqv | Posted to Core R&D **27 Aug 2026**. Hash-based PQ vault, **TN10 only**, unaudited. |
-| trillskillz/OpenSilver | https://github.com/trillskillz/OpenSilver | Community SilverScript pattern lib (22 patterns). **Not kaspanet. Not externally audited.** Pins its own silverc, not always v1-rc1. |
+| trillskillz/OpenSilver | https://github.com/trillskillz/OpenSilver | Community SilverScript pattern lib (22 patterns). **Not kaspanet. Not externally audited.** Pins its own silverc, not always v1.0.0. |
 | thesheepcat/K | https://github.com/thesheepcat/K | Decentralized microblog. Not this desk. |
 | coderofstuff/rusty-kaspa | https://github.com/coderofstuff/rusty-kaspa | Unofficial DAGKnight work. **Not a pin.** |
 | coderofstuff/dk-wiki | https://github.com/coderofstuff/dk-wiki | Unofficial wiki. **Not a pin.** |
@@ -315,23 +316,26 @@ Telegram Bot API (platform, not Kaspa): https://core.telegram.org/bots/api · ht
 
 ---
 
-## 7. News freeze (10 Sep 2026)
+## 7. News freeze (11 Sep 2026)
 
 - Toccata **live** on mainnet (DAA `474_165_565`, ~30 Jun 2026). KIPs 16/17/20/21 Active 15 Jul 2026.
-- rusty-kaspa **v2.0.1** is the Toccata maintenance tag.
-- silverscript **[v1.0.0](https://github.com/kaspanet/silverscript/releases/tag/v1.0.0)** tagged **9 Sep 2026** by Ori (someone235), commit `3ed9733`. SemVer starts here. Windows zip SHA256 `3e0d660c15a9e7ac90f3960da24d348b076b1891481bfe758db18accc8a102e1`. This is the pin. v1-rc1 (`c7d17a1`, 30 Aug) is history.
+- rusty-kaspa **v2.0.1** is still the Toccata maintenance tag. No v2.0.2.
+- silverscript **[v1.0.0](https://github.com/kaspanet/silverscript/releases/tag/v1.0.0)** tagged **9 Sep 2026** by Ori (someone235), commit `3ed9733`. SemVer starts here. Windows zip SHA256 `3e0d660c15a9e7ac90f3960da24d348b076b1891481bfe758db18accc8a102e1`. This is the pin. v1-rc1 (`c7d17a1`, 30 Aug) is history. Compiler tag ≠ audited dapp.
 - `#234` foreign `readInputState` framing guard still **closed unmerged**. Own-UTXO `validateOutputState` only.
 - `#243` compiled artifact has **no compute-budget estimate** — still **open**.
-- KCC-0020 **Draft**. Issue [#14](https://github.com/kaspanet/kccs/issues/14) supply-split still open. Not a gram token.
+- **New compiler hole on v1.0.0:** [#249](https://github.com/kaspanet/silverscript/issues/249) `State[].split()` tuple destructure emits undefined `__inline_*`. `.0`/`.1` access works; `byte[].split()` tuple works. Fix PR [#250](https://github.com/kaspanet/silverscript/pull/250) **open**, not merged. Do not write `(State[] a, State[] b) = states.split(n)` on this pin.
+- KCC-0020 **Draft**. Issue [#14](https://github.com/kaspanet/kccs/issues/14) supply-split still open. Vectors [#20](https://github.com/kaspanet/kccs/pull/20) still open. Not a gram token.
 - Portrait (Kii) public **1 Sep 2026**, testnet-only.
-- DAGKnight: KIP-2 still Proposed; `dagknight` branch moving (PRs 4 Sep) — **not shipped**.
+- DAGKnight: KIP-2 still Proposed. New draft [#1127](https://github.com/kaspanet/rusty-kaspa/pull/1127) (8 Sep, FreshAir: bounded UMC / k^4 depth). **Not shipped.**
 - kaspa.org rebuilt around “real-time decentralization” (2026). 10 BPS live. 100 BPS is a target, not a spec.
 - Official Toccata guide: https://docs.kaspa.org/toccata — consensus live; SilverScript v1 is tagged; Argent/vProgs tooling still early.
-- research.kas.pa catalogued in this file. Newest thread: **Kurrent** (23 Jun 2026). Not product.
+- research.kas.pa: newest thread is **optional privacy / MWEB-like** (JackKas, 8 Sep, [522](https://research.kas.pa/t/optional-privacy-layer-for-kaspa-similar-to-litecoin-mweb/522)). Not a KIP. Kurrent (23 Jun) still not product.
 - STP-KAS implementer kit: https://stp-kas.github.io/kns-spec/ — KasWare/Kastle inscriptions + proven covenant txs. `KasName.sil` on silverc v1.0.0 with **value conservation** (v1 tutorial: `validateOutputState` does not lock amount).
 - Ori v1 post: https://x.com/OriNewman/status/2097731203503640976 — “Silverscript will evolve, Argent will add higher layers.”
-- Sutton layers: https://x.com/michaelsuttonil/status/2094140618045800510 — Silverscript = one contract; Argent = multi-actor, not the v1 pin.
-- Argent [PR #60](https://github.com/argent-lang/argent/pull/60) merged **10 Sep 2026**, synced to sil v1.0.0, still not a general-production compiler.
+- Sutton: https://x.com/michaelsuttonil/status/2097360985442926740 (8 Sep) — “when Argent matures”, not if. Still no Argent tag.
+- IzioDev 10 Sep: SilverScript vs Argent vs KCC thread https://x.com/IzioDev/status/2097918399737139331 ; leader/delegator diagram https://x.com/IzioDev/status/2098087085051986330. KCC-02/03 not wallet-interoperable yet.
+- Argent [PR #59](https://github.com/argent-lang/argent/pull/59) merged **8 Sep** (state vectors in `args!`). [PR #60](https://github.com/argent-lang/argent/pull/60) merged **10 Sep**, synced to sil v1.0.0. Two leader/delegate compiler rules still **not implemented**. README: not release-ready.
+- kaspaexplained /build-on-kaspa (checked 11 Sep): mainnet **84,196** covenants ever, **687** still active, **~1.56M KAS**. TN10 ~88,493 active. Sep 1 indexer baseline; still the live page.
 - Parker kaspa-explained public README **10 Sep**: V5/V6 Cloudflare migration in progress; V6 local browser journey **26 accepted TN10 txs** + 5 VM rejects. Hosted runtime is a separate gate. Economy order still dated 7 Sep (21 txs).
 - PegLab vs Parker battletest: receipts **1–0 Parker**; classroom **1–0 PegLab**; dollars **0–0**. Successor A is Parker’s 1-sompi receipt. New repo [STP-KAS/peglab-poc](https://github.com/STP-KAS/peglab-poc). Do not mainnet tPEG. Do not use TN12.
 
@@ -350,21 +354,23 @@ Telegram R&D is observer-only for most people. Discord `#development` / `#resear
 
 ---
 
-## 8. Intel pack (2026-09-04) — public facts only
+## 8. Intel pack (2026-09-11) — public facts only
 
 Folded from the community intel pack. Full dated text: [`intel-pack.md`](intel-pack.md). **Local Telegram/Discord dump paths in that file are this machine, not public dumps.** Mentions ≠ endorsement. Recheck DAA/supply/PR state before quoting.
 
-### L1 snapshot (api.kaspa.org, 4 Sep 2026)
+### L1 snapshot (api.kaspa.org, 11 Sep 2026)
 
 | Item | Number | Recheck |
 | --- | --- | --- |
-| Virtual DAA | **530,957,175** | `/info/blockdag` |
-| Circulating | **~27.681B KAS** of ~28.704B max | `/info/coinsupply` |
-| Block reward | **2.31246515 KAS** (~23.12 KAS/s). Next step DAA **531,207,000** | coinbase / blockreward |
-| Hashrate | **~315 PH/s** (treat API field carefully) | `/info/hashrate` |
-| Covenants (Aug 24 baseline) | **28,125** ever, **519** still active, **~1.53M KAS** in active covenants. TN10 still dominates. | kaspaexplained Aug refresh |
+| Virtual DAA | **536,884,280** | `/info/blockdag` |
+| Circulating | **~27.694B KAS** (27,693,722,121) of ~28.704B max | `/info/coinsupply` (sompi `2769372212054874832`) |
+| Block reward | **2.18267645 KAS** (~21.83 KAS/s). Chromatic step at DAA **531,207,000** has fired. Next step DAA **557,505,000**. No cliff. | coinbase / blockreward |
+| Hashrate | **~347 PH/s** (API field ~347.2e3; treat as TH/s → PH/s) | `/info/hashrate` |
+| Covenants (kaspaexplained Sep 1 baseline, still on the live page 11 Sep) | **84,196** ever, **687** still active, **~1.56M KAS** in active covenants. TN10 ~88,493 active — still dominates. | kaspaexplained.com/build-on-kaspa |
 
-**Do not claim:** 100 BPS live; instant irreversible payments; DAGKnight is consensus; KCC-0020/0021/0402 adopted; foreign `readInputState` is safe; vProgs live; Portrait or kaspa-pqv on mainnet; Gramlane is Kassword / KCC-20 / Argent. SilverScript **v1.0.0 is tagged** (9 Sep 2026). That is the compiler pin, not a claim that every app is audited.
+**This week vs 4 Sep freeze:** DAA +5.93M; supply +~13M KAS; reward stepped 2.312 → 2.183; hashrate 315 → 347 PH/s; covenant *ever* count jumped (indexer baseline change 28,125 → 84,196; locked KAS barely moved). Silverscript v1.0.0 tagged; Argent #60 merged; #249 split-tuple bug opened on the pin.
+
+**Do not claim:** 100 BPS live; instant irreversible payments; DAGKnight is consensus; KCC-0020/0021/0402 adopted; foreign `readInputState` is safe; vProgs live; Portrait or kaspa-pqv on mainnet; Gramlane is Kassword / KCC-20 / Argent; Argent is production-ready; `State[].split()` tuple destructure is safe on v1.0.0. SilverScript **v1.0.0 is tagged** (9 Sep 2026). That is the compiler pin, not a claim that every app is audited.
 
 ### Filters (transcripts)
 
@@ -374,7 +380,7 @@ Yonatan (digital cash, cohesive tooling, core ≠ product) → Sutton (L1 covena
 
 | Repo | Why |
 | --- | --- |
-| [argent-lang/argent](https://github.com/argent-lang/argent) | Sutton multi-actor frontend. **#55 merged 2 Sep** actor template identity. Unaudited demos. |
+| [argent-lang/argent](https://github.com/argent-lang/argent) | Sutton multi-actor frontend. **#59 merged 8 Sep** state vectors in `args!`. **#60 merged 10 Sep** sil v1.0.0 + leader/delegate guide (two rules still unimplemented). Unaudited. No tag. |
 | [argent-lang/argent-playground](https://github.com/argent-lang/argent-playground) | Examples |
 | [argent-lang/argent-template](https://github.com/argent-lang/argent-template) | Episode-01 ticketing demo |
 | [kaspanet/vprogs#139](https://github.com/kaspanet/vprogs/pull/139) | **Open.** ExitLeaf + claim kit. Also #138/#140. No testnet. |
@@ -404,12 +410,13 @@ TG-dense, Discord-light: silverscript, vprogs, Argent, kccs, python-sdk — trea
 | hmoog / @hus_qy | vProgs earlier node/bridge |
 | saefstroem | KCC-0; rusty ZK SDK |
 | D-Stacks | rusty #991 UTXO index (open) |
-| palacharlanarendra, Drcryptodee | Sil #238 / #244 open — skip until v1 |
+| palacharlanarendra | Sil #238 still open (later fields reference earlier). #244 ABI license **merged**. |
+| KaspaScopio | Sil #249 / #250 — `State[].split()` tuple destructure on v1.0.0. Skip that syntax until #250 merges. |
 
 ### Gramlane filter (from that pack)
 
-**Now:** pinned **silverc v1.0.0** (Ori, 9 Sep, `3ed9733`); WorkCredit / KasName via `validateOutputState` only; grams not KCC-20; POS/Pay; one kasdomain; `/234` still a hole; pointers to Kassword/pqv/Portrait.  
-**Not us:** DAGKnight, #234 retry, guessed compute budget, Argent ICC, vProg exits, L2 stables, Kurrent channels.
+**Now:** pinned **silverc v1.0.0** (Ori, 9 Sep, `3ed9733`); WorkCredit / KasName via `validateOutputState` only; grams not KCC-20; POS/Pay; one kasdomain; `/234` still a hole; no `State[].split()` tuples until #250; pointers to Kassword/pqv/Portrait.  
+**Not us:** DAGKnight, #234 retry, guessed compute budget, Argent ICC / leader-delegate, vProg exits, L2 stables, Kurrent channels, MWEB privacy thread.
 
 ---
 

@@ -258,7 +258,8 @@ Not a new chain. Not Tor-by-rebrand. **Kaspa settles. The name locates. The user
 | Session | `peer` / `onion` / `noise` records | spec; names can publish keys |
 | Run | IPFS/KFS/contenthash in a local sandbox; pay KAS / 402 | spec |
 
-- Architecture: https://github.com/STP-KAS/kns-spec/blob/main/WEB4.md
+- **Real vs paper:** https://github.com/STP-KAS/kns-spec/blob/main/REAL.md — indexer names, wallet chrome, pinning. Not a new internet.
+- Architecture (map, not shipped): https://github.com/STP-KAS/kns-spec/blob/main/WEB4.md
 - Spec: https://github.com/STP-KAS/kns-spec/blob/main/OVERLAY.md
 - Page: https://stp-kas.github.io/kns-spec/web4.html
 - Working companion: https://stp-kas.github.io/kns-spec/open.html (no seed; web vs run)

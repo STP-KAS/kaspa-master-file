@@ -232,6 +232,7 @@ Not a new chain. Not Tor-by-rebrand. **Kaspa settles. The name locates. The user
 - Architecture: https://github.com/STP-KAS/kns-spec/blob/main/WEB4.md
 - Spec: https://github.com/STP-KAS/kns-spec/blob/main/OVERLAY.md
 - Page: https://stp-kas.github.io/kns-spec/web4.html
+- Working companion: https://stp-kas.github.io/kns-spec/open.html (no seed; web vs run)
 - **Conformance (MUST/SHOULD for KNS + wallets):** https://github.com/STP-KAS/kns-spec/blob/main/CONFORMANCE.md
 - **Profile keys to add (ipfs, peer, onion…):** https://github.com/STP-KAS/kns-spec/blob/main/PROFILE.md
 - Schema: https://github.com/STP-KAS/kns-spec/blob/main/schemas/overlay-records.schema.json

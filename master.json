@@ -231,6 +231,10 @@
         {"name": "Silverscript #249", "url": "https://github.com/kaspanet/silverscript/issues/249", "chip": "bug", "note": "10 Sep. State[].split() tuple destructure fails on v1.0.0 (3ed9733). Fix PR #250 open."},
         {"name": "IzioDev SS x Argent x KCC", "url": "https://x.com/IzioDev/status/2097918399737139331", "chip": "x", "note": "10 Sep. Layers: Silverscript = foundation, Argent = multi-actor, KCC still draft."},
         {"name": "IzioDev leader/delegator", "url": "https://x.com/IzioDev/status/2098087085051986330", "chip": "x", "note": "10 Sep. One covenant-group diagram. Delegator runs less compute. Not a pin."},
+        {"name": "Sutton 11 Sep partitioned state", "url": "https://x.com/michaelsuttonil/status/2098204180406026482", "chip": "research", "note": "Working hypothesis: global DeFi not sequential. Push partitioned/parallel/replicated state. Not a KIP. Not product. Gramlane stays one own-UTXO."},
+        {"name": "Sutton vProgs bottleneck note", "url": "https://x.com/michaelsuttonil/status/2098371171498459629", "chip": "research", "note": "If DeFi must go through shared-state bottlenecks, ZK will not save scale. Essay not written. Infra first."},
+        {"name": "kips#46 KIP-20 split/sibling", "url": "https://github.com/kaspanet/kips/issues/46", "chip": "open", "note": "cyprox oracle/CDP reading question. Sutton: sibling OpInputCovenantId yes; 1-to-many keeps covenant_id yes. Not a new KIP. Not our dollar."},
+        {"name": "Argent ICC semantics", "url": "https://github.com/argent-lang/argent/blob/master/docs/icc-semantics.md", "chip": "preview", "note": "Sutton 11 Sep pointer. Closed vs open ICC. Docs incomplete. No Argent tag. Not Gramlane."},
         {"name": "8 Sep MWEB-like thread", "url": "https://research.kas.pa/t/optional-privacy-layer-for-kaspa-similar-to-litecoin-mweb/522", "chip": "research", "note": "JackKas. Not a KIP. Not product."},
         {"name": "23 Jun Kurrent RFC", "url": "https://research.kas.pa/t/kurrent-an-eltoo-inspired-latest-state-channel-on-kaspa/494", "chip": "research", "note": "a19q3 on research.kas.pa. Eltoo-inspired channel. Not product."}
       ]

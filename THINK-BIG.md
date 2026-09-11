@@ -96,7 +96,9 @@ The freeze + review made the **map** honest. The bottleneck is no longer “we d
 
 ### Kill list (full authority — do not “just explore”)
 
-DAGKnight · vProg exits / #139–#142 as product · Argent ICC / leader-delegate until **tagged and those two rules compile** · Kurrent · MWEB thread · guessed compute budget · `#234` retry · TN12 · a fourth 402 envelope · calling k402 “x402” or “adopted KCC-0402” · minting GRAM as KCC-20 · tPEG as money · cloning Kassword / Portrait / kaspa-pqv · foreign `readInputState` · `(State[] a, State[] b) = xs.split(n)` on v1.0.0 · silverc `master` replacing the pin · in-page inject of unknown wallets.
+DAGKnight · vProg exits / #139–#142 as product · Argent ICC / leader-delegate until **tagged and those two rules compile** · Kurrent · MWEB thread · guessed compute budget · `#234` retry · TN12 · a fourth 402 envelope · calling k402 “x402” or “adopted KCC-0402” · minting GRAM as KCC-20 · tPEG as money · cloning Kassword / Portrait / kaspa-pqv · foreign `readInputState` · `(State[] a, State[] b) = xs.split(n)` on v1.0.0 · silverc `master` replacing the pin · in-page inject of unknown wallets · a DEX or L1 dollar because Sutton asked a question.
+
+**Sutton 11 Sep** ([X](https://x.com/michaelsuttonil/status/2098204180406026482)): working hypothesis — global DeFi is **not sequential**; push **partitioned / parallel / replicated** state. Relative order inside related events still matters. If DeFi *must* share one bottleneck, he says even well-designed ZK cannot scale — essay **not written**. Argent ICC docs / dex `quote_id` are study material. [kips#46](https://github.com/kaspanet/kips/issues/46): sibling cov id **yes**; 1→N keeps id **yes**. That is not a dollar. **One own-UTXO is aligned with this push**, not a thing to wait out.
 
 ---
 

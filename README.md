@@ -231,6 +231,9 @@ Not a new chain. Not Tor-by-rebrand. **Kaspa settles. The name locates. The user
 
 - Spec: https://github.com/STP-KAS/kns-spec/blob/main/OVERLAY.md
 - Page: https://stp-kas.github.io/kns-spec/overlay.html
+- **Conformance (MUST/SHOULD for KNS + wallets):** https://github.com/STP-KAS/kns-spec/blob/main/CONFORMANCE.md
+- **Profile keys to add (ipfs, peer, onion…):** https://github.com/STP-KAS/kns-spec/blob/main/PROFILE.md
+- Schema: https://github.com/STP-KAS/kns-spec/blob/main/schemas/overlay-records.schema.json
 - `https://alice.kas.limo` leaks DNS. `kns://alice.kas` must not need ICANN or a CA.
 - Uniqueness is still indexer FCFS. Overlay does not fix that.
 

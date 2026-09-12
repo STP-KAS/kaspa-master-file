@@ -1,6 +1,6 @@
 # Kaspa High-Value Intel Master Pack
 
-**Date:** 2026-07-26 (registry updated **2026-09-11**; SilverScript pin **2026-09-09**)  
+**Date:** 2026-07-26 (registry updated **2026-09-12**; SilverScript pin **2026-09-09**)  
 **Purpose:** Single index of community + founder intel for future projects.  
 **Public copy:** `LOCAL/…` paths are this machine. Chat dumps and CSVs are **not** in this GitHub repo.
 
@@ -8,41 +8,41 @@
 
 ---
 
-## Status freeze — 2026-09-11
+## Status freeze — 2026-09-12
 
 Live L1 snapshot (api.kaspa.org, this date) plus kaspaexplained.com / rusty-kaspa / GitHub evidence. Recheck DAA/supply before quoting. Delta since 2026-09-04 freeze is **This week** below; Parts A–D stay unless a cited fact is now false. Part E (4 Sep GitHub delta) is kept; **Part F** is the 11 Sep covenants / SilverScript / Argent pass.
 
 **Auto-refresh:** every Monday 09:00 Europe/Brussels (`kaspa-master-intel-monday`). Next run 2026-09-14.
 
-### This week (vs 4 Sep freeze)
+### This week (vs 11 Sep freeze)
 
-- Chromatic reward step at DAA **531,207,000** fired. Reward 2.31246515 → **2.18267645** KAS. Next step **557,505,000**.
-- DAA 530,957,175 → **536,884,280**. Supply ~27.681B → **~27.694B**. Hashrate ~315 → **~347 PH/s**.
-- Covenant *ever* count on kaspaexplained jumped 28,125 → **84,196** (Sep 1 indexer baseline, still the live `/build-on-kaspa` page). Active 519 → **687**. Locked KAS ~1.53M → **~1.56M**. TN10 still dominates (~88,493 active).
-- SilverScript **v1.0.0** is the pin (was wrongly still listed as v1-rc1 in this freeze table). New hole **#249/#250**.
-- Argent **#59** (8 Sep) and **#60** (10 Sep) merged. README still not release-ready. Two leader/delegate compiler rules **not implemented**.
-- rusty-kaspa no new node tag. DAGKnight **#1127** draft (bounded UMC). vProgs **#142** open (bridge lane anchor). research.kas.pa: MWEB-like thread 8 Sep — not a KIP.
+- DAA 536,884,280 → **537,990,049**. Supply ~27.694B → **~27.696B**. Reward still **2.18267645**. Hashrate still **~347.6 PH/s**.
+- **KCC-0012** Draft opened 11 Sep ([kccs#24](https://github.com/kaspanet/kccs/pull/24), saefstroem). Wallet provider + discovery. Izio reviewing 12 Sep. No public implementation. Recap: kaspa.news 12 Sep.
+- Sutton 11 Sep 15:27 UTC praised saefstroem for dapp-dev process + ecosystem standardization. Same person as KCC-0 / KCC-0012 lead. **Not a merge.**
+- Sil **#251** open (11 Sep, struct-array indexing). **#250** still open. Pin still forbids `State[].split()` tuples.
+- DAGKnight: no new `dagknight` commits since 8 Sep. #1127 still draft. Daily bot: no DK consensus delta.
 
 | Item | Status | Evidence |
 | --- | --- | --- |
 | Consensus | **Live** GHOSTDAG. DAGKnight = KIP-2 Proposed, not mainnet. rusty-kaspa DK PRs still open/draft (#1127 bounded UMC, #1124 simpa, older #1122/#1120/#1119/#1104). | kaspaexplained.com/status; KIP-2 |
 | Block rate | **Live** 10 BPS (Crescendo, May 2025) | rusty-kaspa releases |
 | Programmability | **Live** Toccata, 30 Jun 2026, DAA **474,165,565**. Covenants (KIP-17), covenant IDs (KIP-20), ZK precompile (KIP-16), sequencing commitments (KIP-21). Node line still v2.0.1. | v2.0.0 / v2.0.1; Toccata guide; rusty-kaspa |
-| Virtual DAA | **536,884,280** | api.kaspa.org/info/blockdag (2026-09-11) |
-| Circulating supply | **~27.694 billion KAS** (27,693,722,121) of ~28.704B max | api.kaspa.org/info/coinsupply (sompi 2769372212054874832) |
+| Virtual DAA | **537,990,049** | api.kaspa.org/info/blockdag (2026-09-12) |
+| Circulating supply | **~27.696 billion KAS** (27,696,135,848) of ~28.704B max | api.kaspa.org/info/coinsupply (sompi 2769613584854247697) |
 | Block reward | **2.18267645 KAS** (21.8267645 KAS/s). Step at DAA **531,207,000** has fired. Next step DAA **557,505,000**. No cliff. | coinbase.rs; blockreward API |
-| Hashrate | **~347 PH/s** (API field ~347.2e3; treat as TH/s → PH/s) | api.kaspa.org/info/hashrate |
+| Hashrate | **~347.6 PH/s** (API field ~347.6e3; treat as TH/s → PH/s) | api.kaspa.org/info/hashrate |
 | Covenant adoption | Early, real. Sep 1 indexer baseline still on the live page: **84,196** covenants ever, **687** still active, **~1.56M KAS**. TN10 ~88,493 active. | kaspaexplained.com/build-on-kaspa |
 | Silverscript | **v1.0.0 tagged** (9 Sep, `3ed9733`). Compiler pin, not an audited-app claim. Foreign `readInputState` framing guard **#234 closed unmerged**. Artifact has **no compute-budget estimate** (#243 open). **#249** `State[].split()` tuple destructure broken on this pin; **#250** open. | kaspanet/silverscript |
 | vProgs | **Roadmap.** No public product testnet, no releases. Host-side claim kit **#139 open**. Resource indexer **#140 open**. Bridge lane-anchor **#142 open** (10 Sep). | kaspanet/vprogs |
 | Argent ICC | Unaudited offline demos only. Not production SC. **#59 merged 8 Sep** state vectors in `args!`. **#60 merged 10 Sep** pins sil v1.0.0 + leader/delegate guide; continuation-closure and zero-continuation first-input still **[NOT IMPLEMENTED]**. No tag. README: not release-ready. | argent-lang/argent |
 | KCC-0020 | Spec text merged, **Status: Draft**. Conformance vectors **#20 open**. KCC-2 ECDSA P2PK **#23 open**. KCC-0021 / 0402 still open drafts. | kaspanet/kccs |
+| KCC-0012 | **Draft.** Browser wallet provider + discovery ([kccs#24](https://github.com/kaspanet/kccs/pull/24), 11 Sep). No public implementation. Not adopted. | kaspanet/kccs |
 | Native DeFi | **Roadmap.** Do not pitch as live. | /status claim table |
 | Portrait | **Pre-production, unaudited, testnet-only.** Covenant language + pattern library (Stichting Kii Foundation). Not a Gramlane clone target. | KaspaKii/Portrait · portrait.kaspa-kii.org |
 | kaspa-pqv | Hash-based PQ vault **in Kaspa script** (SLH-DSA + LMS). Confirmed **TN10** spends. **Not audited. Not mainnet.** | aglov413/kaspa-pqv |
 | Kassword | Browser PQ password vault + on-chain locker (Schnorr/HLMT/HTLC/DMS/recovery/PQ-cold). Authors claim mainnet deploys. **External. Do not impersonate.** | KASRANKS/KASSWORD |
 
-**Do not claim:** 100 BPS live; instant irreversible payments; DAGKnight is current consensus; mature native smart contracts; KCC-0020/0021/0402 adopted; Argent production-ready; vProgs live; Portrait or kaspa-pqv on mainnet; Gramlane is Kassword / KCC-20 / Argent; `State[].split()` tuple destructure is safe on v1.0.0. SilverScript **v1.0.0 is tagged** — that is the compiler pin, not a claim that every app is audited.
+**Do not claim:** 100 BPS live; instant irreversible payments; DAGKnight is current consensus; mature native smart contracts; KCC-0020/0021/0402/**0012** adopted; Argent production-ready; vProgs live; Portrait or kaspa-pqv on mainnet; Gramlane is Kassword / KCC-20 / Argent; `State[].split()` tuple destructure is safe on v1.0.0. SilverScript **v1.0.0 is tagged** — that is the compiler pin, not a claim that every app is audited.
 
 **Narrative asset (this update):** `LOCAL/kaspa-attenborough-2026/` (this machine, not uploaded) — Attenborough wildlife-doc parody, updated from the Apr 2025 CryptoQTK clip (`x.com/CryptoQTK/status/1908285242412003694`). Ethos kept (fair launch vs memes/VC coins; Kaspa as the evolved predator). Facts updated: Crescendo 10 BPS, Toccata covenants/ZK live, vProgs still in the wings.
 
@@ -66,6 +66,7 @@ Live L1 snapshot (api.kaspa.org, this date) plus kaspaexplained.com / rusty-kasp
 | **R-SIL-ABI** | https://github.com/kaspanet/silverscript/pull/232 | Portable `SilAbiArtifact` (merged 28 Aug 2026) | Compiler/debugger/external tooling share one JSON ABI |
 | **R-SIL-234** | https://github.com/kaspanet/silverscript/pull/234 | Input-state framing guard | **Closed unmerged.** Foreign `readInputState` still the 42-byte class. |
 | **R-KCCS-P20** | https://github.com/kaspanet/kccs/pull/20 | KCC-0020 first-cut conformance vectors | **Open draft.** BLAKE3 state/dispatch/template vectors. Transfer tag pending. |
+| **R-KCCS-P24** | https://github.com/kaspanet/kccs/pull/24 | KCC-0012 wallet provider + discovery | **Open draft.** EIP-1193/6963 shape. No public implementation. |
 | **R-VPROGS-139** | https://github.com/kaspanet/vprogs/pull/139 | zk-abi ExitLeaf + permission claim builder | Host-side settled-exit kit. Not a product. |
 | **R-PORTRAIT** | https://github.com/KaspaKii/Portrait · https://portrait.kaspa-kii.org | Portrait language + covenant pattern library (Kii) | TN-only. User paste `Portraitt.co/{fmry9yu4sB,tb0y7uozNe}` 404s; canonical repo is `Portrait`. |
 | **R-PQV** | https://github.com/aglov413/kaspa-pqv | Post-quantum hash-based P2SH vault | SLH-DSA (stateless) + LMS (stateful). TN10. Toccata opcodes only. |
@@ -444,6 +445,7 @@ Pin for Gramlane: **v1.0.0** (`3ed9733`, Ori Newman / someone235, 9 Sep 2026). v
 | [#244](https://github.com/kaspanet/silverscript/pull/244) ABI crate license | Drcryptodee | **merged** | Housekeeping. |
 | [#249](https://github.com/kaspanet/silverscript/issues/249) State[].split() tuple | KaspaScopio | **open** (10 Sep) | On v1.0.0: `(State[] a, State[] b) = xs.split(n)` → undefined `__inline_*`. `.0`/`.1` and `byte[].split()` tuples work. |
 | [#250](https://github.com/kaspanet/silverscript/pull/250) fix #249 | KaspaScopio | **open** | Not merged. Do not use that syntax on the pin. |
+| [#251](https://github.com/kaspanet/silverscript/pull/251) index struct-array exprs | KaspaScopio | **open** (11 Sep) | Fixes #228. Independent of #250. Not merged. |
 | [#238](https://github.com/kaspanet/silverscript/pull/238) later fields reference earlier | palacharlanarendra | **open** | Language sugar. Skip. |
 | [#137](https://github.com/kaspanet/silverscript/pull/137) r0 support / [#138](https://github.com/kaspanet/silverscript/pull/138) Groth16 builtin | someone235, elldeeone | **merged** | ZK front-end on Sil. Not required for WorkCredit grams. |
 
@@ -494,6 +496,7 @@ All KCCs are **Calls for Conventions**, not consensus. Status on README (main): 
 | #6 KCC-0021 metadata | **open** (Knitser) | Do not claim adopted. |
 | #4 KCC-0402 payment channels | **open** (Kali123411) | Do not claim adopted. |
 | #23 KCC-2 p2pk-ecdsa 0x05/0x06 | **open** (supertypo) | |
+| **#24 KCC-0012** wallet provider/discovery | **open draft** (saefstroem, 11 Sep; Izio reviewing 12 Sep) | EIP-1193/6963 shape + `kaspa_signTransaction` (sign listed inputs only). Continuation of KIP-12. **No public implementation.** Not adopted. |
 | #8–#12 jeffsiegel1965 multi-token dump | **closed unmerged** | Noise; do not treat as standards. |
 | Issue #14 (Knitser) | **open** | `extension_commitment` vs consolidation rule — spec still fights itself. |
 
@@ -512,7 +515,7 @@ Toccata is **live**. Cleanup of activation machinery:
 | kips #45 mark KIPs 16/17/20/21 active | **closed** (landed or superseded — consensus already active) |
 | kips #22 P2MR quantum-resistant SPK | **open** |
 | kips #24 tx v1 fields/hashing; #25 compute budget | **open** (docs catching up to live Toccata) |
-| kips #12 browser-extension wallet APIs; #39 multisig conventions | **open** |
+| kips #12 browser-extension wallet APIs; #39 multisig conventions | **open** — KCC-0012 (`kccs#24`) is the 11 Sep continuation of KIP-12, still Draft |
 
 docs.kaspa.org/toccata: consensus features are mainnet; **tooling is younger**.
 

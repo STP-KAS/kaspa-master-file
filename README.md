@@ -1,6 +1,6 @@
 # Kaspa master file
 
-**Not Kaspa core. Not official KNS.** Public pin list by [@StppStp](https://x.com/StppStp) / [STP-KAS](https://github.com/STP-KAS). Freeze: **12 Sep 2026**.
+**Not Kaspa core. Not official KNS.** Public pin list by [@StppStp](https://x.com/StppStp) / [STP-KAS](https://github.com/STP-KAS). Freeze: **13 Sep 2026**.
 
 **project delusional.** Kaspa master file — pins, ideas, principles. One principle: skip centralised stablecoins for dapps. Fill is not a business: this desk keeps 0. Any Kaspa wallet (QR / kaspa: URI). In-page inject is only Kasware/Kastle. The jar is not Nakamoto. Darwin battletest: [STP-KAS/gramlanepeglab](https://github.com/STP-KAS/gramlanepeglab). Receipt PoC after battling PegLab vs Parker: [STP-KAS/peglab-poc](https://github.com/STP-KAS/peglab-poc).
 
@@ -8,9 +8,17 @@ This is a map. Merged Active KIP = law. Open PR, personal wiki, Discord rumor �
 
 Repo: **kaspa-master-file** (the “kaspa mister fil”). Grok heavy review of this freeze: [`GROK-HEAVY-REVIEW.md`](GROK-HEAVY-REVIEW.md). Think big / do-this-next: [`THINK-BIG.md`](THINK-BIG.md). Grok collab (core idea, commercial uses, beyond crypto): [STP-KAS/grok-kaspa-collab](https://github.com/STP-KAS/grok-kaspa-collab). Local URLs (`127.0.0.1`) are this machine, not GitHub.
 
+### What this pass did (13 Sep 2026)
+
+GitHub + masterfile §5 X handles, DK-filtered. Last `dagknight` **commit still 8 Sep**. Material DK delta: [#1127](https://github.com/kaspanet/rusty-kaspa/pull/1127) marked **ready for review 12 Sep 15:13 UTC** (was draft at the 12 Sep freeze). FreshAir: batching + depth-limit polish in; **formal security note still pending this week**. Not merged. Not shipped.
+
+Notebook for outsider-safe DK help (tests, confirmation-policy spec, PR map): [STP-KAS/dagknight-test-grok](https://github.com/STP-KAS/dagknight-test-grok). **Not a pin. Not consensus.**
+
+Pins **unchanged:** silverc **v1.0.0**; Toccata live; DAGKnight not shipped; KCC-0012 Draft.
+
 ### What this pass did (12 Sep 2026)
 
-Daily Grok bot (`dagknight-test-grok daily update`) + kaspa.news / GitHub / X check against the 11 Sep freeze. DK: **no consensus delta** (last `dagknight` commit still 8 Sep; #1127 draft, #1124 open). Valuable item was **not** DK.
+Daily Grok bot (`dagknight-test-grok daily update`) + kaspa.news / GitHub / X check against the 11 Sep freeze. DK then: **no consensus delta** (last `dagknight` commit still 8 Sep; #1127 still draft at 13:26 UTC). Valuable item that day was **not** DK.
 
 | Found | Change |
 | --- | --- |
@@ -225,6 +233,7 @@ KIP-21 lanes are 20-byte `subnetwork_id`s, ≤50 non-coinbase lanes/block, 1e9 g
 | thesheepcat/K | https://github.com/thesheepcat/K | Decentralized microblog. Not this desk. |
 | coderofstuff/rusty-kaspa | https://github.com/coderofstuff/rusty-kaspa | Unofficial DAGKnight work. **Not a pin.** |
 | coderofstuff/dk-wiki | https://github.com/coderofstuff/dk-wiki | Unofficial wiki. **Not a pin.** |
+| STP-KAS/dagknight-test-grok | https://github.com/STP-KAS/dagknight-test-grok | Outsider-safe DK notebook (e2e tests, KIP-2 confirmation spec, PR map). Rechecked 13 Sep: #1127 ready-for-review, last commit 8 Sep. **Not a pin. Not consensus.** |
 | parker2017code/kaspa-explained | https://github.com/parker2017code/kaspa-explained | Tracker source for kaspaexplained.com. Public README **10 Sep**: V6 local journey 26 accepted TN10 txs; Cloudflare host is a separate gate. Wrap: **wTestUSD cannot buy crops.** |
 | parker2017code/tn12-covenant-vault-demo | https://github.com/parker2017code/tn12-covenant-vault-demo | Historical escrow/vault evidence lab. **Do not use TN12 for Toccata product work** (IzioDev 6 Jun 2026). Steal rules; re-prove on TN10. |
 | STP-KAS/peglab-stp | https://github.com/STP-KAS/peglab-stp | tPEG classroom. Admin oracle + 2 tKAS pool. **WILL DEPEG.** Not money. |
@@ -372,7 +381,7 @@ Telegram Bot API (platform, not Kaspa): https://core.telegram.org/bots/api · ht
 - **New compiler hole on v1.0.0:** [#249](https://github.com/kaspanet/silverscript/issues/249) `State[].split()` tuple destructure emits undefined `__inline_*`. `.0`/`.1` access works; `byte[].split()` tuple works. Fix PR [#250](https://github.com/kaspanet/silverscript/pull/250) **open**, not merged. Do not write `(State[] a, State[] b) = states.split(n)` on this pin.
 - KCC-0020 **Draft**. Issue [#14](https://github.com/kaspanet/kccs/issues/14) supply-split still open. Vectors [#20](https://github.com/kaspanet/kccs/pull/20) still open. Not a gram token.
 - Portrait (Kii) public **1 Sep 2026**, testnet-only.
-- DAGKnight: KIP-2 still Proposed. New draft [#1127](https://github.com/kaspanet/rusty-kaspa/pull/1127) (8 Sep, FreshAir: bounded UMC / k^4 depth). **Not shipped.**
+- DAGKnight: KIP-2 still Proposed. [#1127](https://github.com/kaspanet/rusty-kaspa/pull/1127) (FreshAir: bounded UMC / k^4 depth) **ready for review 12 Sep**. Security write-up still pending. Last `dagknight` commit **8 Sep**. **Not shipped.** Notebook: [dagknight-test-grok](https://github.com/STP-KAS/dagknight-test-grok).
 - kaspa.org rebuilt around “real-time decentralization” (2026). 10 BPS live. 100 BPS is a target, not a spec.
 - Official Toccata guide: https://docs.kaspa.org/toccata — consensus live; SilverScript v1 is tagged; Argent/vProgs tooling still early.
 - research.kas.pa: newest thread is **optional privacy / MWEB-like** (JackKas, 8 Sep, [522](https://research.kas.pa/t/optional-privacy-layer-for-kaspa-similar-to-litecoin-mweb/522)). Not a KIP. Kurrent (23 Jun) still not product.

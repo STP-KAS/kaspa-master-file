@@ -49,7 +49,7 @@ Reviewed the freeze after it landed on `main` ([PR #1](https://github.com/STP-KA
 | Covenant counts had no official-sites row | Add [`/build-on-kaspa`](https://kaspaexplained.com/build-on-kaspa) (84,196 / 687 / ~1.56M KAS). |
 | 2026 forum threads not newest-first | MWEB-like (8 Sep) listed first. |
 | R&D log stopped at 4 Sep | Add 9–10 Sep: Sil v1.0.0, Argent #59/#60, Sil #249. |
-| 402 path missing from this map | Pin [elldeeone/kaspa-x402](https://github.com/elldeeone/kaspa-x402) (`v1.0.0-rc.1`, TN10, mainnet blocked). Bind this. [Kali123411/k402](https://github.com/Kali123411/k402) is HTTP 402 + a `kaspa-channel` lock ([kccs#4](https://github.com/kaspanet/kccs/pull/4) still open) — steal the lock, do not treat it as Kaspa’s x402 v2 binding. Independent Grok pass: [STP-KAS/x402-vs-grok](https://github.com/STP-KAS/x402-vs-grok). |
+| 402 path missing from this map | Pin [elldeeone/kaspa-x402](https://github.com/elldeeone/kaspa-x402) (`v1.0.0-rc.1`, TN10, mainnet blocked). Bind this. Windows clone-and-test merged `216ad77`. [Kali123411/k402](https://github.com/Kali123411/k402) is HTTP 402 + a `kaspa-channel` lock ([kccs#4](https://github.com/kaspanet/kccs/pull/4) still open) — steal the lock, do not treat it as Kaspa’s x402 v2 binding. Public verdict: [sixpack.wtf](https://sixpack.wtf). |
 | vProgs #142 missing | Bridge lane-anchor **open** (10 Sep). Still not product. |
 | Public intel-pack leaked `C:\Users\…` paths | Redact to `LOCAL`. Dumps stay off this repo. |
 | `#250` still unmerged | Rechecked. `State[].split()` tuples still forbidden on v1.0.0. |

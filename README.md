@@ -8,6 +8,23 @@ This is a map. Merged Active KIP = law. Open PR, personal wiki, Discord rumor �
 
 Repo: **kaspa-master-file** (the “kaspa mister fil”). Grok heavy review of this freeze: [`GROK-HEAVY-REVIEW.md`](GROK-HEAVY-REVIEW.md). Think big / do-this-next: [`THINK-BIG.md`](THINK-BIG.md). Grok collab (core idea, commercial uses, beyond crypto): [STP-KAS/grok-kaspa-collab](https://github.com/STP-KAS/grok-kaspa-collab). Local URLs (`127.0.0.1`) are this machine, not GitHub.
 
+### What this pass did (14 Sep 2026, evening — groks-wallet)
+
+Hard-tested **all 36** STP-KAS GitHubs against [groks-wallet](https://github.com/STP-KAS/groks-wallet) on TN10. Catalog: [STP-KAS/tn10-hard-test](https://github.com/STP-KAS/tn10-hard-test). Rechecked pins against [kaspaexplained.com/status](https://kaspaexplained.com/status) (14 Sep) + GitHub releases.
+
+| Found | Change |
+| --- | --- |
+| Pins | **Unchanged.** silverc **v1.0.0**; rusty **v2.0.1**; Toccata **live**; DAGKnight **KIP-2 Proposed**; KCC-0012 **Draft**; `#234` unmerged; `#250`/`#251` open. |
+| 1 sompi receipt | **Unconstructible** on TN10 (`Storage mass exceeds maximum`). Teaching unit stays 1:1 in ENGINE_SPEC. Journal is 1 tKAS plain transfer. |
+| groks-wallet | Public GitHub (was documented private). Local ~300k tKAS / **~97k UTXOs**. Payload tx `64057dd7…` accepted. |
+| PegLab genesis | Dedicated sponsor, **not** groks-wallet. Compile docs said v1-rc1 — pin is v1.0.0. |
+| kns `go test` | Comment grep of `readInputState`, not a hostile KasName call. |
+| Explorers | faucet-tn10 **403**. explorer-tn10.kaspa.org **402 DEPLOYMENT_DISABLED**. Use api-tn10 + kaspa.stream. |
+| Luke | Follow-up in [grok-heavy-test](https://github.com/STP-KAS/grok-heavy-test). Windows `216ad77` still green. Funded live proof **not** run. |
+| KaspaSilver | Note in [kaachat-desktop](https://github.com/STP-KAS/kaachat-desktop). `npm test` 9/9. groks-wallet cannot log in (inject only). |
+
+Referee: [kaspaexplained.com/status](https://kaspaexplained.com/status) — GHOSTDAG live, 10 BPS live, Toccata live, DAGKnight not shipped, KCC-20 Draft.
+
 ### What this pass did (14 Sep 2026)
 
 Retested [STP-KAS/kns-spec](https://github.com/STP-KAS/kns-spec) against live L1 + KNS indexer + covenant explorer. Pins unchanged: silverc **v1.0.0**; uniqueness is still indexer FCFS.
@@ -238,7 +255,7 @@ KIP-21 lanes are 20-byte `subnetwork_id`s, ≤50 non-coinbase lanes/block, 1e9 g
 | vsmirn0v/KaChat | https://github.com/vsmirn0v/KaChat | Other product. Gramlane does not clone E2E. |
 | KASRANKS/KASSWORD | https://github.com/KASRANKS/KASSWORD | Other vault. Pointer only. |
 | aglov413/kaspa-pqv | https://github.com/aglov413/kaspa-pqv | Posted to Core R&D **27 Aug 2026**. Hash-based PQ vault, **TN10 only**, unaudited. |
-| trillskillz/OpenSilver | https://github.com/trillskillz/OpenSilver | Community SilverScript pattern lib (22 patterns). **Not kaspanet. Not externally audited.** Pins its own silverc, not always v1.0.0. |
+| trillskillz/OpenSilver | https://github.com/trillskillz/OpenSilver | Community SilverScript pattern lib (22 patterns). [@BankQuote](https://x.com/BankQuote). **Not kaspanet. Not externally audited.** Pins its own silverc, not always v1.0.0. |
 | thesheepcat/K | https://github.com/thesheepcat/K | Decentralized microblog. Not this desk. |
 | coderofstuff/rusty-kaspa | https://github.com/coderofstuff/rusty-kaspa | Unofficial DAGKnight work. **Not a pin.** |
 | coderofstuff/dk-wiki | https://github.com/coderofstuff/dk-wiki | Unofficial wiki. **Not a pin.** |
@@ -330,6 +347,34 @@ Yonatan’s own “rough core” list (30 Apr 2025): michaelsutton, hashdag, cod
 | Luke Dunshea | [@elldeeone](https://x.com/elldeeone) | SilverScript v1 credit. GitHub [elldeeone](https://github.com/elldeeone). |
 | Sivan Helfer | [@manyfest_](https://x.com/manyfest_) | SilverScript v1 / KCC-20. GitHub [Manyfestation](https://github.com/Manyfestation). |
 | Alexander Säfström | [@asaefstroem](https://x.com/asaefstroem) | Credited by Ori on the v1-rc1 review (30 Aug). KCC-0. **KCC-0012** lead ([kccs#24](https://github.com/kaspanet/kccs/pull/24), 11 Sep). Sutton [11 Sep](https://x.com/michaelsuttonil/status/2098433221021118762): dapp-dev process + ecosystem standardization. Draft, not law. |
+| BankQuote | [@BankQuote](https://x.com/BankQuote) | Community educator. GitHub [trillskillz](https://github.com/trillskillz) (OpenSilver). Long-form Toccata/covenant essays: §5c. **Not core.** |
+
+---
+
+## 5c. @BankQuote essays (community, not law)
+
+[@BankQuote](https://x.com/BankQuote) — long-form Kaspa explainers, Apr–Sep 2026. Same person as [trillskillz](https://github.com/trillskillz) (OpenSilver). **Not core. Not a KIP.** Kept only posts that keep Toccata live vs Argent / vProgs / DAGKnight not-shipped, and that do not treat tooling as product. Recheck before quoting.
+
+**Dropped this scan:** price / “Kaspa will perform”; AGI / post-AGI economy; Staghunt as a coordination layer; KasGraph “feature-complete” / kasgraph.io live (27 May: still in development; last GitHub **27 Jul**); “AI can now operate on Kaspa” as present-tense product.
+
+| When | Post | Honest |
+| --- | --- | --- |
+| 13 Sep 2026 | [Covenants + SilverScript + Argent](https://x.com/BankQuote/status/2099169333008093625) | Stack. Argent still needs audit. |
+| 10 Sep 2026 | [SilverScript v1](https://x.com/BankQuote/status/2098085618991481249) | Compiler pin exists. Compiler correctness + app security still need scrutiny. Argent not hardened. |
+| 9 Sep 2026 | [Covenants as ownership](https://x.com/BankQuote/status/2097770791664239031) | Vaults/escrow/treasury as design. Tooling, audits, wallets still catching up. |
+| 8 Sep 2026 | [Argent ICC](https://x.com/BankQuote/status/2097352240549753241) | Pre-release. Needs audit. Not a tag. |
+| 30 Aug 2026 | [SilverScript v1-rc1](https://x.com/BankQuote/status/2094127101825929410) | **History.** v1.0.0 tagged 9 Sep. |
+| 29 Aug 2026 | [Argent as UTXO-native](https://x.com/BankQuote/status/2093738838883483934) | Not an EVM clone. DAGKnight still a target. |
+| 26 Aug 2026 | [Covenants, Argent, DAGKnight as different layers](https://x.com/BankQuote/status/2092626699737297362) | DK is not consensus. |
+| 22 Aug 2026 | [Post-Toccata stack](https://x.com/BankQuote/status/2091199737257140436) | Explicit: higher stack is experimental, not finished production. |
+| 30 Jul 2026 | [Argent actors + ICC](https://x.com/BankQuote/status/2082962866240450706) | Experimental, not production-ready. |
+| 22 Jul 2026 | [Programmable PoW substrate](https://x.com/BankQuote/status/2079931220859699259) | Seed of this catalog. Tx v1 / KIP-16 / 20 / 21. Primitives live; tooling is the next battle. |
+| 10 Jul 2026 | [Transaction v1 surface](https://x.com/BankQuote/status/2075573111232077948) | Same architecture as 22 Jul. Not a shared-state VM. |
+| 19 Jun 2026 | [Toccata as programmable UTXO cell](https://x.com/BankQuote/status/2068101137895412170) | KIP-17 inspect / KIP-20 lineage / KIP-16 proofs. Not an EVM clone. |
+| 25 May 2026 | [OpenSilver](https://x.com/BankQuote/status/2058954066345001133) | Author of the already-pinned repo. **Not audited.** |
+| 18 May 2026 | [Conditional settlement use cases](https://x.com/BankQuote/status/2056460968104702078) | Design, not product. DAGKnight / based-ZK / L2 KAS still roadmap. |
+| 22 Apr 2026 | [Toccata + KIP-21 sequencing](https://x.com/BankQuote/status/2046948600094101946) | **History** (pre-activation). Architecture still matches. |
+| 19 Apr 2026 | [Programmable settlement; vProgs horizon](https://x.com/BankQuote/status/2045943476546605124) | **History.** Honest split: Toccata groundwork, vProgs horizon. |
 
 ---
 
@@ -494,6 +539,7 @@ TG-dense, Discord-light: silverscript, vprogs, Argent, kccs, python-sdk — trea
 | palacharlanarendra | Sil #238 still open (later fields reference earlier). #244 ABI license **merged**. |
 | KaspaScopio | Sil #249 / #250 — `State[].split()` tuple destructure on v1.0.0. Skip that syntax until #250 merges. **#251** (11 Sep) struct-array index — also open. |
 | saefstroem | KCC-0; rusty ZK SDK; **KCC-0012** (`kccs#24`). Sutton 11 Sep praise. Draft. |
+| [@BankQuote](https://x.com/BankQuote) / [trillskillz](https://github.com/trillskillz) | Community Toccata/covenant essays (§5c). OpenSilver (not audited). **Not core.** |
 
 ### Gramlane filter (from that pack)
 

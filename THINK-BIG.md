@@ -36,7 +36,7 @@ Honest labels only. Recheck DAA / PRs before quoting.
 | --- | --- |
 | Argent | [PR #60](https://github.com/argent-lang/argent/pull/60) merged 10 Sep, pins sil v1.0.0. **No tag.** README: not release-ready. Two compiler rules **[NOT IMPLEMENTED]**: continuation-closure; first-input on delegate-capable actors. |
 | KCC-0020 | **Draft.** [#14](https://github.com/kaspanet/kccs/issues/14) supply-split open. [#20](https://github.com/kaspanet/kccs/pull/20) vectors open. Not a gram token. |
-| kaspa-x402 | [elldeeone/kaspa-x402](https://github.com/elldeeone/kaspa-x402) — intended **x402 v2** binding. Tag **v1.0.0-rc.1**. **TN10 only. Mainnet blocked.** Bind this envelope. Pass: [x402-vs-grok](https://github.com/STP-KAS/x402-vs-grok). |
+| kaspa-x402 | [elldeeone/kaspa-x402](https://github.com/elldeeone/kaspa-x402) — intended **x402 v2** binding. Tag **v1.0.0-rc.1**. **TN10 only. Mainnet blocked.** Bind this envelope. Windows clone-and-test merged `216ad77`. Public: [sixpack.wtf](https://sixpack.wtf). |
 | k402 | [Kali123411/k402](https://github.com/Kali123411/k402) — HTTP 402 + `kaspa-channel` lock/voucher. [kccs#4](https://github.com/kaspanet/kccs/pull/4) still open. Steal the lock. **Not** x402 v2. **Not** adopted KCC-0402. |
 | Parker receipts | [kaspa-explained](https://github.com/parker2017code/kaspa-explained) V6 local: **26 accepted TN10 txs**. `wTestUSD` cannot buy crops. Unit = **1 sompi**. |
 

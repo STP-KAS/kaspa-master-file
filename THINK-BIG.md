@@ -36,7 +36,7 @@ Honest labels only. Recheck DAA / PRs before quoting.
 | --- | --- |
 | Argent | [PR #60](https://github.com/argent-lang/argent/pull/60) merged 10 Sep, pins sil v1.0.0. **No tag.** README: not release-ready. Two compiler rules **[NOT IMPLEMENTED]**: continuation-closure; first-input on delegate-capable actors. |
 | KCC-0020 | **Draft.** [#14](https://github.com/kaspanet/kccs/issues/14) supply-split open. [#20](https://github.com/kaspanet/kccs/pull/20) vectors open. Not a gram token. |
-| kaspa-x402 | [elldeeone/kaspa-x402](https://github.com/elldeeone/kaspa-x402) — intended **x402 v2** binding. **TN10 alpha.** Bind this envelope. |
+| kaspa-x402 | [elldeeone/kaspa-x402](https://github.com/elldeeone/kaspa-x402) — intended **x402 v2** binding. Tag **v1.0.0-rc.1**. **TN10 only. Mainnet blocked.** Bind this envelope. Pass: [x402-vs-grok](https://github.com/STP-KAS/x402-vs-grok). |
 | k402 | [Kali123411/k402](https://github.com/Kali123411/k402) — HTTP 402 + `kaspa-channel` lock/voucher. [kccs#4](https://github.com/kaspanet/kccs/pull/4) still open. Steal the lock. **Not** x402 v2. **Not** adopted KCC-0402. |
 | Parker receipts | [kaspa-explained](https://github.com/parker2017code/kaspa-explained) V6 local: **26 accepted TN10 txs**. `wTestUSD` cannot buy crops. Unit = **1 sompi**. |
 
@@ -143,7 +143,7 @@ In [peglab-poc](https://github.com/STP-KAS/peglab-poc):
 
 ### Step 3 — Charge for the call (402)
 
-1. Bind **[elldeeone/kaspa-x402](https://github.com/elldeeone/kaspa-x402)** (TN10 alpha, kaspa-x402.org). That is the HTTP 402 **envelope**.
+1. Bind **[elldeeone/kaspa-x402](https://github.com/elldeeone/kaspa-x402)** (`v1.0.0-rc.1`, kaspa-x402.org, TN10). That is the HTTP 402 **envelope**. Not v1. Not mainnet.
 2. Steal lock/voucher shape from **[Kali123411/k402](https://github.com/Kali123411/k402)** into **our** WorkCredit. Credit them. Do **not** call it Kaspa’s x402 v2. Do **not** call it adopted KCC-0402. [kccs#4](https://github.com/kaspanet/kccs/pull/4) is still open.
 3. Do not invent a fourth 402.
 4. First billed surface: one local dApp endpoint returns **402**, pays in KAS/grams, receipt is the L1 txid.
@@ -223,6 +223,8 @@ Numbered so they can be killed later with evidence. Until then they are desk law
 **P12. Monday job is a tripwire, not a blog.** If it cannot see a new silverc tag, a fired reward step, a Moved URL, or `#250` merge, it must not leave v1-rc1 in the table again.
 
 **P13. Kill-if (stop the line).** Foreign `readInputState` in our scripts · silverc `master` replaces v1.0.0 in a release · tPEG listed as money · compiler tag sold as a dapp · Argent ICC shipped before tag + the two rules · fourth 402 envelope · GRAM as KCC-20 · seed paste UX · TN12.
+
+**P14. Empty blocks are inventory.** Crescendo’s 10 BPS target stamps ~864,000 slots a day. A coinbase-only block still has parents, still moves DAA time, still pays subsidy. It is leftover capacity, not wasted work. Macro: after the last ~1B KAS, miners eat fees from filling those slots. Micro: each slot is one receipt, postage stamp, timeout, 402, till ticket, gram, name bump, or vault pin. Classroom on MIX: `/empty-block`. Not a dollar. Not a GDP forecast.
 
 ---
 

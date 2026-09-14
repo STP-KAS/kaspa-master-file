@@ -76,7 +76,7 @@ Live L1 snapshot (api.kaspa.org, this date) plus kaspaexplained.com / rusty-kasp
 | **R-X** | `x-handles-credible-sources-insert-index.txt` | Tiered Kaspa X handles | Pointer sources (not primary proof) |
 | **R-NARRATIVE-2026** | `LOCAL/kaspa-attenborough-2026/` | Attenborough Kaspa film (Sep 2026 remake of Apr 2025 CryptoQTK piece). Not in this repo. | Public-facing ethos + fact-checked VO |
 | **R-SIL-249** | https://github.com/kaspanet/silverscript/issues/249 | `State[].split()` tuple destructure on v1.0.0 | **Open.** Fix #250 unmerged. Skip that syntax. |
-| **R-X402** | https://github.com/elldeeone/kaspa-x402 | Kaspa x402 v2 binding (TN10 alpha) | Bind this envelope. |
+| **R-X402** | https://github.com/elldeeone/kaspa-x402 | Kaspa x402 v2 binding. Tag **v1.0.0-rc.1** (13 Sep 2026). TN10 only. Mainnet blocked. | Bind this envelope. Not v1. Independent Grok pass: [STP-KAS/x402-vs-grok](https://github.com/STP-KAS/x402-vs-grok). |
 | **R-K402** | https://github.com/Kali123411/k402 | HTTP 402 + `kaspa-channel` lock/voucher. kccs#4 still open. | Steal the lock. Not Kaspa’s x402 v2 binding. Not adopted KCC-0402. |
 
 ### Derived files (LOCAL pack — not in this GitHub repo)

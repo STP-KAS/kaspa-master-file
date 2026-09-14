@@ -1,7 +1,7 @@
 {
   "title": "Kaspa master file",
   "repo": "https://github.com/STP-KAS/kaspa-master-file",
-  "updated": "2026-09-12",
+  "updated": "2026-09-14",
   "disclaimer": "Not Kaspa core. Not official KNS. @StppStp. Merged Active KIP is law. Open PR is not.",
   "sections": [
     {
@@ -162,7 +162,30 @@
         {"name": "@StppStp", "url": "https://x.com/StppStp", "chip": "this", "note": "This project. Never DMs you."},
         {"name": "@elldeeone", "url": "https://x.com/elldeeone", "chip": "ss", "note": "Luke Dunshea. GitHub elldeeone. v1 credit. Groth16 PR 138."},
         {"name": "@asaefstroem", "url": "https://x.com/asaefstroem", "chip": "ss", "note": "Alexander Säfström. KCC-0. KCC-0012 lead (kccs#24, 11 Sep). Sutton 11 Sep praise. Draft."},
-        {"name": "@manyfest_", "url": "https://x.com/manyfest_", "chip": "ss", "note": "Sivan Helfer. GitHub Manyfestation. Compiler + KCC-0020."}
+        {"name": "@manyfest_", "url": "https://x.com/manyfest_", "chip": "ss", "note": "Sivan Helfer. GitHub Manyfestation. Compiler + KCC-0020."},
+        {"name": "@BankQuote", "url": "https://x.com/BankQuote", "chip": "community", "note": "Educator. GitHub trillskillz (OpenSilver). Long-form Toccata/covenant essays. Not core. Tweet is not a KIP."}
+      ]
+    },
+    {
+      "id": "bankquote",
+      "title": "@BankQuote essays (community, not law)",
+      "rows": [
+        {"name": "13 Sep covenants + SS + Argent", "url": "https://x.com/BankQuote/status/2099169333008093625", "chip": "essay", "note": "Stack. Argent still needs audit. Not a KIP."},
+        {"name": "10 Sep SilverScript v1", "url": "https://x.com/BankQuote/status/2098085618991481249", "chip": "essay", "note": "Compiler pin exists. Compiler + app security still need scrutiny. Argent not hardened."},
+        {"name": "9 Sep covenants as ownership", "url": "https://x.com/BankQuote/status/2097770791664239031", "chip": "essay", "note": "Vaults/escrow/treasury as design. Tooling, audits, wallets still catching up."},
+        {"name": "8 Sep Argent ICC", "url": "https://x.com/BankQuote/status/2097352240549753241", "chip": "essay", "note": "Pre-release. Needs audit. No Argent tag."},
+        {"name": "30 Aug SilverScript v1-rc1", "url": "https://x.com/BankQuote/status/2094127101825929410", "chip": "history", "note": "v1.0.0 tagged 9 Sep. This post is history."},
+        {"name": "29 Aug Argent UTXO-native", "url": "https://x.com/BankQuote/status/2093738838883483934", "chip": "essay", "note": "Not an EVM clone. DAGKnight still a target."},
+        {"name": "26 Aug layers", "url": "https://x.com/BankQuote/status/2092626699737297362", "chip": "essay", "note": "Covenants, Argent, DAGKnight as different layers. DK is not consensus."},
+        {"name": "22 Aug post-Toccata stack", "url": "https://x.com/BankQuote/status/2091199737257140436", "chip": "essay", "note": "Higher stack experimental, not finished production."},
+        {"name": "30 Jul Argent actors + ICC", "url": "https://x.com/BankQuote/status/2082962866240450706", "chip": "essay", "note": "Experimental, not production-ready."},
+        {"name": "22 Jul programmable PoW", "url": "https://x.com/BankQuote/status/2079931220859699259", "chip": "essay", "note": "Seed post. Tx v1 / KIP-16 / 20 / 21. Primitives live; tooling is the next battle."},
+        {"name": "10 Jul tx v1 surface", "url": "https://x.com/BankQuote/status/2075573111232077948", "chip": "essay", "note": "Same architecture as 22 Jul. Not a shared-state VM."},
+        {"name": "19 Jun programmable UTXO cell", "url": "https://x.com/BankQuote/status/2068101137895412170", "chip": "essay", "note": "KIP-17 inspect / KIP-20 lineage / KIP-16 proofs. Not an EVM clone."},
+        {"name": "25 May OpenSilver", "url": "https://x.com/BankQuote/status/2058954066345001133", "chip": "community", "note": "Author of trillskillz/OpenSilver. Not audited."},
+        {"name": "18 May conditional settlement", "url": "https://x.com/BankQuote/status/2056460968104702078", "chip": "research", "note": "Design, not product. DAGKnight / based-ZK / L2 KAS still roadmap."},
+        {"name": "22 Apr Toccata + KIP-21", "url": "https://x.com/BankQuote/status/2046948600094101946", "chip": "history", "note": "Pre-activation. Architecture still matches."},
+        {"name": "19 Apr programmable settlement", "url": "https://x.com/BankQuote/status/2045943476546605124", "chip": "history", "note": "Toccata groundwork, vProgs horizon. Honest split."}
       ]
     },
     {
@@ -183,7 +206,7 @@
       "title": "Other GitHubs",
       "rows": [
         {"name": "Portrait", "url": "https://github.com/KaspaKii/Portrait", "chip": "testnet", "note": "Public 1 Sep 2026. Unaudited."},
-        {"name": "OpenSilver", "url": "https://github.com/trillskillz/OpenSilver", "chip": "community", "note": "22 SilverScript patterns. Not kaspanet. Not audited."},
+        {"name": "OpenSilver", "url": "https://github.com/trillskillz/OpenSilver", "chip": "community", "note": "22 SilverScript patterns. BankQuote / trillskillz. Not kaspanet. Not audited."},
         {"name": "kaspa-pqv", "url": "https://github.com/aglov413/kaspa-pqv", "chip": "TN10", "note": "Posted Core R&D 27 Aug. Hash-based PQ vault. Unaudited."},
         {"name": "Argent", "url": "https://github.com/argent-lang/argent", "chip": "preview", "note": "Sutton multi-actor layer above Silverscript. PR 59 (8 Sep) state vectors. PR 60 (10 Sep) pins sil v1.0.0. Two leader/delegate compiler rules still unimplemented. Not release-ready. No tag."},
         {"name": "kaspa-x402", "url": "https://github.com/elldeeone/kaspa-x402", "chip": "tn10", "note": "elldeeone. Intended x402 v2 binding. TN10 alpha. kaspa-x402.org. Bind this envelope."},
@@ -299,7 +322,8 @@
         {"name": "KaspaScopio", "url": "https://github.com/kaspanet/silverscript/issues/249", "chip": "249", "note": "v1.0.0 State[].split() tuple bug. PR #250 open. #251 struct-array index also open."},
         {"name": "ShawnPearce", "url": "https://github.com/kaspanet/kccs/pull/20", "chip": "kccs", "note": "kccs#20 vectors."},
         {"name": "Knitser", "url": "https://github.com/kaspanet/kccs/issues/14", "chip": "kccs", "note": "Issue #14 + KCC-0021."},
-        {"name": "biryukovmaxim", "url": "https://github.com/biryukovmaxim", "chip": "vprogs", "note": "vProgs + rusty Toccata cleanup."}
+        {"name": "biryukovmaxim", "url": "https://github.com/biryukovmaxim", "chip": "vprogs", "note": "vProgs + rusty Toccata cleanup."},
+        {"name": "@BankQuote / trillskillz", "url": "https://x.com/BankQuote", "chip": "community", "note": "Toccata/covenant essays Apr–Sep 2026. OpenSilver. Not core. Tweet is not a KIP."}
       ]
     },
     {

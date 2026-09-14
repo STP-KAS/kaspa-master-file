@@ -73,6 +73,7 @@ Live L1 snapshot (api.kaspa.org, this date) plus kaspaexplained.com / rusty-kasp
 | **R-KASSWORD** | https://github.com/KASRANKS/KASSWORD | PQ password vault + Kaspa Locker | External PWA. Pointer only. |
 | **R-DOCS-GH** | https://github.com/parker2017code/kaspa-explained | kaspaexplained.com site source | GitHub only |
 | **R-X-IZIO** | https://x.com/IzioDev · https://progdoc.izio.fr | IzioDev / programmability tree | Builder path + tooling education |
+| **R-X-BANKQUOTE** | https://x.com/BankQuote · https://github.com/trillskillz/OpenSilver | Community Toccata/covenant essays (Apr–Sep 2026) + OpenSilver | **Not core.** Tweet ≠ KIP. Catalog in masterfile §5c. KasGraph not a live pin. |
 | **R-X** | `x-handles-credible-sources-insert-index.txt` | Tiered Kaspa X handles | Pointer sources (not primary proof) |
 | **R-NARRATIVE-2026** | `LOCAL/kaspa-attenborough-2026/` | Attenborough Kaspa film (Sep 2026 remake of Apr 2025 CryptoQTK piece). Not in this repo. | Public-facing ethos + fact-checked VO |
 | **R-SIL-249** | https://github.com/kaspanet/silverscript/issues/249 | `State[].split()` tuple destructure on v1.0.0 | **Open.** Fix #250 unmerged. Skip that syntax. |

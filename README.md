@@ -1,12 +1,21 @@
 # Kaspa master file
 
-**Not Kaspa core. Not official KNS.** Public pin list by [@StppStp](https://x.com/StppStp) / [STP-KAS](https://github.com/STP-KAS). Freeze: **13 Sep 2026**.
+**Not Kaspa core. Not official KNS.** Public pin list by [@StppStp](https://x.com/StppStp) / [STP-KAS](https://github.com/STP-KAS). Freeze: **14 Sep 2026**.
 
 **project delusional.** Kaspa master file — pins, ideas, principles. One principle: skip centralised stablecoins for dapps. Fill is not a business: this desk keeps 0. Any Kaspa wallet (QR / kaspa: URI). In-page inject is only Kasware/Kastle. The jar is not Nakamoto. Darwin battletest: [STP-KAS/gramlanepeglab](https://github.com/STP-KAS/gramlanepeglab). Receipt PoC after battling PegLab vs Parker: [STP-KAS/peglab-poc](https://github.com/STP-KAS/peglab-poc).
 
 This is a map. Merged Active KIP = law. Open PR, personal wiki, Discord rumor ≠ a pin. Gramlane tab: http://127.0.0.1:8081/masterfile
 
 Repo: **kaspa-master-file** (the “kaspa mister fil”). Grok heavy review of this freeze: [`GROK-HEAVY-REVIEW.md`](GROK-HEAVY-REVIEW.md). Think big / do-this-next: [`THINK-BIG.md`](THINK-BIG.md). Grok collab (core idea, commercial uses, beyond crypto): [STP-KAS/grok-kaspa-collab](https://github.com/STP-KAS/grok-kaspa-collab). Local URLs (`127.0.0.1`) are this machine, not GitHub.
+
+### What this pass did (14 Sep 2026)
+
+Retested [STP-KAS/kns-spec](https://github.com/STP-KAS/kns-spec) against live L1 + KNS indexer + covenant explorer. Pins unchanged: silverc **v1.0.0**; uniqueness is still indexer FCFS.
+
+**Local host (this PC, not GitHub):** `kns-spec serve` → http://127.0.0.1:8083/open.html · http://127.0.0.1:8083/api/resolve?q=kns.kas · health http://127.0.0.1:8083/api/health  
+Sisters stay :8080 kns / :8081 gramlane / :8082 till. Start: `Documents\kaspa\start-local.ps1`.
+
+KCC-0012 still **Draft**. In-page inject still Kasware/Kastle. `kns://` run is empty on `kns.kas` (no CID). Not a new internet. See [REAL.md](https://github.com/STP-KAS/kns-spec/blob/main/REAL.md).
 
 ### What this pass did (13 Sep 2026)
 
@@ -289,6 +298,7 @@ Not a new chain. Not Tor-by-rebrand. **Kaspa settles. The name locates. The user
 - Spec: https://github.com/STP-KAS/kns-spec/blob/main/OVERLAY.md
 - Page: https://stp-kas.github.io/kns-spec/web4.html
 - Working companion: https://stp-kas.github.io/kns-spec/open.html (no seed; web vs run)
+- Local: http://127.0.0.1:8083/open.html (this machine; `kns-spec serve`)
 - **Conformance (MUST/SHOULD for KNS + wallets):** https://github.com/STP-KAS/kns-spec/blob/main/CONFORMANCE.md
 - **Profile keys to add (ipfs, peer, onion…):** https://github.com/STP-KAS/kns-spec/blob/main/PROFILE.md
 - Schema: https://github.com/STP-KAS/kns-spec/blob/main/schemas/overlay-records.schema.json

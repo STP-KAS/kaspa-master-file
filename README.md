@@ -25,6 +25,12 @@ Hard-tested **all 36** STP-KAS GitHubs against [groks-wallet](https://github.com
 
 Referee: [kaspaexplained.com/status](https://kaspaexplained.com/status) — GHOSTDAG live, 10 BPS live, Toccata live, DAGKnight not shipped, KCC-20 Draft.
 
+### What this pass did (14 Sep 2026, BankQuote)
+
+Scanned [@BankQuote](https://x.com/BankQuote) **Apr–Sep 2026**. Kept long-form Toccata / covenant / SilverScript / Argent essays that match this map: Toccata **live**; Argent / vProgs / DAGKnight **not shipped**. Dropped price talk, AGI slogans, KasGraph-as-live, Staghunt. Same person as [trillskillz/OpenSilver](https://github.com/trillskillz/OpenSilver) (already a pin: not kaspanet, not audited). **Not core. A tweet is not a KIP.** Catalog: §5c.
+
+Pins **unchanged:** silverc **v1.0.0**; Toccata live; DAGKnight not shipped; KCC-0012 Draft.
+
 ### What this pass did (14 Sep 2026)
 
 Retested [STP-KAS/kns-spec](https://github.com/STP-KAS/kns-spec) against live L1 + KNS indexer + covenant explorer. Pins unchanged: silverc **v1.0.0**; uniqueness is still indexer FCFS.
@@ -351,6 +357,26 @@ Yonatan’s own “rough core” list (30 Apr 2025): michaelsutton, hashdag, cod
 
 ---
 
+## 5b. SilverScript v1 people (ties)
+
+Source: [releases/tag/v1.0.0](https://github.com/kaspanet/silverscript/releases/tag/v1.0.0) (tagged by **someone235** = Ori Newman, **9 Sep 2026**, commit `3ed9733`) and the earlier [v1-rc1](https://github.com/kaspanet/silverscript/releases/tag/v1-rc1) (30 Aug, `c7d17a1`). Credits on both tags: elldeeone, IzioDev, Manyfestation, michaelsutton. Copilot bot omitted.
+
+| GitHub | commits* | X | Who | Ties |
+| --- | --- | --- | --- | --- |
+| [someone235](https://github.com/someone235) | 134 | [@OriNewman](https://x.com/OriNewman) | Ori Newman | **Lead.** Tagged **v1.0.0** (9 Sep) and v1-rc1 (30 Aug). KIP-17. rusty-kaspa. Medium someone235. |
+| [michaelsutton](https://github.com/michaelsutton) | 20 | [@michaelsuttonil](https://x.com/michaelsuttonil) | Michael Sutton | Review. KIP-21. **Argent** (argent-lang). KCC-0020 co-author. rusty-kaspa. |
+| [IzioDev](https://github.com/IzioDev) | 10 | [@IzioDev](https://x.com/IzioDev) | Romain Billot | Review. KEF-funded (from ~Dec 2025). KCC-0020 co-author. KIP-25 (draft, with Ori+Sutton). izio.fr. |
+| [Manyfestation](https://github.com/Manyfestation) | 9 | [@manyfest_](https://x.com/manyfest_) | Sivan Helfer | Compiler, DAP debugger, PR #130 state decode. **KCC-0020** co-author. Kas-Smiths. Argent RPS demo. |
+| [elldeeone](https://github.com/elldeeone) | 2 | [@elldeeone](https://x.com/elldeeone) | Luke Dunshea | Groth16 builtin [PR #138](https://github.com/kaspanet/silverscript/pull/138). Node connectivity. Kaspa x402. dunshea.au. |
+
+\*Contributor API on the live repo (5 Sep 2026), not a legal ranking.
+
+**Graph (honest):** Ori writes the language → Manyfestation tools + KCC conventions with Izio + Sutton → Sutton also owns Argent (emits SilverScript) → elldeeone ZK builtin. Language grammar is **CashScript-inspired** (Rosco Kalis, MIT) — CREDITS.md, not a Kaspa person.
+
+KCC-0020 authors overlap this table: Manyfestation, Sutton, Billot. That is why Gramlane treats KCC-20 as a **draft to refuse**, not as GRAM.
+
+---
+
 ## 5c. @BankQuote essays (community, not law)
 
 [@BankQuote](https://x.com/BankQuote) — long-form Kaspa explainers, Apr–Sep 2026. Same person as [trillskillz](https://github.com/trillskillz) (OpenSilver). **Not core. Not a KIP.** Kept only posts that keep Toccata live vs Argent / vProgs / DAGKnight not-shipped, and that do not treat tooling as product. Recheck before quoting.
@@ -375,26 +401,6 @@ Yonatan’s own “rough core” list (30 Apr 2025): michaelsutton, hashdag, cod
 | 18 May 2026 | [Conditional settlement use cases](https://x.com/BankQuote/status/2056460968104702078) | Design, not product. DAGKnight / based-ZK / L2 KAS still roadmap. |
 | 22 Apr 2026 | [Toccata + KIP-21 sequencing](https://x.com/BankQuote/status/2046948600094101946) | **History** (pre-activation). Architecture still matches. |
 | 19 Apr 2026 | [Programmable settlement; vProgs horizon](https://x.com/BankQuote/status/2045943476546605124) | **History.** Honest split: Toccata groundwork, vProgs horizon. |
-
----
-
-## 5b. SilverScript v1 people (ties)
-
-Source: [releases/tag/v1.0.0](https://github.com/kaspanet/silverscript/releases/tag/v1.0.0) (tagged by **someone235** = Ori Newman, **9 Sep 2026**, commit `3ed9733`) and the earlier [v1-rc1](https://github.com/kaspanet/silverscript/releases/tag/v1-rc1) (30 Aug, `c7d17a1`). Credits on both tags: elldeeone, IzioDev, Manyfestation, michaelsutton. Copilot bot omitted.
-
-| GitHub | commits* | X | Who | Ties |
-| --- | --- | --- | --- | --- |
-| [someone235](https://github.com/someone235) | 134 | [@OriNewman](https://x.com/OriNewman) | Ori Newman | **Lead.** Tagged **v1.0.0** (9 Sep) and v1-rc1 (30 Aug). KIP-17. rusty-kaspa. Medium someone235. |
-| [michaelsutton](https://github.com/michaelsutton) | 20 | [@michaelsuttonil](https://x.com/michaelsuttonil) | Michael Sutton | Review. KIP-21. **Argent** (argent-lang). KCC-0020 co-author. rusty-kaspa. |
-| [IzioDev](https://github.com/IzioDev) | 10 | [@IzioDev](https://x.com/IzioDev) | Romain Billot | Review. KEF-funded (from ~Dec 2025). KCC-0020 co-author. KIP-25 (draft, with Ori+Sutton). izio.fr. |
-| [Manyfestation](https://github.com/Manyfestation) | 9 | [@manyfest_](https://x.com/manyfest_) | Sivan Helfer | Compiler, DAP debugger, PR #130 state decode. **KCC-0020** co-author. Kas-Smiths. Argent RPS demo. |
-| [elldeeone](https://github.com/elldeeone) | 2 | [@elldeeone](https://x.com/elldeeone) | Luke Dunshea | Groth16 builtin [PR #138](https://github.com/kaspanet/silverscript/pull/138). Node connectivity. Kaspa x402. dunshea.au. |
-
-\*Contributor API on the live repo (5 Sep 2026), not a legal ranking.
-
-**Graph (honest):** Ori writes the language → Manyfestation tools + KCC conventions with Izio + Sutton → Sutton also owns Argent (emits SilverScript) → elldeeone ZK builtin. Language grammar is **CashScript-inspired** (Rosco Kalis, MIT) — CREDITS.md, not a Kaspa person.
-
-KCC-0020 authors overlap this table: Manyfestation, Sutton, Billot. That is why Gramlane treats KCC-20 as a **draft to refuse**, not as GRAM.
 
 ---
 

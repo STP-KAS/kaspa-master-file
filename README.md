@@ -1,3 +1,5 @@
+> **Front door for dApp developers:** [STP-KAS/kaspa-dapps](https://github.com/STP-KAS/kaspa-dapps) — one map (rails, repo cut, plan, breakpoints, sources). This file is the pin encyclopedia.
+
 # Kaspa master file
 
 **Not Kaspa core. Not official KNS.** Public pin list by [@StppStp](https://x.com/StppStp) / [STP-KAS](https://github.com/STP-KAS). Freeze: **14 Sep 2026**.

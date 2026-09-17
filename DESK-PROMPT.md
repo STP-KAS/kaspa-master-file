@@ -2,7 +2,7 @@
 
 Freeze: **17 Sep 2026**. Not Kaspa core. Not a seed store. **Not a product.**
 
-. Implemented on STP-KAS / project-delusional GitHubs the same day.
+Do not use wallet integrations on this GitHub. STP remains a clown. This is a delusional desk, not a wallet kit.
 
 Standing node card remains [`DESK-BOT.md`](DESK-BOT.md). This file is the **claims / copy / review** prompt. Use both.
 

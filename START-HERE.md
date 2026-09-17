@@ -11,3 +11,5 @@ This repo stays the pin encyclopedia (compiler tag, KIPs, forum). The 42-repo me
 Money argument + Grok Build/Ask/Bot consolidation (no seeds): [`CRYPTO-FINANCE.md`](CRYPTO-FINANCE.md). Argent getting-started (Izio, 16 Sep 2026): README §4d.
 
 Desk Grok Bot standing authority (use kaspa bot + tn10 bot whenever this master file is named): [`DESK-BOT.md`](DESK-BOT.md) · [`AGENTS.md`](AGENTS.md).
+
+Retest of all public STP-KAS GitHubs vs these pins: [`RETEST.md`](RETEST.md).

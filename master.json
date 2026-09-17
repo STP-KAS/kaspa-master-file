@@ -45,7 +45,10 @@
         {"name": "peglab-poc", "url": "https://github.com/STP-KAS/peglab-poc", "chip": "poc", "note": "Battle-tested receipt PoC. Parker unit + PegLab warning. Track 0 public goods, Track 1 BTCPay-shaped software. Not USD. ENGINE_SPEC until TN10 txids."},
         {"name": "Think big (do-this-next)", "url": "https://github.com/STP-KAS/kaspa-master-file/blob/main/THINK-BIG.md", "chip": "plan", "note": "11 Sep full-authority orders after freeze + grok review. Summary, steps, 13 propositions. Not a KIP. Not a Kaspa dollar."},
         {"name": "Grok x Kaspa collab", "url": "https://github.com/STP-KAS/grok-kaspa-collab", "chip": "collab", "note": "Core idea, commercial uses, beyond-crypto scheme. Real vs delusional. Not a KIP."},
-        {"name": "xAI reasoning 3", "url": "https://github.com/STP-KAS/xai-reasoning-3", "chip": "desk", "note": "Dual-rail EUR till. SEPA EPC + optional kaspa QR. 402 refuses unverified txids. Not a dollar."}
+        {"name": "xAI reasoning 3", "url": "https://github.com/STP-KAS/xai-reasoning-3", "chip": "desk", "note": "Dual-rail EUR till. SEPA EPC + optional kaspa QR. 402 refuses unverified txids. Not a dollar."},
+        {"name": "Desk Grok Bot (standing authority)", "url": "https://github.com/STP-KAS/kaspa-master-file/blob/main/DESK-BOT.md", "chip": "ops", "note": "When this master file is named, Grok Build shall use kaspa bot + tn10 bot for audits/dApps. No seeds. Do not paste TN10 into kaspa bot."},
+        {"name": "kaspa bot public P2P", "url": "https://arewepublicyet.com", "chip": "live", "note": "Operator 17 Sep: mainnet archival 1 public 159.223.110.159:28492. Recheck before claiming map-listed."},
+        {"name": "tn10 bot / groks-wallet pay-to", "url": "https://tn10.kaspa.stream/addresses/kaspatest:qzffl5xy9np46gkttyuftqnv2w04pr8g3wsp7c3vv8se3txtelx6q7c0v0ldx", "chip": "tn10", "note": "Miners alive, same address. RPC 127.0.0.1:16210 is the Grok Bot sandbox, not automatically this PC."}
       ]
     },
     {

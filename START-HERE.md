@@ -9,3 +9,5 @@ For Kaspa dApp developers (what to use, skip, and not lie about — dual-rail na
 This repo stays the pin encyclopedia (compiler tag, KIPs, forum). The 42-repo mess is cut there. Do not add another “what this pass did” section here; put a dated note in kaspa-dapps or don’t.
 
 Money argument + Grok Build/Ask/Bot consolidation (no seeds): [`CRYPTO-FINANCE.md`](CRYPTO-FINANCE.md). Argent getting-started (Izio, 16 Sep 2026): README §4d.
+
+Desk Grok Bot standing authority (use kaspa bot + tn10 bot whenever this master file is named): [`DESK-BOT.md`](DESK-BOT.md) · [`AGENTS.md`](AGENTS.md).

@@ -1,4 +1,6 @@
-> **Experimental only. Not a product.** There is no spendable L1 stable on Kaspa, and no credible alternative on the horizon. Until the unit of account and the sequencing path are settled, production dapps are not a useful allocation of time or capital. [KASPAglobal](https://x.com/kaspaglobal/status/2100536064683176270) · [DISCLAIMER.md](DISCLAIMER.md)
+> **Experimental only. Not a product.** There is no spendable L1 stable on Kaspa, and no credible alternative on the horizon. Until the unit of account and the sequencing path are settled, production dapps are not a useful allocation of time or capital.
+>
+> Do not use wallet integrations on this GitHub. STP remains a clown. [DISCLAIMER.md](DISCLAIMER.md)
 
 > **Front door for dApp developers:** [STP-KAS/kaspa-dapps](https://github.com/STP-KAS/kaspa-dapps) — one map (rails, repo cut, plan, breakpoints, sources). This file is the pin encyclopedia.
 
@@ -91,7 +93,7 @@ Pins **unchanged:** silverc **v1.0.0**; Toccata live; DAGKnight not shipped; KCC
 
 Retested [STP-KAS/kns-spec](https://github.com/STP-KAS/kns-spec) against live L1 + KNS indexer + covenant explorer. Pins unchanged: silverc **v1.0.0**; uniqueness is still indexer FCFS.
 
-**Local host (this PC, not GitHub):** `kns-spec serve` → http://127.0.0.1:8083/open.html · http://127.0.0.1:8083/api/resolve?q=kns.kas · health http://127.0.0.1:8083/api/health  
+**Local host (this PC, not GitHub):** `kns-spec serve` → http://127.0.0.1:8083/open.html · http://127.0.0.1:8083/api/resolve?q=kns.kas · health http://127.0.0.1:8083/api/health
 Sisters stay :8080 kns / :8081 gramlane / :8082 till. Start: `Documents\kaspa\start-local.ps1`.
 
 KCC-0012 still **Draft**. In-page inject still Kasware/Kastle. `kns://` run is empty on `kns.kas` (no CID). Not a new internet. See [REAL.md](https://github.com/STP-KAS/kns-spec/blob/main/REAL.md).
@@ -651,7 +653,7 @@ TG-dense, Discord-light: silverscript, vprogs, Argent, kccs, python-sdk — trea
 
 ### Gramlane filter (from that pack)
 
-**Now:** pinned **silverc v1.0.0** (Ori, 9 Sep, `3ed9733`); WorkCredit / KasName via `validateOutputState` only; grams not KCC-20; POS/Pay; one kasdomain; `/234` still a hole; no `State[].split()` tuples until #250; HTTP 402 binds [elldeeone/kaspa-x402](https://github.com/elldeeone/kaspa-x402); in-page inject **Kasware/Kastle only** (KCC-0012 is Draft); pointers to Kassword/pqv/Portrait. Argent rules 5/6 **compile** as of 14 Sep — still no tag, still not a till.  
+**Now:** pinned **silverc v1.0.0** (Ori, 9 Sep, `3ed9733`); WorkCredit / KasName via `validateOutputState` only; grams not KCC-20; POS/Pay; one kasdomain; `/234` still a hole; no `State[].split()` tuples until #250; HTTP 402 binds [elldeeone/kaspa-x402](https://github.com/elldeeone/kaspa-x402); in-page inject **Kasware/Kastle only** (KCC-0012 is Draft); pointers to Kassword/pqv/Portrait. Argent rules 5/6 **compile** as of 14 Sep — still no tag, still not a till.
 **Not us:** DAGKnight, #234 retry, guessed compute budget, shipping Argent ICC, vProg exits, L2 stables, Kurrent channels, MWEB privacy thread, a fourth 402 envelope, calling k402 “x402”, treating KCC-0012 as adopted, treating kcc20-reference as KCC-20, a DEX or L1 dollar from Sutton’s 11 Sep hypothesis. **Never share seed phrases.**
 
 ---
@@ -675,7 +677,7 @@ Raw dumps stay on this machine. **No chat logs, photos, or DiscordKit files in t
 
 | Dump | What it actually is |
 | --- | --- |
-| `LOCAL/ChatExport_2026-07-27` | Telegram export titled **【A G E N C . D E V】** (15 Mar–27 Jul 2026). **Not** `t.me/kasparnd`. Solana agent marketplace. Not in this repo. |
+| `LOCAL/ChatExport_2026-07-27` | Telegram export titled **【A G E N C D E V】** (15 Mar–27 Jul 2026). **Not** `t.me/kasparnd`. Solana agent marketplace. Not in this repo. |
 | `LOCAL/adiscord api` | 41 Kaspa Discord channel dumps (cut ~25–26 Jul 2026). Guild Kaspa. Not in this repo. |
 
 ### Discord (Kaspa) — high-signal

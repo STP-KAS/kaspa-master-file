@@ -2,7 +2,7 @@
 
 Freeze: **17 Sep 2026**. Not Kaspa core. Not a seed store. **Not a product.**
 
-Why this prompt exists: [KASPAglobal, 17 Sep 2026](https://x.com/kaspaglobal/status/2100536064683176270). Implemented on STP-KAS / project-delusional GitHubs the same day.
+. Implemented on STP-KAS / project-delusional GitHubs the same day.
 
 Standing node card remains [`DESK-BOT.md`](DESK-BOT.md). This file is the **claims / copy / review** prompt. Use both.
 

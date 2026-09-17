@@ -1,7 +1,7 @@
 {
   "title": "Kaspa master file",
   "repo": "https://github.com/STP-KAS/kaspa-master-file",
-  "updated": "2026-09-14",
+  "updated": "2026-09-17",
   "disclaimer": "Not Kaspa core. Not official KNS. @StppStp. Merged Active KIP is law. Open PR is not.",
   "sections": [
     {
@@ -208,7 +208,11 @@
         {"name": "Portrait", "url": "https://github.com/KaspaKii/Portrait", "chip": "testnet", "note": "Public 1 Sep 2026. Unaudited."},
         {"name": "OpenSilver", "url": "https://github.com/trillskillz/OpenSilver", "chip": "community", "note": "22 SilverScript patterns. BankQuote / trillskillz. Not kaspanet. Not audited."},
         {"name": "kaspa-pqv", "url": "https://github.com/aglov413/kaspa-pqv", "chip": "TN10", "note": "Posted Core R&D 27 Aug. Hash-based PQ vault. Unaudited."},
-        {"name": "Argent", "url": "https://github.com/argent-lang/argent", "chip": "preview", "note": "Sutton multi-actor layer above Silverscript. PR 59 (8 Sep) state vectors. PR 60 (10 Sep) pins sil v1.0.0. Two leader/delegate compiler rules still unimplemented. Not release-ready. No tag."},
+        {"name": "Argent", "url": "https://github.com/argent-lang/argent", "chip": "preview", "note": "Sutton multi-actor layer above Silverscript. PR 59 (8 Sep). PR 60 (10 Sep) pins sil v1.0.0. PR 63 (14 Sep) rules 5/6 compile. PR 62 open. Not release-ready. No tag. Getting-started: Izio 16 Sep template ./setup (local runtime)."},
+        {"name": "argent-playground", "url": "https://github.com/argent-lang/argent-playground", "chip": "preview", "note": "Local demos. PR target for community apps. Not network proof."},
+        {"name": "argent-template", "url": "https://github.com/argent-lang/argent-template", "chip": "preview", "note": "Starter. ./setup. Local runtime only: no network, no wallet, no submit."},
+        {"name": "kcc20-reference", "url": "https://github.com/argent-lang/kcc20-reference", "chip": "wip", "note": "WIP. Empty README. PR 1 open. Not adopted KCC-20."},
+        {"name": "Crypto finance (desk law)", "url": "https://github.com/STP-KAS/kaspa-master-file/blob/main/CRYPTO-FINANCE.md", "chip": "desk", "note": "Grok Build/Ask/Bot consolidation. No seeds. Dual rail. Native KAS unit. Skip issuer stables as gas."},
         {"name": "kaspa-x402", "url": "https://github.com/elldeeone/kaspa-x402", "chip": "tn10", "note": "elldeeone. Intended x402 v2 binding. TN10 alpha. kaspa-x402.org. Bind this envelope."},
         {"name": "k402", "url": "https://github.com/Kali123411/k402", "chip": "draft", "note": "HTTP 402 + kaspa-channel lock/voucher. kccs#4 open. Steal the lock. Not elldeeone x402 v2. Not adopted KCC-0402."},
         {"name": "KCC-0012 / kccs#24", "url": "https://github.com/kaspanet/kccs/pull/24", "chip": "draft", "note": "Browser wallet provider + discovery. saefstroem 11 Sep. Izio reviewing 12 Sep. No public implementation. Not adopted. Inject stays Kasware/Kastle."},
@@ -251,7 +255,10 @@
         {"name": "Ori v1 X post", "url": "https://x.com/OriNewman/status/2097731203503640976", "chip": "x", "note": "9 Sep. Silverscript will evolve; Argent adds higher layers."},
         {"name": "Sutton layer post", "url": "https://x.com/michaelsuttonil/status/2094140618045800510", "chip": "x", "note": "30 Aug. Silverscript = one contract. Argent = multi-actor."},
         {"name": "Argent PR 59", "url": "https://github.com/argent-lang/argent/pull/59", "chip": "preview", "note": "Merged 8 Sep. State vectors/slices in args!. Manyfestation."},
-        {"name": "Argent PR 60", "url": "https://github.com/argent-lang/argent/pull/60", "chip": "preview", "note": "Merged 10 Sep. Synced to sil v1.0.0. Leader/delegate guide. Continuation-closure and zero-continuation first-input still NOT IMPLEMENTED. Not general production."},
+        {"name": "Argent PR 60", "url": "https://github.com/argent-lang/argent/pull/60", "chip": "preview", "note": "Merged 10 Sep. Synced to sil v1.0.0. Leader/delegate guide. Rules 5/6 were unimplemented that day; compiled 14 Sep via PR 63."},
+        {"name": "Argent PR 63", "url": "https://github.com/argent-lang/argent/pull/63", "chip": "preview", "note": "Merged 14 Sep. Leader/delegate rules 5 and 6 now compile into generated Sil. Still no tag."},
+        {"name": "Argent PR 62", "url": "https://github.com/argent-lang/argent/pull/62", "chip": "open", "note": "Module loading rework. Open 17 Sep."},
+        {"name": "Izio Argent getting-started", "url": "https://x.com/IzioDev/status/2100178860700512752", "chip": "x", "note": "16 Sep. Git+Rust, clone argent-template, ./setup, video. Local runtime. Not a tag."},
         {"name": "Silverscript #249", "url": "https://github.com/kaspanet/silverscript/issues/249", "chip": "bug", "note": "10 Sep. State[].split() tuple destructure fails on v1.0.0 (3ed9733). Fix PR #250 open."},
         {"name": "IzioDev SS x Argent x KCC", "url": "https://x.com/IzioDev/status/2097918399737139331", "chip": "x", "note": "10 Sep. Layers: Silverscript = foundation, Argent = multi-actor, KCC still draft."},
         {"name": "IzioDev leader/delegator", "url": "https://x.com/IzioDev/status/2098087085051986330", "chip": "x", "note": "10 Sep. One covenant-group diagram. Delegator runs less compute. Not a pin."},
@@ -262,7 +269,7 @@
         {"name": "Sutton 11 Sep on Alex", "url": "https://x.com/michaelsuttonil/status/2098433221021118762", "chip": "x", "note": "saefstroem connecting dapp-dev process + ecosystem standardization. Same day as KCC-0012. Not a merge."},
         {"name": "KCC-0012 draft", "url": "https://github.com/kaspanet/kccs/pull/24", "chip": "draft", "note": "11 Sep. Wallet discovery. kaspa.news recap 12 Sep. Draft. No public implementation."},
         {"name": "kaspa.news 12 Sep wallets", "url": "https://kaspa.news/articles/a-new-kaspa-wallet-still-needs-every-website-to-add-it", "chip": "recap", "note": "KCC-0012 recap. A new wallet still needs every site to add it until this draft ships."},
-        {"name": "kaspa.news 11 Sep catch-up", "url": "https://kaspa.news/articles/wallets-still-have-to-catch-up-before-kaspa-feels-easy-to-use", "chip": "recap", "note": "Paged UTXO lookup under review. ECDSA owner display still a proposal. Argent rules still unimplemented."},
+        {"name": "kaspa.news 11 Sep catch-up", "url": "https://kaspa.news/articles/wallets-still-have-to-catch-up-before-kaspa-feels-easy-to-use", "chip": "recap", "note": "Paged UTXO lookup under review. ECDSA owner display still a proposal. Argent rules 5/6 unimplemented that day; compile as of 14 Sep."},
         {"name": "Silverscript #251", "url": "https://github.com/kaspanet/silverscript/pull/251", "chip": "open", "note": "11 Sep. Indexing struct-array expressions. Independent of #250. Not merged."},
         {"name": "8 Sep MWEB-like thread", "url": "https://research.kas.pa/t/optional-privacy-layer-for-kaspa-similar-to-litecoin-mweb/522", "chip": "research", "note": "JackKas. Not a KIP. Not product."},
         {"name": "23 Jun Kurrent RFC", "url": "https://research.kas.pa/t/kurrent-an-eltoo-inspired-latest-state-channel-on-kaspa/494", "chip": "research", "note": "a19q3 on research.kas.pa. Eltoo-inspired channel. Not product."}

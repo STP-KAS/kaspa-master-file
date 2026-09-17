@@ -60,12 +60,9 @@ Official v1 tutorial. Every continuation must `require(tx.outputs[i].value == �
 
 Merged 10 Sep (`867b080`, Sutton). Pins sil crates to v1.0.0. Formalizes leader / delegate / input-group / continuation-group.
 
-Still **[NOT IMPLEMENTED]** in generated contracts:
+As of **that 11 Sep review**, two compiler rules were still **[NOT IMPLEMENTED]** in generated contracts. **Superseded 14 Sep:** [PR #63](https://github.com/argent-lang/argent/pull/63) merged — rules 5 and 6 now compile. Still no tag. Still not release-ready.
 
-1. Continuation-closure — leader must authorize every continuation in the coordinated group.
-2. First-input rule for otherwise-batchable zero-continuation ordinary entries on delegate-capable actors.
-
-Until those compile in, they are **application obligations**. IzioDev diagram (10 Sep): https://x.com/IzioDev/status/2098087085051986330 — one covenant group; delegator runs less compute. Not a spec.
+IzioDev diagram (10 Sep): https://x.com/IzioDev/status/2098087085051986330. Getting-started (16 Sep): https://x.com/IzioDev/status/2100178860700512752.
 
 [#59](https://github.com/argent-lang/argent/pull/59) (8 Sep, Manyfestation): state vectors in `args!`. Ergonomics only.
 
@@ -130,7 +127,11 @@ Reviewer notes for `661d5bc..main` (freeze + second look). Headline pins **match
 | 6 | suggestion | k402 flattened to “channel, not 402” | **fixed** — HTTP 402 + `kaspa-channel`; not x402 v2; not adopted KCC-0402 |
 | 7 | nit | “Three holes” vs four numbered | **fixed** — four holes |
 
-**Still open (not ours to merge):** silverscript #234, #243, #249/#250; Argent no tag + two unimplemented leader/delegate rules; KCC-20 Draft; vProgs #142.
+**Still open (not ours to merge):** silverscript #234, #243, #249/#250/#251; Argent no tag (rules 5/6 **compile as of 14 Sep**, PR #63); KCC-20 Draft; vProgs #142.
+
+### 17 Sep 2026 addendum (memory pass)
+
+Argent **#63 merged**. Getting-started thread pinned in README §4d + `CRYPTO-FINANCE.md`. Do not treat the 11 Sep “unimplemented rules” sentence as current. Still no Argent tag. **No seeds in this repo.**
 
 Orders after this review: [`THINK-BIG.md`](THINK-BIG.md).
 

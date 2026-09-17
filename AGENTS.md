@@ -1,12 +1,13 @@
 # AGENTS — kaspa-master-file
 
-This repo is the Kaspa **pin encyclopedia**. Front door for dApp developers: [STP-KAS/kaspa-dapps](https://github.com/STP-KAS/kaspa-dapps).
+This repo is the Kaspa **pin encyclopedia**. Front door: [STP-KAS/kaspa-dapps](https://github.com/STP-KAS/kaspa-dapps).
+
+Claims prompt (paste into the desk bot): [`DESK-PROMPT.md`](DESK-PROMPT.md).
+Node card: [`DESK-BOT.md`](DESK-BOT.md).
 
 ## Standing authority (do not re-ask)
 
-When this master file is named, opened, or used as the pin list, Grok Build **shall** use the desk Grok Bot Kaspa stack for audits, dApp tests, covenant txs, x402, receipts, and node checks.
-
-Full card: [`DESK-BOT.md`](DESK-BOT.md).
+When this master file is named, opened, or used as the pin list, Grok Build **shall** use the desk Grok Bot Kaspa stack for audits, receipt tests, covenant txs, x402, and node checks.
 
 | Piece | Operator status 17 Sep 2026 |
 | --- | --- |
@@ -20,8 +21,10 @@ Full card: [`DESK-BOT.md`](DESK-BOT.md).
 - **Never** paste TN10 into **kaspa bot**. kaspa bot is mainnet archival only.
 - **Never** change the TN10 mining address.
 - **Never** treat USDT/USDC as dApp unit or gas. Dual rail: keypad fiat, settle native KAS.
+- **Never** ship or restore in-page wallet inject. [wallet-integration](https://github.com/STP-KAS/wallet-integration) is withdrawn.
+- **Never** staff production L1 dapps while the L1 stable and the sequencing path are unsettled. Not a product. Why: https://x.com/kaspaglobal/status/2100536064683176270
 - Merged Active KIP = law. A tweet is not.
 
 ## Nodes vs this Windows session
 
-Sandbox `127.0.0.1:16210` is **not** automatically this PC. Public REST (`api.kaspa.org`, `api-tn10.kaspa.org`) is the always-on read path. A desk TN10 second site is allowed if a test needs local RPC and this PC’s `:16210` is down. Do not compete with kaspa bot on mainnet `:16111`.
+Sandbox `127.0.0.1:16210` is **not** automatically this PC. Public REST (`api.kaspa.org`, `api-tn10.kaspa.org`) is the always-on read path. Do not compete with kaspa bot on mainnet `:16111`.

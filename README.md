@@ -2,13 +2,30 @@
 
 # Kaspa master file
 
-**Not Kaspa core. Not official KNS.** Public pin list by [@StppStp](https://x.com/StppStp) / [STP-KAS](https://github.com/STP-KAS). Freeze: **14 Sep 2026**.
+**Not Kaspa core. Not official KNS.** Public pin list by [@StppStp](https://x.com/StppStp) / [STP-KAS](https://github.com/STP-KAS). Freeze: **17 Sep 2026**.
+
+Crypto-finance desk law (Grok Build / Ask / Bot, **no seeds**): [`CRYPTO-FINANCE.md`](CRYPTO-FINANCE.md).
 
 **project delusional.** Kaspa master file — pins, ideas, principles. One principle: skip centralised stablecoins for dapps. Fill is not a business: this desk keeps 0. Any Kaspa wallet (QR / kaspa: URI). In-page inject is only Kasware/Kastle. The jar is not Nakamoto. Darwin battletest: [STP-KAS/gramlanepeglab](https://github.com/STP-KAS/gramlanepeglab). Receipt PoC after battling PegLab vs Parker: [STP-KAS/peglab-poc](https://github.com/STP-KAS/peglab-poc).
 
 This is a map. Merged Active KIP = law. Open PR, personal wiki, Discord rumor ≠ a pin. Gramlane tab: http://127.0.0.1:8081/masterfile
 
 Repo: **kaspa-master-file** (the “kaspa mister fil”). Grok heavy review of this freeze: [`GROK-HEAVY-REVIEW.md`](GROK-HEAVY-REVIEW.md). Think big / do-this-next: [`THINK-BIG.md`](THINK-BIG.md). Grok collab (core idea, commercial uses, beyond crypto): [STP-KAS/grok-kaspa-collab](https://github.com/STP-KAS/grok-kaspa-collab). Local URLs (`127.0.0.1`) are this machine, not GitHub.
+
+### What this pass did (17 Sep 2026 — memory + Argent getting-started)
+
+Grok Build cross-session memory enabled. Indexed **64** Grok Build sessions on this machine + public Grok Ask shares already in this file + Grok Bot TN10/daily prompts. Folded into [`CRYPTO-FINANCE.md`](CRYPTO-FINANCE.md). **No seed phrases.** Grok Ask chats that were never shared are not on this disk.
+
+| Found | Change |
+| --- | --- |
+| Izio getting-started | [16 Sep thread](https://x.com/IzioDev/status/2100178860700512752): Git+Rust → `git clone https://github.com/argent-lang/argent-template` → `./setup` → [video](https://www.youtube.com/watch?v=xZsuvcc9qPk). Examples: [playground/ag](https://github.com/argent-lang/argent-playground/tree/master/ag), [argent/examples](https://github.com/argent-lang/argent/tree/master/examples). PR apps to argent-playground. Discord `#development`. Docs should teach **how to use**, not how Argent operates. **Not a tag. Not product.** Catalog: §4d. |
+| Argent **PR #63** | **Merged 14 Sep** (Izio → Sutton). Leader/delegate **rules 5 and 6 now compile** into generated `.sil` (`OpCovOutputCount(c) == OpAuthOutputCount(l)`; `OpCovInputIdx(c, 0) == this.activeInputIndex`). Old “[NOT IMPLEMENTED]” pin is **stale**. Still **no tag**. README still not release-ready. Gramlane still one own-UTXO. |
+| Argent **PR #62** | **Open** (module loading rework). Next claimed step: AST-to-AST pipeline. |
+| argent-lang org | **4** public repos (was 3). New: [kcc20-reference](https://github.com/argent-lang/kcc20-reference) — README `# kcc20-reference (wip)`, [PR #1](https://github.com/argent-lang/kcc20-reference/pull/1) open. **Not** adopted KCC-20. |
+| Sil `#250` / `#251` | Rechecked **still open**. |
+| Thread noise | zKAS merge-mine / `$kasdistro` replies. **Not pins.** vProgs still a framework without a product testnet (Maksim Biriukov in-thread). |
+
+Pins **unchanged except Argent rules 5/6:** silverc **v1.0.0**; rusty **v2.0.1**; Toccata **live**; DAGKnight **not shipped**; KCC-0012 **Draft**; `#234` unmerged; `#250`/`#251` open; Argent **no tag**.
 
 ### What this pass did (14 Sep 2026, evening — groks-wallet)
 
@@ -59,7 +76,7 @@ Daily Grok bot (`dagknight-test-grok daily update`) + kaspa.news / GitHub / X ch
 | **KCC-0012** Browser Wallet Provider API | Pin [kccs#24](https://github.com/kaspanet/kccs/pull/24) (saefstroem, created **11 Sep**, Izio reviewing **12 Sep**). Draft. EIP-1193/6963 shape + Kaspa `kaspa_signTransaction` (sign only listed inputs; leave covenant scripts). **No public implementation.** Recap: [kaspa.news 12 Sep](https://kaspa.news/articles/a-new-kaspa-wallet-still-needs-every-website-to-add-it). |
 | Sutton on Alex | [11 Sep 15:27 UTC](https://x.com/michaelsuttonil/status/2098433221021118762) — “alex is doing glorious work in connecting dapp dev processes and ecosystem standardization.” Same person as KCC-0 + KCC-0012 lead. **Not a KIP. Not adopted.** |
 | Sil #251 | [silverscript#251](https://github.com/kaspanet/silverscript/pull/251) **open** (11 Sep, KaspaScopio). Indexing struct-array expressions (fixes #228). Independent of #250. Pin still forbids `State[].split()` tuples. |
-| Wallet/UTXO paging recap | [kaspa.news 11 Sep](https://kaspa.news/articles/wallets-still-have-to-catch-up-before-kaspa-feels-easy-to-use) — paged UTXO lookup still under review; ECDSA owner display still a proposal; Argent leader/delegate rules still **[NOT IMPLEMENTED]**. |
+| Wallet/UTXO paging recap | [kaspa.news 11 Sep](https://kaspa.news/articles/wallets-still-have-to-catch-up-before-kaspa-feels-easy-to-use) — paged UTXO lookup still under review; ECDSA owner display still a proposal. Argent leader/delegate rules 5/6 were unimplemented **that day**; they **compile as of 14 Sep** (#63). Still no Argent tag. |
 | L1 numbers | DAA **537,990,049**; supply **~27.696B** (27,696,135,848); reward **2.18267645**; hashrate **~347.6 PH/s**. |
 
 Pins **unchanged:** silverc **v1.0.0** (`3ed9733`); `#234` unmerged; `#243` open; `#250` open; Argent no tag; KCC-20 Draft; KCC-0012 **Draft**; Toccata live; DAGKnight not shipped. In-page inject stays Kasware/Kastle until a wallet actually ships KCC-0012.
@@ -253,7 +270,10 @@ KIP-21 lanes are 20-byte `subnetwork_id`s, ≤50 non-coinbase lanes/block, 1e9 g
 
 | Repo | URL | Honest |
 | --- | --- | --- |
-| argent-lang/argent | https://github.com/argent-lang/argent | Multi-actor layer **above** Silverscript (Sutton). [PR #59](https://github.com/argent-lang/argent/pull/59) merged **8 Sep** (state vectors in `args!`). [PR #60](https://github.com/argent-lang/argent/pull/60) merged **10 Sep** pins sil **v1.0.0** + leader/delegate security guide. Two compiler rules still **[NOT IMPLEMENTED]**: continuation-closure, first-input for zero-continuation ordinary entries. README: **not release-ready**. No tag. |
+| argent-lang/argent | https://github.com/argent-lang/argent | Multi-actor layer **above** Silverscript (Sutton). [PR #59](https://github.com/argent-lang/argent/pull/59) merged **8 Sep** (state vectors in `args!`). [PR #60](https://github.com/argent-lang/argent/pull/60) merged **10 Sep** pins sil **v1.0.0**. [PR #63](https://github.com/argent-lang/argent/pull/63) merged **14 Sep** — leader/delegate **rules 5 and 6 now compile**. [PR #62](https://github.com/argent-lang/argent/pull/62) **open** (module loading). README: **not release-ready**. **No tag.** Getting-started: §4d. |
+| argent-lang/argent-playground | https://github.com/argent-lang/argent-playground | Local demos (counter, ICC, DEX-shaped `dex_asset`). Does **not** prove mainnet. PR your apps here (Izio 16 Sep). |
+| argent-lang/argent-template | https://github.com/argent-lang/argent-template | Starter. `./setup` clones sibling `argent`. **Local runtime only** — no network, no wallet, no submit. |
+| argent-lang/kcc20-reference | https://github.com/argent-lang/kcc20-reference | **WIP** (created 10 Sep). README one line. [PR #1](https://github.com/argent-lang/kcc20-reference/pull/1) open. **Not** adopted KCC-20. |
 | KaspaKii/Portrait | https://github.com/KaspaKii/Portrait | Public 1 Sep 2026. Testnet-only, unaudited. |
 | STP-KAS/gramlane | https://github.com/STP-KAS/gramlane | This desk. Grams, kasdomain. |
 | STP-KAS/project-delusional | https://github.com/STP-KAS/project-delusional | Stack index |
@@ -329,6 +349,40 @@ Not a new chain. Not Tor-by-rebrand. **Kaspa settles. The name locates. The user
 - Schema: https://github.com/STP-KAS/kns-spec/blob/main/schemas/overlay-records.schema.json
 - `https://alice.kas.limo` leaks DNS. `kns://alice.kas` must not need ICANN or a CA.
 - Uniqueness is still indexer FCFS. Overlay does not fix that.
+
+### 4d. Argent getting-started (Izio, 16 Sep 2026) — not a tag
+
+Source thread: [@IzioDev 16 Sep](https://x.com/IzioDev/status/2100178860700512752) (KEF grantee since 15 Dec 2025). **A tweet is not a KIP. Local runtime ≠ a Kaspa tx.**
+
+**How to start (his steps):**
+
+1. Install Git and Rust (only requirements he named).
+2. `git clone https://github.com/argent-lang/argent-template`
+3. `./setup` (Windows: `setup.cmd` / `setup.ps1` exist).
+4. Follow [this video](https://www.youtube.com/watch?v=xZsuvcc9qPk).
+
+Template README: sibling checkout `kaspanet/argent` + `argent-template`. If `../argent` exists, setup uses it without pulling. Builds deps and runs a smoke demo. Optional `./setup --vscode-ext` links the `.ag` VS Code extension.
+
+**Scope (template README, do not overclaim):** builds and executes in Argent’s **local** runtime. It does **not** connect to a Kaspa network, manage a wallet, or submit transactions.
+
+**Working examples he pointed at:**
+
+| What | URL |
+| --- | --- |
+| Playground apps | https://github.com/argent-lang/argent-playground/tree/master/ag |
+| Compiler examples | https://github.com/argent-lang/argent/tree/master/examples |
+
+Playground bins (local): `basic_counter`, `signed_counter`, `two_actor_exchange`, `dynamic_actor_choice`, `multiapp_badge`, `open_icc_agent`, `dex_asset`. `dex_asset` is a **local** DEX-shaped flow — not a live L1 DEX.
+
+**Contribute:** PR crafted apps to [argent-lang/argent-playground](https://github.com/argent-lang/argent-playground). Community support: Kaspa Discord **development** (invite https://discord.gg/kaspa).
+
+**Docs he asked for** (acceptance criteria, challenge them): Argent Getting Started · cookbooks/recipes for one design · Concept section. No unnecessary jargon (if a term is required: Concept). Human-friendly, which is also LLM-friendly. Mermaid diagrams if they earn their keep. **Docs should not describe how Argent operates; they should describe how to use it.** Existing programmability pages will likely be reshaped.
+
+**What landed in the compiler after the 14 Sep freeze (not in the tweet):** [PR #63](https://github.com/argent-lang/argent/pull/63) **merged 14 Sep** — rules 5 (continuation closure) and 6 (zero-continuation first-input) now emit generated Silverscript. [PR #62](https://github.com/argent-lang/argent/pull/62) **open** (module imports). Still **no release tag**. README still not release-ready.
+
+**Not pins from that thread:** zKAS merge-mining (`@decodekaspa`); `$kasdistro`; vProgs-as-product (Maksim: vProgs hides rollup complexity — still no product testnet).
+
+This desk: [STP-KAS/argent-xai](https://github.com/STP-KAS/argent-xai) is a pin-checker, **not** an audit. Gramlane still does not ship Argent ICC.
 
 ---
 
@@ -451,9 +505,11 @@ Telegram Bot API (platform, not Kaspa): https://core.telegram.org/bots/api · ht
 - STP-KAS implementer kit: https://stp-kas.github.io/kns-spec/ — KasWare/Kastle inscriptions + proven covenant txs. `KasName.sil` on silverc v1.0.0 with **value conservation** (v1 tutorial: `validateOutputState` does not lock amount).
 - Ori v1 post: https://x.com/OriNewman/status/2097731203503640976 — “Silverscript will evolve, Argent will add higher layers.”
 - Sutton: https://x.com/michaelsuttonil/status/2097360985442926740 (8 Sep) — “when Argent matures”, not if. Still no Argent tag.
+- Argent [PR #63](https://github.com/argent-lang/argent/pull/63) **merged 14 Sep** (Izio, Sutton merge) — leader/delegate rules 5 and 6 **now compile**. Old unimplemented pin is stale. [PR #62](https://github.com/argent-lang/argent/pull/62) still **open**.
+- Izio **16 Sep** getting-started: https://x.com/IzioDev/status/2100178860700512752 — template `./setup` + video. Local runtime. Catalog: §4d.
 - Sutton **11 Sep** (00:17 UTC): [working hypothesis](https://x.com/michaelsuttonil/status/2098204180406026482) — global DeFi is **not sequential**; push apps into **partitioned / parallel / replicated** state, not a constant number of sequential bottlenecks. Consensus order still matters **inside related sub-series** (double-spend). **Not a KIP. Not product.** Same thread: if DeFi *must* go through shared-state bottlenecks, “nothing can really bring scalability, not even well designed zk” — essay **not written** yet (infra first). KIP-20 Qs on [kips#46](https://github.com/kaspanet/kips/issues/46): sibling `OpInputCovenantId` **yes** (Argent `observed`); 1-to-many split keeps the same `covenant_id` **yes** (distinguish by template hash / state; fan-out can be cross-tx). Pointers: [argent/docs](https://github.com/argent-lang/argent/tree/master/docs), [icc-semantics](https://github.com/argent-lang/argent/blob/master/docs/icc-semantics.md), dex `quote_id` open-ICC demo. **Gramlane stays one own-UTXO.** Do not start a DEX or a L1 dollar from this tweet.
 - IzioDev 10 Sep: SilverScript vs Argent vs KCC thread https://x.com/IzioDev/status/2097918399737139331 ; leader/delegator diagram https://x.com/IzioDev/status/2098087085051986330. KCC-02/03 not wallet-interoperable yet.
-- Argent [PR #59](https://github.com/argent-lang/argent/pull/59) merged **8 Sep** (state vectors in `args!`). [PR #60](https://github.com/argent-lang/argent/pull/60) merged **10 Sep**, synced to sil v1.0.0. Two leader/delegate compiler rules still **not implemented**. README: not release-ready.
+- Argent [PR #59](https://github.com/argent-lang/argent/pull/59) merged **8 Sep** (state vectors in `args!`). [PR #60](https://github.com/argent-lang/argent/pull/60) merged **10 Sep**, synced to sil v1.0.0. [PR #63](https://github.com/argent-lang/argent/pull/63) merged **14 Sep** — rules 5/6 compile. README: not release-ready. No tag.
 - kaspaexplained /build-on-kaspa (checked 11 Sep): mainnet **84,196** covenants ever, **687** still active, **~1.56M KAS**. TN10 ~88,493 active. Sep 1 indexer baseline; still the live page.
 - Parker kaspa-explained public README **10 Sep**: V5/V6 Cloudflare migration in progress; V6 local browser journey **26 accepted TN10 txs** + 5 VM rejects. Hosted runtime is a separate gate. Economy order still dated 7 Sep (21 txs).
 - PegLab vs Parker battletest: receipts **1–0 Parker**; classroom **1–0 PegLab**; dollars **0–0**. Successor A is Parker’s 1-sompi receipt. New repo [STP-KAS/peglab-poc](https://github.com/STP-KAS/peglab-poc). Do not mainnet tPEG. Do not use TN12.
@@ -477,7 +533,9 @@ Telegram R&D is observer-only for most people. Discord `#development` / `#resear
 | 3–4 Sep | Framing / foreign-state reads: Sutton says `#234` closed because history assumptions; Scopio/supertypo tests still show slide on unmodified silverc. **Gramlane still never `readInputState`s a foreign UTXO.** | kaspa.news 4 Sep |
 | 4 Sep | rusty-kaspa `dagknight` PRs still **open/draft**. | GitHub |
 | 9 Sep | SilverScript **v1.0.0** tagged (`3ed9733`). Compiler pin. | GitHub release; Ori X |
-| 8–10 Sep | Argent #59 (state vectors) then #60 (sil v1.0.0 + leader/delegate). Two compiler rules still unimplemented. | GitHub |
+| 8–10 Sep | Argent #59 (state vectors) then #60 (sil v1.0.0 + leader/delegate). Rules 5/6 were still unimplemented **that week**. | GitHub |
+| 14 Sep | Argent **#63 merged** — rules 5 and 6 compile into generated `.sil`. #62 open (module loading). | GitHub |
+| 16 Sep | Izio getting-started thread: template `./setup`, playground/examples, Discord development. **Not a tag.** | [X](https://x.com/IzioDev/status/2100178860700512752) |
 | 10 Sep | Sil #249 `State[].split()` tuple hole on the pin. Fix #250 **open**. | GitHub |
 | 11 Sep | Sutton: global DeFi not sequential; partitioned/replicated state. vProgs shared-state tension — missing essay. kips#46: sibling cov id + 1→N same id = yes. Argent docs / open ICC. **Research.** Not a pin for a DEX or kUSD. | [X](https://x.com/michaelsuttonil/status/2098204180406026482) |
 | 11 Sep | Sutton: Alex (saefstroem) connecting dapp-dev process + ecosystem standardization. Same day as KCC-0012 draft. | [X](https://x.com/michaelsuttonil/status/2098433221021118762) |
@@ -502,7 +560,7 @@ Folded from the community intel pack. Full dated text: [`intel-pack.md`](intel-p
 
 **Since 11 Sep freeze:** DAA +1.11M; supply +~2.4M KAS; reward/hashrate unchanged. New: **KCC-0012** draft (`kccs#24`); Sil **#251** open; Sutton praise of saefstroem. DK still no delta.
 
-**Do not claim:** 100 BPS live; instant irreversible payments; DAGKnight is consensus; KCC-0020/0021/0402/**0012** adopted; foreign `readInputState` is safe; vProgs live; Portrait or kaspa-pqv on mainnet; Gramlane is Kassword / KCC-20 / Argent; Argent is production-ready; `State[].split()` tuple destructure is safe on v1.0.0. SilverScript **v1.0.0 is tagged** (9 Sep 2026). That is the compiler pin, not a claim that every app is audited.
+**Do not claim:** 100 BPS live; instant irreversible payments; DAGKnight is consensus; KCC-0020/0021/0402/**0012** adopted; foreign `readInputState` is safe; vProgs live; Portrait or kaspa-pqv on mainnet; Gramlane is Kassword / KCC-20 / Argent; Argent is production-ready; Argent template txs hit a Kaspa network; `State[].split()` tuple destructure is safe on v1.0.0. SilverScript **v1.0.0 is tagged** (9 Sep 2026). Argent rules 5/6 **compile** (14 Sep) — that is not a tag or an audit. **Never share seed phrases.**
 
 ### Filters (transcripts)
 
@@ -512,9 +570,10 @@ Yonatan (digital cash, cohesive tooling, core ≠ product) → Sutton (L1 covena
 
 | Repo | Why |
 | --- | --- |
-| [argent-lang/argent](https://github.com/argent-lang/argent) | Sutton multi-actor frontend. **#59 merged 8 Sep** state vectors in `args!`. **#60 merged 10 Sep** sil v1.0.0 + leader/delegate guide (two rules still unimplemented). Unaudited. No tag. |
-| [argent-lang/argent-playground](https://github.com/argent-lang/argent-playground) | Examples |
-| [argent-lang/argent-template](https://github.com/argent-lang/argent-template) | Episode-01 ticketing demo |
+| [argent-lang/argent](https://github.com/argent-lang/argent) | Sutton multi-actor frontend. **#59** 8 Sep, **#60** 10 Sep, **#63 merged 14 Sep** (rules 5/6 compile). **#62 open**. Unaudited. No tag. README: not release-ready. |
+| [argent-lang/argent-playground](https://github.com/argent-lang/argent-playground) | Local demos. PR target for community apps (Izio 16 Sep). |
+| [argent-lang/argent-template](https://github.com/argent-lang/argent-template) | Getting-started starter. Local runtime only. |
+| [argent-lang/kcc20-reference](https://github.com/argent-lang/kcc20-reference) | WIP. Not adopted KCC-20. |
 | [kaspanet/vprogs#139](https://github.com/kaspanet/vprogs/pull/139) | **Open.** ExitLeaf + claim kit. Also #138/#140. **#142** bridge lane-anchor (10 Sep). No product testnet. |
 | [elldeeone/kaspa-x402](https://github.com/elldeeone/kaspa-x402) | TN10 x402 v2 binding. Bind this. Not a fourth envelope. |
 | [kaspanet/kccs#20](https://github.com/kaspanet/kccs/pull/20) | **Open draft.** KCC-20 vectors. Transfer sig unconfirmed. |
@@ -551,8 +610,8 @@ TG-dense, Discord-light: silverscript, vprogs, Argent, kccs, python-sdk — trea
 
 ### Gramlane filter (from that pack)
 
-**Now:** pinned **silverc v1.0.0** (Ori, 9 Sep, `3ed9733`); WorkCredit / KasName via `validateOutputState` only; grams not KCC-20; POS/Pay; one kasdomain; `/234` still a hole; no `State[].split()` tuples until #250; HTTP 402 binds [elldeeone/kaspa-x402](https://github.com/elldeeone/kaspa-x402); in-page inject **Kasware/Kastle only** (KCC-0012 is Draft); pointers to Kassword/pqv/Portrait.  
-**Not us:** DAGKnight, #234 retry, guessed compute budget, Argent ICC / leader-delegate, vProg exits, L2 stables, Kurrent channels, MWEB privacy thread, a fourth 402 envelope, calling k402 “x402”, treating KCC-0012 as adopted, a DEX or L1 dollar from Sutton’s 11 Sep hypothesis.
+**Now:** pinned **silverc v1.0.0** (Ori, 9 Sep, `3ed9733`); WorkCredit / KasName via `validateOutputState` only; grams not KCC-20; POS/Pay; one kasdomain; `/234` still a hole; no `State[].split()` tuples until #250; HTTP 402 binds [elldeeone/kaspa-x402](https://github.com/elldeeone/kaspa-x402); in-page inject **Kasware/Kastle only** (KCC-0012 is Draft); pointers to Kassword/pqv/Portrait. Argent rules 5/6 **compile** as of 14 Sep — still no tag, still not a till.  
+**Not us:** DAGKnight, #234 retry, guessed compute budget, shipping Argent ICC, vProg exits, L2 stables, Kurrent channels, MWEB privacy thread, a fourth 402 envelope, calling k402 “x402”, treating KCC-0012 as adopted, treating kcc20-reference as KCC-20, a DEX or L1 dollar from Sutton’s 11 Sep hypothesis. **Never share seed phrases.**
 
 ---
 

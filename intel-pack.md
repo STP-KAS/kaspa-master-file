@@ -34,7 +34,7 @@ Live L1 snapshot (api.kaspa.org, this date) plus kaspaexplained.com / rusty-kasp
 | Covenant adoption | Early, real. Sep 1 indexer baseline still on the live page: **84,196** covenants ever, **687** still active, **~1.56M KAS**. TN10 ~88,493 active. | kaspaexplained.com/build-on-kaspa |
 | Silverscript | **v1.0.0 tagged** (9 Sep, `3ed9733`). Compiler pin, not an audited-app claim. Foreign `readInputState` framing guard **#234 closed unmerged**. Artifact has **no compute-budget estimate** (#243 open). **#249** `State[].split()` tuple destructure broken on this pin; **#250** open. | kaspanet/silverscript |
 | vProgs | **Roadmap.** No public product testnet, no releases. Host-side claim kit **#139 open**. Resource indexer **#140 open**. Bridge lane-anchor **#142 open** (10 Sep). | kaspanet/vprogs |
-| Argent ICC | Unaudited offline demos only. Not production SC. **#59 merged 8 Sep** state vectors in `args!`. **#60 merged 10 Sep** pins sil v1.0.0 + leader/delegate guide; continuation-closure and zero-continuation first-input still **[NOT IMPLEMENTED]**. No tag. README: not release-ready. | argent-lang/argent |
+| Argent ICC | Unaudited offline demos only. Not production SC. **#59** 8 Sep, **#60** 10 Sep, **#63 merged 14 Sep** (rules 5/6 compile). **#62 open**. No tag. README: not release-ready. Getting-started: Izio 16 Sep template `./setup`. | argent-lang/argent |
 | KCC-0020 | Spec text merged, **Status: Draft**. Conformance vectors **#20 open**. KCC-2 ECDSA P2PK **#23 open**. KCC-0021 / 0402 still open drafts. | kaspanet/kccs |
 | KCC-0012 | **Draft.** Browser wallet provider + discovery ([kccs#24](https://github.com/kaspanet/kccs/pull/24), 11 Sep). No public implementation. Not adopted. | kaspanet/kccs |
 | Native DeFi | **Roadmap.** Do not pitch as live. | /status claim table |
@@ -454,7 +454,7 @@ Pin for Gramlane: **v1.0.0** (`3ed9733`, Ori Newman / someone235, 9 Sep 2026). v
 
 ## E3. Argent (argent-lang, Sutton)
 
-Org: `argent`, `argent-playground` (pushed 2 Sep), `argent-template`.
+Org (4 public, 17 Sep): `argent`, `argent-playground`, `argent-template`, `kcc20-reference` (WIP).
 
 | PR | State | Intel |
 | --- | --- | --- |
@@ -463,7 +463,10 @@ Org: `argent`, `argent-playground` (pushed 2 Sep), `argent-template`.
 | [#44](https://github.com/argent-lang/argent/pull/44) bounded ranges on consumes/emits | **merged** 30 Aug | Was listed as open draft in the 4 Sep freeze. Landed. |
 | [#56](https://github.com/argent-lang/argent/pull/56) ISC license on runtime/artifact | **closed unmerged** 6 Sep | Superceded by #60 workspace metadata inheritance. |
 | [#59](https://github.com/argent-lang/argent/pull/59) state vectors in `args!` | **merged** 8 Sep (Manyfestation) | `Vec` / slice of state maps → one ABI array. 471 tests. |
-| [#60](https://github.com/argent-lang/argent/pull/60) leader/delegate + sil v1.0.0 | **merged** 10 Sep (Sutton) | Pins sil `3ed9733`. Formalizes leader/delegate groups. Two compiler rules still **[NOT IMPLEMENTED]**: continuation-closure; first-input for zero-continuation ordinary entries on delegate-capable actors. |
+| [#60](https://github.com/argent-lang/argent/pull/60) leader/delegate + sil v1.0.0 | **merged** 10 Sep (Sutton) | Pins sil `3ed9733`. Formalizes leader/delegate groups. Rules 5/6 were still unimplemented **that day**. |
+| [#63](https://github.com/argent-lang/argent/pull/63) leader/delegator rules 5 and 6 | **merged** 14 Sep (Izio → Sutton) | Continuation-closure and zero-continuation first-input **now compile** into generated `.sil`. |
+| [#62](https://github.com/argent-lang/argent/pull/62) module loading rework | **open** | Import/alias rewrite. Next claimed: AST-to-AST. |
+| [kcc20-reference](https://github.com/argent-lang/kcc20-reference) | **WIP** | Fourth org repo (10 Sep). Empty README. PR #1 open. Not adopted KCC-20. |
 | #1 a19q3 route coverage; #3 name hygiene; #7–#10 ICC / observed covenants / digest-backed state | **merged** (Jun–Aug) | Multi-actor ICC is Argent’s job. Gramlane does not implement ICC. |
 
 **Do not claim** Argent is production smart contracts. No release tag. README: not release-ready; needs further audit and hardening.
@@ -571,7 +574,7 @@ Pulled 11 Sep 2026 from api.kaspa.org, kaspaexplained.com/status + /build-on-kas
 | --- | --- | --- |
 | Toccata / KIPs 16/17/20/21 | **Live** unchanged | rusty-kaspa v2.0.1; KIP files Status: Active |
 | SilverScript v1.0.0 | **Tagged compiler.** Not an audited-app claim. | https://github.com/kaspanet/silverscript/releases/tag/v1.0.0 `3ed9733` |
-| Argent production-ready | **Wrong / Research** | README still “not yet release-ready”. No tag. #60 documents unimplemented compiler rules. |
+| Argent production-ready | **Wrong / Research** | README still “not yet release-ready”. No tag. #63 (14 Sep) compiled rules 5/6; still not a product. |
 | Foreign `readInputState` | **Still unsafe** | #234 closed unmerged |
 | `State[].split()` tuples | **Broken on the pin** | #249 open; #250 unmerged |
 | KCC-0020 adopted | **Wrong** | Still Draft. #14 supply-split open. #20 vectors open. |
@@ -591,15 +594,15 @@ Aug 24 numbers (28,125 / 519 / ~1.53M) are superseded. Locked KAS barely moved; 
 
 Merged 10 Sep (`867b080`, Sutton). Pins silverscript-abi + compiler crates to v1.0.0. Adopts `check_consistency`. Formalizes leader / delegate / input-group / continuation-group.
 
-Still **[NOT IMPLEMENTED]** in generated contracts (application-level obligation until the compiler grows them):
+**[PR #63 merged 14 Sep]** — those two rules now compile:
 
-1. Continuation-closure — leader must authorize every continuation in the coordinated covenant group.
-2. First-input requirement for otherwise-batchable zero-continuation ordinary entries on delegate-capable actors.
+1. Continuation-closure — `OpCovOutputCount(c) == OpAuthOutputCount(l)`.
+2. Zero-continuation first-input — `OpCovInputIdx(c, 0) == this.activeInputIndex`.
 
-IzioDev diagram (10 Sep): https://x.com/IzioDev/status/2098087085051986330 — one covenant group; delegator runs less compute. Not a spec.
+Still **no tag**. README still not release-ready. Izio getting-started (16 Sep): https://x.com/IzioDev/status/2100178860700512752 — template `./setup`, local runtime. Diagram (10 Sep): https://x.com/IzioDev/status/2098087085051986330. Not a spec.
 
 ## F4. Gramlane filter (unchanged, sharpened)
 
-**Now:** silverc **v1.0.0**; own-UTXO `validateOutputState` only; no foreign `readInputState`; no `State[].split()` tuples; grams not KCC-20; no Argent ICC.
+**Now:** silverc **v1.0.0**; own-UTXO `validateOutputState` only; no foreign `readInputState`; no `State[].split()` tuples; grams not KCC-20; no Argent ICC in a till (rules 5/6 compile, still no tag).
 
-**Not us:** DAGKnight, vProg exits, Kurrent, MWEB thread, Argent leader/delegate, guessed compute budget.
+**Not us:** DAGKnight, vProg exits, Kurrent, MWEB thread, shipping Argent ICC, guessed compute budget. **Never share seed phrases.**

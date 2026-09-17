@@ -34,7 +34,7 @@ Honest labels only. Recheck DAA / PRs before quoting.
 
 | Thing | Honest |
 | --- | --- |
-| Argent | [PR #60](https://github.com/argent-lang/argent/pull/60) merged 10 Sep, pins sil v1.0.0. **No tag.** README: not release-ready. Two compiler rules **[NOT IMPLEMENTED]**: continuation-closure; first-input on delegate-capable actors. |
+| Argent | [PR #60](https://github.com/argent-lang/argent/pull/60) merged 10 Sep, pins sil v1.0.0. [PR #63](https://github.com/argent-lang/argent/pull/63) merged **14 Sep** — rules 5/6 **compile**. **No tag.** README: not release-ready. Getting-started: Izio [16 Sep](https://x.com/IzioDev/status/2100178860700512752) (template `./setup`, local runtime). |
 | KCC-0020 | **Draft.** [#14](https://github.com/kaspanet/kccs/issues/14) supply-split open. [#20](https://github.com/kaspanet/kccs/pull/20) vectors open. Not a gram token. |
 | kaspa-x402 | [elldeeone/kaspa-x402](https://github.com/elldeeone/kaspa-x402) — intended **x402 v2** binding. Tag **v1.0.0-rc.1**. **TN10 only. Mainnet blocked.** Bind this envelope. Windows clone-and-test merged `216ad77`. Public: [sixpack.wtf](https://sixpack.wtf). |
 | k402 | [Kali123411/k402](https://github.com/Kali123411/k402) — HTTP 402 + `kaspa-channel` lock/voucher. [kccs#4](https://github.com/kaspanet/kccs/pull/4) still open. Steal the lock. **Not** x402 v2. **Not** adopted KCC-0402. |
@@ -186,7 +186,7 @@ Keep shipping:
 
 ### Step 7 — Only then, look up
 
-Revisit Argent **if and only if**: a tag exists, README drops “not release-ready”, and the two leader/delegate rules **compile into** generated contracts. Until then Gramlane stays **one** own-UTXO covenant.
+Revisit Argent **if and only if**: a tag exists **and** README drops “not release-ready”. Rules 5/6 **already compile** (PR #63, 14 Sep). Until a tag, Gramlane stays **one** own-UTXO covenant. Local template/playground txs are not network proof.
 
 Revisit KCC-20 **if and only if**: Status is not Draft, #14 closed, #20 merged, transfer tag confirmed. Even then: **do not name a gram token GRAM**. Grams stay mass + WorkCredit.
 

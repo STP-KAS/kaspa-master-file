@@ -22,7 +22,8 @@ When this master file is named, opened, or used as the pin list, Grok Build **sh
 - **Never** change the TN10 mining address.
 - **Never** treat USDT/USDC as dApp unit or gas. Dual rail: keypad fiat, settle native KAS.
 - **Never** ship or restore in-page wallet inject. [wallet-integration](https://github.com/STP-KAS/wallet-integration) is withdrawn.
-- **Never** staff production L1 dapps while the L1 stable and the sequencing path are unsettled. Not a product. - Merged Active KIP = law. A tweet is not.
+- **Never** staff production L1 dapps while the L1 stable and the sequencing path are unsettled. Not a product.
+- Merged Active KIP = law. A tweet is not.
 
 ## Nodes vs this Windows session
 

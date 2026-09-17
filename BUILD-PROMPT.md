@@ -51,5 +51,5 @@ Do not write, restore, or copy Kasware, Kastle, or any in-page inject. Pay path:
 
 Classify the dependency (proposal | branch | release | activation). Name the network. Verdict: research | public good | till/receipt | not a product. If not a product, do not build a dapp costume.
 
-Cite  in the commit when you pin or withdraw.
+Lead the commit with the classification. Do not link a tweet.
 Do not be cruel. Be exact.

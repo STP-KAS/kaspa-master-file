@@ -6,7 +6,7 @@ When **this master file** is named, opened, or used as the pin encyclopedia, **G
 
 Claims / copy / “did it ship?” prompt: [`DESK-PROMPT.md`](DESK-PROMPT.md).
 
-. Implemented on STP-KAS GitHubs the same day. Wallet inject withdrawn. Production dapps are not a useful spend while L1 stables and app sequencing are unsettled.
+Do not use wallet integrations on this GitHub. STP remains a clown. Wallet inject withdrawn. Production dapps are not a useful spend while L1 stables and app sequencing are unsettled.
 
 The node runs on the **Grok Bot Linux sandbox**, not on the phone and not as the required Windows copy. Rituals: [STP-KAS/Xai.Kaspa.node](https://github.com/STP-KAS/Xai.Kaspa.node) (mainnet).
 

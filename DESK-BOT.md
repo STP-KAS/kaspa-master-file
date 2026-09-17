@@ -6,7 +6,7 @@ When **this master file** is named, opened, or used as the pin encyclopedia, **G
 
 Claims / copy / “did it ship?” prompt: [`DESK-PROMPT.md`](DESK-PROMPT.md).
 
-Why the product lock exists: [KASPAglobal, 17 Sep 2026](https://x.com/kaspaglobal/status/2100536064683176270). Implemented on STP-KAS GitHubs the same day. Wallet inject withdrawn. Production dapps are not a useful spend while L1 stables and app sequencing are unsettled.
+. Implemented on STP-KAS GitHubs the same day. Wallet inject withdrawn. Production dapps are not a useful spend while L1 stables and app sequencing are unsettled.
 
 The node runs on the **Grok Bot Linux sandbox**, not on the phone and not as the required Windows copy. Rituals: [STP-KAS/Xai.Kaspa.node](https://github.com/STP-KAS/Xai.Kaspa.node) (mainnet).
 

@@ -2,14 +2,18 @@
 
 **This encyclopedia is not the front door.**
 
-For Kaspa dApp developers (what to use, skip, and not lie about — dual-rail native vs Tether, PoC alternatives, plan, breakpoints, sources):
+Front door: **[STP-KAS/kaspa-dapps](https://github.com/STP-KAS/kaspa-dapps)**
 
-**[STP-KAS/kaspa-dapps](https://github.com/STP-KAS/kaspa-dapps)**
+**Not a product.** Statement: [kaspa-dapps/NOT-A-PRODUCT.md](https://github.com/STP-KAS/kaspa-dapps/blob/main/NOT-A-PRODUCT.md)
 
-This repo stays the pin encyclopedia (compiler tag, KIPs, forum). The 42-repo mess is cut there. Do not add another “what this pass did” section here; put a dated note in kaspa-dapps or don’t.
+**Desk claims prompt** (paste into the bot): [`DESK-PROMPT.md`](DESK-PROMPT.md)
 
-Money argument + Grok Build/Ask/Bot consolidation (no seeds): [`CRYPTO-FINANCE.md`](CRYPTO-FINANCE.md). Argent getting-started (Izio, 16 Sep 2026): README §4d.
+Why: [KASPAglobal, 17 Sep 2026](https://x.com/kaspaglobal/status/2100536064683176270). A GitHub link that says it shipped is a proposal, a branch, a release, or an activation — until you open it. A node release is not wallet support. This desk does not ship wallet integrations. There is no spendable L1 stable. App sequencing is not a settled product. Production dapps are not a useful spend until those two are settled.
 
-Desk Grok Bot standing authority (use kaspa bot + tn10 bot whenever this master file is named): [`DESK-BOT.md`](DESK-BOT.md) · [`AGENTS.md`](AGENTS.md).
+This repo stays the pin encyclopedia (compiler tag, KIPs, forum). Do not add another “what this pass did” section here.
 
-Retest of all public STP-KAS GitHubs vs these pins: [`RETEST.md`](RETEST.md).
+Money argument (no seeds): [`CRYPTO-FINANCE.md`](CRYPTO-FINANCE.md).
+
+Node standing authority: [`DESK-BOT.md`](DESK-BOT.md) · [`AGENTS.md`](AGENTS.md).
+
+Retest of public STP-KAS GitHubs: [`RETEST.md`](RETEST.md).

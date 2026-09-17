@@ -14,6 +14,15 @@ Crypto-finance desk law (Grok Build / Ask / Bot, **no seeds**): [`CRYPTO-FINANCE
 
 **Retest (17 Sep 2026):** every public STP-KAS GitHub (**48**) vs these pins — [`RETEST.md`](RETEST.md). Pins **hold**. argent-xai `check.ps1` **DRIFT** (PR #63). kns comment-grep still red.
 
+### What this pass did (17 Sep 2026 — @kaspaunchained covenants thread)
+
+Community explainer, **not core, not a KIP.** Stack sketch matches this map: Toccata covenants **live**; SilverScript **compiler**; Argent **above** Silverscript. Follow-ups: [docs.kaspa.org/programmability/covenants](https://docs.kaspa.org/programmability/covenants), [kaspanet/silverscript](https://github.com/kaspanet/silverscript), [argent-lang/argent](https://github.com/argent-lang/argent). **Do not round up:** Argent still **no tag**, README still not release-ready. Pins **unchanged.**
+
+| Post | URL | Honest |
+| --- | --- | --- |
+| Covenants / SilverScript / Argent | https://x.com/kaspaunchained/status/2100571472561586192 | 17 Sep 13:04 UTC. Readable stack. “Argent … compiled to run directly on Kaspa’s L1” is the *compiler* path, not a product stamp. |
+| Docs pointer | https://x.com/kaspaunchained/status/2100572500442980776 | 17 Sep 13:08 UTC. Points at official covenants docs. |
+
 | Piece | Operator 17 Sep 2026 |
 | --- | --- |
 | kaspa bot mainnet archival (1 public) | **Up** — `159.223.110.159:28492` |
@@ -162,6 +171,8 @@ Kaspa is **proof of work**. Miners spend energy. There is no staking. Fair launc
 | kaspa.org | https://kaspa.org | Official. |
 | Wallets | https://wiki.kaspa.org/wallet | Hold KAS. Never paste a seed into a website. |
 | Video (community) | https://x.com/kaspaunchained/status/2096211914825285808 | @kaspaunchained, 5 Sep 2026. “Only gets better with age.” Older Odie clip. Not a spec. Not core. |
+| Covenants stack (community) | https://x.com/kaspaunchained/status/2100571472561586192 | @kaspaunchained, 17 Sep 2026. Covenants → SilverScript → Argent. Not a KIP. Argent still no tag. |
+| Covenants docs (from that thread) | https://x.com/kaspaunchained/status/2100572500442980776 | Same thread. Points at https://docs.kaspa.org/programmability/covenants |
 | Grok share (X) | https://x.com/i/grok/share/c59cba827c574d028607693855b2e5fc | Community share. Not a KIP. Recheck before quoting. |
 | Faucets and mining | https://kaspa.aspectron.org/faucets-mining.html | Aspectron. Testnet faucets, mining entry, PNN. Not kaspanet. |
 | Kaspa Q&A | https://qa.kas.pa/ | Community Q&A. Answers are not KIPs. |
@@ -190,6 +201,7 @@ Kaspa is **proof of work**. Miners spend energy. There is no staking. Fair launc
 | Wiki | https://wiki.kaspa.org | Community wiki. Wallets: https://wiki.kaspa.org/wallet |
 | Docs | https://github.com/kaspanet/docs | kaspanet docs repo |
 | Toccata guide | https://docs.kaspa.org/toccata | Official programmability guide. Live on mainnet. Tooling still young. |
+| Covenants docs | https://docs.kaspa.org/programmability/covenants | Official. Linked from @kaspaunchained 17 Sep. Consensus live; Argent still untagged. |
 | Research forum | https://research.kas.pa | Official Discourse. Threads ≠ KIPs. Catalog: §1b. |
 | kaspa.news | https://kaspa.news | Public recaps of Core R&D Telegram (not the channel itself). |
 | Kaspalytics | https://www.kaspalytics.com | Learn: Toccata, SilverScript. Not core. |
@@ -445,7 +457,7 @@ Yonatan’s own “rough core” list (30 Apr 2025): michaelsutton, hashdag, cod
 | Maxim Biryukov | [@biryukovmaxim](https://x.com/biryukovmaxim) | Core (KIP-21) |
 | Shai Wyborski | [@DesheShai](https://x.com/DesheShai) | GHOSTDAG co-author; later left core (his 2025 farewell). Not a current pin as “core”. |
 | Aviv Zohar | [@Avivz78](https://x.com/Avivz78) | Co-author GHOST / research |
-| Kaspa (community X) | [@kaspaunchained](https://x.com/kaspaunchained) | Non-representative community account |
+| Kaspa (community X) | [@kaspaunchained](https://x.com/kaspaunchained) | Non-representative community account. 17 Sep stack thread: [covenants/SS/Argent](https://x.com/kaspaunchained/status/2100571472561586192) · [docs](https://x.com/kaspaunchained/status/2100572500442980776). Not a KIP. |
 | Kaspa global | [@KASPAglobal](https://x.com/KASPAglobal) | 3 Sep 2026: Toccata live, not “coming soon”. |
 | Kaspa Commons | [@Kaspa_Commons](https://x.com/Kaspa_Commons) | Relays Discord (e.g. Ori Newman TN10 notes). Not core. |
 | This project | [@StppStp](https://x.com/StppStp) | Gramlane / project delusional. **Never DMs you.** |
@@ -544,6 +556,7 @@ Telegram Bot API (platform, not Kaspa): https://core.telegram.org/bots/api · ht
 - DAGKnight: KIP-2 still Proposed. [#1127](https://github.com/kaspanet/rusty-kaspa/pull/1127) (FreshAir: bounded UMC / k^4 depth) **ready for review 12 Sep**. Security write-up still pending. Last `dagknight` commit **8 Sep**. **Not shipped.** Notebook: [dagknight-test-grok](https://github.com/STP-KAS/dagknight-test-grok).
 - kaspa.org rebuilt around “real-time decentralization” (2026). 10 BPS live. 100 BPS is a target, not a spec.
 - Official Toccata guide: https://docs.kaspa.org/toccata — consensus live; SilverScript v1 is tagged; Argent/vProgs tooling still early.
+- @kaspaunchained **17 Sep**: [covenants/SilverScript/Argent](https://x.com/kaspaunchained/status/2100571472561586192) + [docs pointer](https://x.com/kaspaunchained/status/2100572500442980776) → https://docs.kaspa.org/programmability/covenants. Community explainer. **Not a tag.**
 - research.kas.pa: newest thread is **optional privacy / MWEB-like** (JackKas, 8 Sep, [522](https://research.kas.pa/t/optional-privacy-layer-for-kaspa-similar-to-litecoin-mweb/522)). Not a KIP. Kurrent (23 Jun) still not product.
 - STP-KAS implementer kit: https://stp-kas.github.io/kns-spec/ — KasWare/Kastle inscriptions + proven covenant txs. `KasName.sil` on silverc v1.0.0 with **value conservation** (v1 tutorial: `validateOutputState` does not lock amount).
 - Ori v1 post: https://x.com/OriNewman/status/2097731203503640976 — “Silverscript will evolve, Argent will add higher layers.”

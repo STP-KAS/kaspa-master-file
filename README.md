@@ -6,6 +6,14 @@
 
 Crypto-finance desk law (Grok Build / Ask / Bot, **no seeds**): [`CRYPTO-FINANCE.md`](CRYPTO-FINANCE.md).
 
+**Desk Grok Bot — standing authority:** [`DESK-BOT.md`](DESK-BOT.md) · [`AGENTS.md`](AGENTS.md). When this master file is named, Grok Build **shall** use kaspa bot (mainnet archival) and tn10 bot (TN10 node + miners) for audits, dApps, and tests. Do not re-ask. **No seeds. Do not paste TN10 into kaspa bot.**
+
+| Piece | Operator 17 Sep 2026 |
+| --- | --- |
+| kaspa bot mainnet archival (1 public) | **Up** — `159.223.110.159:28492` |
+| tn10 bot node | **Up** — RPC `127.0.0.1:16210` (Grok Bot sandbox) |
+| TN10 miners | **Alive** — same pay-to `kaspatest:qzffl5xy9np46gkttyuftqnv2w04pr8g3wsp7c3vv8se3txtelx6q7c0v0ldx` |
+
 **project delusional.** Kaspa master file — pins, ideas, principles. One principle: skip centralised stablecoins for dapps. Fill is not a business: this desk keeps 0. Any Kaspa wallet (QR / kaspa: URI). In-page inject is only Kasware/Kastle. The jar is not Nakamoto. Darwin battletest: [STP-KAS/gramlanepeglab](https://github.com/STP-KAS/gramlanepeglab). Receipt PoC after battling PegLab vs Parker: [STP-KAS/peglab-poc](https://github.com/STP-KAS/peglab-poc).
 
 This is a map. Merged Active KIP = law. Open PR, personal wiki, Discord rumor ≠ a pin. Gramlane tab: http://127.0.0.1:8081/masterfile
@@ -26,6 +34,17 @@ Grok Build cross-session memory enabled. Indexed **64** Grok Build sessions on t
 | Thread noise | zKAS merge-mine / `$kasdistro` replies. **Not pins.** vProgs still a framework without a product testnet (Maksim Biriukov in-thread). |
 
 Pins **unchanged except Argent rules 5/6:** silverc **v1.0.0**; rusty **v2.0.1**; Toccata **live**; DAGKnight **not shipped**; KCC-0012 **Draft**; `#234` unmerged; `#250`/`#251` open; Argent **no tag**.
+
+### What this pass did (17 Sep 2026 — desk Grok Bot authority)
+
+Standing authority to **use kaspa bot + tn10 bot** whenever this master file is named. Card: [`DESK-BOT.md`](DESK-BOT.md). Probe: [`scripts/probe-nodes.ps1`](scripts/probe-nodes.ps1).
+
+| Found | Change |
+| --- | --- |
+| kaspa bot | Operator: mainnet archival **1 public** `159.223.110.159:28492`. REST DAA **542,045,549**. This Windows PC **refused** TCP to that P2P — use the bot + `api.kaspa.org`, do not compete on `:16111`. |
+| tn10 bot | Operator: RPC **Up** `127.0.0.1:16210` **on the sandbox**. This Windows loopback **refused** (desk second site not required). REST DAA **572,671,518**. |
+| Miners | Same pay-to. api-tn10 **3,824,424.95 tKAS** (was ~1.16M on 15 Sep). Alive. |
+| Authority | `AGENTS.md` + memory: Grok Build shall use this stack for audits/dApps. No seeds. No TN10-into-kaspa-bot. |
 
 ### What this pass did (14 Sep 2026, evening — groks-wallet)
 
@@ -293,6 +312,8 @@ KIP-21 lanes are 20-byte `subnetwork_id`s, ≤50 non-coinbase lanes/block, 1e9 g
 | STP-KAS/peglab-stp | https://github.com/STP-KAS/peglab-stp | tPEG classroom. Admin oracle + 2 tKAS pool. **WILL DEPEG.** Not money. |
 | STP-KAS/peglab-poc | https://github.com/STP-KAS/peglab-poc | Battle-tested receipt PoC. Parker unit + PegLab warning. Two tracks: public goods, or BTCPay-shaped software company. **Not USD.** ENGINE_SPEC until TN10 txids. |
 | STP-KAS/grok-kaspa-collab | https://github.com/STP-KAS/grok-kaspa-collab | Grok × Kaspa collab. Core idea, commercial uses, beyond-crypto scheme. Not a KIP. Not a dollar. |
+| STP-KAS/Xai.Kaspa.node | https://github.com/STP-KAS/Xai.Kaspa.node | **kaspa bot** mainnet archival ritual. Operator 17 Sep: 1 public `159.223.110.159:28492`. Standing use: [`DESK-BOT.md`](DESK-BOT.md). |
+| STP-KAS/groks-wallet | https://github.com/STP-KAS/groks-wallet | **tn10 bot** + Grok’s TN10 wallet (public address only). RPC `127.0.0.1:16210` on the sandbox. Same pay-to for miners. |
 | STP-KAS/xai-reasoning-3 | https://github.com/STP-KAS/xai-reasoning-3 | xAI reasoning 3. Dual-rail EUR till (SEPA + optional kaspa QR). 402 refuses unverified txids. Not a dollar. |
 | a19q3/Kurrent | https://github.com/a19q3/Kurrent | Eltoo-inspired latest-state channel. Forum [494](https://research.kas.pa/t/kurrent-an-eltoo-inspired-latest-state-channel-on-kaspa/494). Devnet evidence. **Not product.** |
 | elldeeone/kaspa-x402 | https://github.com/elldeeone/kaspa-x402 | Intended **x402 v2** binding. TN10 alpha. Site [kaspa-x402.org](https://kaspa-x402.org). Bind this envelope; do not invent a fourth 402. |

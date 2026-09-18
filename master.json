@@ -135,7 +135,7 @@
         {"name": "rusty-kaspa", "url": "https://github.com/kaspanet/rusty-kaspa", "chip": "node", "note": "v2.0.0 Toccata · v2.0.1. dagknight unmerged. Open DK cluster ready (not shipped): #1104 executor rewrite, #1127 UMC depth (ready for review 12 Sep), #1131 e2e fixtures, #1132 parent-shuffle property, #1124 simpa adversaries. Last dagknight tip still 8 Sep. Not shipped."},
         {"name": "kips", "url": "https://github.com/kaspanet/kips", "chip": "law", "note": "Improvement proposals."},
         {"name": "silverscript", "url": "https://github.com/kaspanet/silverscript/releases/tag/v1.0.0", "chip": "v1.0.0", "note": "Ori / someone235 tagged 9 Sep 2026, commit 3ed9733. SemVer v1. Tip unchanged through 18 Sep. Open holes: #243 compute-budget, #249/#250 State[].split tuple, #251 struct-array index. Not a second tag."},
-        {"name": "kccs", "url": "https://github.com/kaspanet/kccs", "chip": "Draft", "note": "Refuse as a gram token. KCC-0012 wallet discovery is kccs#24 (open ready, activity 18 Sep; still Draft / not Final). Also open 18 Sep: #27 kcc-1↔kcc0 compliance. Open: #26 KCC-23 MJ Metadata JSON (16 Sep), #25 KCC0 Last Call→Final, #23 p2pk-ecdsa, #20 KCC-0020 vectors. None adopted."},
+        {"name": "kccs", "url": "https://github.com/kaspanet/kccs", "chip": "Draft", "note": "Refuse as a gram token. KCC-0012 wallet discovery is kccs#24 (open ready; clarifications 18 Sep 15:27–15:31Z; still Draft / not Final). kccs#27 kcc-1↔kcc0 compliance open ready head fa845057 (vectors + review/approval ~15:41Z). Also open: #26 KCC-23 MJ, #25 KCC0→Final, #23 p2pk-ecdsa, #20 KCC-0020 vectors. None adopted."},
         {"name": "vprogs", "url": "https://github.com/kaspanet/vprogs", "chip": "research", "note": "No product testnet here. Open review cluster 16–17 Sep: #138 exit-index, #144 live-lane join, #145 busy-DAG mergeset test, #146 reorg-safe claim exits. Research only."},
         {"name": "kaspad (Go)", "url": "https://github.com/kaspanet/kaspad", "chip": "deprecated", "note": "Use rusty-kaspa."}
       ]
@@ -254,6 +254,7 @@
       "id": "rnd-log",
       "title": "R&D / Discord log (public recaps)",
       "rows": [
+        {"name": "18 Sep kccs#27 head fa845057", "url": "https://github.com/kaspanet/kccs/pull/27", "chip": "draft", "note": "Non-draft open. KCC-01/KCC0 compliance + conformance.json. Review/approval ~15:41Z (Manyfestation). Variable-length canonical state fields; deeper transitions deferred. #24 clarifications 15:27–15:31Z. Still not Final."},
         {"name": "18 Sep kccs#27 + #24", "url": "https://github.com/kaspanet/kccs/pull/27", "chip": "draft", "note": "kccs#27 kcc-1 kcc0 compliance updated 18 Sep 13:29 UTC. kccs#24 KCC-0012 still open ready (07:13 UTC). Still Draft / not Final. No public wallet impl."},
         {"name": "16 Sep kccs#26 KCC-23", "url": "https://github.com/kaspanet/kccs/pull/26", "chip": "draft", "note": "Add KCC-23 MJ — Metadata JSON. Open ready. Not adopted."},
         {"name": "17 Sep vprogs exit/lane PRs", "url": "https://github.com/kaspanet/vprogs/pull/146", "chip": "research", "note": "#146 reorg-safe claim exits; #145 busy-DAG mergeset; #144 join live lane; #138 exit-index. No product testnet."},
@@ -306,7 +307,7 @@
       "title": "Extra GitHubs (intel pack)",
       "rows": [
         {"name": "kccs#26", "url": "https://github.com/kaspanet/kccs/pull/26", "chip": "open", "note": "KCC-23 MJ — Metadata JSON. Open ready 16 Sep. Not adopted."},
-        {"name": "kccs#27", "url": "https://github.com/kaspanet/kccs/pull/27", "chip": "open", "note": "kcc-1: kcc0 compliance. Open ready 18 Sep. Not Final."},
+        {"name": "kccs#27", "url": "https://github.com/kaspanet/kccs/pull/27", "chip": "open", "note": "kcc-1: kcc0 compliance. Open ready head fa845057 (18 Sep). Large kcc-0001/vectors/conformance.json; variable-length canonical state fields discussed; deeper transition rules deferred. Review/approval activity through ~15:41Z. Not Final."},
         {"name": "rusty DK cluster", "url": "https://github.com/kaspanet/rusty-kaspa/pull/1104", "chip": "research", "note": "Open ready (not shipped): #1104 executor rewrite, #1127 UMC depth (ready 12 Sep), #1131 e2e, #1132 parent-shuffle, #1124 simpa. Last dagknight commit still 8 Sep."},
         {"name": "argent-lang/argent", "url": "https://github.com/argent-lang/argent", "chip": "demo", "note": "#59 8 Sep, #60 10 Sep, #63 merged 14 Sep (rules 5/6). Tip e76ee07 14 Sep. #62 module loading open 17 Sep. Unaudited. No tag. Not Gramlane."},
         {"name": "argent-playground", "url": "https://github.com/argent-lang/argent-playground", "chip": "demo", "note": "Examples."},
@@ -316,7 +317,7 @@
         {"name": "Think big", "url": "https://github.com/STP-KAS/kaspa-master-file/blob/main/THINK-BIG.md", "chip": "plan", "note": "Do-this-next. Track 0 / Track 1. Bind kaspa-x402. Fill timeout journal. Not a dollar."},
         {"name": "Grok x Kaspa collab", "url": "https://github.com/STP-KAS/grok-kaspa-collab", "chip": "collab", "note": "Core idea, commercial uses, beyond-crypto scheme. Not a dollar."},
         {"name": "kccs#20", "url": "https://github.com/kaspanet/kccs/pull/20", "chip": "open", "note": "KCC-20 vectors. Transfer sig unconfirmed. Still open ready (not Final)."},
-        {"name": "kccs#24", "url": "https://github.com/kaspanet/kccs/pull/24", "chip": "open", "note": "KCC-0012 wallet provider/discovery. Open ready (activity 18 Sep). Still Draft status in KCC sense. No public implementation."},
+        {"name": "kccs#24", "url": "https://github.com/kaspanet/kccs/pull/24", "chip": "open", "note": "KCC-0012 wallet provider/discovery. Open ready head 06400c3. 18 Sep clarifications: mainnet suffix restriction, readiness criteria, “nothing else standard.” Still Draft status. No public implementation."},
         {"name": "silverscript#223", "url": "https://github.com/kaspanet/silverscript/pull/223", "chip": "merged", "note": "IzioDev dispatch tags ↔ KCC-1."},
         {"name": "simply-kaspa-indexer", "url": "https://github.com/supertypo/simply-kaspa-indexer", "chip": "indexer", "note": "L1 Postgres indexer. KNS resolver uses this class of indexer. Not api.knsdomains.org."},
         {"name": "KNS docs", "url": "https://kns-2.gitbook.io/kns-docs-1/", "chip": "kns", "note": "Official GitBook."},

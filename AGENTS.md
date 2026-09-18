@@ -28,3 +28,7 @@ When this master file is named, opened, or used as the pin list, Grok Build **sh
 ## Nodes vs this Windows session
 
 Sandbox `127.0.0.1:16210` is **not** automatically this PC. Public REST (`api.kaspa.org`, `api-tn10.kaspa.org`) is the always-on read path. Do not compete with kaspa bot on mainnet `:16111`.
+
+## Snapshot history
+
+Every master-file pass **shall** append a newest-first row to [`SNAPSHOT-HISTORY.md`](SNAPSHOT-HISTORY.md), push it, and tell stp in chat what landed (even when pins hold and JSON is unchanged).

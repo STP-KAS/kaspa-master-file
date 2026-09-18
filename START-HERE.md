@@ -18,4 +18,6 @@ Node standing authority: [`DESK-BOT.md`](DESK-BOT.md) · [`AGENTS.md`](AGENTS.md
 
 Retest of public STP-KAS GitHubs: [`RETEST.md`](RETEST.md).
 
+18 Sep catch-up (DK / Argent / SilverScript / KCC): pins hold — see README + `master.json` `updated` 2026-09-18.
+
 Community covenants stack (17 Sep, @kaspaunchained, not a KIP): https://x.com/kaspaunchained/status/2100571472561586192 · https://x.com/kaspaunchained/status/2100572500442980776

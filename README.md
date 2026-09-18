@@ -6,13 +6,27 @@
 
 # Kaspa master file
 
-**Not Kaspa core. Not official KNS.** Public pin list by [@StppStp](https://x.com/StppStp) / [STP-KAS](https://github.com/STP-KAS). Freeze: **17 Sep 2026**.
+**Not Kaspa core. Not official KNS.** Public pin list by [@StppStp](https://x.com/StppStp) / [STP-KAS](https://github.com/STP-KAS). Freeze: **18 Sep 2026**.
 
 Crypto-finance desk law (Grok Build / Ask / Bot, **no seeds**): [`CRYPTO-FINANCE.md`](CRYPTO-FINANCE.md).
 
 **Desk Grok Bot — standing authority:** [`DESK-BOT.md`](DESK-BOT.md) · [`AGENTS.md`](AGENTS.md). When this master file is named, Grok Build **shall** use kaspa bot (mainnet archival) and tn10 bot (TN10 node + miners) for audits, dApps, and tests. Do not re-ask. **No seeds. Do not paste TN10 into kaspa bot.**
 
 **Retest (17 Sep 2026):** every public STP-KAS GitHub (**48**) vs these pins — [`RETEST.md`](RETEST.md). Pins **hold**. argent-xai `check.ps1` **DRIFT** (PR #63). kns comment-grep still red.
+
+### What this pass did (18 Sep 2026 — DK / Argent / SilverScript / KCC catch-up)
+
+Relevance-checked GitHub delta since 17 Sep freeze. **Pins hold** (no new tag, no DK merge, no KCC Final).
+
+| Track | Delta | Honest |
+| --- | --- | --- |
+| DAGKnight | Open ready cluster still unmerged: [#1104](https://github.com/kaspanet/rusty-kaspa/pull/1104), [#1127](https://github.com/kaspanet/rusty-kaspa/pull/1127) (ready 12 Sep), [#1131](https://github.com/kaspanet/rusty-kaspa/pull/1131), [#1132](https://github.com/kaspanet/rusty-kaspa/pull/1132), [#1124](https://github.com/kaspanet/rusty-kaspa/pull/1124). Last `dagknight` tip still **8 Sep**. | Not shipped. |
+| Argent | Tip still `e76ee07` (#63, 14 Sep). [#62](https://github.com/argent-lang/argent/pull/62) module loading open (updated 17 Sep). No tag. | Preview / unaudited. |
+| SilverScript | Tip still `3ed9733` / v1.0.0. Open holes #243 #249 #250 #251. | No second tag. |
+| KCC | [#24](https://github.com/kaspanet/kccs/pull/24) KCC-0012 activity **18 Sep** (still Draft, no public wallet impl). [#27](https://github.com/kaspanet/kccs/pull/27) kcc-1↔kcc0 compliance open 18 Sep. [#26](https://github.com/kaspanet/kccs/pull/26) KCC-23 MJ Metadata open 16 Sep. | Not Final / not adopted. |
+| vProgs | Review cluster 16–17 Sep: [#138](https://github.com/kaspanet/vprogs/pull/138), [#144](https://github.com/kaspanet/vprogs/pull/144), [#145](https://github.com/kaspanet/vprogs/pull/145), [#146](https://github.com/kaspanet/vprogs/pull/146). | Research only. |
+
+Canonical JSON: [`master.json`](master.json) `updated` **2026-09-18**.
 
 ### What this pass did (17 Sep 2026 — @kaspaunchained covenants thread)
 
@@ -121,7 +135,7 @@ Daily Grok bot (`dagknight-test-grok daily update`) + kaspa.news / GitHub / X ch
 
 | Found | Change |
 | --- | --- |
-| **KCC-0012** Browser Wallet Provider API | Pin [kccs#24](https://github.com/kaspanet/kccs/pull/24) (saefstroem, created **11 Sep**, Izio reviewing **12 Sep**). Draft. EIP-1193/6963 shape + Kaspa `kaspa_signTransaction` (sign only listed inputs; leave covenant scripts). **No public implementation.** Recap: [kaspa.news 12 Sep](https://kaspa.news/articles/a-new-kaspa-wallet-still-needs-every-website-to-add-it). |
+| **KCC-0012** Browser Wallet Provider API | Pin [kccs#24](https://github.com/kaspanet/kccs/pull/24) (saefstroem, created **11 Sep**; activity **18 Sep**). Still **Draft** (open ready, not Final). EIP-1193/6963 shape + Kaspa `kaspa_signTransaction` (sign only listed inputs; leave covenant scripts). **No public implementation.** Recap: [kaspa.news 12 Sep](https://kaspa.news/articles/a-new-kaspa-wallet-still-needs-every-website-to-add-it). |
 | Sutton on Alex | [11 Sep 15:27 UTC](https://x.com/michaelsuttonil/status/2098433221021118762) — “alex is doing glorious work in connecting dapp dev processes and ecosystem standardization.” Same person as KCC-0 + KCC-0012 lead. **Not a KIP. Not adopted.** |
 | Sil #251 | [silverscript#251](https://github.com/kaspanet/silverscript/pull/251) **open** (11 Sep, KaspaScopio). Indexing struct-array expressions (fixes #228). Independent of #250. Pin still forbids `State[].split()` tuples. |
 | Wallet/UTXO paging recap | [kaspa.news 11 Sep](https://kaspa.news/articles/wallets-still-have-to-catch-up-before-kaspa-feels-easy-to-use) — paged UTXO lookup still under review; ECDSA owner display still a proposal. Argent leader/delegate rules 5/6 were unimplemented **that day**; they **compile as of 14 Sep** (#63). Still no Argent tag. |
@@ -285,7 +299,7 @@ Org: https://github.com/kaspanet — 26 public repos. **Use these first.**
 
 | Repo | URL | Status 11 Sep 2026 |
 | --- | --- | --- |
-| rusty-kaspa | https://github.com/kaspanet/rusty-kaspa | Reference node. Toccata **v2.0.0** (5 Jun 2026), **v2.0.1** (15 Jun). No newer node tag. `dagknight` still unmerged. New DK work: [#1127](https://github.com/kaspanet/rusty-kaspa/pull/1127) draft (bounded UMC, 8 Sep), [#1124](https://github.com/kaspanet/rusty-kaspa/pull/1124) simpa adversaries. **Not shipped.** |
+| rusty-kaspa | https://github.com/kaspanet/rusty-kaspa | Reference node. Toccata **v2.0.0** (5 Jun 2026), **v2.0.1** (15 Jun). No newer node tag. `dagknight` still unmerged. Open DK ready cluster: [#1104](https://github.com/kaspanet/rusty-kaspa/pull/1104), [#1127](https://github.com/kaspanet/rusty-kaspa/pull/1127) (ready 12 Sep), [#1131](https://github.com/kaspanet/rusty-kaspa/pull/1131), [#1132](https://github.com/kaspanet/rusty-kaspa/pull/1132), [#1124](https://github.com/kaspanet/rusty-kaspa/pull/1124). Last `dagknight` tip 8 Sep. **Not shipped.** |
 | kips | https://github.com/kaspanet/kips | Improvement proposals |
 | silverscript | https://github.com/kaspanet/silverscript | Covenant language. Pin **[v1.0.0](https://github.com/kaspanet/silverscript/releases/tag/v1.0.0)** (Ori / someone235, **9 Sep 2026**, `3ed9733`). Official SemVer v1. Windows zip SHA256 `3e0d660c15a9e7ac90f3960da24d348b076b1891481bfe758db18accc8a102e1`. Language pragma in examples is still `^0.1.0`. `#234` foreign `readInputState` still **closed unmerged**. **New on this pin:** [#249](https://github.com/kaspanet/silverscript/issues/249) `State[].split()` tuple destructure fails (`__inline_*`); fix PR [#250](https://github.com/kaspanet/silverscript/pull/250) **open** (KaspaScopio, 10 Sep). [#251](https://github.com/kaspanet/silverscript/pull/251) **open** (11 Sep) indexing struct-array expressions (`#228`); independent of `#250`. `#243` compute-budget still **open**. |
 | kccs | https://github.com/kaspanet/kccs | Conventions. All **Draft**. **New:** [KCC-0012](https://github.com/kaspanet/kccs/pull/24) wallet provider + discovery (11 Sep, saefstroem + IzioDev et al.). Not adopted. |
@@ -352,7 +366,7 @@ KIP-21 lanes are 20-byte `subnetwork_id`s, ≤50 non-coinbase lanes/block, 1e9 g
 | a19q3/Kurrent | https://github.com/a19q3/Kurrent | Eltoo-inspired latest-state channel. Forum [494](https://research.kas.pa/t/kurrent-an-eltoo-inspired-latest-state-channel-on-kaspa/494). Devnet evidence. **Not product.** |
 | elldeeone/kaspa-x402 | https://github.com/elldeeone/kaspa-x402 | Intended **x402 v2** binding. TN10 alpha. Site [kaspa-x402.org](https://kaspa-x402.org). Bind this envelope; do not invent a fourth 402. |
 | Kali123411/k402 | https://github.com/Kali123411/k402 | HTTP 402 + `kaspa-channel` lock/voucher. [kccs#4](https://github.com/kaspanet/kccs/pull/4) still open. Steal the lock. **Not** elldeeone’s x402 v2 binding. **Not** adopted KCC-0402. |
-| kaspanet/kccs#24 | https://github.com/kaspanet/kccs/pull/24 | **KCC-0012 Draft** (11 Sep). Browser wallet provider + `kaspa:announceProvider` / `kaspa:requestProvider`. Lead [saefstroem](https://github.com/saefstroem). Izio reviewing 12 Sep. Needs a public implementation before Final. **Not adopted.** Gramlane inject stays Kasware/Kastle. |
+| kaspanet/kccs#24 | https://github.com/kaspanet/kccs/pull/24 | **KCC-0012 Draft** (open ready; activity 18 Sep). Browser wallet provider + `kaspa:announceProvider` / `kaspa:requestProvider`. Lead [saefstroem](https://github.com/saefstroem). Needs a public implementation before Final. **Not adopted.** Also open: [#26](https://github.com/kaspanet/kccs/pull/26) KCC-23 MJ, [#27](https://github.com/kaspanet/kccs/pull/27) kcc-1↔kcc0. Gramlane inject stays Kasware/Kastle. |
 
 L2 (out of Gramlane path): Igra, Kasplex — live elsewhere. This stack stays L1. Kurrent is L1-channel research, still out of Gramlane path.
 
@@ -633,7 +647,7 @@ Yonatan (digital cash, cohesive tooling, core ≠ product) → Sutton (L1 covena
 | [kaspanet/vprogs#139](https://github.com/kaspanet/vprogs/pull/139) | **Open.** ExitLeaf + claim kit. Also #138/#140. **#142** bridge lane-anchor (10 Sep). No product testnet. |
 | [elldeeone/kaspa-x402](https://github.com/elldeeone/kaspa-x402) | TN10 x402 v2 binding. Bind this. Not a fourth envelope. |
 | [kaspanet/kccs#20](https://github.com/kaspanet/kccs/pull/20) | **Open draft.** KCC-20 vectors. Transfer sig unconfirmed. |
-| [kaspanet/kccs#24](https://github.com/kaspanet/kccs/pull/24) | **Open draft.** KCC-0012 wallet provider/discovery. No public implementation. |
+| [kaspanet/kccs#24](https://github.com/kaspanet/kccs/pull/24) | **Open ready / still Draft status.** KCC-0012 wallet provider/discovery (activity 18 Sep). No public implementation. |
 | [kaspanet/silverscript#223](https://github.com/kaspanet/silverscript/pull/223) | **Merged.** Dispatch tags ↔ KCC-1 (IzioDev). |
 | [supertypo/simply-kaspa-indexer](https://github.com/supertypo/simply-kaspa-indexer) | L1 Postgres indexer. KNS docs: the KNS resolver uses this. Not api.knsdomains.org. |
 | [aspectron](https://github.com/aspectron) kdx / kaspa-ng | Wallet gravity |

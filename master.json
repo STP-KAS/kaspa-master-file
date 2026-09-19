@@ -1,7 +1,7 @@
 {
   "title": "Kaspa master file",
   "repo": "https://github.com/STP-KAS/kaspa-master-file",
-  "updated": "2026-09-18",
+  "updated": "2026-09-19",
   "disclaimer": "Not Kaspa core. Not official KNS. @StppStp. Merged Active KIP is law. Open PR is not.",
   "sections": [
     {
@@ -136,7 +136,7 @@
         {"name": "kips", "url": "https://github.com/kaspanet/kips", "chip": "law", "note": "Improvement proposals."},
         {"name": "silverscript", "url": "https://github.com/kaspanet/silverscript/releases/tag/v1.0.0", "chip": "v1.0.0", "note": "Ori / someone235 tagged 9 Sep 2026, commit 3ed9733. SemVer v1. Tip unchanged through 18 Sep. Open holes: #243 compute-budget, #249/#250 State[].split tuple, #251 struct-array index. Not a second tag."},
         {"name": "kccs", "url": "https://github.com/kaspanet/kccs", "chip": "Draft", "note": "Refuse as a gram token. KCC-0012 wallet discovery is kccs#24 (open ready; clarifications 18 Sep 15:27–15:31Z; still Draft / not Final). kccs#27 kcc-1↔kcc0 compliance open ready head fa845057 (vectors + review/approval ~15:41Z). Also open: #26 KCC-23 MJ, #25 KCC0→Final, #23 p2pk-ecdsa, #20 KCC-0020 vectors. None adopted."},
-        {"name": "vprogs", "url": "https://github.com/kaspanet/vprogs", "chip": "research", "note": "No product testnet here. Open review cluster 16–17 Sep: #138 exit-index, #144 live-lane join, #145 busy-DAG mergeset test, #146 reorg-safe claim exits. Research only."},
+        {"name": "vprogs", "url": "https://github.com/kaspanet/vprogs", "chip": "research", "note": "No product testnet here. Open review cluster: #138 exit-index, #144 live-lane join, #145 busy-DAG mergeset, #146 reorg-safe claim exits; #147 (19 Sep, head b6e3d56) drain/commit queued storage writes on shutdown (avoid wedged awaiters / leaked store locks). Research only."},
         {"name": "kaspad (Go)", "url": "https://github.com/kaspanet/kaspad", "chip": "deprecated", "note": "Use rusty-kaspa."}
       ]
     },
@@ -254,6 +254,7 @@
       "id": "rnd-log",
       "title": "R&D / Discord log (public recaps)",
       "rows": [
+        {"name": "19 Sep vprogs#147 shutdown drain", "url": "https://github.com/kaspanet/vprogs/pull/147", "chip": "research", "note": "Open non-draft head b6e3d56 (~07:11Z). Drain write-worker queue on shutdown. No product testnet."},
         {"name": "18 Sep kccs#27 head fa845057", "url": "https://github.com/kaspanet/kccs/pull/27", "chip": "draft", "note": "Non-draft open. KCC-01/KCC0 compliance + conformance.json. Review/approval ~15:41Z (Manyfestation). Variable-length canonical state fields; deeper transitions deferred. #24 clarifications 15:27–15:31Z. Still not Final."},
         {"name": "18 Sep kccs#27 + #24", "url": "https://github.com/kaspanet/kccs/pull/27", "chip": "draft", "note": "kccs#27 kcc-1 kcc0 compliance updated 18 Sep 13:29 UTC. kccs#24 KCC-0012 still open ready (07:13 UTC). Still Draft / not Final. No public wallet impl."},
         {"name": "16 Sep kccs#26 KCC-23", "url": "https://github.com/kaspanet/kccs/pull/26", "chip": "draft", "note": "Add KCC-23 MJ — Metadata JSON. Open ready. Not adopted."},
@@ -306,6 +307,7 @@
       "id": "intel-githubs",
       "title": "Extra GitHubs (intel pack)",
       "rows": [
+        {"name": "vprogs#147", "url": "https://github.com/kaspanet/vprogs/pull/147", "chip": "open", "note": "Drain/commit queued storage writes on shutdown (19 Sep, head b6e3d56). Avoids wedged awaiters and leaked store locks. Research only."},
         {"name": "kccs#26", "url": "https://github.com/kaspanet/kccs/pull/26", "chip": "open", "note": "KCC-23 MJ — Metadata JSON. Open ready 16 Sep. Not adopted."},
         {"name": "kccs#27", "url": "https://github.com/kaspanet/kccs/pull/27", "chip": "open", "note": "kcc-1: kcc0 compliance. Open ready head fa845057 (18 Sep). Large kcc-0001/vectors/conformance.json; variable-length canonical state fields discussed; deeper transition rules deferred. Review/approval activity through ~15:41Z. Not Final."},
         {"name": "rusty DK cluster", "url": "https://github.com/kaspanet/rusty-kaspa/pull/1104", "chip": "research", "note": "Open ready (not shipped): #1104 executor rewrite, #1127 UMC depth (ready 12 Sep), #1131 e2e, #1132 parent-shuffle, #1124 simpa. Last dagknight commit still 8 Sep."},

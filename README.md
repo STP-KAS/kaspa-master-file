@@ -14,6 +14,27 @@ Crypto-finance desk law (Grok Build / Ask / Bot, **no seeds**): [`CRYPTO-FINANCE
 
 **Retest (17 Sep 2026):** every public STP-KAS GitHub (**48**) vs these pins — [`RETEST.md`](RETEST.md). Pins **hold**. argent-xai `check.ps1` **DRIFT** (PR #63). kns comment-grep still red.
 
+### What this pass did (19 Sep 2026 — Grok Build check of tn10 bot #1134)
+
+**Writer:** Grok Build (this Windows desk). **Not** tn10 bot. **Not Kaspa core. Not an audit. Not a security credential.** Data + sources only.
+
+tn10 bot filed operator research on rusty-kaspa **[#1134](https://github.com/kaspanet/rusty-kaspa/issues/1134)** (comment [5743081389](https://github.com/kaspanet/rusty-kaspa/issues/1134#issuecomment-5743081389) is attribution). Title says “Full Audit.” Treat it as a **farm journal + threat sketch**, not a third-party audit.
+
+| Check | Result |
+| --- | --- |
+| Pins | **Hold.** rusty **v2.0.1** still latest GitHub release (15 Jun). No v2.0.2 node tag. |
+| Code anchors that hold | `RouteIsFull` display `"route is full"`; `SubmitBlock` `DropIfFull` queue `max(10, bps*2)`; default `rpcmaxclients` **128**; genesis hashes match `genesis.rs`; `kaspa-testnet` coinbase tag; `IsInIBD` when `!enable_unsynced_mining && !is_synced`. |
+| Path drift | IBD TODO lives at `protocol/flows/src/v5/ibd/flow.rs` (~L71), not `protocol/flows/src/ibd/flow.rs`. |
+| Explorer cited in #1134 | [explorer-tn10.kaspa.org](https://explorer-tn10.kaspa.org/) **Deployment Paused**. Live read: [tn10.kaspa.stream](https://tn10.kaspa.stream/) + [api-tn10.kaspa.org](https://api-tn10.kaspa.org/). |
+| Public REST ~16:13–16:16 UTC | network `kaspa-testnet-10`; indexer rusty **2.0.1** `isSynced true`; DAA **~574,951,408**; hashrate **~16.2–16.7 MH/s** (`/info/hashrate` is TH/s); **tips ~11,238–11,242** (18 Sep journal had **3,612**); mempool **~312** (18 Sep **~7,804**); reward **2.060 tKAS**; sink parents **61**. Mainnet DAA **~544,141,402**. |
+| “Farm not majority” | **Not REST-backed.** Claimed ~9 MH/s vs public ~16 MH/s is **~56%**. `found=1734` / 5 min at 10 BPS is **~58% of block slots** if those finds are unique. Local `Found a block` ≠ selected-parent coinbase (desk 18 Sep: 10 local accepts, public REST **404**). |
+| Faucet pay-from | api-tn10 **4,098,361 tKAS** / 1,184,824 txs (18 Sep **~4,127,127**). Still **>1M**, so the farm sweep rule does **not** fire. |
+| Desk this pass | rusty **v2.0.1** TN10 kaspad restarted; **header IBD, 0 bodies**, P2P **16211**, RPC localhost **16210**. **No miner until tip-following.** No `--mine-when-not-synced`. |
+
+**Agree with tn10 bot (as operator notes, not Core law):** gate mining on tip-following; `RouteIsFull` is backpressure not a consensus bug; restart-as-recovery for a stuck IBD syncer is painful; TN10 and mainnet are isolated genesis/ports/prefixes; tKAS has no value.
+
+**Grok Build metric vs tn10 bot metric:** public REST selected-parent / DAA / tip count / mempool / pay-from delta / clean-address coinbase vs sandbox `found` / `submitted_ok` / `route_full` / `tip_follow` on the farm’s own node. Why: the 18 Sep desk pass already showed unsynced submits can look like a farm and still miss the live DAG.
+
 ### What this pass did (18 Sep 2026 — DK / Argent / SilverScript / KCC catch-up)
 
 Relevance-checked GitHub delta since 17 Sep freeze. **Pins hold** (no new tag, no DK merge, no KCC Final).
@@ -26,7 +47,7 @@ Relevance-checked GitHub delta since 17 Sep freeze. **Pins hold** (no new tag, n
 | KCC | [#24](https://github.com/kaspanet/kccs/pull/24) KCC-0012 activity **18 Sep** (still Draft, no public wallet impl). [#27](https://github.com/kaspanet/kccs/pull/27) kcc-1↔kcc0 compliance open 18 Sep. [#26](https://github.com/kaspanet/kccs/pull/26) KCC-23 MJ Metadata open 16 Sep. | Not Final / not adopted. |
 | vProgs | Review cluster 16–17 Sep: [#138](https://github.com/kaspanet/vprogs/pull/138), [#144](https://github.com/kaspanet/vprogs/pull/144), [#145](https://github.com/kaspanet/vprogs/pull/145), [#146](https://github.com/kaspanet/vprogs/pull/146). | Research only. |
 
-Canonical JSON: [`master.json`](master.json) `updated` **2026-09-18**.
+Canonical JSON: [`master.json`](master.json) `updated` **2026-09-19** (19 Sep pass after this catch-up).
 
 ### What this pass did (17 Sep 2026 — @kaspaunchained covenants thread)
 

@@ -36,6 +36,24 @@ This Windows Grok Build session **could not** open sandbox loopback `127.0.0.1:1
 
 ---
 
+## 19 Sep 2026 Grok Build recheck (not an audit)
+
+**Writer:** Grok Build. Independent of tn10 bot’s [#1134](https://github.com/kaspanet/rusty-kaspa/issues/1134). **Not Kaspa core. Not a security audit. Not a credential.**
+
+| Piece | Recheck |
+| --- | --- |
+| rusty-kaspa latest GitHub release | **v2.0.1** (15 Jun 2026). No v2.0.2 tag. |
+| TN10 REST | DAA **~574,951,408**; hashrate **~16.2–16.7 MH/s**; indexer `isSynced true`; **tips ~11.2k**; mempool **~312**. |
+| Mainnet REST | DAA **~544,141,402**. |
+| Faucet pay-from | **4,098,361 tKAS** (api-tn10). Sweep rule still idle (>1M). |
+| Live explorer | [tn10.kaspa.stream](https://tn10.kaspa.stream/). [explorer-tn10.kaspa.org](https://explorer-tn10.kaspa.org/) **paused**. |
+| Desk Windows TN10 | kaspad **v2.0.1** restarted this pass. **Header IBD (0 bodies).** Do **not** mine until `Accepted N via relay` + bodies. |
+| tn10 bot farm | Still the sandbox 150×1-thread farm. Do not retask kaspa bot. Do not paste TN10 into kaspa bot. |
+
+`GetInfo` / `GetSyncStatus` `is_synced` is **nearly-synced + enough peers**, not a tip-following boolean. That gap is why unsynced `Found a block` still wastes work.
+
+---
+
 ## Split (do not mix)
 
 | Agent | Network | Do | Do not |

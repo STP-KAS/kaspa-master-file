@@ -133,11 +133,11 @@
       "id": "kaspanet",
       "title": "kaspanet GitHub",
       "rows": [
-        {"name": "rusty-kaspa", "url": "https://github.com/kaspanet/rusty-kaspa", "chip": "node", "note": "v2.0.0 Toccata · v2.0.1. dagknight unmerged. Open DK cluster ready (not shipped): #1104 executor rewrite, #1127 UMC depth (ready 12 Sep), #1131 e2e fixtures, #1132 parent-shuffle, #1124 simpa; #1122 selected-parent state (head 332ec6c, advanced 19 Sep), #1121 one-pass qualified-SP (head 06efd83, advanced 19 Sep). Last dagknight tip still 8 Sep. Not shipped."},
+        {"name": "rusty-kaspa", "url": "https://github.com/kaspanet/rusty-kaspa", "chip": "node", "note": "v2.0.0 Toccata · v2.0.1. dagknight unmerged. Open DK cluster ready (not shipped): #1104 executor rewrite (head a5888da; review activity 19 Sep through ~17:42Z, code unchanged), #1127 UMC depth, #1131 e2e, #1132 parent-shuffle, #1124 simpa; #1122 selected-parent (332ec6c), #1121 one-pass qualified-SP (06efd83). Last dagknight tip still 8 Sep. Not shipped."},
         {"name": "kips", "url": "https://github.com/kaspanet/kips", "chip": "law", "note": "Improvement proposals."},
         {"name": "silverscript", "url": "https://github.com/kaspanet/silverscript/releases/tag/v1.0.0", "chip": "v1.0.0", "note": "Ori / someone235 tagged 9 Sep 2026, commit 3ed9733. SemVer v1. Tip unchanged through 18 Sep. Open holes: #243 compute-budget, #249/#250 State[].split tuple, #251 struct-array index. Not a second tag."},
         {"name": "kccs", "url": "https://github.com/kaspanet/kccs", "chip": "Draft", "note": "Refuse as a gram token. KCC-0012 wallet discovery is kccs#24 (open ready; clarifications 18 Sep 15:27–15:31Z; still Draft / not Final). kccs#27 kcc-1↔kcc0 compliance open ready head fa845057 (vectors + review/approval ~15:41Z). Also open: #26 KCC-23 MJ, #25 KCC0→Final, #23 p2pk-ecdsa, #20 KCC-0020 vectors. None adopted."},
-        {"name": "vprogs", "url": "https://github.com/kaspanet/vprogs", "chip": "research", "note": "No product testnet here. Open: #138/#144/#145/#146; #147 (19 Sep, head 51bb9d4) shutdown drain/commit of queued storage writes + adaptive-reorg-filter disable option (zero-conf tip follow / reorgs as rollbacks; wired through runner/node-cli/examples). Research only."},
+        {"name": "vprogs", "url": "https://github.com/kaspanet/vprogs", "chip": "research", "note": "No product testnet here. Open: #138/#144/#145/#146; #147 (19 Sep, head af5f9a0) shutdown drain + adaptive-reorg-filter disable + guest ELF refresh for chain_idx settlement (batch-processor/aggregator/runtime-processor). Research only."},
         {"name": "kaspad (Go)", "url": "https://github.com/kaspanet/kaspad", "chip": "deprecated", "note": "Use rusty-kaspa."}
       ]
     },
@@ -255,6 +255,7 @@
       "id": "rnd-log",
       "title": "R&D / Discord log (public recaps)",
       "rows": [
+        {"name": "19 Sep vprogs#147 ELF + #1104 review", "url": "https://github.com/kaspanet/vprogs/pull/147", "chip": "research", "note": "#147 head af5f9a0 guest ELF refresh for chain_idx settlement. rusty #1104 review through ~17:42Z (Deref store-wrapper suggestion); head still a5888da. Not shipped."},
         {"name": "19 Sep vprogs#147 reorg-filter + DK #1122/#1121", "url": "https://github.com/kaspanet/vprogs/pull/147", "chip": "research", "note": "#147 head 51bb9d4: adaptive-reorg-filter disable + wire-through. DK #1122 head 332ec6c; #1121 head 06efd83 (merge advances ~12:00Z). Not shipped."},
         {"name": "19 Sep vprogs#147 shutdown drain", "url": "https://github.com/kaspanet/vprogs/pull/147", "chip": "research", "note": "Open non-draft head b6e3d56 (~07:11Z). Drain write-worker queue on shutdown. No product testnet."},
         {"name": "18 Sep kccs#27 head fa845057", "url": "https://github.com/kaspanet/kccs/pull/27", "chip": "draft", "note": "Non-draft open. KCC-01/KCC0 compliance + conformance.json. Review/approval ~15:41Z (Manyfestation). Variable-length canonical state fields; deeper transitions deferred. #24 clarifications 15:27–15:31Z. Still not Final."},
@@ -309,10 +310,10 @@
       "id": "intel-githubs",
       "title": "Extra GitHubs (intel pack)",
       "rows": [
-        {"name": "vprogs#147", "url": "https://github.com/kaspanet/vprogs/pull/147", "chip": "open", "note": "Shutdown drain/commit queued storage writes (19 Sep). Follow-ups: adaptive-reorg-filter disable (f0f3603) so zero-conf can follow tip / treat reorgs as rollbacks; wired runner/node-cli/examples (6674577); cargo-check-all restored (51bb9d4). Head 51bb9d4. Research only."},
+        {"name": "vprogs#147", "url": "https://github.com/kaspanet/vprogs/pull/147", "chip": "open", "note": "Shutdown drain + adaptive-reorg-filter disable (wire-through). Head af5f9a0 (~12:56Z): refreshed guest ELF images for chain_idx settlement data. Research only."},
         {"name": "kccs#26", "url": "https://github.com/kaspanet/kccs/pull/26", "chip": "open", "note": "KCC-23 MJ — Metadata JSON. Open ready 16 Sep. Not adopted."},
         {"name": "kccs#27", "url": "https://github.com/kaspanet/kccs/pull/27", "chip": "open", "note": "kcc-1: kcc0 compliance. Open ready head fa845057 (18 Sep). Large kcc-0001/vectors/conformance.json; variable-length canonical state fields discussed; deeper transition rules deferred. Review/approval activity through ~15:41Z. Not Final."},
-        {"name": "rusty DK cluster", "url": "https://github.com/kaspanet/rusty-kaspa/pull/1104", "chip": "research", "note": "Open ready (not shipped): #1104 #1127 #1131 #1132 #1124; #1122 head 332ec6c (selected-parent state, advanced 19 Sep); #1121 head 06efd83 (one-pass qualified-SP, advanced 19 Sep). Last dagknight commit still 8 Sep."},
+        {"name": "rusty DK cluster", "url": "https://github.com/kaspanet/rusty-kaspa/pull/1104", "chip": "research", "note": "Open ready (not shipped): #1104 executor rewrite (head a5888da; review ~14:39–17:42Z incl. Deref store-wrapper suggestion, code unchanged), #1127 #1131 #1132 #1124; #1122 head 332ec6c; #1121 head 06efd83. Last dagknight commit still 8 Sep."},
         {"name": "argent-lang/argent", "url": "https://github.com/argent-lang/argent", "chip": "demo", "note": "#59 8 Sep, #60 10 Sep, #63 merged 14 Sep (rules 5/6). Tip e76ee07 14 Sep. #62 module loading open 17 Sep. Unaudited. No tag. Not Gramlane."},
         {"name": "argent-playground", "url": "https://github.com/argent-lang/argent-playground", "chip": "demo", "note": "Examples."},
         {"name": "vprogs#139", "url": "https://github.com/kaspanet/vprogs/pull/139", "chip": "open", "note": "ExitLeaf claim kit. Also #138/#140/#142. Review cluster 16–17 Sep: #144/#145/#146. No product testnet."},

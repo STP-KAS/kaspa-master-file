@@ -14,6 +14,17 @@ Crypto-finance desk law (Grok Build / Ask / Bot, **no seeds**): [`CRYPTO-FINANCE
 
 **Retest (17 Sep 2026):** every public STP-KAS GitHub (**48**) vs these pins — [`RETEST.md`](RETEST.md). Pins **hold**. argent-xai `check.ps1` **DRIFT** (PR #63). kns comment-grep still red.
 
+### What this pass did (20 Sep 2026 — 24h monitor / kccs#24 head)
+
+| Track | Delta | Honest |
+| --- | --- | --- |
+| kccs#24 | Head **7159d48** (was `06400c3`). Amend aligned with review comments ~15:53Z. | Still Draft / not Final. |
+| kccs#27 | Head still `fa845057`. saefstroem **APPROVED** ~16:08Z. | Still open ready / not Final. |
+| rusty / DK / Argent / SS / vProgs | Tips hold: rusty `eb0a856`, DK `ad45e24`, Argent `e76ee07`, SS `3ed9733`, vprogs `f9b84a8`. | No tip/tag/merge/Final. |
+| ALWAYS | kaspaexplained sitemap lastmod **2026-09-20**; kaspa.stream still `9f4088ca…`. X skipped (not enrolled). | Explainer touch only. |
+
+Canonical JSON: [`master.json`](master.json) `updated` **2026-09-20**.
+
 ### What this pass did (20 Sep 2026 — rusty master eb0a856)
 
 | Track | Delta | Honest |
@@ -167,7 +178,7 @@ Daily Grok bot (`dagknight-test-grok daily update`) + kaspa.news / GitHub / X ch
 
 | Found | Change |
 | --- | --- |
-| **KCC-0012** Browser Wallet Provider API | Pin [kccs#24](https://github.com/kaspanet/kccs/pull/24) (saefstroem, created **11 Sep**; activity **18 Sep**). Still **Draft** (open ready, not Final). EIP-1193/6963 shape + Kaspa `kaspa_signTransaction` (sign only listed inputs; leave covenant scripts). **No public implementation.** Recap: [kaspa.news 12 Sep](https://kaspa.news/articles/a-new-kaspa-wallet-still-needs-every-website-to-add-it). |
+| **KCC-0012** Browser Wallet Provider API | Pin [kccs#24](https://github.com/kaspanet/kccs/pull/24) (saefstroem, created **11 Sep**; head **7159d48** 20 Sep amend). Still **Draft** (open ready, not Final). EIP-1193/6963 shape + Kaspa `kaspa_signTransaction` (sign only listed inputs; leave covenant scripts). **No public implementation.** Recap: [kaspa.news 12 Sep](https://kaspa.news/articles/a-new-kaspa-wallet-still-needs-every-website-to-add-it). |
 | Sutton on Alex | [11 Sep 15:27 UTC](https://x.com/michaelsuttonil/status/2098433221021118762) — “alex is doing glorious work in connecting dapp dev processes and ecosystem standardization.” Same person as KCC-0 + KCC-0012 lead. **Not a KIP. Not adopted.** |
 | Sil #251 | [silverscript#251](https://github.com/kaspanet/silverscript/pull/251) **open** (11 Sep, KaspaScopio). Indexing struct-array expressions (fixes #228). Independent of #250. Pin still forbids `State[].split()` tuples. |
 | Wallet/UTXO paging recap | [kaspa.news 11 Sep](https://kaspa.news/articles/wallets-still-have-to-catch-up-before-kaspa-feels-easy-to-use) — paged UTXO lookup still under review; ECDSA owner display still a proposal. Argent leader/delegate rules 5/6 were unimplemented **that day**; they **compile as of 14 Sep** (#63). Still no Argent tag. |
@@ -398,7 +409,7 @@ KIP-21 lanes are 20-byte `subnetwork_id`s, ≤50 non-coinbase lanes/block, 1e9 g
 | a19q3/Kurrent | https://github.com/a19q3/Kurrent | Eltoo-inspired latest-state channel. Forum [494](https://research.kas.pa/t/kurrent-an-eltoo-inspired-latest-state-channel-on-kaspa/494). Devnet evidence. **Not product.** |
 | elldeeone/kaspa-x402 | https://github.com/elldeeone/kaspa-x402 | Intended **x402 v2** binding. TN10 alpha. Site [kaspa-x402.org](https://kaspa-x402.org). Bind this envelope; do not invent a fourth 402. |
 | Kali123411/k402 | https://github.com/Kali123411/k402 | HTTP 402 + `kaspa-channel` lock/voucher. [kccs#4](https://github.com/kaspanet/kccs/pull/4) still open. Steal the lock. **Not** elldeeone’s x402 v2 binding. **Not** adopted KCC-0402. |
-| kaspanet/kccs#24 | https://github.com/kaspanet/kccs/pull/24 | **KCC-0012 Draft** (open ready; activity 18 Sep). Browser wallet provider + `kaspa:announceProvider` / `kaspa:requestProvider`. Lead [saefstroem](https://github.com/saefstroem). Needs a public implementation before Final. **Not adopted.** Also open: [#26](https://github.com/kaspanet/kccs/pull/26) KCC-23 MJ, [#27](https://github.com/kaspanet/kccs/pull/27) kcc-1↔kcc0. Gramlane inject stays Kasware/Kastle. |
+| kaspanet/kccs#24 | https://github.com/kaspanet/kccs/pull/24 | **KCC-0012 Draft** (open ready head `7159d48`, 20 Sep). Browser wallet provider + `kaspa:announceProvider` / `kaspa:requestProvider`. Lead [saefstroem](https://github.com/saefstroem). Needs a public implementation before Final. **Not adopted.** Also open: [#26](https://github.com/kaspanet/kccs/pull/26) KCC-23 MJ, [#27](https://github.com/kaspanet/kccs/pull/27) kcc-1↔kcc0 (saefstroem approved 20 Sep; still not Final). Gramlane inject stays Kasware/Kastle. |
 
 L2 (out of Gramlane path): Igra, Kasplex — live elsewhere. This stack stays L1. Kurrent is L1-channel research, still out of Gramlane path.
 
@@ -679,7 +690,7 @@ Yonatan (digital cash, cohesive tooling, core ≠ product) → Sutton (L1 covena
 | [kaspanet/vprogs#139](https://github.com/kaspanet/vprogs/pull/139) | **Open.** ExitLeaf + claim kit. Also #138/#140. **#142** bridge lane-anchor (10 Sep). No product testnet. |
 | [elldeeone/kaspa-x402](https://github.com/elldeeone/kaspa-x402) | TN10 x402 v2 binding. Bind this. Not a fourth envelope. |
 | [kaspanet/kccs#20](https://github.com/kaspanet/kccs/pull/20) | **Open draft.** KCC-20 vectors. Transfer sig unconfirmed. |
-| [kaspanet/kccs#24](https://github.com/kaspanet/kccs/pull/24) | **Open ready / still Draft status.** KCC-0012 wallet provider/discovery (activity 18 Sep). No public implementation. |
+| [kaspanet/kccs#24](https://github.com/kaspanet/kccs/pull/24) | **Open ready / still Draft status.** KCC-0012 wallet provider/discovery (head `7159d48`, 20 Sep amend). No public implementation. |
 | [kaspanet/silverscript#223](https://github.com/kaspanet/silverscript/pull/223) | **Merged.** Dispatch tags ↔ KCC-1 (IzioDev). |
 | [supertypo/simply-kaspa-indexer](https://github.com/supertypo/simply-kaspa-indexer) | L1 Postgres indexer. KNS docs: the KNS resolver uses this. Not api.knsdomains.org. |
 | [aspectron](https://github.com/aspectron) kdx / kaspa-ng | Wallet gravity |

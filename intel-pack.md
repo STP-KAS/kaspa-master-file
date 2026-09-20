@@ -78,6 +78,8 @@ Live L1 snapshot (api.kaspa.org, this date) plus kaspaexplained.com / rusty-kasp
 | **R-NARRATIVE-2026** | `LOCAL/kaspa-attenborough-2026/` | Attenborough Kaspa film (Sep 2026 remake of Apr 2025 CryptoQTK piece). Not in this repo. | Public-facing ethos + fact-checked VO |
 | **R-SIL-249** | https://github.com/kaspanet/silverscript/issues/249 | `State[].split()` tuple destructure on v1.0.0 | **Open.** Fix #250 unmerged. Skip that syntax. |
 | **R-X402** | https://github.com/elldeeone/kaspa-x402 | Kaspa x402 v2 binding. Tag **v1.0.0-rc.1** (13 Sep 2026). TN10 only. Mainnet blocked. Windows [#12](https://github.com/elldeeone/kaspa-x402/pull/12) `216ad77`. Parker [#13](https://github.com/elldeeone/kaspa-x402/issues/13) follow-ups merged [#14](https://github.com/elldeeone/kaspa-x402/pull/14) `25893d6` (maintenance, no new tag). | Bind this envelope. Not v1. Public: [sixpack.wtf](https://sixpack.wtf) · [Parker Astra](https://sixpack.wtf/parker.html) · [mix](https://sixpack.wtf/mix.html). |
+| **R-KCC20-LIVE** | https://github.com/Manyfestation/kcc20-live | Offline Argent KCC-20 demo (9 Sep). `.ag` swaps `borrow_guard`/`borrow_scheme` vs Draft spec. | Catalog. Not adopted KCC-20. Not KaspaKaha. |
+| **R-ROUNDUP-20SEP** | https://x.com/kaspaunchained/status/2101676311244915028 | @kaspaunchained intern roundup 20 Sep: KCC20 / Argent / DK / vProgs / x402. | Catalog. Not a pin. Do not weld. |
 | **R-K402** | https://github.com/Kali123411/k402 | HTTP 402 + `kaspa-channel` lock/voucher. kccs#4 still open. | Steal the lock. Not Kaspa’s x402 v2 binding. Not adopted KCC-0402. |
 
 ### Derived files (LOCAL pack — not in this GitHub repo)

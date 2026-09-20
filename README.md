@@ -14,6 +14,21 @@ Crypto-finance desk law (Grok Build / Ask / Bot, **no seeds**): [`CRYPTO-FINANCE
 
 **Retest (17 Sep 2026):** every public STP-KAS GitHub (**48**) vs these pins — [`RETEST.md`](RETEST.md). Pins **hold**. argent-xai `check.ps1` **DRIFT** (PR #63). kns comment-grep still red.
 
+### What this pass did (20 Sep 2026 — @kaspaunchained intern roundup, catalog)
+
+Community explainer, **not core, not a KIP, not a pin.** [@kaspaunchained](https://x.com/kaspaunchained) [20 Sep 14:14 UTC](https://x.com/kaspaunchained/status/2101676311244915028): KCC20 / Argent / DAGKnight / vProgs / x402. **Do not round up.** Pins **hold.** This encyclopedia is **not an oracle.**
+
+| Item in the tweet | Honest object |
+| --- | --- |
+| 1 / KCC20 “reference mostly done” | Spec [kcc-0020.md](https://github.com/kaspanet/kccs/blob/main/kcc-0020.md) is **Draft**. Manyfest [kcc20-live](https://github.com/Manyfestation/kcc20-live) is an **offline Argent demo** (last GitHub 9 Sep, argent pin `94f249a`). **Not** [argent-lang/kcc20-reference](https://github.com/argent-lang/kcc20-reference) (WIP). **Not** silverscript example `kcc20.sil`. **Not** KaspaKaha frozen template. |
+| Field order | Spec: `amount, owner, owner_scheme, borrow_scheme, borrow_guard, extension_commitment`. `kcc20-live` `.ag` swaps `borrow_guard` / `borrow_scheme`. KCC-1 §8.1: declaration order **is** the ABI. Different dispatch type string. |
+| 2 / Argent template | [argent-template](https://github.com/argent-lang/argent-template) **local runtime only**. Izio 16 Sep getting-started already catalogued §4d. No tag. |
+| 3 / DAGKnight | [#1104](https://github.com/kaspanet/rusty-kaspa/pull/1104) head still `a5888da`. Merge fence: parent-order / `sort_unstable` vs paper. Outsider test [#1132](https://github.com/kaspanet/rusty-kaspa/pull/1132). **Not shipped.** |
+| 4 / vProgs | Prototype. Open stack [#146](https://github.com/kaspanet/vprogs/pull/146)→[#147](https://github.com/kaspanet/vprogs/pull/147)→[#148](https://github.com/kaspanet/vprogs/pull/148) draft (settler resume; 60s VCC livelock). hmoog 45 commits vs Max 34. **No product testnet.** |
+| 5 / x402 TN10 | Bind [elldeeone/kaspa-x402](https://github.com/elldeeone/kaspa-x402) **v1.0.0-rc.1**. Real x402 v2. **Not** KCC-20 borrow. Mainnet blocked. |
+
+Canonical JSON: [`master.json`](master.json) `updated` **2026-09-20**.
+
 ### What this pass did (20 Sep 2026 — 24h monitor / kccs#24 head)
 
 | Track | Delta | Honest |
@@ -69,7 +84,7 @@ Relevance-checked GitHub delta since 17 Sep freeze. **Pins hold** (no new tag, n
 | KCC | [#24](https://github.com/kaspanet/kccs/pull/24) KCC-0012 activity **18 Sep** (still Draft, no public wallet impl). [#27](https://github.com/kaspanet/kccs/pull/27) kcc-1↔kcc0 compliance open 18 Sep. [#26](https://github.com/kaspanet/kccs/pull/26) KCC-23 MJ Metadata open 16 Sep. | Not Final / not adopted. |
 | vProgs | Review cluster 16–17 Sep: [#138](https://github.com/kaspanet/vprogs/pull/138), [#144](https://github.com/kaspanet/vprogs/pull/144), [#145](https://github.com/kaspanet/vprogs/pull/145), [#146](https://github.com/kaspanet/vprogs/pull/146). | Research only. |
 
-Canonical JSON: [`master.json`](master.json) `updated` **2026-09-19** (19 Sep pass after this catch-up).
+Canonical JSON: [`master.json`](master.json) `updated` **2026-09-20** (20 Sep intern-roundup catalog; 19 Sep #1134 pass still above).
 
 ### What this pass did (17 Sep 2026 — @kaspaunchained covenants thread)
 
@@ -230,6 +245,7 @@ Kaspa is **proof of work**. Miners spend energy. There is no staking. Fair launc
 | Video (community) | https://x.com/kaspaunchained/status/2096211914825285808 | @kaspaunchained, 5 Sep 2026. “Only gets better with age.” Older Odie clip. Not a spec. Not core. |
 | Covenants stack (community) | https://x.com/kaspaunchained/status/2100571472561586192 | @kaspaunchained, 17 Sep 2026. Covenants → SilverScript → Argent. Not a KIP. Argent still no tag. |
 | Covenants docs (from that thread) | https://x.com/kaspaunchained/status/2100572500442980776 | Same thread. Points at https://docs.kaspa.org/programmability/covenants |
+| Intern roundup (community) | https://x.com/kaspaunchained/status/2101676311244915028 | @kaspaunchained, 20 Sep 2026. KCC20 / Argent / DAGKnight / vProgs / x402. Catalog. **Not a pin.** Do not weld the five objects. |
 | Grok share (X) | https://x.com/i/grok/share/c59cba827c574d028607693855b2e5fc | Community share. Not a KIP. Recheck before quoting. |
 | Faucets and mining | https://kaspa.aspectron.org/faucets-mining.html | Aspectron. Testnet faucets, mining entry, PNN. Not kaspanet. |
 | Kaspa Q&A | https://qa.kas.pa/ | Community Q&A. Answers are not KIPs. |
@@ -342,11 +358,11 @@ Org: https://github.com/kaspanet — 26 public repos. **Use these first.**
 
 | Repo | URL | Status 11 Sep 2026 |
 | --- | --- | --- |
-| rusty-kaspa | https://github.com/kaspanet/rusty-kaspa | Reference node. Toccata **v2.0.0** (5 Jun 2026), **v2.0.1** (15 Jun). No newer node tag. `dagknight` still unmerged. Open DK ready cluster: [#1104](https://github.com/kaspanet/rusty-kaspa/pull/1104), [#1127](https://github.com/kaspanet/rusty-kaspa/pull/1127) (ready 12 Sep), [#1131](https://github.com/kaspanet/rusty-kaspa/pull/1131), [#1132](https://github.com/kaspanet/rusty-kaspa/pull/1132), [#1124](https://github.com/kaspanet/rusty-kaspa/pull/1124). Last `dagknight` tip 8 Sep. **Not shipped.** |
+| rusty-kaspa | https://github.com/kaspanet/rusty-kaspa | Reference node. Toccata **v2.0.0** (5 Jun 2026), **v2.0.1** (15 Jun). No newer node tag. `dagknight` still unmerged. Open DK ready cluster: [#1104](https://github.com/kaspanet/rusty-kaspa/pull/1104) head `a5888da` (20 Sep naming/review; merge fence parent-order / [#1132](https://github.com/kaspanet/rusty-kaspa/pull/1132)), [#1127](https://github.com/kaspanet/rusty-kaspa/pull/1127) (ready 12 Sep), [#1131](https://github.com/kaspanet/rusty-kaspa/pull/1131), [#1124](https://github.com/kaspanet/rusty-kaspa/pull/1124). Last `dagknight` tip still **8 Sep**. **Not shipped.** |
 | kips | https://github.com/kaspanet/kips | Improvement proposals |
 | silverscript | https://github.com/kaspanet/silverscript | Covenant language. Pin **[v1.0.0](https://github.com/kaspanet/silverscript/releases/tag/v1.0.0)** (Ori / someone235, **9 Sep 2026**, `3ed9733`). Official SemVer v1. Windows zip SHA256 `3e0d660c15a9e7ac90f3960da24d348b076b1891481bfe758db18accc8a102e1`. Language pragma in examples is still `^0.1.0`. `#234` foreign `readInputState` still **closed unmerged**. **New on this pin:** [#249](https://github.com/kaspanet/silverscript/issues/249) `State[].split()` tuple destructure fails (`__inline_*`); fix PR [#250](https://github.com/kaspanet/silverscript/pull/250) **open** (KaspaScopio, 10 Sep). [#251](https://github.com/kaspanet/silverscript/pull/251) **open** (11 Sep) indexing struct-array expressions (`#228`); independent of `#250`. `#243` compute-budget still **open**. |
 | kccs | https://github.com/kaspanet/kccs | Conventions. All **Draft**. **New:** [KCC-0012](https://github.com/kaspanet/kccs/pull/24) wallet provider + discovery (11 Sep, saefstroem + IzioDev et al.). Not adopted. |
-| vprogs | https://github.com/kaspanet/vprogs | Provable computation. Research. No public testnet as product. |
+| vprogs | https://github.com/kaspanet/vprogs | Provable computation. Research. No public testnet as product. Open stack 20 Sep: [#146](https://github.com/kaspanet/vprogs/pull/146) reorg-safe exits, [#147](https://github.com/kaspanet/vprogs/pull/147) write-drain, [#148](https://github.com/kaspanet/vprogs/pull/148) **draft** settler resume (TN10 60s VCC livelock). hmoog volume > Max. |
 | kaspa-python-sdk | https://github.com/kaspanet/kaspa-python-sdk | Python bindings |
 | docs | https://github.com/kaspanet/docs | Documentation |
 | research | https://github.com/kaspanet/research | Papers (vProgs yellow paper) |
@@ -382,6 +398,7 @@ KIP-21 lanes are 20-byte `subnetwork_id`s, ≤50 non-coinbase lanes/block, 1e9 g
 | argent-lang/argent-playground | https://github.com/argent-lang/argent-playground | Local demos (counter, ICC, DEX-shaped `dex_asset`). Does **not** prove mainnet. PR your apps here (Izio 16 Sep). |
 | argent-lang/argent-template | https://github.com/argent-lang/argent-template | Starter. `./setup` clones sibling `argent`. **Local runtime only** — no network, no wallet, no submit. |
 | argent-lang/kcc20-reference | https://github.com/argent-lang/kcc20-reference | **WIP** (created 10 Sep). README one line. [PR #1](https://github.com/argent-lang/kcc20-reference/pull/1) open. **Not** adopted KCC-20. |
+| Manyfestation/kcc20-live | https://github.com/Manyfestation/kcc20-live | Offline Argent KCC-20 **demo** (9 Sep). Threshold-borrow example. Does **not** submit. Field order in `.ag` **swaps** `borrow_guard`/`borrow_scheme` vs Draft spec. Not the standard. Not KaspaKaha. |
 | KaspaKii/Portrait | https://github.com/KaspaKii/Portrait | Public 1 Sep 2026. Testnet-only, unaudited. |
 | STP-KAS/gramlane | https://github.com/STP-KAS/gramlane | This desk. Grams, kasdomain. |
 | STP-KAS/project-delusional | https://github.com/STP-KAS/project-delusional | Stack index |
@@ -509,16 +526,16 @@ Yonatan’s own “rough core” list (30 Apr 2025): michaelsutton, hashdag, cod
 | Ori Newman | [@OriNewman](https://x.com/OriNewman) | Core (GitHub someone235) |
 | coderofstuff | [@coderofstuff_](https://x.com/coderofstuff_) | Core contributor |
 | FreshAir08 | [@FreshAir08](https://x.com/FreshAir08) | Research / fees |
-| Hans Moog | [@hus_qy](https://x.com/hus_qy) | Core / KEF-funded |
+| Hans Moog | [@hus_qy](https://x.com/hus_qy) | Core / KEF-funded. GitHub [hmoog](https://github.com/hmoog). Top [vprogs](https://github.com/kaspanet/vprogs) commit volume (45 vs Max 34). Not a product. |
 | Romain Billot | [@IzioDev](https://x.com/IzioDev) | Core / KEF-funded |
 | Maxim Biryukov | [@biryukovmaxim](https://x.com/biryukovmaxim) | Core (KIP-21) |
 | Shai Wyborski | [@DesheShai](https://x.com/DesheShai) | GHOSTDAG co-author; later left core (his 2025 farewell). Not a current pin as “core”. |
 | Aviv Zohar | [@Avivz78](https://x.com/Avivz78) | Co-author GHOST / research |
-| Kaspa (community X) | [@kaspaunchained](https://x.com/kaspaunchained) | Non-representative community account. 17 Sep stack thread: [covenants/SS/Argent](https://x.com/kaspaunchained/status/2100571472561586192) · [docs](https://x.com/kaspaunchained/status/2100572500442980776). Not a KIP. |
+| Kaspa (community X) | [@kaspaunchained](https://x.com/kaspaunchained) | Non-representative community account. 17 Sep stack: [covenants/SS/Argent](https://x.com/kaspaunchained/status/2100571472561586192) · [docs](https://x.com/kaspaunchained/status/2100572500442980776). 20 Sep intern roundup: [KCC20/Argent/DK/vProgs/x402](https://x.com/kaspaunchained/status/2101676311244915028). Not a KIP. |
 | Kaspa global | [@KASPAglobal](https://x.com/KASPAglobal) | 3 Sep 2026: Toccata live, not “coming soon”. |
 | Kaspa Commons | [@Kaspa_Commons](https://x.com/Kaspa_Commons) | Relays Discord (e.g. Ori Newman TN10 notes). Not core. |
 | This project | [@StppStp](https://x.com/StppStp) | Gramlane / project delusional. **Never DMs you.** |
-| Luke Dunshea | [@elldeeone](https://x.com/elldeeone) | SilverScript v1 credit. GitHub [elldeeone](https://github.com/elldeeone). |
+| Luke Dunshea | [@elldeeone](https://x.com/elldeeone) | SilverScript v1 credit. GitHub [elldeeone](https://github.com/elldeeone). kaspa-x402 **v1.0.0-rc.1** TN10. Bind that envelope. |
 | Sivan Helfer | [@manyfest_](https://x.com/manyfest_) | SilverScript v1 / KCC-20. GitHub [Manyfestation](https://github.com/Manyfestation). |
 | Alexander Säfström | [@asaefstroem](https://x.com/asaefstroem) | Credited by Ori on the v1-rc1 review (30 Aug). KCC-0. **KCC-0012** lead ([kccs#24](https://github.com/kaspanet/kccs/pull/24), 11 Sep). Sutton [11 Sep](https://x.com/michaelsuttonil/status/2098433221021118762): dapp-dev process + ecosystem standardization. Draft, not law. |
 | BankQuote | [@BankQuote](https://x.com/BankQuote) | Community educator. GitHub [trillskillz](https://github.com/trillskillz) (OpenSilver). Long-form Toccata/covenant essays: §5c. **Not core.** |
@@ -614,6 +631,7 @@ Telegram Bot API (platform, not Kaspa): https://core.telegram.org/bots/api · ht
 - kaspa.org rebuilt around “real-time decentralization” (2026). 10 BPS live. 100 BPS is a target, not a spec.
 - Official Toccata guide: https://docs.kaspa.org/toccata — consensus live; SilverScript v1 is tagged; Argent/vProgs tooling still early.
 - @kaspaunchained **17 Sep**: [covenants/SilverScript/Argent](https://x.com/kaspaunchained/status/2100571472561586192) + [docs pointer](https://x.com/kaspaunchained/status/2100572500442980776) → https://docs.kaspa.org/programmability/covenants. Community explainer. **Not a tag.**
+- @kaspaunchained **20 Sep**: [intern roundup](https://x.com/kaspaunchained/status/2101676311244915028) — KCC20 / Argent / DAGKnight / vProgs / x402. Catalog. **Do not weld.** Manyfest `kcc20-live` is offline and **field-order-swapped** vs Draft KCC-20. x402 is elldeeone **v1.0.0-rc.1** TN10, not KCC-20 borrow. DK #1104 still `a5888da`. vprogs #148 draft.
 - research.kas.pa: newest thread is **optional privacy / MWEB-like** (JackKas, 8 Sep, [522](https://research.kas.pa/t/optional-privacy-layer-for-kaspa-similar-to-litecoin-mweb/522)). Not a KIP. Kurrent (23 Jun) still not product.
 - STP-KAS implementer kit: https://stp-kas.github.io/kns-spec/ — KasWare/Kastle inscriptions + proven covenant txs. `KasName.sil` on silverc v1.0.0 with **value conservation** (v1 tutorial: `validateOutputState` does not lock amount).
 - Ori v1 post: https://x.com/OriNewman/status/2097731203503640976 — “Silverscript will evolve, Argent will add higher layers.”
@@ -687,6 +705,7 @@ Yonatan (digital cash, cohesive tooling, core ≠ product) → Sutton (L1 covena
 | [argent-lang/argent-playground](https://github.com/argent-lang/argent-playground) | Local demos. PR target for community apps (Izio 16 Sep). |
 | [argent-lang/argent-template](https://github.com/argent-lang/argent-template) | Getting-started starter. Local runtime only. |
 | [argent-lang/kcc20-reference](https://github.com/argent-lang/kcc20-reference) | WIP. Not adopted KCC-20. |
+| [Manyfestation/kcc20-live](https://github.com/Manyfestation/kcc20-live) | Offline Argent demo. Field order ≠ Draft spec. Not the standard. |
 | [kaspanet/vprogs#139](https://github.com/kaspanet/vprogs/pull/139) | **Open.** ExitLeaf + claim kit. Also #138/#140. **#142** bridge lane-anchor (10 Sep). No product testnet. |
 | [elldeeone/kaspa-x402](https://github.com/elldeeone/kaspa-x402) | TN10 x402 v2 binding. Bind this. Not a fourth envelope. |
 | [kaspanet/kccs#20](https://github.com/kaspanet/kccs/pull/20) | **Open draft.** KCC-20 vectors. Transfer sig unconfirmed. |

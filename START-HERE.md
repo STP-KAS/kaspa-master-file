@@ -22,4 +22,6 @@ Retest of public STP-KAS GitHubs: [`RETEST.md`](RETEST.md).
 
 Community covenants stack (17 Sep, @kaspaunchained, not a KIP): https://x.com/kaspaunchained/status/2100571472561586192 · https://x.com/kaspaunchained/status/2100572500442980776
 
+Intern roundup (20 Sep, @kaspaunchained, catalog, not a pin): https://x.com/kaspaunchained/status/2101676311244915028 — KCC20 / Argent / DAGKnight / vProgs / x402. Do not weld. Desk master-file updated 20 Sep, **not pushed**.
+
 **Snapshot history** (what agents did, newest first): [`SNAPSHOT-HISTORY.md`](SNAPSHOT-HISTORY.md).

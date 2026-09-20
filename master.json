@@ -17,6 +17,7 @@
         {"name": "Video (community)", "url": "https://x.com/kaspaunchained/status/2096211914825285808", "chip": "watch", "note": "@kaspaunchained, 5 Sep 2026. “Only gets better with age.” Older clip (Odie). Not a spec. Not core. Watch, then read the pages above."},
         {"name": "Covenants stack (community)", "url": "https://x.com/kaspaunchained/status/2100571472561586192", "chip": "x", "note": "@kaspaunchained, 17 Sep 2026. Covenants, SilverScript, Argent. Not a KIP. Argent still no tag."},
         {"name": "Covenants docs pointer", "url": "https://x.com/kaspaunchained/status/2100572500442980776", "chip": "x", "note": "Same thread. Points at docs.kaspa.org/programmability/covenants."},
+        {"name": "Intern roundup (community)", "url": "https://x.com/kaspaunchained/status/2101676311244915028", "chip": "x", "note": "@kaspaunchained, 20 Sep 2026. KCC20 / Argent / DAGKnight / vProgs / x402. Catalog. Not a pin. Do not weld the five objects."},
         {"name": "Official covenants docs", "url": "https://docs.kaspa.org/programmability/covenants", "chip": "official", "note": "Linked from the 17 Sep kaspaunchained thread. Live Toccata. Argent untagged."},
         {"name": "Grok share (X)", "url": "https://x.com/i/grok/share/c59cba827c574d028607693855b2e5fc", "chip": "share", "note": "Community share. Not a KIP. Recheck before quoting."},
         {"name": "Faucets and mining", "url": "https://kaspa.aspectron.org/faucets-mining.html", "chip": "ops", "note": "Aspectron. TN faucets, mining entry, public node network. Not kaspanet."},
@@ -133,11 +134,11 @@
       "id": "kaspanet",
       "title": "kaspanet GitHub",
       "rows": [
-        {"name": "rusty-kaspa", "url": "https://github.com/kaspanet/rusty-kaspa", "chip": "node", "note": "v2.0.0 Toccata · v2.0.1. Master tip eb0a856 (20 Sep): #1136 merged IBD 20 MiB chunks (f2f87ff); #1137 merged RejectCoinbase from mempool. dagknight unmerged (tip still ad45e24). Open: #1135 ed09a8a PSKB sighash opt-in; DK #1104 a5888da, #1127 #1131 #1132 #1124, #1122 332ec6c, #1121 06efd83. Not shipped DK."},
+        {"name": "rusty-kaspa", "url": "https://github.com/kaspanet/rusty-kaspa", "chip": "node", "note": "v2.0.0 Toccata · v2.0.1. Master tip eb0a856 (20 Sep): #1136 merged IBD 20 MiB chunks (f2f87ff); #1137 merged RejectCoinbase from mempool. dagknight unmerged (tip still ad45e24). Open: #1135 ed09a8a PSKB sighash opt-in; DK #1104 a5888da (parent-order / #1132 shuffle fence), #1127 #1131 #1132 #1124, #1122 332ec6c, #1121 06efd83. Not shipped DK."},
         {"name": "kips", "url": "https://github.com/kaspanet/kips", "chip": "law", "note": "Improvement proposals."},
         {"name": "silverscript", "url": "https://github.com/kaspanet/silverscript/releases/tag/v1.0.0", "chip": "v1.0.0", "note": "Ori / someone235 tagged 9 Sep 2026, commit 3ed9733. SemVer v1. Tip unchanged through 18 Sep. Open holes: #243 compute-budget, #249/#250 State[].split tuple, #251 struct-array index. Not a second tag."},
         {"name": "kccs", "url": "https://github.com/kaspanet/kccs", "chip": "Draft", "note": "Refuse as a gram token. KCC-0012 wallet discovery is kccs#24 (open ready head 7159d48; 20 Sep amend aligned with review comments; still Draft / not Final). kccs#27 kcc-1↔kcc0 compliance open ready head fa845057 (Manyfestation approval 18 Sep; saefstroem approval 20 Sep ~16:08Z). Also open: #26 KCC-23 MJ, #25 KCC0→Final, #23 p2pk-ecdsa, #20 KCC-0020 vectors. None adopted."},
-        {"name": "vprogs", "url": "https://github.com/kaspanet/vprogs", "chip": "research", "note": "No product testnet here. Master still f9b84a8. Open: #138/#144/#145/#146; #147 head 1d449964 (shutdown drain + adaptive-reorg-filter disable + tests); #148 draft cbed6852 restart-resume journaling. Research only."},
+        {"name": "vprogs", "url": "https://github.com/kaspanet/vprogs", "chip": "research", "note": "No product testnet here. Master still f9b84a8. Open: #138/#144/#145/#146; #147 head 1d449964 (shutdown drain + adaptive-reorg-filter disable + tests); #148 draft cbed6852 restart-resume (TN10 60s VCC livelock). hmoog 45 commits vs Max 34. Research only."},
         {"name": "kaspad (Go)", "url": "https://github.com/kaspanet/kaspad", "chip": "deprecated", "note": "Use rusty-kaspa."}
       ]
     },
@@ -222,8 +223,9 @@
         {"name": "argent-playground", "url": "https://github.com/argent-lang/argent-playground", "chip": "preview", "note": "Local demos. PR target for community apps. Not network proof."},
         {"name": "argent-template", "url": "https://github.com/argent-lang/argent-template", "chip": "preview", "note": "Starter. ./setup. Local runtime only: no network, no wallet, no submit."},
         {"name": "kcc20-reference", "url": "https://github.com/argent-lang/kcc20-reference", "chip": "wip", "note": "WIP. Empty README. PR 1 open. Not adopted KCC-20."},
+        {"name": "kcc20-live", "url": "https://github.com/Manyfestation/kcc20-live", "chip": "preview", "note": "Offline Argent demo (9 Sep). Field order in .ag swaps borrow_guard/borrow_scheme vs Draft spec. Not the standard. Not KaspaKaha."},
         {"name": "Crypto finance (desk law)", "url": "https://github.com/STP-KAS/kaspa-master-file/blob/main/CRYPTO-FINANCE.md", "chip": "desk", "note": "Grok Build/Ask/Bot consolidation. No seeds. Dual rail. Native KAS unit. Skip issuer stables as gas."},
-        {"name": "kaspa-x402", "url": "https://github.com/elldeeone/kaspa-x402", "chip": "tn10", "note": "elldeeone. Intended x402 v2 binding. TN10 alpha. kaspa-x402.org. Bind this envelope."},
+        {"name": "kaspa-x402", "url": "https://github.com/elldeeone/kaspa-x402", "chip": "tn10", "note": "elldeeone. x402 v2 binding. Tag v1.0.0-rc.1. TN10 only. Mainnet blocked. Not KCC-20 borrow. kaspa-x402.org. Bind this envelope."},
         {"name": "k402", "url": "https://github.com/Kali123411/k402", "chip": "draft", "note": "HTTP 402 + kaspa-channel lock/voucher. kccs#4 open. Steal the lock. Not elldeeone x402 v2. Not adopted KCC-0402."},
         {"name": "KCC-0012 / kccs#24", "url": "https://github.com/kaspanet/kccs/pull/24", "chip": "draft", "note": "Browser wallet provider + discovery. saefstroem 11 Sep. Izio reviewing 12 Sep. No public implementation. Not adopted. Inject stays Kasware/Kastle."},
         {"name": "gramlane", "url": "https://github.com/STP-KAS/gramlane", "chip": "this", "note": "skip centralised stablecoins for dapps. Cheap grams. Still delusional."},
@@ -255,6 +257,7 @@
       "id": "rnd-log",
       "title": "R&D / Discord log (public recaps)",
       "rows": [
+        {"name": "20 Sep kaspaunchained intern roundup", "url": "https://x.com/kaspaunchained/status/2101676311244915028", "chip": "x", "note": "Catalog. KCC20/Argent/DK/vProgs/x402. Do not weld. kcc20-live field-order swap vs Draft spec. x402 RC1 not KCC-20. DK #1104 still a5888da. vprogs #148 draft. Pins hold. Not an oracle — facts stay in this master file."},
         {"name": "20 Sep kccs#24 head 7159d48 + #27 approval", "url": "https://github.com/kaspanet/kccs/pull/24", "chip": "draft", "note": "#24 amend 7159d48 (~15:53Z) aligns KCC-0012 with review comments (was 06400c3). #27 still fa845057; saefstroem APPROVED ~16:08Z (still open ready / not Final). kaspaexplained sitemap lastmod 2026-09-20. No DK/Argent/SS tip change."},
         {"name": "20 Sep rusty master eb0a856", "url": "https://github.com/kaspanet/rusty-kaspa/commit/eb0a856d4e1e", "chip": "node", "note": "Master tip eb0a856. #1136 merged IBD 20 MiB chunks; #1137 merged RejectCoinbase. DK still unmerged (ad45e24). vprogs #147→1d449964; #148 draft restart-resume. kaspa.stream app 9f4088ca…"},
         {"name": "20 Sep #1135/#1136 + #1104 naming", "url": "https://github.com/kaspanet/rusty-kaspa/pull/1135", "chip": "research", "note": "#1135 ed09a8a PSKB non-SIG_HASH_ALL opt-in; #1136 2c0df83 IBD 20 MiB header chunks. #1104 review naming (conflict_ordered_parents / IS_FREE / CODER); head still a5888da. Not shipped."},
@@ -315,7 +318,7 @@
       "title": "Extra GitHubs (intel pack)",
       "rows": [
         {"name": "rusty#1137", "url": "https://github.com/kaspanet/rusty-kaspa/pull/1137", "chip": "merged", "note": "MERGED 20 Sep (eb0a856). Mempool RejectCoinbase + regression tests. Approved michaelsutton."},
-        {"name": "vprogs#148", "url": "https://github.com/kaspanet/vprogs/pull/148", "chip": "draft", "note": "Draft 20 Sep (cbed6852): restart-resume journaling for unsettled bundles / competitor settlements / gaps. Research only."},
+        {"name": "vprogs#148", "url": "https://github.com/kaspanet/vprogs/pull/148", "chip": "draft", "note": "Draft 20 Sep (cbed6852): restart-resume journaling for unsettled bundles / competitor settlements / gaps. TN10 60s VCC livelock. Research only."},
         {"name": "kaspa.stream app", "url": "https://kaspa.stream/", "chip": "explorer", "note": "app-version 9f4088ca… observed 20 Sep (was 7ab5ce0…). No public changelog."},
         {"name": "rusty#1135", "url": "https://github.com/kaspanet/rusty-kaspa/pull/1135", "chip": "open", "note": "Require explicit opt-in for non-SIG_HASH_ALL PSKB signing (someone235, 20 Sep, head ed09a8a)."},
         {"name": "rusty#1136", "url": "https://github.com/kaspanet/rusty-kaspa/pull/1136", "chip": "merged", "note": "MERGED 20 Sep (f2f87ff → master). Split pruning-point proofs/headers/trusted data to 20 MiB chunks during IBD."},

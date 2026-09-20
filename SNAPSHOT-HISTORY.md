@@ -8,6 +8,7 @@ Not a KIP. Not Kaspa core. A tweet is not a pin. This file is the agent/operator
 
 | When (Europe/Brussels) | Commit | What we did | Pins |
 | --- | --- | --- | --- |
+| 2026-09-20 | intern-roundup catalog | Catalog @kaspaunchained intern roundup 2101676311244915028. KCC-20 field-order split (`kcc20-live` vs spec), x402 RC1 ≠ KCC-20, DK #1104/`#1132` fence, vprogs #148 + hmoog volume. Keep master file, not an oracle. | **Hold** |
 | 2026-09-20 ~20:30 | [ec73dea](https://github.com/STP-KAS/kaspa-master-file/commit/ec73dea) | 24h monitor after e9548b8: kccs#24 head → `7159d48` (amend); #27 saefstroem approval; fixed stale #1136-open note in DK cluster. Tips hold rusty `eb0a856` / DK `ad45e24` / Argent `e76ee07` / SS `3ed9733` / vprogs `f9b84a8`. ALWAYS: kaspaexplained lastmod 2026-09-20; kaspa.stream `9f4088ca…`; X skipped (not enrolled). Updated master.json + README. | **Hold** |
 | 2026-09-20 ~15:57 | [e9548b8](https://github.com/STP-KAS/kaspa-master-file/commit/e9548b8) | Digest fold: rusty master → `eb0a856` (#1136/#1137 merged); vprogs #147 `1d449964` + #148 draft; kaspa.stream `9f4088ca…`. Updated master.json + README. DK still not shipped. | **Hold (DK)** / tip moved |
 | 2026-09-20 ~10:51 | [cdffae4](https://github.com/STP-KAS/kaspa-master-file/commit/cdffae4) | Digest fold: rusty #1135 `ed09a8a` (PSKB sighash opt-in), #1136 `2c0df83` (IBD 20 MiB headers); #1104 naming review (head still `a5888da`). Updated `master.json` `updated` 2026-09-20. Pins hold. | **Hold** |

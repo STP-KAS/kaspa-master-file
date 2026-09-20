@@ -10,7 +10,7 @@ Front door: **[STP-KAS/kaspa-dapps](https://github.com/STP-KAS/kaspa-dapps)**
 
 Why: A GitHub link that says it shipped is a proposal, a branch, a release, or an activation — until you open it. A node release is not wallet support. This desk does not ship wallet integrations. There is no spendable L1 stable. App sequencing is not a settled product. Production dapps are not a useful spend until those two are settled.
 
-This repo stays the pin encyclopedia (compiler tag, KIPs, forum). Do not add another “what this pass did” section here.
+This repo stays the pin encyclopedia (compiler tag, KIPs, forum). **Not an oracle.** Keep facts here. Do not add another “what this pass did” section here.
 
 Money argument (no seeds): [`CRYPTO-FINANCE.md`](CRYPTO-FINANCE.md).
 
@@ -22,6 +22,6 @@ Retest of public STP-KAS GitHubs: [`RETEST.md`](RETEST.md).
 
 Community covenants stack (17 Sep, @kaspaunchained, not a KIP): https://x.com/kaspaunchained/status/2100571472561586192 · https://x.com/kaspaunchained/status/2100572500442980776
 
-Intern roundup (20 Sep, @kaspaunchained, catalog, not a pin): https://x.com/kaspaunchained/status/2101676311244915028 — KCC20 / Argent / DAGKnight / vProgs / x402. Do not weld. Desk master-file updated 20 Sep, **not pushed**.
+Intern roundup (20 Sep, @kaspaunchained, catalog, not a pin): https://x.com/kaspaunchained/status/2101676311244915028 — KCC20 / Argent / DAGKnight / vProgs / x402. Do not weld. Keep this encyclopedia, not an oracle.
 
 **Snapshot history** (what agents did, newest first): [`SNAPSHOT-HISTORY.md`](SNAPSHOT-HISTORY.md).

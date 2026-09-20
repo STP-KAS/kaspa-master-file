@@ -1,6 +1,6 @@
 # AGENTS — kaspa-master-file
 
-This repo is the Kaspa **pin encyclopedia**. Front door: [STP-KAS/kaspa-dapps](https://github.com/STP-KAS/kaspa-dapps).
+This repo is the Kaspa **pin encyclopedia**. Front door: [STP-KAS/kaspa-dapps](https://github.com/STP-KAS/kaspa-dapps). **Not an oracle.** Do not keep a parallel Kaspa-oracle report. Pins, catalog tweets, and honest object splits live in `README.md` + `master.json`.
 
 Claims prompt (paste into the desk bot): [`DESK-PROMPT.md`](DESK-PROMPT.md).
 Node card: [`DESK-BOT.md`](DESK-BOT.md).

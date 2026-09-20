@@ -6,13 +6,24 @@
 
 # Kaspa master file
 
-**Not Kaspa core. Not official KNS.** Public pin list by [@StppStp](https://x.com/StppStp) / [STP-KAS](https://github.com/STP-KAS). Freeze: **18 Sep 2026**.
+**Not Kaspa core. Not official KNS.** Public pin list by [@StppStp](https://x.com/StppStp) / [STP-KAS](https://github.com/STP-KAS). Freeze: **20 Sep 2026**.
 
 Crypto-finance desk law (Grok Build / Ask / Bot, **no seeds**): [`CRYPTO-FINANCE.md`](CRYPTO-FINANCE.md).
 
 **Desk Grok Bot — standing authority:** [`DESK-BOT.md`](DESK-BOT.md) · [`AGENTS.md`](AGENTS.md). When this master file is named, Grok Build **shall** use kaspa bot (mainnet archival) and tn10 bot (TN10 node + miners) for audits, dApps, and tests. Do not re-ask. **No seeds. Do not paste TN10 into kaspa bot.**
 
 **Retest (17 Sep 2026):** every public STP-KAS GitHub (**48**) vs these pins — [`RETEST.md`](RETEST.md). Pins **hold**. argent-xai `check.ps1` **DRIFT** (PR #63). kns comment-grep still red.
+
+### What this pass did (20 Sep 2026 — rusty master eb0a856)
+
+| Track | Delta | Honest |
+| --- | --- | --- |
+| rusty-kaspa | Master tip **eb0a856**. [#1136](https://github.com/kaspanet/rusty-kaspa/pull/1136) merged IBD 20 MiB chunks. [#1137](https://github.com/kaspanet/rusty-kaspa/pull/1137) merged `RejectCoinbase`. | Node tip moved. No new node tag. |
+| DAGKnight | Tip still `ad45e24`. #1104/#1121/#1122 unchanged. | Not shipped. |
+| vProgs | #147 → `1d449964`. [#148](https://github.com/kaspanet/vprogs/pull/148) draft restart-resume. | Research only. |
+| kaspa.stream | app-version `9f4088ca…` (was `7ab5ce0…`). | Explorer deploy; no changelog. |
+
+Canonical JSON: [`master.json`](master.json) `updated` **2026-09-20**.
 
 ### What this pass did (19 Sep 2026 — Grok Build check of tn10 bot #1134)
 

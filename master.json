@@ -133,11 +133,11 @@
       "id": "kaspanet",
       "title": "kaspanet GitHub",
       "rows": [
-        {"name": "rusty-kaspa", "url": "https://github.com/kaspanet/rusty-kaspa", "chip": "node", "note": "v2.0.0 Toccata · v2.0.1. dagknight unmerged. New 20 Sep: #1135 PSKB non-SIG_HASH_ALL opt-in (ed09a8a); #1136 IBD headers 20 MiB chunks (2c0df83). DK cluster: #1104 head a5888da (review naming wave ~07:14Z); #1127 #1131 #1132 #1124; #1122 332ec6c; #1121 06efd83. Last dagknight tip still 8 Sep. Not shipped."},
+        {"name": "rusty-kaspa", "url": "https://github.com/kaspanet/rusty-kaspa", "chip": "node", "note": "v2.0.0 Toccata · v2.0.1. Master tip eb0a856 (20 Sep): #1136 merged IBD 20 MiB chunks (f2f87ff); #1137 merged RejectCoinbase from mempool. dagknight unmerged (tip still ad45e24). Open: #1135 ed09a8a PSKB sighash opt-in; DK #1104 a5888da, #1127 #1131 #1132 #1124, #1122 332ec6c, #1121 06efd83. Not shipped DK."},
         {"name": "kips", "url": "https://github.com/kaspanet/kips", "chip": "law", "note": "Improvement proposals."},
         {"name": "silverscript", "url": "https://github.com/kaspanet/silverscript/releases/tag/v1.0.0", "chip": "v1.0.0", "note": "Ori / someone235 tagged 9 Sep 2026, commit 3ed9733. SemVer v1. Tip unchanged through 18 Sep. Open holes: #243 compute-budget, #249/#250 State[].split tuple, #251 struct-array index. Not a second tag."},
         {"name": "kccs", "url": "https://github.com/kaspanet/kccs", "chip": "Draft", "note": "Refuse as a gram token. KCC-0012 wallet discovery is kccs#24 (open ready; clarifications 18 Sep 15:27–15:31Z; still Draft / not Final). kccs#27 kcc-1↔kcc0 compliance open ready head fa845057 (vectors + review/approval ~15:41Z). Also open: #26 KCC-23 MJ, #25 KCC0→Final, #23 p2pk-ecdsa, #20 KCC-0020 vectors. None adopted."},
-        {"name": "vprogs", "url": "https://github.com/kaspanet/vprogs", "chip": "research", "note": "No product testnet here. Open: #138/#144/#145/#146; #147 (19 Sep, head af5f9a0) shutdown drain + adaptive-reorg-filter disable + guest ELF refresh for chain_idx settlement (batch-processor/aggregator/runtime-processor). Research only."},
+        {"name": "vprogs", "url": "https://github.com/kaspanet/vprogs", "chip": "research", "note": "No product testnet here. Master still f9b84a8. Open: #138/#144/#145/#146; #147 head 1d449964 (shutdown drain + adaptive-reorg-filter disable + tests); #148 draft cbed6852 restart-resume journaling. Research only."},
         {"name": "kaspad (Go)", "url": "https://github.com/kaspanet/kaspad", "chip": "deprecated", "note": "Use rusty-kaspa."}
       ]
     },
@@ -255,6 +255,7 @@
       "id": "rnd-log",
       "title": "R&D / Discord log (public recaps)",
       "rows": [
+        {"name": "20 Sep rusty master eb0a856", "url": "https://github.com/kaspanet/rusty-kaspa/commit/eb0a856d4e1e", "chip": "node", "note": "Master tip eb0a856. #1136 merged IBD 20 MiB chunks; #1137 merged RejectCoinbase. DK still unmerged (ad45e24). vprogs #147→1d449964; #148 draft restart-resume. kaspa.stream app 9f4088ca…"},
         {"name": "20 Sep #1135/#1136 + #1104 naming", "url": "https://github.com/kaspanet/rusty-kaspa/pull/1135", "chip": "research", "note": "#1135 ed09a8a PSKB non-SIG_HASH_ALL opt-in; #1136 2c0df83 IBD 20 MiB header chunks. #1104 review naming (conflict_ordered_parents / IS_FREE / CODER); head still a5888da. Not shipped."},
         {"name": "19 Sep #1104 review wave 2", "url": "https://github.com/kaspanet/rusty-kaspa/pull/1104", "chip": "research", "note": "Continued review ~19:38–22:04Z (D-Stacks + STP-KAS): parent-index ordering vs #1132 shuffle; SmallVec; u16::MAX assert; hash API; mem::take; all_tips rename; TieBreakingContext. Head still a5888da. Issue #1134 desk note ~18:33Z. Not shipped."},
         {"name": "19 Sep vprogs#147 ELF + #1104 review", "url": "https://github.com/kaspanet/vprogs/pull/147", "chip": "research", "note": "#147 head af5f9a0 guest ELF refresh for chain_idx settlement. rusty #1104 review through ~17:42Z (Deref store-wrapper suggestion); head still a5888da. Not shipped."},
@@ -312,9 +313,12 @@
       "id": "intel-githubs",
       "title": "Extra GitHubs (intel pack)",
       "rows": [
+        {"name": "rusty#1137", "url": "https://github.com/kaspanet/rusty-kaspa/pull/1137", "chip": "merged", "note": "MERGED 20 Sep (eb0a856). Mempool RejectCoinbase + regression tests. Approved michaelsutton."},
+        {"name": "vprogs#148", "url": "https://github.com/kaspanet/vprogs/pull/148", "chip": "draft", "note": "Draft 20 Sep (cbed6852): restart-resume journaling for unsettled bundles / competitor settlements / gaps. Research only."},
+        {"name": "kaspa.stream app", "url": "https://kaspa.stream/", "chip": "explorer", "note": "app-version 9f4088ca… observed 20 Sep (was 7ab5ce0…). No public changelog."},
         {"name": "rusty#1135", "url": "https://github.com/kaspanet/rusty-kaspa/pull/1135", "chip": "open", "note": "Require explicit opt-in for non-SIG_HASH_ALL PSKB signing (someone235, 20 Sep, head ed09a8a)."},
-        {"name": "rusty#1136", "url": "https://github.com/kaspanet/rusty-kaspa/pull/1136", "chip": "open", "note": "Split headers to 20 MiB chunks during IBD (someone235, 20 Sep, head 2c0df83)."},
-        {"name": "vprogs#147", "url": "https://github.com/kaspanet/vprogs/pull/147", "chip": "open", "note": "Shutdown drain + adaptive-reorg-filter disable (wire-through). Head af5f9a0 (~12:56Z): refreshed guest ELF images for chain_idx settlement data. Research only."},
+        {"name": "rusty#1136", "url": "https://github.com/kaspanet/rusty-kaspa/pull/1136", "chip": "merged", "note": "MERGED 20 Sep (f2f87ff → master). Split pruning-point proofs/headers/trusted data to 20 MiB chunks during IBD."},
+        {"name": "vprogs#147", "url": "https://github.com/kaspanet/vprogs/pull/147", "chip": "open", "note": "Head 1d449964 (20 Sep): shutdown drain/commit + adaptive-reorg-filter disable + tests. Research only."},
         {"name": "kccs#26", "url": "https://github.com/kaspanet/kccs/pull/26", "chip": "open", "note": "KCC-23 MJ — Metadata JSON. Open ready 16 Sep. Not adopted."},
         {"name": "kccs#27", "url": "https://github.com/kaspanet/kccs/pull/27", "chip": "open", "note": "kcc-1: kcc0 compliance. Open ready head fa845057 (18 Sep). Large kcc-0001/vectors/conformance.json; variable-length canonical state fields discussed; deeper transition rules deferred. Review/approval activity through ~15:41Z. Not Final."},
         {"name": "rusty DK cluster", "url": "https://github.com/kaspanet/rusty-kaspa/pull/1104", "chip": "research", "note": "Open ready (not shipped): #1104 head a5888da (review through 20 Sep ~07:14Z — conflict_ordered_parents naming, IS_FREE, CODER type params; code unchanged), #1127 #1131 #1132 #1124; #1122 332ec6c; #1121 06efd83. Also open (non-DK): #1135 ed09a8a PSKB sighash opt-in; #1136 2c0df83 IBD 20 MiB header chunks. Last dagknight commit still 8 Sep."},

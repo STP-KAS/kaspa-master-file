@@ -779,3 +779,10 @@ Demand that matches the intel pack: wallet UX, fees, merchants, “is SilverScri
 | Gramlane | **Not integrated.** Same filter as the intel pack: AgenC is a Solana agent marketplace. |
 
 ---
+
+> **Standard disclaimer.** This GitHub, not the topic above.
+>
+> Intentions are good; thought process is questionable. STP remains delusional. Si vis pacem, para bellum.
+>
+> Intern at https://sixpack.wtf/  
+> X: https://x.com/StppStp · GitHub: https://github.com/STP-KAS

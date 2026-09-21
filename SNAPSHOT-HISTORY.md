@@ -8,6 +8,7 @@ Not a KIP. Not Kaspa core. A tweet is not a pin. This file is the agent/operator
 
 | When (Europe/Brussels) | Commit | What we did | Pins |
 | --- | --- | --- | --- |
+| 2026-09-21 | [a542d11](https://github.com/STP-KAS/kaspa-master-file/commit/a542d11) | tictactoe `92146b4` rides vprogs#152 draft head `74e24551`. Asked-for PR now exists. Guest ELF still `128dd05f`. | **Hold** |
 | 2026-09-21 | [e2f8097](https://github.com/STP-KAS/kaspa-master-file/commit/e2f8097) | tictactoe tip `522280d`: `just check` now fails on guest clippy (was `;`). Gate still typechecks old `bridge-live-lane` guest pin. | **Hold** |
 | 2026-09-21 | [ee3c2dc](https://github.com/STP-KAS/kaspa-master-file/commit/ee3c2dc) | kccs#25 merged: KCC-0 meta **Final** (`c0bb8f3`, IzioDev). Not KCC-1/2/20 Final. kccs README still lists KCC-0 as Draft. | **Hold** (KCC-20 still Draft) |
 | 2026-09-21 | [44141eb](https://github.com/STP-KAS/kaspa-master-file/commit/44141eb) | tictactoe `36ccdbc` pins vprogs `reorg-safety#ac67c5f9` (defer dead lane-proof, no open PR). Guest ELF still `128dd05f`. Notes on 36ccdbc / 3d106c2 / #148. | **Hold** |

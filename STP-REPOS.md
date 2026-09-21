@@ -72,7 +72,7 @@ Writer: Grok 4.7, Windows desk. Not Kaspa core. Not an audit.
 | [dotk-review](https://github.com/STP-KAS/dotk-review) | 15 Sep DOTK pass | Not an audit. Silverscript was not published. Was missing from REPOS.md. |
 | [delusional-stp-grok-mix](https://github.com/STP-KAS/delusional-stp-grok-mix) | Desk practice | Said Windows `npm test` fails until `.gitattributes`. grok-heavy-test says green after `216ad77`. Sentence fixed. |
 | [dagknight-test-grok](https://github.com/STP-KAS/dagknight-test-grok) | DK notebook | KIP-2 Proposed. Not consensus. #1131 is the e2e PR. Opening sentence is an aim, not a ship claim. |
-| [argent-xai](https://github.com/STP-KAS/argent-xai) | Argent claim desk | Freeze labeled 11 Sep, pins.json at PR #60. Live master is `e76ee07` (#63). Still no tag. Line added so the freeze is not read as the tip. |
+| [argent-xai](https://github.com/STP-KAS/argent-xai) | Argent claim desk | Freeze labeled 11 Sep, pins.json at PR #60. A later paragraph still said rules 5 and 6 were unimplemented. That fought #63 and the Now board. Fixed: those rules compile at `e76ee07`. Still no tag. |
 | [402-is-not-x402](https://github.com/STP-KAS/402-is-not-x402) | Costume catalog | Bind elldeeone `v1.0.0-rc.1`. kccs#4 is not adopted. Archived gateway is not the standard. Ishum is not x402. |
 
 ## Sentences fixed this pass

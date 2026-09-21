@@ -50,7 +50,7 @@ This block is the current pin board. Sections under it are receipts. If a receip
 | Check | Honest object |
 | --- | --- |
 | Object | Guest program + `ttd` runner wrapper + simnet e2e + Vite web. L1 follow/prove/settle live in vprogs, not here. |
-| Host pin | Workspace `Cargo.lock`: [kaspanet/vprogs](https://github.com/kaspanet/vprogs) branch **`settle-resume`** = [#148](https://github.com/kaspanet/vprogs/pull/148) head **`da2a7f26`**. rusty crates **`eb0a856`**. #148 is still **draft**. |
+| Host pin | **Receipt of that morning.** Workspace `Cargo.lock` then said `settle-resume` = [#148](https://github.com/kaspanet/vprogs/pull/148) `da2a7f26`. **Superseded the same day.** Current host pin is #152 `74e24551`. See **Now**. |
 | Guest pin | `guest/` is excluded from the workspace. `guest/Cargo.lock` still [biryukovmaxim/vprogs](https://github.com/biryukovmaxim/vprogs) **`bridge-live-lane#128dd05f`** (last guest pin [a9a44da](https://github.com/biryukovmaxim/vprog-tictactoe/commit/a9a44da), 16 Sep). Host `[patch]` does **not** apply to `just build-guest`. |
 | Docs vs code | `AGENTS.md` / `guest/src/lib.rs` still say local path / branch `guest-batteries`. README now: tn10 **exercised** in a private CUDA runbook [`a758a9b`](https://github.com/biryukovmaxim/vprog-tictactoe/commit/a758a9b) — **not** a public product. |
 | #23 | Open. Root cause: eager signer resolve before `Deposit` births the user. Fix is in [bd989be](https://github.com/biryukovmaxim/vprog-tictactoe/commit/bd989be) (`run.rs` lazy `resolve_pending`). Issue not closed. Vendored encoder wasm `0.1.5.tgz` last git write 16 Sep — self-transfer guard is in crate source, not the tarball. Companion: duplicate access-list ids still **panic** the guest (upstream vprogs). |

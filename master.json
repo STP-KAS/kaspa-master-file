@@ -78,7 +78,13 @@
           "name": "SilverScript holes past #251",
           "url": "https://github.com/kaspanet/silverscript/issues",
           "chip": "v1.0.0",
-          "note": "Tag still v1.0.0 / 3ed9733. Still open: #243 compute-budget, #249/#250 State[].split tuples, #251 struct-array index. Also open and missing from older pin lists: #252 readInputStateWithTemplate + validateOutputState crashes at runtime ('-N cannot be used as an array index'); #253 cli-debugger ignores signature_script_hex in test-file mode; #254 state: sugar can encode a non-active input with the active contract layout; #255 PR records a per-entry compute-budget estimate (updated 19 Sep). No second tag."
+          "note": "Tag still v1.0.0 / 3ed9733. Still open: #243 compute-budget, #249/#250 State[].split tuples, #251 struct-array index. Also open and missing from older pin lists: #252 readInputStateWithTemplate + validateOutputState crashes at runtime ('-N cannot be used as an array index'); #253 cli-debugger ignores signature_script_hex in test-file mode; #254 state: sugar can encode a non-active input with the active contract layout; #255 PR records a per-entry compute-budget estimate (updated 19 Sep). No second tag. 21 Sep night code read: GROK-47-THINKING.md. #249 tuple arm uses lower_scalar_expr on the unflattened __inline_N name; .0/.1 uses lower_struct_array_expr per leaf. #250 patches that arm and is unmerged. validateOutputState inner emits OpTxOutputSpk + OpEqualVerify and no OpTxOutputAmount (state.rs). #251 types ArrayIndex only when the source is an identifier (scalar_expr.rs)."
+        },
+        {
+          "name": "Grok 4.7 five code passes",
+          "url": "https://github.com/STP-KAS/kaspa-master-file/blob/main/GROK-47-THINKING.md",
+          "chip": "code",
+          "note": "21 Sep night. Not a pin change. Spec transfer dispatch tag 79c71c23. kcc20-live transfer tag c3d9f92f. transfer_delegator fd3ef14a on both. KCC-1 §11.1 vectors 2c49ed65 and 676b1a86 reproduced first. Encoded state diverges at byte 44: opcode 0x01 vs 0x20, so a strict §8.1 decoder rejects. Live transfer does not require leader amount >= 0; outputs cannot be negative, so a pre-existing negative leader burns other positive inputs. #30 unkeyed vectors f9f2a0b3… and 1a15d654… reproduced; keyed PublicKeyHash of the same keys is 91438cfb… and 4ba1a5f9…. #23 wants 0x05/0x06 inside the band #30 reserves. Neither PR is on main. x402 not in this pass. Forum clock stays halted."
         },
         {
           "name": "Do not weld",

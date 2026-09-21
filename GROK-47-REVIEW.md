@@ -36,7 +36,9 @@ The master file’s own morning receipt still printed host pin `da2a7f26` in the
 
 ## Verdict
 
-**54 agree** with the board after those three edits. None of them ship DAGKnight, an Argent tag, KCC-20 Final, a vProgs product, mainnet x402, or a spendable L1 stable.
+**54 agree** with the board after those three edits, scored on README heads. None of them ship DAGKnight, an Argent tag, KCC-20 Final, a vProgs product, mainnet x402, or a spendable L1 stable.
+
+22 Sep 2026 opened the KNS-spec files. That read is [`GROK-47-KNS-REVIEW.md`](GROK-47-KNS-REVIEW.md). README heads still agree. Undated files under the kns README do not. The comment-grep failure is in kns, not kns-spec.
 
 | Repo | Verdict | Checked against |
 | --- | --- | --- |
@@ -65,11 +67,11 @@ The master file’s own morning receipt still printed host pin `da2a7f26` in the
 | [kaspa-x402](https://github.com/STP-KAS/kaspa-x402) | Agree | Desk line binds rc.1. Upstream sentence “v1 release candidate” remains underneath it and is not a v1.0.0 release. |
 | [kaspa.org-kaspaexplained](https://github.com/STP-KAS/kaspa.org-kaspaexplained) | Agree, then updated 22 Sep | kaspa.org and kaspaexplained are the same kind of credible source. Lore matches the upgrade split. |
 | [kaspaexplained-delusional-stp](https://github.com/STP-KAS/kaspaexplained-delusional-stp) | Agree | Parker overlay. A demo oracle is not a protocol oracle. |
-| [kns](https://github.com/STP-KAS/kns) | Agree | Compiler pin v1.0.0. No foreign `readInputState`. |
+| [kns](https://github.com/STP-KAS/kns) | Agree on the README head | Compiler pin v1.0.0. No foreign `readInputState` call. 22 Sep file read found drift under that head: [`GROK-47-KNS-REVIEW.md`](GROK-47-KNS-REVIEW.md). |
 | [kns-dotk](https://github.com/STP-KAS/kns-dotk) | Agree | Not an audit. Not official KNS. |
 | [kns-kaspire-tn10-review](https://github.com/STP-KAS/kns-kaspire-tn10-review) | Agree | Argent is not the uniqueness layer. |
 | [kns-kasware-tn10-test](https://github.com/STP-KAS/kns-kasware-tn10-test) | Agree | Private. Banner. No competing pin in the README head. |
-| [kns-spec](https://github.com/STP-KAS/kns-spec) | Agree | silverc v1.0.0. Own-UTXO. 17 Sep comment-grep failure was not re-run. |
+| [kns-spec](https://github.com/STP-KAS/kns-spec) | Agree | silverc v1.0.0. Own-UTXO. The comment-grep failure is in kns, not here. 22 Sep file read: [`GROK-47-KNS-REVIEW.md`](GROK-47-KNS-REVIEW.md). |
 | [kusdt-bitcoffee](https://github.com/STP-KAS/kusdt-bitcoffee) | Agree | TN10, unaudited, not a dollar. Compiled at `3ed9733`. |
 | [mixer-concept](https://github.com/STP-KAS/mixer-concept) | Agree | Not a token. |
 | [ok](https://github.com/STP-KAS/ok) | Agree | Banner only. |

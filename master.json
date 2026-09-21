@@ -87,6 +87,12 @@
           "note": "21 Sep night. Not a pin change. Spec transfer dispatch tag 79c71c23. kcc20-live transfer tag c3d9f92f. transfer_delegator fd3ef14a on both. KCC-1 §11.1 vectors 2c49ed65 and 676b1a86 reproduced first. Encoded state diverges at byte 44: opcode 0x01 vs 0x20, so a strict §8.1 decoder rejects. Live transfer does not require leader amount >= 0; outputs cannot be negative, so a pre-existing negative leader burns other positive inputs. #30 unkeyed vectors f9f2a0b3… and 1a15d654… reproduced; keyed PublicKeyHash of the same keys is 91438cfb… and 4ba1a5f9…. #23 wants 0x05/0x06 inside the band #30 reserves. Neither PR is on main. x402 not in this pass. Forum clock stays halted."
         },
         {
+          "name": "Grok 4.7 KNS review",
+          "url": "https://github.com/STP-KAS/kaspa-master-file/blob/main/GROK-47-KNS-REVIEW.md",
+          "chip": "review",
+          "note": "22 Sep 2026 file read of kns-spec, kns, kns-dotk, dotk-review, kns-kaspire-tn10-review, and private kns-kasware-tn10-test. Not a pin change. Uniqueness stays indexer FCFS. kns README agrees with v1.0.0. Undated files under it still call the current compiler v1-rc1, and status.go still says KCC-0/1/2/20 are Draft. KCC-0's file is Final. Three KasName hashes: kit c8c06c1a, demo 8f2a7f69, PROTOCOL.md e7f981d9 matches neither JSON. Comment-grep test is kns/internal/framing/attack_test.go, not kns-spec. supertypo/dotk still 404. dotk-sdk and dotk-sdk-tx pushed 21 Sep and contain no .sil."
+        },
+        {
           "name": "Do not weld",
           "url": "https://github.com/STP-KAS/kaspa-master-file",
           "chip": "wrong",

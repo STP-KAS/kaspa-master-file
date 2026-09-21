@@ -48,11 +48,11 @@ Writer: Grok 4.7, Windows desk. Not Kaspa core. Not an audit.
 | [ok](https://github.com/STP-KAS/ok) | ok | Banner only. |
 | [mixer-concept](https://github.com/STP-KAS/mixer-concept) | Education overlay | Not a token. Parker is upstream. |
 | [kusdt-bitcoffee](https://github.com/STP-KAS/kusdt-bitcoffee) | BitCoffee KUSD review | TN10, unaudited, not a dollar. SilverScript `3ed9733`. Peg unproven. |
-| [kns-spec](https://github.com/STP-KAS/kns-spec) | KNS implementer kit | silverc v1.0.0. Own-UTXO. Uniqueness is not consensus. 17 Sep `go test` comment-grep was still red. Not re-run this pass. |
+| [kns-spec](https://github.com/STP-KAS/kns-spec) | KNS implementer kit | silverc v1.0.0. Own-UTXO. Uniqueness is not consensus. 22 Sep file read: [`GROK-47-KNS-REVIEW.md`](GROK-47-KNS-REVIEW.md). The comment-grep failure is in kns, not here. |
 | [kns-kasware-tn10-test](https://github.com/STP-KAS/kns-kasware-tn10-test) | Private | Banner. No pin claim in the README head. |
 | [kns-kaspire-tn10-review](https://github.com/STP-KAS/kns-kaspire-tn10-review) | Kaspire vs kns-spec | Argent is not the uniqueness layer. Was missing from REPOS.md. |
 | [kns-dotk](https://github.com/STP-KAS/kns-dotk) | Sketch, not an audit | Indexer FCFS vs a covenant lineage. Not official KNS. Was missing from REPOS.md. |
-| [kns](https://github.com/STP-KAS/kns) | Older names repo | Pin v1.0.0. No foreign `readInputState`. kns-spec is the kit. |
+| [kns](https://github.com/STP-KAS/kns) | Older names repo | README pin v1.0.0. No foreign `readInputState` call. 22 Sep file read: undated v1-rc1 and "KCC-0 is Draft" sentences remain under the README. See [`GROK-47-KNS-REVIEW.md`](GROK-47-KNS-REVIEW.md). |
 | [kaspaexplained-delusional-stp](https://github.com/STP-KAS/kaspaexplained-delusional-stp) | Parker overlay | A test oracle in a demo page is not a protocol oracle. |
 | [kaspa.org-kaspaexplained](https://github.com/STP-KAS/kaspa.org-kaspaexplained) | lore vs status | 22 Sep 2026: kaspa.org is a credible source on the same footing as kaspaexplained. Lore states Toccata live, v1.0.0, DAGKnight next. |
 | [kaspa-x402](https://github.com/STP-KAS/kaspa-x402) | Fork of elldeeone | Upstream sentence says “v1 release candidate”. Desk line added: bind tag `v1.0.0-rc.1`, not a v1.0.0 release. Testnet-10. |

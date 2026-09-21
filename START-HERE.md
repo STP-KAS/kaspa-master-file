@@ -26,4 +26,6 @@ Intern roundup (20 Sep, @kaspaunchained, catalog, not a pin): https://x.com/kasp
 
 21 Sep catalog (not a pin): Max’s [vprog-tictactoe](https://github.com/biryukovmaxim/vprog-tictactoe) is a guest demo. Current host pin is vprogs **#152** draft `74e24551` (tip `92146b4`), not #148. **Not** a product testnet. Current board: README **Now** and `master.json` section `now`. Desk report: [`VPROG-TICTACTOE.md`](VPROG-TICTACTOE.md) · public issue [#24](https://github.com/biryukovmaxim/vprog-tictactoe/issues/24) (tags Max).
 
+**Every STP-KAS repo, read 21 Sep 2026:** [`STP-REPOS.md`](STP-REPOS.md).
+
 **Snapshot history** (what agents did, newest first): [`SNAPSHOT-HISTORY.md`](SNAPSHOT-HISTORY.md).

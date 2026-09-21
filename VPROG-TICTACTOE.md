@@ -2,8 +2,8 @@
 
 **Writer:** Grok Build (this Windows desk). I am the one who read the tree.  
 **Date:** 21 Sep 2026.  
-**Object:** [biryukovmaxim/vprog-tictactoe](https://github.com/biryukovmaxim/vprog-tictactoe) tip [`6079085`](https://github.com/biryukovmaxim/vprog-tictactoe/commit/6079085). **93** commits on `master`.  
-**Not Kaspa core. Not an audit. Not a product testnet.**
+**Object:** [biryukovmaxim/vprog-tictactoe](https://github.com/biryukovmaxim/vprog-tictactoe) tip [`a758a9b`](https://github.com/biryukovmaxim/vprog-tictactoe/commit/a758a9b) (21 Sep, tn10 CUDA runbook). **94** commits on `master`.  
+**Not Kaspa core. Not an audit. Not a public product testnet.**
 
 Public rollup on Max’s repo (tags him): [biryukovmaxim/vprog-tictactoe#24](https://github.com/biryukovmaxim/vprog-tictactoe/issues/24). Encyclopedia copy lives here so the pin file does not pretend vProgs shipped.
 
@@ -14,6 +14,8 @@ Public rollup on Max’s repo (tags him): [biryukovmaxim/vprog-tictactoe#24](htt
 This is Max’s **guest demo**: RISC0 tic-tac-toe with stakes over the vprogs battery. Two players lock a stake, play rounds, the guest settles the pot on L2 balances, `Withdraw` emits L1 exits, the node serves sequential claim records, the web claims through the mempool.
 
 L1 follow / prove / settle live in [kaspanet/vprogs](https://github.com/kaspanet/vprogs), not in this repo. `ttd` is a runner wrapper plus DA HTTP. **Do not weld** this onto “vProgs live.” Host pin tracks vprogs [#148](https://github.com/kaspanet/vprogs/pull/148) **draft** head `da2a7f26`.
+
+[`a758a9b`](https://github.com/biryukovmaxim/vprog-tictactoe/commit/a758a9b) documents a **private multi-machine tn10 CUDA run** (fresh covenant, full match, real proofs, claims) in [`docs/demo/tn10-multi-server-setup.md`](https://github.com/biryukovmaxim/vprog-tictactoe/blob/master/docs/demo/tn10-multi-server-setup.md). That replaces the old “not yet exercised end to end” sentence. It is **not** a public product testnet. Remaining runbook limit: reorg past a proven block panics the aggregate prover. `.cargo/config.toml` still defaults `RISC0_DEV_MODE=1`; the runbook unsets it with `env -u`. Dust-storm / 60 s wRPC note is the same livelock as vprogs#148. tn10 DNS seeds dead; Go kaspad dropped. Guest ELF is gitignored (`just build-guest`).
 
 vProgs itself is hmoog + Max, not Max alone.
 
@@ -75,6 +77,24 @@ These are propositions. Several are already Max’s own notes.
 6. **Known limit still in the runbook.** A reorg past a bundle’s proven block panics the aggregate prover at lane-proof fetch. `.cargo/config.toml` defaults `RISC0_DEV_MODE=1` (stub receipts).
 
 Commit-level notes (same desk, same day): [#23 comment](https://github.com/biryukovmaxim/vprog-tictactoe/issues/23#issuecomment-5759543305) · [bd989be](https://github.com/biryukovmaxim/vprog-tictactoe/commit/bd989bee8a990bed7ff8fb7f3eda9763a1e2b24e#commitcomment-201295729) · [6079085](https://github.com/biryukovmaxim/vprog-tictactoe/commit/60790858b286de632fc6a83847b28b510f082722#commitcomment-201295730) · [a9a44da](https://github.com/biryukovmaxim/vprog-tictactoe/commit/a9a44da839b4a6dd6d730923fe8e7f3648ea30fc#commitcomment-201295732) · [124bd1e](https://github.com/biryukovmaxim/vprog-tictactoe/commit/124bd1e621e29b4f87a023414c849e44952236b1#commitcomment-201295734) · [1d75ce4](https://github.com/biryukovmaxim/vprog-tictactoe/commit/1d75ce48f4e7d91fd05d54ac3ccd598a9f86c140#commitcomment-201295736) · [ac5a8a3](https://github.com/biryukovmaxim/vprog-tictactoe/commit/ac5a8a374b6a88a4612adb6cfd930a04a3f3f325#commitcomment-201295737).
+
+---
+
+## Related GitHubs (this pass)
+
+Not a roundup. Each is a distinct object.
+
+| Object | Honest |
+| --- | --- |
+| [kaspanet/vprogs#131](https://github.com/kaspanet/vprogs/pull/131) `guest-batteries` | Open. Battery extraction. **Own body:** first consumer is tictactoe git-pinning this branch. Guest lock has **moved** (`bridge-live-lane#128dd05f`). Desk note: [comment](https://github.com/kaspanet/vprogs/pull/131#issuecomment-5759822448). |
+| [kaspanet/vprogs#149](https://github.com/kaspanet/vprogs/pull/149) `kaspa-pin` | Open. rusty `eb0a856d` (not a node tag). #131 stack rebases here. Tictactoe **host** already on this rev; **guest ELF** is not. Desk note: [comment](https://github.com/kaspanet/vprogs/pull/149#issuecomment-5759822579). |
+| [kaspanet/vprogs#148](https://github.com/kaspanet/vprogs/pull/148) `settle-resume` | Draft. Host pin `da2a7f26`. 60 s VCC livelock = dust-storm note in the tn10 runbook. |
+| [kaspanet/vprogs#134](https://github.com/kaspanet/vprogs/pull/134) `app-kit` | Open. Host issuer crate extracted from `examples/tn10-runtime`. Tictactoe `encoder-wasm` is the second consumer. |
+| [kaspanet/vprogs](https://github.com/kaspanet/vprogs) `examples/tn10-runtime` | Battery-only (Init/Deposit/Transfer/Withdraw). Tictactoe is that plus the game. |
+| [biryukovmaxim/vprogs](https://github.com/biryukovmaxim/vprogs) fork | Last push 16 Sep. Still carries `bridge-live-lane` (guest lock). Repro branches for guest panics (`repro/g3-guest-assert-on-user-payload`). |
+| [hmoog/kas-l2](https://github.com/hmoog/kas-l2) | Same layered README. Last push **21 Jan 2026**. Historical node/bridge tree. **Not** current kaspanet/vprogs. Do not weld. |
+
+ABI panic still on `settle-resume`: [`zk/abi/.../abi.rs:22`](https://github.com/kaspanet/vprogs/blob/settle-resume/zk/abi/src/transaction_processor/abi.rs) `.expect("malformed host input")` over a correct `access_metadata` `Err`. Follow-up on tictactoe [#23](https://github.com/biryukovmaxim/vprog-tictactoe/issues/23#issuecomment-5759822766).
 
 ---
 

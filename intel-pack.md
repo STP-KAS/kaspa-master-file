@@ -1,5 +1,7 @@
 # Kaspa High-Value Intel Master Pack
 
+**Current pins are not this pack.** Read README **Now** and `master.json` section `now` (21 Sep 2026, Grok 4.7). Tables below are dated receipts and can lag. In particular: KCC-0’s file is **Final** (`c0bb8f3`) while the kccs README index still says Draft; tictactoe’s host pin is vprogs **#152** `74e24551`, not #148; vprogs #147’s head is `74ee1b7d`, not `1d449964`; kccs#29 proposes Draft KCC-3/4/5 and is not adopted.
+
 **Date:** 2026-07-26 (registry updated **2026-09-12**; SilverScript pin **2026-09-09**)  
 **Purpose:** Single index of community + founder intel for future projects.  
 **Public copy:** `LOCAL/…` paths are this machine. Chat dumps and CSVs are **not** in this GitHub repo.
@@ -33,7 +35,7 @@ Live L1 snapshot (api.kaspa.org, this date) plus kaspaexplained.com / rusty-kasp
 | Hashrate | **~347.6 PH/s** (API field ~347.6e3; treat as TH/s → PH/s) | api.kaspa.org/info/hashrate |
 | Covenant adoption | Early, real. Sep 1 indexer baseline still on the live page: **84,196** covenants ever, **687** still active, **~1.56M KAS**. TN10 ~88,493 active. | kaspaexplained.com/build-on-kaspa |
 | Silverscript | **v1.0.0 tagged** (9 Sep, `3ed9733`). Compiler pin, not an audited-app claim. Foreign `readInputState` framing guard **#234 closed unmerged**. Artifact has **no compute-budget estimate** (#243 open). **#249** `State[].split()` tuple destructure broken on this pin; **#250** open. | kaspanet/silverscript |
-| vProgs | **Roadmap.** No public product testnet, no releases. Host-side claim kit **#139 open**. Resource indexer **#140 open**. Bridge lane-anchor **#142 open** (10 Sep). #148 draft head `da2a7f26`. Guest demo [vprog-tictactoe](https://github.com/biryukovmaxim/vprog-tictactoe) is **not** that product. | kaspanet/vprogs |
+| vProgs | **Roadmap.** No public product testnet, no releases. Master still `f9b84a8`. #148 draft `da2a7f26` is the settle-resume parent. Guest demo [vprog-tictactoe](https://github.com/biryukovmaxim/vprog-tictactoe) host-pins **#152** `74e24551`, not this row’s older #148 pin. **Not** a product. See README Now. | kaspanet/vprogs |
 | Argent ICC | Unaudited offline demos only. Not production SC. **#59** 8 Sep, **#60** 10 Sep, **#63 merged 14 Sep** (rules 5/6 compile). **#62 open**. No tag. README: not release-ready. Getting-started: Izio 16 Sep template `./setup`. | argent-lang/argent |
 | KCC-0020 | Spec text merged, **Status: Draft**. Conformance vectors **#20 open**. KCC-2 ECDSA P2PK **#23 open**. KCC-0021 / 0402 still open drafts. | kaspanet/kccs |
 | KCC-0012 | **Draft.** Browser wallet provider + discovery ([kccs#24](https://github.com/kaspanet/kccs/pull/24), 11 Sep). No public implementation. Not adopted. | kaspanet/kccs |

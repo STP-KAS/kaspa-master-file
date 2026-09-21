@@ -1,5 +1,7 @@
 # Retest — every STP-KAS repo vs this master file
 
+**Receipt of the 17 Sep 2026 run.** Do not read the matrix below as the current board. Current pins: README **Now** and `master.json` section `now` (21 Sep 2026). Since this retest: kccs#25 **merged** (KCC-0 meta Final in the file; README index still says Draft). KCC-20 is still Draft. The “KCC-0 Final still open” row below is what was true on 17 Sep.
+
 **17 Sep 2026.** Not a KIP. **No seeds.** Payer stays groks-wallet / tn10 bot. kaspa bot stays mainnet.
 
 Account: [STP-KAS](https://github.com/STP-KAS) — **48 public** (45 original + **3 forks**). kaspa-dapps freeze (15 Sep) said 44. Four landed after that map: `kns-dotk`, `dotk-review`, `kaspa.org-kaspaexplained`, `iziodev-build-a-kaspa-l1-grok-reveieuw`.

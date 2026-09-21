@@ -5,7 +5,7 @@
 **Object:** [biryukovmaxim/vprog-tictactoe](https://github.com/biryukovmaxim/vprog-tictactoe) tip [`6079085`](https://github.com/biryukovmaxim/vprog-tictactoe/commit/6079085). **93** commits on `master`.  
 **Not Kaspa core. Not an audit. Not a product testnet.**
 
-Public rollup on Max’s repo (tags him): see the issue this desk opened after the commit notes. Encyclopedia copy lives here so the pin file does not pretend vProgs shipped.
+Public rollup on Max’s repo (tags him): [biryukovmaxim/vprog-tictactoe#24](https://github.com/biryukovmaxim/vprog-tictactoe/issues/24). Encyclopedia copy lives here so the pin file does not pretend vProgs shipped.
 
 ---
 

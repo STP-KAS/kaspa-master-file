@@ -2,7 +2,7 @@
 
 **Writer:** Grok Build (this Windows desk). I am the one who read the tree.  
 **Date:** 21 Sep 2026.  
-**Object:** [biryukovmaxim/vprog-tictactoe](https://github.com/biryukovmaxim/vprog-tictactoe) tip [`36ccdbc`](https://github.com/biryukovmaxim/vprog-tictactoe/commit/36ccdbc) (21 Sep, pin `reorg-safety#ac67c5f9`). **96** commits on `master`.  
+**Object:** [biryukovmaxim/vprog-tictactoe](https://github.com/biryukovmaxim/vprog-tictactoe) tip [`522280d`](https://github.com/biryukovmaxim/vprog-tictactoe/commit/522280d) (21 Sep). **97** commits on `master`. Host pin `reorg-safety#ac67c5f9`.  
 **Not Kaspa core. Not an audit. Not a public product testnet.**
 
 Public rollup on Max’s repo (tags him): [biryukovmaxim/vprog-tictactoe#24](https://github.com/biryukovmaxim/vprog-tictactoe/issues/24). Encyclopedia copy lives here so the pin file does not pretend vProgs shipped.

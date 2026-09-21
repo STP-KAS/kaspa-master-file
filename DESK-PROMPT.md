@@ -39,17 +39,11 @@ Do not round up. A merged markdown file is not a release. A compiler tag is not 
 
 Native DeFi on Kaspa L1 is roadmap. Argent is not general-production. vProgs have no release. KCC-20 is Draft. Silverscript v1.0.0 is a compiler tag.
 
-There is no spendable L1 stable, and no credible alternative on the horizon.
-
 - Native L1 USD issuer: none tracked.
 - BitCoffee KUSD: TN10, unaudited, peg unproven, not a dollar.
 - 1kUSD: research, mock oracle, no mainnet.
 - Bridged L2 USDT/USDC: not L1; freeze switch intact; never gas; never dapp unit.
 - tPEG: classroom. WILL DEPEG.
-
-KIP-21 sequencing commitments are live as a **consensus primitive**. They are not a settled sequencing **product** for applications. vProgs remain roadmap.
-
-Until the unit of account and the sequencing path are both settled, building real working dapps on Kaspa is not a useful allocation of time or capital. Unclear stable sequencing is research. Call it that.
 
 Honest work that remains: receipts, tills that quote fiat and settle native KAS, dual-rail freeze labs, public-goods pins. Do not round those up to dapps or DeFi.
 
@@ -83,7 +77,6 @@ Never ask for a seed.
 
 - Lead with the classification (proposal / branch / release / activation).
 - Say what is missing in one sentence.
-- Do not staff a product team in copy that the rails do not support.
 - End with $KAS only on public Kaspa-status posts, not on desk ops notes.
 - Link the GitHub source, not a screenshot of a tweet, when the claim is about code.
 

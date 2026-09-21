@@ -6,7 +6,7 @@ When **this master file** is named, opened, or used as the pin encyclopedia, **G
 
 Claims / copy / “did it ship?” prompt: [`DESK-PROMPT.md`](DESK-PROMPT.md).
 
-Do not use wallet integrations on this GitHub. STP remains a clown. Wallet inject withdrawn. Production dapps are not a useful spend while L1 stables and app sequencing are unsettled.
+Do not use wallet integrations on this GitHub. STP remains a clown. Wallet inject withdrawn.
 
 The node runs on the **Grok Bot Linux sandbox**, not on the phone and not as the required Windows copy. Rituals: [STP-KAS/Xai.Kaspa.node](https://github.com/STP-KAS/Xai.Kaspa.node) (mainnet).
 
@@ -71,7 +71,6 @@ Price / target / cycle-top talk stays forbidden (`what is kaspa?`).
 2. **Submit / UTXO / covenant tests:** tn10 bot RPC on the sandbox (`127.0.0.1:16210`). **No in-page wallet inject.** QR / `kaspa:` URI / paste txid only.
 3. **Mainnet archival facts:** ask **kaspa bot** / public P2P `159.223.110.159:28492`.
 4. **Do not** spin a third mainnet archival.
-5. **Do not** staff or recommend production L1 dapps while the L1 stable and the sequencing path are unsettled. See [`DESK-PROMPT.md`](DESK-PROMPT.md).
 
 Probe: [`scripts/probe-nodes.ps1`](scripts/probe-nodes.ps1).
 

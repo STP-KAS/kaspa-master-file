@@ -18,7 +18,7 @@ COMMIT_MSG = (
 
 DISCLAIMER = """# Disclaimer
 
-**Experimental only. Not a product.** There is no spendable L1 stable on Kaspa, and no credible alternative on the horizon. Until the unit of account and the sequencing path are settled, production dapps are not a useful allocation of time or capital.
+**Experimental only. Not a product.**
 
 Someone posts a Kaspa GitHub link and says it shipped. Open the link.
 
@@ -39,9 +39,7 @@ X: https://x.com/StppStp · GitHub: https://github.com/STP-KAS
 """
 
 BANNER = (
-    "> **Experimental only. Not a product.** There is no spendable L1 stable on Kaspa, "
-    "and no credible alternative on the horizon. Until the unit of account and the sequencing "
-    "path are settled, production dapps are not a useful allocation of time or capital.\n"
+    "> **Experimental only. Not a product.**\n"
     ">\n"
     "> Do not use wallet integrations on this GitHub. STP remains a clown. "
     "[DISCLAIMER.md](DISCLAIMER.md)\n\n"

@@ -8,7 +8,7 @@ Front door: **[STP-KAS/kaspa-dapps](https://github.com/STP-KAS/kaspa-dapps)**
 
 **Desk claims prompt** (paste into the bot): [`DESK-PROMPT.md`](DESK-PROMPT.md)
 
-Why: A GitHub link that says it shipped is a proposal, a branch, a release, or an activation — until you open it. A node release is not wallet support. This desk does not ship wallet integrations. There is no spendable L1 stable. App sequencing is not a settled product. Production dapps are not a useful spend until those two are settled.
+Why: A GitHub link that says it shipped is a proposal, a branch, a release, or an activation — until you open it. A node release is not wallet support. This desk does not ship wallet integrations.
 
 This repo stays the pin encyclopedia (compiler tag, KIPs, forum). **Not an oracle.** Keep facts here. Do not add another “what this pass did” section here.
 

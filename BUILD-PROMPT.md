@@ -18,11 +18,11 @@ On **every** STP-KAS GitHub, including node guides, reviews, and tills:
 1. Put `DISCLAIMER.md` at the repo root (same text as kaspa-master-file/DISCLAIMER.md).
 2. Lead `README.md` with this banner if it is missing:
 
-> **Experimental only. Not a product.** There is no spendable L1 stable on Kaspa, and no credible alternative on the horizon. Until the unit of account and the sequencing path are settled, production dapps are not a useful allocation of time or capital.
+> **Experimental only. Not a product.**
 >
 > Do not use wallet integrations on this GitHub. STP remains a clown. [DISCLAIMER.md](DISCLAIMER.md)
 
-Do this even when the repo has no wallet code. The disclaimer is not about inject. It is about stables and sequencing.
+Do this even when the repo has no wallet code.
 
 GitHub user bio is `Experimental only.`
 
@@ -35,8 +35,6 @@ Then check the software a user actually runs. If the feature needs wallet suppor
 Do not round up.
 
 ### Rule 2 — not a product
-
-There is no spendable L1 stable, and no credible alternative on the horizon. KIP-21 is a consensus primitive, not a settled app-sequencing product. Until those two are settled, building real working dapps on Kaspa is not a useful spend of time or resources. Call that research. Do not staff a product.
 
 Honest work: receipts, tills that quote fiat and settle native KAS, dual-rail freeze labs, public-goods pins, node guides. Do not round those up to dapps.
 

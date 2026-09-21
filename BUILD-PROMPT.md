@@ -24,10 +24,7 @@ On **every** STP-KAS GitHub, including node guides, reviews, and tills:
 
 Do this even when the repo has no wallet code. The disclaimer is not about inject. It is about stables and sequencing.
 
-GitHub user bio is 160 characters. Keep:
-`Experimental only. No L1 stable; sequencing unsettled. Production Kaspa dapps are not a useful spend of time or capital.`
-If the bio is empty or weaker, set it with:
-`gh api user -X PATCH -f bio="Experimental only. No L1 stable; sequencing unsettled. Production Kaspa dapps are not a useful spend of time or capital."`
+GitHub user bio is `Experimental only.`
 
 ### Rule 1 — the shipped filter
 

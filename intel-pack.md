@@ -33,7 +33,7 @@ Live L1 snapshot (api.kaspa.org, this date) plus kaspaexplained.com / rusty-kasp
 | Hashrate | **~347.6 PH/s** (API field ~347.6e3; treat as TH/s → PH/s) | api.kaspa.org/info/hashrate |
 | Covenant adoption | Early, real. Sep 1 indexer baseline still on the live page: **84,196** covenants ever, **687** still active, **~1.56M KAS**. TN10 ~88,493 active. | kaspaexplained.com/build-on-kaspa |
 | Silverscript | **v1.0.0 tagged** (9 Sep, `3ed9733`). Compiler pin, not an audited-app claim. Foreign `readInputState` framing guard **#234 closed unmerged**. Artifact has **no compute-budget estimate** (#243 open). **#249** `State[].split()` tuple destructure broken on this pin; **#250** open. | kaspanet/silverscript |
-| vProgs | **Roadmap.** No public product testnet, no releases. Host-side claim kit **#139 open**. Resource indexer **#140 open**. Bridge lane-anchor **#142 open** (10 Sep). | kaspanet/vprogs |
+| vProgs | **Roadmap.** No public product testnet, no releases. Host-side claim kit **#139 open**. Resource indexer **#140 open**. Bridge lane-anchor **#142 open** (10 Sep). #148 draft head `da2a7f26`. Guest demo [vprog-tictactoe](https://github.com/biryukovmaxim/vprog-tictactoe) is **not** that product. | kaspanet/vprogs |
 | Argent ICC | Unaudited offline demos only. Not production SC. **#59** 8 Sep, **#60** 10 Sep, **#63 merged 14 Sep** (rules 5/6 compile). **#62 open**. No tag. README: not release-ready. Getting-started: Izio 16 Sep template `./setup`. | argent-lang/argent |
 | KCC-0020 | Spec text merged, **Status: Draft**. Conformance vectors **#20 open**. KCC-2 ECDSA P2PK **#23 open**. KCC-0021 / 0402 still open drafts. | kaspanet/kccs |
 | KCC-0012 | **Draft.** Browser wallet provider + discovery ([kccs#24](https://github.com/kaspanet/kccs/pull/24), 11 Sep). No public implementation. Not adopted. | kaspanet/kccs |
@@ -483,6 +483,8 @@ No testnet. No releases. Active construction of a based-runtime:
 - Snapshot stack **#127 / #128 / #129 / #130** (builder / save / restore / verify) — mixed open/closed.
 - **#132** reorg recovery **merged**; **#136** reorg-flapped-fork survival **open**.
 - Early node/bridge work: hmoog (#7 L1 bridge, #11 node framework, #16 CLI, …).
+- **#148 draft** (21 Sep head `da2a7f26`, branch `settle-resume`) — settler resume after TN10 60s `get_virtual_chain_from_block_v2` livelock. **Not merged. Not a product.**
+- **Guest demo, not this org:** [biryukovmaxim/vprog-tictactoe](https://github.com/biryukovmaxim/vprog-tictactoe) (93 commits, tip `6079085`). Host lock tracks #148 `da2a7f26`. Guest ELF still fork `bridge-live-lane#128dd05f`. Open [#23](https://github.com/biryukovmaxim/vprog-tictactoe/issues/23). **Do not claim vProgs live.**
 
 Sutton transcript still applies: sequencing/DA on L1, execution off L1, validity proofs later. **Build order item 6 — after wallet, Sil templates, indexer, POS.**
 

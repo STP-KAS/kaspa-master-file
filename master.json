@@ -1,7 +1,7 @@
 {
   "title": "Kaspa master file",
   "repo": "https://github.com/STP-KAS/kaspa-master-file",
-  "updated": "2026-09-20",
+  "updated": "2026-09-21",
   "disclaimer": "Not Kaspa core. Not official KNS. @StppStp. Merged Active KIP is law. Open PR is not.",
   "sections": [
     {
@@ -138,7 +138,7 @@
         {"name": "kips", "url": "https://github.com/kaspanet/kips", "chip": "law", "note": "Improvement proposals."},
         {"name": "silverscript", "url": "https://github.com/kaspanet/silverscript/releases/tag/v1.0.0", "chip": "v1.0.0", "note": "Ori / someone235 tagged 9 Sep 2026, commit 3ed9733. SemVer v1. Tip unchanged through 18 Sep. Open holes: #243 compute-budget, #249/#250 State[].split tuple, #251 struct-array index. Not a second tag."},
         {"name": "kccs", "url": "https://github.com/kaspanet/kccs", "chip": "Draft", "note": "Refuse as a gram token. KCC-0012 wallet discovery is kccs#24 (open ready head 7159d48; 20 Sep amend; still Draft / not Final). kccs#27 kcc-1↔kcc0 compliance open ready head fa845057 (Manyfestation + saefstroem APPROVED; unmerged). Issue #28: four public “KCC20” objects share a name but not one ABI/byte layout — no honest single reference until layout matches. Also open: #26 KCC-23 MJ, #25 KCC0→Final, #23 p2pk-ecdsa, #20 KCC-0020 vectors. None adopted."},
-        {"name": "vprogs", "url": "https://github.com/kaspanet/vprogs", "chip": "research", "note": "No product testnet here. Master still f9b84a8. Open: #138/#144/#145/#146; #147 head 1d449964 (shutdown drain + adaptive-reorg-filter disable + tests); #148 draft cbed6852 restart-resume (TN10 60s VCC livelock). hmoog 45 commits vs Max 34. Research only."},
+        {"name": "vprogs", "url": "https://github.com/kaspanet/vprogs", "chip": "research", "note": "No product testnet here. Master still f9b84a8. Open: #138/#144/#145/#146; #147 head 1d449964; #148 draft head da2a7f26 (21 Sep, settle-resume; TN10 60s VCC livelock). Guest demo biryukovmaxim/vprog-tictactoe tip 6079085 pins that #148 head on the host; guest ELF still fork bridge-live-lane#128dd05f. hmoog 45 vs Max 34. Research only."},
         {"name": "kaspad (Go)", "url": "https://github.com/kaspanet/kaspad", "chip": "deprecated", "note": "Use rusty-kaspa."}
       ]
     },
@@ -258,6 +258,7 @@
       "title": "R&D / Discord log (public recaps)",
       "rows": [
         {"name": "20 Sep kccs#28 + #1104/#1132 gate", "url": "https://github.com/kaspanet/kccs/issues/28", "chip": "draft", "note": "#28 KCC20 name≠ABI collision. #1104 desk: parent-order invariance gate; run #1132 on a5888da before merge. #24/#27 already pinned at 7159d48 / fa845057 APPROVED. Not Final / DK not shipped."},
+        {"name": "21 Sep vprog-tictactoe 93-commit study", "url": "https://github.com/biryukovmaxim/vprog-tictactoe", "chip": "research", "note": "Grok Build (Windows desk) read all 93 master commits, tip 6079085. Guest demo not a product. Host pin kaspanet/vprogs settle-resume=da2a7f26 (#148 draft head). Guest lock still biryukovmaxim bridge-live-lane#128dd05f. #23 open (lazy signer in bd989be; issue leftover-open; vendor wasm 0.1.5 stale). README tn10 not E2E. Sourced commit comments posted. Not Kaspa core, not an audit."},
         {"name": "20 Sep kaspaunchained intern roundup", "url": "https://x.com/kaspaunchained/status/2101676311244915028", "chip": "x", "note": "Catalog. KCC20/Argent/DK/vProgs/x402. Do not weld. kcc20-live field-order swap vs Draft spec. x402 RC1 not KCC-20. DK #1104 still a5888da. vprogs #148 draft. Pins hold. Not an oracle — facts stay in this master file."},
         {"name": "20 Sep kccs#24 head 7159d48 + #27 approval", "url": "https://github.com/kaspanet/kccs/pull/24", "chip": "draft", "note": "#24 amend 7159d48 (~15:53Z) aligns KCC-0012 with review comments (was 06400c3). #27 still fa845057; saefstroem APPROVED ~16:08Z (still open ready / not Final). kaspaexplained sitemap lastmod 2026-09-20. No DK/Argent/SS tip change."},
         {"name": "20 Sep rusty master eb0a856", "url": "https://github.com/kaspanet/rusty-kaspa/commit/eb0a856d4e1e", "chip": "node", "note": "Master tip eb0a856. #1136 merged IBD 20 MiB chunks; #1137 merged RejectCoinbase. DK still unmerged (ad45e24). vprogs #147→1d449964; #148 draft restart-resume. kaspa.stream app 9f4088ca…"},
@@ -320,7 +321,8 @@
       "rows": [
         {"name": "kccs#28", "url": "https://github.com/kaspanet/kccs/issues/28", "chip": "open", "note": "Opened 20 Sep: four public KCC20 objects share a name but not one ABI/byte layout (draft kcc-0020.md, Manyfestation/kcc20-live, SilverScript example, KaspaKaha/KCC20). Blocks honest single reference until layout matches."},
         {"name": "rusty#1137", "url": "https://github.com/kaspanet/rusty-kaspa/pull/1137", "chip": "merged", "note": "MERGED 20 Sep (eb0a856). Mempool RejectCoinbase + regression tests. Approved michaelsutton."},
-        {"name": "vprogs#148", "url": "https://github.com/kaspanet/vprogs/pull/148", "chip": "draft", "note": "Draft 20 Sep (cbed6852): restart-resume journaling for unsettled bundles / competitor settlements / gaps. TN10 60s VCC livelock. Research only."},
+        {"name": "biryukovmaxim/vprog-tictactoe", "url": "https://github.com/biryukovmaxim/vprog-tictactoe", "chip": "demo", "note": "Max guest demo (not kaspanet). 93 commits, tip 6079085 21 Sep. Host Cargo.lock settle-resume#da2a7f26 = vprogs#148 head. Guest ELF fork bridge-live-lane#128dd05f. Open #23. RISC0_DEV_MODE=1 default. Not a product testnet."},
+        {"name": "vprogs#148", "url": "https://github.com/kaspanet/vprogs/pull/148", "chip": "draft", "note": "Draft. Head da2a7f26 (21 Sep; was cbed6852). settle-resume: restart-resume journaling, TN10 60s VCC livelock. vprog-tictactoe host pin tracks this head. Research only."},
         {"name": "kaspa.stream app", "url": "https://kaspa.stream/", "chip": "explorer", "note": "app-version 9f4088ca… observed 20 Sep (was 7ab5ce0…). No public changelog."},
         {"name": "rusty#1135", "url": "https://github.com/kaspanet/rusty-kaspa/pull/1135", "chip": "open", "note": "Require explicit opt-in for non-SIG_HASH_ALL PSKB signing (someone235, 20 Sep, head ed09a8a)."},
         {"name": "rusty#1136", "url": "https://github.com/kaspanet/rusty-kaspa/pull/1136", "chip": "merged", "note": "MERGED 20 Sep (f2f87ff → master). Split pruning-point proofs/headers/trusted data to 20 MiB chunks during IBD."},
@@ -367,7 +369,7 @@
         {"name": "KaspaScopio", "url": "https://github.com/kaspanet/silverscript/issues/249", "chip": "249", "note": "v1.0.0 State[].split() tuple bug. PR #250 open. #251 struct-array index also open."},
         {"name": "ShawnPearce", "url": "https://github.com/kaspanet/kccs/pull/20", "chip": "kccs", "note": "kccs#20 vectors."},
         {"name": "Knitser", "url": "https://github.com/kaspanet/kccs/issues/14", "chip": "kccs", "note": "Issue #14 + KCC-0021."},
-        {"name": "biryukovmaxim", "url": "https://github.com/biryukovmaxim", "chip": "vprogs", "note": "vProgs + rusty Toccata cleanup."},
+        {"name": "biryukovmaxim", "url": "https://github.com/biryukovmaxim", "chip": "vprogs", "note": "vProgs + rusty Toccata cleanup. Guest demo vprog-tictactoe (93 commits, tip 6079085). Not a product testnet."},
         {"name": "@BankQuote / trillskillz", "url": "https://x.com/BankQuote", "chip": "community", "note": "Toccata/covenant essays Apr–Sep 2026. OpenSilver. Not core. Tweet is not a KIP."}
       ]
     },

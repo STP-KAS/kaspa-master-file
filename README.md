@@ -14,6 +14,26 @@ Crypto-finance desk law (Grok Build / Ask / Bot, **no seeds**): [`CRYPTO-FINANCE
 
 **Retest (17 Sep 2026):** every public STP-KAS GitHub (**48**) vs these pins — [`RETEST.md`](RETEST.md). Pins **hold**. argent-xai `check.ps1` **DRIFT** (PR #63). kns comment-grep still red.
 
+### What this pass did (21 Sep 2026 — Grok Build study of biryukovmaxim/vprog-tictactoe)
+
+**Writer:** Grok Build (this Windows desk). **I** read the tree and all **93** commits on `master` (GitHub currently shows 93; an older counter said 60). Independent desk check. **Not Kaspa core. Not an audit. Not a product testnet.**
+
+[biryukovmaxim/vprog-tictactoe](https://github.com/biryukovmaxim/vprog-tictactoe) is Max’s **guest demo**: RISC0 tic-tac-toe with stakes over the vprogs battery (account resources, deposit/withdraw, Create/Join/Turn/Timeout, ttd DA, encoder-wasm, privkey web). Created 29 Aug 2026. Tip **`6079085`** (21 Sep). **Do not weld** this onto kaspanet/vprogs as “vProgs shipped.”
+
+| Check | Honest object |
+| --- | --- |
+| Object | Guest program + `ttd` runner wrapper + simnet e2e + Vite web. L1 follow/prove/settle live in vprogs, not here. |
+| Host pin | Workspace `Cargo.lock`: [kaspanet/vprogs](https://github.com/kaspanet/vprogs) branch **`settle-resume`** = [#148](https://github.com/kaspanet/vprogs/pull/148) head **`da2a7f26`**. rusty crates **`eb0a856`**. #148 is still **draft**. |
+| Guest pin | `guest/` is excluded from the workspace. `guest/Cargo.lock` still [biryukovmaxim/vprogs](https://github.com/biryukovmaxim/vprogs) **`bridge-live-lane#128dd05f`** (last guest pin [a9a44da](https://github.com/biryukovmaxim/vprog-tictactoe/commit/a9a44da), 16 Sep). Host `[patch]` does **not** apply to `just build-guest`. |
+| Docs vs code | `AGENTS.md` / `guest/src/lib.rs` still say local path / branch `guest-batteries`. README: tn10 “configured but not yet exercised end to end.” [#23](https://github.com/biryukovmaxim/vprog-tictactoe/issues/23) is tn10 evidence of web-entry failure until the ELF refresh. |
+| #23 | Open. Root cause: eager signer resolve before `Deposit` births the user. Fix is in [bd989be](https://github.com/biryukovmaxim/vprog-tictactoe/commit/bd989be) (`run.rs` lazy `resolve_pending`). Issue not closed. Vendored encoder wasm `0.1.5.tgz` last git write 16 Sep — self-transfer guard is in crate source, not the tarball. Companion: duplicate access-list ids still **panic** the guest (upstream vprogs). |
+| Limits that remain | No `CancelGame` (open-game stake can sit). Timeout is permissionless; config `Update` can change `turn_ttl` mid-match. Exit rent `50_000_000` / `outpoint_index = 1` hardcoded. Warm-restart unseeded spend **hides** a family. `on_exits_reverted` does not clear `LatestSettlement`. Aggregate-prover still panics on a reorg past a proven block (runbook). `.cargo/config.toml` defaults `RISC0_DEV_MODE=1` (stub receipts). |
+| Web | In-page **privkey paste**, memory only, cleared on reload. Claims are fee-bearing mempool txs (own collateral), not `/inject`. Single covering UTXO per carrier. |
+
+Sourced comments went onto separate commits + #23. **If that is annoying, kick this desk out of the thread — I will apologise.** A mention is not a summons.
+
+Canonical JSON: [`master.json`](master.json) `updated` **2026-09-21**.
+
 ### What this pass did (20 Sep 2026 — @kaspaunchained intern roundup, catalog)
 
 Community explainer, **not core, not a KIP, not a pin.** [@kaspaunchained](https://x.com/kaspaunchained) [20 Sep 14:14 UTC](https://x.com/kaspaunchained/status/2101676311244915028): KCC20 / Argent / DAGKnight / vProgs / x402. **Do not round up.** Pins **hold.** This encyclopedia is **not an oracle.**
@@ -24,7 +44,7 @@ Community explainer, **not core, not a KIP, not a pin.** [@kaspaunchained](https
 | Field order | Spec: `amount, owner, owner_scheme, borrow_scheme, borrow_guard, extension_commitment`. `kcc20-live` `.ag` swaps `borrow_guard` / `borrow_scheme`. KCC-1 §8.1: declaration order **is** the ABI. Different dispatch type string. |
 | 2 / Argent template | [argent-template](https://github.com/argent-lang/argent-template) **local runtime only**. Izio 16 Sep getting-started already catalogued §4d. No tag. |
 | 3 / DAGKnight | [#1104](https://github.com/kaspanet/rusty-kaspa/pull/1104) head still `a5888da`. Merge fence: parent-order / `sort_unstable` vs paper. Outsider test [#1132](https://github.com/kaspanet/rusty-kaspa/pull/1132). **Not shipped.** |
-| 4 / vProgs | Prototype. Open stack [#146](https://github.com/kaspanet/vprogs/pull/146)→[#147](https://github.com/kaspanet/vprogs/pull/147)→[#148](https://github.com/kaspanet/vprogs/pull/148) draft (settler resume; 60s VCC livelock). hmoog 45 commits vs Max 34. **No product testnet.** |
+| 4 / vProgs | Prototype. Open stack [#146](https://github.com/kaspanet/vprogs/pull/146)→[#147](https://github.com/kaspanet/vprogs/pull/147)→[#148](https://github.com/kaspanet/vprogs/pull/148) draft head **`da2a7f26`** (settler resume; 60s VCC livelock). Max’s [vprog-tictactoe](https://github.com/biryukovmaxim/vprog-tictactoe) is a **guest demo** pinned at that #148 head on the host side — **not** a product testnet. hmoog 45 commits vs Max 34. |
 | 5 / x402 TN10 | Bind [elldeeone/kaspa-x402](https://github.com/elldeeone/kaspa-x402) **v1.0.0-rc.1**. Real x402 v2. **Not** KCC-20 borrow. Mainnet blocked. |
 
 Canonical JSON: [`master.json`](master.json) `updated` **2026-09-20**.
@@ -362,7 +382,7 @@ Org: https://github.com/kaspanet — 26 public repos. **Use these first.**
 | kips | https://github.com/kaspanet/kips | Improvement proposals |
 | silverscript | https://github.com/kaspanet/silverscript | Covenant language. Pin **[v1.0.0](https://github.com/kaspanet/silverscript/releases/tag/v1.0.0)** (Ori / someone235, **9 Sep 2026**, `3ed9733`). Official SemVer v1. Windows zip SHA256 `3e0d660c15a9e7ac90f3960da24d348b076b1891481bfe758db18accc8a102e1`. Language pragma in examples is still `^0.1.0`. `#234` foreign `readInputState` still **closed unmerged**. **New on this pin:** [#249](https://github.com/kaspanet/silverscript/issues/249) `State[].split()` tuple destructure fails (`__inline_*`); fix PR [#250](https://github.com/kaspanet/silverscript/pull/250) **open** (KaspaScopio, 10 Sep). [#251](https://github.com/kaspanet/silverscript/pull/251) **open** (11 Sep) indexing struct-array expressions (`#228`); independent of `#250`. `#243` compute-budget still **open**. |
 | kccs | https://github.com/kaspanet/kccs | Conventions. All **Draft**. **New:** [KCC-0012](https://github.com/kaspanet/kccs/pull/24) wallet provider + discovery (11 Sep, saefstroem + IzioDev et al.). Not adopted. |
-| vprogs | https://github.com/kaspanet/vprogs | Provable computation. Research. No public testnet as product. Open stack 20 Sep: [#146](https://github.com/kaspanet/vprogs/pull/146) reorg-safe exits, [#147](https://github.com/kaspanet/vprogs/pull/147) write-drain, [#148](https://github.com/kaspanet/vprogs/pull/148) **draft** settler resume (TN10 60s VCC livelock). hmoog volume > Max. |
+| vprogs | https://github.com/kaspanet/vprogs | Provable computation. Research. No public testnet as product. Open stack: [#146](https://github.com/kaspanet/vprogs/pull/146) reorg-safe exits, [#147](https://github.com/kaspanet/vprogs/pull/147) write-drain, [#148](https://github.com/kaspanet/vprogs/pull/148) **draft** settler resume head **`da2a7f26`** (21 Sep; TN10 60s VCC livelock). Guest demo (not this org): [biryukovmaxim/vprog-tictactoe](https://github.com/biryukovmaxim/vprog-tictactoe) tip `6079085`, host pin = that #148 head. hmoog volume > Max. |
 | kaspa-python-sdk | https://github.com/kaspanet/kaspa-python-sdk | Python bindings |
 | docs | https://github.com/kaspanet/docs | Documentation |
 | research | https://github.com/kaspanet/research | Papers (vProgs yellow paper) |
@@ -707,6 +727,7 @@ Yonatan (digital cash, cohesive tooling, core ≠ product) → Sutton (L1 covena
 | [argent-lang/kcc20-reference](https://github.com/argent-lang/kcc20-reference) | WIP. Not adopted KCC-20. |
 | [Manyfestation/kcc20-live](https://github.com/Manyfestation/kcc20-live) | Offline Argent demo. Field order ≠ Draft spec. Not the standard. |
 | [kaspanet/vprogs#139](https://github.com/kaspanet/vprogs/pull/139) | **Open.** ExitLeaf + claim kit. Also #138/#140. **#142** bridge lane-anchor (10 Sep). No product testnet. |
+| [biryukovmaxim/vprog-tictactoe](https://github.com/biryukovmaxim/vprog-tictactoe) | **Guest demo, not a product.** 93 commits on `master`, tip `6079085` (21 Sep). Host pins kaspanet `settle-resume` = [#148](https://github.com/kaspanet/vprogs/pull/148) `da2a7f26`. Guest ELF still fork `bridge-live-lane#128dd05f`. Open [#23](https://github.com/biryukovmaxim/vprog-tictactoe/issues/23) (lazy signer; fix in `bd989be`, issue leftover-open). README: tn10 not E2E. Do not weld onto vProgs-live. |
 | [elldeeone/kaspa-x402](https://github.com/elldeeone/kaspa-x402) | TN10 x402 v2 binding. Bind this. Not a fourth envelope. |
 | [kaspanet/kccs#20](https://github.com/kaspanet/kccs/pull/20) | **Open draft.** KCC-20 vectors. Transfer sig unconfirmed. |
 | [kaspanet/kccs#24](https://github.com/kaspanet/kccs/pull/24) | **Open ready / still Draft status.** KCC-0012 wallet provider/discovery (head `7159d48`, 20 Sep amend). No public implementation. |
@@ -731,7 +752,7 @@ TG-dense, Discord-light: silverscript, vprogs, Argent, kccs, python-sdk — trea
 | supertypo | Sil #234 (closed); kccs #23; indexer |
 | ShawnPearce | kccs #20 |
 | Knitser | KCC-0021; kccs issue #14 |
-| biryukovmaxim | vProgs + rusty Toccata cleanup |
+| biryukovmaxim | vProgs + rusty Toccata cleanup. Guest demo [vprog-tictactoe](https://github.com/biryukovmaxim/vprog-tictactoe) (93 commits, not a product testnet). |
 | hmoog / @hus_qy | vProgs earlier node/bridge |
 | saefstroem | KCC-0; rusty ZK SDK |
 | D-Stacks | rusty #991 UTXO index (open) |

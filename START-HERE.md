@@ -24,4 +24,6 @@ Community covenants stack (17 Sep, @kaspaunchained, not a KIP): https://x.com/ka
 
 Intern roundup (20 Sep, @kaspaunchained, catalog, not a pin): https://x.com/kaspaunchained/status/2101676311244915028 — KCC20 / Argent / DAGKnight / vProgs / x402. Do not weld. Keep this encyclopedia, not an oracle.
 
+21 Sep catalog (not a pin): Max’s [vprog-tictactoe](https://github.com/biryukovmaxim/vprog-tictactoe) is a guest demo over vprogs#148 draft (`da2a7f26`). **Not** a product testnet.
+
 **Snapshot history** (what agents did, newest first): [`SNAPSHOT-HISTORY.md`](SNAPSHOT-HISTORY.md).

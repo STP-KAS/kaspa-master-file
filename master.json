@@ -1,7 +1,7 @@
 {
   "title": "Kaspa master file",
   "repo": "https://github.com/STP-KAS/kaspa-master-file",
-  "updated": "2026-09-21",
+  "updated": "2026-09-22",
   "disclaimer": "Not Kaspa core. Not official KNS. @StppStp. Merged Active KIP is law. Open PR is not. Current pins: section now (Grok 4.7, 21 Sep 2026).",
   "sections": [
     {
@@ -1122,7 +1122,7 @@
           "name": "KCC-0012 / kccs#24",
           "url": "https://github.com/kaspanet/kccs/pull/24",
           "chip": "draft",
-          "note": "Browser wallet provider + discovery. saefstroem 11 Sep. Izio reviewing 12 Sep. No public implementation. Not adopted. Inject stays Kasware/Kastle."
+          "note": "Browser wallet provider + discovery. saefstroem 11 Sep. Open ready, still Draft. No public implementation. Not adopted. In-page inject on this desk is withdrawn."
         },
         {
           "name": "gramlane",
@@ -1134,7 +1134,7 @@
           "name": "kns-spec",
           "url": "https://github.com/STP-KAS/kns-spec",
           "chip": "this",
-          "note": "Implementer kit. URL https://stp-kas.github.io/kns-spec/ KasName recompiled with silverc v1.0.0."
+          "note": "Implementer kit. Not official KNS. silverc v1.0.0. Kit KasName.json hash c8c06c1a. kns demo JSON is 8f2a7f69. kns PROTOCOL.md prints e7f981d9, which is neither file. Not a pin. 22 Sep file read: GROK-47-KNS-REVIEW.md."
         },
         {
           "name": "mixer-concept",
@@ -1728,7 +1728,19 @@
           "name": "simply-kaspa-indexer",
           "url": "https://github.com/supertypo/simply-kaspa-indexer",
           "chip": "indexer",
-          "note": "L1 Postgres indexer. KNS resolver uses this class of indexer. Not api.knsdomains.org."
+          "note": "L1 Postgres indexer. KNS resolver uses this class of indexer. Not api.knsdomains.org. Last push 8 Jul 2026."
+        },
+        {
+          "name": "supertypo/dotk-sdk",
+          "url": "https://github.com/supertypo/dotk-sdk",
+          "chip": "catalog",
+          "note": "TypeScript SDK. Pushed 21 Sep 2026. No .sil. Not a covenant source. github.com/supertypo/dotk still 404s."
+        },
+        {
+          "name": "supertypo/dotk-sdk-tx",
+          "url": "https://github.com/supertypo/dotk-sdk-tx",
+          "chip": "catalog",
+          "note": "TypeScript tx helpers. Pushed 21 Sep 2026. No .sil. kns-dotk stays paper until a .sil is public."
         },
         {
           "name": "KNS docs",
@@ -1746,7 +1758,7 @@
           "name": "KNS wallets",
           "url": "https://kns-2.gitbook.io/kns-docs-1/supporting-wallet",
           "chip": "kns",
-          "note": "KasWare, Kastle extension, Kurncy, Kasanova. Kastle mobile cannot inscribe. No ECDSA."
+          "note": "KasWare, Kastle extension, Kurncy, Kasanova. Kastle mobile cannot inscribe. No ECDSA. Kaspire is not a row. A Connect control is not a row."
         },
         {
           "name": "KNS indexer API",

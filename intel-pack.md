@@ -484,7 +484,7 @@ No testnet. No releases. Active construction of a based-runtime:
 - **#132** reorg recovery **merged**; **#136** reorg-flapped-fork survival **open**.
 - Early node/bridge work: hmoog (#7 L1 bridge, #11 node framework, #16 CLI, …).
 - **#148 draft** (21 Sep head `da2a7f26`, branch `settle-resume`) — settler resume after TN10 60s `get_virtual_chain_from_block_v2` livelock. **Not merged. Not a product.**
-- **Guest demo, not this org:** [biryukovmaxim/vprog-tictactoe](https://github.com/biryukovmaxim/vprog-tictactoe) (94 commits, tip `a758a9b` tn10 CUDA **runbook** — private multi-machine, not a public product). Host lock tracks #148 `da2a7f26`. Guest ELF still fork `bridge-live-lane#128dd05f`. Open [#23](https://github.com/biryukovmaxim/vprog-tictactoe/issues/23) + desk report [#24](https://github.com/biryukovmaxim/vprog-tictactoe/issues/24). Related: [#131](https://github.com/kaspanet/vprogs/pull/131) first-consumer pin drifted; [#149](https://github.com/kaspanet/vprogs/pull/149) rusty `eb0a856`. ABI `expect` still at `abi.rs:22`. **Do not claim vProgs live.**
+- **Guest demo, not this org:** [biryukovmaxim/vprog-tictactoe](https://github.com/biryukovmaxim/vprog-tictactoe) (96 commits, tip `36ccdbc`). Host pin **`reorg-safety#ac67c5f9`** (no open PR; 5 ahead of #148; defer dead lane-proof [`3d106c2`](https://github.com/kaspanet/vprogs/commit/3d106c2471c23641923ed7b384818ca3408cd6ef)). Guest ELF still fork `bridge-live-lane#128dd05f`. tn10 CUDA runbook `a758a9b`. ABI `expect` still at `abi.rs:22`. **Do not claim vProgs live.**
 
 Sutton transcript still applies: sequencing/DA on L1, execution off L1, validity proofs later. **Build order item 6 — after wallet, Sil templates, indexer, POS.**
 

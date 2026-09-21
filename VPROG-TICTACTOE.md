@@ -37,6 +37,32 @@ This desk is grateful that the history is readable commit-by-commit. The leftove
 
 ---
 
+## Match vision (based app, not a product)
+
+Sutton’s public map (intel pack / masterclass): sequencing + DA on L1, execution off L1, validity proofs; Solana-shaped accounts; txs declare read/write sets; **single based app now**, cross-vprog composition later. This guest is that “now” in code. It is **not** a DEX.
+
+| Pin (Sutton / hashdag) | What the match actually does |
+| --- | --- |
+| L1 sequences | Lane carriers are ordinary Kaspa txs (`subnetworkId` = the lane). |
+| L1 DA | The action payload sits on L1. |
+| Execution off L1 | `guest/src/program/run.rs` applies actions. kaspad does not play tic-tac-toe. |
+| Validity proofs | RISC0 batch + aggregator. Stub receipts if `RISC0_DEV_MODE=1` (repo default). |
+| Accounts, not EVM | Resources: Config, User, Game. Game has **no lock**; auth is the **user** lock. |
+| Declared R/W set | Access list is id-sorted. A finalizing `Turn`/`Timeout` must attach **both** player User resources as Write, or `settle_match` rejects and the submitter retries with them included. That is the object-DAG visibility rule in miniature. |
+| Single based app | The pot is an **in-guest** credit (`2 × stake` to the winner, stake-back on draw). L1 money only via `Deposit` / `Withdraw` / permission claim. Not a cross-vprog call. |
+
+Match rules that are the app, not the battery (`guest/src/program/action/game.rs`, `rules.rs`, `resources/game.rs`):
+
+- Wire is fixed-size (`GAME_WIRE_LEN`). Derived, not stored: current round = `wins[0]+wins[1]+draws`; X opens every round; `creator_mark` only maps seats.
+- Pre-commit FIFO per seat (`PENDING_CAP = 4`). A turn for a future ply queues; `drain_pending` cascades open cells in one carrier (atomic multi-ply). Stale heads on taken cells are dropped.
+- Early clinch: lead > remaining rounds ends the match (`rules::match_outcome`).
+- `Timeout` is permissionless: DAA `last_move_at + turn_ttl` is the whole authority. Config `Update` can change `turn_ttl` while `Playing`.
+- No `CancelGame`. An unjoined `Open` game holds creator stake.
+
+Sibling in kaspanet/vprogs: `examples/tn10-runtime` is Init / Deposit / Transfer / Withdraw only (battery e2e port). **This repo is that account model plus the game.** That is why it is the teaching object.
+
+---
+
 ## Leftovers (clear, sourced)
 
 These are propositions. Several are already Max’s own notes.

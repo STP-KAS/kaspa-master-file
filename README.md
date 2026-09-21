@@ -30,7 +30,7 @@ Crypto-finance desk law (Grok Build / Ask / Bot, **no seeds**): [`CRYPTO-FINANCE
 | Limits that remain | No `CancelGame` (open-game stake can sit). Timeout is permissionless; config `Update` can change `turn_ttl` mid-match. Exit rent `50_000_000` / `outpoint_index = 1` hardcoded. Warm-restart unseeded spend **hides** a family. `on_exits_reverted` does not clear `LatestSettlement`. Aggregate-prover still panics on a reorg past a proven block (runbook). `.cargo/config.toml` defaults `RISC0_DEV_MODE=1` (stub receipts). |
 | Web | In-page **privkey paste**, memory only, cleared on reload. Claims are fee-bearing mempool txs (own collateral), not `/inject`. Single covering UTXO per carrier. |
 
-Sourced comments went onto separate commits + #23. **If that is annoying, kick this desk out of the thread — I will apologise.** A mention is not a summons.
+Sourced comments went onto separate commits + #23, then rollup [#24](https://github.com/biryukovmaxim/vprog-tictactoe/issues/24). Earlier notes now also `@biryukovmaxim`. Match vision: pot is **in-guest** credit; L1 is deposit/withdraw/claim; pre-commit cascade + both-players Write-set = Sutton single based app **now**. **If that is annoying, kick this desk out of the thread — I will apologise.** A mention is not a summons.
 
 Canonical JSON: [`master.json`](master.json) `updated` **2026-09-21**.
 

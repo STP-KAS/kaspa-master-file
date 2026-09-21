@@ -484,7 +484,7 @@ No testnet. No releases. Active construction of a based-runtime:
 - **#132** reorg recovery **merged**; **#136** reorg-flapped-fork survival **open**.
 - Early node/bridge work: hmoog (#7 L1 bridge, #11 node framework, #16 CLI, …).
 - **#148 draft** (21 Sep head `da2a7f26`, branch `settle-resume`) — settler resume after TN10 60s `get_virtual_chain_from_block_v2` livelock. **Not merged. Not a product.**
-- **Guest demo, not this org:** [biryukovmaxim/vprog-tictactoe](https://github.com/biryukovmaxim/vprog-tictactoe) (93 commits, tip `6079085`). Host lock tracks #148 `da2a7f26`. Guest ELF still fork `bridge-live-lane#128dd05f`. Open [#23](https://github.com/biryukovmaxim/vprog-tictactoe/issues/23). **Do not claim vProgs live.**
+- **Guest demo, not this org:** [biryukovmaxim/vprog-tictactoe](https://github.com/biryukovmaxim/vprog-tictactoe) (93 commits, tip `6079085`). Host lock tracks #148 `da2a7f26`. Guest ELF still fork `bridge-live-lane#128dd05f`. Open [#23](https://github.com/biryukovmaxim/vprog-tictactoe/issues/23) + desk report [#24](https://github.com/biryukovmaxim/vprog-tictactoe/issues/24). Match pot is **in-guest** balance credit; L1 is deposit/withdraw/claim. Pre-commit cascade + declared Write-set on both players = Sutton “single based app now.” kaspanet `examples/tn10-runtime` is battery-only. **Do not claim vProgs live.**
 
 Sutton transcript still applies: sequencing/DA on L1, execution off L1, validity proofs later. **Build order item 6 — after wallet, Sil templates, indexer, POS.**
 

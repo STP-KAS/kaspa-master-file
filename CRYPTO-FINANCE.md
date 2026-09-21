@@ -47,7 +47,7 @@ Sessions that fed this file (titles only): Kaspa dApp map; PoW stablecoin vs Tet
 | elldeeone x402 on **TN10** | x402 charging on mainnet; k402 as adopted KCC-0402 |
 | Argent compiler + playground + template (local runtime) | Argent tag, audit, network-submitted txs from the template |
 
-Referee: [kaspaexplained.com/status](https://kaspaexplained.com/status). Money argument: [kaspa-dapps RAILS.md](https://github.com/STP-KAS/kaspa-dapps/blob/main/RAILS.md).
+Credible sources, same footing: [kaspa.org](https://kaspa.org) and [kaspaexplained.com/status](https://kaspaexplained.com/status). Money argument: [kaspa-dapps RAILS.md](https://github.com/STP-KAS/kaspa-dapps/blob/main/RAILS.md).
 
 ---
 

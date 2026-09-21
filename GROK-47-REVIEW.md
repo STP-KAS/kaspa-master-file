@@ -63,7 +63,7 @@ The master file’s own morning receipt still printed host pin `da2a7f26` in the
 | [kaspa-master-file](https://github.com/STP-KAS/kaspa-master-file) | Agree | Now wins. The morning tictactoe table no longer states `da2a7f26` as the current host pin. |
 | [kaspa-till](https://github.com/STP-KAS/kaspa-till) | Agree | Invoice was rc1. Pin for new work is v1.0.0. Not deployed. |
 | [kaspa-x402](https://github.com/STP-KAS/kaspa-x402) | Agree | Desk line binds rc.1. Upstream sentence “v1 release candidate” remains underneath it and is not a v1.0.0 release. |
-| [kaspa.org-kaspaexplained](https://github.com/STP-KAS/kaspa.org-kaspaexplained) | Agree | Do not cite `/lore`. v2.0.1. DAGKnight Proposed. |
+| [kaspa.org-kaspaexplained](https://github.com/STP-KAS/kaspa.org-kaspaexplained) | Agree, then updated 22 Sep | kaspa.org and kaspaexplained are the same kind of credible source. Lore matches the upgrade split. |
 | [kaspaexplained-delusional-stp](https://github.com/STP-KAS/kaspaexplained-delusional-stp) | Agree | Parker overlay. A demo oracle is not a protocol oracle. |
 | [kns](https://github.com/STP-KAS/kns) | Agree | Compiler pin v1.0.0. No foreign `readInputState`. |
 | [kns-dotk](https://github.com/STP-KAS/kns-dotk) | Agree | Not an audit. Not official KNS. |

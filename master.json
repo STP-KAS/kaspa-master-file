@@ -30,7 +30,7 @@
           "name": "KCC-0 footgun",
           "url": "https://github.com/kaspanet/kccs/blob/main/kcc-0000.md",
           "chip": "Final",
-          "note": "kcc-0000.md header Status: Final. kccs#25 merged c0bb8f3 at 2026-09-21T13:31:53Z (IzioDev). README index row for KCC-0 still says Draft. That index line is a leftover. Final here is the meta process, not KCC-1, KCC-2, KCC-20, KCC-0012, KCC-0021, or KCC-0402. kaspaexplained.com/status still says the file is Last Call and #25 proposes Final (page's own source check is 14 Sep). Do not cite that sentence. Do not cite kaspa.org/lore for live status."
+          "note": "kcc-0000.md header Status: Final. kccs#25 merged c0bb8f3 at 2026-09-21T13:31:53Z (IzioDev). README index row for KCC-0 still says Draft. That index line is a leftover. Final here is the meta process, not KCC-1, KCC-2, KCC-20, KCC-0012, KCC-0021, or KCC-0402. kaspaexplained.com/status still says the file is Last Call and #25 proposes Final (page's own source check is 14 Sep). Do not cite that one KCC-0 sentence. kaspa.org is a credible source on the same footing as kaspaexplained. A stale sentence does not demote either site."
         },
         {
           "name": "KCC still open",
@@ -156,7 +156,7 @@
           "name": "kaspa.org",
           "url": "https://kaspa.org",
           "chip": "official",
-          "note": "Official site. Fair launch. No premine."
+          "note": "Credible source, same footing as kaspaexplained.com. Official site. Fair launch. No premine."
         },
         {
           "name": "Wallets",
@@ -372,7 +372,7 @@
           "name": "kaspa.org vs kaspaexplained",
           "url": "https://github.com/STP-KAS/kaspa.org-kaspaexplained",
           "chip": "read",
-          "note": "Public face /lore still stale on Toccata. Do not cite lore for upgrade status."
+          "note": "22 Sep 2026: both sites are credible and state the same upgrade split. The older 'do not cite lore' line is retired. A merged KIP or a release tag still outranks either page."
         },
         {
           "name": "kaspa bot public P2P",
@@ -402,13 +402,13 @@
           "name": "kaspa.org",
           "url": "https://kaspa.org",
           "chip": "official",
-          "note": "Fair launch. Real-time decentralization."
+          "note": "Credible source, same footing as kaspaexplained.com. Fair launch. Real-time decentralization."
         },
         {
           "name": "LORE",
           "url": "https://kaspa.org/lore",
           "chip": "official",
-          "note": "Shipped: Crescendo, Toccata."
+          "note": "Credible, same footing as kaspaexplained /status. Checked 22 Sep 2026: 10 BPS live, Toccata live at DAA 474165565, SilverScript v1.0.0, DAGKnight next. Not a tag."
         },
         {
           "name": "Wiki",
@@ -474,7 +474,7 @@
           "name": "Status referee",
           "url": "https://kaspaexplained.com/status",
           "chip": "tracker",
-          "note": "Live vs roadmap vs wrong. /toccata-status Moved here."
+          "note": "Live vs roadmap vs wrong, same footing as kaspa.org. /toccata-status Moved here. KCC-0 sentence on this page is stale (14 Sep check). Do not repeat that sentence."
         },
         {
           "name": "Build / covenants",

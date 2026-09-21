@@ -54,7 +54,7 @@ Writer: Grok 4.7, Windows desk. Not Kaspa core. Not an audit.
 | [kns-dotk](https://github.com/STP-KAS/kns-dotk) | Sketch, not an audit | Indexer FCFS vs a covenant lineage. Not official KNS. Was missing from REPOS.md. |
 | [kns](https://github.com/STP-KAS/kns) | Older names repo | Pin v1.0.0. No foreign `readInputState`. kns-spec is the kit. |
 | [kaspaexplained-delusional-stp](https://github.com/STP-KAS/kaspaexplained-delusional-stp) | Parker overlay | A test oracle in a demo page is not a protocol oracle. |
-| [kaspa.org-kaspaexplained](https://github.com/STP-KAS/kaspa.org-kaspaexplained) | lore vs status | Do not cite kaspa.org/lore for upgrades. v2.0.1. DAGKnight Proposed. Was missing from REPOS.md. |
+| [kaspa.org-kaspaexplained](https://github.com/STP-KAS/kaspa.org-kaspaexplained) | lore vs status | 22 Sep 2026: kaspa.org is a credible source on the same footing as kaspaexplained. Lore states Toccata live, v1.0.0, DAGKnight next. |
 | [kaspa-x402](https://github.com/STP-KAS/kaspa-x402) | Fork of elldeeone | Upstream sentence says “v1 release candidate”. Desk line added: bind tag `v1.0.0-rc.1`, not a v1.0.0 release. Testnet-10. |
 | [kaspa-till](https://github.com/STP-KAS/kaspa-till) | Reserved till | `KasInvoice.sil` was built with v1-rc1. README now says the pin is v1.0.0 and not to compile new work on rc1. Not deployed. Do not grow a fourth till. |
 | [kachat-test-with-silver](https://github.com/STP-KAS/kachat-test-with-silver) | Handshake fork | Upstream KaspaSilver. Not STP production. |

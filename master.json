@@ -42,13 +42,13 @@
           "name": "kccs#29 KCC-3/4/5",
           "url": "https://github.com/kaspanet/kccs/pull/29",
           "chip": "Draft",
-          "note": "Opened by kaspahttp402. Head 55742861. Updated 2026-09-21T13:52:55Z. Not merged. Not in the README index. Files exist only on the PR: kcc-0003 Reputation Deed, kcc-0004 Slashable Bond, kcc-0005 Deed Identity Registry. Header author Kaspa-World-Eater. Status Draft. Requires 1 and 2 (KCC-5 also Requires 3). KCC-1 and KCC-2 are still Draft, so these cannot be Final ahead of them. Numbers are a request, not an assignment. Kas-Smiths thread https://kas-smiths.org/t/three-covenant-kccs-for-reputation-bonds-and-identity-live-on-testnet-10/148. TN10 reference is not mainnet law."
+          "note": "Open. Head 55742861. Updated 2026-09-21T13:52:55Z. Not on main. Draft KCC-3 Reputation Deed, KCC-4 Slashable Bond, KCC-5 Deed Identity Registry. Author header Kaspa-World-Eater. Requires Draft KCC-1 and KCC-2. Numbers are a request. Reference Kaspa-World-Eater/quorum README contradicts itself: Status says the decision pipeline touches no chain; a later section claims a 21 Sep TN10 product-path slash with a truncated id 81c3008f…. The word audit there is the author's 16 Sep note. Desk comment 5764709315. Not adopted."
         },
         {
           "name": "Kaspa-World-Eater/quorum",
           "url": "https://github.com/Kaspa-World-Eater/quorum",
           "chip": "tn10",
-          "note": "Pushed 2026-09-21T16:28:19Z. Pay-for-verified-compute experiment: pay only when independent workers agree; a fabricating worker forfeits a bond. README binds the kaspa-x402 escrow rail (spigot/flume siblings under kaspahttp402). This is the reference named by kccs#29. Not an adopted KCC. Not x402 mainnet. Not a spendable L1 stable. kasmith/kasmasmith is not a GitHub user; the workshop is https://kas-smiths.org (Manyfestation / Kaspa Smiths)."
+          "note": "Pushed 2026-09-21T16:28:19Z. Verified-compute experiment on the kaspa-x402 rail. README Status: 21 pure-logic tests, nothing touches the chain on purpose. Later section 'The bond, on chain' claims runSettlementSlashes posted a TN10 slash on 21 Sep; published id is truncated (81c3008f…). This desk did not re-fetch it. Honest limits in the same file: public deterministic audit sample; agreement is not a proof. Not an adopted KCC. Not a third-party audit. Not mainnet."
         },
         {
           "name": "vprogs stack 21 Sep morning",

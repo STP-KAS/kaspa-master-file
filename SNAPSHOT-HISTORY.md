@@ -8,7 +8,7 @@ Not a KIP. Not Kaspa core. A tweet is not a pin. This file is the agent/operator
 
 | When (Europe/Brussels) | Commit | What we did | Pins |
 | --- | --- | --- | --- |
-| 2026-09-21 | [06d3fbf](https://github.com/STP-KAS/kaspa-master-file/commit/06d3fbf) | tictactoe `36ccdbc` pins vprogs `reorg-safety#ac67c5f9` (defer dead lane-proof, no open PR). Guest ELF still `128dd05f`. Notes on 36ccdbc / 3d106c2 / #148. | **Hold** |
+| 2026-09-21 | [44141eb](https://github.com/STP-KAS/kaspa-master-file/commit/44141eb) | tictactoe `36ccdbc` pins vprogs `reorg-safety#ac67c5f9` (defer dead lane-proof, no open PR). Guest ELF still `128dd05f`. Notes on 36ccdbc / 3d106c2 / #148. | **Hold** |
 | 2026-09-21 | [602cb00](https://github.com/STP-KAS/kaspa-master-file/commit/602cb00) | Related GitHubs: vprogs#131/#149 notes; tictactoe `a758a9b` tn10 CUDA runbook (not a public product); ABI `expect` at abi.rs:22. Master file is the source. | **Hold** |
 | 2026-09-21 | [b25d42b](https://github.com/STP-KAS/kaspa-master-file/commit/b25d42b) | Match vision fold: pot is in-guest credit; declared Write-set; pre-commit cascade. Tagged @biryukovmaxim on #23 + six commit notes. Not a product. | **Hold** |
 | 2026-09-21 | [295d6a1](https://github.com/STP-KAS/kaspa-master-file/commit/295d6a1) | Public desk report [`VPROG-TICTACTOE.md`](VPROG-TICTACTOE.md) + [vprog-tictactoe#24](https://github.com/biryukovmaxim/vprog-tictactoe/issues/24) tagging @biryukovmaxim. Thanks first, leftovers second. Not a product. | **Hold** |

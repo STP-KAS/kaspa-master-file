@@ -8,6 +8,7 @@ Not a KIP. Not Kaspa core. A tweet is not a pin. This file is the agent/operator
 
 | When (Europe/Brussels) | Commit | What we did | Pins |
 | --- | --- | --- | --- |
+| 2026-09-22 13:09 | [PENDING](https://github.com/STP-KAS/kaspa-master-file/commit/PENDING) | kccs#31 proposes KCC-20 Last Call without Last-Call-Deadline and rewrites Created. Comment 5775404197. Main stays Draft. rusty-kaspa#1096 output-index fix is complete; checks still running; no comment. | **Hold** |
 | 2026-09-22 12:58 | [9e2d51f](https://github.com/STP-KAS/kaspa-master-file/commit/9e2d51f) | Answered Izio on X: DX first, the two holes are the lock not the house. https://x.com/StppStp/status/2102351752578420818 #153 and #154 marked draft 10:53Z, same heads. No comment on that flip. | **Hold** |
 | 2026-09-22 12:27 | [e9d016d](https://github.com/STP-KAS/kaspa-master-file/commit/e9d016d) | Posted kccs#24 comment 5774902587 (PSKB JSON numbers, signTransaction display) and vprogs#152 comment 5774935036 (gap pass does not retry a failed lane proof). No other kaspanet repo moved. | **Hold** |
 | 2026-09-22 12:07 | [804880a](https://github.com/STP-KAS/kaspa-master-file/commit/804880a) | Izio pointed at kccs#24 and said KIP-12 is superseded by KCC-12. File still Draft; “No previous standard exists.” No kip-0012 in kips. Not a status change. No comment. | **Hold** |

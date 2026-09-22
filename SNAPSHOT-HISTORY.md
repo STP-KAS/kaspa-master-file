@@ -8,7 +8,7 @@ Not a KIP. Not Kaspa core. A tweet is not a pin. This file is the agent/operator
 
 | When (Europe/Brussels) | Commit | What we did | Pins |
 | --- | --- | --- | --- |
-| 2026-09-22 12:07 | [PENDING](https://github.com/STP-KAS/kaspa-master-file/commit/PENDING) | Izio pointed at kccs#24 and said KIP-12 is superseded by KCC-12. File still Draft; “No previous standard exists.” No kip-0012 in kips. Not a status change. No comment. | **Hold** |
+| 2026-09-22 12:07 | [804880a](https://github.com/STP-KAS/kaspa-master-file/commit/804880a) | Izio pointed at kccs#24 and said KIP-12 is superseded by KCC-12. File still Draft; “No previous standard exists.” No kip-0012 in kips. Not a status change. No comment. | **Hold** |
 | 2026-09-22 | [f31d600](https://github.com/STP-KAS/kaspa-master-file/commit/f31d600) | Comments: tictactoe `4f27dd1`, vprogs#152 follow-up, #153 (shutdown-cancel fetch). #148 closed-unmerged; resume is #154. Guest ELF still `128dd05f`. | **Hold** (vProgs research) |
 | 2026-09-22 11:14 | [68cf31c](https://github.com/STP-KAS/kaspa-master-file/commit/68cf31c) | tictactoe `4f27dd1a` locks #152 head `59b30920`. The `74e24551` divergence is gone. #152 body still names `0636cff1`. No comment. | **Hold** (vProgs research) |
 | 2026-09-22 morning | [0162c70](https://github.com/STP-KAS/kaspa-master-file/commit/0162c70) | vprogs mail: #148 closed unmerged 07:30Z. Resume is #154 `f84525b5` on new #153 `3496a8c5`. #152 draft reopened, head `59b30920`. Tictactoe lock still `74e24551`, diverged. Master `f9b84a8`. No other kaspanet PR moved today. Comment held until 12:26. | **Hold** (vProgs research) |

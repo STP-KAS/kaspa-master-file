@@ -86,7 +86,7 @@ Canonical JSON: [`master.json`](master.json) `updated` **2026-09-20**.
 | --- | --- | --- |
 | kccs#24 | Head **7159d48** (was `06400c3`). Amend aligned with review comments ~15:53Z. | Still Draft / not Final. |
 | kccs#27 | Head still `fa845057`. saefstroem **APPROVED** ~16:08Z. | Still open ready / not Final. |
-| rusty / DK / Argent / SS / vProgs | Tips: rusty master `01b532e8` (22 Sep, version strings `2.1.0`, no tag). DK `ad45e24`, Argent `e76ee07`, SS `3ed9733`, vprogs `f9b84a8` hold. | No tip/tag/merge/Final. |
+| rusty / DK / Argent / SS / vProgs | Tips: rusty master `01b532e8` is release **v2.1.0**. DK `ad45e24`, Argent `e76ee07`, SS `3ed9733`, vprogs `f9b84a8` hold. | No tip/tag/merge/Final. |
 | ALWAYS | kaspaexplained sitemap lastmod **2026-09-20**; kaspa.stream still `9f4088ca…`. X skipped (not enrolled). | Explainer touch only. |
 
 Canonical JSON: [`master.json`](master.json) `updated` **2026-09-20**.

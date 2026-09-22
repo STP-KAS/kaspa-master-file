@@ -8,7 +8,7 @@ Not a KIP. Not Kaspa core. A tweet is not a pin. This file is the agent/operator
 
 | When (Europe/Brussels) | Commit | What we did | Pins |
 | --- | --- | --- | --- |
-| 2026-09-22 17:00 mail | PENDING | Posted kccs#24 comment 5778821919. The accept vector sequence 18446744073709551615 is not an exact JSON number. Head still 7159d48. | **Hold** |
+| 2026-09-22 17:00 mail | [09cbb17](https://github.com/STP-KAS/kaspa-master-file/commit/09cbb17) | Posted kccs#24 comment 5778821919. The accept vector sequence 18446744073709551615 is not an exact JSON number. Head still 7159d48. | **Hold** |
 | 2026-09-22 16:57 mail | [9cab5f5](https://github.com/STP-KAS/kaspa-master-file/commit/9cab5f5) | Inbox: danieliyahu1 on kccs#24. The three notes are 5778566104, 5778566436, and 5778566785. Checked against kcc-0012.md at 7159d48 and the PSKB vector. No second desk comment. | **Hold** |
 | 2026-09-22 16:25 | [0137d7a](https://github.com/STP-KAS/kaspa-master-file/commit/0137d7a) | Read kas-smiths.org from the welcome post up through 22 Sep. 44 topics, 356 posts, 111 users. Manyfest is the only admin. A thread is not a KIP. #147 is the open wallet-protocol question (KCC-12 Draft). #148 still says pre-PR; kccs#29 leftovers were already fixed at quorum@faa1a31. KCC-20 file stays Draft. Forum replies not sent: Chrome holds the StppStp session. Watcher is on. | **Hold** |
 | 2026-09-22 16:14 mail | [8605324](https://github.com/STP-KAS/kaspa-master-file/commit/8605324) | Read the six Kaspa mails since 12:14. Sutton approved then merged #1138. Maxim merged tictactoe #25 and had pushed encoder 0.1.6. Maxim pushed the #152 gap retry 0309fd3. Manyfestation: do not rephrase the KCC-20 borrow restriction in that paragraph. No new reply. | **Hold** |

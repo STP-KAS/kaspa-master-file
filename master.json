@@ -2,11 +2,11 @@
   "title": "Kaspa master file",
   "repo": "https://github.com/STP-KAS/kaspa-master-file",
   "updated": "2026-09-22",
-  "disclaimer": "Not Kaspa core. Not official KNS. @StppStp. Merged Active KIP is law. Open PR is not. Current pins: section now (Grok 4.7, 21 Sep 2026).",
+  "disclaimer": "Not Kaspa core. Not official KNS. @StppStp. Merged Active KIP is law. Open PR is not. Current pins: section now (Grok 4.7, 22 Sep 2026 evening).",
   "sections": [
     {
       "id": "now",
-      "title": "Now — read this first (21 Sep 2026, Grok 4.7)",
+      "title": "Now — read this first (22 Sep 2026 evening, Grok 4.7)",
       "rows": [
         {
           "name": "How to read this file",
@@ -18,7 +18,7 @@
           "name": "Live",
           "url": "https://kaspaexplained.com/status",
           "chip": "live",
-          "note": "PoW fair launch 2021-11-07. BlockDAG / GHOSTDAG. Crescendo ~10 BPS. Toccata live after DAA 474165565 (~30 Jun 2026): KIP-16/17/20/21 Active (kips e4ae233). rusty-kaspa release tag v2.0.1 is commit cfafeb4c (15 Jun), not master. Master 01b532e8 (22 Sep 13:50Z, #1139 merged) is version strings 2.1.0 only. No v2.1.0 tag. Release remains v2.0.1. Prior tip 2a47b249 is #1138. Not a new node tag. #1138 is arithmetic lint plus CompressedParents SizeExceeded at u8::MAX*2048. Prior tip ecb9b1f was #1096. Desk comment 5777320861. #1139 e08bdcb5 open, rebased on 2a47b249: version strings 2.0.1 to 2.1.0 only. Not merged. No tag. Release remains v2.0.1 cfafeb4c. SilverScript v1.0.0 commit 3ed9733 (9 Sep). No spendable L1 stable."
+          "note": "PoW fair launch 2021-11-07. BlockDAG / GHOSTDAG. Crescendo ~10 BPS. Toccata live after DAA 474165565 (~30 Jun 2026): KIP-16/17/20/21 Active (kips e4ae233). rusty-kaspa GitHub release v2.1.0 is commit 01b532e8, published 2026-09-22T13:55:36Z, not a prerelease. #1139 only changes version strings. The release is P2P protocol 11 chunked IBD, still speaks protocol 10, not a consensus activation. Previous release v2.0.1 remains cfafeb4c. Prior tip 2a47b249 is #1138. #1138 is arithmetic lint plus CompressedParents SizeExceeded at u8::MAX*2048. Prior tip ecb9b1f was #1096. Desk comment 5777320861. On 01b532e8, check_tx_throttling in protocol/flows/src/v10/txrelay/flow.rs divides by a raw millisecond count; under 1 ms that becomes u64::MAX. The request path still uses .max(1). Comment 5778361113. No second note. SilverScript v1.0.0 commit 3ed9733 (9 Sep). No spendable L1 stable."
         },
         {
           "name": "Not live",
@@ -36,7 +36,7 @@
           "name": "KCC still open",
           "url": "https://github.com/kaspanet/kccs/pulls",
           "chip": "Draft",
-          "note": "On main: kcc-0000 Final, kcc-0001, kcc-0002, kcc-0020 (Draft). Open: #31 KCC-20 Last Call proposal fb50affe (22 Sep 11:07Z, missing Last-Call-Deadline, Created rewritten, README index still Draft, desk comment 5775404197, not Last Call on main). 22 Sep 14:29 Manyfestation: do not rephrase the borrow restriction in that paragraph, remove it or point at the valid-borrow section; also asked about an Asset category, which KCC-0 does not list; #24 KCC-0012 head 7159d48 (22 Sep 09:44Z Izio said KIP-12 is superseded by KCC-12; file still Status Draft and Backwards Compatibility says no previous standard exists; no kip-0012 in kaspanet/kips; not a status change; desk comment 5774902587; danieliyahu1 5778566104, 5778566436, 5778566785; desk comment 5778821919: accept-vector sequence 18446744073709551615 is not an exact JSON number); #20 vectors 81f111f0; #23 p2pk-ecdsa 19d174d5 (updated 21 Sep 12:25Z); #30 unkeyed hash 1c3ffd18 (21 Sep 13:11Z); #27 kcc-1/kcc0 fa845057 approved, unmerged (touched 21 Sep 10:36Z); #26 KCC-23 479fa206 (21 Sep 13:30Z); #6 KCC-0021 165ff91d (21 Sep 12:07Z); #4 KCC-0402 39a42644. Issue #28: four KCC20 objects, not one ABI. None adopted."
+          "note": "On main: kcc-0000 Final, kcc-0001, kcc-0002, kcc-0020 (Draft). Open: #31 KCC-20 Last Call proposal fb50affe (22 Sep 11:07Z, missing Last-Call-Deadline, Created rewritten, README index still Draft, desk comment 5775404197, not Last Call on main). 22 Sep 14:29 Manyfestation: do not rephrase the borrow restriction in that paragraph, remove it or point at the valid-borrow section; also asked about an Asset category, which KCC-0 does not list; #24 KCC-0012 head 7159d48 (22 Sep 09:44Z Izio said KIP-12 is superseded by KCC-12; file still Status Draft and Backwards Compatibility says no previous standard exists; no kip-0012 in kaspanet/kips; not a status change; desk comment 5774902587; danieliyahu1 5778566104, 5778566436, 5778566785; desk comment 5778821919: accept-vector sequence 18446744073709551615 is not an exact JSON number); #20 vectors 81f111f0; #23 p2pk-ecdsa 19d174d5 (updated 21 Sep 12:25Z); #30 unkeyed hash 1c3ffd18 (21 Sep 13:11Z); #27 kcc-1/kcc0 fa845057 approved, unmerged (touched 21 Sep 10:36Z); #26 KCC-23 479fa206 (head unchanged; 22 Sep 14:43Z Manyfestation called the MJ/23 title an easter egg); #6 KCC-0021 165ff91d (21 Sep 12:07Z); #4 KCC-0402 39a42644. Issue #28: four KCC20 objects, not one ABI. None adopted."
         },
         {
           "name": "kccs#29 KCC-3/4/5",
@@ -54,13 +54,13 @@
           "name": "vprogs stack 21 Sep morning",
           "url": "https://github.com/kaspanet/vprogs",
           "chip": "research",
-          "note": "Master still f9b84a8 (28 Jul). No release, no product testnet. 22 Sep ~08:32Z: #148 closed unmerged 07:30Z (closed head 78501881; old draft head was da2a7f26). Resume is #154 head f84525b5, 25 commits, base #153. #153 one commit 3496a8c5, base #147. 22 Sep 10:53Z Maxim marked #153 and #154 draft. Same heads. #152 still draft. Head f61b46f4 (22 Sep 12:58Z): merge of settle-resume into reorg-safety. Contains gap retry 0309fd37 and #154 f84525b5. #156 and tictactoe cc52b322 do not. 74e24551...59b30920 diverged. At 09:14Z tictactoe 4f27dd1a locked reorg-safety#59b30920, matching #152 HEAD. 22 Sep 12:58Z #156 draft head 30c5d021, base #152 f61b46f4. Merge of reorg-safety into guest-hardening. Contains ELF refresh 291d4f29 and the gap retry. Demo tip cc52b322 still pins 291d4f29. Stack #147 74ee1b7d -> #153 -> #154 -> #152 -> #156. Unchanged: #149 51b56aab, #131 004a5948, #134 add37bed, #136 d2da8ad0, #140 28f0aee9. No other kaspanet PR updated 22 Sep. Research only."
+          "note": "Master still f9b84a8 (28 Jul). No release, no product testnet. 22 Sep ~08:32Z: #148 closed unmerged 07:30Z (closed head 78501881; old draft head was da2a7f26). Resume is #154 head f84525b5, 25 commits, base #153. #153 one commit 3496a8c5, base #147. 22 Sep 10:53Z Maxim marked #153 and #154 draft. Same heads. #152 still draft. Head f61b46f4 (22 Sep 12:58Z): merge of settle-resume into reorg-safety. Contains gap retry 0309fd37 and #154 f84525b5. #156 and tictactoe cc52b322 do not. 74e24551...59b30920 diverged. At 09:14Z tictactoe 4f27dd1a locked reorg-safety#59b30920, matching #152 HEAD. 22 Sep 12:58Z #156 draft head 30c5d021, base #152 f61b46f4. Merge of reorg-safety into guest-hardening. Contains ELF refresh 291d4f29 and the gap retry. Demo tip cc52b322 still pins 291d4f29. Stack #147 74ee1b7d -> #153 -> #154 -> #152 -> #156. Unchanged: #149 51b56aab, #131 004a5948, #134 add37bed, #136 d2da8ad0, #140 28f0aee9. #157 draft cd35f913. #158 draft 62882ad9 retargeted onto #157. Research only."
         },
         {
           "name": "vprog-tictactoe tip",
-          "url": "https://github.com/biryukovmaxim/vprog-tictactoe/commit/92146b49406749dd8969976d1b7e5cb6bf483bd6",
+          "url": "https://github.com/biryukovmaxim/vprog-tictactoe/commit/93b75901e6265f996b8ac27a1561e2597ab53da9",
           "chip": "demo",
-          "note": "Tip 4f27dd1a (22 Sep 09:14Z): pin vprogs reorg-safety 59b30920. Cargo.lock host is reorg-safety#59b30920, matching #152 HEAD. 74e24551 is gone from that lock. Rusty pin in that lock is still eb0a856, one diagnostic commit behind master ecb9b1f. #152 body still says the app pins 0636cff1, the parent of HEAD. guest/Cargo.lock was not in this commit and is still fork biryukovmaxim/vprogs bridge-live-lane#128dd05f. Tip 93b75901 (22 Sep 13:33Z). e2bc408 re-seeds the exit-index mirror on warm restart. Prior merge cc52b322 of #25. Host and guest locks both kaspanet guest-hardening#291d4f29. That is vprogs#156, still based on 59b30920, not the #152 gap retry 0309fd37. Fork bridge-live-lane#128dd05f is gone. Encoder wasm 0.1.6. Rusty pin still eb0a856. Not a product testnet."
+          "note": "Tip 4f27dd1a (22 Sep 09:14Z): pin vprogs reorg-safety 59b30920. Cargo.lock host is reorg-safety#59b30920, matching #152 HEAD. 74e24551 is gone from that lock. Rusty pin in that lock is still eb0a856, behind release v2.1.0 01b532e8. #152 body still says the app pins 0636cff1, the parent of HEAD. guest/Cargo.lock was not in this commit and is still fork biryukovmaxim/vprogs bridge-live-lane#128dd05f. Tip 93b75901 (22 Sep 13:33Z). e2bc408 re-seeds the exit-index mirror on warm restart. Prior merge cc52b322 of #25. Host and guest locks both kaspanet guest-hardening#291d4f29. That is vprogs#156, still based on 59b30920, not the #152 gap retry 0309fd37. Fork bridge-live-lane#128dd05f is gone. Encoder wasm 0.1.6. Rusty pin still eb0a856, behind release v2.1.0 01b532e8. Not a product testnet."
         },
         {
           "name": "Argent",
@@ -85,6 +85,12 @@
           "url": "https://github.com/STP-KAS/kaspa-master-file/blob/main/GROK-47-THINKING.md",
           "chip": "code",
           "note": "21 Sep night. Not a pin change. Spec transfer dispatch tag 79c71c23. kcc20-live transfer tag c3d9f92f. transfer_delegator fd3ef14a on both. KCC-1 §11.1 vectors 2c49ed65 and 676b1a86 reproduced first. Encoded state diverges at byte 44: opcode 0x01 vs 0x20, so a strict §8.1 decoder rejects. Live transfer does not require leader amount >= 0; outputs cannot be negative, so a pre-existing negative leader burns other positive inputs. #30 unkeyed vectors f9f2a0b3… and 1a15d654… reproduced; keyed PublicKeyHash of the same keys is 91438cfb… and 4ba1a5f9…. #23 wants 0x05/0x06 inside the band #30 reserves. Neither PR is on main. x402 not in this pass. Forum clock stays halted."
+        },
+        {
+          "name": "Three passes 22 Sep evening",
+          "url": "https://github.com/STP-KAS/kaspa-master-file/blob/main/GROK-47-THREE-PASSES.md",
+          "chip": "code",
+          "note": "Release pin moved to rusty-kaspa v2.1.0 at 01b532e8, published 2026-09-22T13:55:36Z, not a prerelease. Protocol 11 chunked IBD, still speaks protocol 10. Not a consensus activation. GHOSTDAG k=124 recomputed from x=100, D=5s, delta=0.01. The sub-millisecond relay throttle is inside the tag. Kas-Smiths still 44/356/111. KCC-20 stays Draft."
         },
         {
           "name": "Grok 4.7 KNS review",

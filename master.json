@@ -18,7 +18,7 @@
           "name": "Live",
           "url": "https://kaspaexplained.com/status",
           "chip": "live",
-          "note": "PoW fair launch 2021-11-07. BlockDAG / GHOSTDAG. Crescendo ~10 BPS. Toccata live after DAA 474165565 (~30 Jun 2026): KIP-16/17/20/21 Active (kips e4ae233). rusty-kaspa release tag v2.0.1 is commit cfafeb4c (15 Jun), not master. Master eb0a856 (20 Sep, #1136+#1137 merged) is not a new node tag. SilverScript v1.0.0 commit 3ed9733 (9 Sep). No spendable L1 stable."
+          "note": "PoW fair launch 2021-11-07. BlockDAG / GHOSTDAG. Crescendo ~10 BPS. Toccata live after DAA 474165565 (~30 Jun 2026): KIP-16/17/20/21 Active (kips e4ae233). rusty-kaspa release tag v2.0.1 is commit cfafeb4c (15 Jun), not master. Master ecb9b1f (22 Sep 11:27Z, #1096 merged) is not a new node tag. #1096 only reports the output count in InvalidOutputIndex. Prior tip eb0a856. SilverScript v1.0.0 commit 3ed9733 (9 Sep). No spendable L1 stable."
         },
         {
           "name": "Not live",
@@ -60,7 +60,7 @@
           "name": "vprog-tictactoe tip",
           "url": "https://github.com/biryukovmaxim/vprog-tictactoe/commit/92146b49406749dd8969976d1b7e5cb6bf483bd6",
           "chip": "demo",
-          "note": "Tip 4f27dd1a (22 Sep 09:14Z): pin vprogs reorg-safety 59b30920. Cargo.lock host is reorg-safety#59b30920, matching #152 HEAD. 74e24551 is gone from that lock. Rusty still eb0a856. #152 body still says the app pins 0636cff1, the parent of HEAD. guest/Cargo.lock was not in this commit and is still fork biryukovmaxim/vprogs bridge-live-lane#128dd05f. Draft tictactoe#25 025dcdae proposes host pin guest-hardening#58efe4a0. Not merged. Guest ELF not in that pin. Not a product testnet."
+          "note": "Tip 4f27dd1a (22 Sep 09:14Z): pin vprogs reorg-safety 59b30920. Cargo.lock host is reorg-safety#59b30920, matching #152 HEAD. 74e24551 is gone from that lock. Rusty pin in that lock is still eb0a856, one diagnostic commit behind master ecb9b1f. #152 body still says the app pins 0636cff1, the parent of HEAD. guest/Cargo.lock was not in this commit and is still fork biryukovmaxim/vprogs bridge-live-lane#128dd05f. Draft tictactoe#25 025dcdae proposes host pin guest-hardening#58efe4a0. Not merged. Guest ELF not in that pin. Not a product testnet."
         },
         {
           "name": "Argent",
@@ -714,7 +714,7 @@
           "name": "rusty-kaspa",
           "url": "https://github.com/kaspanet/rusty-kaspa",
           "chip": "node",
-          "note": "v2.0.0 Toccata · v2.0.1. Master tip eb0a856 (20 Sep): #1136/#1137 merged. dagknight unmerged (tip still ad45e24). Open: #1135 ed09a8a PSKB sighash opt-in; DK #1104 a5888da (gate: parent-order invariance → run #1132 first), #1127 #1131 #1132 #1124, #1122 332ec6c, #1121 06efd83. Not shipped DK."
+          "note": "v2.0.0 Toccata · v2.0.1. Master tip ecb9b1f (22 Sep, #1096 merged: output-count in InvalidOutputIndex). Prior tip eb0a856 (#1136/#1137). dagknight unmerged (tip still ad45e24). Open: #1135 ed09a8a PSKB sighash opt-in; DK #1104 a5888da (gate: parent-order invariance → run #1132 first), #1127 #1131 #1132 #1124, #1122 332ec6c, #1121 06efd83. Not shipped DK."
         },
         {
           "name": "kips",

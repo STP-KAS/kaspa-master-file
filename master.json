@@ -54,7 +54,7 @@
           "name": "vprogs stack 21 Sep morning",
           "url": "https://github.com/kaspanet/vprogs",
           "chip": "research",
-          "note": "Master still f9b84a8 (28 Jul). No release, no product testnet. 22 Sep ~08:32Z: #148 closed unmerged 07:30Z (closed head 78501881; old draft head was da2a7f26). Resume is #154 open not draft, head f84525b5, 25 commits, base #153. #153 open not draft, one commit 3496a8c5, base #147. #152 still draft: closed 07:29Z, reopened 07:30Z, head 59b30920 (ci: drop the runner simnet suite step). Parent 0636cff1. 74e24551...59b30920 diverged. At 09:14Z tictactoe 4f27dd1a locked reorg-safety#59b30920, matching #152 HEAD. Stack #147 74ee1b7d -> #153 -> #154 -> #152. Unchanged: #149 51b56aab, #131 004a5948, #134 add37bed, #136 d2da8ad0, #140 28f0aee9. No other kaspanet PR updated 22 Sep. Research only."
+          "note": "Master still f9b84a8 (28 Jul). No release, no product testnet. 22 Sep ~08:32Z: #148 closed unmerged 07:30Z (closed head 78501881; old draft head was da2a7f26). Resume is #154 head f84525b5, 25 commits, base #153. #153 one commit 3496a8c5, base #147. 22 Sep 10:53Z Maxim marked #153 and #154 draft. Same heads. #152 still draft: closed 07:29Z, reopened 07:30Z, head 59b30920 (ci: drop the runner simnet suite step). Parent 0636cff1. 74e24551...59b30920 diverged. At 09:14Z tictactoe 4f27dd1a locked reorg-safety#59b30920, matching #152 HEAD. Stack #147 74ee1b7d -> #153 -> #154 -> #152. Unchanged: #149 51b56aab, #131 004a5948, #134 add37bed, #136 d2da8ad0, #140 28f0aee9. No other kaspanet PR updated 22 Sep. Research only."
         },
         {
           "name": "vprog-tictactoe tip",
@@ -1626,13 +1626,13 @@
           "name": "vprogs#153 lane-fetch-shutdown",
           "url": "https://github.com/kaspanet/vprogs/pull/153",
           "chip": "open",
-          "note": "Opened 22 Sep. Not draft. One commit 3496a8c5: cancel the aggregate prover lane-proof fetch on shutdown. Base storage-write-drain (#147 74ee1b7d). Parent of #154."
+          "note": "Opened 22 Sep. Marked draft 10:53Z. Same commit 3496a8c5: cancel the aggregate prover lane-proof fetch on shutdown. Base storage-write-drain (#147 74ee1b7d). Parent of #154."
         },
         {
           "name": "vprogs#154 settle-resume",
           "url": "https://github.com/kaspanet/vprogs/pull/154",
           "chip": "open",
-          "note": "Opened 22 Sep. Not draft. Same title as closed #148. Head f84525b5, 25 commits, base lane-fetch-shutdown (#153). Last commit drops the runner simnet CI step. #152 stacks on this branch. Research only."
+          "note": "Opened 22 Sep. Marked draft 10:53Z. Same title as closed #148. Head f84525b5, 25 commits, base lane-fetch-shutdown (#153). Last commit drops the runner simnet CI step. #152 stacks on this branch. Research only."
         },
         {
           "name": "kaspa.stream app",

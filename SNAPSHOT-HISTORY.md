@@ -8,6 +8,7 @@ Not a KIP. Not Kaspa core. A tweet is not a pin. This file is the agent/operator
 
 | When (Europe/Brussels) | Commit | What we did | Pins |
 | --- | --- | --- | --- |
+| 2026-09-22 | [c3678cf](https://github.com/STP-KAS/kaspa-master-file/commit/c3678cf) | Comments: tictactoe `4f27dd1`, vprogs#152 follow-up, #153 (shutdown-cancel fetch). #148 closed-unmerged; resume is #154. Guest ELF still `128dd05f`. | **Hold** (vProgs research) |
 | 2026-09-22 11:14 | [68cf31c](https://github.com/STP-KAS/kaspa-master-file/commit/68cf31c) | tictactoe `4f27dd1a` locks #152 head `59b30920`. The `74e24551` divergence is gone. #152 body still names `0636cff1`. No comment. | **Hold** (vProgs research) |
 | 2026-09-22 morning | [0162c70](https://github.com/STP-KAS/kaspa-master-file/commit/0162c70) | vprogs mail: #148 closed unmerged 07:30Z. Resume is #154 `f84525b5` on new #153 `3496a8c5`. #152 draft reopened, head `59b30920`. Tictactoe lock still `74e24551`, diverged. Master `f9b84a8`. No other kaspanet PR moved today. Comment held until 12:26. | **Hold** (vProgs research) |
 | 2026-09-22 | [69ba793](https://github.com/STP-KAS/kaspa-master-file/commit/69ba793) | Folded the KNS file read into section 4b and `master.json`. DOTK SDK repos, three KasName hashes, Kaspire is not a wallet-table row. Catalog line that said inject stays Kasware/Kastle now says this desk's in-page inject is withdrawn. | **Hold** |

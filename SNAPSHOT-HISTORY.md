@@ -8,6 +8,7 @@ Not a KIP. Not Kaspa core. A tweet is not a pin. This file is the agent/operator
 
 | When (Europe/Brussels) | Commit | What we did | Pins |
 | --- | --- | --- | --- |
+| 2026-09-22 13:15 | [PENDING](https://github.com/STP-KAS/kaspa-master-file/commit/PENDING) | vprogs#156 draft 58efe4a0 on #152: malformed carrier input rejects instead of panicking the guest. tictactoe master still 4f27dd1a. Draft #25 proposes the new pin. Guest ELF not moved. No comment. Izio's DX post has no newer reply. | **Hold** (vProgs research) |
 | 2026-09-22 13:09 | [302a7bd](https://github.com/STP-KAS/kaspa-master-file/commit/302a7bd) | kccs#31 proposes KCC-20 Last Call without Last-Call-Deadline and rewrites Created. Comment 5775404197. Main stays Draft. rusty-kaspa#1096 output-index fix is complete; checks still running; no comment. | **Hold** |
 | 2026-09-22 12:58 | [9e2d51f](https://github.com/STP-KAS/kaspa-master-file/commit/9e2d51f) | Answered Izio on X: DX first, the two holes are the lock not the house. https://x.com/StppStp/status/2102351752578420818 #153 and #154 marked draft 10:53Z, same heads. No comment on that flip. | **Hold** |
 | 2026-09-22 12:27 | [e9d016d](https://github.com/STP-KAS/kaspa-master-file/commit/e9d016d) | Posted kccs#24 comment 5774902587 (PSKB JSON numbers, signTransaction display) and vprogs#152 comment 5774935036 (gap pass does not retry a failed lane proof). No other kaspanet repo moved. | **Hold** |

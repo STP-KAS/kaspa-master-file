@@ -54,13 +54,13 @@
           "name": "vprogs stack 21 Sep morning",
           "url": "https://github.com/kaspanet/vprogs",
           "chip": "research",
-          "note": "Master still f9b84a8 (28 Jul). No release, no product testnet. 22 Sep ~08:32Z: #148 closed unmerged 07:30Z (closed head 78501881; old draft head was da2a7f26). Resume is #154 head f84525b5, 25 commits, base #153. #153 one commit 3496a8c5, base #147. 22 Sep 10:53Z Maxim marked #153 and #154 draft. Same heads. #152 still draft: closed 07:29Z, reopened 07:30Z, head 59b30920 (ci: drop the runner simnet suite step). Parent 0636cff1. 74e24551...59b30920 diverged. At 09:14Z tictactoe 4f27dd1a locked reorg-safety#59b30920, matching #152 HEAD. Stack #147 74ee1b7d -> #153 -> #154 -> #152. Unchanged: #149 51b56aab, #131 004a5948, #134 add37bed, #136 d2da8ad0, #140 28f0aee9. No other kaspanet PR updated 22 Sep. Research only."
+          "note": "Master still f9b84a8 (28 Jul). No release, no product testnet. 22 Sep ~08:32Z: #148 closed unmerged 07:30Z (closed head 78501881; old draft head was da2a7f26). Resume is #154 head f84525b5, 25 commits, base #153. #153 one commit 3496a8c5, base #147. 22 Sep 10:53Z Maxim marked #153 and #154 draft. Same heads. #152 still draft: closed 07:29Z, reopened 07:30Z, head 59b30920 (ci: drop the runner simnet suite step). Parent 0636cff1. 74e24551...59b30920 diverged. At 09:14Z tictactoe 4f27dd1a locked reorg-safety#59b30920, matching #152 HEAD. 22 Sep 11:12Z #156 draft head 58efe4a0 on reorg-safety 59b30920: malformed carrier input is a journaled rejection, not a guest panic. Stack #147 74ee1b7d -> #153 -> #154 -> #152 -> #156. Unchanged: #149 51b56aab, #131 004a5948, #134 add37bed, #136 d2da8ad0, #140 28f0aee9. No other kaspanet PR updated 22 Sep. Research only."
         },
         {
           "name": "vprog-tictactoe tip",
           "url": "https://github.com/biryukovmaxim/vprog-tictactoe/commit/92146b49406749dd8969976d1b7e5cb6bf483bd6",
           "chip": "demo",
-          "note": "Tip 4f27dd1a (22 Sep 09:14Z): pin vprogs reorg-safety 59b30920. Cargo.lock host is reorg-safety#59b30920, matching #152 HEAD. 74e24551 is gone from that lock. Rusty still eb0a856. #152 body still says the app pins 0636cff1, the parent of HEAD. guest/Cargo.lock was not in this commit and is still fork biryukovmaxim/vprogs bridge-live-lane#128dd05f. Not a product testnet."
+          "note": "Tip 4f27dd1a (22 Sep 09:14Z): pin vprogs reorg-safety 59b30920. Cargo.lock host is reorg-safety#59b30920, matching #152 HEAD. 74e24551 is gone from that lock. Rusty still eb0a856. #152 body still says the app pins 0636cff1, the parent of HEAD. guest/Cargo.lock was not in this commit and is still fork biryukovmaxim/vprogs bridge-live-lane#128dd05f. Draft tictactoe#25 025dcdae proposes host pin guest-hardening#58efe4a0. Not merged. Guest ELF not in that pin. Not a product testnet."
         },
         {
           "name": "Argent",

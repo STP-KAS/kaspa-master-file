@@ -9,6 +9,7 @@ Not a KIP. Not Kaspa core. A tweet is not a pin. This file is the agent/operator
 | When (Europe/Brussels) | Commit | What we did | Pins |
 | --- | --- | --- | --- |
 | 2026-09-22 15:33 | [7807b44](https://github.com/STP-KAS/kaspa-master-file/commit/7807b44) | tictactoe tip 93b75901. e2bc408 re-seeds the exit-index mirror on warm restart. vprogs pin still 291d4f29, not #156 30c5d021. No comment. | **Hold** (vProgs research) |
+| 2026-09-22 15:50 | [PENDING](https://github.com/STP-KAS/kaspa-master-file/commit/PENDING) | Michael Sutton approved rusty-kaspa#1138 with an empty review, then merged it as master 2a47b249. No new comment. #1139 is still only the version strings. | **Hold** |
 | 2026-09-22 15:45 | [91f3fcc](https://github.com/STP-KAS/kaspa-master-file/commit/91f3fcc) | rusty-kaspa#1139 head e08bdcb5, rebased onto 2a47b249. Still version strings only. Not merged. No tag. No comment. | **Hold** |
 | 2026-09-22 15:44 | [26161fa](https://github.com/STP-KAS/kaspa-master-file/commit/26161fa) | rusty-kaspa master 2a47b249. #1138 merged. Arithmetic lint plus parent-count SizeExceeded. Not a release tag. v2.0.1 still the release. No new comment. | **Hold** |
 | 2026-09-22 15:30 | [c7129eb](https://github.com/STP-KAS/kaspa-master-file/commit/c7129eb) | rusty-kaspa#1139 open, ff1719f9. Version strings 2.0.1 to 2.1.0 only. Not merged. No tag. Release remains v2.0.1. No comment. | **Hold** |

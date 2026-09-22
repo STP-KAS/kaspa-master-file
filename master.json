@@ -18,7 +18,7 @@
           "name": "Live",
           "url": "https://kaspaexplained.com/status",
           "chip": "live",
-          "note": "PoW fair launch 2021-11-07. BlockDAG / GHOSTDAG. Crescendo ~10 BPS. Toccata live after DAA 474165565 (~30 Jun 2026): KIP-16/17/20/21 Active (kips e4ae233). rusty-kaspa GitHub release v2.1.0 is commit 01b532e8, published 2026-09-22T13:55:36Z, not a prerelease. #1139 only changes version strings. The release is P2P protocol 11 chunked IBD, still speaks protocol 10, not a consensus activation. Previous release v2.0.1 remains cfafeb4c. Prior tip 2a47b249 is #1138. #1138 is arithmetic lint plus CompressedParents SizeExceeded at u8::MAX*2048. Prior tip ecb9b1f was #1096. Desk comment 5777320861. On 01b532e8, check_tx_throttling in protocol/flows/src/v10/txrelay/flow.rs divides by a raw millisecond count; under 1 ms that becomes u64::MAX. The request path still uses .max(1). Comment 5778361113. No second note. SilverScript v1.0.0 commit 3ed9733 (9 Sep). No spendable L1 stable."
+          "note": "PoW fair launch 2021-11-07. BlockDAG / GHOSTDAG. Crescendo ~10 BPS. Toccata live after DAA 474165565 (~30 Jun 2026): KIP-16/17/20/21 Active (kips e4ae233). rusty-kaspa GitHub release v2.1.0 is commit 01b532e8, published 2026-09-22T13:55:36Z, not a prerelease. #1139 only changes version strings. The release is P2P protocol 11 chunked IBD, still speaks protocol 10, not a consensus activation. Previous release v2.0.1 remains cfafeb4c. Prior tip 2a47b249 is #1138. #1138 is arithmetic lint plus CompressedParents SizeExceeded at u8::MAX*2048. Prior tip ecb9b1f was #1096. Desk comment 5777320861. On 01b532e8, check_tx_throttling in protocol/flows/src/v10/txrelay/flow.rs divides by a raw millisecond count; under 1 ms that becomes u64::MAX. The request path still uses .max(1). Comment 5778361113. No second note. SilverScript v1.0.0 commit 3ed9733 (9 Sep). No spendable L1 stable. rusty-kaspa #1129 still open, head 8b9f1c419f (21 Sep 19:36Z). Read 22 Sep: mergeable state dirty. rust-version 1.91.0 to 1.98.1. CI toolchain 1.93.0 to 1.98.1. Branch Cargo.toml still says version 2.0.1 because the branch predates #1139. Master says 2.1.0. coderofstuff answered the {:#2x} width lint. The risc0 receipt edit drops return in front of Err(...)?. Same early return. Not a consensus change. No desk comment. v2.1.0 tag 01b532e8 contains crate kaspa-txscript-zk-sdk at crypto/txscript/zk-sdk. Ori Newman 2102428531246469399 asked operators to upgrade to that release. The post is not about #1129."
         },
         {
           "name": "Not live",
@@ -36,7 +36,7 @@
           "name": "KCC still open",
           "url": "https://github.com/kaspanet/kccs/pulls",
           "chip": "Draft",
-          "note": "On main: kcc-0000 Final, kcc-0001, kcc-0002, kcc-0020 (Draft). Open: #31 KCC-20 Last Call proposal fb50affe (22 Sep 11:07Z, missing Last-Call-Deadline, Created rewritten, README index still Draft, desk comment 5775404197, not Last Call on main). 22 Sep 14:29 Manyfestation: do not rephrase the borrow restriction in that paragraph, remove it or point at the valid-borrow section; also asked about an Asset category, which KCC-0 does not list; #24 KCC-0012 head 7159d48 (22 Sep 09:44Z Izio said KIP-12 is superseded by KCC-12; file still Status Draft and Backwards Compatibility says no previous standard exists; no kip-0012 in kaspanet/kips; not a status change; desk comment 5774902587; danieliyahu1 5778566104, 5778566436, 5778566785; desk comment 5778821919: accept-vector sequence 18446744073709551615 is not an exact JSON number; danieliyahu1 agreed in 5781915838; no second note); #20 vectors 81f111f0; #23 p2pk-ecdsa 19d174d5 (updated 21 Sep 12:25Z); #30 unkeyed hash 1c3ffd18 (21 Sep 13:11Z); #27 kcc-1/kcc0 fa845057 approved, unmerged (touched 21 Sep 10:36Z); #26 KCC-23 479fa206 (head unchanged; 22 Sep 14:43Z Manyfestation called the MJ/23 title an easter egg); #6 KCC-0021 165ff91d (21 Sep 12:07Z); #4 KCC-0402 39a42644. Issue #28: four KCC20 objects, not one ABI. None adopted."
+          "note": "On main: kcc-0000 Final, kcc-0001, kcc-0002, kcc-0020 (Draft). Open: #31 KCC-20 Last Call proposal fb50affe (author saefstroem) (22 Sep 11:07Z, missing Last-Call-Deadline, Created rewritten, README index still Draft, desk comment 5775404197, not Last Call on main). 22 Sep 14:29 Manyfestation: do not rephrase the borrow restriction in that paragraph, remove it or point at the valid-borrow section; also asked about an Asset category, which KCC-0 does not list; #24 KCC-0012 head 7159d48 (22 Sep 09:44Z Izio said KIP-12 is superseded by KCC-12; file still Status Draft and Backwards Compatibility says no previous standard exists; no kip-0012 in kaspanet/kips; not a status change; desk comment 5774902587; danieliyahu1 5778566104, 5778566436, 5778566785; desk comment 5778821919: accept-vector sequence 18446744073709551615 is not an exact JSON number; danieliyahu1 agreed in 5781915838; no second note); #20 vectors 81f111f0; #23 p2pk-ecdsa 19d174d5 (updated 21 Sep 12:25Z); #30 unkeyed hash 1c3ffd18 (21 Sep 13:11Z); #27 kcc-1/kcc0 fa845057 approved, unmerged (touched 21 Sep 10:36Z); #26 KCC-23 479fa206 (head unchanged; 22 Sep 14:43Z Manyfestation called the MJ/23 title an easter egg); #6 KCC-0021 165ff91d (21 Sep 12:07Z); #4 KCC-0402 39a42644. Issue #28: four KCC20 objects, not one ABI. None adopted."
         },
         {
           "name": "kccs#29 KCC-3/4/5",
@@ -67,6 +67,18 @@
           "url": "https://github.com/argent-lang/argent",
           "chip": "preview",
           "note": "Master e76ee07 (14 Sep, #63 rules 5 and 6 compile). Tags API returned empty. #62 module loading still open (aabd4e6d, updated 17 Sep). Not release-ready. Not a tag."
+        },
+        {
+          "name": "saefstroem / stroemnet",
+          "url": "https://github.com/saefstroem/stroemnet",
+          "chip": "experiment",
+          "note": "Catalog, not a pin. saefstroem authored KIP-16 (Active). stroemnet tip e60dc3e (17 Jul 2026), MIT, README unaudited and testnet only. ChannelId: Kaspa TN10 byte 0, hand-built HTLC in kaspa_txscript, SHA256, exactly 2 inputs and 2 outputs, CLTV, output 0 must be at least the spent input minus 10000000 sompi (SOLVER_REWARD) on both paths. The script does not name a solver output. Channel default lock 180s; the script timelock is an argument. Ethereum Sepolia byte 1, StroemHTLCV1.sol. Igra Galleon byte 2, iKAS, 18 decimals, synthetic clock, lock 3600s. Swap id and destination sit in an OpFalse/OpIf branch. Not mainnet. Not KCC-20. Not SilverScript. stroemwallet forks kasware-wallet/extension (last push 8 Mar 2026). mcp-http pushed 22 Sep is an HTTP MCP server, not a Kaspa object. Of his nine follows, the Kaspa-relevant accounts are aspect, biryukovmaxim, and 1bananagirl."
+        },
+        {
+          "name": "kaspanet org cut",
+          "url": "https://github.com/kaspanet",
+          "chip": "org",
+          "note": "22 Sep 2026: 26 public repos. Load-bearing tips are the Now rows. The README section 2 status column is the 11 Sep receipt. Release is rusty-kaspa v2.1.0 01b532e8. The other 15 are historical or vendored: workflow-perf-monitor-rs (fork, saefstroem #1, rusty master Cargo.toml tag v0.0.3 via #965), rusty-kaspa-corpus, big-test-data, faucet (old Go, not TN10), whitepaper, go-secp256k1, go-muhash, secp256k1, protoc-gen-doc, kasparov (Go API, superseded by rusty RPC), golang-lru, compose, quick-start, procedures, ghostdag-prototype. Not pins."
         },
         {
           "name": "x402 bind the tag",
@@ -888,7 +900,7 @@
           "name": "@asaefstroem",
           "url": "https://x.com/asaefstroem",
           "chip": "ss",
-          "note": "Alexander Säfström. KCC-0. KCC-0012 lead (kccs#24, 11 Sep). Sutton 11 Sep praise. Draft."
+          "note": "Alexander Säfström. GitHub saefstroem. KIP-16 author (header spells Safstrom), Active, OpZkPrecompile 0xa6. rusty-kaspa #775, ZK SDK #953, OpTxInputDaaScore #861, all merged. KCC-0 author (#17, Final via #25). KCC-0012 lead (kccs#24, still Draft). Author of open kccs#31. Sutton 11 Sep praise. stroemnet tip e60dc3e (17 Jul 2026) is his unaudited TN10/Sepolia/Igra swap, not a product. stroemwallet is a kasware-wallet/extension fork. mcp-http is not Kaspa."
         },
         {
           "name": "@manyfest_",

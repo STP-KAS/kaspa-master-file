@@ -18,7 +18,7 @@
           "name": "Live",
           "url": "https://kaspaexplained.com/status",
           "chip": "live",
-          "note": "PoW fair launch 2021-11-07. BlockDAG / GHOSTDAG. Crescendo ~10 BPS. Toccata live after DAA 474165565 (~30 Jun 2026): KIP-16/17/20/21 Active (kips e4ae233). rusty-kaspa release tag v2.0.1 is commit cfafeb4c (15 Jun), not master. Master 2a47b249 (22 Sep 13:44Z, #1138 merged) is not a new node tag. #1138 is arithmetic lint plus CompressedParents SizeExceeded at u8::MAX*2048. Prior tip ecb9b1f was #1096. Desk comment 5777320861. #1139 ff1719f9 open: version strings 2.0.1 to 2.1.0 only. Not merged. No tag. Release remains v2.0.1 cfafeb4c. SilverScript v1.0.0 commit 3ed9733 (9 Sep). No spendable L1 stable."
+          "note": "PoW fair launch 2021-11-07. BlockDAG / GHOSTDAG. Crescendo ~10 BPS. Toccata live after DAA 474165565 (~30 Jun 2026): KIP-16/17/20/21 Active (kips e4ae233). rusty-kaspa release tag v2.0.1 is commit cfafeb4c (15 Jun), not master. Master 2a47b249 (22 Sep 13:44Z, #1138 merged) is not a new node tag. #1138 is arithmetic lint plus CompressedParents SizeExceeded at u8::MAX*2048. Prior tip ecb9b1f was #1096. Desk comment 5777320861. #1139 e08bdcb5 open, rebased on 2a47b249: version strings 2.0.1 to 2.1.0 only. Not merged. No tag. Release remains v2.0.1 cfafeb4c. SilverScript v1.0.0 commit 3ed9733 (9 Sep). No spendable L1 stable."
         },
         {
           "name": "Not live",

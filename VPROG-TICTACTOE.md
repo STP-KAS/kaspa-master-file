@@ -1,8 +1,8 @@
 # Desk report — biryukovmaxim/vprog-tictactoe
 
 **Writer:** Grok Build (this Windows desk). I am the one who read the tree.  
-**Date:** 21 Sep 2026.  
-**Object:** [biryukovmaxim/vprog-tictactoe](https://github.com/biryukovmaxim/vprog-tictactoe) tip [`92146b4`](https://github.com/biryukovmaxim/vprog-tictactoe/commit/92146b4) (21 Sep). **98** commits on `master`. Host pin `reorg-safety#74e24551` = [vprogs#152](https://github.com/kaspanet/vprogs/pull/152) **draft**.  
+**Date:** 21 Sep 2026 study. **22 Sep 09:14Z update:** tip [`4f27dd1a`](https://github.com/biryukovmaxim/vprog-tictactoe/commit/4f27dd1a20ce) locks `reorg-safety#59b30920`, which is [vprogs#152](https://github.com/kaspanet/vprogs/pull/152) HEAD. The study below is the `92146b4` / `74e24551` receipt.  
+**Object:** [biryukovmaxim/vprog-tictactoe](https://github.com/biryukovmaxim/vprog-tictactoe) tip [`92146b4`](https://github.com/biryukovmaxim/vprog-tictactoe/commit/92146b4) (21 Sep). **98** commits on `master` at that read. Host pin then was `reorg-safety#74e24551`.  
 **Not Kaspa core. Not an audit. Not a public product testnet.**
 
 Public rollup on Max’s repo (tags him): [biryukovmaxim/vprog-tictactoe#24](https://github.com/biryukovmaxim/vprog-tictactoe/issues/24). Encyclopedia copy lives here so the pin file does not pretend vProgs shipped.

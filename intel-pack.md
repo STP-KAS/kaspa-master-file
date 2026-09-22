@@ -1,6 +1,6 @@
 # Kaspa High-Value Intel Master Pack
 
-**Current pins are not this pack.** Read README **Now** and `master.json` section `now` (21 Sep 2026, Grok 4.7). Tables below are dated receipts and can lag. In particular: KCC-0’s file is **Final** (`c0bb8f3`) while the kccs README index still says Draft; tictactoe’s host pin is vprogs **#152** `74e24551`, not #148; vprogs #147’s head is `74ee1b7d`, not `1d449964`; kccs#29 proposes Draft KCC-3/4/5 and is not adopted.
+**Current pins are not this pack.** Read README **Now** and `master.json` section `now` (21 Sep 2026, Grok 4.7). Tables below are dated receipts and can lag. In particular: KCC-0’s file is **Final** (`c0bb8f3`) while the kccs README index still says Draft; tictactoe’s host pin is vprogs **#152** `59b30920` (tip `4f27dd1a`), not #148; vprogs #147’s head is `74ee1b7d`, not `1d449964`; kccs#29 proposes Draft KCC-3/4/5 and is not adopted.
 
 **Date:** 2026-07-26 (registry updated **2026-09-12**; SilverScript pin **2026-09-09**)  
 **Purpose:** Single index of community + founder intel for future projects.  

@@ -54,13 +54,13 @@
           "name": "vprogs stack 21 Sep morning",
           "url": "https://github.com/kaspanet/vprogs",
           "chip": "research",
-          "note": "Master still f9b84a8 (28 Jul). No release, no product testnet. 22 Sep ~08:32Z: #148 closed unmerged 07:30Z (closed head 78501881; old draft head was da2a7f26). Resume is #154 open not draft, head f84525b5, 25 commits, base #153. #153 open not draft, one commit 3496a8c5, base #147. #152 still draft: closed 07:29Z, reopened 07:30Z, head 59b30920 (ci: drop the runner simnet suite step). Parent 0636cff1. 74e24551...59b30920 diverged. Stack #147 74ee1b7d -> #153 -> #154 -> #152. Unchanged: #149 51b56aab, #131 004a5948, #134 add37bed, #136 d2da8ad0, #140 28f0aee9. No other kaspanet PR updated 22 Sep. Research only."
+          "note": "Master still f9b84a8 (28 Jul). No release, no product testnet. 22 Sep ~08:32Z: #148 closed unmerged 07:30Z (closed head 78501881; old draft head was da2a7f26). Resume is #154 open not draft, head f84525b5, 25 commits, base #153. #153 open not draft, one commit 3496a8c5, base #147. #152 still draft: closed 07:29Z, reopened 07:30Z, head 59b30920 (ci: drop the runner simnet suite step). Parent 0636cff1. 74e24551...59b30920 diverged. At 09:14Z tictactoe 4f27dd1a locked reorg-safety#59b30920, matching #152 HEAD. Stack #147 74ee1b7d -> #153 -> #154 -> #152. Unchanged: #149 51b56aab, #131 004a5948, #134 add37bed, #136 d2da8ad0, #140 28f0aee9. No other kaspanet PR updated 22 Sep. Research only."
         },
         {
           "name": "vprog-tictactoe tip",
           "url": "https://github.com/biryukovmaxim/vprog-tictactoe/commit/92146b49406749dd8969976d1b7e5cb6bf483bd6",
           "chip": "demo",
-          "note": "Tip still 92146b4 (21 Sep 13:49Z). Cargo.lock still host kaspanet/vprogs branch reorg-safety#74e245517af9 and rusty eb0a856. That host commit diverged from #152 head 59b30920 on 22 Sep. #152 body says the app pins 0636cff1, which is neither the lock nor HEAD. guest/Cargo.lock still fork biryukovmaxim/vprogs bridge-live-lane#128dd05f. Not a product testnet."
+          "note": "Tip 4f27dd1a (22 Sep 09:14Z): pin vprogs reorg-safety 59b30920. Cargo.lock host is reorg-safety#59b30920, matching #152 HEAD. 74e24551 is gone from that lock. Rusty still eb0a856. #152 body still says the app pins 0636cff1, the parent of HEAD. guest/Cargo.lock was not in this commit and is still fork biryukovmaxim/vprogs bridge-live-lane#128dd05f. Not a product testnet."
         },
         {
           "name": "Argent",
@@ -738,7 +738,7 @@
           "name": "vprogs",
           "url": "https://github.com/kaspanet/vprogs",
           "chip": "research",
-          "note": "No product testnet. Master still f9b84a8 (28 Jul). 22 Sep ~08:32Z: #148 closed unmerged. Stack #147 74ee1b7d -> #153 3496a8c5 -> #154 f84525b5 (open, not draft) -> #152 draft 59b30920. Tictactoe host Cargo.lock still reorg-safety#74e24551, diverged from #152. Guest ELF still fork bridge-live-lane#128dd05f. Research only."
+          "note": "No product testnet. Master still f9b84a8 (28 Jul). 22 Sep ~08:32Z: #148 closed unmerged. Stack #147 74ee1b7d -> #153 3496a8c5 -> #154 f84525b5 (open, not draft) -> #152 draft 59b30920. Tictactoe host Cargo.lock caught up to reorg-safety#59b30920 at 09:14Z (tip 4f27dd1a). Guest ELF still fork bridge-live-lane#128dd05f. Research only."
         },
         {
           "name": "kaspad (Go)",
@@ -1596,7 +1596,7 @@
           "name": "vprogs#152 reorg-safety",
           "url": "https://github.com/kaspanet/vprogs/pull/152",
           "chip": "draft",
-          "note": "22 Sep 08:32Z. Still draft. Closed 07:29Z, reopened 07:30Z. Base settle-resume, which is now #154, not closed #148. Head 59b30920 (ci: drop the runner simnet suite step). Parent 0636cff1. Six commits: d6714241 repro id gap, 1f03d1bf sparse restore, a39761d6 repro dead lane-proof, 8c06b5ef defer instead of panic, 0636cff1 hygiene, 59b30920 drop simnet CI. Body still says simnet two_provers_contend passed and that tt pins 0636cff1. Tictactoe lock is 74e24551, diverged. GPU-abort still TODO. Desk comment 5761630786 was on the old head."
+          "note": "22 Sep 08:32Z. Still draft. Closed 07:29Z, reopened 07:30Z. Base settle-resume, which is now #154, not closed #148. Head 59b30920 (ci: drop the runner simnet suite step). Parent 0636cff1. Six commits: d6714241 repro id gap, 1f03d1bf sparse restore, a39761d6 repro dead lane-proof, 8c06b5ef defer instead of panic, 0636cff1 hygiene, 59b30920 drop simnet CI. Body still says simnet two_provers_contend passed and that tt pins 0636cff1. Tictactoe lock caught up to 59b30920 at 09:14Z (4f27dd1a). The body line is one commit behind HEAD. GPU-abort still TODO. Desk comment 5761630786 was on the old head."
         },
         {
           "name": "vprogs#149 kaspa-pin",
@@ -1614,7 +1614,7 @@
           "name": "biryukovmaxim/vprog-tictactoe",
           "url": "https://github.com/biryukovmaxim/vprog-tictactoe/issues/24",
           "chip": "demo",
-          "note": "Max guest demo (not kaspanet). Tip still 92146b4. Host lock reorg-safety#74e24551 diverged from vprogs#152 head 59b30920 on 22 Sep. Guest ELF still fork bridge-live-lane#128dd05f. Open #23. Desk report #24."
+          "note": "Max guest demo (not kaspanet). Tip 4f27dd1a (22 Sep 09:14Z). Host lock reorg-safety#59b30920 matches vprogs#152 HEAD. Guest ELF still fork bridge-live-lane#128dd05f. Open #23. Desk report #24."
         },
         {
           "name": "vprogs#148",

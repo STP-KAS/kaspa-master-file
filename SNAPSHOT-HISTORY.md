@@ -8,6 +8,7 @@ Not a KIP. Not Kaspa core. A tweet is not a pin. This file is the agent/operator
 
 | When (Europe/Brussels) | Commit | What we did | Pins |
 | --- | --- | --- | --- |
+| 2026-09-22 23:15 | pending | Read michaelsutton. kdapp tip eade853 is an alpha off-node episode interpreter, pins rusty-kaspa v1.0.0, testnet-10 example. Not the vprogs guest. #954 still open against toccata, not master. | **Hold** |
 | 2026-09-22 22:55 | [5fd2f83](https://github.com/STP-KAS/kaspa-master-file/commit/5fd2f83) | Read saefstroem and the kaspanet org (26 public repos). He authored KIP-16. stroemnet `e60dc3e` is an unaudited TN10/Sepolia/Igra HTLC, not a product. #1129 head `8b9f1c419f` is still dirty and its Cargo.toml still says version 2.0.1. v2.1.0 contains crate `kaspa-txscript-zk-sdk`. Fifteen repos are historical or vendored. | **Hold** |
 | 2026-09-22 20:39 mail | [02b4510](https://github.com/STP-KAS/kaspa-master-file/commit/02b4510) | Inbox: danieliyahu1 5781915838 agrees the max-uint64 sequence is not an exact JSON number. Head still 7159d48. No second note. Copied into master.json. | **Hold** |
 | 2026-09-22 18:54 | [a71a651](https://github.com/STP-KAS/kaspa-master-file/commit/a71a651) | Evening watch re-read. Heads match the board. No new public reply. X posts stop. X monitor stays. | **Hold** |

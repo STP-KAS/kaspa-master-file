@@ -81,6 +81,12 @@
           "note": "22 Sep 2026: 26 public repos. Load-bearing tips are the Now rows. The README section 2 status column is the 11 Sep receipt. Release is rusty-kaspa v2.1.0 01b532e8. The other 15 are historical or vendored: workflow-perf-monitor-rs (fork, saefstroem #1, rusty master Cargo.toml tag v0.0.3 via #965), rusty-kaspa-corpus, big-test-data, faucet (old Go, not TN10), whitepaper, go-secp256k1, go-muhash, secp256k1, protoc-gen-doc, kasparov (Go API, superseded by rusty RPC), golang-lru, compose, quick-start, procedures, ghostdag-prototype. Not pins."
         },
         {
+          "name": "michaelsutton / kdapp",
+          "url": "https://github.com/michaelsutton/kdapp",
+          "chip": "experiment",
+          "note": "Catalog, not a pin. Tip eade853 (2 Jul 2025), version 0.0.1, ISC, README says alpha. Episode commands ride in a tx payload: 4-byte prefix, 4-byte nonce, then the command. The generator grinds the nonce until 10 chosen bits of the tx id match. The engine stores a rollback stack and drops an episode after 2592000 DAA scores, which is three days at 10 scores per second. Workspace pins rusty-kaspa tag v1.0.0, published 31 Mar 2025. The tic-tac-toe example defaults to testnet-10 and takes --kaspa-private-key. This desk does not run it. Not the vprogs guest. Not SilverScript. rusty-kaspa #954 is still open against base toccata, behind, last update 1 May 2026, no comments. Not a pull against master."
+        },
+        {
           "name": "x402 bind the tag",
           "url": "https://github.com/elldeeone/kaspa-x402/releases/tag/v1.0.0-rc.1",
           "chip": "tn10",
@@ -816,7 +822,7 @@
           "name": "@michaelsuttonil",
           "url": "https://x.com/michaelsuttonil",
           "chip": "core",
-          "note": "Protocol."
+          "note": "Michael Sutton. GitHub michaelsutton. Lead protocol. kips#45 marked KIP-16/17/20/21 Active. Toccata node PRs 1036, 1038, 1053, 1101. SilverScript series through #235. Argent through #60. Own alpha kdapp tip eade853 (2 Jul 2025) pins rusty-kaspa v1.0.0. Follows nobody. groute is a GPU framework (PPoPP 2017 artifact, repo last push 8 Jun 2021), not Kaspa."
         },
         {
           "name": "@OriNewman",

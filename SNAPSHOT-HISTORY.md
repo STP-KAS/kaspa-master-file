@@ -8,7 +8,7 @@ Not a KIP. Not Kaspa core. A tweet is not a pin. This file is the agent/operator
 
 | When (Europe/Brussels) | Commit | What we did | Pins |
 | --- | --- | --- | --- |
-| 2026-09-22 14:40 | [PENDING](https://github.com/STP-KAS/kaspa-master-file/commit/PENDING) | tictactoe#25 left draft. Head still 9de2b357. Host and guest both 291d4f29. Not merged. No comment. | **Hold** (vProgs research) |
+| 2026-09-22 14:40 | [7ba86d7](https://github.com/STP-KAS/kaspa-master-file/commit/7ba86d7) | tictactoe#25 left draft. Head still 9de2b357. Host and guest both 291d4f29. Not merged. No comment. | **Hold** (vProgs research) |
 | 2026-09-22 14:29 | [decba9b](https://github.com/STP-KAS/kaspa-master-file/commit/decba9b) | Manyfestation reviewed kccs#31. Head still fb50affe. Deadline and Created date unchanged. No second comment. | **Hold** |
 | 2026-09-22 13:49 | [61f8c25](https://github.com/STP-KAS/kaspa-master-file/commit/61f8c25) | tictactoe#25 head 9de2b357. Host and guest both guest-hardening#291d4f29. The 58efe4a0 mismatch was already fixed by that commit. Not merged. Master tip still 4f27dd1a. | **Hold** (vProgs research) |
 | 2026-09-22 13:44 | [c013ebe](https://github.com/STP-KAS/kaspa-master-file/commit/c013ebe) | vprogs#156 head 291d4f29 refreshes guest ELF images. Still based on 59b30920, not the gap retry. tictactoe#25 still pins 58efe4a0. No comment. | **Hold** (vProgs research) |

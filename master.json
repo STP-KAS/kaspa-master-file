@@ -1596,7 +1596,7 @@
           "name": "vprogs#152 reorg-safety",
           "url": "https://github.com/kaspanet/vprogs/pull/152",
           "chip": "draft",
-          "note": "22 Sep 08:32Z. Still draft. Closed 07:29Z, reopened 07:30Z. Base settle-resume, which is now #154, not closed #148. Head 59b30920 (ci: drop the runner simnet suite step). Parent 0636cff1. Six commits: d6714241 repro id gap, 1f03d1bf sparse restore, a39761d6 repro dead lane-proof, 8c06b5ef defer instead of panic, 0636cff1 hygiene, 59b30920 drop simnet CI. Body still says simnet two_provers_contend passed and that tt pins 0636cff1. Tictactoe lock caught up to 59b30920 at 09:14Z (4f27dd1a). The body line is one commit behind HEAD. GPU-abort still TODO. Desk comment 5761630786 was on the old head."
+          "note": "22 Sep 08:32Z. Still draft. Closed 07:29Z, reopened 07:30Z. Base settle-resume, which is now #154, not closed #148. Head 59b30920 (ci: drop the runner simnet suite step). Parent 0636cff1. Six commits: d6714241 repro id gap, 1f03d1bf sparse restore, a39761d6 repro dead lane-proof, 8c06b5ef defer instead of panic, 0636cff1 hygiene, 59b30920 drop simnet CI. Body still says simnet two_provers_contend passed and that tt pins 0636cff1. Tictactoe lock caught up to 59b30920 at 09:14Z (4f27dd1a). The body line is one commit behind HEAD. Desk comment 5774935036: reform_committed_gap returns 0 on LaneProofFailed and is not run again, so a timeout is treated as a dead block for the life of the process. GPU-abort still TODO. Desk comment 5761630786 was on the old head."
         },
         {
           "name": "vprogs#149 kaspa-pin",
@@ -1728,7 +1728,7 @@
           "name": "kccs#24",
           "url": "https://github.com/kaspanet/kccs/pull/24",
           "chip": "open",
-          "note": "KCC-0012 wallet provider/discovery. Open ready head 7159d48 (20 Sep amend: aligned with review comments; was 06400c3). Still Draft. 22 Sep 09:44Z Izio said KIP-12 is superseded by this pull. The file says no previous standard exists and that KIP-12 was a draft this KCC continues. No kip-0012 in kaspanet/kips. Not a status change. No desk comment. No public implementation."
+          "note": "KCC-0012 wallet provider/discovery. Open ready head 7159d48 (20 Sep amend: aligned with review comments; was 06400c3). Still Draft. 22 Sep 09:44Z Izio said KIP-12 is superseded by this pull. The file says no previous standard exists and that KIP-12 was a draft this KCC continues. No kip-0012 in kaspanet/kips. Not a status change. Desk comment 5774902587: PSKB JSON-number amounts contradict Section 7.2, and kaspa_signTransaction display asks for an output address the serialized output does not have. No public implementation."
         },
         {
           "name": "silverscript#223",

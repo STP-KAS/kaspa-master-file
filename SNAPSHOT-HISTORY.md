@@ -8,7 +8,7 @@ Not a KIP. Not Kaspa core. A tweet is not a pin. This file is the agent/operator
 
 | When (Europe/Brussels) | Commit | What we did | Pins |
 | --- | --- | --- | --- |
-| 2026-09-22 14:58 | [PENDING](https://github.com/STP-KAS/kaspa-master-file/commit/PENDING) | vprogs#156 head 30c5d021 merges reorg-safety into guest-hardening. Contains #152 f61b46f4 and ELF 291d4f29. Demo tip still pins 291d4f29. No comment. | **Hold** (vProgs research) |
+| 2026-09-22 14:58 | [6edef92](https://github.com/STP-KAS/kaspa-master-file/commit/6edef92) | vprogs#156 head 30c5d021 merges reorg-safety into guest-hardening. Contains #152 f61b46f4 and ELF 291d4f29. Demo tip still pins 291d4f29. No comment. | **Hold** (vProgs research) |
 | 2026-09-22 14:58 | [b4815da](https://github.com/STP-KAS/kaspa-master-file/commit/b4815da) | vprogs#152 head f61b46f4 merges settle-resume into reorg-safety. Contains 0309fd37 and #154 f84525b5. #156 and the demo do not. No comment. | **Hold** (vProgs research) |
 | 2026-09-22 14:56 | [8fec113](https://github.com/STP-KAS/kaspa-master-file/commit/8fec113) | tictactoe #25 merged. Tip cc52b322. Host and guest both guest-hardening#291d4f29. Not the #152 gap retry. No comment. | **Hold** (vProgs research) |
 | 2026-09-22 14:48 | [082ab57](https://github.com/STP-KAS/kaspa-master-file/commit/082ab57) | tictactoe#25 head 76030511 rebuilds encoder wasm 0.1.6. Host and guest pins still 291d4f29. Not merged. No comment. | **Hold** (vProgs research) |

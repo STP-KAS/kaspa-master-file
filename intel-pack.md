@@ -301,7 +301,7 @@ Use **transcripts for intent**, **TG for design**, **Discord for demand**, **Git
 | [kaspanet/kccs](https://github.com/kaspanet/kccs) | Covenant conventions / standards work |
 | [michaelsutton/silverscript](https://github.com/michaelsutton/silverscript) | Fork/work branches |
 | [risc0/risc0](https://github.com/risc0/risc0) | ZK stack referenced in R&D |
-| [someone235/native-assets-zk-poc](https://github.com/someone235/native-assets-zk-poc) | Native assets + ZK experiments |
+| [someone235/native-assets-zk-poc](https://github.com/someone235/native-assets-zk-poc) | Read 22 Sep: still the SP1 Fibonacci template. Not a Kaspa asset. |
 | [bitcoin/bips](https://github.com/bitcoin/bips) | Script/culture reference (both corpora) |
 
 ### Core forks / contributor nodes (integration reality)

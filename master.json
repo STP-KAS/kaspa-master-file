@@ -36,7 +36,7 @@
           "name": "KCC still open",
           "url": "https://github.com/kaspanet/kccs/pulls",
           "chip": "Draft",
-          "note": "On main: kcc-0000 Final, kcc-0001, kcc-0002, kcc-0020 (Draft). Open: #24 KCC-0012 head 7159d48; #20 vectors 81f111f0; #23 p2pk-ecdsa 19d174d5 (updated 21 Sep 12:25Z); #30 unkeyed hash 1c3ffd18 (21 Sep 13:11Z); #27 kcc-1/kcc0 fa845057 approved, unmerged (touched 21 Sep 10:36Z); #26 KCC-23 479fa206 (21 Sep 13:30Z); #6 KCC-0021 165ff91d (21 Sep 12:07Z); #4 KCC-0402 39a42644. Issue #28: four KCC20 objects, not one ABI. None adopted."
+          "note": "On main: kcc-0000 Final, kcc-0001, kcc-0002, kcc-0020 (Draft). Open: #24 KCC-0012 head 7159d48 (22 Sep 09:44Z Izio said KIP-12 is superseded by KCC-12; file still Status Draft and Backwards Compatibility says no previous standard exists; no kip-0012 in kaspanet/kips; not a status change; no desk comment); #20 vectors 81f111f0; #23 p2pk-ecdsa 19d174d5 (updated 21 Sep 12:25Z); #30 unkeyed hash 1c3ffd18 (21 Sep 13:11Z); #27 kcc-1/kcc0 fa845057 approved, unmerged (touched 21 Sep 10:36Z); #26 KCC-23 479fa206 (21 Sep 13:30Z); #6 KCC-0021 165ff91d (21 Sep 12:07Z); #4 KCC-0402 39a42644. Issue #28: four KCC20 objects, not one ABI. None adopted."
         },
         {
           "name": "kccs#29 KCC-3/4/5",
@@ -1728,7 +1728,7 @@
           "name": "kccs#24",
           "url": "https://github.com/kaspanet/kccs/pull/24",
           "chip": "open",
-          "note": "KCC-0012 wallet provider/discovery. Open ready head 7159d48 (20 Sep amend: aligned with review comments; was 06400c3). Still Draft status. No public implementation."
+          "note": "KCC-0012 wallet provider/discovery. Open ready head 7159d48 (20 Sep amend: aligned with review comments; was 06400c3). Still Draft. 22 Sep 09:44Z Izio said KIP-12 is superseded by this pull. The file says no previous standard exists and that KIP-12 was a draft this KCC continues. No kip-0012 in kaspanet/kips. Not a status change. No desk comment. No public implementation."
         },
         {
           "name": "silverscript#223",

@@ -42,13 +42,13 @@
           "name": "kccs#29 KCC-3/4/5",
           "url": "https://github.com/kaspanet/kccs/pull/29",
           "chip": "Draft",
-          "note": "Open. Head 55742861. Updated 2026-09-21T13:52:55Z. Not on main. Draft KCC-3 Reputation Deed, KCC-4 Slashable Bond, KCC-5 Deed Identity Registry. Author header Kaspa-World-Eater. Requires Draft KCC-1 and KCC-2. Numbers are a request. Reference Kaspa-World-Eater/quorum README contradicts itself: Status says the decision pipeline touches no chain; a later section claims a 21 Sep TN10 product-path slash with a truncated id 81c3008f…. The word audit there is the author's 16 Sep note. Desk comment 5764709315. Not adopted."
+          "note": "Open. Head 55742861. Not on main. Draft KCC-3 Reputation Deed, KCC-4 Slashable Bond, KCC-5 Deed Identity Registry. Author header Kaspa-World-Eater. Requires Draft KCC-1 and KCC-2. Numbers are a request. 21 Sep the quorum README contradicted itself. Author fixed both leftovers in quorum@faa1a31 (comment 5768054535): 21 tests stay chain-free; the chain is one injected SlashSubmitter, proven once. Full txid 81c3008f1fe5d79508105ada9b0760f4de52651de8b38a5039f549aeffaf172d. api-tn10 accepted it, blue score 565268486, 1 KAS in, 0.99 KAS out. Audit means the author's own pass. Desk confirm 5768084395. Workshop topic 148 still says the drafts are pre-PR. Not adopted."
         },
         {
           "name": "Kaspa-World-Eater/quorum",
           "url": "https://github.com/Kaspa-World-Eater/quorum",
           "chip": "tn10",
-          "note": "Pushed 2026-09-21T16:28:19Z. Verified-compute experiment on the kaspa-x402 rail. README Status: 21 pure-logic tests, nothing touches the chain on purpose. Later section 'The bond, on chain' claims runSettlementSlashes posted a TN10 slash on 21 Sep; published id is truncated (81c3008f…). This desk did not re-fetch it. Honest limits in the same file: public deterministic audit sample; agreement is not a proof. Not an adopted KCC. Not a third-party audit. Not mainnet."
+          "note": "Verified-compute experiment on the kaspa-x402 rail. As of quorum@faa1a31 the Status section and the bond section agree: 21 tests do not touch the chain; the chain is one injected SlashSubmitter, proven once on TN10. Full txid 81c3008f1fe5d79508105ada9b0760f4de52651de8b38a5039f549aeffaf172d, accepted at blue score 565268486. The forum links kaspahttp402/quorum redirect here, and docs/kcc-reputation-deed.md, kcc-slashable-bond.md, and kcc-identity-registry.md are in the tree. Honest limits remain: public deterministic audit sample; agreement is not a proof. Not an adopted KCC. Not a third-party audit. Not mainnet."
         },
         {
           "name": "vprogs stack 21 Sep morning",
@@ -108,7 +108,7 @@
           "name": "Kas-Smiths archive",
           "url": "https://github.com/Manyfestation/kas-smiths-public-archive",
           "chip": "catalog",
-          "note": "No GitHub user kasmasmith or kaspasmith. July brand thread: KAS smiths is pronounced KASMYTH. Workshop is https://kas-smiths.org. This repo is Manyfestation's public Discourse mirror, pushed 20 Sep 2026. A thread is not a KIP."
+          "note": "No GitHub user kasmasmith or kaspasmith. July brand thread: KAS smiths is pronounced KASMYTH. Workshop is https://kas-smiths.org, opened 2 Jul 2026, sole admin Manyfest, X sign-in. 22 Sep read: 44 topics, 356 posts, 111 users. This repo is the daily public Discourse mirror, pushed 22 Sep 2026 07:40Z. A thread is not a KIP. Unanswered on the workshop: topic 147 (one wallet protocol; object is KCC-12 Draft) and topic 141 (Ori on KCC-1 int/bool encoding, 29 Aug). Topic 148 still says the three drafts are pre-PR. Topic 8 last post 11 Sep says KCC-20 is maturing toward finalization; the file is still Draft."
         },
         {
           "name": "STP-KAS org and forum halt",
@@ -1860,7 +1860,7 @@
           "name": "kas-smiths.org",
           "url": "https://kas-smiths.org",
           "chip": "workshop",
-          "note": "Manyfestation KCC workshop. Not a KIP."
+          "note": "Manyfestation KCC workshop. Opened 2 Jul 2026. Discourse. X sign-in. A thread is not a KIP. 22 Sep: 44 topics, 356 posts, 111 users. Daily archive Manyfestation/kas-smiths-public-archive pushed 07:40Z."
         },
         {
           "name": "portrait.kaspa-kii.org",

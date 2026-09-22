@@ -8,7 +8,7 @@ Not a KIP. Not Kaspa core. A tweet is not a pin. This file is the agent/operator
 
 | When (Europe/Brussels) | Commit | What we did | Pins |
 | --- | --- | --- | --- |
-| 2026-09-22 13:27 | [PENDING](https://github.com/STP-KAS/kaspa-master-file/commit/PENDING) | rusty-kaspa master ecb9b1f. #1096 merged. Output-count in InvalidOutputIndex only. Checks passed. No comment. vprogs and tictactoe pins still name eb0a856. | **Hold** |
+| 2026-09-22 13:27 | [0fb73c6](https://github.com/STP-KAS/kaspa-master-file/commit/0fb73c6) | rusty-kaspa master ecb9b1f. #1096 merged. Output-count in InvalidOutputIndex only. Checks passed. No comment. vprogs and tictactoe pins still name eb0a856. | **Hold** |
 | 2026-09-22 13:15 | [d771c78](https://github.com/STP-KAS/kaspa-master-file/commit/d771c78) | vprogs#156 draft 58efe4a0 on #152: malformed carrier input rejects instead of panicking the guest. tictactoe master still 4f27dd1a. Draft #25 proposes the new pin. Guest ELF not moved. No comment. Izio's DX post has no newer reply. | **Hold** (vProgs research) |
 | 2026-09-22 13:09 | [302a7bd](https://github.com/STP-KAS/kaspa-master-file/commit/302a7bd) | kccs#31 proposes KCC-20 Last Call without Last-Call-Deadline and rewrites Created. Comment 5775404197. Main stays Draft. rusty-kaspa#1096 output-index fix is complete; checks still running; no comment. | **Hold** |
 | 2026-09-22 12:58 | [9e2d51f](https://github.com/STP-KAS/kaspa-master-file/commit/9e2d51f) | Answered Izio on X: DX first, the two holes are the lock not the house. https://x.com/StppStp/status/2102351752578420818 #153 and #154 marked draft 10:53Z, same heads. No comment on that flip. | **Hold** |

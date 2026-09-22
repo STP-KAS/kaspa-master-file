@@ -54,13 +54,13 @@
           "name": "vprogs stack 21 Sep morning",
           "url": "https://github.com/kaspanet/vprogs",
           "chip": "research",
-          "note": "Master still f9b84a8 (28 Jul). No release, no product testnet. Heads rechecked 21 Sep ~17:14Z, still open: #152 draft reorg-safety 74e24551 (13:44Z, ci simnet); #148 draft settle-resume da2a7f26; #147 74ee1b7d (09:46Z, shutdown-drain regression; was catalogued 1d449964); #149 51b56aab (09:34Z, refresh guest ELF for the kaspa rev pin); #140 28f0aee9; #136 d2da8ad0; #134 add37bed; #131 004a5948 (multisig unlock via iter_pubkeys). Research only."
+          "note": "Master still f9b84a8 (28 Jul). No release, no product testnet. 22 Sep ~08:32Z: #148 closed unmerged 07:30Z (closed head 78501881; old draft head was da2a7f26). Resume is #154 open not draft, head f84525b5, 25 commits, base #153. #153 open not draft, one commit 3496a8c5, base #147. #152 still draft: closed 07:29Z, reopened 07:30Z, head 59b30920 (ci: drop the runner simnet suite step). Parent 0636cff1. 74e24551...59b30920 diverged. Stack #147 74ee1b7d -> #153 -> #154 -> #152. Unchanged: #149 51b56aab, #131 004a5948, #134 add37bed, #136 d2da8ad0, #140 28f0aee9. No other kaspanet PR updated 22 Sep. Research only."
         },
         {
           "name": "vprog-tictactoe tip",
           "url": "https://github.com/biryukovmaxim/vprog-tictactoe/commit/92146b49406749dd8969976d1b7e5cb6bf483bd6",
           "chip": "demo",
-          "note": "Tip 92146b4 (21 Sep 13:49Z), 98 commits. Cargo.lock verified: host kaspanet/vprogs branch reorg-safety#74e245517af9 and rusty-kaspa rev eb0a856. guest/Cargo.lock is the fork biryukovmaxim/vprogs bridge-live-lane#128dd05f (16 Sep). kaspanet/vprogs bridge-live-lane tip is 745f86bf (21 Sep 09:43Z). The guest did not follow the upstream branch. vprogs#150 closed 21 Sep 10:09Z unmerged (same title as open #131). Not a product testnet."
+          "note": "Tip still 92146b4 (21 Sep 13:49Z). Cargo.lock still host kaspanet/vprogs branch reorg-safety#74e245517af9 and rusty eb0a856. That host commit diverged from #152 head 59b30920 on 22 Sep. #152 body says the app pins 0636cff1, which is neither the lock nor HEAD. guest/Cargo.lock still fork biryukovmaxim/vprogs bridge-live-lane#128dd05f. Not a product testnet."
         },
         {
           "name": "Argent",
@@ -738,7 +738,7 @@
           "name": "vprogs",
           "url": "https://github.com/kaspanet/vprogs",
           "chip": "research",
-          "note": "No product testnet. Master still f9b84a8 (28 Jul). 21 Sep ~17:14Z open heads: #152 draft 74e24551 reorg-safety; #148 draft da2a7f26; #147 74ee1b7d (moved off 1d449964 the same morning); #149 51b56aab; #140 28f0aee9; #136 d2da8ad0; #134 add37bed; #131 004a5948. Tictactoe host Cargo.lock rides #152, not #148. Guest ELF still fork bridge-live-lane#128dd05f. Research only."
+          "note": "No product testnet. Master still f9b84a8 (28 Jul). 22 Sep ~08:32Z: #148 closed unmerged. Stack #147 74ee1b7d -> #153 3496a8c5 -> #154 f84525b5 (open, not draft) -> #152 draft 59b30920. Tictactoe host Cargo.lock still reorg-safety#74e24551, diverged from #152. Guest ELF still fork bridge-live-lane#128dd05f. Research only."
         },
         {
           "name": "kaspad (Go)",
@@ -1596,7 +1596,7 @@
           "name": "vprogs#152 reorg-safety",
           "url": "https://github.com/kaspanet/vprogs/pull/152",
           "chip": "draft",
-          "note": "21 Sep. Draft, base settle-resume. Head 74e24551 (CI simnet). P0.1 batch-id hole; P0.2 dead lane-proof defer (3d106c2). GPU-abort TODO. Tictactoe host 92146b4. PR body still says tt pins ac67c5f9. Desk comment 5761630786."
+          "note": "22 Sep 08:32Z. Still draft. Closed 07:29Z, reopened 07:30Z. Base settle-resume, which is now #154, not closed #148. Head 59b30920 (ci: drop the runner simnet suite step). Parent 0636cff1. Six commits: d6714241 repro id gap, 1f03d1bf sparse restore, a39761d6 repro dead lane-proof, 8c06b5ef defer instead of panic, 0636cff1 hygiene, 59b30920 drop simnet CI. Body still says simnet two_provers_contend passed and that tt pins 0636cff1. Tictactoe lock is 74e24551, diverged. GPU-abort still TODO. Desk comment 5761630786 was on the old head."
         },
         {
           "name": "vprogs#149 kaspa-pin",
@@ -1614,13 +1614,25 @@
           "name": "biryukovmaxim/vprog-tictactoe",
           "url": "https://github.com/biryukovmaxim/vprog-tictactoe/issues/24",
           "chip": "demo",
-          "note": "Max guest demo (not kaspanet). 98 commits, tip 92146b4. Host pin reorg-safety#74e24551 = vprogs#152 draft head. Guest ELF still fork bridge-live-lane#128dd05f. tn10 CUDA runbook a758a9b. Open #23. Desk report #24."
+          "note": "Max guest demo (not kaspanet). Tip still 92146b4. Host lock reorg-safety#74e24551 diverged from vprogs#152 head 59b30920 on 22 Sep. Guest ELF still fork bridge-live-lane#128dd05f. Open #23. Desk report #24."
         },
         {
           "name": "vprogs#148",
           "url": "https://github.com/kaspanet/vprogs/pull/148",
-          "chip": "draft",
-          "note": "Draft. Head da2a7f26. settle-resume parent of #152. TN10 60s VCC livelock. Tictactoe host moved off this head onto reorg-safety#74e24551. Research only."
+          "chip": "closed",
+          "note": "Closed unmerged 22 Sep 07:30Z. Was the draft settle-resume parent. Closed head 78501881. Old catalog head da2a7f26 is not the closed head. Successor is #154. Research only."
+        },
+        {
+          "name": "vprogs#153 lane-fetch-shutdown",
+          "url": "https://github.com/kaspanet/vprogs/pull/153",
+          "chip": "open",
+          "note": "Opened 22 Sep. Not draft. One commit 3496a8c5: cancel the aggregate prover lane-proof fetch on shutdown. Base storage-write-drain (#147 74ee1b7d). Parent of #154."
+        },
+        {
+          "name": "vprogs#154 settle-resume",
+          "url": "https://github.com/kaspanet/vprogs/pull/154",
+          "chip": "open",
+          "note": "Opened 22 Sep. Not draft. Same title as closed #148. Head f84525b5, 25 commits, base lane-fetch-shutdown (#153). Last commit drops the runner simnet CI step. #152 stacks on this branch. Research only."
         },
         {
           "name": "kaspa.stream app",

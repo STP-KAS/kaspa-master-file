@@ -87,6 +87,18 @@
           "note": "Catalog, not a pin. Tip eade853 (2 Jul 2025), version 0.0.1, ISC, README says alpha. Episode commands ride in a tx payload: 4-byte prefix, 4-byte nonce, then the command. The generator grinds the nonce until 10 chosen bits of the tx id match. The engine stores a rollback stack and drops an episode after 2592000 DAA scores, which is three days at 10 scores per second. Workspace pins rusty-kaspa tag v1.0.0, published 31 Mar 2025. The tic-tac-toe example defaults to testnet-10 and takes --kaspa-private-key. This desk does not run it. Not the vprogs guest. Not SilverScript. rusty-kaspa #954 is still open against base toccata, behind, last update 1 May 2026, no comments. Not a pull against master."
         },
         {
+          "name": "danieliyahu1",
+          "url": "https://github.com/danieliyahu1/kas-odds",
+          "chip": "experiment",
+          "note": "kas-odds tip 851e114 (22 Sep 13:49Z). kasodds.sil pragma ^0.1.0. pins.json binds SilverScript source 3ed9733 and template ade3453c61ac5858b344b22ccf373e7e44ab18c14506f49b69e29f763057e27a. It labels rusty-kaspa v2.0.1 while sourceCommit a41a333 is #1067, 8 commits ahead of tag cfafeb4c. The wasm URL is the v2.0.1 zip. Stake minimum 100000000 sompi. Creator wins when (creator_choice + joiner_choice) % 2 differs from creator_even. Fee is gross_pot / 100 only when gross_pot >= 10000000000 sompi. Default profile testnet-10. network.js also lists mainnet. onlykas tip 95eb87d (22 Sep 16:37Z), testnet-10. membership.sil fee is (price + 50) / 100, and 0 when that is under 1 KAS. Membership lifetime 25920000 DAA scores. Both apps name Kasware. kaspa-simple-mcp is a read-only api.kaspa.org wrapper, mainnet by default. He follows ezratameno. Those public repos are not Kaspa. kccs#24 notes stay on the KCC row."
+        },
+        {
+          "name": "kaspa-xmss",
+          "url": "https://github.com/biryukovmaxim/kaspa-xmss",
+          "chip": "research",
+          "note": "Tip e36538f (3 Jul 2026). Unaudited. XMSS^MT, two height-12 trees, 2^24 signatures, BLAKE3/192, signatures about 3.06 KB, hashing-only verify in TxScriptEngine. Skip window can reach the first leaf of the next bottom tree and not a later leaf. rusty-kaspa pin is branch master, not a tag. Not a shipped post-quantum signature."
+        },
+        {
           "name": "x402 bind the tag",
           "url": "https://github.com/elldeeone/kaspa-x402/releases/tag/v1.0.0-rc.1",
           "chip": "tn10",
@@ -828,7 +840,7 @@
           "name": "@OriNewman",
           "url": "https://x.com/OriNewman",
           "chip": "core",
-          "note": "GitHub someone235."
+          "note": "Ori Newman. GitHub someone235. Tagged SilverScript v1.0.0. Authored rusty-kaspa #1136, #1137, #1138, and #1139, the v2.1.0 release cluster. #1135 PSKB sighash opt-in still open. #1067 is the dynamic-image Groth16 verifier. native-assets-zk-poc is still the SP1 Fibonacci template. native-assets-r0 is still the RISC Zero starter. kasfam-handsfree suggests quote text for Kaspa tweets."
         },
         {
           "name": "@coderofstuff_",
@@ -858,7 +870,7 @@
           "name": "@biryukovmaxim",
           "url": "https://x.com/biryukovmaxim",
           "chip": "core",
-          "note": "KIP-21."
+          "note": "Maxim Biryukov. GitHub biryukovmaxim. KIP-21. vprog-tictactoe tip still 93b75901. vprogs counterpart on that code is hmoog. kaspa-xmss tip e36538f (3 Jul 2026) is unaudited XMSS^MT research, txscript verify, rusty-kaspa branch master. Of eight follows, aspect is the Kaspa account."
         },
         {
           "name": "@Avivz78",
@@ -1848,7 +1860,7 @@
           "name": "native-assets-zk-poc",
           "url": "https://github.com/someone235/native-assets-zk-poc",
           "chip": "tg",
-          "note": "Ori Newman. Native assets + ZK."
+          "note": "Ori Newman. Read 22 Sep: program/src/main.rs is still the SP1 Fibonacci template. The repo name is not a Kaspa asset."
         },
         {
           "name": "risc0",

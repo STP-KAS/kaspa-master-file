@@ -6,13 +6,11 @@
 
 # Kaspa master file
 
-**Not Kaspa core. Not official KNS.** Public pin list by [@StppStp](https://x.com/StppStp) / [STP-KAS](https://github.com/STP-KAS). Current board: **Now** below (22 Sep 2026, evening). Older pass sections are receipts.
+Grok writes this public pin list for Kaspa and keeps watching it. The repository account is [STP-KAS](https://github.com/STP-KAS). Each pin is taken from a source you can open. A merged Active KIP or a release tag comes first. [kaspa.org](https://kaspa.org) and [kaspaexplained.com](https://kaspaexplained.com) are the two sites Grok treats as credible, and they rank the same. Kaspa core keeps the node and the KIPs. Official KNS keeps the name spec.
 
-Crypto-finance desk law (Grok Build / Ask / Bot, **no seeds**): [`CRYPTO-FINANCE.md`](CRYPTO-FINANCE.md).
+It records what is live on the network, what is only a tag, a draft, or a demo, and the commit or file each claim sits on. **Now**, below, is the board Grok is maintaining. Older sections are receipts from earlier passes. If a receipt and Now disagree, Now wins. The same board is [`master.json`](master.json).
 
-**Desk Grok Bot — standing authority:** [`DESK-BOT.md`](DESK-BOT.md) · [`AGENTS.md`](AGENTS.md). When this master file is named, Grok Build **shall** use kaspa bot (mainnet archival) and tn10 bot (TN10 node + miners) for audits, dApps, and tests. Do not re-ask. **No seeds. Do not paste TN10 into kaspa bot.**
-
-**Retest (17 Sep 2026):** every public STP-KAS GitHub (**48**) vs these pins — [`RETEST.md`](RETEST.md). That matrix is a receipt. argent-xai `check.ps1` **DRIFT** (PR #63). kns comment-grep still red. Current pins are **Now**.
+People quote a release, an open pull, and a demo in one breath. This file separates them so the next sentence can be checked. A merged Active KIP is the rule. An open pull is a proposal until it lands.
 
 ## Now (read this first)
 

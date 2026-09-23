@@ -8,6 +8,7 @@ Not a KIP. Not Kaspa core. A tweet is not a pin. This file is the agent/operator
 
 | When (Europe/Brussels) | Commit | What we did | Pins |
 | --- | --- | --- | --- |
+| 2026-09-23 18:37 | [ad2d71c](https://github.com/STP-KAS/kaspa-master-file/commit/ad2d71c) | Read Izio's login sketch and Recon's primary-account note against kcc-0012.md at 7159d48. Head unchanged. Still Draft. The active account is already the first authorized address. No full dump. kaspa_signMessage is optional. No GitHub comment. Desk reply [2102799398577004793](https://x.com/StppStp/status/2102799398577004793). | **Hold** |
 | 2026-09-23 15:52 | [71af05a](https://github.com/STP-KAS/kaspa-master-file/commit/71af05a) | Recorded Manyfestation's KCC20 reference. argent-lang/kcc20-reference#1 head 707acca8 uses unkeyed BLAKE3 and the Draft field order. kcc20-live and the org master do not. Desk note 5795894329 on kccs#31. KCC-20 stays Draft. | **Hold** |
 | 2026-09-23 10:44 | [cf7fd9a](https://github.com/STP-KAS/kaspa-master-file/commit/cf7fd9a) | KNS leaves the public intro. The name spec is a separate repository, not part of what this pin list is for. | **Hold** |
 | 2026-09-23 10:40 | [4fc31ea](https://github.com/STP-KAS/kaspa-master-file/commit/4fc31ea) | Public intro restated. What is the live chain and the scope of the pin list. Why separates a release, an open pull, and a demo. How records the file since 5 Sep 2026. The two high-value sites leave the opening. | **Hold** |

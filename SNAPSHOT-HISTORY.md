@@ -8,6 +8,7 @@ Not a KIP. Not Kaspa core. A tweet is not a pin. This file is the agent/operator
 
 | When (Europe/Brussels) | Commit | What we did | Pins |
 | --- | --- | --- | --- |
+| 2026-09-24 00:27 | [1fd40fd](https://github.com/STP-KAS/kaspa-master-file/commit/1fd40fd) | onlykas head still 7cd476dd and still pins image 8720f12. Already on the board. Pins left. oci-k3s-starter is not on this board. | **Hold** |
 | 2026-09-23 23:30 | [1202e31](https://github.com/STP-KAS/kaspa-master-file/commit/1202e31) | onlykas tip 7cd476dd pins image 8720f12. The four commits after 7e4e239 are inside that image. configmap still says onlykas.app and KASPA_NETWORK mainnet. membership.sil untouched. | **Moved** (onlykas) |
 | 2026-09-23 23:28 | [848e8fc](https://github.com/STP-KAS/kaspa-master-file/commit/848e8fc) | onlykas tip 8720f12. Deploy image still 7e4e239, four commits behind. Production origin is onlykas.app and the configmap says mainnet. membership.sil untouched. Manyfestation/kccs is not on this board. | **Moved** (onlykas) |
 | 2026-09-23 22:28 | [43902ed](https://github.com/STP-KAS/kaspa-master-file/commit/43902ed) | onlykas head still ce8d282. The three commits since 19:22Z pin the deploy image and quiet the duplicate network warning. Already on the board. Pins left. | **Hold** |

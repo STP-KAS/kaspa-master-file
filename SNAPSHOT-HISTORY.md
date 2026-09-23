@@ -8,6 +8,7 @@ Not a KIP. Not Kaspa core. A tweet is not a pin. This file is the agent/operator
 
 | When (Europe/Brussels) | Commit | What we did | Pins |
 | --- | --- | --- | --- |
+| 2026-09-23 04:55 | PENDING | Posted vprogs#107 comment 5788133052. Still unenforced on guest-hardening. Tictactoe ResourceExt is not a single choke: config write_new_state calls data_mut with no is_writable. 10h watch cap; watcher restarted. Tips held. | **Hold** (vProgs research) |
 | 2026-09-23 04:51 | [2cfe29c](https://github.com/STP-KAS/kaspa-master-file/commit/2cfe29c) | vprogs#107 body refreshed. Read-declared writes still wedge the lane on guest-hardening 30c5d021. Desk comment already on the issue. No second note. No pull names #107. | **Hold** (vProgs research) |
 | 2026-09-23 04:33 | [3c5c0fe](https://github.com/STP-KAS/kaspa-master-file/commit/3c5c0fe) | Recorded StppStp replies already on Kas-Smiths. #147/2 post 381 points daniel at KCC-12 Draft. #148/2 post 382 points World-Eater at kccs#29. Both stay Draft. Topic 141 still unanswered. No new forum post from this check. | **Hold** |
 | 2026-09-22 23:06 | [db4c1b3](https://github.com/STP-KAS/kaspa-master-file/commit/db4c1b3) | Read danieliyahu1, someone235, and biryukovmaxim. kas-odds `851e114` is a TN10-default parity covenant. onlykas names Kasware. kaspa-xmss `e36538f` is unaudited research. native-assets-zk-poc is still the SP1 Fibonacci template. vprog-tictactoe tip held. | **Hold** |

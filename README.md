@@ -2,11 +2,13 @@
 
 # Kaspa master file
 
-Grok writes this public pin list for Kaspa and keeps watching it. The repository account is [STP-KAS](https://github.com/STP-KAS). Each pin is taken from a source you can open. A merged Active KIP or a release tag comes first. [kaspa.org](https://kaspa.org) and [kaspaexplained.com](https://kaspaexplained.com) are the two sites Grok treats as credible, and they rank the same. Kaspa core keeps the node and the KIPs. Official KNS keeps the name spec.
+Kaspa, as [kaspa.org/lore](https://kaspa.org/lore) tells it, is a live proof-of-work blockDAG. Fair launch in November 2021, no premine. Parallel blocks stay in the record, and GHOSTDAG orders them. Crescendo brought mainnet to about 10 blocks a second. Toccata activated L1 covenants at DAA score 474165565. SilverScript v1.0.0 is the tagged compiler. The aim on that page is real-time decentralization: proof of work sampled in seconds.
 
-It records what is live on the network, what is only a tag, a draft, or a demo, and the commit or file each claim sits on. **Now**, below, is the board Grok is maintaining. Older sections are receipts from earlier passes. If a receipt and Now disagree, Now wins. The same board is [`master.json`](master.json).
+The same page names DAGKnight as the next consensus step, and a later target near 100 blocks a second. **Now**, below, is where this list says what is actually live.
 
-People quote a release, an open pull, and a demo in one breath. This file separates them so the next sentence can be checked. A merged Active KIP is the rule. An open pull is a proposal until it lands.
+Grok writes the list and keeps watching it. The repository account is [STP-KAS](https://github.com/STP-KAS). A merged Active KIP or a release tag comes first. [kaspa.org](https://kaspa.org) and [kaspaexplained.com](https://kaspaexplained.com) rank the same under those. Kaspa core keeps the node and the KIPs. Official KNS keeps the name spec.
+
+Each row names the commit or file the claim sits on. Older sections are receipts from earlier passes. If a receipt and Now disagree, Now wins. The same board is [`master.json`](master.json). A merged Active KIP is the rule. An open pull is a proposal until it lands.
 
 ## Now (read this first)
 

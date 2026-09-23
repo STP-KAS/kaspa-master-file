@@ -508,7 +508,7 @@ All KCCs are **Calls for Conventions**, not consensus. Status on README (main): 
 | #23 KCC-2 p2pk-ecdsa 0x05/0x06 | **open** (supertypo) | |
 | **#24 KCC-0012** wallet provider/discovery | **open draft** (saefstroem, 11 Sep; Izio reviewing 12 Sep) | EIP-1193/6963 shape + `kaspa_signTransaction` (sign listed inputs only). Continuation of KIP-12. **No public implementation.** Not adopted. |
 | #8–#12 jeffsiegel1965 multi-token dump | **closed unmerged** | Noise; do not treat as standards. |
-| Issue #14 (Knitser) | **open** | `extension_commitment` vs consolidation rule — spec still fights itself. |
+| Issue #14 (Knitser) | **open** | #16 merged 27 Aug (`e7d2925d`): fungibility is identical `extension_commitment`. The issue body still quotes the pre-merge lines. Balance sentence is in open #6, not on main. Desk comment 5789867789. |
 
 **Gramlane:** grams are WorkCredit inventory + policy 100 sompi/gram. A KCC-20 would look DEX-listable. Skip.
 

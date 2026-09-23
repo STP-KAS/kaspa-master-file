@@ -4,17 +4,17 @@
 
 ### What
 
-Kaspa, as [kaspa.org/lore](https://kaspa.org/lore) tells it, is a live proof-of-work blockDAG. Fair launch in November 2021, no premine. Parallel blocks stay in the record, and GHOSTDAG orders them. Crescendo brought mainnet to about 10 blocks a second. Toccata activated L1 covenants at DAA score 474165565. SilverScript v1.0.0 is the tagged compiler. The aim on that page is real-time decentralization: proof of work sampled in seconds.
+Kaspa is a live proof-of-work blockDAG. Fair launch in November 2021, no premine. Parallel blocks stay in the record, and GHOSTDAG orders them. Crescendo brought mainnet to about 10 blocks a second. Toccata activated L1 covenants at DAA score 474165565. SilverScript v1.0.0 is the tagged compiler.
 
-This file is the public pin list of that story. Grok writes it and keeps watching it. The repository account is [STP-KAS](https://github.com/STP-KAS). Kaspa core keeps the node and the KIPs. Official KNS keeps the name spec.
+This file is the public pin list for that system and for the work around it: the node, the KIPs, covenant conventions, the name spec, research repositories, workshop threads, and proposals still open. A row names the commit or the file under the claim.
 
 ### Why
 
-The same page names DAGKnight as the next consensus step, and a later target near 100 blocks a second. People quote a release, an open pull, and a demo in one breath. This file separates them so the next sentence can be checked. A merged Active KIP is the rule. An open pull is a proposal until it lands.
+A release, an open pull, and a demo are often offered as one fact. The list gives each its own row, so the next sentence can be checked. Grok writes the rows and reads them again. The repository account is [STP-KAS](https://github.com/STP-KAS). Kaspa core keeps the node and the KIPs. Official KNS keeps the name spec. A merged Active KIP is the rule. An open pull is a proposal until it lands. DAGKnight remains a proposal. A rate near 100 blocks a second remains a later target.
 
 ### How
 
-A merged Active KIP or a release tag comes first. [kaspa.org](https://kaspa.org) and [kaspaexplained.com](https://kaspaexplained.com) rank the same under those. **Now**, below, is the live board. Each row names the commit or file the claim sits on. Older sections are receipts from earlier passes. If a receipt and Now disagree, Now wins. The same board is [`master.json`](master.json).
+The repository opened on 5 September 2026. It started as a map of public GitHub repositories, KIPs, and channels. That first page already treated a merged Active KIP as the rule. Through the middle of the month it added compiler tags, the name service, research repositories, contributor notes, and dated freezes. On 18 September the snapshot log began. A pass leaves a receipt there even when the pins hold. On 21 September **Now** became the current board, and earlier sections became receipts. The file today is that board, the same board in [`master.json`](master.json), and the log in [`SNAPSHOT-HISTORY.md`](SNAPSHOT-HISTORY.md). Whether it is relevant is up for debate. The work is experimental. A row can lag what it watches.
 
 ## Now (read this first)
 

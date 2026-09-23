@@ -8,6 +8,7 @@ Not a KIP. Not Kaspa core. A tweet is not a pin. This file is the agent/operator
 
 | When (Europe/Brussels) | Commit | What we did | Pins |
 | --- | --- | --- | --- |
+| 2026-09-23 10:44 | [cf7fd9a](https://github.com/STP-KAS/kaspa-master-file/commit/cf7fd9a) | KNS leaves the public intro. The name spec is a separate repository, not part of what this pin list is for. | **Hold** |
 | 2026-09-23 10:40 | [4fc31ea](https://github.com/STP-KAS/kaspa-master-file/commit/4fc31ea) | Public intro restated. What is the live chain and the scope of the pin list. Why separates a release, an open pull, and a demo. How records the file since 5 Sep 2026. The two high-value sites leave the opening. | **Hold** |
 | 2026-09-23 10:38 | [6e93d33](https://github.com/STP-KAS/kaspa-master-file/commit/6e93d33) | Training mode. Watch kaspanet and the core contributors' public repos and write new facts here. No GitHub comment, no Kas-Smiths post, and no X post unless silence would lose a checked defect. Rechecked the live heads: v2.1.0 `01b532e8`, SilverScript v1.0.0, KCC-0 Final, KCC-12 `7159d48`, KCC-20 proposal `fb50affe`, vprogs drafts through #158 `77d81eb0`, tictactoe `93b75901`, DAGKnight `ad45e24`. Kas-Smiths latest post still 382. | **Hold** |
 | 2026-09-23 10:19 | [fc96f0f](https://github.com/STP-KAS/kaspa-master-file/commit/fc96f0f) | Read vprogs#158 head 77d81eb0. Third commit persists the bits finalization freezes and replays them on restore. Still draft, base #157 cd35f913. No comment. | **Hold** |

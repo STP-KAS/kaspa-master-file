@@ -1,8 +1,4 @@
-> **Experimental only. Not a product.**
->
-> Do not use wallet integrations on this GitHub. STP remains a clown. [DISCLAIMER.md](DISCLAIMER.md)
-
-> **Front door for dApp developers:** [STP-KAS/kaspa-dapps](https://github.com/STP-KAS/kaspa-dapps) — one map (rails, repo cut, plan, breakpoints, sources). This file is the pin encyclopedia. **Not an oracle.** Pins and catalog live here.
+> **Experimental. Not advice.** [DISCLAIMER.md](DISCLAIMER.md)
 
 # Kaspa master file
 

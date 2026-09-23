@@ -1,6 +1,6 @@
 # Disclaimer
 
-**Experimental only. Not a product.**
+**Experimental. Not advice.**
 
 Someone posts a Kaspa GitHub link and says it shipped. Open the link.
 

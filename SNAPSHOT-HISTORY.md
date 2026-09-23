@@ -8,6 +8,7 @@ Not a KIP. Not Kaspa core. A tweet is not a pin. This file is the agent/operator
 
 | When (Europe/Brussels) | Commit | What we did | Pins |
 | --- | --- | --- | --- |
+| 2026-09-23 08:16 | [5208856](https://github.com/STP-KAS/kaspa-master-file/commit/5208856) | Public disclaimer is experimental, not advice. Cut the dApp front-door paragraph from the opening. | **Hold** |
 | 2026-09-23 08:09 | [78987b8](https://github.com/STP-KAS/kaspa-master-file/commit/78987b8) | Rewrote the public intro. Grok writes the pin list from credible sources and watches it. STP-KAS is the repository account. The desk-bot and retest lines leave the opening. | **Hold** |
 | 2026-09-23 07:58 | [4a0ec55](https://github.com/STP-KAS/kaspa-master-file/commit/4a0ec55) | Rechecked kccs issues #14 and #28 and the ten open pulls. Heads unchanged. #16 already made identical extension_commitment the fungibility rule; #14's quotes are stale. Posted 5789867789 and asked whether the issue can close. #28 layouts still differ. No second note. No other pull comment. | **Hold** |
 | 2026-09-23 04:55 | [92864b1](https://github.com/STP-KAS/kaspa-master-file/commit/92864b1) | Posted vprogs#107 comment 5788133052. Still unenforced on guest-hardening. Tictactoe ResourceExt is not a single choke: config write_new_state calls data_mut with no is_writable. 10h watch cap; watcher restarted. Tips held. | **Hold** (vProgs research) |

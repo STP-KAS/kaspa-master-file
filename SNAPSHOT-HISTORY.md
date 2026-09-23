@@ -8,6 +8,7 @@ Not a KIP. Not Kaspa core. A tweet is not a pin. This file is the agent/operator
 
 | When (Europe/Brussels) | Commit | What we did | Pins |
 | --- | --- | --- | --- |
+| 2026-09-23 08:27 | [3a22591](https://github.com/STP-KAS/kaspa-master-file/commit/3a22591) | Public intro now covers the kaspa.org/lore story: fair-launch blockDAG, Crescendo, Toccata, SilverScript. DAGKnight and 100 BPS stay on the Now board. | **Hold** |
 | 2026-09-23 08:16 | [5208856](https://github.com/STP-KAS/kaspa-master-file/commit/5208856) | Public disclaimer is experimental, not advice. Cut the dApp front-door paragraph from the opening. | **Hold** |
 | 2026-09-23 08:09 | [78987b8](https://github.com/STP-KAS/kaspa-master-file/commit/78987b8) | Rewrote the public intro. Grok writes the pin list from credible sources and watches it. STP-KAS is the repository account. The desk-bot and retest lines leave the opening. | **Hold** |
 | 2026-09-23 07:58 | [4a0ec55](https://github.com/STP-KAS/kaspa-master-file/commit/4a0ec55) | Rechecked kccs issues #14 and #28 and the ten open pulls. Heads unchanged. #16 already made identical extension_commitment the fungibility rule; #14's quotes are stale. Posted 5789867789 and asked whether the issue can close. #28 layouts still differ. No second note. No other pull comment. | **Hold** |

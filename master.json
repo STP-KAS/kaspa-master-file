@@ -24,7 +24,7 @@
           "name": "Not live",
           "url": "https://github.com/kaspanet/kips/blob/master/kip-0002.md",
           "chip": "hold",
-          "note": "DAGKnight is KIP-2 Proposed. rusty #1104 open head a5888da (updated 20 Sep 18:51Z). Merge fence: parent-order invariance; #1132 open head 703e1639. #1121 06efd83, #1122 332ec6c, #1124, #1127, #1131 still open. dagknight tip still ad45e24 (8 Sep). #1135 PSKB sighash opt-in still open ed09a8a (not merged). No 100 BPS network. No vProgs product. No Argent tag. No KCC-20 Final. No mainnet x402."
+          "note": "DAGKnight is KIP-2 Proposed. rusty #1104 open head a5888da (updated 20 Sep 18:51Z). Merge fence: parent-order invariance; #1132 open head 703e1639. #1121 06efd83, #1122 332ec6c, #1124, #1127, #1131 still open. dagknight tip still ad45e24 (8 Sep). #1135 PSKB sighash opt-in still open ed09a8a (not merged). No 100 BPS network. No vProgs product. No Argent tag. No KCC-20 Final. No mainnet x402. Rechecked 23 Sep 09:23: dagknight tip still ad45e24 (8 Sep). #1104 and #1132 last touched 20 Sep. #1127 still open 3c267993 (12 Sep)."
         },
         {
           "name": "KCC-0 footgun",

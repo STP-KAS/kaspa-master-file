@@ -8,6 +8,7 @@ Not a KIP. Not Kaspa core. A tweet is not a pin. This file is the agent/operator
 
 | When (Europe/Brussels) | Commit | What we did | Pins |
 | --- | --- | --- | --- |
+| 2026-09-24 12:37 | [b197b71](https://github.com/STP-KAS/kaspa-master-file/commit/b197b71) | KagenC 87c5f16 settled one TN10 job. Fund 153bb339, claim b63c0173, submit 04f943d4, accept 703f7b4b. Four-leg 1 KAS accept needed extra fee inputs because KIP-0009 storage mass was 977779. Native KAS. KCC-20 stays Draft. | **Hold** (KagenC is a testnet covenant) |
 | 2026-09-24 11:21 | [c846cfa](https://github.com/STP-KAS/kaspa-master-file/commit/c846cfa) | Read tetsuo-ai/agenc-protocol 18795f05. It is a Solana escrow, native SOL, 101 instructions in their document. Published STP-KAS/agenc-on-kaspa 532e9f7: a SilverScript v1.0.0 covenant in native KAS. TN10 cancel spent. KCC-20 stays Draft. No vProgs bridge. No DAGKnight bridge. | **Hold** (AgenC is not a Kaspa product) |
 | 2026-09-24 10:27 | [3100177](https://github.com/STP-KAS/kaspa-master-file/commit/3100177) | Kas-Smiths public archive tip dab989504ff4, parent 4d6f67d, pushed 24 Sep 07:34Z. It adds posts 383-386. Latest post is still 386. Catalog, not a KIP. IzioDev/zed-windows-build is not on this board. | **Moved** (Kas-Smiths archive) |
 | 2026-09-24 00:27 | [1fd40fd](https://github.com/STP-KAS/kaspa-master-file/commit/1fd40fd) | onlykas head still 7cd476dd and still pins image 8720f12. Already on the board. Pins left. oci-k3s-starter is not on this board. | **Hold** |

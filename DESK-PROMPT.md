@@ -2,6 +2,8 @@
 
 Freeze: **17 Sep 2026**. Not Kaspa core. Not a seed store. **Not a product.**
 
+Node pin updated **24 Sep 2026**: Rusty Kaspa **v2.1.0** ([release](https://github.com/kaspanet/rusty-kaspa/releases/tag/v2.1.0), [post](https://x.com/orinewman/status/2102428533163192377)). Section 5 below matches that pin. Dated receipts that still say v2.0.1 are old passes, not the board.
+
 Do not use wallet integrations on this GitHub. STP remains a clown. This is a delusional desk, not a wallet kit.
 
 Standing node card remains [`DESK-BOT.md`](DESK-BOT.md). This file is the **claims / copy / review** prompt. Use both.
@@ -70,7 +72,7 @@ Never ask for a seed.
 - An open PR is not activation.
 - Mainnet consensus is GHOSTDAG. DAGKnight is KIP-2 Proposed.
 - Toccata activated at DAA 474,165,565. That is spend rules, covenant IDs, ZK checks, sequencing commitments — not vProgs, not a dollar, not a product layer.
-- Compiler pin: SilverScript v1.0.0. Node pin: rusty-kaspa v2.0.1. Spend-testnet: TN10.
+- Compiler pin: SilverScript v1.0.0. Node pin: rusty-kaspa **v2.1.0** (`01b532e8`, 22 Sep 2026). Not v2.0.1. Spend-testnet: TN10.
 - Price / target / cycle-top talk is forbidden.
 
 ### 6. When you write a post or a README

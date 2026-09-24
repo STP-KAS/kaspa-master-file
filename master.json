@@ -768,7 +768,7 @@
           "name": "rusty-kaspa",
           "url": "https://github.com/kaspanet/rusty-kaspa",
           "chip": "node",
-          "note": "v2.0.0 Toccata · v2.0.1. Master tip ecb9b1f (22 Sep, #1096 merged: output-count in InvalidOutputIndex). Prior tip eb0a856 (#1136/#1137). dagknight unmerged (tip still ad45e24). Open: #1135 ed09a8a PSKB sighash opt-in; DK #1104 a5888da (gate: parent-order invariance → run #1132 first), #1127 #1131 #1132 #1124, #1122 332ec6c, #1121 06efd83. Not shipped DK."
+          "note": "Release v2.1.0 is 01b532e8 (22 Sep 2026, not a prerelease). P2P protocol 11, chunked IBD, still speaks protocol 10. Not a consensus activation. Previous release v2.0.1 is cfafeb4c. dagknight unmerged. Not shipped DK."
         },
         {
           "name": "kips",

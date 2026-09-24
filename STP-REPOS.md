@@ -1,5 +1,7 @@
 # STP-KAS repositories — 21 Sep 2026 read
 
+**24 Sep 2026 node pin:** Rusty Kaspa **v2.1.0** (`01b532e8`). [Release](https://github.com/kaspanet/rusty-kaspa/releases/tag/v2.1.0). [Post](https://x.com/orinewman/status/2102428533163192377). Updated this pass: [Xai.Kaspa.node](https://github.com/STP-KAS/Xai.Kaspa.node) (main only — there is no `master` branch), [rusty-kaspa](https://github.com/STP-KAS/rusty-kaspa) `master` and `stable`, [windows-p2p-node-guide](https://github.com/STP-KAS/windows-p2p-node-guide), [groks-wallet](https://github.com/STP-KAS/groks-wallet) TN10 instructions. Rows under **21 Sep read** are that receipt. They are not the board.
+
 Read every repository on [github.com/STP-KAS](https://github.com/STP-KAS?tab=repositories). **52 public, 2 private.** Each README was opened. Every one has `DISCLAIMER.md` and the experimental banner.
 
 Current pins stay in README **Now** and `master.json` section `now`. This file is the account review. A dated freeze inside a repo (“11 Sep”, “13 Sep”, “14 Sep”, “17 Sep”, “18 Sep”, “20 Sep”) is a receipt. It is not the board.

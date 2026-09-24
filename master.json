@@ -144,7 +144,13 @@
           "name": "Do not weld",
           "url": "https://github.com/STP-KAS/kaspa-master-file",
           "chip": "wrong",
-          "note": "Do not weld: Argent tag, KCC-20 Final, KCC-3/4/5 adopted, DAGKnight shipped, vProgs product, tictactoe equals vProgs live, x402 mainnet, quorum equals a standard, kccs README Draft line equals KCC-0 still Last Call, kaspaexplained's stale #25 sentence, an intern roundup, or a Kas-Smiths thread into one shipping stack."
+          "note": "Do not weld: Argent tag, KCC-20 Final, KCC-3/4/5 adopted, DAGKnight shipped, vProgs product, tictactoe equals vProgs live, x402 mainnet, quorum equals a standard, kccs README Draft line equals KCC-0 still Last Call, kaspaexplained's stale #25 sentence, an intern roundup, a Kas-Smiths thread, or AgenC into one shipping stack."
+        },
+        {
+          "name": "AgenC",
+          "url": "https://github.com/STP-KAS/agenc-on-kaspa",
+          "chip": "experiment",
+          "note": "tetsuo-ai/agenc-protocol 18795f05 is a Solana program, not a Kaspa object. Their document says production is 101 instructions, revision 5, native SOL, worker floor 6000 bps, live protocol fee 500 bps. Private zk is absent from that surface. Operator and referrer legs reject a token mint. Desk reading STP-KAS/agenc-on-kaspa 532e9f7 is a SilverScript v1.0.0 covenant in native KAS. TN10 funding 146e78d5e34594ae0bfa9fcc78ca8b9819e9575c43726f78f1ab632cc8ec0e5f. Cancel 2a048ec2c082f5cc6c4ec6e002ce26243dd4e4823df9918beef6f36673572eb9. Claim and accept passed in the local script engine and were not broadcast. Cancel needed sigop count 2. KCC-20 stays Draft. No spendable L1 stable. No vProgs bridge. No DAGKnight bridge."
         },
         {
           "name": "Sutton on KCC-20",

@@ -8,6 +8,7 @@ Not a KIP. Not Kaspa core. A tweet is not a pin. This file is the agent/operator
 
 | When (Europe/Brussels) | Commit | What we did | Pins |
 | --- | --- | --- | --- |
+| 2026-09-24 11:21 | [c846cfa](https://github.com/STP-KAS/kaspa-master-file/commit/c846cfa) | Read tetsuo-ai/agenc-protocol 18795f05. It is a Solana escrow, native SOL, 101 instructions in their document. Published STP-KAS/agenc-on-kaspa 532e9f7: a SilverScript v1.0.0 covenant in native KAS. TN10 cancel spent. KCC-20 stays Draft. No vProgs bridge. No DAGKnight bridge. | **Hold** (AgenC is not a Kaspa product) |
 | 2026-09-24 10:27 | [3100177](https://github.com/STP-KAS/kaspa-master-file/commit/3100177) | Kas-Smiths public archive tip dab989504ff4, parent 4d6f67d, pushed 24 Sep 07:34Z. It adds posts 383-386. Latest post is still 386. Catalog, not a KIP. IzioDev/zed-windows-build is not on this board. | **Moved** (Kas-Smiths archive) |
 | 2026-09-24 00:27 | [1fd40fd](https://github.com/STP-KAS/kaspa-master-file/commit/1fd40fd) | onlykas head still 7cd476dd and still pins image 8720f12. Already on the board. Pins left. oci-k3s-starter is not on this board. | **Hold** |
 | 2026-09-23 23:30 | [1202e31](https://github.com/STP-KAS/kaspa-master-file/commit/1202e31) | onlykas tip 7cd476dd pins image 8720f12. The four commits after 7e4e239 are inside that image. configmap still says onlykas.app and KASPA_NETWORK mainnet. membership.sil untouched. | **Moved** (onlykas) |

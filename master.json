@@ -150,7 +150,7 @@
           "name": "AgenC",
           "url": "https://github.com/STP-KAS/agenc-on-kaspa",
           "chip": "experiment",
-          "note": "tetsuo-ai/agenc-protocol 18795f05 is a Solana program, not a Kaspa object. Their document says production is 101 instructions, revision 5, native SOL, worker floor 6000 bps, live protocol fee 500 bps. Private zk is absent from that surface. Operator and referrer legs reject a token mint. Desk reading STP-KAS/agenc-on-kaspa 532e9f7 is a SilverScript v1.0.0 covenant in native KAS. TN10 funding 146e78d5e34594ae0bfa9fcc78ca8b9819e9575c43726f78f1ab632cc8ec0e5f. Cancel 2a048ec2c082f5cc6c4ec6e002ce26243dd4e4823df9918beef6f36673572eb9. Claim and accept passed in the local script engine and were not broadcast. Cancel needed sigop count 2. KCC-20 stays Draft. No spendable L1 stable. No vProgs bridge. No DAGKnight bridge."
+          "note": "tetsuo-ai/agenc-protocol 18795f05 is a Solana program, not a Kaspa object. Reading STP-KAS/agenc-on-kaspa 532e9f7. Implementation STP-KAS/KagenC 87c5f16, testnet-10 only. One job: fund 153bb339951efc52665c38a2b03b45e7a31772a7f35199b59220bad38e64a501, claim b63c01738d8d91b00351313219dcf7d7c7b36ddeea11a9221ed6cfd6757fe309, submit 04f943d4003d3dd0f0ee1c0526343c4775ea1cd4f4a5ab035e4732958c340867, accept 703f7b4b1de2b4b28d1a159701ec7002805ee3b8d83e54479ebc651ab5c06907. The 1 KAS four-leg accept was over KIP-0009 storage mass until extra fee inputs were added. Worker floor 6000 bps. Native KAS. KCC-20 stays Draft. No spendable L1 stable. No vProgs bridge. No DAGKnight bridge."
         },
         {
           "name": "Sutton on KCC-20",

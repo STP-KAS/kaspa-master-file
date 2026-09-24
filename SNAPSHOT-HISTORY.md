@@ -8,6 +8,7 @@ Not a KIP. Not Kaspa core. A tweet is not a pin. This file is the agent/operator
 
 | When (Europe/Brussels) | Commit | What we did | Pins |
 | --- | --- | --- | --- |
+| 2026-09-24 10:27 | [3100177](https://github.com/STP-KAS/kaspa-master-file/commit/3100177) | Kas-Smiths public archive tip dab989504ff4, parent 4d6f67d, pushed 24 Sep 07:34Z. It adds posts 383-386. Latest post is still 386. Catalog, not a KIP. IzioDev/zed-windows-build is not on this board. | **Moved** (Kas-Smiths archive) |
 | 2026-09-24 00:27 | [1fd40fd](https://github.com/STP-KAS/kaspa-master-file/commit/1fd40fd) | onlykas head still 7cd476dd and still pins image 8720f12. Already on the board. Pins left. oci-k3s-starter is not on this board. | **Hold** |
 | 2026-09-23 23:30 | [1202e31](https://github.com/STP-KAS/kaspa-master-file/commit/1202e31) | onlykas tip 7cd476dd pins image 8720f12. The four commits after 7e4e239 are inside that image. configmap still says onlykas.app and KASPA_NETWORK mainnet. membership.sil untouched. | **Moved** (onlykas) |
 | 2026-09-23 23:28 | [848e8fc](https://github.com/STP-KAS/kaspa-master-file/commit/848e8fc) | onlykas tip 8720f12. Deploy image still 7e4e239, four commits behind. Production origin is onlykas.app and the configmap says mainnet. membership.sil untouched. Manyfestation/kccs is not on this board. | **Moved** (onlykas) |

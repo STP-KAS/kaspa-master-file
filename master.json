@@ -1,7 +1,7 @@
 {
   "title": "Kaspa master file",
   "repo": "https://github.com/STP-KAS/kaspa-master-file",
-  "updated": "2026-09-23",
+  "updated": "2026-09-24",
   "disclaimer": "Not Kaspa core. Not official KNS. @StppStp. Merged Active KIP is law. Open PR is not. Current pins: section now (Grok 4.7, 22 Sep 2026 evening).",
   "sections": [
     {
@@ -156,7 +156,7 @@
           "name": "Kas-Smiths archive",
           "url": "https://github.com/Manyfestation/kas-smiths-public-archive",
           "chip": "catalog",
-          "note": "No GitHub user kasmasmith or kaspasmith. July brand thread: KAS smiths is pronounced KASMYTH. Workshop is https://kas-smiths.org, opened 2 Jul 2026, sole admin Manyfest, X sign-in. 23 Sep read: 44 topics, 363 posts, 111 users. Latest post is still 386. Post 380 on topic 31 (22 Sep 20:22Z) is a Causfy product note, not a KCC. This repo is the daily public Discourse mirror, tip 4d6f67d, pushed 23 Sep 2026 07:43Z, before posts 383-386. A thread is not a KIP. StppStp answered topic 147 at https://kas-smiths.org/t/wallet-integration-protocol/147/2 (22 Sep 20:37Z) and topic 148 at https://kas-smiths.org/t/three-covenant-kccs-for-reputation-bonds-and-identity-live-on-testnet-10/148/2 (22 Sep 20:39Z). Topic 141 (Ori on KCC-1 int/bool encoding, 29 Aug) still has no reply. Topic 8 last post 11 Sep says KCC-20 is maturing toward finalization; the file is still Draft."
+          "note": "No GitHub user kasmasmith or kaspasmith. July brand thread: KAS smiths is pronounced KASMYTH. Workshop is https://kas-smiths.org, opened 2 Jul 2026, sole admin Manyfest, X sign-in. 23 Sep read: 44 topics, 363 posts, 111 users. Latest post is still 386. Post 380 on topic 31 (22 Sep 20:22Z) is a Causfy product note, not a KCC. This repo is the daily public Discourse mirror, tip dab989504ff4, pushed 24 Sep 2026 07:34Z. Parent is 4d6f67d. That commit adds posts 383-386 and no later post. A thread is not a KIP. StppStp answered topic 147 at https://kas-smiths.org/t/wallet-integration-protocol/147/2 (22 Sep 20:37Z) and topic 148 at https://kas-smiths.org/t/three-covenant-kccs-for-reputation-bonds-and-identity-live-on-testnet-10/148/2 (22 Sep 20:39Z). Topic 141 (Ori on KCC-1 int/bool encoding, 29 Aug) still has no reply. Topic 8 last post 11 Sep says KCC-20 is maturing toward finalization; the file is still Draft."
         },
         {
           "name": "STP-KAS org and forum halt",

@@ -1800,13 +1800,13 @@
           "name": "supertypo/dotk-sdk",
           "url": "https://github.com/supertypo/dotk-sdk",
           "chip": "catalog",
-          "note": "TypeScript SDK. Pushed 21 Sep 2026. No .sil. Not a covenant source. github.com/supertypo/dotk still 404s."
+          "note": "@dotk/sdk 2.0.0. Pushed 21 Sep 2026. Subnames are sub: card records. The chain proves the parent, not the payee. Generated ABI compiler_version 0.1.0. No .sil. Not a covenant source. github.com/supertypo/dotk still 404s. Mainnet covenant id ee2128c03dfac7f6d74734bb3c879bd999434c47a55945b8a6daae2a1e4a21de. TN10 covenant id 4a4ca31ea28508021b899610bbc8fbcec4ebd6e6bf4f9c37dca0339fbda1442c."
         },
         {
           "name": "supertypo/dotk-sdk-tx",
           "url": "https://github.com/supertypo/dotk-sdk-tx",
           "chip": "catalog",
-          "note": "TypeScript tx helpers. Pushed 21 Sep 2026. No .sil. kns-dotk stays paper until a .sil is public."
+          "note": "@dotk/sdk-tx 2.0.0. Pushed 21 Sep 2026. No .sil. kns-dotk stays paper until a .sil is public. No dotk indexer repo in the public supertypo list on 24 Sep. https://<name>.kaspa.name is a directory gateway on a url record and is not in the SDK. KNS note: STP-KAS/kns-tn10-testing b512416 FOR-KNS.md. Mix sheet update: STP-KAS/kns-dotk bfb6219 NEWS.md."
         },
         {
           "name": "KNS docs",

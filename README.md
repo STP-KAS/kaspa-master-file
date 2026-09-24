@@ -537,8 +537,9 @@ Not kasdomain. Not this desk’s covenant P2SH. Source of truth is KNS GitBook.
 | simply-kaspa-indexer | https://github.com/supertypo/simply-kaspa-indexer | L1 Postgres indexer (Supertypo). Not the KNS name API. Last push 8 Jul 2026. |
 | Implementer kit | https://github.com/STP-KAS/kns-spec | Not official KNS. File read 22 Sep: [`GROK-47-KNS-REVIEW.md`](GROK-47-KNS-REVIEW.md). Kit `KasName.json` is `c8c06c1a…`. The kns demo JSON is `8f2a7f69…`. kns `PROTOCOL.md` still prints `e7f981d9…`, which is neither file. Not a pin. |
 | kns demo | https://github.com/STP-KAS/kns | README matches v1.0.0. Undated files under it still say the current compiler is v1-rc1, and the claims checker still says KCC-0 is Draft. |
-| DOTK SDK | https://github.com/supertypo/dotk-sdk | TypeScript. Pushed 21 Sep 2026. No `.sil`. |
-| DOTK tx SDK | https://github.com/supertypo/dotk-sdk-tx | TypeScript tx helpers. Pushed 21 Sep 2026. No `.sil`. `github.com/supertypo/dotk` still 404s. |
+| TN10 inscription lab | https://github.com/STP-KAS/kns-tn10-testing | 24 Sep 2026, `b512416`. Inscription load on TN10. Not the covenant path. Note for KNS: `FOR-KNS.md`. |
+| DOTK SDK | https://github.com/supertypo/dotk-sdk | `@dotk/sdk` 2.0.0, pushed 21 Sep 2026. Subnames are `sub:` card records. The chain proves the parent, not the payee. Generated ABI `compiler_version` 0.1.0. No `.sil`. |
+| DOTK tx SDK | https://github.com/supertypo/dotk-sdk-tx | `@dotk/sdk-tx` 2.0.0. Requires `@dotk/sdk` 2.0.0. No `.sil`. `github.com/supertypo/dotk` still 404s. No dotk indexer repo in the public list on 24 Sep. `https://<name>.kaspa.name` is a directory gateway on a `url` record. That host is not in the SDK. |
 | Overlay (`kns://`) | https://github.com/STP-KAS/kns-spec/blob/main/OVERLAY.md | Name-addressed layer: locate on KNS, settle on Kaspa, run dApps locally. Not a new chain. |
 
 FAQ still says “only KasWare” in places. Use the **supporting wallet** table. Kaspire is not a row. A Connect control on the TN10 site is not a row.
@@ -801,8 +802,8 @@ Yonatan (digital cash, cohesive tooling, core ≠ product) → Sutton (L1 covena
 | [kaspanet/kccs#24](https://github.com/kaspanet/kccs/pull/24) | **Open ready / still Draft status.** KCC-0012 wallet provider/discovery (head `7159d48`, 20 Sep amend). No public implementation. |
 | [kaspanet/silverscript#223](https://github.com/kaspanet/silverscript/pull/223) | **Merged.** Dispatch tags ↔ KCC-1 (IzioDev). |
 | [supertypo/simply-kaspa-indexer](https://github.com/supertypo/simply-kaspa-indexer) | L1 Postgres indexer. KNS docs: the KNS resolver uses this. Not api.knsdomains.org. Last push 8 Jul 2026. |
-| [supertypo/dotk-sdk](https://github.com/supertypo/dotk-sdk) | TypeScript SDK. Pushed 21 Sep 2026. No `.sil`. Not the missing covenant repo. |
-| [supertypo/dotk-sdk-tx](https://github.com/supertypo/dotk-sdk-tx) | TypeScript tx helpers. Pushed 21 Sep 2026. No `.sil`. `github.com/supertypo/dotk` still 404s. |
+| [supertypo/dotk-sdk](https://github.com/supertypo/dotk-sdk) | `@dotk/sdk` 2.0.0. Pushed 21 Sep 2026. Subnames are `sub:` card records. ABI `compiler_version` 0.1.0. No `.sil`. Not the missing covenant repo. |
+| [supertypo/dotk-sdk-tx](https://github.com/supertypo/dotk-sdk-tx) | `@dotk/sdk-tx` 2.0.0. Pushed 21 Sep 2026. No `.sil`. `github.com/supertypo/dotk` still 404s. |
 | [aspectron](https://github.com/aspectron) kdx / kaspa-ng | Wallet gravity |
 | [azbuky/kaspium_wallet](https://github.com/azbuky/kaspium_wallet) | Mobile |
 | [someone235/native-assets-zk-poc](https://github.com/someone235/native-assets-zk-poc) | Read 22 Sep: still the SP1 Fibonacci template. Not a Kaspa asset. |

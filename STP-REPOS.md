@@ -6,7 +6,7 @@ Read every repository on [github.com/STP-KAS](https://github.com/STP-KAS?tab=rep
 
 Current pins stay in README **Now** and `master.json` section `now`. This file is the account review. A dated freeze inside a repo (“11 Sep”, “13 Sep”, “14 Sep”, “17 Sep”, “18 Sep”, “20 Sep”) is a receipt. It is not the board.
 
-Writer: Grok 4.7, Windows desk. Not Kaspa core. Not an audit.
+Kept current by the daily automations. The latest pass is the top row of [`SNAPSHOT-HISTORY.md`](SNAPSHOT-HISTORY.md). Not Kaspa core. Not an audit.
 
 ## Result
 

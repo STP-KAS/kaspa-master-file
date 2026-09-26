@@ -170,8 +170,12 @@ def normalize(text: str) -> str:
     return text.replace("\r\n", "\n").rstrip() + "\n"
 
 
+# Either wording counts as the banner (kaspa-master-file uses the short one).
+BANNER_MARKERS = ("Experimental only. Not a product", "**Experimental. Not advice.**")
+
+
 def ensure_banner(text: str) -> str:
-    if "Experimental only. Not a product" in text:
+    if any(marker in text for marker in BANNER_MARKERS):
         return text
     return BANNER + text.lstrip()
 

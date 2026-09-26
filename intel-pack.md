@@ -26,7 +26,7 @@ Live L1 snapshot (api.kaspa.org, this date) plus kaspaexplained.com / rusty-kasp
 
 | Item | Status | Evidence |
 | --- | --- | --- |
-| Consensus | **Live** GHOSTDAG. DAGKnight = KIP-2 Proposed, not mainnet. rusty-kaspa DK PRs still open/draft (#1127 bounded UMC, #1124 simpa, older #1122/#1120/#1119/#1104). | kaspaexplained.com/status; KIP-2 |
+| Consensus | **Live** GHOSTDAG. DAGKnight = KIP-2 Proposed, not mainnet. rusty-kaspa DK PRs still open/draft (#1127 bounded UMC, #1124 simpa, older #1122/#1119/#1104). [#1120](https://github.com/kaspanet/rusty-kaspa/pull/1120) merged into `dagknight` 6 Sep 16:21Z (`95735e69`); TN13 not live. | kaspaexplained.com/status; KIP-2 |
 | Block rate | **Live** 10 BPS (Crescendo, May 2025) | rusty-kaspa releases |
 | Programmability | **Live** Toccata, 30 Jun 2026, DAA **474,165,565**. Covenants (KIP-17), covenant IDs (KIP-20), ZK precompile (KIP-16), sequencing commitments (KIP-21). Node line still v2.0.1. | v2.0.0 / v2.0.1; Toccata guide; rusty-kaspa |
 | Virtual DAA | **537,990,049** | api.kaspa.org/info/blockdag (2026-09-12) |
@@ -519,7 +519,8 @@ Toccata is **live**. Cleanup of activation machinery:
 | PR | State |
 | --- | --- |
 | rusty-kaspa #1082–#1087 Toccata cleanup parts 1–5 + P2P follow-ups | **merged** (biryukovmaxim, michaelsutton) |
-| #1104 DAGKnight executor rewrite; #1119 tmp dk manager; #1120 DK TN params | **open** — DK is **not** mainnet |
+| #1104 DAGKnight executor rewrite; #1119 tmp dk manager | **open** — DK is **not** mainnet |
+| [#1120](https://github.com/kaspanet/rusty-kaspa/pull/1120) DK TN params | **merged** into `dagknight` 6 Sep 16:21Z (`95735e69`). Not master. TN13 not live. |
 | #1127 bounded UMC (k^4 depth); #1124 simpa adversaries; #1122 pass selected_parent | **open/draft** 8–11 Sep — still **not** mainnet |
 | #991 UtxoIndex keyed by DAA + `get_utxos_by_addresses_v2` | **open** (D-Stacks) |
 | kips #45 mark KIPs 16/17/20/21 active | **closed** (landed or superseded — consensus already active) |

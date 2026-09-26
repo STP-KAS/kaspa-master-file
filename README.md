@@ -465,7 +465,7 @@ Source: https://github.com/kaspanet/kips — tracker https://kaspaexplained.com/
 
 Toccata PRs: [KIP-16 #31](https://github.com/kaspanet/kips/pull/31) · [17 #32](https://github.com/kaspanet/kips/pull/32) · [20 #35](https://github.com/kaspanet/kips/pull/35) · [21 #36](https://github.com/kaspanet/kips/pull/36). KIP-16 header author is Alexander Safstrom (`@saefstroem`). The header spells Safstrom.
 
-**Proposed / draft / not product:** KIP-2 DAGKnight (Proposed since 2022; rusty `dagknight` still unmerged. Open/draft as of 11 Sep: #1127 bounded UMC, #1124 simpa, plus older #1122 / #1120 / #1119 / #1104). KIP-6 Draft. KIP-3 Rejected.
+**Proposed / draft / not product:** KIP-2 DAGKnight (Proposed since 2022; rusty `dagknight` still unmerged. Open/draft as of 11 Sep: #1127 bounded UMC, #1124 simpa, plus older #1122 / #1119 / #1104. [#1120](https://github.com/kaspanet/rusty-kaspa/pull/1120) (TN params, DK activation wiring) merged into `dagknight` 6 Sep 16:21Z, `95735e69`. `dagknight` is not master. TN13 not live.) KIP-6 Draft. KIP-3 Rejected.
 
 KIP-21 §2.1: `lane_id` is the 20-byte `subnetwork_id`. Valid forms are native `0x00` plus 19 zero bytes, coinbase `0x01` plus 19 zero bytes, and a user lane of 4 namespace bytes plus 16 zero bytes with at least one nonzero byte in `namespace[1..=3]`. Any other shape is invalid. §2.2: at most 50 distinct non-coinbase lanes in a block, at most `1_000_000_000` `tx.gas` in each of those lanes, and `tx.gas = 0` on native and reserved system lanes. §6.7: `SeqCommit(B) = H_seq(SeqCommit(selected parent), SeqStateRoot(B))`, and post-activation `accepted_id_merkle_root` is that value. **Not** Gramlane book stamps MSG1/SEQ1.
 

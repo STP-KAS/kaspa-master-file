@@ -33,6 +33,12 @@
           "note": "26 Sep 15:43Z and 15:54Z: same health body. database.acceptedTxBlockTime 1790365505207 = 25 Sep 19:45:05Z. Server 2.0.1. blockdag pastMedianTime 26 Sep 15:41Z, node current. Newest indexed tx for the AGENTS.md TN10 pay-to address: 25 Sep 19:55:38Z. Health blueScore 568825293 is below that tx's accepting blue score 568828507, unexplained. The 25 Sep TN10 storm overload began 21:48 CEST; correlation, not cause. Do not use api-tn10 or tn10.kaspa.stream address history as a TN10 receipt until it catches up."
         },
         {
+          "name": "Covenant-id lookup and tooling",
+          "url": "https://x.com/IzioDev/status/2100202631650062411",
+          "chip": "hold",
+          "note": "IzioDev https://x.com/IzioDev/status/2100202631650062411 (16 Sep): UTXOs by covenant id \"will be a future RPC endpoint\". Until then, filter the UTXO set locally or use a third-party indexer. No rusty-kaspa pull for it on 26 Sep. #969 https://github.com/kaspanet/rusty-kaspa/pull/969 (utxo index covenant) closed unmerged 27 Apr. #991 https://github.com/kaspanet/rusty-kaspa/pull/991 still open. https://kips.dev and https://kccs.dev are IzioDev mirrors synced every 24h (https://x.com/IzioDev/status/2093118560822297060); both returned HTTP 200 on 26 Sep. Mirrors, not the source: kaspanet/kips and kaspanet/kccs are. ChainAgnostic/namespaces#193 https://github.com/ChainAgnostic/namespaces/pull/193 (Kaspa CAIP-2 and CAIP-10 profiles) is open (https://x.com/elldeeone/status/2099316438704312512, 14 Sep). elldeeone branch https://github.com/elldeeone/rusty-kaspa/tree/rk-with-tcp (09fc0ba5, 25 Aug) tests inbound links between private nodes (https://x.com/elldeeone/status/2085199203903721856). Fork branch, no upstream pull."
+        },
+        {
           "name": "KIPs",
           "url": "https://github.com/kaspanet/kips/commit/e4ae2332117b5cb68bd6188e065ef885b6d17939",
           "chip": "law",

@@ -99,6 +99,12 @@
           "note": "Master e76ee07 (14 Sep, #63 rules 5 and 6 compile). Tags API returned empty. #62 module loading still open (aabd4e6d, updated 17 Sep). Not release-ready. Not a tag. 26 Sep 00:13Z #64 (Drcryptodee): argent-runtime at e76ee07 does not build against rusty-kaspa v2.1.0. block_mass_limits is a field now, and EngineFlags has no covenants_enabled. It needs #256 first. Open."
         },
         {
+          "name": "Covenant launch proof and binding",
+          "url": "https://x.com/michaelsuttonil/status/2087453635206643755",
+          "chip": "catalog",
+          "note": "Sutton https://x.com/michaelsuttonil/status/2081846048280965268 (27 Jul): every deployed L1 covenant should come with a launch proof derived from its covenant-id preimage, covering the full contracts and initial state, and with inspectable source. https://x.com/michaelsuttonil/status/2082066262520463670 (28 Jul): the UTXO carries the covenant id (its preimage proves the launch) and the spk (p2sh commits to the contract/actor and its state). https://x.com/michaelsuttonil/status/2087453635206643755 (12 Aug): a DEX binds each whitelisted asset by the pair (template hash, covenant id). The template is passed at runtime as an untrusted sig arg and checked against the hash. Example: argent-playground dex.ag L32 at 0a2e80d1 https://github.com/argent-lang/argent-playground/blob/0a2e80d13ac8394a62057f21db954be17bcbf994/ag/dex/dex.ag#L32. https://x.com/michaelsuttonil/status/2098077295214809214 (10 Sep) links the formal analysis https://github.com/argent-lang/argent/blob/master/docs/security-invariants/leader-delegate-input-groups.md on argent master (#60, merged 10 Sep). The covenant-state provenance doc behind the silverscript#234 close is only on branch https://github.com/argent-lang/argent/blob/covenant-state-provenance/docs/security-invariants/covenant-state-provenance.md (35bec64a, 3 Sep), not on master (Sutton https://x.com/michaelsuttonil/status/2095472062701699101). Catalog."
+        },
+        {
           "name": "saefstroem / stroemnet",
           "url": "https://github.com/saefstroem/stroemnet",
           "chip": "experiment",

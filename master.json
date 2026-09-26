@@ -105,6 +105,12 @@
           "note": "Sutton https://x.com/michaelsuttonil/status/2081846048280965268 (27 Jul): every deployed L1 covenant should come with a launch proof derived from its covenant-id preimage, covering the full contracts and initial state, and with inspectable source. https://x.com/michaelsuttonil/status/2082066262520463670 (28 Jul): the UTXO carries the covenant id (its preimage proves the launch) and the spk (p2sh commits to the contract/actor and its state). https://x.com/michaelsuttonil/status/2087453635206643755 (12 Aug): a DEX binds each whitelisted asset by the pair (template hash, covenant id). The template is passed at runtime as an untrusted sig arg and checked against the hash. Example: argent-playground dex.ag L32 at 0a2e80d1 https://github.com/argent-lang/argent-playground/blob/0a2e80d13ac8394a62057f21db954be17bcbf994/ag/dex/dex.ag#L32. https://x.com/michaelsuttonil/status/2098077295214809214 (10 Sep) links the formal analysis https://github.com/argent-lang/argent/blob/master/docs/security-invariants/leader-delegate-input-groups.md on argent master (#60, merged 10 Sep). The covenant-state provenance doc behind the silverscript#234 close is only on branch https://github.com/argent-lang/argent/blob/covenant-state-provenance/docs/security-invariants/covenant-state-provenance.md (35bec64a, 3 Sep), not on master (Sutton https://x.com/michaelsuttonil/status/2095472062701699101). Catalog."
         },
         {
+          "name": "Name-service PoC",
+          "url": "https://github.com/argent-lang/argent-playground/pull/6",
+          "chip": "draft",
+          "note": "argent-playground#6 https://github.com/argent-lang/argent-playground/pull/6 \"draft name service\" (IzioDev) opened 30 Jul, still a draft, head c4df332c. IzioDev https://x.com/IzioDev/status/2083196595923804179 (31 Jul): names are transferable UTXOs. Uniqueness uses a compressed sparse Merkle tree, with a bounded fast path and a general fallback. KCC-02/03 ownership is not final. https://x.com/IzioDev/status/2083210045286756635: about one concurrent mint per mergeset; prefix sharding to scale out; SIGHASH_ALL commits outputs; commit/reveal can stop front-running. Not merged. Not KNS."
+        },
+        {
           "name": "saefstroem / stroemnet",
           "url": "https://github.com/saefstroem/stroemnet",
           "chip": "experiment",

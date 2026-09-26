@@ -14,7 +14,7 @@ A release, an open pull, and a demo are often offered as one fact. The list give
 
 ### How
 
-The repository opened on 5 September 2026. It started as a map of public GitHub repositories, KIPs, and channels. That first page already treated a merged Active KIP as the rule. Through the middle of the month it added compiler tags, research repositories, contributor notes, and dated freezes. On 18 September the snapshot log began. A pass leaves a receipt there even when the pins hold. On 21 September **Now** became the current board, and earlier sections became receipts. The file today is that board, the same board in [`master.json`](master.json), and the log in [`SNAPSHOT-HISTORY.md`](SNAPSHOT-HISTORY.md). Whether it is relevant is up for debate. The work is experimental. A row can lag what it watches.
+The repository opened on 5 September 2026. It started as a map of public GitHub repositories, KIPs, and channels. That first page already treated a merged Active KIP as the rule. Through the middle of the month it added compiler tags, research repositories, contributor notes, and dated freezes. On 18 September the snapshot log began. A pass leaves a receipt there even when the pins hold. Each day the automations sweep every source the file names and check each row against it again. On 21 September **Now** became the current board, and earlier sections became receipts. The file today is that board, the same board in [`master.json`](master.json), and the log in [`SNAPSHOT-HISTORY.md`](SNAPSHOT-HISTORY.md). Whether it is relevant is up for debate. The work is experimental. A row can lag what it watches.
 
 ## Now (read this first)
 

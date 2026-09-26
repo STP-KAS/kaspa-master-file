@@ -28,9 +28,9 @@ Count rechecked this pass: **54** owned repos. **52** public, **2** private (`tn
 
 Every README was fetched again after the earlier sentence fixes. Lines were scored against the rubric. Most “hits” were the repo **refusing** the false claim (“Argent is not production-ready”, “not a product testnet”, “RC ≠ v1”). Those agree.
 
-One file fought the board in its own body. [argent-xai](https://github.com/STP-KAS/argent-xai) had just gained a sentence that #63 compiles rules 5 and 6, and the next paragraph still said those rules were **[NOT IMPLEMENTED]**. That is fixed ([0f637fa](https://github.com/STP-KAS/argent-xai/commit/0f637fa005)).
+One file fought the board in its own body. [argent-xai](https://github.com/STP-KAS/argent-xai) had just gained a sentence that #63 compiles rules 5 and 6, and the next paragraph still said those rules were **[NOT IMPLEMENTED]**. That is fixed ([8d9c9ec](https://github.com/STP-KAS/argent-xai/commit/8d9c9ecd72)).
 
-[grok-kaspa-collab](https://github.com/STP-KAS/grok-kaspa-collab) told the reader Kaspa Till’s README “still said” v1-rc1. Till’s README now names v1.0.0. Parenthetical updated ([8cc8ad1](https://github.com/STP-KAS/grok-kaspa-collab/commit/8cc8ad151b)).
+[grok-kaspa-collab](https://github.com/STP-KAS/grok-kaspa-collab) told the reader Kaspa Till’s README “still said” v1-rc1. Till’s README now names v1.0.0. Parenthetical updated ([4c2d671](https://github.com/STP-KAS/grok-kaspa-collab/commit/4c2d671d54)).
 
 The master file’s own morning receipt still printed host pin `da2a7f26` in the table under a “receipt only” banner. That cell now says it was superseded the same day.
 

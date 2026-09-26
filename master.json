@@ -69,6 +69,12 @@
           "note": "Open argent-lang/kcc20-reference#1, head 707acca8 (18 Sep 2026, Use unkeyed BLAKE3 for P2PKH owner hashes), from Manyfestation/kcc20-reference branch finalize-kcc20-reference. Not merged. argent-lang master is still 76648f99 (10 Sep, initial, wip stub). contracts/kcc20.ag state order matches Draft kcc-0020.md. p2pkh_hash is blake3(public_key), no domain key. Bounds 3 in and 3 out. tests.rs contains 79c71c23 and fd3ef14a, not the swapped tag c3d9f92f. Cargo pins argent 94f249a and rusty-kaspa a41a333. kcc20-live tip 50374a64 (9 Sep) still swaps borrow_guard before borrow_scheme and still uses keyed PublicKeyHash. On 707acca8, transfer requires each successor amount >= 0 and does not require that of the leader amount or a delegate amount. The branch README says all token amounts are non-negative. Not Final. KCC-20 on main stays Draft. The two keyed vector fields in kccs#31 match KCC-2 e6b1b536. Manyfestation 5793473860 gave unkeyed digests 7caa514a and ed887ad1. Desk recomputed both in 5795894329. Those digests belong in the KCC-20 file when #30 is the KCC-2 that document requires."
         },
         {
+          "name": "KRC-20 to KCC migration",
+          "url": "https://x.com/michaelsuttonil/status/2090041390214336888",
+          "chip": "catalog",
+          "note": "Sutton https://x.com/michaelsuttonil/status/2090041390214336888 (19 Aug): he prefers a one-time snapshot. The commitment sits in KCC genesis, is part of the covenant-id preimage, and can be checked against a KRC indexer muhash. An airdrop needs an admin key. manyfest https://x.com/manyfest_/status/2090532234747097107 (20 Aug): KRC tokens are on three ledgers (KRC20, Igra, Kasplex); he proposes a coordinated snapshot and a KCC20 minter. Proposal. No KCC and no code."
+        },
+        {
           "name": "kccs#29 KCC-3/4/5",
           "url": "https://github.com/kaspanet/kccs/pull/29",
           "chip": "Draft",

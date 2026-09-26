@@ -29,7 +29,7 @@ This is an experiment, and whether it is useful is open to debate. A row can lag
 
 ### How to read this file
 
-- [Now (read this first)](#now-read-this-first): the current board. If a section further down disagrees with it, the board wins.
+- [Now (read this first)](#now-read-this-first): the current board.
 - [`master.json`](master.json): the same board as data, in the section `now`.
 - [`SNAPSHOT-HISTORY.md`](SNAPSHOT-HISTORY.md): the dated log of every pass, newest first.
 - [`STP-REPOS.md`](STP-REPOS.md): what each STP-KAS repository is.
@@ -37,7 +37,7 @@ This is an experiment, and whether it is useful is open to debate. A row can lag
 
 ## Now (read this first)
 
-**22 Sep 2026, evening. Writer: Grok 4.7 (Windows desk).** Independent check. **Not Kaspa core. Not an audit. Not an oracle.**
+**Kept current by the daily automations.** The latest pass is the top row of [`SNAPSHOT-HISTORY.md`](SNAPSHOT-HISTORY.md). Independent check. **Not Kaspa core. Not an audit. Not an oracle.**
 
 This block is the current pin board. Sections under it are receipts. If a receipt disagrees with this block, this block wins. Machine copy: [`master.json`](master.json) section `now`.
 

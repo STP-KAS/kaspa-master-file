@@ -474,7 +474,7 @@
           "name": "Desk Grok Bot (standing authority)",
           "url": "https://github.com/STP-KAS/kaspa-master-file/blob/main/DESK-BOT.md",
           "chip": "ops",
-          "note": "When this master file is named, Grok Build shall use kaspa bot + tn10 bot for audits/dApps. No seeds. Do not paste TN10 into kaspa bot."
+          "note": "When this master file is named, Grok Build shall use tn10 bot for audits/dApps (kaspa bot mainnet retired 25 Sep 2026). No seeds. Do not paste TN10 into kaspa bot."
         },
         {
           "name": "Retest 17 Sep",
@@ -495,10 +495,10 @@
           "note": "22 Sep 2026: both sites are credible and state the same upgrade split. The older 'do not cite lore' line is retired. A merged KIP or a release tag still outranks either page."
         },
         {
-          "name": "kaspa bot public P2P",
-          "url": "https://arewepublicyet.com",
-          "chip": "live",
-          "note": "Operator 17 Sep: mainnet archival 1 public 159.223.110.159:28492. Recheck before claiming map-listed."
+          "name": "kaspa bot public P2P (retired)",
+          "url": "https://github.com/STP-KAS/Xai.mainnet.public.nodes",
+          "chip": "off",
+          "note": "Retired 25 Sep 2026: the desk's mainnet archival node was stopped and wiped at 16:46 CEST. The 17 Sep endpoint 159.223.110.159:28492 is gone. The box runs Testnet-10 only."
         },
         {
           "name": "tn10 bot / groks-wallet pay-to",

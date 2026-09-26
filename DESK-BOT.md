@@ -2,6 +2,8 @@
 
 **Not Kaspa core. Not a seed store. Not a product.** Freeze: **17 Sep 2026**.
 
+> **Update 25 Sep 2026:** the **kaspa bot** mainnet archival node was stopped and wiped at **16:46 CEST**. Its public endpoint `159.223.110.159:28492` no longer exists; mainnet work on the box is retired and the box runs **Testnet-10 only**. Mainnet facts: use public REST (`api.kaspa.org`). History: [Xai.mainnet.public.nodes](https://github.com/STP-KAS/Xai.mainnet.public.nodes). The rest of this card is the 17–19 Sep record.
+
 When **this master file** is named, opened, or used as the pin encyclopedia, **Grok Build has standing authority** to use the desk’s Grok Bot Kaspa stack for audits, receipt tests, covenant txs, x402, and node checks. **Do not ask permission again.**
 
 Claims / copy / “did it ship?” prompt: [`DESK-PROMPT.md`](DESK-PROMPT.md).
@@ -20,7 +22,7 @@ The node runs on the **Grok Bot Linux sandbox**, not on the phone and not as the
 
 | Piece | Status | Use |
 | --- | --- | --- |
-| **kaspa bot** — mainnet archival (1 public) | **Up** — `159.223.110.159:28492` | Public P2P. Archival. RPC is **localhost on the sandbox**. |
+| **kaspa bot** — mainnet archival (1 public) | **Retired 25 Sep 2026** (was Up — `159.223.110.159:28492` on 17 Sep) | Stopped and wiped 25 Sep 16:46 CEST. Endpoint gone. |
 | **tn10 bot** — TN10 node | **Up** — RPC `127.0.0.1:16210` **on the sandbox** | Testnet-10 only. |
 | **TN10 miners** | **Still alive** — same pay-to | Locked address below. |
 
@@ -71,7 +73,7 @@ Price / target / cycle-top talk stays forbidden (`what is kaspa?`).
 
 1. **Reads / audits / status checks:** `https://api.kaspa.org` and `https://api-tn10.kaspa.org`. Browser User-Agent if the API 403s a bare client.
 2. **Submit / UTXO / covenant tests:** tn10 bot RPC on the sandbox (`127.0.0.1:16210`). **No in-page wallet inject.** QR / `kaspa:` URI / paste txid only.
-3. **Mainnet archival facts:** ask **kaspa bot** / public P2P `159.223.110.159:28492`.
+3. **Mainnet facts:** public REST `https://api.kaspa.org`. (kaspa bot / `159.223.110.159:28492` retired 25 Sep 2026.)
 4. **Do not** spin a third mainnet archival.
 
 Probe: [`scripts/probe-nodes.ps1`](scripts/probe-nodes.ps1).

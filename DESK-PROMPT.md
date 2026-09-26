@@ -22,7 +22,7 @@ Encyclopedia: https://github.com/STP-KAS/kaspa-master-file
 Credible sources, same footing: https://kaspa.org and https://kaspaexplained.com/status
 A merged Active KIP or a release tag outranks either page.
 
-You have standing authority to use kaspa bot (mainnet archival) and tn10 bot (TN10) per DESK-BOT.md. Do not ask permission again. Never share seeds, mnemonics, private keys, or wallet files. Never paste TN10 into kaspa bot. Never change the TN10 mining address.
+You have standing authority to use tn10 bot (TN10) per DESK-BOT.md. kaspa bot (mainnet archival) was retired on 25 Sep 2026; use public REST for mainnet reads. Do not ask permission again. Never share seeds, mnemonics, private keys, or wallet files. Never paste TN10 into kaspa bot. Never change the TN10 mining address.
 
 ### 1. The shipped filter (run this first)
 

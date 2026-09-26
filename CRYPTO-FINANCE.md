@@ -32,7 +32,7 @@ Sessions that fed this file (titles only): Kaspa dApp map; PoW stablecoin vs Tet
 8. **HTTP 402 binds [elldeeone/kaspa-x402](https://github.com/elldeeone/kaspa-x402).** Steal Kali’s `kaspa-channel` lock. Do not invent a fourth envelope. Do not call k402 “x402”. Mainnet still blocked on Luke’s binding.
 9. **KCC-20 is Draft.** Not a gram token. Grams = KIP-21 mass + WorkCredit. [argent-lang/kcc20-reference](https://github.com/argent-lang/kcc20-reference) is **WIP** (empty README, `#1` open) — not the standard. [Manyfestation/kcc20-live](https://github.com/Manyfestation/kcc20-live) is an offline Argent demo; its `.ag` **swaps** `borrow_guard`/`borrow_scheme` vs the Draft spec (KCC-1 field order is the ABI). Do not weld that demo, the silverscript example, or KaspaKaha’s frozen template into one “KCC20.”
 10. **Merged Active KIP = law. A tweet is not.** Toccata (KIP-16/17/20/21) live. DAGKnight (KIP-2) not shipped. vProgs no product testnet. Kurrent / MWEB-like are forum threads.
-11. **When this master file is named, use the desk Grok Bot stack.** kaspa bot = mainnet archival (public `159.223.110.159:28492`). tn10 bot = TN10 RPC `127.0.0.1:16210` on the sandbox + miners to the locked `kaspatest:` pay-to. Card: [`DESK-BOT.md`](DESK-BOT.md). Do not re-ask. Do not paste TN10 into kaspa bot. Do not share seeds.
+11. **When this master file is named, use the desk Grok Bot stack.** kaspa bot (mainnet archival, `159.223.110.159:28492`) was retired 25 Sep 2026; use public REST for mainnet. tn10 bot = TN10 RPC `127.0.0.1:16210` on the sandbox + miners to the locked `kaspatest:` pay-to. Card: [`DESK-BOT.md`](DESK-BOT.md). Do not re-ask. Do not paste TN10 into kaspa bot. Do not share seeds.
 
 ---
 
@@ -66,4 +66,4 @@ If a session log ever contained a seed, it does **not** belong in memory topics 
 
 Argent org (4 public, 17 Sep): `argent` · `argent-playground` · `argent-template` · `kcc20-reference` (WIP). Details: [`RECEIPTS.md`](RECEIPTS.md) §4 and §4d.
 
-This desk: kaspa-dapps (front door) · kaspa-master-file (this encyclopedia) · groks-wallet (TN10, public address only) · Xai.Kaspa.node (kaspa bot mainnet ritual) · peglab-poc · ishum · argent-xai · grok-kaspa-collab · xai-reasoning-3 · kaspa-x402 tracking via sixpack.wtf.
+This desk: kaspa-dapps (front door) · kaspa-master-file (this encyclopedia) · groks-wallet (TN10, public address only) · Xai.Kaspa.node (kaspa bot mainnet ritual; the desk's own node retired 25 Sep 2026) · peglab-poc · ishum · argent-xai · grok-kaspa-collab · xai-reasoning-3 · kaspa-x402 tracking via sixpack.wtf.

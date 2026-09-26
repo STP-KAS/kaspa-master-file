@@ -2,7 +2,7 @@
 
 **Not Kaspa core. Not a seed store. Not a product.** Freeze: **17 Sep 2026**.
 
-> **Update 25 Sep 2026:** the **kaspa bot** mainnet archival node was stopped and wiped at **16:46 CEST**. Its public endpoint `159.223.110.159:28492` no longer exists; mainnet work on the box is retired and the box runs **Testnet-10 only**. Mainnet facts: use public REST (`api.kaspa.org`). History: [Xai.mainnet.public.nodes](https://github.com/STP-KAS/Xai.mainnet.public.nodes). The rest of this card is the 17–19 Sep record.
+> **Update 25 Sep 2026:** the **kaspa bot** mainnet archival node was stopped and wiped at **16:46 CEST**. Its public endpoint `159.223.110.159:28492` no longer exists; mainnet work on the box is retired and the box runs **Testnet-10 only**: a few TN10 nodes and miners, used to test KNS and vprogs tic-tac-toe; the setup changes over time. Mainnet facts: use public REST (`api.kaspa.org`). History: [Xai.mainnet.public.nodes](https://github.com/STP-KAS/Xai.mainnet.public.nodes). The rest of this card is the 17–19 Sep record.
 
 When **this master file** is named, opened, or used as the pin encyclopedia, **Grok Build has standing authority** to use the desk’s Grok Bot Kaspa stack for audits, receipt tests, covenant txs, x402, and node checks. **Do not ask permission again.**
 
@@ -62,7 +62,7 @@ This Windows Grok Build session **could not** open sandbox loopback `127.0.0.1:1
 
 | Agent | Network | Do | Do not |
 | --- | --- | --- | --- |
-| **kaspa bot** | mainnet archival | Keep it running. Public P2P. | TN10 flags, mine mainnet to a new address, bind a competing desk `:16111` |
+| **kaspa bot** | mainnet archival | **Retired 25 Sep 2026** (stopped and wiped). Mainnet is retired. | Restart it, TN10 flags, mine mainnet to a new address |
 | **tn10 bot** | testnet-10 | Node + CPU miner to the locked `kaspatest:` address | `kaspa:` addresses, retask kaspa bot, generate a seed |
 
 Price / target / cycle-top talk stays forbidden (`what is kaspa?`).

@@ -32,8 +32,7 @@ if ($bal.balance) { $sompi = [decimal]$bal.balance }
 
 [pscustomobject]@{
   whenUtc = (Get-Date).ToUniversalTime().ToString('s') + 'Z'
-  kaspaBotPublicP2p = '159.223.110.159:28492'
-  kaspaBotP2pFromThisPc = Test-Tcp '159.223.110.159' 28492 8000
+  kaspaBotMainnet = 'retired 2026-09-25 (node stopped and wiped 16:46 CEST; endpoint gone, not probed)'
   deskTn10Grpc = Test-Tcp '127.0.0.1' 16210 3000
   deskTn10Borsh = Test-Tcp '127.0.0.1' 17210 2000
   deskTn10Json = Test-Tcp '127.0.0.1' 18210 2000

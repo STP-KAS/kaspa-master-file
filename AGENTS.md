@@ -28,7 +28,7 @@ When this master file is named, opened, or used as the pin list, Grok Build **sh
 
 ## Nodes vs this Windows session
 
-Sandbox `127.0.0.1:16210` is **not** automatically this PC. Public REST (`api.kaspa.org`, `api-tn10.kaspa.org`) is the always-on read path. Do not compete with kaspa bot on mainnet `:16111`.
+Sandbox `127.0.0.1:16210` is **not** automatically this PC. Public REST (`api.kaspa.org`, `api-tn10.kaspa.org`) is the always-on read path. Mainnet is retired: kaspa bot's mainnet node was stopped and wiped on 25 Sep 2026, and no desk mainnet node is kept running.
 
 ## Where to write (layout since 26 Sep 2026)
 

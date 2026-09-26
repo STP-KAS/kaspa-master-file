@@ -2,7 +2,7 @@
 
 This repo is the Kaspa **pin encyclopedia**. Front door: [STP-KAS/kaspa-dapps](https://github.com/STP-KAS/kaspa-dapps). **Not an oracle.** Do not keep a parallel Kaspa-oracle report.
 
-**Read first:** `master.json` section `now`, then the README **Now** block. Older “what this pass did” sections and `intel-pack.md` tables are receipts. If they disagree with `now`, `now` wins. Pins, catalog tweets, and honest object splits live in `README.md` + `master.json`.
+**Read first:** `master.json` section `now`, then the README **Now** block. Older “what this pass did” sections and sections 0–10 now live in [`RECEIPTS.md`](RECEIPTS.md) (moved from the README on 26 Sep 2026). They and the `intel-pack.md` tables are receipts. If they disagree with `now`, `now` wins. Current pins live in the README **Now** board + `master.json`.
 
 Claims prompt (paste into the desk bot): [`DESK-PROMPT.md`](DESK-PROMPT.md).
 Node card: [`DESK-BOT.md`](DESK-BOT.md).
@@ -29,6 +29,14 @@ When this master file is named, opened, or used as the pin list, Grok Build **sh
 ## Nodes vs this Windows session
 
 Sandbox `127.0.0.1:16210` is **not** automatically this PC. Public REST (`api.kaspa.org`, `api-tn10.kaspa.org`) is the always-on read path. Do not compete with kaspa bot on mainnet `:16111`.
+
+## Where to write (layout since 26 Sep 2026)
+
+- `README.md` is the intro plus the **Now** board. Nothing else. Do not add “what this pass did” sections or new reference sections to it.
+- Keep each **Now** cell short: the current state in a few sentences, with the key commit hashes and links. When a fact changes, rewrite the cell to the new state. Do not append dated diary lines to a cell.
+- Dated notes (what was read, when, and what changed) go in [`SNAPSHOT-HISTORY.md`](SNAPSHOT-HISTORY.md): one newest-first row per pass. Longer text that no longer belongs in a cell is moved there verbatim, under a dated heading, and the cell links to it.
+- [`RECEIPTS.md`](RECEIPTS.md) holds the older README sections. It is frozen. Do not add to it.
+- `master.json` section `now` mirrors the board. Change it when a pin changes.
 
 ## Snapshot history
 

@@ -12,7 +12,7 @@
           "name": "How to read this file",
           "url": "https://github.com/STP-KAS/kaspa-master-file#now-read-this-first",
           "chip": "now",
-          "note": "This section is the current pin board. Older README pass blocks, rnd-log rows, and intel-pack tables are receipts. If they disagree with this section, this section wins. Grok 4.7 Windows desk. Not Kaspa core. Not an audit. Not an oracle. Merged Active KIP is law. An open PR is not."
+          "note": "This section is the current pin board. Older pass blocks (now in RECEIPTS.md), rnd-log rows, and intel-pack tables are receipts. If they disagree with this section, this section wins. Grok 4.7 Windows desk. Not Kaspa core. Not an audit. Not an oracle. Merged Active KIP is law. An open PR is not."
         },
         {
           "name": "Live",
@@ -138,7 +138,7 @@
           "name": "kaspanet org cut",
           "url": "https://github.com/kaspanet",
           "chip": "org",
-          "note": "22 Sep 2026: 26 public repos. Load-bearing tips are the Now rows. The README section 2 status column is the 11 Sep receipt. Release is rusty-kaspa v2.1.0 01b532e8. The other 15 are historical or vendored: workflow-perf-monitor-rs (fork, saefstroem #1, rusty master Cargo.toml tag v0.0.3 via #965), rusty-kaspa-corpus, big-test-data, faucet (old Go, not TN10), whitepaper, go-secp256k1, go-muhash, secp256k1, protoc-gen-doc, kasparov (Go API, superseded by rusty RPC), golang-lru, compose, quick-start, procedures, ghostdag-prototype. Not pins."
+          "note": "22 Sep 2026: 26 public repos. Load-bearing tips are the Now rows. The RECEIPTS.md section 2 status column is the 11 Sep receipt. Release is rusty-kaspa v2.1.0 01b532e8. The other 15 are historical or vendored: workflow-perf-monitor-rs (fork, saefstroem #1, rusty master Cargo.toml tag v0.0.3 via #965), rusty-kaspa-corpus, big-test-data, faucet (old Go, not TN10), whitepaper, go-secp256k1, go-muhash, secp256k1, protoc-gen-doc, kasparov (Go API, superseded by rusty RPC), golang-lru, compose, quick-start, procedures, ghostdag-prototype. Not pins."
         },
         {
           "name": "michaelsutton / kdapp",

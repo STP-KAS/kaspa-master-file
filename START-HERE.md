@@ -10,7 +10,7 @@ Front door: **[STP-KAS/kaspa-dapps](https://github.com/STP-KAS/kaspa-dapps)**
 
 Why: A GitHub link that says it shipped is a proposal, a branch, a release, or an activation — until you open it. A node release is not wallet support. This desk does not ship wallet integrations.
 
-This repo stays the pin encyclopedia (compiler tag, KIPs, forum). **Not an oracle.** Keep facts here. Do not add another “what this pass did” section here.
+This repo stays the pin encyclopedia (compiler tag, KIPs, forum). **Not an oracle.** Keep facts here. Do not add another “what this pass did” section here. The README is the intro plus the **Now** board; dated notes go to [`SNAPSHOT-HISTORY.md`](SNAPSHOT-HISTORY.md); older README sections are in [`RECEIPTS.md`](RECEIPTS.md).
 
 Money argument (no seeds): [`CRYPTO-FINANCE.md`](CRYPTO-FINANCE.md).
 
@@ -18,7 +18,7 @@ Node standing authority: [`DESK-BOT.md`](DESK-BOT.md) · [`AGENTS.md`](AGENTS.md
 
 Retest of public STP-KAS GitHubs: [`RETEST.md`](RETEST.md).
 
-18 Sep catch-up (DK / Argent / SilverScript / KCC): pins hold — see README + `master.json` `updated` 2026-09-18.
+18 Sep catch-up (DK / Argent / SilverScript / KCC): pins hold — see [`RECEIPTS.md`](RECEIPTS.md) (18 Sep receipt) + `master.json` `updated` 2026-09-18.
 
 Community covenants stack (17 Sep, @kaspaunchained, not a KIP): https://x.com/kaspaunchained/status/2100571472561586192 · https://x.com/kaspaunchained/status/2100572500442980776
 

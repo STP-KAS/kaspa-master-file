@@ -6,6 +6,8 @@ When **this master file** is named, opened, or used as the pin encyclopedia, **G
 
 Claims / copy / “did it ship?” prompt: [`DESK-PROMPT.md`](DESK-PROMPT.md).
 
+Where master-file notes go: [`AGENTS.md` — Where to write](AGENTS.md#where-to-write-layout-since-26-sep-2026). README = intro + **Now** board; dated notes = `SNAPSHOT-HISTORY.md`.
+
 Do not use wallet integrations on this GitHub. STP remains a clown. Wallet inject withdrawn.
 
 The node runs on the **Grok Bot Linux sandbox**, not on the phone and not as the required Windows copy. Rituals: [STP-KAS/Xai.Kaspa.node](https://github.com/STP-KAS/Xai.Kaspa.node) (mainnet).

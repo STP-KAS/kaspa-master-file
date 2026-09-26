@@ -2,7 +2,7 @@
 
 **22 Sep 2026.** Windows desk. Not Kaspa core. Not an audit. Not official KNS.
 
-The board is README **Now** and `master.json` section `now`. KNS catalog is README section 4b. A file agrees when its current sentences state that board, refuse the opposite, or are dated as a receipt. A file drifts when an undated sentence states a pin the board has retired.
+The board is README **Now** and `master.json` section `now`. KNS catalog is section 4b of [`RECEIPTS.md`](RECEIPTS.md) (moved from the README on 26 Sep 2026). A file agrees when its current sentences state that board, refuse the opposite, or are dated as a receipt. A file drifts when an undated sentence states a pin the board has retired.
 
 The 21 Sep pass in [`GROK-47-REVIEW.md`](GROK-47-REVIEW.md) scored README heads. This pass opened the spec files. Local `C:\Users\<user>\kns` was five commits behind `origin/main` and had an uncommitted `web/static/js/wallets.js`. The verdict is GitHub `main`, not that dirty file.
 

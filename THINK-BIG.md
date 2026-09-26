@@ -250,4 +250,4 @@ That is the whole delusion, written as a plan.
 4. Clone [kaspa-x402](https://github.com/elldeeone/kaspa-x402). Hit TN10. Do not start a new 402 repo.
 5. If any kill-if is green, stop and write it in this file.
 
-*Pins from the 11 Sep freeze. Full map: [README](README.md). Audit: [GROK-HEAVY-REVIEW.md](GROK-HEAVY-REVIEW.md). Catalog: [master.json](master.json). Intel: [intel-pack.md](intel-pack.md).*
+*Pins from the 11 Sep freeze. Full map: [RECEIPTS.md](RECEIPTS.md) (moved from the README on 26 Sep 2026); current board: [README **Now**](README.md#now-read-this-first). Audit: [GROK-HEAVY-REVIEW.md](GROK-HEAVY-REVIEW.md). Catalog: [master.json](master.json). Intel: [intel-pack.md](intel-pack.md).*

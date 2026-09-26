@@ -27,7 +27,7 @@ Sessions that fed this file (titles only): Kaspa dApp map; PoW stablecoin vs Tet
 3. **Dual rail is the only honest merchant path today:** keypad in EUR/USD, settle in native KAS (QR / `kaspa:` URI). Guest USDT may be offered **labelled**. Never `useAsGas()`.
 4. **Fill is not a business.** This desk keeps **0**. Anyone’s Kaspa wallet. In-page inject is **Kasware / Kastle only** until a public wallet ships **KCC-0012** (still Draft, `kccs#24`).
 5. **A compiler tag is not an audit.** SilverScript **v1.0.0** (`3ed9733`, 9 Sep 2026) is the pin. `#234` foreign `readInputState` still closed unmerged. `#250` / `#251` still **open**. Do not write `(State[] a, State[] b) = states.split(n)` on this pin.
-6. **Argent is not product.** No GitHub tag. README still not release-ready. **PR #63 merged 14 Sep** — leader/delegate rules 5 and 6 now compile. Still unaudited. Gramlane stays **one own-UTXO**. Do not ship Argent ICC in a till. Getting-started (16 Sep): [`README.md` §4d](README.md).
+6. **Argent is not product.** No GitHub tag. README still not release-ready. **PR #63 merged 14 Sep** — leader/delegate rules 5 and 6 now compile. Still unaudited. Gramlane stays **one own-UTXO**. Do not ship Argent ICC in a till. Getting-started (16 Sep): [`RECEIPTS.md` §4d](RECEIPTS.md#4d-argent-getting-started-izio-16-sep-2026--not-a-tag).
 7. **PoC dollars are not dollars.** Parker receipt = teaching unit (1 sompi outputs fail KIP-9 storage mass on TN10). PegLab tPEG **WILL DEPEG**. BitCoffee KUSD is the only L1 covenant dollar *candidate* this desk verified on-chain — peg unproven, no wallet pay path. Ishum kUSD is a till *seat*, not BitCoffee. 1kUSD is research.
 8. **HTTP 402 binds [elldeeone/kaspa-x402](https://github.com/elldeeone/kaspa-x402).** Steal Kali’s `kaspa-channel` lock. Do not invent a fourth envelope. Do not call k402 “x402”. Mainnet still blocked on Luke’s binding.
 9. **KCC-20 is Draft.** Not a gram token. Grams = KIP-21 mass + WorkCredit. [argent-lang/kcc20-reference](https://github.com/argent-lang/kcc20-reference) is **WIP** (empty README, `#1` open) — not the standard. [Manyfestation/kcc20-live](https://github.com/Manyfestation/kcc20-live) is an offline Argent demo; its `.ag` **swaps** `borrow_guard`/`borrow_scheme` vs the Draft spec (KCC-1 field order is the ABI). Do not weld that demo, the silverscript example, or KaspaKaha’s frozen template into one “KCC20.”
@@ -64,6 +64,6 @@ If a session log ever contained a seed, it does **not** belong in memory topics 
 
 ## Related GitHubs (this pass)
 
-Argent org (4 public, 17 Sep): `argent` · `argent-playground` · `argent-template` · `kcc20-reference` (WIP). Details: README §4 and §4d.
+Argent org (4 public, 17 Sep): `argent` · `argent-playground` · `argent-template` · `kcc20-reference` (WIP). Details: [`RECEIPTS.md`](RECEIPTS.md) §4 and §4d.
 
 This desk: kaspa-dapps (front door) · kaspa-master-file (this encyclopedia) · groks-wallet (TN10, public address only) · Xai.Kaspa.node (kaspa bot mainnet ritual) · peglab-poc · ishum · argent-xai · grok-kaspa-collab · xai-reasoning-3 · kaspa-x402 tracking via sixpack.wtf.

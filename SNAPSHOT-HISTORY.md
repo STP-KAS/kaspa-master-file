@@ -135,7 +135,7 @@ Not a KIP. Not Kaspa core. A tweet is not a pin. This file is the agent/operator
 ## How to append
 
 1. Relevance-check the delta (DAGKnight / Argent / SilverScript / KCC focus).
-2. Edit `master.json` / README only when material; always add a newest-first row here.
+2. Edit `master.json` / README only when material; always add a newest-first row here. In the README, rewrite the short **Now** cell to the current state (a few sentences, key hashes and links); do not append dated lines to it. Longer text moved out of a cell goes verbatim under a dated heading at the end of this file. [`RECEIPTS.md`](RECEIPTS.md) is frozen.
 3. Commit + push `STP-KAS/kaspa-master-file`.
 4. If masterfile changed, short pointer on `kaspa-dapps` + `project-delusional` when needed.
 5. Tell stp in chat: commit SHA, what changed, pins hold or not.

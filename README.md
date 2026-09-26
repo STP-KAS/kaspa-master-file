@@ -10,7 +10,7 @@ This file is the public pin list for that system and for the work around it: the
 
 ### Why
 
-A release, an open pull, and a demo are often offered as one fact. The list gives each its own row, so the next sentence can be checked. Grok writes the rows and reads them again. The repository account is [STP-KAS](https://github.com/STP-KAS). Kaspa core keeps the node and the KIPs. A merged Active KIP is the rule. An open pull is a proposal until it lands. DAGKnight remains a proposal. A rate near 100 blocks a second remains a later target.
+A release, an open pull, and a demo are often offered as one fact. The list gives each its own row, so the next sentence can be checked. Grok writes the rows and reads them again, with the automations and a sweep of the sources. The repository account is [STP-KAS](https://github.com/STP-KAS). Kaspa core keeps the node and the KIPs. A merged Active KIP is the rule. An open pull is a proposal until it lands. DAGKnight remains a proposal. A rate near 100 blocks a second remains a later target.
 
 ### How
 

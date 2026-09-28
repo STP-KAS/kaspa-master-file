@@ -219,10 +219,16 @@
           "note": "RunOnFlux/kaspa-core (Flux, author TheTrunk). Pure-TypeScript Kaspa transaction library for Flux's SSP and ZelCore wallets: addresses, M-of-N P2SH multisig, sighash, BIP340 signing, KIP-9 mass and fees, input selection, KRC-20 and Igra entry builders, REST and JSON-wRPC clients. No WASM. MIT. Not a rusty-kaspa fork and not a node: GitHub fork false, one commit 4cf8f35b (25 Sep 13:58Z), tag and release v1.0.0 (14:10Z) https://github.com/RunOnFlux/kaspa-core/releases/tag/v1.0.0 , npm @runonflux/kaspa-core 1.0.0. Dev-only oracle links rusty-kaspa crates at 01b532e8 (v2.1.0). No open issues or pulls on 27 Sep. No Dockerfile. wRPC client takes networkId testnet-10 (kaspatest:) and fixed URLs, so it can point at a TN10 kaspad with --utxoindex --rpclisten-json (testnet JSON port 18210); live tests are mainnet only. Mainnet-proof claims are the author's (AUDIT.md). Not desk-tested. Catalog."
         },
         {
+          "name": "KASRANKS",
+          "url": "https://github.com/KASRANKS",
+          "chip": "catalog",
+          "note": "GitHub user KASRANKS, created 23 Mar 2026, four public repos. Browser apps on kaspa.Resolver plus api.kaspa.org. KASSWORD 8af2e17 (28 Aug): six-branch P2SH locker, selectors 0x01 Schnorr, 0x02 HLMT, 0x03 HTLC, 0x04 DMS, 0x06 PQ-cold, 0x05 recovery. Keyless branches pin one input, one output, BLAKE2b of OpTxOutputSpk (version u16 big-endian plus script), and output amount >= input minus 0.05 KAS. DMS and recovery use absolute DAA via OpCheckLockTimeVerify, threshold 500000000000. Kasgenesiszero 41e930fb (29 Apr): media in payloads, 10000-byte chunks, KIP-10 listing script enforces the payment only. Ownership is a client replay of genesis0-* payloads. KasProof 31dbd5bd (3 Apr): SHA-256(file) is the private key of the proof address. History on REST survives the dust reclaim. The UTXO check does not. kasranks 2fff0ec reads krc721-indexer.kaspa.com for ticker KASRANKS. Desk check: mainnet tx e154964b049cdc8660e3b58a4cd5c9fcfdbc2316bfbdcf6688e6a82f9be213c6 is a genesis0-col payload, block_time 22 Apr 2026 13:57:12Z. Author mainnet-harness comments were not re-run. Patterns: KASRANKS.md. External. Catalog."
+        },
+        {
           "name": "Do not weld",
           "url": "https://github.com/STP-KAS/kaspa-master-file",
           "chip": "wrong",
-          "note": "Do not weld: Argent tag, KCC-20 Final, KCC-3/4/5 adopted, DAGKnight shipped, vProgs product, tictactoe equals vProgs live, x402 mainnet, quorum equals a standard, kccs README Draft line equals KCC-0 still Last Call, kaspaexplained's stale #25 sentence, an intern roundup, a Kas-Smiths thread, or AgenC into one shipping stack. Do not weld vprogs-tt.izio.fr into vProgs live, release-candidate into a release, or Sutton's becoming-real line into a merge of the vprogs drafts. Do not weld release-candidate bcebf599 into a release, SilverScript Studio into a Kaspa core tool, or the Python SDK SilverScript module into a stable API. Do not weld REST app v2.3.0 or v2.4.1 into a node release, kaspad serverVersion 2.0.1 into the rusty-kaspa v2.1.0 tag, an api-tn10 /info/health HTTP 200 into a synced indexer, or RunOnFlux/kaspa-core into a rusty-kaspa fork or a node."
+          "note": "Do not weld: Argent tag, KCC-20 Final, KCC-3/4/5 adopted, DAGKnight shipped, vProgs product, tictactoe equals vProgs live, x402 mainnet, quorum equals a standard, kccs README Draft line equals KCC-0 still Last Call, kaspaexplained's stale #25 sentence, an intern roundup, a Kas-Smiths thread, or AgenC into one shipping stack. Do not weld vprogs-tt.izio.fr into vProgs live, release-candidate into a release, or Sutton's becoming-real line into a merge of the vprogs drafts. Do not weld release-candidate bcebf599 into a release, SilverScript Studio into a Kaspa core tool, or the Python SDK SilverScript module into a stable API. Do not weld REST app v2.3.0 or v2.4.1 into a node release, kaspad serverVersion 2.0.1 into the rusty-kaspa v2.1.0 tag, an api-tn10 /info/health HTTP 200 into a synced indexer, or RunOnFlux/kaspa-core into a rusty-kaspa fork or a node. Do not weld KASRANKS Genesis Zero ownership into a native NFT, a Kassword mainnet-harness comment into a desk test, kasranks.com into the genesis0 protocol, or KPP-1 into a KIP."
         },
         {
           "name": "AgenC",
@@ -1321,6 +1327,12 @@
           "url": "https://github.com/RunOnFlux/kaspa-core",
           "chip": "other",
           "note": "RunOnFlux. Pure-TypeScript tx library for SSP and ZelCore, MIT, v1.0.0 4cf8f35b. Not a rusty-kaspa fork. Not a node."
+        },
+        {
+          "name": "KASRANKS",
+          "url": "https://github.com/KASRANKS",
+          "chip": "other",
+          "note": "Four public browser apps. Code read 28 Sep 2026 in KASRANKS.md. Not kaspanet. Not a product. Genesis Zero ownership is a payload replay. kasranks.com is a KRC-721 indexer gallery."
         }
       ]
     },

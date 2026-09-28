@@ -1,12 +1,12 @@
 {
   "title": "Kaspa master file",
   "repo": "https://github.com/STP-KAS/kaspa-master-file",
-  "updated": "2026-09-27",
+  "updated": "2026-09-28",
   "disclaimer": "Not Kaspa core. Not official KNS. @StppStp. Merged Active KIP is law. Open PR is not. Current pins: section now (Grok 4.7, 22 Sep 2026 evening).",
   "sections": [
     {
       "id": "now",
-      "title": "Now — read this first (22 Sep 2026 evening, Grok 4.7)",
+      "title": "Now \u2014 read this first (22 Sep 2026 evening, Grok 4.7)",
       "rows": [
         {
           "name": "How to read this file",
@@ -36,19 +36,19 @@
           "name": "Covenant-id lookup and tooling",
           "url": "https://x.com/IzioDev/status/2100202631650062411",
           "chip": "hold",
-          "note": "IzioDev https://x.com/IzioDev/status/2100202631650062411 (16 Sep): UTXOs by covenant id \"will be a future RPC endpoint\". Until then, filter the UTXO set locally or use a third-party indexer. No rusty-kaspa pull for it on 26 Sep. #969 https://github.com/kaspanet/rusty-kaspa/pull/969 (utxo index covenant) closed unmerged 27 Apr. #991 https://github.com/kaspanet/rusty-kaspa/pull/991 still open. https://kips.dev and https://kccs.dev are IzioDev mirrors synced every 24h (https://x.com/IzioDev/status/2093118560822297060); both returned HTTP 200 on 26 Sep. Mirrors, not the source: kaspanet/kips and kaspanet/kccs are. ChainAgnostic/namespaces#193 https://github.com/ChainAgnostic/namespaces/pull/193 (Kaspa CAIP-2 and CAIP-10 profiles) is open (https://x.com/elldeeone/status/2099316438704312512, 14 Sep). elldeeone branch https://github.com/elldeeone/rusty-kaspa/tree/rk-with-tcp (09fc0ba5, 25 Aug) tests inbound links between private nodes (https://x.com/elldeeone/status/2085199203903721856). Fork branch, no upstream pull."
+          "note": "IzioDev https://x.com/IzioDev/status/2100202631650062411 (16 Sep): UTXOs by covenant id \"will be a future RPC endpoint\". Until then, filter the UTXO set locally or use a third-party indexer. No rusty-kaspa pull for it on 26 Sep. #969 https://github.com/kaspanet/rusty-kaspa/pull/969 (utxo index covenant) closed unmerged 27 Apr. #991 https://github.com/kaspanet/rusty-kaspa/pull/991 still open. https://kips.dev and https://kccs.dev are IzioDev mirrors synced every 24h (https://x.com/IzioDev/status/2093118560822297060); both returned HTTP 200 on 26 Sep. Mirrors, not the source: kaspanet/kips and kaspanet/kccs are. ChainAgnostic/namespaces#193 https://github.com/ChainAgnostic/namespaces/pull/193 (Kaspa CAIP-2 and CAIP-10 profiles) is open (https://x.com/elldeeone/status/2099316438704312512, 14 Sep). elldeeone branch https://github.com/elldeeone/rusty-kaspa/tree/rk-with-tcp (09fc0ba5, 25 Aug) tests inbound links between private nodes (https://x.com/elldeeone/status/2085199203903721856). Fork branch, no upstream pull. 27 Sep: Knitser/kascov kascov-decode open-sourced (ad251ddf 24 Sep; CLI+WASM 1805a780 25 Sep). Off-chain: verifies revealed covenant program against L1 commitment and names known SilverScript/Argent builds. Not consensus. https://github.com/Knitser/kascov \u00b7 https://x.com/KaspaScopio/status/2104124941775823222"
         },
         {
           "name": "KIPs",
           "url": "https://github.com/kaspanet/kips/commit/e4ae2332117b5cb68bd6188e065ef885b6d17939",
           "chip": "law",
-          "note": "kaspanet/kips master e4ae233 (15 Jul 2026, #45). Read 23 Sep from that commit. Header Status: 1 Implemented. 2 Proposed. 3 Rejected. 6 Draft, Type Informational. Active: 4, 5, 9, 10, 13, 14, 15, 16, 17, 20, 21. No kip-0007, kip-0008, kip-0011, kip-0012, kip-0018, kip-0019, kip-0022, kip-0023, kip-0024, or kip-0025 on that commit. Open pulls: #10 KIP-7 Draft Ori Newman 0f61e48f. #13 KIP-8 Draft Ori Newman c6215e6f. #17 KIP-11 In-progress KaffinPX 36e92365. #21 KIP-12 DRAFT / WIP 7a03504f. Its 28 Nov 2025 comment points at open aspectron/kips#2 head 04d0d614. That fork pull adds personalSign and basic transaction methods, and says formal input and output types are still missing. Not merged. Not KCC-12. #44 KIP-12 DRAFT 4fc711ac, authors on that file include aspect, saefstroem, IzioDev, ShawnPearce. #33 KIP-18 Draft, opcode 0xd0 (tentative, to be confirmed), 9f85c688. #34 KIP-19 Draft, header author D-Stakes, dd12e6b6. #37 adds KIP22-P2MR-qr cdafc967, 14 lines, no Status header. #40 KIP-23 Proposed, Dmitry Perchanov, bdd3abd5. #41 KIP-24 header Status Implemented, Maxim Biryukov, 028117f8. Master has no kip-0024.md. #42 KIP-25 Draft, authors Ori Newman, Michael Sutton, Romain Billot, 2a379a84. #39 KIP TBD, Draft, Type Informational, ec5db967. The 17 Aug revision withdraws an earlier single-signature path. On rusty-kaspa v2.1.0 01b532e8, build_derivate_path in wallet/keys/src/derivation/gen1/hd.rs uses purpose 45 for multisig, coin type 111111, and requires a cosigner index, then appends the address type. Not on master. Also open and not on this commit: #43 wording edits, #20 a Draft KIP-6 edit, #28 and #16 README edits. KIP-21 §2.1: lane_id is tx.subnetwork_id, a 20-byte value. Valid forms: native 0x00 followed by 19 zero bytes, coinbase 0x01 followed by 19 zero bytes, user lane of 4 namespace bytes followed by 16 zero bytes with at least one nonzero byte in namespace[1..=3]. Any other shape is invalid. §2.2: at most 50 distinct non-coinbase lanes in a block; sum of tx.gas in each such lane at most 1_000_000_000; native and reserved system lanes use tx.gas = 0. §6.7: SeqCommit(B) = H_seq(SeqCommit(parent(B)), SeqStateRoot(B)), parent(B) is the selected parent. Post-activation accepted_id_merkle_root is SeqCommit(B). The text calls that chain a KIP-15 style recurrence and cites KIP-15. kip-0021.md and the three files under kip-0021/ do not contain 474165565. The activation score stays on the Live row."
+          "note": "kaspanet/kips master e4ae233 (15 Jul 2026, #45). Read 23 Sep from that commit. Header Status: 1 Implemented. 2 Proposed. 3 Rejected. 6 Draft, Type Informational. Active: 4, 5, 9, 10, 13, 14, 15, 16, 17, 20, 21. No kip-0007, kip-0008, kip-0011, kip-0012, kip-0018, kip-0019, kip-0022, kip-0023, kip-0024, or kip-0025 on that commit. Open pulls: #10 KIP-7 Draft Ori Newman 0f61e48f. #13 KIP-8 Draft Ori Newman c6215e6f. #17 KIP-11 In-progress KaffinPX 36e92365. #21 KIP-12 DRAFT / WIP 7a03504f. Its 28 Nov 2025 comment points at open aspectron/kips#2 head 04d0d614. That fork pull adds personalSign and basic transaction methods, and says formal input and output types are still missing. Not merged. Not KCC-12. #44 KIP-12 DRAFT 4fc711ac, authors on that file include aspect, saefstroem, IzioDev, ShawnPearce. #33 KIP-18 Draft, opcode 0xd0 (tentative, to be confirmed), 9f85c688. #34 KIP-19 Draft, header author D-Stakes, dd12e6b6. #37 adds KIP22-P2MR-qr cdafc967, 14 lines, no Status header. #40 KIP-23 Proposed, Dmitry Perchanov, bdd3abd5. #41 KIP-24 header Status Implemented, Maxim Biryukov, 028117f8. Master has no kip-0024.md. #42 KIP-25 Draft, authors Ori Newman, Michael Sutton, Romain Billot, 2a379a84. #39 KIP TBD, Draft, Type Informational, ec5db967. The 17 Aug revision withdraws an earlier single-signature path. On rusty-kaspa v2.1.0 01b532e8, build_derivate_path in wallet/keys/src/derivation/gen1/hd.rs uses purpose 45 for multisig, coin type 111111, and requires a cosigner index, then appends the address type. Not on master. Also open and not on this commit: #43 wording edits, #20 a Draft KIP-6 edit, #28 and #16 README edits. KIP-21 \u00a72.1: lane_id is tx.subnetwork_id, a 20-byte value. Valid forms: native 0x00 followed by 19 zero bytes, coinbase 0x01 followed by 19 zero bytes, user lane of 4 namespace bytes followed by 16 zero bytes with at least one nonzero byte in namespace[1..=3]. Any other shape is invalid. \u00a72.2: at most 50 distinct non-coinbase lanes in a block; sum of tx.gas in each such lane at most 1_000_000_000; native and reserved system lanes use tx.gas = 0. \u00a76.7: SeqCommit(B) = H_seq(SeqCommit(parent(B)), SeqStateRoot(B)), parent(B) is the selected parent. Post-activation accepted_id_merkle_root is SeqCommit(B). The text calls that chain a KIP-15 style recurrence and cites KIP-15. kip-0021.md and the three files under kip-0021/ do not contain 474165565. The activation score stays on the Live row."
         },
         {
           "name": "Not live",
           "url": "https://github.com/kaspanet/kips/blob/master/kip-0002.md",
           "chip": "hold",
-          "note": "DAGKnight is KIP-2 Proposed. rusty #1104 open head a5888da (updated 24 Sep 11:03Z). Open on base dagknight also include #1127 3c267993, #1124 948bf380, #1122 332ec6c, #1121 06efd83, #1119, #1103. dagknight tip still ad45e24 (8 Sep). 26 Sep 18:02Z: #1132 and #1131 closed unmerged (both STP-KAS). Both were the desk's own pulls (opened by STP-KAS 14 Sep), closed by STP-KAS itself; head force-pushed one second later to dc2b59f3 (rewritten, noreply author) in the window of the 26 Sep privacy rewrite (old pin 703e1639). #1132 was the parent-shuffle property test the desk had asked for before #1104; it drew no review or comment from anyone else. No replacement shuffle test: #1104 head a5888dab and dagknight tip ad45e24 carry only test_parent_ordering_stability (https://github.com/kaspanet/rusty-kaspa/blob/a5888dab4554db1b835454599e51f6fc0e1e76c3/consensus/src/processes/dagknight/protocol.rs#L842). #1135 PSKB sighash opt-in still open ed09a8a on master (not a DAGKnight pull). No 100 BPS network. No vProgs product. No Argent tag. No KCC-20 Final. No mainnet x402. 25 Sep 16:39Z: #991 (D-Stacks) head 1f15c618 still open and blocked (IzioDev CHANGES_REQUESTED 25 Aug). UTXO index keyed by DAA score, new get_utxos_by_addresses_v2. Legacy utxoindex DB: kaspad asks y/n (or --yes), deletes and rebuilds. Not merged. https://github.com/kaspanet/rusty-kaspa/pull/991 · https://github.com/kaspanet/rusty-kaspa/pull/1132 · https://github.com/kaspanet/rusty-kaspa/pull/1104"
+          "note": "DAGKnight is KIP-2 Proposed. rusty #1104 open head a5888da (updated 24 Sep 11:03Z). Open on base dagknight also include #1127 3c267993, #1124 948bf380, #1122 332ec6c, #1121 06efd83, #1119, #1103. dagknight tip still ad45e24 (8 Sep). 26 Sep 18:02Z: #1132 and #1131 closed unmerged (both STP-KAS). Both were the desk's own pulls (opened by STP-KAS 14 Sep), closed by STP-KAS itself; head force-pushed one second later to dc2b59f3 (rewritten, noreply author) in the window of the 26 Sep privacy rewrite (old pin 703e1639). #1132 was the parent-shuffle property test the desk had asked for before #1104; it drew no review or comment from anyone else. No replacement shuffle test: #1104 head a5888dab and dagknight tip ad45e24 carry only test_parent_ordering_stability (https://github.com/kaspanet/rusty-kaspa/blob/a5888dab4554db1b835454599e51f6fc0e1e76c3/consensus/src/processes/dagknight/protocol.rs#L842). #1135 PSKB sighash opt-in still open ed09a8a on master (not a DAGKnight pull). No 100 BPS network. No vProgs product. No Argent tag. No KCC-20 Final. No mainnet x402. 25 Sep 16:39Z: #991 (D-Stacks) head 1f15c618 still open and blocked (IzioDev CHANGES_REQUESTED 25 Aug). UTXO index keyed by DAA score, new get_utxos_by_addresses_v2. Legacy utxoindex DB: kaspad asks y/n (or --yes), deletes and rebuilds. Not merged. https://github.com/kaspanet/rusty-kaspa/pull/991 \u00b7 https://github.com/kaspanet/rusty-kaspa/pull/1132 \u00b7 https://github.com/kaspanet/rusty-kaspa/pull/1104"
         },
         {
           "name": "TN13 / DAGKnight plan",
@@ -66,13 +66,13 @@
           "name": "KCC still open",
           "url": "https://github.com/kaspanet/kccs/pulls",
           "chip": "Draft",
-          "note": "On main: kcc-0000 Final, kcc-0001, kcc-0002, kcc-0020 (Draft). Open: #31 KCC-20 Last Call proposal c9e2f881 (was fb50affe, author saefstroem) (22 Sep 11:07Z, missing Last-Call-Deadline, Created rewritten, README index still Draft, desk comment 5775404197. 23 Sep 10:48Z Manyfestation 5793473860. Desk 5795894329. Head was fb50affe. 24 Sep 14:13Z head c9e2f881. Two commits add Ori Newman to the author line. The pull README index cell for KCC-20 now says Last Call. kcc-0020.md still says Status Last Call and still has no Last-Call-Deadline. Not merged. Not Last Call on main). 22 Sep 14:29 Manyfestation: do not rephrase the borrow restriction in that paragraph, remove it or point at the valid-borrow section; also asked about an Asset category, which KCC-0 does not list; #24 KCC-0012 head 7159d48 (22 Sep 09:44Z Izio said KIP-12 is superseded by KCC-12; file still Status Draft and Backwards Compatibility says no previous standard exists; no kip-0012 in kaspanet/kips; not a status change; desk comment 5774902587; danieliyahu1 5778566104, 5778566436, 5778566785; desk comment 5778821919: accept-vector sequence 18446744073709551615 is not an exact JSON number; danieliyahu1 agreed in 5781915838; no second note); #20 vectors 81f111f0; #23 p2pk-ecdsa closed unmerged 25 Sep 13:45Z, head still 19d174d5; #30 unkeyed hash 1c3ffd18 (21 Sep 13:11Z); #27 head 3758db5c (25 Sep 07:56Z), was fa845057, still unmerged. kcc-0001.md section 3.7.1 now allows string and dynamic arrays in state. The section 6.4 string Kaspa state cell is 4b61737061. Not on main. #26 KCC-23 head 75291094 (24 Sep 17:22Z). Prior head 0e69b22. Still open, Status Draft, not on main, title still MJ: Metadata JSON; five commits since 479fa206 add conformance vectors, a 0x00 codec byte before one UTF-8 JSON object, a clarified abstract, and Comments-URI https://kas-smiths.org/t/kcc-23-convention-for-binding-covenant-metadata-to-a-covenant-id/150; preparation transaction is version 1; the file's binding fixture preparation id is 206a0c31dbe45384b86de451a177fd7c8e986d278f2a86724d941937443113ef and the covenant id is c86366cec738e9a1578b2d871ee493dcaabfd79156810f13f3b62429859e394e; 22 Sep 14:43Z Manyfestation called the MJ/23 title an easter egg and the title is still there; not adopted); #6 KCC-0021 165ff91d (21 Sep 12:07Z); #4 KCC-0402 39a42644. Issue #14 still open: #16 merged 27 Aug e7d2925d made identical extension_commitment the fungibility rule; the issue body still quotes the old lines; #15 closed unmerged on 23 Aug, head 29c94872. It said it closed this issue. Desk comment 5789867789. The balance sentence is in closed-unmerged #6 at 165ff91d, not on main. #6 closed unmerged 25 Sep 08:22Z. Issue #28: four KCC20 objects, not one ABI, rechecked 23 Sep. Desk note 5767349911. No second note. None adopted. 23 Sep Izio 2102781359374647334 sketched login as a provider scan, one active address, then a challenge signature. Follow-up 2102792671827820715 asks why several accounts can be selected and which one a one-account app uses. Recon 2102789438560420066 frames privacy as a full dump versus selective disclosure. Recon 2102794722162987364 proposes a primary account: one default address unless the app requests multi-account discovery. Read kcc-0012.md at 7159d48. Head unchanged. Still Draft. Section 3 discovers providers, not addresses. Section 5.1: before authorization kaspa_accounts is empty and must not prompt. No full-dump method. Section 6.1: the result is the authorized addresses, active first. The wallet must prompt to authorize and may let the user choose which to expose. An already authorized, unlocked wallet must not prompt. Section 1: the active account is the first element. An app that needs one address should use it. The other authorized addresses may be used without a selection change. kaspa_signMessage is optional and takes the address, so the challenge is not enforced. restrictReturnedAccounts records the set. It is not a one-versus-many request. Primary is not a defined term. The file does not require the consent UI to label which authorized account is active. No GitHub comment. Desk reply https://x.com/StppStp/status/2102799398577004793 under Recon 2102794722162987364. Do not repeat it. 23 Sep Seb287 review 5291007748 (18:15Z), inline on 7159d48. His notes, not a status change. 4083094570: a covenant input that needs a signature from a wallet key sits outside section 7.7. He cites a TN12 bingo claim, and the same shape in KCC-20, where the owner signature sits inside the witness. He writes that kaspa_signTransaction then returns 4100 and kaspa_signPskb adds no partialSigs. 4083144495: a low-confidence pass on eCDSA versus ecdsa, DER versus compact r||s, KIP-5 versus a version-1 address, disconnect close codes, and a v1 sighash that does not commit computeBudget. 4083402656 on examples.md: a page script can answer its own request id. 4083523080: spendability follows the key, not the account list. 4083538967: code -32003 carries the node text and no data.reason. 4083629912: a failed kaspa_sendTransaction does not say whether it was submitted. 4085043419: showing that a payload exists does not show who a bridge deposit pays. 4085216339: restrictReturnedAccounts is not a spend limit. 4085553813: section 5.3 requires a prompt on every request, so a standing policy would not conform. 4085754247: the file does not say where change goes. 4085342182 agrees that JSON number 9007199254740993 parses as 9007199254740992. Desk reply 4086562445 is already on that note. The same review has two earlier notes. 4082456458: a fee defined as inputs minus outputs hides the signing account's own net change on a shared transaction. 4082621074: from names one address, so kaspa_sendTransaction cannot consolidate an HD account and cannot pick UTXOs. He points both flows at kaspa_signTransaction. Izio 3996118709 points at ShawnPearce kip-0012/interfaces.ts at 4fc711ac, the open KIP-12 draft. That file types each method and encodes amounts as decimal strings. unknown remains on the event listener and on error details. The linked bingo claim_bingo calls checkSig on the player key. draw_number has no signature. Head 7159d48 renamed Client to Remote, says rdns asserts no domain ownership, and explains networkId rather than chainId. Uint64Number remains. The timeline link STP-KAS/kcc-importance#1 names this pull only as Draft and does not ask for thoughts on it. Head still 7159d48. No second note. 25 Sep, no public comment. #23 closed unmerged. Izio 5829005470 pointed at open #30. The p2pk-ecdsa schemes are not on main. #6 closed unmerged. Izio 5829275295 called it superseded by #26. Knitser 5832827738 agreed. Name, ticker, decimals, image, and image hash are not in KCC-23. He said he would open that as its own KCC. No later pull is on kaspanet/kccs. On #26, cfd1b79f adds kcc-0023/implementation (Izio's reference, src/lib.rs 224 lines), 7aa72126 merges that branch, and 75291094 only clarifies the payload encoding in kcc-0023.md. Knitser 5832803349 says a separate script built from the KIPs matches the vectors, and that the 0x00 prefix keeps an existing JSON genesis payload from being read as this metadata. Three notes, not a status change. JSON libraries disagree on a lone surrogate, 1e400, nesting of 128, and duplicate keys. Another output of the preparation transaction also verifies, and one outpoint can bind two covenants. The version-1 transaction id he names is open kips#41, not on kips master. #31 head still c9e2f881. ShawnPearce 5833800111 points at open saefstroem/kccs#1 head 3e485b91, nine reject vectors on branch kcc20-kcc0-compliance. That is not a commit on kaspanet #31. Still no Last-Call-Deadline. Not Last Call on main. #20 head still 81f111f0. ShawnPearce 5833324709 names the nine: negative amount, unsupported owner_scheme, invalid witness path byte, extension_commitment not preserved, conservation, over max_token_inputs, successor changes owner, successor reduces the KAS value, and a revealed link that does not hash to the leader borrow_guard. #4 head still 39a42644. Izio 5829263705 asks for the title Unidirectional Covenant Payment Channels, asks to drop the x402 wording, and asks what a KIP-9 undersized voucher does and what a payee can rely on. Not adopted."
+          "note": "On main: kcc-0000 Final; kcc-0001, kcc-0002, kcc-0020 Draft. 27 Sep 15:14Z: #30 merged 90beacd0 (IzioDev) \u2014 KCC-2 unkeyed BLAKE3 for P2PKH, custom scheme range 0x80-0xff, test vectors; header still Status Draft. https://github.com/kaspanet/kccs/pull/30 \u00b7 https://github.com/kaspanet/kccs/commit/90beacd0dd34. 27 Sep 19:42Z: #20 closed unmerged head 81f111f0. #31 open head 8f95ca9f (27 Sep 15:44Z; merged upstream/main including #30 plus Shawn reject vectors from saefstroem/kccs#1); still proposes KCC-20 Status Last Call with no Last-Call-Deadline \u2014 not Last Call on main. Still open: #27 3758db5c, #26 75291094, #24 7159d48, #4 39a42644, #29 55742861. Prior diary 22-26 Sep retained in SNAPSHOT-HISTORY moved-from-readme. https://github.com/kaspanet/kccs/pulls"
         },
         {
           "name": "KCC20 reference",
           "url": "https://github.com/argent-lang/kcc20-reference/pull/1",
           "chip": "Draft",
-          "note": "Open argent-lang/kcc20-reference#1, head 707acca8 (18 Sep 2026, Use unkeyed BLAKE3 for P2PKH owner hashes), from Manyfestation/kcc20-reference branch finalize-kcc20-reference. Not merged. argent-lang master is still 76648f99 (10 Sep, initial, wip stub). contracts/kcc20.ag state order matches Draft kcc-0020.md. p2pkh_hash is blake3(public_key), no domain key. Bounds 3 in and 3 out. tests.rs contains 79c71c23 and fd3ef14a, not the swapped tag c3d9f92f. Cargo pins argent 94f249a and rusty-kaspa a41a333. kcc20-live tip 50374a64 (9 Sep) still swaps borrow_guard before borrow_scheme and still uses keyed PublicKeyHash. On 707acca8, transfer requires each successor amount >= 0 and does not require that of the leader amount or a delegate amount. The branch README says all token amounts are non-negative. Not Final. KCC-20 on main stays Draft. The two keyed vector fields in kccs#31 match KCC-2 e6b1b536. Manyfestation 5793473860 gave unkeyed digests 7caa514a and ed887ad1. Desk recomputed both in 5795894329. Those digests belong in the KCC-20 file when #30 is the KCC-2 that document requires."
+          "note": "Open argent-lang/kcc20-reference#1, head 60064687 (27 Sep 19:41Z). 27 Sep commits: 697812fc public mint app; a85b0ed9 accept complete recipient state; 60064687 caller-selected mint amounts. Not merged. argent-lang master still 76648f99. Unkeyed blake3(public_key) aligns with merged kccs #30. kcc20-live tip 50374a64 still swapped layout + keyed PublicKeyHash. Not Final. KCC-20 Draft on main. https://github.com/argent-lang/kcc20-reference/pull/1"
         },
         {
           "name": "KRC-20 to KCC migration",
@@ -96,19 +96,19 @@
           "name": "vprogs stack 21 Sep morning",
           "url": "https://github.com/kaspanet/vprogs",
           "chip": "research",
-          "note": "Master still f9b84a8 (28 Jul). No release, no product testnet. 22 Sep ~08:32Z: #148 closed unmerged 07:30Z (closed head 78501881; old draft head was da2a7f26). Resume is #154 head f84525b5, 25 commits, base #153. #153 one commit 3496a8c5, base #147. 22 Sep 10:53Z Maxim marked #153 and #154 draft. Same heads. #152 still draft. Head f61b46f4 (22 Sep 12:58Z): merge of settle-resume into reorg-safety. Contains gap retry 0309fd37 and #154 f84525b5. #156 and tictactoe cc52b322 do not. 74e24551...59b30920 diverged. At 09:14Z tictactoe 4f27dd1a locked reorg-safety#59b30920, matching #152 HEAD. 22 Sep 12:58Z #156 draft head 30c5d021, base #152 f61b46f4. Merge of reorg-safety into guest-hardening. Contains ELF refresh 291d4f29 and the gap retry. Demo tip cc52b322 still pins 291d4f29. Stack #147 74ee1b7d -> #153 -> #154 -> #152 -> #156. Unchanged: #149 51b56aab, #131 004a5948, #134 add37bed, #136 d2da8ad0, #140 28f0aee9. #157 draft cd35f913. #158 draft 77d81eb0 (23 Sep 08:12Z) on #157. Third commit persists frozen canonical bits and replays them on restore. Prior head 62882ad9. rusty-kaspa v2.1.0 01b532e8 still emits PruningPointUtxoSetOverride only from IBD sync_new_utxo_set. Desk comment 5780327987. Merging #157 without #158 activates #112. #114 is still open. Draft #160 63549226 says Fixes #114. #107 is still open: data_mut ignores Read on guest-hardening. Tictactoe ResourceExt papers over it; config write_new_state does not. Desk comment 5788133052. 23 Sep: master still f9b84a8. #158 head dc0f5e84 (23 Sep 08:42Z) writes the frozen-bit rows in the same commit as the pruning deletions. Still draft, still Fixes #112, base pp-finalization-window. #157 still draft cd35f913. #161 draft 7dec23b9 says Fixes #159. #163 draft ea7b823 says Fixes #107. #164 draft head 3a61c0b (24 Sep 12:06Z), six commits, base the #163 branch. The tip commit drops an inert journal-entry fallback and, when a boundary ends two entries, keeps the higher one. The pull says the settler skips a state-neutral duplicate instead of panicking, and the aggregate-prover compacts a reorg boundary that maps to no batch metadata. Not merged. None of those drafts are on master. Master is still f9b84a8. 24 Sep 14:06Z branch release-candidate was created at 3a61c0b, the same commit as draft #164. It is a branch, not a GitHub release tag. 25 Sep 14:52Z. Master still f9b84a8. release-candidate and fix/reorg-boundary-duplicate-bundles are both still 3a61c0ba608b, draft #164. fix/g2-access-read-enforcement is still ea7b823, draft #163. No vprogs issue comment since 24 Sep 14:30Z. The README on release-candidate still says early prototype. Max 2103466359246270526 (12:47Z) calls a hosted demo the first vprog, with real execution and real settlement, up since 24 Sep. He says the pull stack still needs review and merge. An mdBook and a workshop are not written. The framework link in that post is release-candidate. Sutton 2103474680883486840 (13:20Z) quotes it and points at his 3 Apr outlook 2039889174010982613, https://medium.com/@michaelsuttonil/kaspa-covenants-toccata-hard-fork-outlook-a4d81a40900c. That essay's second pillar is based zk apps. It says synchronous vprogs were not the Toccata deliverable. Toccata has since activated. This demo does not merge the drafts. Izio 2103475806886670730 (13:24Z) invites load on the same page. Bit Cat 2103476394479038729 asked where a second app gets an executor and a prover. No author answer on that thread. 25 Sep, the issues. Neither repo has a GitHub Discussion. Twenty-two vprogs issues are open. The ones this branch names stay open until a merge. On 3a61c0ba608b: #164 is Maxim's tn10 incident at 23 Sep 20:31Z, CUDA ttd at ea7b823. A reorg left the settlement boundary with no BatchMetadata row, the journal never compacted, and a duplicate with the same prev_state and a stale prev_lane_tip passed the old state-only guard and panicked the settler. reconcile in zk/backend/risc0/settler/src/worker.rs chains on (state, lane_tip), adopts a watch position that differs in either pin, and the loop skips an artifact that still does not chain. The pull says a reorg can still re-fold settled prefixes; those bundles are skipped. #163 is #107. zk/abi/src/transaction_processor/abi.rs turns a dirty Read resource into ErrorCode::ReadDeclaredWrite after the handler returns ok, journals Error, and the host rolls back. #161 caps restore at the persisted committed tip (#159). #160 makes a restored read-only batch walk the in-memory predecessor (#114). supports_restore in zk/vm/src/vm.rs is still true only for ProvingPipeline::None, so the CUDA prover does not take that path. #158 seeds canonical bits below the restore base and writes the frozen bits in the pruning commit (#112, #110). #157 finalizes from the pruning point in the headers (#113). finalize_confirmed_pp is in the same worker.rs. #156 journals a malformed carrier as Error instead of panicking the guest. Still open on this commit, with no pull naming them. #126: handle_reorg still sets new_tip to the fork child's parent_id and calls rollback with no live-floor check. An unknown child returns ReorgBelowRoot. Finalization in this file can move base above 1, which is the condition that issue says wakes the bug. No repro. #123: one malformed reply from a resolver-chosen peer is fatal and the bridge stops. #111: receipt-cache keys omit the pins inside the statement. The issue says the covenant pins keep that a denial of service. #103: signed_carrier_transaction in l1/wallet/src/build/carrier.rs still asserts when the funding output cannot cover the extra outputs plus min_fee. #125: a caller-supplied zero-value output still reaches the storage-mass division. #104, #94, #87, #74, #67, #66, #65, #81, #39, and #15 are still the bootstrap signer, proving resume, id retention, latest-pointer cleanup, reorg orchestrator, persistent receipts, inactivity proofs, dev-dependency cycles, borsh versioning, and the pruning split. #152 still leaves an in-flight GPU proof running across a rollback. This desk compiled vprogs-zk-backend-risc0-settler at 3a61c0ba608b and it did not build. risc0-zkvm 3.0.5 imports std::os::unix. The circuit kernels want C++20 designated initializers and the build script passes /std:c++17. The only WSL distro is docker-desktop. The green cargo nextest lines in the pulls are the author's. Research only. 26 Sep: draft #165 opened 11:22Z by biryukovmaxim, head bcebf599, 5 commits, base fix/reorg-boundary-duplicate-bundles (the #164 branch). Three fixes from the tn10 settlement wedge: price funded builds at the fee-estimate priority bucket, adopt the spending tip and resolve superseded bundles instead of re-feeding them (~3 Hz loop for hours), and serve the settlement tip on every observed settlement (it froze for hours). Issue #166 (14:34Z): single-UTXO builders re-spend outputs their own unconfirmed transactions still hold; seen in the 25-26 Sep tn10 stress runs. Branch release-candidate is now bcebf599 (14:32Z), the #165 head, not a release. Master still f9b84a8. vertex (@KaspaScopio) summary: https://x.com/KaspaScopio/status/2103815513633685781 (26 Sep 11:54Z). Not merged. 26 Sep 14:34Z Maxim on #165: fee cap or multiplier not addressed, priority bucket paid as is; #103 covers the carrier panic, #166 in-flight outpoint reuse; wallet UTXO fetch needs --utxoindex. On bcebf599 the carrier assert! remains and build_signed_carrier takes the first spendable UTXO. https://github.com/kaspanet/vprogs/pull/165#issuecomment-5847102090 26 Sep 17:01–18:12Z Sutton on the Max demo thread: not full yellow-paper syncompo (more L1 still required); ~30% of yellowpaper already in L1 as KIP-21 (proving proportional to app activity); Max's work is within Hans's framework. https://x.com/michaelsuttonil/status/2103892665435578727 · https://x.com/michaelsuttonil/status/2103907653390876704 · https://x.com/michaelsuttonil/status/2103910575096950964. Not a merge."
+          "note": "Master still f9b84a8 (28 Jul). No release, no product testnet. 22 Sep ~08:32Z: #148 closed unmerged 07:30Z (closed head 78501881; old draft head was da2a7f26). Resume is #154 head f84525b5, 25 commits, base #153. #153 one commit 3496a8c5, base #147. 22 Sep 10:53Z Maxim marked #153 and #154 draft. Same heads. #152 still draft. Head f61b46f4 (22 Sep 12:58Z): merge of settle-resume into reorg-safety. Contains gap retry 0309fd37 and #154 f84525b5. #156 and tictactoe cc52b322 do not. 74e24551...59b30920 diverged. At 09:14Z tictactoe 4f27dd1a locked reorg-safety#59b30920, matching #152 HEAD. 22 Sep 12:58Z #156 draft head 30c5d021, base #152 f61b46f4. Merge of reorg-safety into guest-hardening. Contains ELF refresh 291d4f29 and the gap retry. Demo tip cc52b322 still pins 291d4f29. Stack #147 74ee1b7d -> #153 -> #154 -> #152 -> #156. Unchanged: #149 51b56aab, #131 004a5948, #134 add37bed, #136 d2da8ad0, #140 28f0aee9. #157 draft cd35f913. #158 draft 77d81eb0 (23 Sep 08:12Z) on #157. Third commit persists frozen canonical bits and replays them on restore. Prior head 62882ad9. rusty-kaspa v2.1.0 01b532e8 still emits PruningPointUtxoSetOverride only from IBD sync_new_utxo_set. Desk comment 5780327987. Merging #157 without #158 activates #112. #114 is still open. Draft #160 63549226 says Fixes #114. #107 is still open: data_mut ignores Read on guest-hardening. Tictactoe ResourceExt papers over it; config write_new_state does not. Desk comment 5788133052. 23 Sep: master still f9b84a8. #158 head dc0f5e84 (23 Sep 08:42Z) writes the frozen-bit rows in the same commit as the pruning deletions. Still draft, still Fixes #112, base pp-finalization-window. #157 still draft cd35f913. #161 draft 7dec23b9 says Fixes #159. #163 draft ea7b823 says Fixes #107. #164 draft head 3a61c0b (24 Sep 12:06Z), six commits, base the #163 branch. The tip commit drops an inert journal-entry fallback and, when a boundary ends two entries, keeps the higher one. The pull says the settler skips a state-neutral duplicate instead of panicking, and the aggregate-prover compacts a reorg boundary that maps to no batch metadata. Not merged. None of those drafts are on master. Master is still f9b84a8. 24 Sep 14:06Z branch release-candidate was created at 3a61c0b, the same commit as draft #164. It is a branch, not a GitHub release tag. 25 Sep 14:52Z. Master still f9b84a8. release-candidate and fix/reorg-boundary-duplicate-bundles are both still 3a61c0ba608b, draft #164. fix/g2-access-read-enforcement is still ea7b823, draft #163. No vprogs issue comment since 24 Sep 14:30Z. The README on release-candidate still says early prototype. Max 2103466359246270526 (12:47Z) calls a hosted demo the first vprog, with real execution and real settlement, up since 24 Sep. He says the pull stack still needs review and merge. An mdBook and a workshop are not written. The framework link in that post is release-candidate. Sutton 2103474680883486840 (13:20Z) quotes it and points at his 3 Apr outlook 2039889174010982613, https://medium.com/@michaelsuttonil/kaspa-covenants-toccata-hard-fork-outlook-a4d81a40900c. That essay's second pillar is based zk apps. It says synchronous vprogs were not the Toccata deliverable. Toccata has since activated. This demo does not merge the drafts. Izio 2103475806886670730 (13:24Z) invites load on the same page. Bit Cat 2103476394479038729 asked where a second app gets an executor and a prover. No author answer on that thread. 25 Sep, the issues. Neither repo has a GitHub Discussion. Twenty-two vprogs issues are open. The ones this branch names stay open until a merge. On 3a61c0ba608b: #164 is Maxim's tn10 incident at 23 Sep 20:31Z, CUDA ttd at ea7b823. A reorg left the settlement boundary with no BatchMetadata row, the journal never compacted, and a duplicate with the same prev_state and a stale prev_lane_tip passed the old state-only guard and panicked the settler. reconcile in zk/backend/risc0/settler/src/worker.rs chains on (state, lane_tip), adopts a watch position that differs in either pin, and the loop skips an artifact that still does not chain. The pull says a reorg can still re-fold settled prefixes; those bundles are skipped. #163 is #107. zk/abi/src/transaction_processor/abi.rs turns a dirty Read resource into ErrorCode::ReadDeclaredWrite after the handler returns ok, journals Error, and the host rolls back. #161 caps restore at the persisted committed tip (#159). #160 makes a restored read-only batch walk the in-memory predecessor (#114). supports_restore in zk/vm/src/vm.rs is still true only for ProvingPipeline::None, so the CUDA prover does not take that path. #158 seeds canonical bits below the restore base and writes the frozen bits in the pruning commit (#112, #110). #157 finalizes from the pruning point in the headers (#113). finalize_confirmed_pp is in the same worker.rs. #156 journals a malformed carrier as Error instead of panicking the guest. Still open on this commit, with no pull naming them. #126: handle_reorg still sets new_tip to the fork child's parent_id and calls rollback with no live-floor check. An unknown child returns ReorgBelowRoot. Finalization in this file can move base above 1, which is the condition that issue says wakes the bug. No repro. #123: one malformed reply from a resolver-chosen peer is fatal and the bridge stops. #111: receipt-cache keys omit the pins inside the statement. The issue says the covenant pins keep that a denial of service. #103: signed_carrier_transaction in l1/wallet/src/build/carrier.rs still asserts when the funding output cannot cover the extra outputs plus min_fee. #125: a caller-supplied zero-value output still reaches the storage-mass division. #104, #94, #87, #74, #67, #66, #65, #81, #39, and #15 are still the bootstrap signer, proving resume, id retention, latest-pointer cleanup, reorg orchestrator, persistent receipts, inactivity proofs, dev-dependency cycles, borsh versioning, and the pruning split. #152 still leaves an in-flight GPU proof running across a rollback. This desk compiled vprogs-zk-backend-risc0-settler at 3a61c0ba608b and it did not build. risc0-zkvm 3.0.5 imports std::os::unix. The circuit kernels want C++20 designated initializers and the build script passes /std:c++17. The only WSL distro is docker-desktop. The green cargo nextest lines in the pulls are the author's. Research only. 26 Sep: draft #165 opened 11:22Z by biryukovmaxim, head bcebf599, 5 commits, base fix/reorg-boundary-duplicate-bundles (the #164 branch). Three fixes from the tn10 settlement wedge: price funded builds at the fee-estimate priority bucket, adopt the spending tip and resolve superseded bundles instead of re-feeding them (~3 Hz loop for hours), and serve the settlement tip on every observed settlement (it froze for hours). Issue #166 (14:34Z): single-UTXO builders re-spend outputs their own unconfirmed transactions still hold; seen in the 25-26 Sep tn10 stress runs. Branch release-candidate is now bcebf599 (14:32Z), the #165 head, not a release. Master still f9b84a8. vertex (@KaspaScopio) summary: https://x.com/KaspaScopio/status/2103815513633685781 (26 Sep 11:54Z). Not merged. 26 Sep 14:34Z Maxim on #165: fee cap or multiplier not addressed, priority bucket paid as is; #103 covers the carrier panic, #166 in-flight outpoint reuse; wallet UTXO fetch needs --utxoindex. On bcebf599 the carrier assert! remains and build_signed_carrier takes the first spendable UTXO. https://github.com/kaspanet/vprogs/pull/165#issuecomment-5847102090 26 Sep 17:01\u201318:12Z Sutton on the Max demo thread: not full yellow-paper syncompo (more L1 still required); ~30% of yellowpaper already in L1 as KIP-21 (proving proportional to app activity); Max's work is within Hans's framework. https://x.com/michaelsuttonil/status/2103892665435578727 \u00b7 https://x.com/michaelsuttonil/status/2103907653390876704 \u00b7 https://x.com/michaelsuttonil/status/2103910575096950964. Not a merge. 27 Sep 07:49Z: draft #167 opened by biryukovmaxim, head 07d486dd, branch fix/settlement-watch-state-neutral (base fix/settlement-watch-wedge / #165). One commit: settler confirm-wait matches state-neutral settlements on (state, lane_tip), not state root alone. release-candidate tip moved to 07d486dd (same commit). #165 still open at bcebf599 on fix/settlement-watch-wedge. Master still f9b84a8. Not a release. Not merged. https://github.com/kaspanet/vprogs/pull/167 \u00b7 https://github.com/kaspanet/vprogs/commit/07d486dd49c1"
         },
         {
           "name": "vProgs node and DA",
           "url": "https://x.com/Max143672/status/2103498627130003761",
           "chip": "catalog",
-          "note": "Max https://x.com/Max143672/status/2099841318847729878 (15 Sep): DA moved to the L2/vprogs level; L1 holds the digest; P2P and IBD are not implemented in the framework. https://x.com/Max143672/status/2100806415510319354 (18 Sep): L2 actions are immediate; settlement moves funds to L1 and commits state periodically; a new node verifies against the last settlement and replays. https://x.com/Max143672/status/2103498627130003761 (25 Sep): today you run the vprog node that proves and settles; a mode without proving exists for DA. Master f9b84a8 is the merge of #97 https://github.com/kaspanet/vprogs/pull/97 (28 Jul 11:24Z): vprogs-runner daemon and vprun CLI. 26 Sep evening Sutton: https://x.com/michaelsuttonil/status/2103892665435578727 — Max's hosted demo is not the full vprogs yellow-paper syncompo design; that still needs more L1. It is a standalone vprog (verifiable zk program) that can compose via L1; he prefers \"based zk app\" for that stage, and says calling it vprog is still fair as a trajectory. https://x.com/michaelsuttonil/status/2103907653390876704 — ~30% of the yellowpaper effort is already in L1 as KIP-21; that part makes proving cost proportional to app activity (not global L1), so small/mid apps are economically viable; Max is sharing the off-chain infrastructure that uses those L1 capabilities. https://x.com/michaelsuttonil/status/2103910575096950964 — everything Max is building is within Hans's framework. Catalog. Not a merge."
+          "note": "Max https://x.com/Max143672/status/2099841318847729878 (15 Sep): DA moved to the L2/vprogs level; L1 holds the digest; P2P and IBD are not implemented in the framework. https://x.com/Max143672/status/2100806415510319354 (18 Sep): L2 actions are immediate; settlement moves funds to L1 and commits state periodically; a new node verifies against the last settlement and replays. https://x.com/Max143672/status/2103498627130003761 (25 Sep): today you run the vprog node that proves and settles; a mode without proving exists for DA. Master f9b84a8 is the merge of #97 https://github.com/kaspanet/vprogs/pull/97 (28 Jul 11:24Z): vprogs-runner daemon and vprun CLI. 26 Sep evening Sutton: https://x.com/michaelsuttonil/status/2103892665435578727 \u2014 Max's hosted demo is not the full vprogs yellow-paper syncompo design; that still needs more L1. It is a standalone vprog (verifiable zk program) that can compose via L1; he prefers \"based zk app\" for that stage, and says calling it vprog is still fair as a trajectory. https://x.com/michaelsuttonil/status/2103907653390876704 \u2014 ~30% of the yellowpaper effort is already in L1 as KIP-21; that part makes proving cost proportional to app activity (not global L1), so small/mid apps are economically viable; Max is sharing the off-chain infrastructure that uses those L1 capabilities. https://x.com/michaelsuttonil/status/2103910575096950964 \u2014 everything Max is building is within Hans's framework. Catalog. Not a merge."
         },
         {
           "name": "vprog-tictactoe tip",
-          "url": "https://github.com/biryukovmaxim/vprog-tictactoe/commit/ba05d924e1e5",
+          "url": "https://github.com/biryukovmaxim/vprog-tictactoe/commit/098be674",
           "chip": "demo",
-          "note": "Tip 4f27dd1a (22 Sep 09:14Z): pin vprogs reorg-safety 59b30920. Cargo.lock host is reorg-safety#59b30920, matching #152 HEAD. 74e24551 is gone from that lock. Rusty pin in that lock is still eb0a856, behind release v2.1.0 01b532e8. #152 body still says the app pins 0636cff1, the parent of HEAD. guest/Cargo.lock was not in this commit and is still fork biryukovmaxim/vprogs bridge-live-lane#128dd05f. Tip 93b75901 (22 Sep 13:33Z). e2bc408 re-seeds the exit-index mirror on warm restart. Prior merge cc52b322 of #25. Host and guest locks both kaspanet guest-hardening#291d4f29. That is vprogs#156, still based on 59b30920, not the #152 gap retry 0309fd37. Fork bridge-live-lane#128dd05f is gone. Encoder wasm 0.1.6. Rusty pin still eb0a856, behind release v2.1.0 01b532e8. 24 Sep tip ba05d924. Host and guest Cargo.toml name kaspanet/vprogs branch fix/reorg-boundary-duplicate-bundles. Both Cargo.lock files pin rev 3a61c0b, draft #164. The lock is the pin. It is not a floating branch tip. This commit does not change the rusty pin eb0a856, behind release v2.1.0 01b532e8. Prior tip 75950635 locked draft #163 ea7b823. 25 Sep. Tip still ba05d924. https://vprogs-tt.izio.fr/ returned HTTP 200 at 14:52Z. The HTML title is vprog tictactoe. The page is a Vite dev server (/@vite/client, a password field for the key). That is not the static Caddy layout in docs/ops/deploy-web.md. The repo does not name that hostname. Max says the page needs a private key and testnet funds, and that it has been up since 24 Sep. The documented path that is not the local simnet is testnet-10 (VITE_NETWORK=testnet-10, CUDA proofs, RISC0_DEV_MODE unset). This desk did not submit a key or a transaction. README.md and docs/demo/README.md still say to check out fix/g2-access-read-enforcement (ea7b823). Cargo.toml names fix/reorg-boundary-duplicate-bundles, and both locks pin 3a61c0b. The lock is the pin. Izio 2103494707288613341 says the references are in Max's post. 25 Sep, the guest. At ba05d924, guest/src/program/run.rs calls resolve_pending before each action. A sig-pointer whose resource is not yet User or Config stays pending, so a deposit can birth the account before the next action signs it. A signer that never becomes live still returns signer: unknown or absent resource kind. Issue 23 is still open. Issue 24 has no new comment. No GitHub Discussion. The desk clone is still 93b7590. It was not moved. Not a product testnet. 26 Sep 11:40Z f128efd6 pins vprogs fix/settlement-watch-wedge 081af9b9 in both Cargo.lock files. That is #165 before its last test-only commit bcebf599. Tip 803a120b (11:50Z): the five wasm-built game carriers now take the priority-bucket fee estimate; they fall back to the admission floor with a warning if the estimate call fails. Not a product testnet. 26 Sep f128efd6: README and docs/demo name fix/settlement-watch-wedge; Cargo.lock and guest/Cargo.lock pin 081af9b9. The 25 Sep README/lock mismatch is gone. Tip 803a120b prices wasm carriers at the priority-bucket estimate."
+          "note": "Tip 098be674 (27 Sep 07:53Z): pin vprogs fix/settlement-watch-state-neutral 07d486d (#167 / current release-candidate) in Cargo.toml and both Cargo.lock files. The lock is the pin. Rusty pin remains eb0a856, behind v2.1.0 01b532e8. https://vprogs-tt.izio.fr/ HTTP 200 on 28 Sep. Not a product testnet. #23 still open. https://github.com/biryukovmaxim/vprog-tictactoe/commit/098be674"
         },
         {
           "name": "Argent",
@@ -180,7 +180,7 @@
           "name": "Grok 4.7 five code passes",
           "url": "https://github.com/STP-KAS/kaspa-master-file/blob/main/GROK-47-THINKING.md",
           "chip": "code",
-          "note": "21 Sep night. Not a pin change. Spec transfer dispatch tag 79c71c23. kcc20-live transfer tag c3d9f92f. transfer_delegator fd3ef14a on both. KCC-1 §11.1 vectors 2c49ed65 and 676b1a86 reproduced first. Encoded state diverges at byte 44: opcode 0x01 vs 0x20, so a strict §8.1 decoder rejects. Live transfer does not require leader amount >= 0; outputs cannot be negative, so a pre-existing negative leader burns other positive inputs. #30 unkeyed vectors f9f2a0b3… and 1a15d654… reproduced; keyed PublicKeyHash of the same keys is 91438cfb… and 4ba1a5f9…. #23 wants 0x05/0x06 inside the band #30 reserves. Neither PR is on main. x402 not in this pass. Forum clock stays halted."
+          "note": "21 Sep night. Not a pin change. Spec transfer dispatch tag 79c71c23. kcc20-live transfer tag c3d9f92f. transfer_delegator fd3ef14a on both. KCC-1 \u00a711.1 vectors 2c49ed65 and 676b1a86 reproduced first. Encoded state diverges at byte 44: opcode 0x01 vs 0x20, so a strict \u00a78.1 decoder rejects. Live transfer does not require leader amount >= 0; outputs cannot be negative, so a pre-existing negative leader burns other positive inputs. #30 unkeyed vectors f9f2a0b3\u2026 and 1a15d654\u2026 reproduced; keyed PublicKeyHash of the same keys is 91438cfb\u2026 and 4ba1a5f9\u2026. #23 wants 0x05/0x06 inside the band #30 reserves. Neither PR is on main. x402 not in this pass. Forum clock stays halted."
         },
         {
           "name": "Three passes 22 Sep evening",
@@ -261,7 +261,7 @@
       "title": "If you just showed up",
       "rows": [
         {
-          "name": "Kaspa Explained — start here",
+          "name": "Kaspa Explained \u2014 start here",
           "url": "https://kaspaexplained.com/start-here",
           "chip": "read",
           "note": "Two doors: new to crypto, or you already know it. Independent. Not kaspanet. Not this desk."
@@ -300,7 +300,7 @@
           "name": "Video (community)",
           "url": "https://x.com/kaspaunchained/status/2096211914825285808",
           "chip": "watch",
-          "note": "@kaspaunchained, 5 Sep 2026. “Only gets better with age.” Older clip (Odie). Not a spec. Not core. Watch, then read the pages above."
+          "note": "@kaspaunchained, 5 Sep 2026. \u201cOnly gets better with age.\u201d Older clip (Odie). Not a spec. Not core. Watch, then read the pages above."
         },
         {
           "name": "Covenants stack (community)",
@@ -450,7 +450,7 @@
           "name": "Anyone hosts",
           "url": "https://github.com/STP-KAS/gramlane",
           "chip": "host",
-          "note": "Same principle as a node: PC binary, PWA of that host, hardware signs the fill. Many desks ≠ Circle. The jar is not Nakamoto."
+          "note": "Same principle as a node: PC binary, PWA of that host, hardware signs the fill. Many desks \u2260 Circle. The jar is not Nakamoto."
         },
         {
           "name": "Darwin battletest",
@@ -498,7 +498,7 @@
           "name": "iziodev L1 getting-started review",
           "url": "https://github.com/STP-KAS/iziodev-build-a-kaspa-l1-grok-reveieuw",
           "chip": "preview",
-          "note": "Independent pass of Izio 16 Sep thread. Template is local runtime. Argent not general production. Matches §4d."
+          "note": "Independent pass of Izio 16 Sep thread. Template is local runtime. Argent not general production. Matches \u00a74d."
         },
         {
           "name": "kaspa.org vs kaspaexplained",
@@ -564,7 +564,7 @@
           "name": "research.kas.pa",
           "url": "https://research.kas.pa",
           "chip": "forum",
-          "note": "Official Discourse. Threads ≠ KIPs. Catalog below."
+          "note": "Official Discourse. Threads \u2260 KIPs. Catalog below."
         },
         {
           "name": "kaspa.news",
@@ -696,7 +696,7 @@
     },
     {
       "id": "research-vprogs",
-      "title": "research.kas.pa — vProgs / L1↔L2 (not product)",
+      "title": "research.kas.pa \u2014 vProgs / L1\u2194L2 (not product)",
       "rows": [
         {
           "name": "Concrete vProgs architecture",
@@ -735,7 +735,7 @@
           "note": "hashdag, Nov 2024. Highest views on the forum."
         },
         {
-          "name": "L1↔L2 canonical bridge",
+          "name": "L1\u2194L2 canonical bridge",
           "url": "https://research.kas.pa/t/l1-l2-canonical-bridge-entry-exit-mechanism/258",
           "chip": "research",
           "note": "michaelsutton. Not a live bridge."
@@ -759,7 +759,7 @@
           "note": "hashdag."
         },
         {
-          "name": "L1↔L2 open topics list",
+          "name": "L1\u2194L2 open topics list",
           "url": "https://research.kas.pa/t/updateable-list-of-l1-l2-topics-to-flesh-out-before-finalizing-design/237",
           "chip": "research",
           "note": "hashdag checklist. Still open."
@@ -792,7 +792,7 @@
     },
     {
       "id": "research-kips",
-      "title": "research.kas.pa — threads that became KIPs",
+      "title": "research.kas.pa \u2014 threads that became KIPs",
       "rows": [
         {
           "name": "Quadratic storage mass",
@@ -858,7 +858,7 @@
           "name": "kccs",
           "url": "https://github.com/kaspanet/kccs",
           "chip": "Draft",
-          "note": "Refuse as a gram token. KCC-0 meta is Final in kcc-0000.md (kccs#25 merged c0bb8f3 21 Sep 13:31Z). README index still says Draft — leftover, not the file. Not KCC-1/2/20/0012 Final. Open: #24 7159d48, #20, #23, #30, #27 fa845057, #26 479fa206, #6 165ff91d, #4. #29 proposes Draft KCC-3/4/5 (not on main, numbers not assigned). Issue #14: #16 merged the fungibility rule (e7d2925d); issue still open; desk 5789867789. Issue #28: four KCC20 layouts, rechecked 23 Sep. Desk 5767349911. None adopted."
+          "note": "Refuse as a gram token. KCC-0 meta is Final in kcc-0000.md (kccs#25 merged c0bb8f3 21 Sep 13:31Z). README index still says Draft \u2014 leftover, not the file. Not KCC-1/2/20/0012 Final. Open: #24 7159d48, #20, #23, #30, #27 fa845057, #26 479fa206, #6 165ff91d, #4. #29 proposes Draft KCC-3/4/5 (not on main, numbers not assigned). Issue #14: #16 merged the fungibility rule (e7d2925d); issue still open; desk 5789867789. Issue #28: four KCC20 layouts, rechecked 23 Sep. Desk 5767349911. None adopted."
         },
         {
           "name": "vprogs",
@@ -1008,7 +1008,7 @@
           "name": "@asaefstroem",
           "url": "https://x.com/asaefstroem",
           "chip": "ss",
-          "note": "Alexander Säfström. GitHub saefstroem. KIP-16 author (header spells Safstrom), Active, OpZkPrecompile 0xa6. rusty-kaspa #775, ZK SDK #953, OpTxInputDaaScore #861, all merged. KCC-0 author (#17, Final via #25). KCC-0012 lead (kccs#24, still Draft). Author of open kccs#31. Sutton 11 Sep praise. stroemnet tip e60dc3e (17 Jul 2026) is his unaudited TN10/Sepolia/Igra swap, not a product. stroemwallet is a kasware-wallet/extension fork. mcp-http is not Kaspa. 26 Sep 14:57Z https://x.com/asaefstroem/status/2103861631738667208: two pools hold more than 50% of KAS hashrate; he asks miners to switch pools or go solo. His chart. The desk did not recount it."
+          "note": "Alexander S\u00e4fstr\u00f6m. GitHub saefstroem. KIP-16 author (header spells Safstrom), Active, OpZkPrecompile 0xa6. rusty-kaspa #775, ZK SDK #953, OpTxInputDaaScore #861, all merged. KCC-0 author (#17, Final via #25). KCC-0012 lead (kccs#24, still Draft). Author of open kccs#31. Sutton 11 Sep praise. stroemnet tip e60dc3e (17 Jul 2026) is his unaudited TN10/Sepolia/Igra swap, not a product. stroemwallet is a kasware-wallet/extension fork. mcp-http is not Kaspa. 26 Sep 14:57Z https://x.com/asaefstroem/status/2103861631738667208: two pools hold more than 50% of KAS hashrate; he asks miners to switch pools or go solo. His chart. The desk did not recount it."
         },
         {
           "name": "@manyfest_",
@@ -1380,7 +1380,7 @@
           "name": "20 Sep kccs#28 + #1104/#1132 gate",
           "url": "https://github.com/kaspanet/kccs/issues/28",
           "chip": "draft",
-          "note": "#28 KCC20 name≠ABI collision. #1104 desk: parent-order invariance gate; run #1132 on a5888da before merge. #24/#27 already pinned at 7159d48 / fa845057 APPROVED. Not Final / DK not shipped."
+          "note": "#28 KCC20 name\u2260ABI collision. #1104 desk: parent-order invariance gate; run #1132 on a5888da before merge. #24/#27 already pinned at 7159d48 / fa845057 APPROVED. Not Final / DK not shipped."
         },
         {
           "name": "21 Sep tictactoe a758a9b tn10 CUDA runbook",
@@ -1404,7 +1404,7 @@
           "name": "20 Sep kaspaunchained intern roundup",
           "url": "https://x.com/kaspaunchained/status/2101676311244915028",
           "chip": "x",
-          "note": "Catalog. KCC20/Argent/DK/vProgs/x402. Do not weld. kcc20-live field-order swap vs Draft spec. x402 RC1 not KCC-20. DK #1104 still a5888da. vprogs #148 draft. Pins hold. Not an oracle — facts stay in this master file."
+          "note": "Catalog. KCC20/Argent/DK/vProgs/x402. Do not weld. kcc20-live field-order swap vs Draft spec. x402 RC1 not KCC-20. DK #1104 still a5888da. vprogs #148 draft. Pins hold. Not an oracle \u2014 facts stay in this master file."
         },
         {
           "name": "20 Sep kccs#24 head 7159d48 + #27 approval",
@@ -1416,7 +1416,7 @@
           "name": "20 Sep rusty master eb0a856",
           "url": "https://github.com/kaspanet/rusty-kaspa/commit/eb0a856d4e1e",
           "chip": "node",
-          "note": "Master tip eb0a856. #1136 merged IBD 20 MiB chunks; #1137 merged RejectCoinbase. DK still unmerged (ad45e24). vprogs #147→1d449964; #148 draft restart-resume. kaspa.stream app 9f4088ca…"
+          "note": "Master tip eb0a856. #1136 merged IBD 20 MiB chunks; #1137 merged RejectCoinbase. DK still unmerged (ad45e24). vprogs #147\u21921d449964; #148 draft restart-resume. kaspa.stream app 9f4088ca\u2026"
         },
         {
           "name": "20 Sep #1135/#1136 + #1104 naming",
@@ -1428,7 +1428,7 @@
           "name": "19 Sep #1104 review wave 2",
           "url": "https://github.com/kaspanet/rusty-kaspa/pull/1104",
           "chip": "research",
-          "note": "Continued review ~19:38–22:04Z (D-Stacks + STP-KAS): parent-index ordering vs #1132 shuffle; SmallVec; u16::MAX assert; hash API; mem::take; all_tips rename; TieBreakingContext. Head still a5888da. Issue #1134 desk note ~18:33Z. Not shipped."
+          "note": "Continued review ~19:38\u201322:04Z (D-Stacks + STP-KAS): parent-index ordering vs #1132 shuffle; SmallVec; u16::MAX assert; hash API; mem::take; all_tips rename; TieBreakingContext. Head still a5888da. Issue #1134 desk note ~18:33Z. Not shipped."
         },
         {
           "name": "19 Sep vprogs#147 ELF + #1104 review",
@@ -1452,7 +1452,7 @@
           "name": "18 Sep kccs#27 head fa845057",
           "url": "https://github.com/kaspanet/kccs/pull/27",
           "chip": "draft",
-          "note": "Non-draft open. KCC-01/KCC0 compliance + conformance.json. Review/approval ~15:41Z (Manyfestation). Variable-length canonical state fields; deeper transitions deferred. #24 clarifications 15:27–15:31Z. Still not Final."
+          "note": "Non-draft open. KCC-01/KCC0 compliance + conformance.json. Review/approval ~15:41Z (Manyfestation). Variable-length canonical state fields; deeper transitions deferred. #24 clarifications 15:27\u201315:31Z. Still not Final."
         },
         {
           "name": "18 Sep kccs#27 + #24",
@@ -1464,7 +1464,7 @@
           "name": "16 Sep kccs#26 KCC-23",
           "url": "https://github.com/kaspanet/kccs/pull/26",
           "chip": "draft",
-          "note": "Add KCC-23 MJ — Metadata JSON. Open ready. Not adopted."
+          "note": "Add KCC-23 MJ \u2014 Metadata JSON. Open ready. Not adopted."
         },
         {
           "name": "17 Sep vprogs exit/lane PRs",
@@ -1746,7 +1746,7 @@
           "name": "vprogs#131 guest-batteries",
           "url": "https://github.com/kaspanet/vprogs/pull/131",
           "chip": "open",
-          "note": "Battery extraction. Own body: tictactoe is first consumer git-pinning this branch — guest lock has moved to fork bridge-live-lane#128dd05f. ABI expect at zk/abi abi.rs:22 still panics duplicate access lists. Desk comment 5759822448."
+          "note": "Battery extraction. Own body: tictactoe is first consumer git-pinning this branch \u2014 guest lock has moved to fork bridge-live-lane#128dd05f. ABI expect at zk/abi abi.rs:22 still panics duplicate access lists. Desk comment 5759822448."
         },
         {
           "name": "biryukovmaxim/vprog-tictactoe",
@@ -1776,7 +1776,7 @@
           "name": "kaspa.stream app",
           "url": "https://kaspa.stream/",
           "chip": "explorer",
-          "note": "app-version 9f4088ca… observed 20 Sep (was 7ab5ce0…). No public changelog."
+          "note": "app-version 9f4088ca\u2026 observed 20 Sep (was 7ab5ce0\u2026). No public changelog."
         },
         {
           "name": "rusty#1135",
@@ -1788,7 +1788,7 @@
           "name": "rusty#1136",
           "url": "https://github.com/kaspanet/rusty-kaspa/pull/1136",
           "chip": "merged",
-          "note": "MERGED 20 Sep (f2f87ff → master). Split pruning-point proofs/headers/trusted data to 20 MiB chunks during IBD."
+          "note": "MERGED 20 Sep (f2f87ff \u2192 master). Split pruning-point proofs/headers/trusted data to 20 MiB chunks during IBD."
         },
         {
           "name": "vprogs#147",
@@ -1800,7 +1800,7 @@
           "name": "kccs#26",
           "url": "https://github.com/kaspanet/kccs/pull/26",
           "chip": "open",
-          "note": "KCC-23 MJ — Metadata JSON. Open ready 16 Sep. Not adopted."
+          "note": "KCC-23 MJ \u2014 Metadata JSON. Open ready 16 Sep. Not adopted."
         },
         {
           "name": "kccs#27",
@@ -1830,7 +1830,7 @@
           "name": "vprogs#139",
           "url": "https://github.com/kaspanet/vprogs/pull/139",
           "chip": "open",
-          "note": "ExitLeaf claim kit. Also #138/#140/#142. Review cluster 16–17 Sep: #144/#145/#146. No product testnet."
+          "note": "ExitLeaf claim kit. Also #138/#140/#142. Review cluster 16\u201317 Sep: #144/#145/#146. No product testnet."
         },
         {
           "name": "elldeeone/kaspa-x402",
@@ -1872,7 +1872,7 @@
           "name": "silverscript#223",
           "url": "https://github.com/kaspanet/silverscript/pull/223",
           "chip": "merged",
-          "note": "IzioDev dispatch tags ↔ KCC-1."
+          "note": "IzioDev dispatch tags \u2194 KCC-1."
         },
         {
           "name": "simply-kaspa-indexer",
@@ -1938,7 +1938,7 @@
           "name": "KNS Web4 architecture",
           "url": "https://github.com/STP-KAS/kns-spec/blob/main/WEB4.md",
           "chip": "web4",
-          "note": "Four planes. Do not copy ENS rent/registry/Infura. BINDING ≠ libp2p identity."
+          "note": "Four planes. Do not copy ENS rent/registry/Infura. BINDING \u2260 libp2p identity."
         },
         {
           "name": "KNS real vs paper",
@@ -2040,7 +2040,7 @@
           "name": "@BankQuote / trillskillz",
           "url": "https://x.com/BankQuote",
           "chip": "community",
-          "note": "Toccata/covenant essays Apr–Sep 2026. OpenSilver. Not core. Tweet is not a KIP."
+          "note": "Toccata/covenant essays Apr\u2013Sep 2026. OpenSilver. Not core. Tweet is not a KIP."
         }
       ]
     },
@@ -2058,7 +2058,7 @@
           "name": "silverscript#122",
           "url": "https://github.com/kaspanet/silverscript/issues/122",
           "chip": "discord",
-          "note": "OpCheckSigFromStack + OpZkPrecompile builtins. Discord → issue."
+          "note": "OpCheckSigFromStack + OpZkPrecompile builtins. Discord \u2192 issue."
         },
         {
           "name": "workshop-london-2026",

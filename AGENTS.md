@@ -14,8 +14,8 @@ When this master file is named, opened, or used as the pin list, Grok Build **sh
 | Piece | Operator status 17 Sep 2026 |
 | --- | --- |
 | kaspa bot mainnet archival (1 public) | **Retired.** Stopped and wiped 25 Sep 2026 16:46 CEST; the 17 Sep endpoint `159.223.110.159:28492` is gone. The box runs Testnet-10 only. See [Xai.mainnet.public.nodes](https://github.com/STP-KAS/Xai.mainnet.public.nodes). |
-| tn10 bot node | Up — RPC `127.0.0.1:16210` (Grok Bot sandbox loopback) |
-| TN10 miners | Alive — pay-to `kaspatest:qzffl5xy9np46gkttyuftqnv2w04pr8g3wsp7c3vv8se3txtelx6q7c0v0ldx` |
+| tn10 bot node | Up — RPC `127.0.0.1:16210` (Grok Bot sandbox loopback). Checked 28 Sep 2026 07:55 CEST: one kaspad 2.1.0 (`tn10-n0`, started 27 Sep 19:23 CEST), RPC 16210, P2P 16211. TN10 ops owns it. |
+| TN10 miners | Alive (6 `kaspa-miner` processes on 28 Sep 2026 07:55 CEST) — pay-to `kaspatest:qzffl5xy9np46gkttyuftqnv2w04pr8g3wsp7c3vv8se3txtelx6q7c0v0ldx` |
 
 ## Hard locks
 

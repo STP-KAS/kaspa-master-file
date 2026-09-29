@@ -15,7 +15,7 @@ When this master file is named, opened, or used as the pin list, Grok Build **sh
 | Piece | Operator status 17 Sep 2026 |
 | --- | --- |
 | kaspa bot mainnet archival (1 public) | **Retired.** Stopped and wiped 25 Sep 2026 16:46 CEST; the 17 Sep endpoint `159.223.110.159:28492` is gone. The box runs Testnet-10 only. See [Xai.mainnet.public.nodes](https://github.com/STP-KAS/Xai.mainnet.public.nodes). |
-| tn10 bot node | Up — RPC `127.0.0.1:16210` (Grok Bot sandbox loopback). Checked 28 Sep 2026 07:55 CEST: one kaspad 2.1.0 (`tn10-n0`, started 27 Sep 19:23 CEST), RPC 16210, P2P 16211. TN10 ops owns it. |
+| tn10 bot node | **Resyncing; not on public TN10 yet.** RPC `127.0.0.1:16210` on the box (gRPC is also tunnelled for the miners, see [`TN10-FIELD-2026-09-29.md`](TN10-FIELD-2026-09-29.md)), P2P 16211, kaspad 2.1.0 `tn10-n0`. The 27 Sep evening process ended in the 29 Sep 20:12:20 CEST box reboot, which also took its `/tmp` data dir and logs. 20:21–22:22 CEST it ran from an empty data dir with `--enable-unsynced-mining`, and blocks submitted to it built a private chain on the TN10 genesis ([`TN10-INCIDENT-2026-09-29.md`](TN10-INCIDENT-2026-09-29.md)). Since 22:25:04 CEST it runs with `--utxoindex` and without `--enable-unsynced-mining`, in IBD from public peers (checked 29 Sep 22:38 CEST: sink blue score 0, `isSynced` false). Its readings count as TN10 only once `getSinkBlueScore` is within a few hundred of api-tn10 `/info/virtual-chain-blue-score`. TN10 ops owns it. |
 | TN10 miners | Alive (6 `kaspa-miner` processes on 28 Sep 2026 07:55 CEST) — pay-to `kaspatest:qzffl5xy9np46gkttyuftqnv2w04pr8g3wsp7c3vv8se3txtelx6q7c0v0ldx` |
 
 ## Hard locks

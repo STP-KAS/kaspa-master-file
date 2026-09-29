@@ -23,7 +23,7 @@ The node runs on the **Grok Bot Linux sandbox**, not on the phone and not as the
 | Piece | Status | Use |
 | --- | --- | --- |
 | **kaspa bot** — mainnet archival (1 public) | **Retired 25 Sep 2026** (was Up — `159.223.110.159:28492` on 17 Sep) | Stopped and wiped 25 Sep 16:46 CEST. Endpoint gone. |
-| **tn10 bot** — TN10 node | **Up** — RPC `127.0.0.1:16210` **on the sandbox** | Testnet-10 only. |
+| **tn10 bot** — TN10 node | **Resyncing** since 29 Sep 22:25 CEST, not on public TN10 yet (see `AGENTS.md` and [`TN10-INCIDENT-2026-09-29.md`](TN10-INCIDENT-2026-09-29.md)) — RPC `127.0.0.1:16210` **on the sandbox** | Testnet-10 only. |
 | **TN10 miners** | **Still alive** — same pay-to | Locked address below. |
 
 Pay-to (immutable, public, **not a seed**):

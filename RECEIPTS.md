@@ -520,7 +520,7 @@ Not a new chain. Not Tor-by-rebrand. **Kaspa settles. The name locates. The user
 - **Conformance (MUST/SHOULD for KNS + wallets):** https://github.com/STP-KAS/kns-spec/blob/main/CONFORMANCE.md
 - **Profile keys to add (ipfs, peer, onion…):** https://github.com/STP-KAS/kns-spec/blob/main/PROFILE.md
 - Schema: https://github.com/STP-KAS/kns-spec/blob/main/schemas/overlay-records.schema.json
-- `https://alice.kas.limo` leaks DNS. `kns://alice.kas` must not need ICANN or a CA.
+- An https gateway name like `alice.kas.limo` leaks DNS (that example host is dead as of 29 Sep 2026: HTTP 404). `kns://alice.kas` must not need ICANN or a CA.
 - Uniqueness is still indexer FCFS. Overlay does not fix that.
 
 ### 4d. Argent getting-started (Izio, 16 Sep 2026) — not a tag
@@ -831,7 +831,7 @@ Channels that matter for builders: `development`, `covenants`, `research-general
 | Wallets (who-what-where) | kaspium, kaspaper, kaspa-ng / aspectron, [forbole/kastle](https://github.com/forbole/kastle) |
 | Node monitor | [imalfect/KaspaNodeMonitor](https://github.com/imalfect/KaspaNodeMonitor) |
 | Tax CSV | [coderofstuff/kaspa-transaction-report](https://github.com/coderofstuff/kaspa-transaction-report) |
-| Contributors page | https://kaspa.org/contributors/ + rusty-kaspa graphs |
+| Contributors page | kaspa.org/contributors/ (dead as of 29 Sep 2026: HTTP 404) + rusty-kaspa graphs |
 | L2 (out of Gramlane) | Kasplex indexer, [hmoog/kas-l2](https://github.com/hmoog/kas-l2), kastle — Discord `#layer-2s` |
 
 Demand that matches the intel pack: wallet UX, fees, merchants, “is SilverScript the hardfork?” (no: Toccata is consensus; silverc is a compiler).
@@ -840,7 +840,7 @@ Demand that matches the intel pack: wallet UX, fees, merchants, “is SilverScri
 
 | | |
 | --- | --- |
-| GitHub org | [tetsuo-ai/AgenC](https://github.com/tetsuo-ai/AgenC) · [agenc-core](https://github.com/tetsuo-ai/agenc-core) · [agenc-protocol](https://github.com/tetsuo-ai/agenc-protocol) · [agenc-marketplace-agent-kit](https://github.com/tetsuo-ai/agenc-marketplace-agent-kit) |
+| GitHub org | [tetsuo-ai/AgenC](https://github.com/tetsuo-ai/AgenC) · [agenc-core](https://github.com/tetsuo-ai/agenc-core) · [agenc-protocol](https://github.com/tetsuo-ai/agenc-protocol) · agenc-marketplace-agent-kit (`github.com/tetsuo-ai/agenc-marketplace-agent-kit`, dead as of 29 Sep 2026: 404) |
 | Sites | agenc.tech · docs.agenc.tech · agencone.com |
 | Rails | Solana + x402. Ledger Agent Stack. Their notes claim OtterSec on a program — **verify on-chain, do not copy the claim**. |
 | Gramlane | **Not integrated.** Same filter as the intel pack: AgenC is a Solana agent marketplace. |

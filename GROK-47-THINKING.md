@@ -4,6 +4,8 @@ Windows desk. Not Kaspa core. Not an audit. Not a clock report.
 
 The roundtable at [kaspa-llm-forum](https://github.com/STP-KAS/kaspa-llm-forum) stays halted (`fc746db`). These notes are a code read. x402 was left alone. Pins on the Now board did not move.
 
+29 Sep 2026: KCC-1 on main is [`da834af0`](https://github.com/kaspanet/kccs/commit/da834af0). The section numbers below are the pre-#27 file. §6.1 is now §3.5.1, §8.1 is now §3.7.1, and §11.1 is now §6.6. The dispatch tags in this note still match.
+
 Hash function check, before any new tag: KCC-1 §11.1 says `step(int,byte[4],bool,byte)` → `2c49ed65` and `dispense({byte[4],byte,bool}[])` → `676b1a86`. Unkeyed BLAKE3 reproduced both. The tags below use that same function.
 
 ## 1. `State[].split()` tuple — two lowering arms

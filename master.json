@@ -1,7 +1,7 @@
 {
   "title": "Kaspa master file",
   "repo": "https://github.com/STP-KAS/kaspa-master-file",
-  "updated": "2026-09-28",
+  "updated": "2026-09-29",
   "disclaimer": "Not Kaspa core. Not official KNS. @StppStp. Merged Active KIP is law. Open PR is not. Current pins: section now (Grok 4.7, 22 Sep 2026 evening).",
   "sections": [
     {
@@ -30,7 +30,7 @@
           "name": "TN10 public API",
           "url": "https://api-tn10.kaspa.org/docs",
           "chip": "stale",
-          "note": "27 Sep 06:13Z. Docs https://api-tn10.kaspa.org/docs load /openapi.json: OpenAPI 3.1.0, app version v2.3.0, 44 routes. That string is the Docker VERSION of kaspa-ng/kaspa-rest-server tag v2.3.0 (e479a5da, 6 Jul 2026). Mainnet https://api.kaspa.org/openapi.json is v2.4.1 (c638eb5, 24 Sep 13:30Z). The repo README says the latest server stays live at https://api.kaspa.org. Same 44 paths. TN10 checks kaspatest: addresses. v2.4.1 documents v0 and v1 submit (computeBudget, a covenant binding) and mass as the largest of compute mass, KIP-9 storage mass, and normalized transient mass. The v2.3.0 spec has no SubmitTxCovenantBinding. https://github.com/lAmeR1/kaspa-rest-server resolves to lAmeR1/kaspa-rest-server-deprecated (last push 19 Aug 2024). The process reads supertypo/simply-kaspa-indexer Postgres (tip 5e7ffb7, 7 Jul 2026). Bare /info/health is Cloudflare STALE and still returns the old 200: kaspad blue score 568825293, database blue score 568825255, accepted-tx time 25 Sep 19:45:05Z, diff 227, both isSynced true. A cache miss is 503. Kaspad serverVersion 2.0.1, isSynced true, blue score 570048968. Database block blue score 570048926 (diff 27). acceptedTxBlockTime 1790366138262 is 25 Sep 19:55:38Z, 123455 seconds behind a 300-second limit, so database.isSynced is false. Block blue score has moved. The acceptance clock has not. Newest indexed tx for the TN10 pay-to address is still that second: 2a915694924fadc2a93f682dd0c8edc3f792e18f2e9b7d440a2d2ae6f972ab4c (Cloudflare EXPIRED). 28 Sep 05:56Z cache miss: https://api-tn10.kaspa.org/info/kaspad and https://api.kaspa.org/info/kaspad both report kaspad serverVersion 2.1.0 (was 2.0.1 on 27 Sep 06:13Z). Live api-tn10 health still 503: kaspad 2.1.0, new p2pId, blue score 570922604, database blue score 570922560, acceptedTxBlockTime still 25 Sep 19:55:38Z, database.isSynced false. Backend node upgraded; acceptance clock did not move. That field is getInfo. The REST app version and the rusty-kaspa v2.1.0 release are separate strings. Mainnet /info/health at 06:12Z was synced (blue score 548740905, accepted tx a few seconds old). A cached api-tn10 health 200 and api-tn10 address history stay off the receipt list until that acceptance clock catches up."
+          "note": "27 Sep 06:13Z. Docs https://api-tn10.kaspa.org/docs load /openapi.json: OpenAPI 3.1.0, app version v2.3.0, 44 routes. That string is the Docker VERSION of kaspa-ng/kaspa-rest-server tag v2.3.0 (e479a5da, 6 Jul 2026). Mainnet https://api.kaspa.org/openapi.json is v2.4.1 (c638eb5, 24 Sep 13:30Z). The repo README says the latest server stays live at https://api.kaspa.org. Same 44 paths. TN10 checks kaspatest: addresses. v2.4.1 documents v0 and v1 submit (computeBudget, a covenant binding) and mass as the largest of compute mass, KIP-9 storage mass, and normalized transient mass. The v2.3.0 spec has no SubmitTxCovenantBinding. https://github.com/lAmeR1/kaspa-rest-server resolves to lAmeR1/kaspa-rest-server-deprecated (last push 19 Aug 2024). The process reads supertypo/simply-kaspa-indexer Postgres (tip 5e7ffb7, 7 Jul 2026). Bare /info/health is still Cloudflare STALE on a fetch with no cache-bust: HTTP 200, kaspad blue score 568825293, serverVersion 2.0.1. That body is the old cache. 29 Sep 06:42Z cache miss: HTTP 503, cf-cache-status MISS. Kaspad serverVersion 2.1.0, isSynced true, isUtxoIndexed true, p2pId 24c5f2584972d1c082005de1256f72d4991906939c5f84014a8a94c607cf39e8, blue score 571812099. Database isSynced false, blue score 571812045 (diff 29). acceptedTxBlockTime 1790366138262 is still 25 Sep 19:55:38Z (acceptedTxBlockTimeDiff about 298010 seconds). Block blue score moved again. The acceptance clock did not. /info/kaspad on the same miss: HTTP 200, mempool 2, serverVersion 2.1.0, p2pIdHashed 82c70f33e4beb739c9c2415d2bb254387144a876d43c66b1409231c5d5562c44. The REST app version and the rusty-kaspa release stay separate strings. Mainnet was not read on this pass. Newest indexed tx for the TN10 pay-to address is still 2a915694924fadc2a93f682dd0c8edc3f792e18f2e9b7d440a2d2ae6f972ab4c at that same second; the coinbase payload ends 2.1.0/0.2.7/gb002. Indexed balance at the frozen clock: 463087817481597 sompi (4,630,878.17481597 KAS). Public wRPC UTXO balances the same morning were about 4,633,944 to 4,634,027 KAS and still rising. A cached health 200 and api-tn10 address history stay off the receipt list until that acceptance clock catches up. Miners, the campaign log, and the stress report: TN10-FIELD-2026-09-29.md."
         },
         {
           "name": "Covenant-id lookup and tooling",
@@ -225,10 +225,16 @@
           "note": "GitHub user KASRANKS, created 23 Mar 2026, four public repos. Browser apps on kaspa.Resolver plus api.kaspa.org. KASSWORD 8af2e17 (28 Aug): six-branch P2SH locker, selectors 0x01 Schnorr, 0x02 HLMT, 0x03 HTLC, 0x04 DMS, 0x06 PQ-cold, 0x05 recovery. Keyless branches pin one input, one output, BLAKE2b of OpTxOutputSpk (version u16 big-endian plus script), and output amount >= input minus 0.05 KAS. DMS and recovery use absolute DAA via OpCheckLockTimeVerify, threshold 500000000000. Kasgenesiszero 41e930fb (29 Apr): media in payloads, 10000-byte chunks, KIP-10 listing script enforces the payment only. Ownership is a client replay of genesis0-* payloads. KasProof 31dbd5bd (3 Apr): SHA-256(file) is the private key of the proof address. History on REST survives the dust reclaim. The UTXO check does not. kasranks 2fff0ec reads krc721-indexer.kaspa.com for ticker KASRANKS. Desk check: mainnet tx e154964b049cdc8660e3b58a4cd5c9fcfdbc2316bfbdcf6688e6a82f9be213c6 is a genesis0-col payload, block_time 22 Apr 2026 13:57:12Z. Author mainnet-harness comments were not re-run. Patterns: KASRANKS.md. External. Catalog."
         },
         {
+          "name": "research.kas.pa",
+          "url": "https://research.kas.pa",
+          "chip": "catalog",
+          "note": "Read 29 Sep 2026, top to bottom, every topic, including the category-about posts. /latest lists 53 topics. Seven about-posts are not on that list. 60 in all. Newest topic is still 522 (8 Sep 2026). Nothing newer. The 11 Sep freeze said ~50 topics and L1/L2 = 17. L1/L2 has 18 content topics; 251 was already there. A thread is not a KIP. The 2019 HAPI and UPI posts are not the 2021 fair launch. Topic 473 does not change max supply. Topic 522 is a question, not a privacy layer. Topics 295 and 429 name a higher block rate as an aim, not a live rate. Reading: RESEARCH-KAS-PA.md."
+        },
+        {
           "name": "Do not weld",
           "url": "https://github.com/STP-KAS/kaspa-master-file",
           "chip": "wrong",
-          "note": "Do not weld: Argent tag, KCC-20 Final, KCC-3/4/5 adopted, DAGKnight shipped, vProgs product, tictactoe equals vProgs live, x402 mainnet, quorum equals a standard, kccs README Draft line equals KCC-0 still Last Call, kaspaexplained's stale #25 sentence, an intern roundup, a Kas-Smiths thread, or AgenC into one shipping stack. Do not weld vprogs-tt.izio.fr into vProgs live, release-candidate into a release, or Sutton's becoming-real line into a merge of the vprogs drafts. Do not weld release-candidate bcebf599 into a release, SilverScript Studio into a Kaspa core tool, or the Python SDK SilverScript module into a stable API. Do not weld REST app v2.3.0 or v2.4.1 into a node release, kaspad serverVersion 2.0.1 into the rusty-kaspa v2.1.0 tag, an api-tn10 /info/health HTTP 200 into a synced indexer, or RunOnFlux/kaspa-core into a rusty-kaspa fork or a node. Do not weld KASRANKS Genesis Zero ownership into a native NFT, a Kassword mainnet-harness comment into a desk test, kasranks.com into the genesis0 protocol, or KPP-1 into a KIP."
+          "note": "Do not weld: Argent tag, KCC-20 Final, KCC-3/4/5 adopted, DAGKnight shipped, vProgs product, tictactoe equals vProgs live, x402 mainnet, quorum equals a standard, kccs README Draft line equals KCC-0 still Last Call, kaspaexplained's stale #25 sentence, an intern roundup, a Kas-Smiths thread, or AgenC into one shipping stack. Do not weld vprogs-tt.izio.fr into vProgs live, release-candidate into a release, or Sutton's becoming-real line into a merge of the vprogs drafts. Do not weld release-candidate bcebf599 into a release, SilverScript Studio into a Kaspa core tool, or the Python SDK SilverScript module into a stable API. Do not weld REST app v2.3.0 or v2.4.1 into a node release, kaspad serverVersion 2.0.1 into the rusty-kaspa v2.1.0 tag, an api-tn10 /info/health HTTP 200 into a synced indexer, or RunOnFlux/kaspa-core into a rusty-kaspa fork or a node. Do not weld KASRANKS Genesis Zero ownership into a native NFT, a Kassword mainnet-harness comment into a desk test, kasranks.com into the genesis0 protocol, or KPP-1 into a KIP. Do not weld a research.kas.pa thread into shipped consensus, the 2019 HAPI or UPI posts into the 2021 fair launch, topic 473 into a change to max supply, topic 522 into a privacy layer, or topic 295 or 429 into a live 100 BPS rate."
         },
         {
           "name": "AgenC",
@@ -636,7 +642,7 @@
           "name": "Forum home",
           "url": "https://research.kas.pa",
           "chip": "forum",
-          "note": "~50 public topics. A thread is not a KIP. Freeze 11 Sep 2026."
+          "note": "Read 29 Sep 2026. /latest lists 53 topics. Seven category-about posts are extra. 60 in all. Newest topic is still 522 (8 Sep 2026). L1/L2 content topics: 18. The 11 Sep freeze said ~50 and L1/L2 17. A thread is not a KIP. Full reading: RESEARCH-KAS-PA.md."
         },
         {
           "name": "latest.json",
@@ -648,7 +654,7 @@
           "name": "L1/L2",
           "url": "https://research.kas.pa/c/l1-l2/11",
           "chip": "forum",
-          "note": "17 topics. vProgs, sequencing, DA, Kurrent. Out of Gramlane path."
+          "note": "18 content topics on 29 Sep 2026. The old count of 17 omitted Conflicting Proofs Policy (251). About-page is separate. vProgs, sequencing, DA, Kurrent. A thread is not a KIP. Reading: RESEARCH-KAS-PA.md."
         },
         {
           "name": "Consensus",
@@ -660,13 +666,13 @@
           "name": "Economics",
           "url": "https://research.kas.pa/c/economics/6",
           "chip": "forum",
-          "note": "Issuance, adaptive size, tail emission. Not a KIP."
+          "note": "Issuance, adaptive size, tail emission. HAPI (23) and UPI (35) are 2019 proposals, not the 2021 fair launch. Not a KIP. Reading: RESEARCH-KAS-PA.md."
         },
         {
           "name": "Mining",
           "url": "https://research.kas.pa/c/mining/7",
           "chip": "forum",
-          "note": "Not this desk."
+          "note": "Read 29 Sep 2026. Sync checks, coinbase consolidation, knapsack selection, a mining-rule sketch. Not an operation. RESEARCH-KAS-PA.md."
         },
         {
           "name": "kaspanet/research",

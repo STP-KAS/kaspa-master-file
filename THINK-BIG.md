@@ -157,7 +157,7 @@ In [peglab-poc](https://github.com/STP-KAS/peglab-poc):
 1. One KNS name. Publish only keys that exist (`ipfs` / `peer` / `onion` as spec’d).
 2. `kns://name` opens [open.html](https://stp-kas.github.io/kns-spec/open.html) — **no seed**.
 3. Run the dApp **locally**. Pay KAS / 402. Kaspa settles.
-4. `https://alice.kas.limo` leaks DNS. Do not require ICANN or a CA for `kns://`.
+4. An https gateway name like `alice.kas.limo` leaks DNS (that example host is dead as of 29 Sep 2026: HTTP 404). Do not require ICANN or a CA for `kns://`.
 5. Uniqueness is still indexer FCFS. Overlay does not fix that — say so.
 
 **Done when:** a stranger with Kasware/Kastle can resolve the name, run the sandbox, pay, get a receipt. No seed paste.

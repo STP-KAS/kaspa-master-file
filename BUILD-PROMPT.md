@@ -1,6 +1,7 @@
 # Build prompt — paste this when you sit down to build
 
 Not a scheduled bot. Paste at the top of a Grok Build / desk session.
+Cursor on this account: [`CURSOR-PROMPT.md`](CURSOR-PROMPT.md).
 PowerShell pin for every repo: [`scripts/pin-disclaimer.ps1`](scripts/pin-disclaimer.ps1)
 
 ---

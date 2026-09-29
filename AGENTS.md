@@ -5,6 +5,7 @@ This repo is the Kaspa **pin encyclopedia**. Front door: [STP-KAS/kaspa-dapps](h
 **Read first:** `master.json` section `now`, then the README **Now** block. Older “what this pass did” sections and sections 0–10 now live in [`RECEIPTS.md`](RECEIPTS.md) (moved from the README on 26 Sep 2026). They and the `intel-pack.md` tables are receipts. If they disagree with `now`, `now` wins. Current pins live in the README **Now** board + `master.json`.
 
 Claims prompt (paste into the desk bot): [`DESK-PROMPT.md`](DESK-PROMPT.md).
+Cursor prompt (master file and the GitHubs): [`CURSOR-PROMPT.md`](CURSOR-PROMPT.md).
 Node card: [`DESK-BOT.md`](DESK-BOT.md).
 
 ## Standing authority (do not re-ask)

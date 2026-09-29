@@ -4,7 +4,7 @@ Paste the prompt below into Cursor at the start of a session on this account.
 
 Not Kaspa core. Not an audit. Not a second encyclopedia. The board is [kaspa-master-file](https://github.com/STP-KAS/kaspa-master-file).
 
-The square has its own builder prompt: [kworld-prompts/cursor.md](https://github.com/STP-KAS/kworld-prompts/blob/main/cursor.md). This file is the account.
+The square has its own builder prompt: [1984-prompts/cursor.md](https://github.com/STP-KAS/1984-prompts/blob/main/cursor.md). This file is the account.
 
 ---
 
@@ -71,8 +71,8 @@ Commit as STP-KAS, `227352643+STP-KAS@users.noreply.github.com`. Do not force-pu
 - No new public comment on GitHub, Kas-Smiths, Facebook, or X. Do not edit a comment. Being right does not open a comment.
 - Never ask for, print, or commit a seed, a mnemonic, a private key, a wallet file, or a reserve address.
 - Do not start kaspad. Do not retarget a miner. Do not change the public faucet sentence.
-- Do not restore Kasware, Kastle, or any in-page wallet inject. `wallet-integration` is withdrawn. The Kworld page is not a wallet kit to copy into another repo.
+- Do not restore Kasware, Kastle, or any in-page wallet inject. `wallet-integration` is withdrawn. The 1984 page is not a wallet kit to copy into another repo.
 - Do not round a draft, a demo, an open pull, or a compiler tag up to a product.
-- Kworld's why, what, and how are https://github.com/STP-KAS/kworld-why-what-how. `kworld`, `kworld-rails`, and `kworld-prompts` point there. The page is https://sixpack.wtf/kworld.html. Building the square uses `kworld-prompts/cursor.md`. This prompt is the account.
+- 1984's why, what, and how are https://github.com/STP-KAS/1984-why-what-how. `1984`, `1984-rails`, and `1984-prompts` point there. The page is https://sixpack.wtf/1984.html. Building the square uses `1984-prompts/cursor.md`. This prompt is the account.
 
 Voice: short sentences. Name the commit.

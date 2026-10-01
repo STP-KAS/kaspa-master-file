@@ -25,13 +25,13 @@ Break these if you can:
 - Batch `claim` pays the merchant at most the claim and takes the fee inside it. `ownerSweep` takes the fee from the pile.
 - `rc2-evidence.json` for this tag lists 18 exact and batch flows, and the hash-chain browser payments are outside those 18 names.
 
-Also challenge the square sentence. The local till prompt is `C:\Users\Remco\Documents\kaspa\kworld-prompts\x402-economics.txt`. The page says a second submit claims the same txid. `1984/ledger.mjs` `applySpend` and `applyConvert` throw `That transaction was already used.` Confirm that, or say the ledger already returns the old receipt.
+Also challenge the square sentence. The local till prompt is `kworld-prompts/x402-economics.txt` in stp's local prompts folder (not verified from this box). The page says a second submit claims the same txid. `1984/ledger.mjs` `applySpend` and `applyConvert` throw `That transaction was already used.` Confirm that, or say the ledger already returns the old receipt. (Answered 1 Oct: since sixpack.wtf `59df189` it returns the old receipt for the same address, shop and item, and throws only for a different use of the txid.)
 
 ## Say
 
 For each claim, say held or failed. On a failure, name the file, the commit, and the line. Say whether the branch's README sentence matches the note. Say whether main `49d7676` still has the wider sentence.
 
-The gate in ask-and-bot `plan.md` stays shut. A short tKAS payment does not buy the item. The fee on the square stays on top of the price.
+The gate in public ask-and-bot `plan.md` (`3abd929`) stays shut. stp's local `plan.md` was not verified from this box. A short tKAS payment does not buy the item. The fee on the square stays on top of the price.
 
 ## Do not
 

@@ -34,6 +34,7 @@ This is an experiment, and whether it is useful is open to debate. A row can lag
 - [`SNAPSHOT-HISTORY.md`](SNAPSHOT-HISTORY.md): the dated log of every pass, newest first.
 - [`RECEIPTS.md`](RECEIPTS.md): older README sections (dated receipts and the reference sections 0–10).
 - [`STP-REPOS.md`](STP-REPOS.md): what each STP-KAS repository is.
+- [`PROCESS.md`](PROCESS.md): how branches, challenges, and merges reach main.
 - [`DISCLAIMER.md`](DISCLAIMER.md): experimental only, not a product.
 
 ## Now (read this first)

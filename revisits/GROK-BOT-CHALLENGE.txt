@@ -1,0 +1,48 @@
+# Grok Bot challenge
+
+You watch. This pass challenges one branch. You do not merge it.
+
+The branch is `master-revisited-build` on https://github.com/STP-KAS/kaspa-master-file. Main is still `49d7676`. The note is `revisits/x402-2026-10-01.md` on that branch. The board diff is the same branch against main.
+
+The code under challenge is https://github.com/elldeeone/kaspa-x402 tag `v1.0.0-rc.2`. The annotated tag object is `35f011d`. The peel is `724c5fff`. Read the peel. When the note cites `main`, that commit is `cb769b17`. When it cites the earlier same-number source, that commit is `b73caadf`.
+
+## Challenge
+
+Try to break every claim in the note. Open the file the note names. Quote the line that decides it. A claim holds only when the peel, or the named commit, shows it. A claim fails when the file says something else. Say which.
+
+Break these if you can:
+
+- The browser tree vendors kaspa-wasm `2.0.0`, and `scripts/hash-chain-demo.mjs` loads `config.sdkModule` instead of vendoring that file.
+- The documented Node example path contains `sdk-v2.0.0`.
+- UTXOs in that demo come from the configured node. The selected-chain view defaults to `https://api-tn10.kaspa.org` and posts `/transactions/search` with `acceptance=accepted`.
+- Covenant `borrow` only requires a larger output 0. `hash-chain-verifier.ts` requires the successor to equal the previous head plus the quote.
+- The grant test recovers an underpaid borrow with no accepted payment, and the abandoned underpay ends at `needsRotation`.
+- `docs/hash-chain-otp-research.md` on the peel still says the contract observations are from an uncommitted branch.
+- The peel's hash-chain spec still says the profile is not a published release profile, and that existing exact offers were not changed to `paymentFlow` `upfront`. `direct-server.ts` on the peel sets `upfront`.
+- Diff `b73caadf` to `724c5fff` touches `packages/demo-gateway` and `scripts/check-hash-chain-worker.mjs`, and does not touch the public client, core, covenant, or server trees.
+- Diff `724c5fff` to `cb769b17` touches site CSS and does not touch `packages/` or `contracts/`.
+- The voucher domain tag begins `cb645ce99ebb74af`, and the full fixture hash is `cb645ce99ebb74afb1f1e3a73e0462249ee42cd9edfcd55723e7291af0292570`.
+- Batch `claim` pays the merchant at most the claim and takes the fee inside it. `ownerSweep` takes the fee from the pile.
+- `rc2-evidence.json` for this tag lists 18 exact and batch flows, and the hash-chain browser payments are outside those 18 names.
+
+Also challenge the square sentence. The local till prompt is `C:\Users\Remco\Documents\kaspa\kworld-prompts\x402-economics.txt`. The page says a second submit claims the same txid. `1984/ledger.mjs` `applySpend` and `applyConvert` throw `That transaction was already used.` Confirm that, or say the ledger already returns the old receipt.
+
+## Say
+
+For each claim, say held or failed. On a failure, name the file, the commit, and the line. Say whether the branch's README sentence matches the note. Say whether main `49d7676` still has the wider sentence.
+
+The gate in ask-and-bot `plan.md` stays shut. A short tKAS payment does not buy the item. The fee on the square stays on top of the price.
+
+## Do not
+
+- Do not merge `master-revisited-build` into main.
+- Do not push main.
+- Do not edit sixpack on this pass.
+- Do not import `@kaspa-x402`.
+- Do not open a pull request, an issue, or a comment on elldeeone/kaspa-x402 or on kaspa-master-file.
+- Do not post on X, GitHub, Kas-Smiths, or Facebook.
+- Do not print a seed, a key, a wallet file, or the reserve address.
+- Do not start kaspad. Do not broadcast. Do not retarget miners.
+- Do not call the village tags a dollar or Tether.
+- Do not call rc.2 a final 1.0, a mainnet release, or a KCC-20 token.
+- Do not treat api-tn10 acceptance as proof a payment landed.

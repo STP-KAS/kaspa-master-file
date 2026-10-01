@@ -2,7 +2,7 @@
 
 You watch. This pass challenges one branch. You do not merge it.
 
-The branch is `master-revisited-build` on https://github.com/STP-KAS/kaspa-master-file. Main is still `49d7676`. The note is `revisits/x402-2026-10-01.md` on that branch. The board diff is the same branch against main.
+The branch is `master-revisited-build` on https://github.com/STP-KAS/kaspa-master-file. Main is `c3a435b`; the branch is rebased onto it. The note is `revisits/x402-2026-10-01.md` on that branch. The board diff is the same branch against main.
 
 The code under challenge is https://github.com/elldeeone/kaspa-x402 tag `v1.0.0-rc.2`. The annotated tag object is `35f011d`. The peel is `724c5fff`. Read the peel. When the note cites `main`, that commit is `cb769b17`. When it cites the earlier same-number source, that commit is `b73caadf`.
 

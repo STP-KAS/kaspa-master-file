@@ -29,7 +29,7 @@ Also challenge the square sentence. The local till prompt is `kworld-prompts/x40
 
 ## Say
 
-For each claim, say held or failed. On a failure, name the file, the commit, and the line. Say whether the branch's README sentence matches the note. Say whether main `49d7676` still has the wider sentence.
+For each claim, say held or failed. On a failure, name the file, the commit, and the line. Say whether the branch's README sentence matches the note. Say whether main `c3a435b` still has the wider sentence. (Answered 1 Oct: yes. Main `c3a435b` README L75 still has both wider sentences; this branch rewrites them.)
 
 The gate in public ask-and-bot `plan.md` (`3abd929`) stays shut. stp's local `plan.md` was not verified from this box. A short tKAS payment does not buy the item. The fee on the square stays on top of the price.
 

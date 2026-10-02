@@ -103,3 +103,11 @@ R21. HELD. SNAPSHOT-HISTORY.md L11 @f82e7a8: "| 2026-10-02 08:00 | (this commit)
 R22. HELD. Merge: `git merge-base --is-ancestor origin/main origin/master/sweep-2026-10-02` exits 0 (fast-forward), and `git merge-tree --write-tree` exits 0.
 R23. HELD. Leak scan of the `+` lines in `git diff 640b208 f82e7a8`: no home-directory or Windows user paths, no emails, no keys, seeds or addresses. Every 64-hex hit is a public sha256, template hash or TN10 txid already on main. No private repo name was added beyond the old ones in R4.
 R24. HELD. "Still `0.15.0` on 2 Oct 05:57Z". crates.io `kaspa-consensus-core` max_version at 08:05 CEST is 0.15.0.
+
+## Ruling on item 13 (2 Oct 2026, 08:15 CEST)
+
+Item 13 (six private repo names in the This desk cell) is reclassified from open/blocking to ADVISORY, non-blocking. It is a publication-policy question for stp, not a factual error: the names have been on main since before this branch, and the cell states on purpose that it names them. The 29 Sep rule covers one specific private repo, which does not appear on main (`git grep -c` on origin/main: 0 hits). It stays listed for stp's decision.
+
+R3 stays FAILED and blocks: "Six of the private names ...; one more stays off this board" no longer adds up to the 10 private repos the cell now leads with. Fix: "four more stay off this board" (if the names stay) or "ten private repos stay off this board" (if stp drops them).
+
+Merge gate for master/sweep-2026-10-02: fix R3, then no open FAILED items remain.

@@ -111,3 +111,13 @@ Item 13 (six private repo names in the This desk cell) is reclassified from open
 R3 stays FAILED and blocks: "Six of the private names ...; one more stays off this board" no longer adds up to the 10 private repos the cell now leads with. Fix: "four more stay off this board" (if the names stay) or "ten private repos stay off this board" (if stp drops them).
 
 Merge gate for master/sweep-2026-10-02: fix R3, then no open FAILED items remain.
+
+## Recheck @ 775ed10 (2 Oct 2026, 08:13 CEST)
+
+Tip reviewed: 775ed10 (one commit on f82e7a8, STP-KAS noreply, README.md 1 line).
+
+- R3: HELD. README L66 now reads "Six of the private names: ...; four more stay off this board" (6 + 4 = 10, matching the 10-private lead). master.json keeps "one more stays off this board" only inside the dated "29 Sep live count: 86 repos, 79 public, 7 private" sentence, where 6 + 1 = 7 is correct for that date.
+- Checks: `git merge-base --is-ancestor origin/main 775ed10` succeeds (fast-forward); master.json parses with `python3 -m json.tool`.
+- Item 13: ADVISORY (see ruling above), waiting on stp; not blocking.
+
+Result: no open FAILED items on master/sweep-2026-10-02 @ 775ed10. It can merge with stp's OK, before build/2026-10-02.

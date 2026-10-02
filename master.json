@@ -171,6 +171,12 @@
           "note": "Tip e36538f (3 Jul 2026). Unaudited. XMSS^MT, two height-12 trees, 2^24 signatures, BLAKE3/192, signatures about 3.06 KB, hashing-only verify in TxScriptEngine. Skip window can reach the first leaf of the next bottom tree and not a later leaf. rusty-kaspa pin is branch master, not a tag. Not a shipped post-quantum signature."
         },
         {
+          "name": "x402 #22 and desk repos",
+          "url": "https://github.com/elldeeone/kaspa-x402/pull/22",
+          "chip": "tn10",
+          "note": "Open #22 head 06532aada4506b60668b84127047b88bc9ad4fb6 (updated 2026-10-02T00:34:24Z, not merged, not on RC2 peel 724c5fff) deletes the covenants' SIGHASH_ALL-only check require(byte[1](sig.slice(64, 65)) == byte[1](0x01)). The signer may pick any of the six consensus sighash types; the reference signer still defaults to ALL. Renames template kaspa-x402-escrow-v4 to kaspa-x402-escrow-v5 and kaspa-x402-hash-chain-head-v1 to kaspa-x402-hash-chain-head-v2; escrow source SHA-256 9f25f3f7 replaces 065dff5d. Desk git grep of public STP-KAS x402 repos on 2 Oct: x402-vs-grok 405e643f, grok-heavy-test e2a02e21, three-x-reviews 985de50f and x402-ishum 8a1dc4c0 name template kaspa-x402-escrow-v4. x402-vs-grok and grok-heavy-test also pin the v4 source SHA-256 065dff5d and say a top-up needs SIGHASH_ALL from both parties. grok-heavy-test patches/windows-clone-and-test.patch targets the v4 paths and constants and would not apply on #22. Fork STP-KAS/kaspa-x402 168973e5 (22 Sep) carries the v4 rule in contracts/kaspa-x402-escrow-v4.sil L50, L104, L106, L139. These write-ups describe rc.1 and stay true for the RC2 tag; if #22 merges they describe the old template. No STP-KAS repo hard-codes kaspa-x402-hash-chain-head-v1. Nothing changed in those repos."
+        },
+        {
           "name": "x402 bind the tag",
           "url": "https://github.com/elldeeone/kaspa-x402/releases/tag/v1.0.0-rc.2",
           "chip": "tn10",

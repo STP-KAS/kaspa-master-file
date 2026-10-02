@@ -147,3 +147,14 @@ R15. HELD. The merge question from the first pass is settled. The branch fast-fo
 ### Out of branch (main `775ed10`, not counted)
 
 - Main commit `775ed10` ("This desk: four more private repos stay off the board") added no SNAPSHOT row, which PROCESS asks for on every pass.
+
+## Recheck @ 9f5d3ca (2 Oct 2026 08:50 CEST)
+
+Reviewed tip `9f5d3ca2f5c41b480e47ffb5c60a9adb8209966d`, two commits on top of `cfe752f` (`b8f2a8f`, `9f5d3ca`), both with the noreply identity only. The diff touches AGENTS.md L18 and L19 plus one SNAPSHOT-HISTORY row. main `775ed10` is still an ancestor. master.json is unchanged.
+
+- HELD R12 (miners): AGENTS.md L19 @ b8f2a8f, "Six running again since 2 Oct 08:43:40 CEST (storm over, HALT removed, normal priority)". `ps` at 08:49 shows six `kaspa-miner` processes, nice 0, all started Fri Oct 2 08:43:39 2026, and `/tmp/pool-miners.HALT` is absent. The desk handoff log, 2 Oct 08:43 entry, says "08:43:40 HALT removed, supervisor relaunched at normal priority … 6 miners mining (blocks accepted via submit at 08:44)". The halt history is kept after it.
+- HELD R12 (storm): AGENTS.md L18 @ b8f2a8f, "A 24 h TPS storm by tn ops2 ran from 1 Oct 20:35 to 2 Oct 08:43 CEST (stp ended it)". The handoff log says "stp ended the storm 08:43". The 20:35 start is attributed to TN10 ops, as before.
+- HELD (utxoindex timing): "back from 2 Oct 00:13" matches the handoff log, "00:13:53 n0 restarted WITH --utxoindex … synced 00:33:39".
+- HELD (SNAPSHOT): the 08:49 row is at the top, above 08:43.
+
+Totals at 9f5d3ca: HELD 49 · FAILED 0 · UNVERIFIABLE 3 (the X-only lines). No open FAILED. It can merge with stp's OK. No X calls. No public reply.

@@ -23,9 +23,9 @@ Keep the master current with the kaspa master bot. Checkout for Build: `/workspa
 ## Tasks
 1. **Verify** every item in the report against live sources. Flag wrong or stale lines.
 2. **Priority — unblock Last Call on main:** `build/2026-10-01` @ `fde0918` has a challenge pass with **8 FAILED** (`challenges/sweep-2026-10-01-challenge.md`). Either fix those on a rebase onto current main, or re-apply the held Last Call / index Final / OpenMiner / DOTK release / KRC-20 / Kastle facts cleanly on **`build/2026-10-02`**, and correct the FAILED themes (Kaspire wording, kaspium `7af4704d`, Python-SDK/KCC-3 Draft→Last Call wording, kccs catalog row, referee lag again, SNAPSHOT time/coverage). Then ask kaspa master challenge for a re-pass. Do not ask stp for a main merge until FAILED = 0.
-3. **x402 #22 (`06532aad`):** confirm scope (sighash types, fixture renames). Does any STP-KAS path assume SIGHASH_ALL-only? Keep RC2 peel `724c5fff` as the bind unless you prove otherwise.
+3. **x402 #22 (`06532aad`):** confirm scope (sighash types, new escrow-v5 / hash-chain-head-v2 templates). Does any STP-KAS path assume SIGHASH_ALL-only? Keep RC2 peel `724c5fff` as the bind unless you prove otherwise.
 4. **DOTK indexer:** is anything public beyond `dotk-core` + OpenAPI inside `dotk-sdk` (`c9194976` tip)? `supertypo/dotk` was still 404 on this sweep.
-5. **crates.io:** confirm `kaspa-*` still not at 2.1.0 (sweep saw `kaspa-consensus` 0.15.0). silverscript#256 / argent#64 stay blocked until then.
+5. **crates.io:** confirm `kaspa-*` still not at 2.1.0 (sweep saw `kaspa-consensus` 0.15.0). That is one fact (Sutton waits for that publish). Separate cause: silverscript pins rusty-kaspa at git `rev = a41a333b`, and silverscript#256 / argent#64 need source changes to build against v2.1.0 (`EngineFlags.covenants_enabled`, `deserialize_i64` arity, `block_mass_limits`). A crates.io publish alone does not fix them.
 6. **api-tn10:** recheck health; note multi-backend (2.0.1 vs 2.1.0). Policy: api-tn10 is never proof — check a synced node.
 7. **Desk count:** confirm 95 / 85 public / 10 private if you touch the This desk cell.
 8. **What to build or test next** (TN10 only, no public posting): short ordered list.
@@ -43,7 +43,7 @@ Branch: `master/sweep-2026-10-02` (never main). Zero public actions. X skipped (
 
 | Item | Source | Where |
 | --- | --- | --- |
-| x402 **#22** open head [`06532aad`](https://github.com/elldeeone/kaspa-x402/commit/06532aad) (updated 2 Oct 02:34Z): allow signer-chosen sighash types in covenants; drop SIGHASH_ALL-only; reference signing still defaults to SIGHASH_ALL. Renames escrow fixture→v5 and hash-chain head→v2 on the PR branch. Not merged. Not on RC2 tag `724c5fff`. | https://github.com/elldeeone/kaspa-x402/pull/22 | x402 |
+| x402 **#22** open head [`06532aad`](https://github.com/elldeeone/kaspa-x402/commit/06532aad) (updated 2 Oct 00:34Z, 02:34 CEST): allow signer-chosen sighash types in covenants; drop SIGHASH_ALL-only; reference signing still defaults to SIGHASH_ALL. New templates escrow-v5 and hash-chain-head-v2: new template IDs and compiled scripts, no in-place upgrade for existing heads/channels; funded TN10 proof still pending. Not merged. Not on RC2 tag `724c5fff`. | https://github.com/elldeeone/kaspa-x402/pull/22 | x402 |
 | STP-KAS org **95** repos (85 public + 10 private), live `gh repo list` 2 Oct | GitHub API | This desk / STP-KAS org |
 | api-tn10 recheck ~07:42: still 200 / `MISS` / `acceptedTxBlockTimeDiff` 2 / DB synced; this read showed kaspad **2.0.1** (p2pId `965d43fe…`) — multi-backend still present | https://api-tn10.kaspa.org/info/health | TN10 public API |
 
@@ -52,15 +52,15 @@ Branch: `master/sweep-2026-10-02` (never main). Zero public actions. X skipped (
 `build/2026-10-01` @ `fde0918` already carries (challenge pass has **8 FAILED**, so it must not merge yet):
 
 - KCC-1 / KCC-2 **Last Call** via kccs #32 `815ecaff` / #33 `ad1b8996` (Sutton APPROVED + merged); index Final via #34 `411b41bc`
-- Argent `b312deda`, DOTK v2.1.0 GitHub releases + OpenAPI `8035e36a`, OpenMiner `ca5cee59`, KRC-20/ZealousSwap indexer note, Kastle KCC-20 branch notes
+- DOTK v2.1.0 GitHub releases + OpenAPI `8035e36a`, OpenMiner `ca5cee59`, KRC-20/ZealousSwap indexer note, Kastle KCC-20 branch notes
 
-Live kccs main confirms Last Call headers; **public main README still says Draft** for KCC-1/2 and that the index says Draft. Fix stays with Build after the 8 FAILED items are closed. Challenge file: `challenges/sweep-2026-10-01-challenge.md` on `challenge/sweep-2026-10-01`.
+Live kccs main confirms Last Call headers; **public main README still says Draft** for KCC-1/2 and that the index says Draft. Update: `master/sweep-2026-10-02` now carries the KCC-1/2 Last Call and index Final fix (checked against kccs main `411b41bc`), so Build does not need to redo it. Argent `b312deda` is already on main. Challenge file: `challenges/sweep-2026-10-01-challenge.md` on `challenge/sweep-2026-10-01`.
 
 ## Per source
 
 - **X credits.** Start **$6.48**, after **$6.48**. Spent **$0.00**. **Hard stop:** balance already below $8.00, so every billed X call was skipped (core / community / deshe / KaspaScopio / core_replies). Free grant expires 24 Oct 19:32 CEST. Credits fell from ~$9.00 (29 Sep after) to $6.48 without a completed 1 Oct watch run — cause unknown (other bots, failed run, or late billing).
 - **X core / community / deshe / KaspaScopio / core_replies:** not run.
-- **GitHub:** key repos since `2026-09-29T13:31:13Z`. kccs: #32/#33/#34 merged (Sutton approvals); #31 still `dirty` at `cfb74cfa`; #26 head `d51721ad` blocked (Manyfestation 30 Sep I-JSON / KIP-24 comment). vprogs / silverscript / rusty-kaspa: no PR updates in window; heads hold (`f9b84a86` / `fbd677c2` / `3ed97333` / `01b532e8`). x402: #18–#21 merged; #22 open; tag v1.0.0-rc.2 peels to `724c5fff`. dotk-sdk tip `c9194976` (OpenAPI description); dotk-core tip `5a0e6ae1` (pre-flight VM etc.); `supertypo/dotk` still 404 — no public indexer repo. crates.io `kaspa-consensus` still **0.15.0** (silverscript#256 still waiting). openminer-reference `ca5cee59` (already on build/). KaChat tip `4e8cd48e` (.kachat names indexer handoff; private `KaspaSilver/kachat-domains`) — catalog only, not pinned.
+- **GitHub:** key repos since `2026-09-29T13:31:13Z`. kccs: #32/#33/#34 merged (Sutton approvals); #31 still `dirty` at `cfb74cfa`; #26 head `d51721ad` blocked (Manyfestation 30 Sep I-JSON / KIP-24 comment). vprogs / silverscript / rusty-kaspa: no PR updates in window; heads hold (`f9b84a86` / `fbd677c2` / `3ed97333` / `01b532e8`). x402: #18–#21 merged; #22 open; tag v1.0.0-rc.2 peels to `724c5fff`. dotk-sdk tip `c9194976` (OpenAPI description); dotk-core tip `5a0e6ae1` (pre-flight VM etc.); `supertypo/dotk` still 404 — no public indexer repo. crates.io `kaspa-consensus` still **0.15.0** (separate fact). silverscript#256 / argent#64 stay open until their code is fixed for v2.1.0. openminer-reference `ca5cee59` (already on build/). KaChat tip `4e8cd48e` (.kachat names indexer handoff; private `KaspaSilver/kachat-domains`) — catalog only, not pinned.
 - **Kas-Smiths:** still 47 topics / 377 posts / 112 users; latest post 401. **research.kas.pa:** newest still topic 522 (8 Sep).
 - **Cited sites:** all 200 (kaspa.org, kaspaexplained.com/status, kaspa.news, kns-2.gitbook.io, kaspa-x402.org, api.kaspa.org, vprogs-tt.izio.fr, silverscriptstudio.com, docs.kaspa.org/programmability/full-vprogs).
 - **kaspaexplained /status:** still stale vs live kccs (calls KCC-1/2 Draft and index Draft) — same FAILED theme as challenge item 41 on build/2026-10-01.
@@ -78,7 +78,7 @@ Live kccs main confirms Last Call headers; **public main README still says Draft
 2. Verify x402 #22 `06532aad`: does it change RC2 bind guidance? Any sixpack / desk signing path that assumed SIGHASH_ALL-only?
 3. Is a public DOTK indexer repo out yet, or only `dotk-core` + OpenAPI inside `dotk-sdk`?
 4. api-tn10 still flips between kaspad 2.0.1 and 2.1.0 — does the indexer follow a stale backend under load?
-5. crates.io still 0.15.0 — silverscript#256 / argent#64 still blocked.
+5. crates.io still 0.15.0 (separate fact). silverscript#256 / argent#64 stay open until their code is fixed for v2.1.0; silverscript pins rusty-kaspa at git `rev = a41a333b`.
 
 ## Flags for stp / parent
 

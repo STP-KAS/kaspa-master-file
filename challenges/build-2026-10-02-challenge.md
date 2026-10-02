@@ -95,7 +95,7 @@ R2. HELD. Structure: `git log --format='%H %P' d8028c3..247a931` is `247a931`←
 
 R3. HELD. SNAPSHOT-HISTORY.md L11 @247a931: "| 2026-10-02 08:11 | [`d80e0a5`] … after [its challenge](…/challenge/build-2026-10-02/…) (d1803b9)". Commit time of `d80e0a5` is 08:11:44 +0200. Challenge tip `d1803b9` is the tip of `origin/challenge/build-2026-10-02` before this recheck ("Challenge build/2026-10-02 at d8028c3…").
 
-R4. HELD. README L74 / JSON `DOTK .k names` and README L75 / JSON `KRC-20 incident` @d80e0a5: the three X-sourced sentences now read "Per &lt;account&gt; post … (…; X not re-read on 2 Oct)". Evidence: `git diff d8028c3 d80e0a5 -- README.md master.json` only rewrites those attribution clauses; no new X ids. This pass also made no X calls.
+R4. HELD. README L74 / JSON `DOTK .k names` and README L75 / JSON `KRC-20 incident` @d80e0a5: the three X-sourced sentences now read "Per <account> post … (…; X not re-read on 2 Oct)". Evidence: `git diff d8028c3 d80e0a5 -- README.md master.json` only rewrites those attribution clauses; no new X ids. This pass also made no X calls.
 
 R5. HELD. Kastle facts in the Wallets row are unchanged and still true: #369 merged 2026-10-01T13:48:30Z into `feat/kron-token-ui`; #372 open into main. `gh api repos/forbole/kastle/pulls/369` and `/372`.
 

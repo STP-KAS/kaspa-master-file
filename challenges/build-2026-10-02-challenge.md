@@ -75,3 +75,46 @@
 ## Out of branch (main `364b26b`, not counted)
 
 - SNAPSHOT-HISTORY.md on main, and on both 2 Oct branches, still names the private repo from item 22 17 times. This branch only unlinks the two Now cells.
+
+## Recheck @ 247a931 (2 Oct 2026, 08:31 CEST)
+
+- Tip SHA reviewed: `247a931a692e9cee4339392aff3e6ceb8af3053c` ("Link the 2 Oct challenge fixes to d80e0a5. Branch only. No public reply.", 2026-10-02 08:11:49 +0200).
+- Content head: `d80e0a53b8c412b0b2ace621c7cee9bb3be226f8` (08:11:44 +0200). Parent of tip is that commit; parent of content head is `d8028c3` (the tip of the first pass).
+- Diff read: `git diff d8028c3 247a931` (AGENTS.md, README.md, SNAPSHOT-HISTORY.md, master.json). Reads ran 08:27 to 08:31 CEST. All read-only: `gh api` GETs, local `git`/`ps`/`pgrep`, clone of public STP-KAS repos not used here. **No X tool was called.** Nothing was merged. Nothing was pushed except this challenge branch update.
+
+**Recheck lines: HELD 12 · FAILED 0 · UNVERIFIABLE 3**
+**Updated totals @247a931: prior item 16 is fixed (now HELD). No open FAILED items introduced by `d80e0a5`/`247a931`. Prior items 1–15 and 17–28 from the first pass are not re-scored. Merge still waits on conflict resolution with `master/sweep-2026-10-02` (sweep first).**
+
+### Earlier FAILED
+
+R1. HELD (fixes item 16). README L76 / JSON `Wallets and KCC-20` @d80e0a5: keeps the 27 Sep kaspirewallet post (X not re-read), and adds that Kaspire README L47 lists TN10 among extension networks (also at `77d906f2`, 28 Sep 13:57Z) and that release v0.11.46 (1 Oct 12:50Z) ships Extension 0.5.5 with typed KCC20/KRON flows; KaspaRocket in the extension and Chrome Web Store serving 0.5.5 are not verified; no mainnet KCC-20 swap claimed. Evidence: [KaspaHUB21/Kaspire-Kaspa-Wallet README](https://github.com/KaspaHUB21/Kaspire-Kaspa-Wallet/blob/505d70611fc6cbd264d5d1dc299988de928941ad/README.md#L47) L47 is `Extension networks: **Kaspa Layer 1 (Mainnet), TN10, Kasplex L2 and Igra L2**` at tip `505d7061` (2026-10-01T12:49:50Z). Same Extension-networks line at `77d906f2` (2026-09-28T13:57Z; then Extension package 0.5.1). Release [v0.11.46](https://github.com/KaspaHUB21/Kaspire-Kaspa-Wallet/releases/tag/v0.11.46) published 2026-10-01T12:50:54Z, name "Kaspire Android 0.11.46 and Extension 0.5.5", body "Preserve strict typed validation for known KCC20, KRON and Kaspire covenant flows" and "Browser extension version 0.5.5". JSON note matches.
+
+### New claims on this tip
+
+R2. HELD. Structure: `git log --format='%H %P' d8028c3..247a931` is `247a931`←`d80e0a5`←`d8028c3`. `git show --stat 247a931` changes only SNAPSHOT-HISTORY.md (+1, the link row). Both commits are STP-KAS noreply. `git merge-base --is-ancestor origin/main 247a931` exits 0 (still fast-forward onto main `364b26b`).
+
+R3. HELD. SNAPSHOT-HISTORY.md L11 @247a931: "| 2026-10-02 08:11 | [`d80e0a5`] … after [its challenge](…/challenge/build-2026-10-02/…) (d1803b9)". Commit time of `d80e0a5` is 08:11:44 +0200. Challenge tip `d1803b9` is the tip of `origin/challenge/build-2026-10-02` before this recheck ("Challenge build/2026-10-02 at d8028c3…").
+
+R4. HELD. README L74 / JSON `DOTK .k names` and README L75 / JSON `KRC-20 incident` @d80e0a5: the three X-sourced sentences now read "Per &lt;account&gt; post … (…; X not re-read on 2 Oct)". Evidence: `git diff d8028c3 d80e0a5 -- README.md master.json` only rewrites those attribution clauses; no new X ids. This pass also made no X calls.
+
+R5. HELD. Kastle facts in the Wallets row are unchanged and still true: #369 merged 2026-10-01T13:48:30Z into `feat/kron-token-ui`; #372 open into main. `gh api repos/forbole/kastle/pulls/369` and `/372`.
+
+R6. HELD. AGENTS.md L18 @d80e0a5 still says the current process started 2 Oct 00:56 CEST, with `--utxoindex` and no `--enable-unsynced-mining`. Evidence at 08:28 CEST: `ps -eo pid,lstart,args` shows kaspad pid 2570127 started "Fri Oct 2 00:56:04 2026", args include `--utxoindex` and omit `--enable-unsynced-mining`, binary path under `/workspace/artifacts/kaspa-tn10/bin/kaspad`.
+
+R7. HELD. AGENTS.md L19 @d80e0a5: "**None running at 2 Oct 2026 07:52 CEST** (no `kaspa-miner` process …)". At 08:30 CEST `pgrep -c kaspa-miner` is 0 and `ps` shows no `kaspa-miner` process.
+
+R8. UNVERIFIABLE. AGENTS.md L18 @d80e0a5: "Per TN10 ops: on 2 Oct n0 was OOM-killed at 00:50 CEST (kaspad about 9.4 GB RSS) by large `getUtxosByAddresses` RPC reads of the mining address … `--utxoindex` had been off from 1 Oct 18:39 for the storm and was back from 2 Oct 00:13 … a 24 h TPS storm run by tn ops2 has been running since Thu 1 Oct 20:35 CEST." Attribution is honest. This desk has no independent primary source for the OOM cause, RSS figure, utxoindex off-window, or storm start. wRPC JSON on 127.0.0.1:18210 returned empty reply at 08:30 CEST (node not probed further; do not touch the running node). Only the 00:56 restart is independently held (R6).
+
+R9. UNVERIFIABLE. AGENTS.md L19 @d80e0a5: "Halted on purpose: stp had the box miners cut at 01:31 CEST on 2 Oct (HALT file set 01:32)." No public artifact. The only halt-named file found under `/workspace/artifacts/kaspa-tn10/` is `keepalive-farm.sh.HALTED-by-relqunch`, mtime 2026-09-29 20:12:54 CEST, which does not match 2 Oct 01:32.
+
+R10. UNVERIFIABLE. AGENTS.md L19 @d80e0a5: "Per the desk's TN10 handoff log (box-local, not public), six were running at 30 Sep 16:47 CEST, were halted 1 Oct 18:38 for the storm, and were un-halted at low priority 1 Oct 20:57 at tn ops2's request." The wording correctly marks the log as non-public. This desk did not read that log. Replaces prior item 25's bare "Six were running on 30 Sep 16:49 CEST" with an attributed, still unverifiable source (and 16:47 vs the old 16:49).
+
+R11. HELD. master.json @247a931 is valid JSON (`python3 -m json.tool`). The three notes touched by `d80e0a5` (DOTK, KRC-20, Wallets) match the README wording above.
+
+R12. HELD. Leak scan of `+` lines in `git diff d8028c3 247a931`: no home-directory or Windows user paths, no emails, no keys, seeds or new addresses. No private repo name was added. Pay-to mining address is unchanged from main.
+
+R13. HELD. Merge vs main still fast-forwards. Against `master/sweep-2026-10-02` @`775ed10`: `git merge-tree --write-tree --name-only` still conflicts in README.md, SNAPSHOT-HISTORY.md and master.json (same three files as against `f82e7a8`). Recommended order unchanged: **sweep first (now with no open FAILED at 775ed10), then rebase build, resolve, re-pass.** Item 16 no longer blocks the build tip.
+
+### Out of branch (not counted)
+
+- README Argent row @247a931 still ends "and KCC-1 is still Draft" (text left to the watch sweep by `0653b98`). False since kccs #32; fixed on `master/sweep-2026-10-02`.

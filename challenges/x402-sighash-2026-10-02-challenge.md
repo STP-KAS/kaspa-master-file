@@ -52,3 +52,49 @@ A branch with an open FAILED item does not merge (PROCESS.md). Neither FAILED is
 ## Does this overlap the sweep's x402#22 sentence?
 
 - Yes in topic. Sweep `master/sweep-2026-10-02` already rewrites the existing `x402 bind the tag` / x402 cell with #22 sighash + new-template wording (fixed at f82e7a8 / held at 775ed10). This branch adds a **separate** Now row focused on desk-repo impact. On merge, keep one board voice: either keep this row and shorten the sweep's #22 clause, or drop this row and move the desk-repo grep into the sweep cell / SNAPSHOT.
+
+## Recheck @ c71ce8229dd96e5df3125e7b8f007485f4fed6ac
+
+- Branch reviewed: `build/x402-sighash-2026-10-02` (owner: kaspa master prompt build)
+- Tip SHA reviewed (full): `c71ce8229dd96e5df3125e7b8f007485f4fed6ac` ("Merge main 775ed10 into build/x402-sighash-2026-10-02…", 2026-10-02 08:44:13 +0200)
+- Parents: `9328c53f24453631616f274fdd6b8c8c549abbde` + `775ed1046b7e0afd44134b235c531560b7f5cebc`
+- Merge-base with the tip's second parent: `775ed10`. Net content vs that base: `git diff 775ed10..c71ce82` = README.md +1 Now row, SNAPSHOT-HISTORY.md +2 rows, master.json +1 row.
+- Prior tip reviewed: `9328c53` (HELD 14 · FAILED 2 · UNVERIFIABLE 0). This pass checks whether prior FAILED items 6 and 10 are closed, and re-checks the desk row against primary sources.
+- Primary sources (read-only, ~17:33–17:35 CEST): `gh api` on elldeeone/kaspa-x402 #22 and fixture JSON at head `06532aad` / RC2 peel `724c5fff`; shallow clones of public STP-KAS `x402-vs-grok`, `grok-heavy-test`, `three-x-reviews`, `x402-ishum`, `kaspa-x402`. **No X tool was called.** No TN10 node/miners/stress. Nothing merged. Push only this challenge branch.
+
+**Counts: HELD 15 · FAILED 0 · UNVERIFIABLE 0**
+
+**Prior FAILED 6: CLOSED. Prior FAILED 10: CLOSED.** No open FAILED. Neither prior FAILED was a leak; no new leak. Content is clear of open FAILED. Separately, `origin/main` has moved to `9f5d3ca` (10 commits ahead of `775ed10`); `git merge-tree` of tip into current main conflicts in README.md, SNAPSHOT-HISTORY.md, and master.json — the content branch needs a further merge of main before it is mergeable. That is branch mechanics, not a content FAILED.
+
+### Branch mechanics
+
+1. HELD. Tip `c71ce82` parents are `9328c53` and `775ed10`. Commit identity STP-KAS noreply. Message matches the claimed fix (desk row points to the x402 row; x402-ishum quoted as `escrow-v4`).
+2. HELD. master.json @c71ce82 is valid JSON. `git diff --numstat 775ed10 c71ce82 -- master.json` is 6/0 (one new row).
+3. HELD. SNAPSHOT-HISTORY.md L11 @c71ce82: "| 2026-10-02 08:44 | (this commit) |". Commit time is 08:44:13 +0200. Row correctly names merge of main `775ed10`, prior challenge file, and the two wording fixes. No X coverage claimed.
+
+### Prior FAILED 6 (understated #22 as rename) — CLOSED
+
+4. HELD (closes prior FAILED 6). README L71 / JSON `x402 #22 and desk repos` @c71ce82 no longer restates #22 as a rename. Quote: "What open [#22] (head [`06532aad`]; new templates and the rest are in the x402 row)". JSON points to "the x402 bind the tag row" (same cell as README's `x402` row).
+5. HELD (pointer target). On this tip, README L76 `x402` (inherited from `775ed10`, still present on `origin/main` L78) says: "It adds new templates, escrow-v5 and hash-chain-head-v2: template IDs and compiled scripts change, and existing heads and channels cannot upgrade in place … funded Testnet-10 proof against the final reviewed commit is still pending". master.json `x402 bind the tag` note contains the same escrow-v5 / hash-chain-head-v2 / cannot upgrade in place / pending sentences. Matches PR #22 body Compatibility + Validation ("That proof is pending…").
+
+### Prior FAILED 10 (x402-ishum full template id) — CLOSED
+
+6. HELD (closes prior FAILED 10). README L71 / JSON note @c71ce82: "x402-vs-grok … grok-heavy-test … and three-x-reviews … name template `kaspa-x402-escrow-v4`. [x402-ishum] … only says `escrow-v4` (short form) in its comparison table." Evidence: shallow tip `8a1dc4c0d876…`; README L56 `| Covenant | none | escrow-v4 on batch |`; `rg kaspa-x402-escrow-v4` over that tip returns 0 hits.
+
+### elldeeone/kaspa-x402 #22 and desk repos (re-verify)
+
+7. HELD. #22 still open, not merged, head `06532aada4506b60668b84127047b88bc9ad4fb6`, `updated_at` 2026-10-02T00:34:24Z (`gh api repos/elldeeone/kaspa-x402/pulls/22`). Contracts on that head include `kaspa-x402-escrow-v5.sil` and `kaspa-x402-hash-chain-head-v2.sil`. Fixture `contracts/fixtures/kaspa-x402-escrow-v5.json` `sourceSha256` = `9f25f3f788ffb3da…`; RC2 peel fixture v4 = `065dff5d0d02f3a0…` (matches the desk row's short pins).
+8. HELD. Desk tip SHAs: x402-vs-grok `405e643fab49…`, grok-heavy-test `e2a02e2111a7…`, three-x-reviews `985de50f5ff3…`, x402-ishum `8a1dc4c0d876…`, fork STP-KAS/kaspa-x402 `168973e55bf7…` (22 Sep). Match the row prefixes.
+9. HELD. Three repos name full template `kaspa-x402-escrow-v4` (x402-vs-grok README/docs; grok-heavy-test README/docs; three-x-reviews `02-kaspa-x402.md` L43, L93).
+10. HELD. x402-vs-grok and grok-heavy-test pin v4 source SHA-256 `065dff5d…` and say top-up needs SIGHASH_ALL from both parties (x402-vs-grok README L44 / GROK-ANALYSE L46; grok-heavy-test README L116 / `01-kaspa-x402.md` L161).
+11. HELD. grok-heavy-test `patches/windows-clone-and-test.patch` L103/L105/L129 still target v4 paths and `templateId: "kaspa-x402-escrow-v4"`.
+12. HELD. Fork `168973e5` `contracts/kaspa-x402-escrow-v4.sil` L50, L104, L106, L139 are the `require(byte[1](…Sig.slice(64, 65)) == byte[1](0x01))` SIGHASH_ALL checks.
+13. HELD. `rg kaspa-x402-hash-chain-head-v1` over the five cloned tips returns 0 hits. This tip's diff touches only kaspa-master-file files ("Nothing was changed in those repos").
+
+### Leak scan
+
+14. HELD. `+` lines in `git diff 775ed10..c71ce82`: no real names, emails, home paths, seeds, keys, reserve addresses, or private repo names. stp first name in Windows paths: none present.
+
+### Mergeability vs current origin/main
+
+15. HELD as a mechanics fact (not a content FAILED). Tip is **not** an ancestor of / does not contain `origin/main` `9f5d3ca2f5c41b480e47ffb5c60a9adb8209966d` (`merge-base --is-ancestor origin/main c71ce82` exits 1; ahead/behind main...tip = 10 2). `git merge-tree` against current main reports conflicts in README.md, SNAPSHOT-HISTORY.md, and master.json. Owner must merge current main into `build/x402-sighash-2026-10-02` (or rebase carefully without force-push of rewritten public history) before kaspa master bot can merge. The #22 desk-repo wording itself held on this tip.

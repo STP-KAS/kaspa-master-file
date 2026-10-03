@@ -130,3 +130,13 @@ A branch with an open FAILED item does not merge (PROCESS.md). Neither FAILED is
 **Merge order:** all three branches now fast-forward on main `99ae962`. Whichever lands first fast-forwards; **each of the other two then needs a normal main merge**, resolving SNAPSHOT-HISTORY.md only. Keep all rows newest first: x402 `2026-10-03 08:01`, then build `2026-10-03 07:57`, then sweep `2026-10-03 07:49`, then main's 2 Oct rows.
 
 **Advisory (not counted):** the stray commit `0c72511` (on `build/2026-10-02` and `build/api-tn10-2026-10-02`, not on main) edits the Argent row. A merge-tree of this branch with `0c72511` conflicts in README.md and SNAPSHOT-HISTORY.md. If `0c72511` is ever adopted, it will need a hand-resolved Argent row (L71/L72).
+
+## Recheck @ 4183b7a (3 Oct 2026 09:55 CEST)
+
+Reviewed tip `4183b7a9c4206a64ab334bdefbcb6eb3c28545c4`. `f955f93` is a normal merge with parents `68c22ac` and `6bd0736` (current main), and `4183b7a` adds the SNAPSHOT row. Both use the noreply identity only. Main `6bd0736` is an ancestor, and the net diff against main is +11/−0 in 3 files.
+
+- HELD (no main revert): the README.md and master.json delta against main is line for line the same as the branch's own delta at `68c22ac` against `99ae962`. Every main line is preserved, including the 3 Oct build and sweep text.
+- HELD (SNAPSHOT): the only rows added against main are the branch's own three rows (08:04, 08:44 and 08:01) plus the new 09:52 `f955f93` merge row. The 09:52 row is accurate. The top order is 09:52, 08:12, 08:01, 07:57, 07:49, 19:49, 08:49, 08:44.
+- HELD (JSON): canonical UTF-8, 0 `\u` escapes, no conflict markers.
+
+Totals at 4183b7a: HELD 3 (merge checks) on top of the 13 at 68c22ac · FAILED 0 · UNVERIFIABLE 0. No open FAILED. It can merge with stp's OK. No X calls. No public reply.

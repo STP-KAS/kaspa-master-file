@@ -198,3 +198,14 @@ Each line below is at commit `74b1c60`.
 - **R-A2 (formatting, new):** J L117 has "…/vprog-tictactoe/commit/533e8a55 Prior note (29 Sep read, kept from 99ae962): …", a bare URL joined to the next sentence with no period. Fix: "…/commit/533e8a55. Prior note (29 Sep read, kept from 99ae962): …".
 - **R-A3 (api-tn10 wording, optional):** at 08:01 CEST the pool also served kaspad 2.0.1. "the pool also served 2.1.0" is still true; "the pool also served 2.1.0 and 2.0.1" would be fuller.
 - Advisory items A1–A4 from the first pass (the KCC-0 Last Call precedent, KCC-2 KR-04, LC-7, covenant F2), A8 (main's #991 DAGKnight row) and A9 (older SNAPSHOT order on main) are unchanged and remain advisory. A5 (api-tn10 wording) and A7 (bare-URL periods) are applied.
+
+## Recheck @ 6bd0736 (3 Oct 2026 09:53 CEST)
+
+Reviewed tip `6bd0736ce147da8d0ee8b8cad09e182e7ffd8353`. It is a normal merge commit with parents `74b1c60` and `54fbedf` (the new main), and its identity is the noreply only. origin/main `54fbedf` is an ancestor, so the branch fast-forwards.
+
+- HELD (no main revert): `git diff 54fbedf 6bd0736` for README.md, master.json, AGENTS.md and prompts/ gives exactly the same +/- lines as the sweep's own `git diff 99ae962 74b1c60`. The only exception is master.json `"updated": "2026-10-03"`, which main already carries from build/2026-10-03. Every main line is preserved, including build/2026-10-03's #991, research.kas.pa, KaChat and api-tn10 text.
+- HELD (SNAPSHOT): the only row added against main is the sweep's 07:49 `57cde32` row, byte-identical to the one at `74b1c60`. The order is 08:12, 07:57, 07:49, then the 2 Oct rows.
+- HELD (JSON): canonical `json.dumps(ensure_ascii=False, indent=2)` form, 0 `\u` escapes, no conflict markers in the tree.
+- Advisory items carried to the 4 Oct sweep at the owner's request: J L117 period, 2.0.1 on the api-tn10 line, item 13 (stp's call).
+
+Totals at 6bd0736: HELD 3 (merge checks) on top of the 15 at 74b1c60 · FAILED 0 · UNVERIFIABLE 0. No open FAILED. It can merge with stp's OK. No X calls. No public reply.

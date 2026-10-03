@@ -98,3 +98,35 @@ A branch with an open FAILED item does not merge (PROCESS.md). Neither FAILED is
 ### Mergeability vs current origin/main
 
 15. HELD as a mechanics fact (not a content FAILED). Tip is **not** an ancestor of / does not contain `origin/main` `9f5d3ca2f5c41b480e47ffb5c60a9adb8209966d` (`merge-base --is-ancestor origin/main c71ce82` exits 1; ahead/behind main...tip = 10 2). `git merge-tree` against current main reports conflicts in README.md, SNAPSHOT-HISTORY.md, and master.json. Owner must merge current main into `build/x402-sighash-2026-10-02` (or rebase carefully without force-push of rewritten public history) before kaspa master bot can merge. The #22 desk-repo wording itself held on this tip.
+
+## Recheck @ 68c22ac
+
+- **Reviewed tip:** `68c22acd0cb077c9489d245e99151825e7bfb51e` ("Merge main 99ae962 into build/x402-sighash-2026-10-02. No row text changed…", 3 Oct 08:01:28 CEST). The author and committer are the STP-KAS noreply.
+- **Held content:** `c71ce82` (rechecked at `cea4b1c`: HELD 15 · FAILED 0).
+- **Main:** `99ae9620dd580ff0630cd720f83a0e78de616f4e`, unchanged after `git fetch --prune` at about 08:10 CEST.
+- **Totals: 13 HELD · 0 FAILED · 0 UNVERIFIABLE.** No open FAILED items. The only open item is merge order; see 12–13 and the note under them.
+
+1. **HELD: normal merge.** `68c22ac` has two parents: `c71ce8229dd9…` (first) and `99ae962` (second). There was no force-push: the earlier tip `c71ce82` is an ancestor of the new tip.
+2. **HELD: main is an ancestor.** `merge-base --is-ancestor origin/main 68c22ac` succeeds, so the branch now fast-forwards on main as it stands.
+3. **HELD: "against main the diff is +10 lines in 3 files".** `git diff --numstat 99ae962 68c22ac` gives README.md +1/−0, SNAPSHOT-HISTORY.md +3/−0 and master.json +6/−0.
+4. **HELD: every main line is byte-identical.**
+   - The diff against main has zero `−` lines, so no main line was removed or changed. That includes the 2 Oct rows main changed (dotk-indexer, argent#66).
+   - Main's Argent row moves from README L71 to L72. `diff` of that row (main vs `68c22ac`) prints nothing: byte-identical.
+5. **HELD: README L71 conflict resolution.** The branch's own row "| x402 #22 and desk repos | What open [#22]…" is at L71, directly above main's "| Argent | Master [`b312deda`]…" at L72. Both are kept whole.
+6. **HELD: own content still equals `c71ce82`.**
+   - The added lines between merge-base `775ed10` and `c71ce82` are a subset of the added lines between `99ae962` and `68c22ac`. The README row is identical. All 6 master.json lines (the `x402 #22 and desk repos` object) are identical. The SNAPSHOT 08:04 row (`9328c53`) is identical.
+   - The one exception is the 08:44 row: replacing "(this commit)" with "[`c71ce82`](https://github.com/STP-KAS/kaspa-master-file/commit/c71ce82)" in the `c71ce82` text gives the `68c22ac` row exactly (Python equality True). That matches the owner's "its 08:44 row now linking c71ce82".
+7. **HELD: SNAPSHOT order.** The top rows are L11 2026-10-03 08:01, then L12 2026-10-02 19:49 (main), L13 08:49 (main), L14 08:44 (`c71ce82`), L15 08:43, L16 08:11, L17 08:04 (`9328c53`), L18 08:00. That is newest first.
+8. **HELD: the new row.** L11 reads "| 2026-10-03 08:01 | (this commit) | Merged main `99ae962` into `build/x402-sighash-2026-10-02` (normal merge, no force-push) after kaspa master challenge's recheck at `cea4b1c` (HELD 15, FAILED 0). Kept main's text and this branch's x402 #22 and desk repos row; no row text changed…".
+   - The stamp matches the commit time (08:01:28). The `cea4b1c` totals match this note's "Recheck @ c71ce82" ("HELD 15 · FAILED 0 · UNVERIFIABLE 0").
+9. **HELD: "no row text changed".** Apart from the link swap in item 6 (a SNAPSHOT commit cell, not row text) and the new merge row, no line differs from `c71ce82` or from main.
+10. **HELD: master.json.** The file decodes as UTF-8. `(json.dumps(d, indent=2, ensure_ascii=False)+"\n").encode()` equals the raw bytes exactly. It has 0 `\u` escapes, and `updated` stays "2026-10-02", the same as main; no new facts were added.
+11. **HELD: leaks.** The `+` lines of `99ae962..68c22ac` contain no personal emails, no `/home/` paths, no keys, seeds or addresses, no private stall-repo name and no private desk repo names. The STP-KAS x402 repos named in the row are public (see items 8 and 14 above).
+12. **HELD (mechanics): vs `master/sweep-2026-10-03` @ `74b1c60`.**
+    - `git merge-tree --write-tree` in both orders gives rc=1 with a **conflict in SNAPSHOT-HISTORY.md only**. README.md and master.json auto-merge.
+    - Cause: both branches insert a row at L11.
+13. **HELD (mechanics): vs `build/2026-10-03` @ `8f44d04`.** Both orders give rc=1 with a **conflict in SNAPSHOT-HISTORY.md only**, for the same reason.
+
+**Merge order:** all three branches now fast-forward on main `99ae962`. Whichever lands first fast-forwards; **each of the other two then needs a normal main merge**, resolving SNAPSHOT-HISTORY.md only. Keep all rows newest first: x402 `2026-10-03 08:01`, then build `2026-10-03 07:57`, then sweep `2026-10-03 07:49`, then main's 2 Oct rows.
+
+**Advisory (not counted):** the stray commit `0c72511` (on `build/2026-10-02` and `build/api-tn10-2026-10-02`, not on main) edits the Argent row. A merge-tree of this branch with `0c72511` conflicts in README.md and SNAPSHOT-HISTORY.md. If `0c72511` is ever adopted, it will need a hand-resolved Argent row (L71/L72).

@@ -19,6 +19,18 @@ The file follows four rules:
 - DAGKnight (KIP-2, a consensus proposal) is still a proposal.
 - About 100 blocks a second is a later target, not something live.
 
+### The spend
+
+This is the desk's view of the money. The Now board below stays the checkable state.
+
+The best case for crypto is stable money you can spend anywhere. The spend is Kaspa, and Kaspa is volatile, or the spend is a stable. Without that, the coin has no point. Peer to peer is the payment. One person pays another.
+
+Five percent of this portfolio is crypto. A profit stays in crypto, in a stable position, to hold or to spend, rather than cashed out to fiat. The use is to spend it, and to use it, fast, anywhere.
+
+Applications and the other utilities matter as much as the coin, and sometimes more. Kaspa needs both before it leaves the bubble. Proof of stake offers part of that spend. It does not offer what scalable proof of work offers. That is settled.
+
+The same lines are on [sixpack.wtf/rails.html](https://sixpack.wtf/rails.html) and in the 1984 guide. POCencept and KUSDT on that square are village tags. They are not that money.
+
 ### How
 
 Each day the automations sweep every source the file names and check each row against it again. The sources are GitHub, X, and public websites. Every pass leaves a receipt in [`SNAPSHOT-HISTORY.md`](SNAPSHOT-HISTORY.md), even when nothing changed. The **Now** board below is the current state, and [`master.json`](master.json) holds the same board as data.
@@ -30,6 +42,7 @@ This is an experiment, and whether it is useful is open to debate. A row can lag
 ### How to read this file
 
 - [Now (read this first)](#now-read-this-first): the current board.
+- [The spend](#the-spend): the desk's view of the money. Not a row on the Now board.
 - [`master.json`](master.json): the same board as data, in the section `now`.
 - [`SNAPSHOT-HISTORY.md`](SNAPSHOT-HISTORY.md): the dated log of every pass, newest first.
 - [`RECEIPTS.md`](RECEIPTS.md): older README sections (dated receipts and the reference sections 0–10).

@@ -49,7 +49,7 @@ Branch: `master/sweep-2026-10-03` (never main). Zero public actions.
 | kccs draft [#35](https://github.com/kaspanet/kccs/pull/35) [`f352dc9e`](https://github.com/kaspanet/kccs/commit/f352dc9e) Mobile Wallet Session / Pairing (Idea, unnumbered, additive to KCC-12) | GitHub | KCC still open |
 | Kas-Smiths **48 / 378 / 113**; post 402 / [topic 156](https://kas-smiths.org/t/kaspa-privacy-initiative-exploring-optional-privacy-for-native-kas/156) + [olafweller/kaspa-privacy-initiative](https://github.com/olafweller/kaspa-privacy-initiative) | Forum + GitHub | Kas-Smiths |
 | kastle [#372](https://github.com/forbole/kastle/pull/372) head `137a1d4d`; [#357](https://github.com/forbole/kastle/pull/357) closed | GitHub | Wallets and KCC-20 |
-| api-tn10 health ~07:50: 200, `acceptedTxBlockTimeDiff` 2, backend kaspad **2.0.0** (still multi-backend) | https://api-tn10.kaspa.org/info/health | TN10 public API (SNAPSHOT / report; cell not rewritten) |
+| api-tn10 health ~07:50: 200, `acceptedTxBlockTimeDiff` 2, backend kaspad **2.0.0** (still multi-backend; one sample; the pool also served 2.1.0) | https://api-tn10.kaspa.org/info/health | TN10 public API (SNAPSHOT / report; cell not rewritten) |
 
 ## Already on main / other branches — not re-added
 
@@ -66,7 +66,7 @@ Branch: `master/sweep-2026-10-03` (never main). Zero public actions.
 - **X deshe:** 0 results; `since_id` held.
 - **KaspaScopio:** 8 posts. KaChat `.kachat` TN10 registry v1→v2 (see skipped); Kastle KCC-20 / Last Call / OpenMiner / x402 RC2 already known.
 - **core_replies trial:** 20 replies + `next_token` (not paginated). Kept (≥3 likes): mostly cheers; IzioDev plugin replies (already in core); supertypo "contracts public soon" (already in argent#66 SNAPSHOT). **added_to_master: 0.** Approx cost folded into the $0.39 day total. Trial continues through 5 Oct.
-- **GitHub:** vprogs #169/#170 (new drafts); RC head move; tictactoe pin; kccs #35; kastle #372/#357; rusty-kaspa #991 `updated_at` bump / head `03dd516c` (no new review comments since Oct 2 — not pinned). silverscript / argent master / x402 main / OpenMiner / dotk tips hold.
+- **GitHub:** vprogs #169/#170 (new drafts); RC head move; tictactoe pin; kccs #35; kastle #372/#357; rusty-kaspa #991: D-Stacks left six review comments 2 Oct 21:41–21:52Z on `d856169e`; head then moved to `03dd516c` (3 Oct 05:22Z) and `2e05b7cd` (05:49Z) — not pinned. silverscript / argent master / x402 main / OpenMiner / dotk tips hold.
 - **Kas-Smiths:** 48 topics, 378 posts, 113 users; latest post **402**.
 - **research.kas.pa:** newest still topic 522 (8 Sep).
 
@@ -75,7 +75,7 @@ Branch: `master/sweep-2026-10-03` (never main). Zero public actions.
 - KaChat `.kachat` registry v2 on TN10 (many 2 Oct commits on [vsmirn0v/KaChat](https://github.com/vsmirn0v/KaChat) tip `77c2a899`; contracts in private `KaspaSilver/kachat-domains`) — third-party app; catalog for Build, not a Now pin.
 - Kasanova Wallet v0.7.0 — product; not a pin.
 - KasPulse (kascovio) — disclosure that one operator holds all five feed keys; catalog candidate for Build.
-- rusty-kaspa #991 head churn without new review since window — hold.
+- rusty-kaspa #991 review round (six D-Stacks comments 2 Oct 21:41–21:52Z) and head churn to `2e05b7cd` — hold.
 - BankQuote / Recon long-form essays — community, not law.
 - core_replies next_token gap — not paginated (budget).
 

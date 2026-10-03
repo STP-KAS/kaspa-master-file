@@ -162,3 +162,39 @@ Short names: R = README.md, S = SNAPSHOT-HISTORY.md, J = master.json, P = prompt
 - **A8 (stale on main, not this branch):** main's DAGKnight row says #991 head `1f15c618` with CHANGES_REQUESTED. The head is now `2e05b7cd` (3 Oct 05:49Z), after the D-Stacks review round on 2 Oct.
 - **A9 (pre-existing S order on main):** these out-of-order pairs already exist on main: L26/L27 (1 Oct 09:46 above 17:12), L152/L153, L160–L164 and L192/L193 (22 Sep).
 - **A10 (brief vs branch):** the task brief's "drafts #170 and #169 are at b32e92de" is wrong for #170, whose head is `055ae28a`. The branch states it correctly.
+
+## Recheck @ 74b1c60
+
+- **Reviewed tip:** `74b1c600ecef97138281d5d0e9867a92089215a8` ("Fix the 7 FAILED items from the 3 Oct sweep challenge (aca74f2).", 3 Oct 08:00:11 CEST). Parent is `1fd8116`, and the author and committer are the STP-KAS noreply.
+- **Main ancestry:** main `99ae962` (still `origin/main` after `git fetch --prune` at 08:00 CEST) is an ancestor. The branch fast-forwards, so **no main merge is needed**.
+- **Diff `1fd8116..74b1c60`:** README 2/2 (L67, L69), SNAPSHOT 1/1 (L11), master.json 4/4 (L75, L105, L117, L291), prompt 3/3 (L52, L69, L78). No rows or files were added or removed.
+- **Totals: 15 HELD · 0 FAILED · 0 UNVERIFIABLE.** All 7 earlier FAILED items are closed. Two advisory items remain open, and item 13 waits on stp.
+
+Each line below is at commit `74b1c60`.
+
+1. **HELD (was FAILED 1): R L67** "the head of draft [#170] (branch `fix/unmapped-boundary-tip-drain`, base `fix/committed-gap-recovery` at `b32e92de`)". **J L105** "= draft #170 head (fix/unmapped-boundary-tip-drain, base fix/committed-gap-recovery b32e92de)". Both match `pulls/170` (head ref `fix/unmapped-boundary-tip-drain@055ae28a`) and `branches/fix/committed-gap-recovery` (`b32e92de`).
+2. **HELD (was FAILED 2): R L67** "**1–2 Oct TN10 incident (per the #169 PR body; author's account, draft; not observed by this desk):**". This matches the #169 body, "Incident (tn10, 2026-10-01/02)".
+3. **HELD (was FAILED 3): J L105** "Draft #169 b32e92de (2 Oct 13:45Z, base fix/exits-stranded-suffix). Per its PR body (author's account, not observed by this desk), on TN10 1–2 Oct a mass-capped settlement funding (516168>500000) crashed the daemon…". The crash is now attributed.
+4. **HELD (was FAILED 4): R L69** "so the lock is not evidence the hosted page is running `b32e92de`".
+5. **HELD (was FAILED 5): R L69 and J L117** "The tictactoe README at `533e8a55` ([L26](…/533e8a557996aa351d1970870ee73182d00722c1/README.md#L26)) still says to check out vprogs at `fix/settlement-watch-wedge`; it disagrees with the Cargo pin." I re-read the tictactoe README at `533e8a55`, and L26 still names `fix/settlement-watch-wedge`.
+6. **HELD (was FAILED 6): P L69** "rusty-kaspa #991: D-Stacks left six review comments 2 Oct 21:41–21:52Z on `d856169e`; head then moved to `03dd516c` (3 Oct 05:22Z) and `2e05b7cd` (05:49Z) — not pinned". **P L78** "rusty-kaspa #991 review round (six D-Stacks comments 2 Oct 21:41–21:52Z) and head churn to `2e05b7cd` — hold". Both match `pulls/991/comments`, `/reviews` and `/commits`.
+7. **HELD (was FAILED 7a): J L105 `vprogs stack 21 Sep morning`.** Main's 11,148-char note is an exact prefix of the new note (`new.startswith(old)` is True at 99ae962). The added text starts ". 2 Oct: release-candidate tip 055ae28a…", which is today's facts and nothing else.
+8. **HELD (was FAILED 7b): J L117 `vprog-tictactoe tip`.** Today's state comes first. Main's full 1,503-char note then follows verbatim (`old in new`, at offset 745), after "Prior note (29 Sep read, kept from 99ae962): ". The url changed from `commit/cb91e862` to `commit/533e8a55`, which is correct for the new tip.
+9. **HELD (was FAILED 7c): J L291 `Kas-Smiths archive`.** Main's note is restored. A character diff against 99ae962 shows exactly one change inside the old text: a period after "…covenant-id/150", which is the advised bare-URL fix. The rest is word for word, including "29 Sep read: 47 topics, 377 posts, 112 users." The 3 Oct read is appended after "…multi-leaf-collection-covenant/155.".
+10. **HELD: J L75** "…/kccs/pulls. 2 Oct 21:43Z: #35 …". The period after the bare URL is added, and the old text is still an exact prefix.
+11. **HELD: S L11 and P L52** "200, diff 2, backend kaspad **2.0.0** (multi-backend; one sample; the pool also served 2.1.0)".
+    - Live cache-busted `/info/health` at 08:01 CEST returned HTTP 200 on 10 of 10 calls: kaspad `2.1.0` ×6, `2.0.0` ×2 and `2.0.1` ×2, all synced, with `acceptedTxBlockTimeDiff` 2–4. At 07:53 I saw 2.1.0 ×4 and 2.0.0 ×9.
+    - The owner's "07:59, 8 calls, 7 on 2.1.0 and 1 on 2.0.0" is not written on the branch, and no raw body is saved, so it is not counted here.
+12. **HELD: nothing new or unsourced in `1fd8116..74b1c60`.** Every added sentence is one of fixes 1–10, the S L11 "**Fixes after [the challenge]…**" list, or restored main text. The fixes list matches the diff item by item, including "nothing trimmed", which holds for all three notes. No new claim needs a new source.
+13. **HELD: J canonical form.** J is valid UTF-8, and `json.dumps(d, indent=2, ensure_ascii=False)+"\n"` equals the file. It has 0 `\u` escapes and `updated` is "2026-10-03". The `Wallets and KCC-20` and `Do not weld` notes are unchanged since `1fd8116`.
+14. **HELD: S top row.** L11 "2026-10-03 07:49 | [`57cde32`]…" is still first, above L12 "2026-10-02 19:49", so the order is newest first. The row only gains the fixes list and the api-tn10 caveat.
+15. **HELD: leaks.**
+    - The `+` lines of `1fd8116..74b1c60` contain no personal emails, no `/home/` paths, no keys, seeds or addresses, and no private stall-repo name.
+    - The restored vprogs note brings back two private desk repo names with commit hashes. That matches main exactly (count 2 at 99ae962 and 2 at 74b1c60), so it is not new; see open item R-A1.
+
+### Still open (advisory, not counted)
+
+- **R-A1 (open item 13, waits on stp):** two private desk repo names, with commit hashes, appear in R L67 and now again in J L105. Both are verbatim from main 99ae962.
+- **R-A2 (formatting, new):** J L117 has "…/vprog-tictactoe/commit/533e8a55 Prior note (29 Sep read, kept from 99ae962): …", a bare URL joined to the next sentence with no period. Fix: "…/commit/533e8a55. Prior note (29 Sep read, kept from 99ae962): …".
+- **R-A3 (api-tn10 wording, optional):** at 08:01 CEST the pool also served kaspad 2.0.1. "the pool also served 2.1.0" is still true; "the pool also served 2.1.0 and 2.0.1" would be fuller.
+- Advisory items A1–A4 from the first pass (the KCC-0 Last Call precedent, KCC-2 KR-04, LC-7, covenant F2), A8 (main's #991 DAGKnight row) and A9 (older SNAPSHOT order on main) are unchanged and remain advisory. A5 (api-tn10 wording) and A7 (bare-URL periods) are applied.

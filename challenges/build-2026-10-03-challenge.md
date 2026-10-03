@@ -117,3 +117,15 @@ Short names: R = README.md, S = SNAPSHOT-HISTORY.md, J = master.json. Every line
 - **Cause:** both branches insert a new row at S L11 directly under main's header.
 - **Resolution:** keep both rows, newest first: build `2026-10-03 07:57` above sweep `2026-10-03 07:49`.
 - **Rule:** either branch fast-forwards on its own. **Whichever lands second needs a normal merge of the new main**, resolving S as above. No row text needs to change.
+
+## Recheck @ 54fbedf (3 Oct 2026 08:16 CEST)
+
+Reviewed tip `54fbedf5884f908cfd24ad1440bf7d0fc9aec2fe`. It adds `d554466` and `54fbedf` on top of `8f44d04`, both with the noreply identity only. The diff is +5/−4 in README.md, master.json and SNAPSHOT-HISTORY.md. Main `99ae962` is still an ancestor. master.json is canonical UTF-8 with 0 `\u` escapes.
+
+- HELD (api-tn10 line): SNAPSHOT 07:57 row @ d554466 now reads "served by a mixed backend pool (kaspad 2.1.0 p2p `b079c555` and 2.0.0 `e13cc6c8` both seen; other same-hour samples split differently, so no ratio is claimed". The "14 from" ratio is gone. The earlier UNVERIFIABLE line is closed, since no ratio is claimed any more.
+- HELD (privacy repo): README research.kas.pa row says "no protocol code (one docs-check script)", and master.json says "no protocol code".
+- HELD (KaChat URL period): the master.json KaChat note now ends "…kachat-names-testnet-10.json."
+- HELD (SNAPSHOT): the 08:12 row is on top, above 07:57.
+- Advisory: the olafweller URL in the master.json research.kas.pa note is still followed directly by "Topics 295…" with no period. Cosmetic only.
+
+Totals at 54fbedf: HELD 37 · FAILED 0 · UNVERIFIABLE 0. No open FAILED. It can merge with stp's OK. No X calls. No public reply.

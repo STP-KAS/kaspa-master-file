@@ -252,7 +252,7 @@
           "name": "research.kas.pa",
           "url": "https://research.kas.pa",
           "chip": "catalog",
-          "note": "Read 29 Sep 2026, top to bottom, every topic, including the category-about posts. Rechecked 3 Oct ~07:52 CEST: newest topic still 522. /latest lists 53 topics. Seven about-posts are not on that list. 60 in all. Newest topic is still 522 (8 Sep 2026). Nothing newer. The 11 Sep freeze said ~50 topics and L1/L2 = 17. L1/L2 has 18 content topics; 251 was already there. A thread is not a KIP. The 2019 HAPI and UPI posts are not the 2021 fair launch. Topic 473 does not change max supply. Topic 522 is a question, not a privacy layer: one post (JackKas), no replies. olafweller/kaspa-privacy-initiative dc2f176d (2 Oct) cites it as prior discussion of the same goal (research/existing-kaspa-privacy.md); research, no code; opened on Kas-Smiths topic 156. https://github.com/olafweller/kaspa-privacy-initiative/blob/dc2f176d/research/existing-kaspa-privacy.md Topics 295 and 429 name a higher block rate as an aim, not a live rate. Reading: RESEARCH-KAS-PA.md."
+          "note": "Read 29 Sep 2026, top to bottom, every topic, including the category-about posts. Rechecked 3 Oct ~07:52 CEST: newest topic still 522. /latest lists 53 topics. Seven about-posts are not on that list. 60 in all. Newest topic is still 522 (8 Sep 2026). Nothing newer. The 11 Sep freeze said ~50 topics and L1/L2 = 17. L1/L2 has 18 content topics; 251 was already there. A thread is not a KIP. The 2019 HAPI and UPI posts are not the 2021 fair launch. Topic 473 does not change max supply. Topic 522 is a question, not a privacy layer: one post (JackKas), no replies. olafweller/kaspa-privacy-initiative dc2f176d (2 Oct) cites it as prior discussion of the same goal (research/existing-kaspa-privacy.md); research, no protocol code; opened on Kas-Smiths topic 156. https://github.com/olafweller/kaspa-privacy-initiative/blob/dc2f176d/research/existing-kaspa-privacy.md Topics 295 and 429 name a higher block rate as an aim, not a live rate. Reading: RESEARCH-KAS-PA.md."
         },
         {
           "name": "1984",
@@ -1350,7 +1350,7 @@
           "name": "KaChat",
           "url": "https://github.com/vsmirn0v/KaChat",
           "chip": "other",
-          "note": "Third-party iOS chat app, MIT. Catalog, not a Now pin. TN10 .kachat names registry v2 82f4315c…0f89: manifest bundled at 6b6cacee (2 Oct 18:16Z); genesis tx e20325f70db06192b619e6ef161b45b4a24b3cde58b5d2b0188532395175a426, accepted per api-tn10 (block time 2 Oct 18:14:52Z; public index, not a desk-node read). Templates compiled with SilverScript v1.0.0 3ed97333. Contracts are in kachat-domains, which is not public (GitHub 404 on 3 Oct). Mainnet: 'Coming soon', no network actions. https://github.com/vsmirn0v/KaChat/blob/6b6cacee/KaChat/Resources/kachat-names-testnet-10.json"
+          "note": "Third-party iOS chat app, MIT. Catalog, not a Now pin. TN10 .kachat names registry v2 82f4315c…0f89: manifest bundled at 6b6cacee (2 Oct 18:16Z); genesis tx e20325f70db06192b619e6ef161b45b4a24b3cde58b5d2b0188532395175a426, accepted per api-tn10 (block time 2 Oct 18:14:52Z; public index, not a desk-node read). Templates compiled with SilverScript v1.0.0 3ed97333. Contracts are in kachat-domains, which is not public (GitHub 404 on 3 Oct). Mainnet: 'Coming soon', no network actions. https://github.com/vsmirn0v/KaChat/blob/6b6cacee/KaChat/Resources/kachat-names-testnet-10.json."
         },
         {
           "name": "coderofstuff dk-wiki",

@@ -103,7 +103,7 @@ A branch with an open FAILED item does not merge (PROCESS.md). Neither FAILED is
 
 - **Reviewed tip:** `68c22acd0cb077c9489d245e99151825e7bfb51e` ("Merge main 99ae962 into build/x402-sighash-2026-10-02. No row text changed…", 3 Oct 08:01:28 CEST). The author and committer are the STP-KAS noreply.
 - **Held content:** `c71ce82` (rechecked at `cea4b1c`: HELD 15 · FAILED 0).
-- **Main:** `99ae9620dd580ff0630cd720f83a0e78de616f4e`, unchanged after `git fetch --prune` at about 08:10 CEST.
+- **Main:** `99ae9620dd580ff0630cd720f83a0e78de616f4e`, unchanged after `git fetch --prune` at about 08:05 CEST.
 - **Totals: 13 HELD · 0 FAILED · 0 UNVERIFIABLE.** No open FAILED items. The only open item is merge order; see 12–13 and the note under them.
 
 1. **HELD: normal merge.** `68c22ac` has two parents: `c71ce8229dd9…` (first) and `99ae962` (second). There was no force-push: the earlier tip `c71ce82` is an ancestor of the new tip.

@@ -231,3 +231,110 @@ d2431cc7fd655d5ba0b4842fa6e69f005d13e7d96219fc18a3c485400bb627a2  builders.json
 - Nothing created or pushed in STP-KAS/kaspa-builders.
 - No TN10 reads were needed for this pass.
 - `/workspace/repos/kaspa-master-file` was not touched.
+
+## Recheck @ 95e9c01
+
+- Reviewed tip: `95e9c0157fedf02a3e5393567379a0c7d4bc2468` (one commit on top of `0466ff4`), read 4 Oct 2026 19:28–19:50 CEST. `git fetch --prune` first; main is still `cf10a0f`.
+- F4 patches read: `/workspace/artifacts/kaspa-master-watch/f4-optionA.patch` sha256 `8dfdbef882ffdddfbed4ed398dff64ae056df840df0c171a12964a8fa1c13d4f`, `f4-optionB.patch` sha256 `0cd9a3b6003dfda451e400b31b328e98f30c1da4807ef5fcd18dea1d1913c32b`. Proposal sha256 unchanged (`348ea7ac…c4f5`).
+- **Recheck totals: 14 HELD, 2 FAILED, 1 UNVERIFIABLE.** Open FAILED: F4 (on hold for stp) and new R-F6. F1, F2, F3 and F5 are closed.
+
+R1. HELD: shape and identity. `git show -s 95e9c01`: parent `0466ff4`; author and committer `STP-KAS <227352643+STP-KAS@users.noreply.github.com>`, 4 Oct 19:25:50 +0200. `git merge-base --is-ancestor cf10a0f 95e9c01` exits 0.
+
+R2. HELD: only the intended fixes changed. `git diff --stat 0466ff4 95e9c01`: README.md 11, RECEIPTS.md 6, SNAPSHOT-HISTORY.md 3, master.json 18 lines. A line diff plus a word diff of every changed line shows only these changes:
+- README: L54 (F3, A6), L66 (A5), the restored Argent row L71 (F1, F2), L72 Launch proof (F1, F2), L81 rename (A4), L84 Do not weld (Argent welds back).
+- RECEIPTS: L564 (A2), L586 and L588 (A3).
+- SNAPSHOT: a new 19:25 row, plus edits to the 19:12 row.
+- master.json `now`: Argent restored, Covenant-id, Launch proof, Do not weld, and the rename. `x`: @asaefstroem. `other`: KaChat.
+- Nothing else: top keys, section ids and the other sections are identical.
+
+R3. HELD: F1 is closed. The README Argent row (L71) equals cf10a0f L72 apart from the F2 wording. The JSON `now` row `Argent` has the same url and chip, sits at the same position (between `vprog-tictactoe tip` and `Covenant launch proof and binding`), and its note equals cf10a0f's apart from F2. Launch proof no longer says "Argent project status: see …". The Argent welds are back in README L84 and JSON `Do not weld`. Staging `2026-10-04/` now has 17 entries and no `argent.md`.
+
+R4. HELD: F2 is closed with my wording. README L72 and the JSON `Covenant launch proof and binding` note now say "(genesis-proof tooling, then open at head `9592dd99`) … Sutton merged #66 on 4 Oct 12:04Z (14:04 CEST) as [`03d67021`](…) (PR head `aab8fe1e`, two commits past `9592dd99`). No tag." The Argent row says "#66 was then open at head `9592dd99`" plus the same merged sentence. Do not weld says "argent#66 merged = a tag or a release". Re-read: `gh api repos/argent-lang/argent/tags` returns 0.
+
+R5. HELD: F3 is closed with my wording. README L54 now reads "(kascov, [ChainAgnostic/namespaces#193](https://github.com/ChainAgnostic/namespaces/pull/193)): see [STP-KAS/kaspa-builders](…). elldeeone [`rk-with-tcp`](…) (`09fc0ba5`, 25 Aug) is a rusty-kaspa fork branch for inbound links between private nodes ([post](…)); no upstream pull." The JSON L42 note mirrors it. The staging entry title is now "Covenant-id tooling: kascov, CAIP namespace".
+
+R6. HELD: F5 is closed. The master.json `other` row `KaChat` now says "see STP-KAS/kaspa-builders https://github.com/STP-KAS/kaspa-builders (entry name-services)."
+
+R7. **FAILED (F4, still open, unchanged):** AGENTS.md is byte-identical to 0466ff4, and DOTK, simply-kaspa-dnsseeder, stroemnet, x402, Name-service PoC and the quorum lines are still out. It stays open until stp picks Option A or B. The fix wording is as in item 10. See R13–R16.
+
+R8. HELD: the JSON is canonical. `t == json.dumps(json.loads(t), indent=2, ensure_ascii=False) + "\n"` is True, the `\u` count is 0, `updated` is 2026-10-04, and all 328 rows have exactly `chip/name/note/url`.
+
+R9. HELD: the counts match the SNAPSHOT text. The README `## Now` table has 35 rows (37 `| ` lines minus header and separator). master.json `now` has 37 rows and `x` has 14. That gives 51 = 16 moved + 8 split + 27 kept, and `now` 52 − 15 = 37. The 19:12 row says "15 JSON rows out" and "Split, 8"; the 19:25 row says "board 35 rows, `now` 37".
+
+R10. HELD: SNAPSHOT order and accuracy.
+- Order: L11 19:25, L12 19:12, L13 19:01, L14 18:16. Newest first.
+- The 19:25 row's F1/F2/F3/F5 and advisory claims match R3–R6 and the advisory list below.
+- Its pointer list holds: README has 4 pointers (L11, L54, L65, L67) and master.json has 4 (L42, L90, L210, `other` KaChat). Launch proof no longer has one.
+- "Staging regenerated without the Argent entry" holds: 17 entries, sha256 values below.
+
+R11. HELD: no new leaks.
+- A scan of every added line in `git diff 0466ff4 95e9c01` for RECEIPTS §5 real names, home-directory paths, emails, key or seed markers and the private stall-repo name finds only one hit: the RECEIPTS §5 asaefstroem table row (L586). It was edited for A3 but has carried the same real name since before cf10a0f. It is not introduced here.
+- The JSON `x` note is now handle-only.
+- The staging tree is clean under the same scan.
+
+R12. HELD: my independent check, rerun against 95e9c01 and the regenerated staging, finds nothing lost. Scripts: `/workspace/scratch/chk-split2/` (removed.py with B = `95e9c01`, check.py).
+- 108 removed pieces, 83.8k chars.
+- Links: 153 checked. 4 are not in staging, and each is still in the branch: rusty-kaspa #1140, Max143672 2103466359246270526, asaefstroem 2103861631738667208, elldeeone 2085199203903721856.
+- Hashes: 152 checked. 2 are not in staging and are still in the branch: `055ae28a`, `09fc0ba5`.
+- Words: 2,351 checked. Only one is in neither staging nor branch: the first name removed by A9, which was intended.
+
+R13. HELD: Option A applies cleanly, and its AGENTS.md wording matches mine exactly.
+- In a scratch clone at `/tmp/f4check` (95e9c01), `git apply --check -v f4-optionA.patch` passes for AGENTS.md and SNAPSHOT-HISTORY.md (2 files, +3/−2).
+- After applying it, `cmp AGENTS.md` against 95e9c01 AGENTS.md with my three item-10 replacements applied by script: identical.
+- Its rewritten 19:12 **Rule** sentence quotes AGENTS.md L36 (after "(19:06 CEST). ") word for word (script check True). That also closes A7.
+
+R14. HELD: Option B applies cleanly and restores the rows exactly from cf10a0f.
+- `git apply --check` passes for README.md, RECEIPTS.md, SNAPSHOT-HISTORY.md and master.json (+43/−14).
+- After applying it, these README rows are byte-identical to cf10a0f: `x402 dispatch`, `Name-service PoC`, `DOTK .k names`, `x402`, `KCC-3/4/5`.
+- So are the JSON `now` rows `Kaspa-World-Eater/quorum`, `Name-service PoC`, `DOTK .k names`, `saefstroem / stroemnet`, `x402 bind the tag` and `kccs#29 KCC-3/4/5`. Their order is consistent with cf10a0f.
+- The JSON stays canonical with 0 `\u`. Counts: board 39, `now` 41, as its SNAPSHOT row says.
+- AGENTS.md is untouched, and the 19:12 quote equals AGENTS.md L36 word for word.
+- The restored @asaefstroem stroemnet sentence brings back no real name.
+- "x402 #22 and desk repos" stays moved.
+- An Option B staging variant exists at `/workspace/artifacts/kaspa-builders-staging/2026-10-04-optionB/` (24 files, 15 entries; no quorum.md or stroemnet.md). I only listed and checksummed it; its content was not reviewed.
+
+R15. HELD: the proposal's verdict list does name DOTK, the x402 rows and the Name-service PoC as moving.
+- `community-split-proposal-2026-10-04.md`: L37 "x402 dispatch | MOVES | third-party payment rail"; L38 "x402 #22 and desk repos | MOVES"; L41 "Name-service PoC | MOVES | name service in a third-party org; even with a core author it is an app, not kaspanet code"; L42 "DOTK .k names | MOVES"; L47 "x402 | MOVES".
+- Under "Ambiguous calls (suggested)": L119 "**DOTK**: MOVES, along with the Name-service PoC …" and L121 "**x402** (3 rows): MOVES".
+- The same list also moves quorum (L31, L74), stroemnet (L53) and simply-kaspa-dnsseeder (L57).
+- L41's reason is the "app, not kaspanet code" test that Option A writes down.
+
+R16. UNVERIFIABLE: whether stp's 19:06 approval covered that verdict list. The file contains no "19:06", "approv" or stp-decision text. It calls itself "Read-only analysis", the rule is headed "Rule (proposed wording)", and L114–L123 are "Ambiguous calls (suggested)". The only written record of the 19:06 approval is AGENTS.md L36 ("stp approved this rule …"), which names the rule, not the table. The owner's report is the only source for "approval named DOTK, x402 and the name-service PoC". Option A fits the proposal's stated intent (R15), but the record does not show that stp approved the table.
+
+R17. **FAILED (R-F6): the restored Argent row still gives a stale master tip.**
+- README L71 opens "Master [`b312deda`](…) (30 Sep 11:10Z). Two commits after [#62] …". The JSON `now` row `Argent` note opens "Master b312deda… (30 Sep 11:10Z)".
+- `gh api repos/argent-lang/argent/commits/master` gives `03d670217b7139ee452e1c50d109f600ed85d94d` (2026-10-04T12:04:19Z). Compare `b312deda...03d67021` returns ahead 1: the #66 merge.
+- My F1 wording ("restore … exactly as on cf10a0f") carried this stale opening in. AGENTS.md says "Fact corrections stay in the master."
+- **Fix wording:** in README L71 replace "Master [`b312deda`](https://github.com/argent-lang/argent/commit/b312deda6fe10f6493c8d49eb748e3f61860458a) (30 Sep 11:10Z). Two commits after" with "Master [`03d67021`](https://github.com/argent-lang/argent/commit/03d670217b7139ee452e1c50d109f600ed85d94d) (4 Oct 12:04Z, the #66 merge). Before that, [`b312deda`](https://github.com/argent-lang/argent/commit/b312deda6fe10f6493c8d49eb748e3f61860458a) (30 Sep 11:10Z), two commits after".
+- In the JSON `now` row `Argent` note, replace "Master b312deda6fe10f6493c8d49eb748e3f61860458a (30 Sep 11:10Z). Two commits after" with "Master 03d670217b7139ee452e1c50d109f600ed85d94d (4 Oct 12:04Z, the #66 merge). Before that, b312deda6fe10f6493c8d49eb748e3f61860458a (30 Sep 11:10Z), two commits after".
+
+### Advisories @ 95e9c01
+
+- A1: **open.** kaspa-builders is still only `d4b94ad9944f` (commits API, 4 Oct). Do not merge the master branch before the staging content lands there.
+- A2: closed. RECEIPTS L564: "Community accounts moved to [STP-KAS/kaspa-builders](…) on 4 Oct 2026; master.json `x` keeps core and SilverScript people."
+- A3: closed.
+  - L586 stroemnet now points to "[STP-KAS/kaspa-builders](…) (entry stroemnet)".
+  - L588 says "kccs#24 and his kccs#35 draft are on the **Now** KCC row". That holds: README L62 "KCC still open" carries kccs#24 and "#35 … (danieliyahu1, **draft**)"; `gh api repos/kaspanet/kccs/pulls/35` gives author danieliyahu1, open, draft.
+- A4: closed. README L81 and JSON are renamed "26–30 Sep notes". The JSON row's url, chip and note are unchanged.
+- A5: closed. The text is now "No desk post since 22 Sep."
+- A6: closed (R5).
+- A7: **open.** It is tied to F4; both patches close it (R13, R14).
+- A8: **open** (seed filename; see the seed note).
+- A9: closed for master.json `x`: the full real name and the KIP-header surname spelling were removed from the @asaefstroem note. The RECEIPTS §5 table keeps real names, as it did on main; that is out of scope.
+- A10: closed (informational).
+- N1 (new): the 19:12 SNAPSHOT row was rewritten in place to describe 19:25 outcomes ("Argent stays", "rk-with-tcp … stays", "renamed 26–30 Sep notes"). PROCESS.md L44 says each pass appends a row. Both rows are still unmerged, so this is tolerable, but the 19:12 row no longer records `0466ff4` as it was. Also, its "(except the KaChat pointer, repointed in the next row)" means the row *above*. Suggest "repointed in the 19:25 row".
+- N2 (new): both F4 patches carry a "YYYY-MM-DD HH:MM" placeholder in their new SNAPSHOT row. Each also rewrites the 19:12 row, so they are mutually exclusive: apply exactly one, then fill in the time.
+- N3 (new): if stp's 19:06 approval did cover the proposal's table, then F1 (table L39 "Argent | SPLIT", L123) and F3 (rk-with-tcp under Covenant-id) also depart from it. Put Argent and rk-with-tcp into the same stp decision as F4.
+- N4 (new): sha256 of the regenerated staging `2026-10-04/` (17 entries, 26 files). Changed since the first pass:
+
+```
+1586a52e33b729b349f0b8424d6637fe29821b6655081ec2b32be5ff4e9429f0  README-STAGING.md
+7c439579ce1c67c2d9a0f45b29093c4c08b2fa5ebf579d4b5901f94520ab113b  builders-rows.json
+a2d91b4e2dd439f49cb712d1aa1767a3d05c29ae61000feaada4b26b8e0f5886  do-not-weld.md
+317b7f11aeb79f0851616904692df9802e42bfbb65b5166853f90c410c1c5c9e  entries/covenant-id-tooling.md
+80da0dd66737dc80eeee5794246e66d195eb02c9844455edf8035454aebf1b47  entries/node-tools-third-party.md
+d2ca0cfc0adb0fe740ac923f63894220682da978fc46ed6419be24b6130adbb2  entries/stroemnet.md
+8b28788400332eed206b6ec39af7564fb8c3bde67e540a649504ecbde124cbf8  index-rows.md
+```
+
+  `entries/argent.md` is gone. The other 19 files are unchanged from the first-pass table. Both staging JSON files are still canonical with 0 `\u`. Option B variant: `README-STAGING.md` `bf05959c…702c`, `builders-rows.json` `96a533cd…4db7`, `entries/x402.md` `52b951bd…0161`, `entries/name-services.md` `12519c43…bd05` (24 files).

@@ -4,7 +4,7 @@
 - **Base:** main `c11ae181c872b9b1dbbefeae50c53159d55a3da2`.
 - **Totals:** 35 HELD · 0 FAILED · 1 UNVERIFIABLE (non-blocking)
 - **Verdict:** there is no open FAILED item, so under PROCESS.md this branch is not blocked. Advisories A1–A7 are below. A1 rules on the KIP-16/17 labels; they are not on the branch.
-- **Reviewer:** challenge desk, 4 Oct 2026, about 18:17–18:45 CEST.
+- **Reviewer:** challenge desk, 4 Oct 2026, about 18:17–18:24 CEST.
 
 **How I checked:**
 - **Chain facts.** Read-only JSON wRPC to the desk node n0 (`ws://127.0.0.1:18210`), using only `getServerInfo`, `getBlockDagInfo`, `getSyncStatus`, `getBlock` and `getVirtualChainFromBlock`. No TN10 process was touched. api-tn10 was not used.

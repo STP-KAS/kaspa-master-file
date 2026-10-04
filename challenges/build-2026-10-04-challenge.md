@@ -162,3 +162,14 @@ Fix S L11: replace "box boot 20:46:02 (`uptime -s`)" with "box boot by about 20:
 
 - Give the exact window for the hashrate line count, e.g. "07:13:00–08:13:06 CEST, 2,166 lines". The stated 2,172 is not reproduced exactly for any natural window edge. The mean and totals hold either way.
 - The prior advisories A3 (tallies vs "No ratio") and A7 (open item 13) are unchanged.
+
+## Recheck @ 5890d67 (4 Oct 2026 08:23 CEST)
+
+Reviewed tip `5890d676ece80008d786dce4c057cfbb403793a7`. It adds `b4fc8af` (fix) and `5890d67` (SNAPSHOT row) on top of `b255678`, noreply identity only. The diff is AGENTS.md +2/−2 and SNAPSHOT-HISTORY.md +2/−1. Main `4183b7a` is an ancestor, and the net diff against main is 4 files, +17/−12. master.json is unchanged and canonical with 0 escapes.
+
+- HELD RF1: AGENTS L18 @ b4fc8af says "The box booted by about 20:45:29 CEST on 3 Oct (`uptime -s` shows 20:46:02, but it is derived like `ps` start times and lags the same way)." That is the exact fix wording.
+- HELD RF1: the 08:13 SNAPSHOT row says "box boot by about 20:45:29 (`uptime -s` shows 20:46:02, same lag as `ps`)".
+- HELD (advisory applied): the hashrate window is stated as "from 07:13:00 to 08:13:06 CEST … (2,166 lines in that window)", which matches my parse.
+- HELD (SNAPSHOT): the new 08:21 row is on top (08:21 > 08:13 > 08:04 > 08:03 > 07:59) and describes the fix accurately.
+
+Totals at 5890d67: HELD 19 · FAILED 0 · UNVERIFIABLE 0. No open FAILED. It can merge with stp's OK. Against master/sweep-2026-10-04 @ 373f129, only SNAPSHOT conflicts; whichever lands second needs a main merge and a recheck. No X calls. No public reply.

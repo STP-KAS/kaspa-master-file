@@ -133,3 +133,11 @@ Fix S L11: replace `; "It not a code it only a text")` with `); the PR body ends
 
 - The per-read tallies (×12/×4, ×9/×7) sit beside `build/2026-10-04`'s "No ratio is claimed". Consider adding "sample counts, not a pool ratio".
 - Open item 13 is unchanged: the two private desk repo names remain on main. Waiting on stp.
+
+## Recheck @ 373f129 (4 Oct 2026 08:14 CEST)
+
+Reviewed tip `373f1297747af073aec855bfe28f2277222c5ce9`, one commit on top of `eb784c6`, noreply identity only. The diff is SNAPSHOT-HISTORY.md +1/−1. Main `4183b7a` is an ancestor. master.json is unchanged and canonical with 0 escapes.
+
+- HELD RF1: SNAPSHOT L11 @ 373f129 now reads `(… no KCC number, preamble or status); the PR body ends "It not a code it only a text".` This matches the fix.
+
+Totals at 373f129: HELD 18 · FAILED 0 · UNVERIFIABLE 1 (the owner's 07:59 tally; its RUNBOOK now requires saving raw bodies). No open FAILED. It can merge with stp's OK. No X calls. No public reply.

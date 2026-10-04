@@ -60,3 +60,9 @@
 - **A3.** Both S rows on the branch say "(this commit)". After a merge to main, the 08:07 row means `c68fab1` and the 08:53 row means `b8256bc`. A later link commit should replace them with SHAs. The 08:07 row itself must stay unchanged until then.
 - **A4. Unusual:** n0 still serves full bodies (`isHeaderOnly` false) for the 2 Oct blocks `f41f9f7b` (blue score 574,797,649) and `f3729ac1`, even though its current pruning point `623dfc10…` is at blue score 574,992,001 and n0 was resynced from scratch on 3 Oct. This did not affect the checks: the node computes the tx ids, and the bodies match api-tn10. It is worth a word from TN10 ops on n0's retention.
 - **A5. Merge order:** this branch and `build/rust-checks-2026-10-04` both insert top rows in SNAPSHOT-HISTORY.md. Whichever merges second needs a main merge and a recheck.
+
+## Addendum @ b8256bc (4 Oct, found while reviewing `build/rust-checks-2026-10-04`)
+
+Totals and the tip are unchanged (19 HELD · 0 FAILED · 0 UNVERIFIABLE @ `b8256bc`). This corrects the scope of A5 only.
+
+- **A5 (corrected scope).** `git merge-tree --write-tree origin/build/rust-checks-2026-10-04 origin/build/kachat-genesis-2026-10-03` (353e9ad vs b8256bc) gives two conflicts, not one: SNAPSHOT-HISTORY.md (both add a top row) and README.md (rust-checks appends a sentence to the DOTK row at L75, right above this branch's new KaChat row at L76). master.json merges cleanly. To resolve: keep both SNAPSHOT rows, newest first. In README, keep the rust-checks L75 DOTK row and then this branch's L76 KaChat row, both unchanged. Whichever branch merges second still needs a main merge and a recheck.

@@ -25,3 +25,7 @@ Reviewed tip `b567a4898dfd485bd91cb5204d864465c806384b`. It is one commit on `22
 - ADVISORY: "Not desk-tested." after #1140 was removed with the Studio text. The SDK findings are still not desk-tested, so consider restoring those three words after "no comments." in README and JSON.
 
 Totals at b567a48: HELD 9 · FAILED 0 · UNVERIFIABLE 0 (5 from 220fa36 plus 4 here). No open FAILED. Clear to merge with stp's OK. No X calls. No public reply.
+
+## Recheck @ 25b51ca (4 Oct 2026, 19:05 CEST)
+
+Reviewed tip `25b51cabc05144abc89a451e80a5fa89e624b70a`. It is one commit on `b567a48`, with the noreply identity only. Its only change is `[-19:10-]{+19:01+}` in the SNAPSHOT row, which closes the cosmetic advisory, and the row is still newest first. The JSON is untouched. The two b567a48 advisories ("SilverScript Studio" left in 'Do not weld' at master.json L285, which I'd keep, and the optional "Not desk-tested." after #1140) are still open and do not block. Totals: HELD 9 · FAILED 0 · UNVERIFIABLE 0. Clear to merge with stp's OK.

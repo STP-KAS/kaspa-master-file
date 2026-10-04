@@ -141,3 +141,13 @@ Reviewed tip `373f1297747af073aec855bfe28f2277222c5ce9`, one commit on top of `e
 - HELD RF1: SNAPSHOT L11 @ 373f129 now reads `(… no KCC number, preamble or status); the PR body ends "It not a code it only a text".` This matches the fix.
 
 Totals at 373f129: HELD 18 · FAILED 0 · UNVERIFIABLE 1 (the owner's 07:59 tally; its RUNBOOK now requires saving raw bodies). No open FAILED. It can merge with stp's OK. No X calls. No public reply.
+
+## Recheck @ 5989892 after main merge (4 Oct 2026 08:45 CEST)
+
+Reviewed tip `59898920043b6a1282f98c335897961bcf3a1abe`. It is a merge of main `5890d67` (build/2026-10-04) into the passed tip `373f129` (note 790fa69). Both parents are ancestors, and every commit in main..tip uses the noreply identity.
+
+- HELD (merge is content-neutral): every changed line in `git diff main 5989892` is identical to `git diff 4183b7a 373f129`, except the JSON `"updated": "2026-10-04"` bump, which main already carries. All differences are in context lines only, because build/2026-10-04 changed neighbouring text.
+- HELD (SNAPSHOT order): the rows run 08:21, 08:13, 08:04, 08:03, 07:59 (build), then 07:49 (sweep), then 3 Oct 09:52, newest first. The sweep's added SNAPSHOT lines are identical to those at 373f129.
+- HELD (hygiene): master.json parses, has 0 `\u` escapes and no conflict markers in the tree.
+
+Totals at 5989892: HELD 18 · FAILED 0 · UNVERIFIABLE 1, unchanged from 790fa69 (the owner's 07:59 tally). No open FAILED. Clear to merge with stp's OK, which kaspa master bot reports stp gave for after this recheck. No X calls. No public reply.

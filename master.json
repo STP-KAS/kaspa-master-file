@@ -240,7 +240,7 @@
           "name": "Third-party claims 26 Sep",
           "url": "https://github.com/kaspanet/rusty-kaspa/issues/1140",
           "chip": "catalog",
-          "note": "rusty-kaspa#1140 (30 Sep, SDK v2.1.0 findings from mainnet) open, no comments: https://github.com/kaspanet/rusty-kaspa/issues/1140. Kurncy 26 Sep 14:34Z https://x.com/KurncySolutions/status/2103855652493725743: dotk names next week. Claim, not shipped. supertypo/simply-kaspa-dnsseeder v0.9.6 (25 Sep 07:03Z): dead nodes were kept alive by gossip alone; not kaspanet/dnsseeder (https://github.com/supertypo/simply-kaspa-dnsseeder/releases/tag/v0.9.6). getumbrel/umbrel-apps#6120 (elldeeone, 26 Sep 09:35Z) updates the Umbrel rusty-kaspad app to v2.1.0, open (https://github.com/getumbrel/umbrel-apps/pull/6120)."
+          "note": "rusty-kaspa#1140 (30 Sep, SDK v2.1.0 findings from mainnet) open, no comments: https://github.com/kaspanet/rusty-kaspa/issues/1140. Not desk-tested. Kurncy 26 Sep 14:34Z https://x.com/KurncySolutions/status/2103855652493725743: dotk names next week. Claim, not shipped. supertypo/simply-kaspa-dnsseeder v0.9.6 (25 Sep 07:03Z): dead nodes were kept alive by gossip alone; not kaspanet/dnsseeder (https://github.com/supertypo/simply-kaspa-dnsseeder/releases/tag/v0.9.6). getumbrel/umbrel-apps#6120 (elldeeone, 26 Sep 09:35Z) updates the Umbrel rusty-kaspad app to v2.1.0, open (https://github.com/getumbrel/umbrel-apps/pull/6120)."
         },
         {
           "name": "KGI v2 design",

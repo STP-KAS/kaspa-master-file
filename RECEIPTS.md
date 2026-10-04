@@ -561,6 +561,8 @@ This desk: [STP-KAS/argent-xai](https://github.com/STP-KAS/argent-xai) is a pin-
 
 ## 5. Core + builder X handles
 
+Community accounts moved to [STP-KAS/kaspa-builders](https://github.com/STP-KAS/kaspa-builders) on 4 Oct 2026; master.json `x` keeps core and SilverScript people.
+
 Yonatan’s own “rough core” list (30 Apr 2025): michaelsutton, hashdag, coderofstuff_, someone235, freshair08, biryukovmaxim, reshmem, aspect, tiram88, elichai, tmrlvi, D-Stacks. Inspect https://github.com/kaspanet and https://research.kas.pa — DYOR. **“Core” is not a legal title.**
 
 | Person | X | Role (public) |
@@ -581,9 +583,9 @@ Yonatan’s own “rough core” list (30 Apr 2025): michaelsutton, hashdag, cod
 | This project | [@StppStp](https://x.com/StppStp) | Gramlane / project delusional. **Never DMs you.** |
 | Luke Dunshea | [@elldeeone](https://x.com/elldeeone) | SilverScript v1 credit. GitHub [elldeeone](https://github.com/elldeeone). kaspa-x402 **v1.0.0-rc.1** TN10. Bind that envelope. |
 | Sivan Helfer | [@manyfest_](https://x.com/manyfest_) | SilverScript v1 / KCC-20. GitHub [Manyfestation](https://github.com/Manyfestation). |
-| Alexander Säfström | [@asaefstroem](https://x.com/asaefstroem) | GitHub [saefstroem](https://github.com/saefstroem). **KIP-16 author** (Active). The KIP header spells Safstrom. Also the rusty ZK SDK ([#953](https://github.com/kaspanet/rusty-kaspa/pull/953)) and `OpTxInputDaaScore` ([#861](https://github.com/kaspanet/rusty-kaspa/pull/861)). KCC-0 author. **KCC-0012** lead ([kccs#24](https://github.com/kaspanet/kccs/pull/24)). Author of the open KCC-20 Last Call proposal ([kccs#31](https://github.com/kaspanet/kccs/pull/31)). Sutton [11 Sep](https://x.com/michaelsuttonil/status/2098433221021118762): dapp-dev process + ecosystem standardization. KCC-12 and KCC-20 stay Draft. KIP-16 is law. Own experiment: [stroemnet](https://github.com/saefstroem/stroemnet), see **Now**. |
+| Alexander Säfström | [@asaefstroem](https://x.com/asaefstroem) | GitHub [saefstroem](https://github.com/saefstroem). **KIP-16 author** (Active). The KIP header spells Safstrom. Also the rusty ZK SDK ([#953](https://github.com/kaspanet/rusty-kaspa/pull/953)) and `OpTxInputDaaScore` ([#861](https://github.com/kaspanet/rusty-kaspa/pull/861)). KCC-0 author. **KCC-0012** lead ([kccs#24](https://github.com/kaspanet/kccs/pull/24)). Author of the open KCC-20 Last Call proposal ([kccs#31](https://github.com/kaspanet/kccs/pull/31)). Sutton [11 Sep](https://x.com/michaelsuttonil/status/2098433221021118762): dapp-dev process + ecosystem standardization. KCC-12 and KCC-20 stay Draft. KIP-16 is law. Own experiment: [stroemnet](https://github.com/saefstroem/stroemnet), see [STP-KAS/kaspa-builders](https://github.com/STP-KAS/kaspa-builders) (entry stroemnet). |
 | BankQuote | [@BankQuote](https://x.com/BankQuote) | Community educator. GitHub [trillskillz](https://github.com/trillskillz) (OpenSilver). Long-form Toccata/covenant essays: §5c. **Not core.** |
-| Daniel | [danieliyahu1](https://github.com/danieliyahu1) | No X on the profile. kccs#24 notes are on **Now**. [kas-odds](https://github.com/danieliyahu1/kas-odds) and [onlykas](https://github.com/danieliyahu1/onlykas) are his SilverScript apps. [kaspa-simple-mcp](https://github.com/danieliyahu1/kaspa-simple-mcp) is a read-only wrapper of api.kaspa.org, mainnet by default. He follows [ezratameno](https://github.com/ezratameno). Those public repos are not Kaspa. |
+| Daniel | [danieliyahu1](https://github.com/danieliyahu1) | No X on the profile. kccs#24 and his kccs#35 draft are on the **Now** KCC row; his apps moved to [STP-KAS/kaspa-builders](https://github.com/STP-KAS/kaspa-builders) (entry danieliyahu1). [kas-odds](https://github.com/danieliyahu1/kas-odds) and [onlykas](https://github.com/danieliyahu1/onlykas) are his SilverScript apps. [kaspa-simple-mcp](https://github.com/danieliyahu1/kaspa-simple-mcp) is a read-only wrapper of api.kaspa.org, mainnet by default. He follows [ezratameno](https://github.com/ezratameno). Those public repos are not Kaspa. |
 
 ---
 

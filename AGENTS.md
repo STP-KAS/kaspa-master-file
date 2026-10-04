@@ -31,6 +31,10 @@ When this master file is named, opened, or used as the pin list, Grok Build **sh
 
 Sandbox `127.0.0.1:16210` is **not** automatically this PC. Public REST (`api.kaspa.org`, `api-tn10.kaspa.org`) is the always-on read path. Mainnet is retired: kaspa bot's mainnet node was stopped and wiped on 25 Sep 2026, and no desk mainnet node is kept running.
 
+## What belongs in the master (since 4 Oct 2026)
+
+stp approved this rule on 4 Oct 2026 (19:06 CEST). The master keeps kaspanet repos and their PRs, issues and releases; KIPs and KCCs, plus any reference implementation that a KIP or KCC status gate names or waits on; statements by core contributors (people with merged kaspanet code or KIP/KCC authorship) about kaspanet code or the protocol, and their own repos that build directly on kaspanet code; credible source lists (sites, forums, mirrors); network history and incidents, as one line when the cause is off-chain; and stp's own desk results when they test kaspanet code, KIPs or KCCs. Everything else goes to [STP-KAS/kaspa-builders](https://github.com/STP-KAS/kaspa-builders): third-party wallets, indexers, name services, apps, pools, payment rails, research repos and essays; community X accounts; a core contributor's side projects that do not build on kaspanet code; stp's own apps and experiments (1984, KUSDT, AgenC); and desk tests of third-party projects, which go with that project's entry. Leave a one-line pointer in the master only where a kaspanet item depends on a moved item. Fact corrections stay in the master, and nothing leaves the master without landing in kaspa-builders.
+
 ## Where to write (layout since 26 Sep 2026)
 
 - `README.md` is the intro plus the **Now** board. Nothing else. Do not add “what this pass did” sections or new reference sections to it.

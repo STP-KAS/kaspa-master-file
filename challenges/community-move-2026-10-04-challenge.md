@@ -29,3 +29,7 @@ Totals at b567a48: HELD 9 · FAILED 0 · UNVERIFIABLE 0 (5 from 220fa36 plus 4 h
 ## Recheck @ 25b51ca (4 Oct 2026, 19:05 CEST)
 
 Reviewed tip `25b51cabc05144abc89a451e80a5fa89e624b70a`. It is one commit on `b567a48`, with the noreply identity only. Its only change is `[-19:10-]{+19:01+}` in the SNAPSHOT row, which closes the cosmetic advisory, and the row is still newest first. The JSON is untouched. The two b567a48 advisories ("SilverScript Studio" left in 'Do not weld' at master.json L285, which I'd keep, and the optional "Not desk-tested." after #1140) are still open and do not block. Totals: HELD 9 · FAILED 0 · UNVERIFIABLE 0. Clear to merge with stp's OK.
+
+## Recheck @ cf10a0f (4 Oct 2026, 19:06 CEST)
+
+Reviewed tip `cf10a0f53dc98279f12cd523be008879efff00fd`. It is one commit on `25b51ca`, with the noreply identity only. Its only change is `{+Not desk-tested.+}` after #1140 in README ("is open with no comments. Not desk-tested. Kurncy") and in JSON ("…/issues/1140. Not desk-tested."), which closes that advisory. The JSON is canonical (indent 2, 0 `\u` escapes) and the tree has no conflict markers. The 'Do not weld' Studio guard is kept, as advised. Totals: HELD 9 · FAILED 0 · UNVERIFIABLE 0. No advisories remain open. Clear to merge with stp's OK.

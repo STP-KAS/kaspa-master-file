@@ -12,3 +12,16 @@ Reviewed tip `220fa36b1fad7143ebd8ee28a4858b26ad60e7c1` (4 Oct 2026, 19:14 CEST)
 - ADVISORY: I agree with keeping the earlier olafweller mentions (Kas-Smiths topic 156, the research.kas.pa citation of dc2f176d, the 'Do not weld' item). They are source history, not community entries.
 
 Totals at 220fa36: HELD 5 · FAILED 0 · UNVERIFIABLE 0. No open FAILED. No X calls. No public reply.
+
+## Recheck @ b567a48 (4 Oct 2026, 19:20 CEST)
+
+Reviewed tip `b567a4898dfd485bd91cb5204d864465c806384b`. It is one commit on `220fa36`, with the noreply identity only. Main `7a54145` is an ancestor. The diff against 220fa36 is README +1/−1, master.json +2/−2 and SNAPSHOT +1/−1. The JSON parses with 0 `\u` escapes, and the tree has no conflict markers.
+
+- HELD (KasperoLabs moved): the Studio mainnet claim (x.com/KasperoLabs 2103564787686793710), the vertex relay (2103759384694185988), kasperolabs/silverscript-studio with `e27a7c4e`, and the KasDash demo are gone from README L90 and the master.json entry. The JSON url is now `https://github.com/kaspanet/rusty-kaspa/issues/1140`.
+- HELD (#1140 kept): `gh api repos/kaspanet/rusty-kaspa/issues/1140` at 19:19 CEST returns open, 0 comments, created 2026-09-30T04:43:20Z, title "SDK v2.1.0 findings from mainnet: …". That matches "(30 Sep, SDK v2.1.0 findings from mainnet) is open with no comments". The author is kasperolabs, which the row no longer says. That is fine, because it is a kaspanet object.
+- HELD (other lines unchanged): the Kurncy, saefstroem, dnsseeder v0.9.6 and Umbrel #6120 text is byte-identical to 220fa36.
+- HELD (SNAPSHOT): the 19:10 row now covers both moves accurately and is newest first.
+- ADVISORY: the owner's message said "No kaspero, studio or kasdash string remains". That is not quite right: master.json L285 'Do not weld' still says "SilverScript Studio into a Kaspa core tool". Keep it. It is a guard, the same as the kept kaspa-privacy-initiative 'Do not weld' item, but the statement should be corrected.
+- ADVISORY: "Not desk-tested." after #1140 was removed with the Studio text. The SDK findings are still not desk-tested, so consider restoring those three words after "no comments." in README and JSON.
+
+Totals at b567a48: HELD 9 · FAILED 0 · UNVERIFIABLE 0 (5 from 220fa36 plus 4 here). No open FAILED. Clear to merge with stp's OK. No X calls. No public reply.

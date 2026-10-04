@@ -39,7 +39,7 @@ All times are CEST (Europe/Brussels, UTC+2). Sweep ~07:44–08:10.
 Window: GitHub/forum since `2026-10-03T05:23:01Z`; X since 3 Oct markers.
 Branch: `master/sweep-2026-10-04` (never main). Zero public actions.
 
-Commits: content (this pass), snapshot link (follow-up). Pushed to origin. Main untouched.
+Commits: content [`abbeaad`](https://github.com/STP-KAS/kaspa-master-file/commit/abbeaad), snapshot link [`8abbc2e`](https://github.com/STP-KAS/kaspa-master-file/commit/8abbc2e). Pushed to origin. Main untouched.
 
 ## Added on this branch (README Now cells + master.json)
 

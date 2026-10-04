@@ -80,3 +80,56 @@ Fix P L70 (and the report): replace "No new releases." with
 - **A4.** kcc20-reference#1 head `5b2a2312` (2 Oct 13:45Z) is recorded only on the cancelled-audit branch `build/kcc-last-call-2026-10-02`. Main still pins `60064687` (27 Sep). Recommend recording the new head on main via a sweep.
 - **A5. Open item 13:** two private desk repo names remain on main (R L67, J vprogs note). This branch did not introduce them. Waiting on stp.
 - **A6.** The pre-existing out-of-order SNAPSHOT pairs (S L33/34, L159/160, L167–171, L199/200) are on main, not from this branch.
+
+## Recheck @ eb784c6 (4 Oct 2026, 08:11 CEST)
+
+- **Tip reviewed:** `eb784c67f9c6115ed3f8430bc626c57249461030` ("Fix 4 Oct challenge F1-F3 and carried advisories…", 08:03:57 CEST, STP-KAS noreply). It is a plain push on `dd8f945` (`git merge-base --is-ancestor dd8f945 eb784c6` → true) and still fast-forwards from main `4183b7a`. **No main merge needed.**
+- **Delta `dd8f945..eb784c6`:** README 4/4 (L54, L67, L75, L77), SNAPSHOT 2/2 (L11, L16), master.json 6/6 (J L57, L105, L117, L141, L153, L261), prompts/grok-build-2026-10-03.md 3/3, prompts/grok-build-2026-10-04.md 9/7.
+- **Recheck totals: 17 HELD · 1 FAILED · 1 UNVERIFIABLE.** Prior FAILED items F1, F2 and F3 are closed.
+
+### Correction to this note's first pass (our error)
+
+The first pass got two things wrong, both in F2. The old lines above stay as written.
+- **`f80b4eb3` is not a commit.** It is the v1.1.0 **tag object**. `gh api repos/supertypo/dotk-indexer/commits/f80b4eb3fe` → HTTP 422 "No commit found", so the F2 fix link `…/commit/f80b4eb3fe` would 404. `git ls-remote https://github.com/supertypo/dotk-indexer` → `f80b4eb3fe89… refs/tags/v1.1.0` and `1eda6586c315… refs/tags/v1.1.0^{}`. The tag points to commit `1eda6586` ("Serve the whole history as a feed, version 1.1.0", 2026-10-03T14:12:13Z).
+- **`17ca993b` is not v1.0.0.** F2 carried main's "v1.0.0 [`17ca993b`]" into its fix wording. `git ls-remote` → `90e9dce6… refs/tags/v1.0.0` and `c3965796629f… refs/tags/v1.0.0^{}` (commit 2026-10-02T09:40:19Z). compare `c3965796...17ca993b` → ahead 1, so `17ca993b` (09:45:15Z) was the main tip, not the tag.
+- F1 was right. `git ls-remote https://github.com/supertypo/dotk-core 'refs/tags/v0.13*'` → `9c81aff30c18… refs/tags/v0.13.1` (tag object) and `02d2b3f283a4… refs/tags/v0.13.1^{}`; v0.13.0 is lightweight at `5a0e6ae101…`.
+- **Corrected F2 fix wording** (this is what `eb784c6` now carries):
+  > The indexer is public. [supertypo/dotk-indexer](https://github.com/supertypo/dotk-indexer) v1.1.0 (annotated tag on commit [`1eda6586`](https://github.com/supertypo/dotk-indexer/commit/1eda6586c3); release 3 Oct 14:12Z: new `GET /v1/history`, `historySeq`/`key`/`historyEpoch`; tip [`ded471db`](https://github.com/supertypo/dotk-indexer/commit/ded471db46) 3 Oct 23:48Z); v1.0.0 (annotated tag on commit [`c3965796`](https://github.com/supertypo/dotk-indexer/commit/c396579662); release 2 Oct 09:43Z; repo created 09:19Z). AGPL-3.0-only; 0 issues, 0 pulls, discussions disabled.
+
+### FAILED (1)
+
+**RF1. FAILED (minor): the kccs #36 quote is attributed to the file.** S L11 at `eb784c6`: "kccs draft [#36] [`d7809a17`] (Curious-being99, 3 Oct 06:38Z) "Covenant v2": one 12-line plain-text file (public/private/verifiable covenant idea; no KCC number, preamble or status; "It not a code it only a text")". The file `Covenant v2` at `d7809a17` has 12 lines and does **not** contain that sentence. It is the last line of the PR **body** (`gh api repos/kaspanet/kccs/pulls/36 --jq .body`).
+Fix S L11: replace `; "It not a code it only a text")` with `); the PR body ends "It not a code it only a text"`.
+
+### HELD (17)
+
+1. HELD: tip, plain push and fast-forward from main (see header).
+2. HELD: F1 fixed in R L75, J L141, S L11, P L51 and P L14. The text now reads "one commit past annotated tag v0.13.1 (on commit [`02d2b3f2`], 3 Oct 14:39Z, …; Cargo.toml 0.13.1; no GitHub release)", "v0.13.0 still equals [`5a0e6ae1`]" and "Neither the tags nor main has a `.sil` or a compiler", with the grammar fixed. P L14 reads "dotk-core tag v0.13.1 ≠ a GitHub release". Evidence: the ls-remote output above; `gh api repos/supertypo/dotk-core/releases` → 0.
+3. HELD: F2 fixed in R L75 and J L141 with the peeled commits `1eda6586` and `c3965796`, tip `ded471db`, AGPL-3.0-only, 0 issues, 0 pulls, discussions disabled. dotk-indexer `created_at` is 2026-10-02T09:19:45Z; the v1.0.0 release was published 09:43:08Z and v1.1.0 at 2026-10-03T14:12:23Z. Also added to S L11 and P L53.
+4. HELD: F3 fixed in P L72 and the report L37: "New in the window: dotk-indexer release v1.1.0 (3 Oct 14:12Z) and dotk-core tag v0.13.1 (14:39Z, no GitHub release). No other watched repo released." Evidence: I re-scanned releases published after 2026-10-03T05:23Z across 18 watched repos: RunOnFlux/kaspa-core, argent, kcc20-reference, vprog-tictactoe, kaspa-x402, openminer-reference, kastle, kccs, kips, rusty-kaspa, silverscript, vprogs, dotk-core, dotk-sdk, dotk-sdk-tx, kaspium_wallet, KaChat and dotk-indexer. The only release is dotk-indexer v1.1.0. dotk-core v0.13.1 is accurately called a tag with no release.
+5. HELD: the carried URL periods are applied. J L57 "…/commit/03dd516c. Not merged", J L117 "…/commit/533e8a55. Prior note", J L261 "…existing-kaspa-privacy.md. Topics 295" (semantic diff shows each as a new sentence break).
+6. HELD: the service.rs anchor is restored. R L54 links "[`service.rs` L850-853 at `77d9a2e8`](…/blob/77d9a2e8/rpc/service/src/service.rs#L850-L853)" and J L57 mirrors it. At 77d9a2e8, L850 is the address-count cap and L853 the page-size cap (first-pass HELD 6).
+7. HELD: #991 wording. S L16 and the 3 Oct prompt L69/L78 now say "six review-thread replies by D-Stacks on his own PR". The old phrase "six D-Stacks review comments" has 0 hits left in S, R, J and the 3 Oct prompt.
+8. HELD: S L16 "(multi-backend; one sample; the pool also served 2.1.0 and 2.0.1)". 2.0.1 `965d43fe` was seen in my reads on 4 Oct and in 3 Oct reads.
+9. HELD: R L67 / J L105 "The PR body parks a red repro at `zk/aggregate-prover/tests/committed_gap_receipt_miss.rs.disabled`; that file is not in the tree at `b32e92de` or `055ae28a`". Evidence: the vprogs #169 body ends "The red repro for the recovery PR is parked at zk/aggregate-prover/tests/committed_gap_receipt_miss.rs.disabled." #169 head is `b32e92de` and release-candidate is `055ae28a`. Recursive trees at both (not truncated) have only `zk/aggregate-prover/tests/committed_gap_retry.rs`.
+10. HELD: kastle #357 "closed unmerged (1 Oct 13:44Z)" (R L77, J L153, S L16, 3 Oct prompt). Evidence: closed_at 2026-10-01T13:44:47Z, not merged.
+11. HELD: "#373–#375 and fee-model test pull #377, all merged 2 Oct". Evidence: #373, #374 and #375 are titled "fix(…): UAT logic fixes — …" and merged 16:31:13Z, 16:31:36Z and 16:31:59Z. #377 is "test(swap): fee-model test + fee summary component (post-netting)", merged 16:40:07Z. #376 (the earlier fee-model test) closed unmerged.
+12. HELD: "Only bot comments and reviews (CodeRabbit, Copilot); GitHub says `blocked`". Evidence: #372 reviews come only from coderabbitai[bot] and copilot-pull-request-reviewer[bot], issue comments only from coderabbitai[bot], and mergeable_state is `blocked`.
+13. HELD: kccs #36 placement and facts (apart from RF1). It appears in S L11 and P L50 only; README and JSON have 0 hits. It is a draft at head `d7809a17adc5…`, opened by Curious-being99 on 2026-10-03T06:38:08Z, title "Introduce initial draft for Covenant v2", with one file `Covenant v2` (+12) and no KCC number, preamble or Status line.
+14. HELD: the api-tn10 mix wording in S L11 and P L54. "~07:46: 200, diff 2, kaspad 2.1.0 (p2p `b079c555`)" matches the owner raw. "the challenger's 16 reads at 07:53 CEST gave 2.1.0 (p2p `82c70f33`) ×12 and 2.0.1 (p2p `965d43fe`) ×4" matches this note's HELD 13. It is worded as samples, and no line uses api-tn10 as payment proof.
+15. HELD: JSON canonical form and no trims. master.json is byte-identical to `json.dumps(indent=2, ensure_ascii=False)+"\n"`, with 0 `\u` and 347 notes. Note lengths dd8f945 → eb784c6: Not live 2515 → 2617, yellow-paper note 12066 → 12219, tictactoe 2248 → 2249, DOTK 5488 → 5736, Wallets 1234 → 1359, research.kas.pa 966 → 967. All grew; the replaced fragments are only the superseded pins.
+16. HELD: no leaks and no `0c72511`. STP-KAS repo links on changed lines (dagknight-test-grok, kns-tn10-testing, kns-dotk, tn10-vprogs-stress-findings, tn10-vprogs-round7-ideas, kaspa-master-file) are public and their counts equal `dd8f945`'s. "private key" is main's existing tictactoe text. Neither the private stall-repo name nor any new private desk repo name appears. `0c72511` is not an ancestor, and its content markers give 0 hits.
+17. HELD: no contradiction with `build/2026-10-04` @ `9b744ab`.
+    - kcc20-reference: the sweep leaves the KCC20 row alone. Its S 07:49 / P L56 "main still pins `60064687`" is dated history.
+    - kccs #36: the sweep's "Not a KCC" agrees with the build's "a 12-line text idea, unnumbered".
+    - DOTK: identical peeled SHAs on both branches.
+    - Merge: `git merge-tree` conflicts only in SNAPSHOT (keep the build's 08:04/08:03/07:59 rows above the sweep's 07:49 row). README and JSON auto-merge, and the merged JSON stays canonical.
+
+### UNVERIFIABLE (1)
+
+1. UNVERIFIABLE: "this desk's 16 at 07:59 CEST gave the same two ×9 and ×7, all 200" (S L11, P L54). No raw for an owner 07:59 read was found on the box. `kaspa-master-watch/raw/2026-10-04/` has only the 07:45 single sample, and `scratch/build-2026-10-04/api*/` are the Build bot's 07:56 and 08:02 runs. The mixed pool itself is HELD by three independent read sets.
+
+### Advisory (not counted)
+
+- The per-read tallies (×12/×4, ×9/×7) sit beside `build/2026-10-04`'s "No ratio is claimed". Consider adding "sample counts, not a pool ratio".
+- Open item 13 is unchanged: the two private desk repo names remain on main. Waiting on stp.

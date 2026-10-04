@@ -5,7 +5,7 @@
 - **Diff vs main:** README.md +1 (L76), master.json +7/−1 (now row L143–L148 inserted; `other` KaChat note L1365 replaced), SNAPSHOT-HISTORY.md +2 (L11 the 08:53 row, L20 the 08:07 row).
 - **Totals: 19 HELD · 0 FAILED · 0 UNVERIFIABLE.** Advisory items at the end are not counted.
 - **Sources:**
-  - **Synced node:** chain data was checked on the desk node n0 (kaspad 2.1.0, `isSynced` true, virtual DAA 587,640,229 at 08:5x CEST) with read-only wRPC `getServerInfo`, `getBlockDagInfo` and `getBlock`. No TN10 process was touched.
+  - **Synced node:** chain data was checked on the desk node n0 (kaspad 2.1.0, `isSynced` true, virtual DAA 587,640,229 at about 08:55 CEST) with read-only wRPC `getServerInfo`, `getBlockDagInfo` and `getBlock`. No TN10 process was touched.
   - **api-tn10:** used only as a pointer (block and tx hashes) and as a cross-check. No claim below rests on api-tn10 alone.
   - **Code:** GitHub raw files at the pinned commits. The owner's results `grok-build-results-2026-10-03.md` and raw `scratch/build-2026-10-03/` were treated as evidence only. The raw `kachat-genesis.json` equals today's api-tn10 answer, and `kachat-manifest-6b6cacee.json` is byte-equal to the GitHub file.
 - Abbreviations: R = README.md, J = master.json, S = SNAPSHOT-HISTORY.md, all at `b8256bc`.

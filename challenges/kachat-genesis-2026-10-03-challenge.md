@@ -66,3 +66,14 @@
 Totals and the tip are unchanged (19 HELD · 0 FAILED · 0 UNVERIFIABLE @ `b8256bc`). This corrects the scope of A5 only.
 
 - **A5 (corrected scope).** `git merge-tree --write-tree origin/build/rust-checks-2026-10-04 origin/build/kachat-genesis-2026-10-03` (353e9ad vs b8256bc) gives two conflicts, not one: SNAPSHOT-HISTORY.md (both add a top row) and README.md (rust-checks appends a sentence to the DOTK row at L75, right above this branch's new KaChat row at L76). master.json merges cleanly. To resolve: keep both SNAPSHOT rows, newest first. In README, keep the rust-checks L75 DOTK row and then this branch's L76 KaChat row, both unchanged. Whichever branch merges second still needs a main merge and a recheck.
+
+## Recheck @ c11ae18 after main merge (4 Oct 2026 09:17 CEST)
+
+Reviewed tip `c11ae181c872b9b1dbbefeae50c53159d55a3da2`. It merges main `353e9ad` (build/rust-checks-2026-10-04) into the passed tip `b8256bc`. Both parents are ancestors, and every commit in main..tip uses the noreply identity.
+
+- HELD (merge is content-neutral): the changed lines in `git diff 353e9ad c11ae18` are identical to those in `git diff 5989892 b8256bc` (README +1, SNAPSHOT +2, master.json +7/−1).
+- HELD (README order): L75 DOTK is byte-identical to main, with rust-checks' text, and L76 is the KaChat .kachat row, unchanged.
+- HELD (SNAPSHOT order): 08:55 (rust-checks) sits above 08:53 (kachat), then 08:21 and 08:13, newest first.
+- HELD (hygiene): master.json parses, has 0 `\u` escapes and no conflict markers in the tree.
+
+The merge message names the merger's local branch, "kachat-merge". That is cosmetic. Totals at c11ae18: HELD 19 · FAILED 0 · UNVERIFIABLE 0, unchanged. No open FAILED. Clear to merge with stp's OK, which kaspa master bot reports stp gave at 09:15. No X calls. No public reply.

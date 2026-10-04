@@ -124,3 +124,41 @@ Fix: append to S L11 (the 08:04 row), after the existing verbatim quote:
 | build/spend-vision-2026-10-03 | `735d9e90470856a5013f5f25471fbd2d09699993` | `4183b7a` (fast-forwards) | 3 Oct 23:30 | 1 | Not challenged. |
 
 These two are covered by this pass: `build/2026-10-04` @ `9b744ab` (this note) and `master/sweep-2026-10-04` @ `eb784c6` (Recheck in `challenge/sweep-2026-10-04`). Covered but still open: `build/2026-10-01` @ `fde0918` (base `57d6cca`, behind main), reviewed in `challenge/sweep-2026-10-01` with FAILED items and not merged.
+
+## Recheck @ b255678 (4 Oct 2026, 08:20 CEST)
+
+- **Tip reviewed:** `b255678d7ba44f043110c82399b55e3238f80845` ("Fix challenge bc048f6 on build/2026-10-04: keep main's 2 Oct api-tn10 sentence, sourced nice and hashrate, start times, advisories…", 08:13:47 CEST, STP-KAS noreply). It is a fast-forward on `9b744ab` and was unchanged at re-fetch before the push. origin/main `4183b7a` is an ancestor. **No main merge needed.**
+- **Net vs main:** 4 files, +16/−12. Delta `9b744ab..b255678`: AGENTS.md 2/2 (L18, L19), README.md 2/2 (L72, L89), SNAPSHOT-HISTORY.md +2/−1 (new L11 08:13 row; L12 08:04 row amended), master.json 3/3 (J L81, L123, L237).
+- **Recheck totals: 15 HELD · 1 FAILED · 0 UNVERIFIABLE.** The prior F1 is closed. The prior U3 (hashrate) and U4 (nice) are resolved to HELD.
+- Box checks were read-only: `ps`, `/proc/stat`, `/proc/uptime`, `dmesg`, and `grep`/a Python parse of the kaspad, supervisor and miner logs. No process was touched.
+
+### FAILED (1)
+
+**RF1. FAILED (minor): the box boot time is stated as exact, but it has the same lag as `ps`.** A L18: "The box booted 3 Oct 20:46:02 CEST (`uptime -s`)." S L11 (08:13 row): "box boot 20:46:02 (`uptime -s`)". The same row correctly says `ps` start times run about 32 s late. `uptime -s`, `who -b` and `/proc/stat` btime are computed the same way as `ps` lstart: wall-clock now minus elapsed boot-clock time. So they carry the same lag.
+What is going on: the box is a KVM guest (`dmesg`: "clocksource: Switched to clocksource kvm-clock", virtio_balloon). Its wall clock has gained about 33 s on its boot-time clock since kaspad started. Measured at 08:19 CEST: wall time elapsed since the log banner 21:46:28.507 is 37,993 s, while `ps -o etimes` for pid 42988 is 37,960 s, a 32.7 s gap. That fits a VM pause or a host clock resync that stepped the wall clock forward. Every btime-derived time (`ps` lstart, `uptime -s`) is therefore at least ~33 s late. The true boot was no later than about 20:45:29 CEST, and earlier if the clocks also diverged before 21:46.
+Fix A L18: replace "The box booted 3 Oct 20:46:02 CEST (`uptime -s`)." with
+> The box booted by about 20:45:29 CEST on 3 Oct (`uptime -s` shows 20:46:02, but it is derived like `ps` start times and lags the same way).
+Fix S L11: replace "box boot 20:46:02 (`uptime -s`)" with "box boot by about 20:45:29 (`uptime -s` shows 20:46:02, same lag as `ps`)".
+
+### HELD (15)
+
+1. HELD: tip, fast-forward and size. `git merge-base --is-ancestor 9b744ab b255678` and `… origin/main b255678` are both true. `git diff --shortstat origin/main b255678` → "4 files changed, 16 insertions(+), 12 deletions(-)".
+2. HELD: the prior F1 is fixed byte-exact. The 4183b7a R L51 substring "Recheck 2 Oct 07:57:01 … so more than one backend remains." (282 chars) appears exactly inside S L12 (the 08:04 row) as `Main's 2 Oct sentence, replaced in \`dd798d2\`, verbatim: "…"` (Python substring test → True).
+3. HELD: nice 0. A L19: "`ps -o nice` shows 0 for all six at 08:02 and 08:12". At 08:19:23 `ps -o pid,ni,lstart -C kaspa-miner` shows NI 0 for pids 49476, 49478, 49480, 49482, 49484 and 49520 (kaspad 42988 is also 0). This is consistent with the stated readings.
+4. HELD: the nice-19 sourcing. "TN10 ops says nice 19 is used during storms" is attributed to TN10 ops. "The handoff log also shows a nice 19 plan for the miners after the 3 Oct resync, which was not a storm" matches HANDOFF.md. L294 is the heading "## 2026-10-03 n0 disk-full + wipe/resync (TN10 ops; stp approved wipe 09:51 CEST)". L297: "start-miners-when-synced.sh waiter (nice 19, starts pool-miners-supervisor.sh -> 6 miners to qzffl5 …)". L298: "n0-finish-resync.sh … starts pool-miners-supervisor.sh at nice 19". The row cites the log without line numbers; L297–L298 are the right lines.
+5. HELD: the hashrate, recomputed read-only. "Current hashrate is: X Mhash/s" lines in `/tmp/kaspa-tn10-pool-miners/{pool,knsbot,gb001..gb004}.log` (Z timestamps), window 05:13:00Z–06:13:06Z (07:13:00–08:13:06 CEST): 2,166 lines, mean 4.509 Mhash/s per miner, ×6 = 27.05. Per-miner means are 4.49–4.52. The six lines at 06:13:06Z are 4.19 + 4.33 + 4.53 + 4.57 + 4.50 + 4.50 = 26.62. So "about 27 MH/s", "4.51 Mhash/s each" and "sum to 26.6" all hold. The stated count of 2,172 lines depends on the exact window edges (2,160 to 08:13:00, 2,166 to 08:13:06, 2,196 to 08:13:59); see advisory.
+6. HELD: "28.8 MH/s" is gone from A and announced as dropped in S L11 ("The unsourced ~28.8 MH/s (TN10 watch) is dropped").
+7. HELD: the kaspad start banner. `/workspace/kaspa-logs-tn10-n0/rusty-kaspa.log` L467215: "2026-10-03 21:46:28.507+02:00 [INFO ] kaspad v2.1.0". `stdout.log` L35901 shows the same banner at 21:46:28.506. The previous log line is 20:43:08 (SMT pruning), so the old node logged nothing from 20:43 to 21:46.
+8. HELD: the miners' start time. `supervisor.log` L1–L6: "2026-10-03T21:49:33+02:00 start pool 49476" … "start gb004 49520". The pids match the six live `ps` pids, and `ps` shows 21:50:05 (32 s later).
+9. HELD: "`ps` start times on this box run about 32 s late". The gap is 32 s for kaspad (21:46:28 vs 21:47:00) and 32 s for the miners (21:49:33 vs 21:50:05), and the direct measurement in RF1 is 32.7 s. Keep the claim, with the mechanism in RF1.
+10. HELD: "(his figures; not observed by the desk)" follows Ross Ku's numbers in R L72 and J L123.
+11. HELD: the two JSON periods. J L81 reads "…/commit/5b2a23124ef43730eca4f69248bc2866daf2c24c. @kccforum" and J L237 reads "…/rusty-kaspa/issues/1140. Not desk-tested".
+12. HELD: the vertex relay link is restored. R L89 has "Earlier relay: vertex [2103759384694185988](https://x.com/KaspaScopio/status/2103759384694185988)" and J L237 has "Earlier relay: vertex https://x.com/KaspaScopio/status/2103759384694185988 (26 Sep 08:11Z)". This is the same id main had.
+13. HELD: JSON form and no trims. master.json is canonical (`json.dumps(indent=2, ensure_ascii=False)+"\n"` byte-identical), with 0 `\u` and 347 notes. Note lengths: KCC20 2508 → 2509, Argent 3268 → 3308, Third-party 1349 → 1405. The AGENTS rows grew (node 1717 → 1958 chars, miners 871 → 1238). The only removals are "28.8 MH/s" and "only during storms", both reworded and announced in S L11.
+14. HELD: SNAPSHOT order, leaks and `0c72511`. The order is S L11 08:13 > L12 08:04 > L13 08:03 > L14 07:59 > L15 3 Oct 09:52. On `+` lines there are no emails, home paths, keys, seeds, reserve addresses, or the private stall-repo name; the STP-KAS links (KagenC, argent-xai, kaspa-master-file) and the TN10 pay-to address are unchanged from main. `0c72511` is not an ancestor.
+15. HELD: merge-tree vs `master/sweep-2026-10-04` @ `373f1297747af073aec855bfe28f2277222c5ce9` (its current tip, which applies the sweep RF1 wording exactly: "…); the PR body ends "It not a code it only a text""). SNAPSHOT-HISTORY.md conflicts only at the top rows; README and master.json auto-merge, and the merged JSON stays canonical. Resolve by keeping the build rows (08:13, 08:04, 08:03, 07:59) above the sweep's 07:49 row. No content contradiction.
+
+### Advisory (not counted)
+
+- Give the exact window for the hashrate line count, e.g. "07:13:00–08:13:06 CEST, 2,166 lines". The stated 2,172 is not reproduced exactly for any natural window edge. The mean and totals hold either way.
+- The prior advisories A3 (tallies vs "No ratio") and A7 (open item 13) are unchanged.

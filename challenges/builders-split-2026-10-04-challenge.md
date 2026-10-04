@@ -422,3 +422,14 @@ Q16. HELD: nothing is lost. My own token check of everything removed between `cf
 - A1: still open as an order rule. kaspa-builders main is still `d4b94ad`; the move is on branch `master/builders-move-2026-10-04` @ `3b333fa`. Merge order: kaspa-builders first, then this master branch, after K-F1 and K-F2.
 - K-A1 (Code read, optional): "nobody can race that commit" is looser than the source. Suggested wording, from `045759292990`: "means nobody can race a commit for the same gap".
 - K-A2 (optional): after the builders merge, the five pointers could link the entry pages directly (`…/kaspa-builders/blob/main/entries/<slug>.md`) instead of the repo root.
+
+## Recheck @ 9fd1009 (4 Oct 2026, 23:20 CEST)
+
+Reviewed tip `9fd1009625c737552254054812c0f08fbd687f78`. It is one commit on `206577a`, with the noreply identity only. The diff is README +3/−3 and master.json +3/−3, and nothing else changed.
+
+- HELD K-F1: `[-draft-]{+design+}` in README and JSON ("IzioDev on his name-service PoC design (").
+- HELD K-F2: in README L74 the release-tag link is replaced by the `724c5fff` blob link to `kaspa-x402-hash-chain-head-v1.sil#L35`, and the JSON note now reads "724c5fff https://github.com/elldeeone/kaspa-x402/blob/724c5fff…/contracts/kaspa-x402-hash-chain-head-v1.sil#L35". `git grep 'releases/tag/v1.0.0-rc.2\|draft name-service PoC'` on README and master.json finds nothing.
+- HELD (optional wording applied): "nobody can race a commit for the same gap" is now in README and JSON, matching the source.
+- HELD: master.json parses, uses indent 2 and has 0 `\u` escapes. The SNAPSHOT rows run 23:05 > 23:04 > 19:25, unchanged.
+
+Totals at 9fd1009: HELD 17 · FAILED 0 · UNVERIFIABLE 0. No open FAILED. Clear to merge with stp's OK, AFTER kaspa-builders `master/builders-move-2026-10-04` @ 7d013d5 lands on that repo's main (A1).

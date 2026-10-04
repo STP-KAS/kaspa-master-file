@@ -243,3 +243,14 @@ Replace L48 with:
   - `entries/satoshis-engine.md`: "**The master keeps:** its copy of `SATOSHIS-ENGINE.md` as a receipt; no row."
 - BA2: the KPI PR #22 head has moved to `f4a4ddc50a41` (commit 4 Oct 22:22 CEST, PR updated 22:26 CEST; still an open draft). The entry pins `2590e392`, so it stays true. The test counts above are the same at the new head. The next KPI pass should re-read it.
 - Merge order (A1): merge kaspa-builders `master/builders-move-2026-10-04` first, then the master branch, after its K-F1 and K-F2 fixes.
+
+## Recheck: builders-move @ 7d013d5 (4 Oct 2026, 23:20 CEST)
+
+Reviewed tip `7d013d53fbbc923389b0fbfbcb33a2b8a8b58c11` on STP-KAS/kaspa-builders `master/builders-move-2026-10-04`. It is one commit on `3b333fa`, with the noreply identity only. Six entry files changed, +11/−1.
+
+- HELD BA1: "**The master keeps:**" lines were added to kaspa-core-flux, openminer-reference and wallets-kcc20 ("nothing; the whole row moved."), kasranks (`KASRANKS.md` receipt) and satoshis-engine (`SATOSHIS-ENGINE.md` receipt), each with the exact wording.
+- HELD SA5: KPI L48 is the proposed line byte for byte. It links `2590e392` and note `43a3c64` G4, counts the tests from public source, and attributes the not-run claim to the desk.
+- HELD: builders.json and people.json parse with 0 `\u` escapes.
+- ADVISORY: the two seed entries, kasperolabs-silverscript-studio and olafweller-kpi, have no "The master keeps:" label. KasperoLabs says it in prose (L40, "The master keeps the rusty-kaspa #1140 line"). KPI could add "**The master keeps:** nothing; the research.kas.pa fact fix is unrelated to this entry." This does not block.
+
+Totals at 7d013d5: HELD 17 · FAILED 0 · UNVERIFIABLE 1 (the regenerated-staging item, unchanged). No open FAILED. Clear to merge first, with stp's OK.

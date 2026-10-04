@@ -140,3 +140,106 @@ S18. HELD: the seed SNAPSHOT row is accurate. One row, newest first; "19:05" mat
 - SA4: the KPI entry filename is built from the account's display name. A handle slug (`olafweller-kpi.md`) fits README L12 and the handles-not-names rule. The same goes for the project README's "Initiated by …" line, which the entry does not quote (good).
 - SA5: "19 unit + 1 transport" and "46 Python tests … not run" are sourced only to a box-local maker report. Either cite them as the desk's own run note, or reduce them to "20/20 Rust tests (19 + 1)" as in 43a3c64.
 - SA6: the seed predates the builders-split rule (repo 19:04 CEST, rule approved 19:06 CEST). Its README L5 scope sentence ("third-party builders, community people, their projects and ideas") is broader than the master's AGENTS.md wording. Once F4 is decided, align the README L5 and AGENTS.md L7–L8 scope wording with the master rule.
+
+## Recheck: builders-move @ 3b333fa
+
+- STP-KAS/kaspa-builders branch `master/builders-move-2026-10-04` @ `3b333fa06adab53c96618a132b8e84c9a894ffd5`, from `d4b94ad`. Read-only clone at `/workspace/scratch/kb-move` with the push URL disabled. Nothing was pushed to kaspa-builders. `git ls-remote`: main is still `d4b94ad9944f…`. Read 4 Oct, about 23:15–23:45 CEST.
+- Option A is stp's decision as reported by kaspa master bot (23:02 CEST, "Move them but keep interesting reasoning in master").
+- **Recheck totals: 14 HELD, 0 FAILED, 1 UNVERIFIABLE.** S-F1 is closed. SA1–SA4 and SA6 are closed. SA5 stays open as an advisory, with wording proposed below.
+
+B1. HELD: shape and identity.
+- There is one commit, `3b333fa` (23:06:55 +0200, parent `d4b94ad`). Author and committer are `STP-KAS <227352643+STP-KAS@users.noreply.github.com>`. It exists only on the branch.
+- `git diff --stat -M d4b94ad 3b333fa`: 28 files, +1382/−12. The changes are AGENTS.md, README.md, SNAPSHOT-HISTORY.md, builders.json, do-not-weld.md, 3 new `docs/`, 17 new entries, the KPI rename, and new `people.md` / `people.json`.
+
+B2. HELD: S-F1 is closed with my line. KPI entry L66 is byte-equal to the fix wording in S13 (script `fix in lines` is True, at L66).
+
+B3. HELD: SA4 is closed.
+- `entries/olafweller-kpi.md` is a rename (similarity 94%). Only L3 and L66 changed.
+- The README index link and the builders.json `page` both point at the new path. `git grep` finds the old filename only in the new SNAPSHOT row, which records the rename.
+
+B4. HELD: SA3 is closed. KPI L3 reads "**Chip:** `experiment`. Third-party community research." `git grep "(catalog)"` hits only the SNAPSHOT row, which records the drop.
+
+B5. HELD: SA2 is closed.
+- AGENTS.md now lists `page` ("the entry's path, `entries/<slug>.md`") among `name`, `url`, `page`, `chip`, `note`, `sources`, `checked`.
+- All 19 builders.json entries have exactly those 7 keys, and every `page` file exists.
+- The README index has 19 rows, and its link order equals the JSON `page` order.
+
+B6. HELD: SA6 is closed.
+- README L5 and the AGENTS.md scope bullets now follow the master's final rule at `206577a`. They cover the kaspanet / KIP-KCC / reference-implementation clause, core contributors' repos that extend kaspanet code (naming Argent), products built with kaspanet crates or SilverScript that move, and the reasoning clause.
+- Both name the master's AGENTS.md section as the authority.
+
+B7. HELD: SA1 is closed. The change comes through a branch, and the SNAPSHOT row links this note at `b8eed70` and says "first change through a branch, SA1".
+
+B8. HELD: the Option-A content is all there.
+- 17 new entries: name-services, x402, quorum, covenant-id-tooling, wallets-kcc20, openminer-reference, satoshis-engine, danieliyahu1, kaspa-core-flux, kasranks, 1984, kusdt-split, agenc, krc20-incident, stroemnet, node-tools-third-party, kas-smiths-threads.
+- Also present: people.md / people.json (5 accounts, chip `community`, 0 `\u`), do-not-weld.md with the community list, and 3 `docs/` notes.
+- builders.json is canonical: `json.dumps(…, ensure_ascii=False, indent=2) + "\n" == raw`, with 0 `\u`.
+- Argent and `rk-with-tcp` are not moved.
+
+B9. HELD: the content matches the staging I reviewed, for 20 moved files.
+- These files in `3b333fa` have the same sha256 prefixes as my recorded staging checksums: docs/GROK-47-KNS-REVIEW `918ac6de`, docs/KASRANKS `c885dedd`, docs/SATOSHIS-ENGINE `5c9c1f5b`, 1984 `c3f31d4b`, agenc `e8ed5c94`, covenant-id-tooling `317b7f11`, danieliyahu1 `0b844a81`, kas-smiths-threads `f58bb1d1`, kaspa-core-flux `5ba3ea3d`, kasranks `71bc0238`, krc20-incident `1743a74a`, kusdt-split `e838f17b`, node-tools-third-party `80da0dd6`, openminer-reference `cd1c54bc`, quorum `039d2a79`, satoshis-engine `40fcc37d`, wallets-kcc20 `cc10de0e`, people.json `32e44027`, people.md `ff3a7a6c`, do-not-weld.md `a2d91b4e`. The seed's kasperolabs entry is still `071673e5`.
+- The staging `builders-rows.json` is still `7c439579` and `index-rows.md` is still `8b287884`. All 17 staged rows appear unchanged in builders.json, and all 17 staged index rows appear verbatim in README.md.
+
+B10. UNVERIFIABLE: the exact difference in three regenerated entries.
+- The staging was regenerated at 23:05. Three entries differ from the checksums I reviewed:
+  - `entries/name-services.md`: `e9e5dbf1` → `7f675a08`
+  - `entries/stroemnet.md`: `d2ca0cfc` → `6ca87a66`
+  - `entries/x402.md`: `eba21df2` → `548e4997`
+- The `3b333fa` files equal the regenerated staging byte for byte. The pass-2 bytes are not on the box, so I cannot diff them.
+- What I can see: each file's "**The master keeps:**" line names the reasoning line kept under Option A. name-services names three lines ("No product status"), stroemnet names "one reasoning line there on the hand-built kaspa_txscript HTLC", and x402 names "One short reasoning line in 'SilverScript holes'".
+- The builders and index rows did not change. B11 and B12 cover the rest of their content.
+
+B11. HELD: my moved-content check finds nothing missing.
+- Script: `/workspace/scratch/chk-move/removed.py` + `check.py`. It takes everything removed from the master between `cf10a0f` and `206577a`: README rows and word spans, README non-table and RECEIPTS lines, and master.json rows, spans and fields in every section. Renamed rows count as whole rows removed.
+- It checks those tokens against all files tracked at kaspa-builders `3b333fa` (JSON strings included) and against the master's README, master.json, RECEIPTS and AGENTS at `206577a`.
+- Result, unique tokens:
+
+| Token type | Total | In kaspa-builders | Still only in the master | Missing |
+|---|---|---|---|---|
+| Links | 154 | 150 | 4 | 0 |
+| Hashes | 152 | 150 | 2 | 0 |
+| Post ids | 19 | 16 | 3 | 0 |
+| Words | 2356 | 2343 | 13 | 0 |
+
+- The owner's 262 links / 297 hashes use a different tokenization (likely occurrences and short forms). Both counts agree: 0 missing.
+
+B12. HELD: caveats and sources are kept.
+- `cav.py` found 201 removed sentences that carry a caveat (not / no / only / draft / unaudited / claim / prerelease / desk …). 188 appear verbatim (link targets ignored) in kaspa-builders or the master.
+- I checked the other 13 by hand:
+  - 11 are row-prefix or punctuation artifacts. Examples: "`18795f05` is a Solana program. Not a Kaspa object." is in entries/agenc.md L18, and "multi-leaf quantum-safety idea (no code)" is in entries/kas-smiths-threads.md L18.
+  - 1 is still in the master (#1140, row 26–30 Sep notes).
+  - 1 is Argent's "#66 … is open, not merged". That was a fact correction (F2), not a move.
+- Every new entry keeps its source links and the "Moved from … `cf10a0f`" provenance line.
+
+B13. HELD: the SNAPSHOT row is accurate.
+- It is one new row, newest first, at 23:06, matching the commit time 23:06:55.
+- The counts are right: 17 entries, "19 entries in all", 5 accounts, 3 desk notes. The links are right: tip `206577a`, seed challenge `b8eed70`. "Argent and elldeeone's `rk-with-tcp` stay in the master" and "Open: SA5" are also correct.
+- The seed row is unchanged.
+
+B14. HELD: no leaks. A grep of the added lines for home paths, `/workspace`, `/tmp/`, mail addresses, real names, keys and tokens finds only the word "install". There are no email addresses.
+
+B15. HELD: the master's pointers land. The five kept lines at `206577a` name the entries name-services (DOTK, KaChat, PoC), x402 and stroemnet. All three files exist at `3b333fa` and cover those projects.
+
+### SA5: proposed wording (KPI entry L48)
+
+The counts can be derived from the public repo, but not at `98aa99fa`.
+- At main `98aa99fa` there is no `poc/a1` and no `scripts/test_*.py`. The only `#[test]` functions are A0's 7 (`circuit.rs` 4, `live.rs` 3, which matches "A0 7/7").
+- At PR #22 head `2590e392ef97af6ea81aa8fc177a3996a7fa93a7` (read-only clone, `git grep -c`):
+  - `poc/a1/src/lib.rs` modules have 19 `#[test]` functions: artifact 2, circuit 8, encoding 5, model 2, stateful 1, validator 1.
+  - `src/main.rs` `mod transport_tests` has 1.
+  - `scripts/test_a1_*.py` (7 files) has 46 `def test_` functions: check 10, context_oracle 3, extra_negatives 3, fee_check 10, recovery 9, recovery_rehearsal 6, reorg_check 5.
+- That fits note 43a3c64 G4's log, "`19 passed` + `1 passed`".
+- "Not run" is a statement about the desk, so it can only be attributed.
+
+Replace L48 with:
+
+"- A1 (PR #22 head [`2590e392`](https://github.com/olafweller/kaspa-privacy-initiative/tree/2590e392ef97af6ea81aa8fc177a3996a7fa93a7)): 20/20 Rust tests passed in the desk's run (log `19 passed` + `1 passed`, [challenge note `43a3c64`](https://github.com/STP-KAS/kaspa-master-file/blob/43a3c64f5a72580cf54ab552699245b7a1481076/challenges/wellerolaf-2026-10-04-challenge.md) G4; build targets since deleted). At that head the crate has 19 `#[test]` functions in its library modules and 1 in `src/main.rs` (`mod transport_tests`), and `scripts/test_a1_*.py` holds 46 Python test functions (counted from the public source). By the desk's own run note, the Python tests and the G2–G5 evidence generators were not run; that is not independently verifiable."
+
+### Advisories @ 3b333fa
+
+- BA1: AGENTS.md L10 says "Each entry says what the master keeps ("The master keeps:")", but 5 of the 17 new entries have no such line. Before merge, add one after the "Moved from" paragraph:
+  - `entries/kaspa-core-flux.md`, `entries/openminer-reference.md`, `entries/wallets-kcc20.md`: "**The master keeps:** nothing; the whole row moved."
+  - `entries/kasranks.md`: "**The master keeps:** its copy of `KASRANKS.md` as a receipt; no row."
+  - `entries/satoshis-engine.md`: "**The master keeps:** its copy of `SATOSHIS-ENGINE.md` as a receipt; no row."
+- BA2: the KPI PR #22 head has moved to `f4a4ddc50a41` (commit 4 Oct 22:22 CEST, PR updated 22:26 CEST; still an open draft). The entry pins `2590e392`, so it stays true. The test counts above are the same at the new head. The next KPI pass should re-read it.
+- Merge order (A1): merge kaspa-builders `master/builders-move-2026-10-04` first, then the master branch, after its K-F1 and K-F2 fixes.

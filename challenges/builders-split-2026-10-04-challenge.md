@@ -338,3 +338,87 @@ d2ca0cfc0adb0fe740ac923f63894220682da978fc46ed6419be24b6130adbb2  entries/stroem
 ```
 
   `entries/argent.md` is gone. The other 19 files are unchanged from the first-pass table. Both staging JSON files are still canonical with 0 `\u`. Option B variant: `README-STAGING.md` `bf05959c…702c`, `builders-rows.json` `96a533cd…4db7`, `entries/x402.md` `52b951bd…0161`, `entries/name-services.md` `12519c43…bd05` (24 files).
+
+## Recheck @ 206577a
+
+- Branch `master/builders-split-2026-10-04` @ `206577a890809d80b1f5404c14385789d8685d01`, diffed from `95e9c01`. Read 4 Oct, about 23:10–23:40 CEST. Read-only GitHub API GETs; read-only clones under `/workspace/scratch`.
+- stp's decision on F4 is **as reported by kaspa master bot**: stp answered at 23:02 CEST in that bot's chat, "Move them but keep interesting reasoning in master". That is Option A: DOTK, simply-kaspa-dnsseeder, stroemnet, x402 and the Name-service PoC move, and Argent and `rk-with-tcp` stay. I did not see the chat myself.
+- **Recheck totals: 14 HELD, 2 FAILED, 0 UNVERIFIABLE.** Open FAILED: K-F1 and K-F2, two wording fixes in the kept reasoning lines. F4, R-F6 and N1 are closed. R16 and N3 are closed on the reported decision.
+
+Q1. HELD: shape, identity and scope.
+- `git log 95e9c01..206577a` lists two commits, `5c5998d` (23:04:54 +0200, parent `95e9c01`) and `206577a` (23:05:42 +0200, parent `5c5998d`). On both, author and committer are `STP-KAS <227352643+STP-KAS@users.noreply.github.com>`.
+- `git diff --stat 95e9c01 206577a` touches AGENTS.md (2 lines), README.md (12), SNAPSHOT-HISTORY.md (6) and master.json (12). RECEIPTS.md is untouched.
+- The README changes are exactly six rows: KCC still open, Argent, Launch proof and binding, SilverScript holes, Code read and saefstroem. The word diff (`/tmp/wd.py`) shows only the five appended reasoning lines plus the R-F6 opening. `/tmp/jd.py` shows the same six edits in master.json `now`. No row was added or removed, the order is unchanged, and the top keys are the same.
+
+Q2. HELD (as reported): the decision record.
+- The commit messages and SNAPSHOT rows 23:04 and 23:05 cite "stp, 23:02 CEST" and the same quote.
+- R16 and N3 close on kaspa master bot's report. The final AGENTS.md rule names Argent outright ("such as kdapp, vprog-tictactoe, kaspa-xmss and Argent"). It also covers `rk-with-tcp` ("a rusty-kaspa or vprogs fork branch").
+
+Q3. HELD: F4 is closed.
+- At `5c5998d`, AGENTS.md L36 is exactly the Option A text from my R13 (the patch I checked byte for byte).
+- `206577a` adds only this sentence before "Otherwise, leave …": "Technical reasoning from moved projects that explains Kaspa itself (protocol, consensus, covenants, SilverScript, KIP/KCC behaviour) stays in the master as a short sourced line with a pointer to kaspa-builders."
+- The rule and the branch now agree. DOTK, the dnsseeder, stroemnet, x402 and the PoC are out, and Argent and `rk-with-tcp` are in.
+
+Q4. HELD: N1 is fixed.
+- The 19:12 row is again the `0466ff4` row: Split 9, 16 JSON rows out, the Argent split, and the Launch-proof pointer.
+- Compared word for word with `git show 0466ff4:SNAPSHOT-HISTORY.md`, the only change is the Rule sentence. It now reads `**Rule** (AGENTS.md, word for word): "…"` and quotes the 0466ff4 rule (this closes A7). The trailing "(staged for that repo, not pushed from here)" became a separate sentence.
+- The 19:25 row now states its own corrections ("With these fixes the split counts are: 16 README rows moved, Split 8 (Argent no longer split), 15 JSON rows out (not 16) …"). It no longer says the 19:12 row was rewritten.
+- The 23:04 and 23:05 rows each describe their own commit. N2 is closed too: both rows carry real times, not the placeholder.
+
+Q5. HELD: the SNAPSHOT rows quote the rule byte for byte.
+- Method: a script extracts the text between the quotes after `**Rule**` and compares it with AGENTS.md L36 after "(19:06 CEST). ".
+- 19:12 against the `0466ff4` rule: equal, 1149 characters.
+- 23:04 against the `5c5998d` rule: equal.
+- 23:05 against the `206577a` rule: equal, 1797 characters.
+
+Q6. HELD: R-F6 is closed with my wording.
+- The README Argent row and the JSON `Argent` note now open "Master [`03d67021`](…) (4 Oct 12:04Z, the #66 merge). Before that, [`b312deda`](…) (30 Sep 11:10Z), two commits …".
+- GitHub API: `argent-lang/argent` master = `03d67021`, committed 2026-10-04T12:04:19Z. `b312deda` is 2026-09-30T11:10:49Z.
+
+Q7. **FAILED (K-F1): the KCC still open line carries a status word.**
+- README L62 and the JSON `KCC still open` note say "IzioDev on his **draft** name-service PoC".
+- "draft" is the status of argent-playground#6. GitHub API: open, draft=true, head `c4df332c`. That status goes stale when the PR changes, and the rule wants no product status in kept lines. The 23:05 row itself says "No product status added".
+- The content holds. Snowflakes 2083196595923804179 and 2083210045286756635 decode to 31 Jul 14:22Z and 15:15Z. Every point (transferable UTXOs; compressed sparse Merkle tree; about one concurrent mint per mergeset, hence prefix sharding; SIGHASH_ALL commits outputs; commit/reveal against front-running; KCC-02/03 ownership not final) is in the cf10a0f Name-service PoC row.
+- **Fix wording:** in README L62 and in the JSON `KCC still open` note, replace "IzioDev on his draft name-service PoC (" with "IzioDev on his name-service PoC design (".
+
+Q8. HELD: the Launch proof line is accurate.
+- rusty-kaspa `01b532e8` `consensus/core/src/hashing/covenant_id.rs`, via the GitHub contents API: `kaspa_hashes::CovenantID::new()`, then `update(outpoint.transaction_id).write_u32(outpoint.index).write_len(auth_outputs.len())`, then per authorized output `write_u32(index).write_u64(value).write_u16(spk version).write_var_bytes(spk script)`. The doc comment reads "excluding the covenant binding itself … any change to these yields a distinct covenant identifier".
+- `crypto/hashes/src/hashers.rs` L32 is `struct CovenantID => b"CovenantID"`, inside the `blake2b_hasher!` block (L22).
+- "the recomputed id matched the published one" matches the cf10a0f KaChat row: "Desk recompute, 3 Oct, no node … `82f4315c…0f89`, match".
+- This explains Kaspa itself (KIP-20 covenant ids). The only version named is rusty-kaspa's own.
+
+Q9. **FAILED (K-F2): the SilverScript holes line labels its source with a product version.**
+- README L74 and the JSON note cite "([v1.0.0-rc.2](https://github.com/elldeeone/kaspa-x402/releases/tag/v1.0.0-rc.2), [#22](…))". That is the rail's release version, which the rule keeps out of the master.
+- The content holds. At the tag's peel `724c5fff22de500fcf729c43b59d25036fbffa9c` (annotated tag `35f011d9` → `git/tags` API), `contracts/kaspa-x402-hash-chain-head-v1.sil` L35 in `entry borrow` reads `require(tx.outputs[0].value > tx.inputs[0].value);`. L6 reads "The covenant enforces a positive increase; x402 verifies the exact price."
+- The cf10a0f x402 text says "An underpaid spend can still be consensus-valid and move the head". Its #22 text says "template IDs and compiled scripts change, and existing heads and channels cannot upgrade in place (sweep or settle/refund them, then create new state)".
+- **Fix wording:** in README L74, replace "([v1.0.0-rc.2](https://github.com/elldeeone/kaspa-x402/releases/tag/v1.0.0-rc.2), [#22](https://github.com/elldeeone/kaspa-x402/pull/22))" with "([`724c5fff`](https://github.com/elldeeone/kaspa-x402/blob/724c5fff22de500fcf729c43b59d25036fbffa9c/contracts/kaspa-x402-hash-chain-head-v1.sil#L35), [#22](https://github.com/elldeeone/kaspa-x402/pull/22))".
+- In the JSON `SilverScript holes past #251` note, replace "https://github.com/elldeeone/kaspa-x402/releases/tag/v1.0.0-rc.2" with "724c5fff https://github.com/elldeeone/kaspa-x402/blob/724c5fff22de500fcf729c43b59d25036fbffa9c/contracts/kaspa-x402-hash-chain-head-v1.sil#L35".
+
+Q10. HELD: the Code read line is accurate.
+- `b9fbacc160fc` ("Fees carry no margin and price by the node's ready mass"). Its CHANGELOG adds: "With a ready mass within one block, the fee is exactly the relay floor. Past one block, it is the node's feerate on the mass the mempool ranks by, which counts storage mass." Its README names `getFeeEstimateExperimental`.
+- `045759292990` message: "register sends the reveal only once the node shows the commit mined, so nobody can race a commit for the same gap". The `chainThroughMempool` clause matches cf10a0f.
+- This is Kaspa mempool and fee behaviour. No SDK version is named.
+
+Q11. HELD: the saefstroem line is accurate.
+- stroemnet `e60dc3e815c6`, `crates/data/src/chains/kaspa/contracts/script.rs`: `create_htlc_script(…, timelock: u64, …)` (L14–19), `.add_i64(2)? // we only allow 2 inputs` (L41), `.add_i64(2)? // we only allow 2 outputs` (L44), `.add_i64(timelock as i64)? // add the unlock time` (L58).
+- `contract_v1.rs` imports `OpSHA256` and `OpCheckLockTimeVerify` from `kaspa_txscript`, and its template is `OpIf OpSHA256 <secret hash> OpEqualVerify … OpElse <timelock> OpCheckLockTimeVerify …`.
+- The repo has no `.sil` file (cf10a0f: "Not a `.sil` file").
+
+Q12. HELD: the mirrors and the pointers.
+- Each of the five JSON notes equals its README line, minus markdown (`/tmp/jd.py`).
+- Each line ends with a kaspa-builders pointer, and the named entry exists at kaspa-builders `3b333fa`. `entries/name-services.md` covers DOTK, KaChat and the PoC. `entries/x402.md` and `entries/stroemnet.md` also exist.
+- Apart from K-F1 and K-F2, none of the five lines says live, shipped, mainnet, adoption, or a product version.
+
+Q13. HELD: the counts match the SNAPSHOT text. The README `## Now` table has 35 rows, master.json `now` has 37 and `x` has 14, as the 23:05 row says ("Board 35 rows, `now` 37, `x` 14 (unchanged)").
+
+Q14. HELD: the JSON is canonical. `raw == json.dumps(json.loads(raw), ensure_ascii=False, indent=2) + "\n"` is True, and the `\u` count is 0.
+
+Q15. HELD: no leaks. A grep of the added lines in `git diff 95e9c01 206577a` for home paths, mail addresses, real names, keys and tokens finds nothing.
+
+Q16. HELD: nothing is lost. My own token check of everything removed between `cf10a0f` and `206577a` (README rows and spans, README and RECEIPTS lines, master.json rows, spans and fields in every section) against kaspa-builders `3b333fa` plus the master's README, master.json, RECEIPTS and AGENTS at `206577a` finds 154 links, 152 hashes, 19 post ids and 2356 words, with 0 missing. Details are in the kaspa-builders seed note, section "Recheck: builders-move @ 3b333fa".
+
+### Advisories @ 206577a
+
+- A1: still open as an order rule. kaspa-builders main is still `d4b94ad`; the move is on branch `master/builders-move-2026-10-04` @ `3b333fa`. Merge order: kaspa-builders first, then this master branch, after K-F1 and K-F2.
+- K-A1 (Code read, optional): "nobody can race that commit" is looser than the source. Suggested wording, from `045759292990`: "means nobody can race a commit for the same gap".
+- K-A2 (optional): after the builders merge, the five pointers could link the entry pages directly (`…/kaspa-builders/blob/main/entries/<slug>.md`) instead of the repo root.

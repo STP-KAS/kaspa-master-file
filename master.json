@@ -238,9 +238,9 @@
         },
         {
           "name": "Third-party claims 26 Sep",
-          "url": "https://x.com/KasperoLabs/status/2103564787686793710",
+          "url": "https://github.com/kaspanet/rusty-kaspa/issues/1140",
           "chip": "catalog",
-          "note": "SilverScript Studio (silverscriptstudio.com): @KasperoLabs https://x.com/KasperoLabs/status/2103564787686793710 (25 Sep 19:18Z) says it is live on mainnet: write a covenant by hand, with a wizard, or by describing it to a SilverScript-only AI; deposit and withdraw with Kasware, Kasla or Kastle (Kastle deposit only, signing coming). Earlier relay: vertex https://x.com/KaspaScopio/status/2103759384694185988 (26 Sep 08:11Z). Source https://github.com/kasperolabs/silverscript-studio (MIT, created 28 Sep 21:28Z, tip e27a7c4e 3 Oct 22:39Z). 3 Oct covenant DoorDash demo page https://silverscriptstudio.com/kasdash.html (https://x.com/KasperoLabs/status/2106350037680988279) is a demo, not an L1 product. rusty-kaspa#1140 (kasperolabs, 30 Sep, SDK v2.1.0 findings from mainnet) open, no comments: https://github.com/kaspanet/rusty-kaspa/issues/1140. Not desk-tested. Third-party. AI contract code needs review before real KAS. Kurncy 26 Sep 14:34Z https://x.com/KurncySolutions/status/2103855652493725743: dotk names next week. Claim, not shipped. supertypo/simply-kaspa-dnsseeder v0.9.6 (25 Sep 07:03Z): dead nodes were kept alive by gossip alone; not kaspanet/dnsseeder (https://github.com/supertypo/simply-kaspa-dnsseeder/releases/tag/v0.9.6). getumbrel/umbrel-apps#6120 (elldeeone, 26 Sep 09:35Z) updates the Umbrel rusty-kaspad app to v2.1.0, open (https://github.com/getumbrel/umbrel-apps/pull/6120)."
+          "note": "rusty-kaspa#1140 (30 Sep, SDK v2.1.0 findings from mainnet) open, no comments: https://github.com/kaspanet/rusty-kaspa/issues/1140. Kurncy 26 Sep 14:34Z https://x.com/KurncySolutions/status/2103855652493725743: dotk names next week. Claim, not shipped. supertypo/simply-kaspa-dnsseeder v0.9.6 (25 Sep 07:03Z): dead nodes were kept alive by gossip alone; not kaspanet/dnsseeder (https://github.com/supertypo/simply-kaspa-dnsseeder/releases/tag/v0.9.6). getumbrel/umbrel-apps#6120 (elldeeone, 26 Sep 09:35Z) updates the Umbrel rusty-kaspad app to v2.1.0, open (https://github.com/getumbrel/umbrel-apps/pull/6120)."
         },
         {
           "name": "KGI v2 design",

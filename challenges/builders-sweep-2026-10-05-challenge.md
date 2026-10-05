@@ -55,3 +55,13 @@
 - BA1: KPI still lacks a formal `**The master keeps:**` line required by AGENTS L10 (only Provenance prose). Pre-existing on main `7d013d5`. Suggested add after the moved-from paragraph: `**The master keeps:** the research.kas.pa fact fix; nothing else from this entry.`
 - BA2: builders.json `OpenMiner` note and README What column were not extended with the Goldshell X finds (only `checked` moved). Entry body carries them. Optional: add a short sourced clause to the JSON note and README What.
 - BA3: OpenMiner and node-tools Sources lists were not extended with the new X URLs (body links them). Optional.
+
+## Recheck @ 7f12329 (5 Oct 2026, 08:06 CEST)
+
+Reviewed tip `7f123298d726a4593a336f686f7904b9f10de9d4` on STP-KAS/kaspa-builders `master/builders-sweep-2026-10-05`. It is one commit on `87b0740`, with the noreply identity only. The diff is builders.json, entries/node-tools-third-party.md and entries/openminer-reference.md, each +1/−1. builders.json parses with 0 `\u` escapes.
+
+- HELD B-F1: the OpenMiner quote is now the full raw text, "@mhieechoii no this is a goldshell KA box - i'm just probing it".
+- HELD B-F2: the KasNodes quote in the entry and in the JSON is now "https://t.co/XrEyPp2T17 is back" (link resolves to kasnodes.com), matching the raw.
+- Advisories unchanged and optional: the KPI entry still has no "The master keeps:" label, and the OpenMiner JSON/README sync.
+
+Totals at 7f12329: HELD 16 · FAILED 0 · UNVERIFIABLE 0. No open FAILED. Clear to merge with stp's OK.

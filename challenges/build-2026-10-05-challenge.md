@@ -78,3 +78,12 @@ Build and sweep are parallel cuts from the same main. They must not both land wi
 - A1: when merging with the sweep, take build's one-element #1142 wording and drop sweep's broader "encoding stays byte-identical".
 - A2: sweep tip has moved past `92b52f7` to `c0b1d3c` (S-F1 fixed). Re-read sweep before any merge order decision.
 - A3: owner analysis L44 (KGI "all docs") should be treated as corrected by B-F1.
+
+## Recheck @ 9c2d222 (5 Oct 2026, 08:08 CEST)
+
+Reviewed tip `9c2d2227828d5693d7c17e967ef620a6cd89032b`. It has three commits on `ee6e1b4` (e388f6c, a847a3c and 9c2d222), all with the noreply identity only. The diff is README +1/−1, master.json +1/−1 and SNAPSHOT-HISTORY.md +1. master.json parses with 0 `\u` escapes, and main `9fd1009` is an ancestor.
+
+- HELD B-F1 (README L82 and the master.json KGI note): both now read "45 files in the merge (42 under `docs/`, plus `.gitignore`, `AGENTS.md` and `README.md`); no production Rust". I checked this against the GitHub API for tiram88/kaspa-graph-inspector-rs commit `247d69a7`: its parents are `c7eef7a9` and `f2cab146`, it has 45 files, and the only non-`docs/` paths are `.gitignore`, `AGENTS.md` and `README.md`.
+- HELD (new SNAPSHOT-HISTORY L11 row, 2026-10-05 08:05): it links e388f6c and gives the same re-count against first parent `c7eef7a9`. "45 files, all docs" appears there only as the quoted old wording.
+
+Totals at 9c2d222: HELD 18 · FAILED 0 · UNVERIFIABLE 1 (X credit figures, analysis-only). No open FAILED. Clear to merge with stp's OK. Whichever of this branch and master/sweep-2026-10-05 (cb9c7a9) merges second needs main merged in and my recheck.

@@ -60,3 +60,12 @@ Reviewed tip `c0b1d3c335b397b6a1726a86ddc5f7054cc9209b`. It is one commit on `92
 - FAILED RS-F1 (S-F1 still in history): SNAPSHOT-HISTORY.md L11, the 2026-10-05 07:51 row @ c0b1d3c, still says "45 doc files, no code". Fix: replace "45 doc files, no code" with "45 files (42 under `docs/`, plus `.gitignore`, `AGENTS.md` and `README.md`); no production Rust".
 
 Totals at c0b1d3c: HELD 20 · FAILED 1 · UNVERIFIABLE 0. Blocked until RS-F1 is fixed.
+
+## Recheck @ cb9c7a9 (5 Oct 2026, 08:06 CEST)
+
+Reviewed tip `cb9c7a9ff1cc12bdb45f6a527c7107b8057341c9`. It is one commit on `c0b1d3c`, with the noreply identity only. The only file touched is SNAPSHOT-HISTORY.md, +1/−1. main `9fd1009` is an ancestor.
+
+- HELD RS-F1: SNAPSHOT-HISTORY.md L11 now reads "45 files (42 under `docs/`, plus `.gitignore`, `AGENTS.md` and `README.md`); no production Rust". No "45 doc files" or "all docs" wording is left on the tip.
+- Advisory (not blocking): prompts/grok-build-2026-10-05.md L29 and L107 still ask Build to "confirm docs only, no code". These are check instructions, not claims, but the merge also touches `.gitignore`, `AGENTS.md` and `README.md`, so "no production Rust" would be the more accurate ask.
+
+Totals at cb9c7a9: HELD 21 · FAILED 0 · UNVERIFIABLE 0. No open FAILED. Clear to merge with stp's OK.

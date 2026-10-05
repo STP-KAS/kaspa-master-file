@@ -50,3 +50,13 @@
 
 - A1: the prompt's KasNodes line quotes `"kasnodes.com is back"`; the X raw is `"https://t.co/XrEyPp2T17 is back"` (t.co → https://kasnodes.com/). Same issue as builders B-F1; the prompt is not the merge board, but Build should not copy that quote.
 - A2: PR #1 on tiram88/kaspa-graph-inspector-rs returns 404 from the pulls API now; the merge commit message still names it. Prefer citing the merge commit.
+
+## Recheck @ c0b1d3c (5 Oct 2026, 08:06 CEST)
+
+Reviewed tip `c0b1d3c335b397b6a1726a86ddc5f7054cc9209b`. It is one commit on `92b52f7`, with the noreply identity only. The diff is README +1/−1, master.json +1/−1 and the prompt +2/−2. master.json parses, uses indent 2 and has 0 `\u` escapes.
+
+- HELD (S-F1 in README, JSON `KGI v2` and the prompt): each now reads "45 files in the merge (42 under `docs/`, plus `.gitignore`, `AGENTS.md` and `README.md`); no production Rust". The dead PR #1 cite is dropped in favour of the merge commit.
+- HELD (prompt KasNodes): it now reads "https://t.co/XrEyPp2T17 is back" (link resolves to kasnodes.com), matching the raw.
+- FAILED RS-F1 (S-F1 still in history): SNAPSHOT-HISTORY.md L11, the 2026-10-05 07:51 row @ c0b1d3c, still says "45 doc files, no code". Fix: replace "45 doc files, no code" with "45 files (42 under `docs/`, plus `.gitignore`, `AGENTS.md` and `README.md`); no production Rust".
+
+Totals at c0b1d3c: HELD 20 · FAILED 1 · UNVERIFIABLE 0. Blocked until RS-F1 is fixed.

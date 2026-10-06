@@ -101,3 +101,15 @@ Reviewed tip `c7e07c3d3f7dbe99747eb6ad0dfe4976b43cfc00`. It is one commit on `aa
 - Advisory: the new row still says "(this commit)" and needs a link to `c7e07c3` in a later commit.
 
 Totals at c7e07c3: HELD 32 · FAILED 0 · UNVERIFIABLE 1. No open FAILED. It merges last (after the sweep, weekly-fixes and build-05), with main merged in, my recheck and stp's OK.
+
+## Recheck @ b7c52de after the main 181ae18 merge (6 Oct 2026, 10:03 CEST)
+
+Reviewed tip `b7c52de6723b2b29800949ae3ec1547db92a1cc6`. That is merge `889501e` (parents `c7e07c3` and `181ae18`) plus the link commit `b7c52de`, with the noreply identity only. Main `181ae18` is an ancestor. The net diff against main is README +6/−6, master.json +6/−6 and SNAPSHOT +3. master.json parses with 0 `\u` escapes.
+
+- HELD (TN10 6 Oct read, README L53 and JSON): "about 08:10 CEST (06:10Z; desk clock, response headers not saved …), 6 cache-busted `/info/health` reads … `acceptedTxBlockTimeDiff` 1 to 2 … kaspad 2.1.0 (`82c70f33`) and kaspad 2.0.0 (`e13cc6c8`, also seen 3 Oct, not in the 4 Oct or 5 Oct samples) … mixed pool; no ratio". The raws in raw-2026-10-06/api-tn10-health-1..6.json show 2.1.0/82c70f33 ×5 and 2.0.0/e13cc6c8 ×1, all synced, diff 1–2. e13cc6c8 appears in the 3 Oct record (50740fc and the 3 Oct analysis) and in none of the 5 Oct raws. Dropping the 200/MISS claim is correct, because no headers were saved. Main's 5 Oct server-header window is kept.
+- HELD (Argent): main's "negated the count" is now marked "(the PR's description)", and the desk read cites 8 `.sil` lines across 7 files at `232c6ee6`, which I confirmed via the API at c7e07c3.
+- HELD (KGI): "architecture-docs merge: 45 files in the merge (42 under `docs/` …); no production Rust", and "depends only on `kgi-model`, `thiserror` and tokio". No "docs-only" is left in README or master.json.
+- HELD (vProgs, covenant lineage, crates.io 2.1.0 vs the tag): the text matches the passes at aa3e3c1 and c7e07c3, now placed beside main's text.
+- HELD (merge integrity): SNAPSHOT keeps all rows, newest first, and no main line is lost beyond the six edited cells.
+
+Totals at b7c52de: HELD 6 · FAILED 0 · UNVERIFIABLE 0 (delta pass; the full pass total stays 32/0/1). No open FAILED. This fast-forwards from main `181ae18` and is clear to merge under stp's OK.

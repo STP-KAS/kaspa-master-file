@@ -50,3 +50,13 @@
 
 - **build/2026-10-05:** asked at `9c2d222`; the live tip is now **`adb4934`** ("Merge main cb9c7a9 into build/2026-10-05 (normal merge)…"), so main is now an ancestor of it; `9c2d222` is its parent. Build vs main touches README L53 (TN10 public API), L56 (Not live #1141/#1142), L81 (26–30 Sep #1140/#914), SNAPSHOT L11 (+3 rows), master.json L39/L57/L183. This sweep touches README L66/L68/L70–L72/L74/L82, SNAPSHOT L11, master.json L4–L9/L99–L213. No shared facts with different values: the sweep does not restate #1140/#1141/#1142/#914, and build (after the main merge) keeps main's KGI `247d69a7` text, which this sweep supersedes with `95be668f`. A trial `git merge --no-commit adb4934` onto the weekly-fixes tip `8deb931` conflicts textually in **README L81–L82** (adjacent rows: take build's L81 #1140/#914 row and the sweep's L82 KGI row) and **SNAPSHOT L11** (both insert at the top: keep all rows, newest first). master.json auto-merges. No contradiction.
 - **Weekly fix branch** `master/weekly-fixes-2026-10-06` @ `8deb931`: stacked on this tip (`2522068` is its parent). It touches the same README L66 Kas-Smiths row (W-F8) on top of this branch's W-F7 edit, and L67; no conflict, since it is a child commit.
+
+## Recheck @ 04e579e (6 Oct 2026, 08:12 CEST)
+
+Reviewed tip `04e579e34fb1961fa0276423e1dd8d6a2b357c9b`. It is one commit on `2522068`, with the noreply identity only. The diff is README +2/−2, master.json +1/−1 and SNAPSHOT-HISTORY.md +1/−1. master.json parses with 0 `\u` escapes.
+
+- HELD S6-F1 (SNAPSHOT-HISTORY L11): it now reads "and five replies: … state-carrying covenants, randomness via KIP-21; plus an earlier separate reply on P2SH compression, [2107179238440976510](…) 18:40Z", matching fix (a).
+- HELD S6-F1 (README L72 and master.json L123): both now read "In a separate, earlier reply (18:40Z, another conversation), P2SH also compresses:", and the trailing ", 18:40Z" is gone, matching fix (b).
+- HELD (advisory taken, README L70): it now reads "two commits behind".
+
+Totals at 04e579e: HELD 24 · FAILED 0 · UNVERIFIABLE 1. No open FAILED. Clear to merge with stp's OK.

@@ -33,3 +33,9 @@
 
 - Stacked on master/sweep-2026-10-06 (`2522068`); shares README L66 (W-F7 + W-F8 on the same Kas-Smiths row) and L67 with it, with no conflict because it is a child commit.
 - With build/2026-10-05 (live tip `adb4934`, main merged): a trial merge onto `8deb931` conflicts textually only at README L81–L82 (adjacent rows) and SNAPSHOT L11 (top inserts); master.json auto-merges. Build does not touch L66/L67, master.json L213/L219/L2089–L2091 or probe-nodes.ps1. No contradicting facts.
+
+## Recheck @ 4eda365 (6 Oct 2026, 08:12 CEST)
+
+Reviewed tip `4eda3650afecd8c0d755e1e133c400a0da039592`. It is the merge `4eda365` with parents `8deb931` and `04e579e`, with the noreply identity only, and it's a normal merge rather than a rebase. The `04e579e..4eda365` diff is line for line the same as `2522068..8deb931`, except for one change: the 08:02 SNAPSHOT row now links [`8deb931`](https://github.com/STP-KAS/kaspa-master-file/commit/8deb9311c02be121221e918bd2ea0161c7d97c7d) instead of "(this commit)". SNAPSHOT rows stay newest first, and master.json parses with 0 `\u` escapes.
+
+Totals at 4eda365: HELD 9 · FAILED 0 · UNVERIFIABLE 0. W-F3 (stp) and W-F4 (TN10 ops) are still open. No open FAILED. Merge it after master/sweep-2026-10-06, with stp's OK.

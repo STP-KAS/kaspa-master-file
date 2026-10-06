@@ -11,7 +11,7 @@
 2. HELD: both commits author + committer `STP-KAS <227352643+STP-KAS@users.noreply.github.com>`.
 3. HELD: builders.json parses, canonical (indent 2, `ensure_ascii=False`, trailing newline), 0 `\u` escapes, `updated` `2026-10-06`.
 4. HELD: SNAPSHOT-HISTORY L7 new row `2026-10-06 07:57` → `b493b5b` (linked by `85d0fa6`), above `2026-10-05 07:53`; newest first.
-5. HELD: leak scan of added lines: no email, home path, key/seed/token, no `tn10-indexer-stall-2026-09`; no new link to a private STP-KAS repo (the only new STP-KAS link is kaspa-builders itself in the SNAPSHOT row).
+5. HELD: leak scan of added lines: no email, home path, key/seed/token; no private repo name named here; no new link to a private STP-KAS repo (the only new STP-KAS link is kaspa-builders itself in the SNAPSHOT row).
 
 ## Claims (all with "not desk-checked" / author's-account caveats in place)
 

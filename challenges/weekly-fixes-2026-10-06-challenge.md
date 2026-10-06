@@ -9,7 +9,7 @@
 
 1. HELD: single commit `8deb931`, parent `2522068`; author + committer `STP-KAS <227352643+STP-KAS@users.noreply.github.com>`.
 2. HELD: master.json parses, canonical (indent 2, `ensure_ascii=False`, trailing newline), 0 `\u`, `updated` `2026-10-06`.
-3. HELD: leak / private-name scan of the diff against the live private list (15 names from `gh repo list STP-KAS --limit 300 --json name,visibility`): only the six approved names appear, and only in rewritten lines (+2/−2 each, unchanged text). No new private name. New STP-KAS link only to public kaspa-builders. No email, home path, key, or `tn10-indexer-stall-2026-09`.
+3. HELD: leak / private-name scan of the diff against the live private list (15 names from `gh repo list STP-KAS --limit 300 --json name,visibility`): only the six approved names appear, and only in rewritten lines (+2/−2 each, unchanged text). No new private name. New STP-KAS link only to public kaspa-builders. No email, home path, key, or private-repo name beyond the approved six.
 
 ## Weekly items
 

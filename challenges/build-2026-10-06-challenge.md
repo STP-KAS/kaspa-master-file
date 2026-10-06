@@ -90,3 +90,14 @@ Overlap with master/sweep-2026-10-06 @ `04e579e` and master/weekly-fixes-2026-10
 - A5: "fits the PR's "compiled scripts unchanged"" shortens the quote. The #67 body says "existing compiled scripts, template hashes, and artifacts remain unchanged". Quoting it in full is optional.
 - A6: README L74 names four "other" workspace crates. silverscript `3ed97333` `Cargo.toml` L24–L31 also pins `kaspa-consensus-core`, `kaspa-hashes` and `kaspa-txscript-errors`, and all three are 2.1.0 on crates.io too (4 Oct 19:45:35Z, 19:42:48Z, 19:45:16Z). Adding them is optional.
 - A7 (cosmetic, master.json L189): "…worker.rs#L370 Desk read 6 Oct" has no separator, and "…95be668f…943: the workspace" glues the colon to the URL (a naive URL check gets 404).
+
+## Recheck @ c7e07c3 (6 Oct 2026, 08:47 CEST)
+
+Reviewed tip `c7e07c3d3f7dbe99747eb6ad0dfe4976b43cfc00`. It is one commit on `aa3e3c1`, with the noreply identity only. The diff is README +1/−1, master.json +1/−1 and SNAPSHOT-HISTORY.md +1. master.json parses with 0 `\u` escapes.
+
+- HELD B6-F1 (README L82 and the master.json KGI note): they now read "depends only on `kgi-model`, `thiserror` and tokio" and "kgi-model, thiserror and tokio". kaspa-live/kaspa-graph-inspector-rs `crates/kgi-api-ingress/Cargo.toml` at `95be668f` lists exactly `kgi-model`, `thiserror.workspace` and `tokio.workspace`.
+- HELD (A7, cosmetic): separators were added after two URLs in the master.json note. The text is otherwise unchanged.
+- HELD (new SNAPSHOT L11 row, 08:42): "#67 changes 8 generated Sil lines across 7 files (the ReserveAsset fixture has two)". The GitHub API for argent-lang/argent pull 67 lists 7 `.sil` files: 6 at +1/−1, and `tests/fixtures/emit/capsule_route_context/ReserveAsset.sil` at +2/−2.
+- Advisory: the new row still says "(this commit)" and needs a link to `c7e07c3` in a later commit.
+
+Totals at c7e07c3: HELD 32 · FAILED 0 · UNVERIFIABLE 1. No open FAILED. It merges last (after the sweep, weekly-fixes and build-05), with main merged in, my recheck and stp's OK.

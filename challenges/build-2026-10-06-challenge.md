@@ -53,3 +53,40 @@ Overlap with master/sweep-2026-10-06 @ `04e579e` and master/weekly-fixes-2026-10
   - SNAPSHOT has 1 conflict at L11: keep all rows.
   - master.json merges automatically.
 - If both build branches land, merge build/2026-10-05 first, then build/2026-10-06. Their only shared region is SNAPSHOT L11, plus README L81/L82, which sit next to each other.
+
+## Second pass @ aa3e3c1985e8fffecc9811f29950a60cf98e48ee (6 Oct 2026, ~08:40 CEST)
+
+- Branch `build/2026-10-06`, tip `aa3e3c1985e8fffecc9811f29950a60cf98e48ee` (unchanged after `git fetch` at ~08:38 CEST). Base: main `cb9c7a9` (`git merge-base` with main and with `build/2026-10-05` both give `cb9c7a9`), so this branch is cut from main, not from `build/2026-10-05`.
+- A second, independent kaspa master challenge session ran the same checks in parallel. It agrees with items 1–21 above except for one phrase in item 18 (B6-F1 below) and one gap in the trial-merge section. Read-only. Sources: GitHub API, shallow public clones, a crates.io download, and 5 cache-busted api-tn10 reads (08:27:48–08:28:01 CEST, all `HTTP/2 200`, `cf-cache-status: MISS`, kaspad 2.1.0 `82c70f33`, synced). No cargo, no X calls, TN10 untouched.
+- **Totals for the branch after this pass: 29 HELD, 1 FAILED, 1 UNVERIFIABLE.** That is items 1–21 above plus S1–S8 below. **B6-F1 is open, so the branch does not merge until it is fixed or stp overrides.**
+
+### FAILED
+
+- **FAILED B6-F1:** README L82 and master.json L189 (`2f5253b`): "The graph-update ingress (`kgi-api-ingress`) depends only on `kgi-model` and tokio". Evidence: kaspa-live/kaspa-graph-inspector-rs @ `95be668f7cfea36c7177b25084fd1567cf43c943`, `crates/kgi-api-ingress/Cargo.toml` `[dependencies]` reads `kgi-model = { path = "../kgi-model" }`, `thiserror.workspace = true`, `tokio.workspace = true` (public clone, `cat`). Item 18 lists all three dependencies but scored the board's "only … and tokio" as HELD. **Fix:** "depends only on `kgi-model`, `thiserror` and tokio" (in both files). The rest of item 18 holds, including "no wRPC or gRPC node client yet": `crates/kgi-node` is a 3-line stub whose only dependency is `kgi-model`.
+
+### UNVERIFIABLE
+
+- UNVERIFIABLE: SNAPSHOT L11 (`2f5253b`): "Sutton's seven posts read in full (four long ones via one X read)". This is X-only, and this pass makes no X calls. It is a log line only; no README or master.json cell rests on it.
+
+### Extra HELD lines (not covered above)
+
+- S1 HELD (Argent precedence reading, README L71): SilverScript `3ed97333` `silverscript-lang/src/silverscript.pest` L88 `comparison = { term ~ (comparison_op ~ term)* }` and L102 `unary = { unary_op* ~ postfix }`, with L103 `unary_op = { "!" | "-" }`. So `!` binds tighter than `>`, and `!OpCovInputCount(id) > 0` parses as `(!int) > 0`. That is the input the `TypeMismatch` path in item 12 rejects. The "most likely failed to compile" reading is sound.
+- S2 HELD (README L71, "the DEX `swap`, which observes both reserves"): argent-playground `908c0a7e` `ag/dex/dex.ag` L128 `entry swap()`, L129 `observes quote by self.quote_id`, L137 `observes base by self.base_id`.
+- S3 HELD (SNAPSHOT L11 Argent facts): `gh api repos/argent-lang/argent/pulls/67` gives merged `2026-10-05T11:48:54Z`, merged_by `michaelsutton`, merge commit `232c6ee6…`, and argent master is `232c6ee6`. `gh api …/argent/tags` returns 0 tags. Playground #7 merged `2026-10-05T12:27:34Z` (after #67), playground master `908c0a7`.
+- S4 HELD (SNAPSHOT L11 tictactoe): `gh api repos/biryukovmaxim/vprog-tictactoe/events` shows PushEvent `2026-10-05T11:27:28Z` to `master` with head `fe6b0e85`. `Cargo.lock` @ `fe6b0e85` pins `vprogs?branch=release-candidate#055ae28a…`.
+- S5 HELD (SNAPSHOT L11 vprogs #169/#170): both open, not draft, 0 reviews. The `ready_for_review` events are `2026-10-05T12:22:47Z` and `12:24:33Z`, and the #170 head is `5da27851`. `compare/055ae28a...5da27851`: ahead 2, files `.github/workflows/ci.yml` and `zk/aggregate-prover/tests/reorg_boundary_compaction.rs` only.
+- S6 HELD (SNAPSHOT L11 KGI facts): `repos/kaspa-live/kaspa-graph-inspector-rs` has `fork` false, and tiram88's copy has `fork` true with parent `kaspa-live/kaspa-graph-inspector-rs`. Pull #2 merge commit is `6534f4c7`, and main `95be668f` is the #3 merge (`2026-10-06T02:12:28Z`). `git diff 247d69a7 95be668f -- docs/rk-issues` is empty.
+- S7 HELD (README L72, "This runs for every tx in UTXO context"): `tx_validation_in_utxo_context.rs` @ `01b532e8` L176–L177 `fn check_covenant_info(…) { Ok(CovenantsContext::from_tx(tx)?) }`, called at L58 with no flag gate.
+- S8 HELD (links): all 27 distinct URLs this branch adds return 200 (`curl -L`); a 28th "URL" is the A7 colon artefact. The owner factcheck's one FAIL (`…/vprogs/pull/169)/`, 404) is a parser artefact. The text is `[#169](https://github.com/kaspanet/vprogs/pull/169)/[#170](…)`, and `pull/169` returns 200.
+
+### Correction to the trial-merge section
+
+- "Their only shared region is SNAPSHOT L11, plus README L81/L82" is incomplete. A trial merge of `aa3e3c1` into `build/2026-10-05` @ `624fa9f` (throwaway local branch, deleted afterwards) conflicts in four places: README **L53** (TN10 public API, where both branches append an api-tn10 recheck), README L81–L82, master.json **L39** (TN10 public API note) and SNAPSHOT L11. **Resolution:** keep both rechecks in date order (5 Oct, then 6 Oct) in README L53 and JSON L39.
+- Every pairwise trial merge conflicts: sweep `04e579e` + this branch, `4eda365` + this branch, `4eda365` + `624fa9f`, and `624fa9f` + this branch. So after each merge, the next branch needs main merged in and a recheck. Order: master/sweep-2026-10-06, then master/weekly-fixes-2026-10-06, then build/2026-10-05, then this branch once B6-F1 is fixed.
+
+### Advisories (do not block)
+
+- A4 (Argent cell at merge): sweep `04e579e` L71 says "so `!id.co_spent()` negated the count, not the boolean". This branch says the old form "would most likely have failed to compile rather than give a wrong script". These fit together (S1: the parse negates the int, and the type check then rejects it). Keep both sentences, and do not drop this branch's hedge, so the cell does not read as if pre-#67 scripts were silently wrong.
+- A5: "fits the PR's "compiled scripts unchanged"" shortens the quote. The #67 body says "existing compiled scripts, template hashes, and artifacts remain unchanged". Quoting it in full is optional.
+- A6: README L74 names four "other" workspace crates. silverscript `3ed97333` `Cargo.toml` L24–L31 also pins `kaspa-consensus-core`, `kaspa-hashes` and `kaspa-txscript-errors`, and all three are 2.1.0 on crates.io too (4 Oct 19:45:35Z, 19:42:48Z, 19:45:16Z). Adding them is optional.
+- A7 (cosmetic, master.json L189): "…worker.rs#L370 Desk read 6 Oct" has no separator, and "…95be668f…943: the workspace" glues the colon to the URL (a naive URL check gets 404).

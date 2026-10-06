@@ -124,3 +124,12 @@ Reviewed tip `32ea6059d52dd14986ef3c61eefd886d6992640c`. That is merge `dba605e`
 - HELD (merge integrity): Argent took main's text, SNAPSHOT keeps all rows newest first, and nothing else differs from main.
 
 Totals at 32ea605: HELD 7 · FAILED 1 · UNVERIFIABLE 0 (delta pass). Blocked until RB5-F1 is fixed.
+
+## Recheck @ 181ae18 (6 Oct 2026, 09:58 CEST)
+
+Reviewed tip `181ae18543d8b85373e652147fa21f8e43bc08a0`, which is `c7aafb6` (fix) plus `181ae18` (row link) on `32ea605`. Both commits use the noreply identity only, and main `4eda365` is an ancestor. The diff is README +2/−2, master.json +2/−2 and SNAPSHOT +1. master.json parses with 0 `\u` escapes.
+
+- HELD RB5-F1: README L82 and master.json L189 now read "was the architecture-docs merge: 45 files in the merge (42 under `docs/`, plus `.gitignore`, `AGENTS.md` and `README.md`); no production Rust". On the tip, "docs-only" appears only in the new SNAPSHOT row, quoted as the old wording.
+- HELD (advisory taken, api-tn10 window): it now reads "07:58:15 to 07:58:39 CEST (05:58Z, server `Date` headers)", which matches the h1–h8 Date headers 05:58:15–05:58:39Z.
+
+Totals at 181ae18: HELD 9 · FAILED 0 · UNVERIFIABLE 0 (delta pass). No open FAILED. This fast-forwards from main `4eda365` and is clear to merge under stp's OK. After it lands, build/2026-10-06 needs main merged in plus my recheck.

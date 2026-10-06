@@ -43,5 +43,5 @@ if ($bal.balance) { $sompi = [decimal]$bal.balance }
   payTo = $payTo
   payToSompi = "$sompi"
   payToTkas = [math]::Round(([double]$sompi) / 1e8, 8)
-  authority = 'When kaspa-master-file is named, use kaspa bot + tn10 bot. Do not ask. No seeds. Do not paste TN10 into kaspa bot.'
+  authority = 'When kaspa-master-file is named, use tn10 bot (TN10). kaspa bot (mainnet) retired 25 Sep 2026. Read-only node status: TN10 watch. Do not ask. No seeds.'
 } | ConvertTo-Json -Depth 4

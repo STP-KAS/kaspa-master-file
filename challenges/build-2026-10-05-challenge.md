@@ -87,3 +87,20 @@ Reviewed tip `9c2d2227828d5693d7c17e967ef620a6cd89032b`. It has three commits on
 - HELD (new SNAPSHOT-HISTORY L11 row, 2026-10-05 08:05): it links e388f6c and gives the same re-count against first parent `c7eef7a9`. "45 files, all docs" appears there only as the quoted old wording.
 
 Totals at 9c2d222: HELD 18 · FAILED 0 · UNVERIFIABLE 1 (X credit figures, analysis-only). No open FAILED. Clear to merge with stp's OK. Whichever of this branch and master/sweep-2026-10-05 (cb9c7a9) merges second needs main merged in and my recheck.
+
+## Recheck @ 624fa9f (6 Oct 2026, ~08:30 CEST)
+
+Reviewed tip `624fa9fe` (live after `git fetch`; same as the tip the owner gave). `624fa9f` (parent `adb4934`) only changes the SNAPSHOT commit cell of the 6 Oct 08:02 row from "(this commit)" to a link to `adb4934`. `adb4934` is a normal merge of main `cb9c7a9` into `9c2d222`. Main `cb9c7a9` is an ancestor. All new commits use the noreply identity only. master.json parses, is canonical, has 0 `\u` escapes, and `updated` is `2026-10-05`, the same as main. No private repo names beyond the six approved on main. No email, home path or key. No new STP-KAS link. No third-party rows or product status.
+
+- HELD (net diff main..624fa9f): README +3/−3 (L53 TN10 public API, L56 Not live, L81 26–30 Sep notes), master.json +3/−3 (L39, L57, L183), and SNAPSHOT-HISTORY +3 rows (6 Oct 08:02 `adb4934`, 5 Oct 08:05 `e388f6c`, 5 Oct 08:02 `05f97ee`). This matches the owner's stated diff.
+- HELD (nothing from main lost): every other README and master.json line is byte-identical to main, including the KGI v2 cell (L82 / JSON L189). Main's KGI cell, which has no dead tiram88 PR #1 cite, is kept as-is. Only three phrases from main are replaced, and each replacement is this branch's checked intent: "`SeqCommit` and says … stays byte-identical" became the narrower one-element wording; "Not desk-tested." (#1140) became the 5 Oct wasm desk test; "His reading, not desk-checked." (#914) became the two-of-five spot-check. The L53 recheck is appended, so nothing is removed. Main's SNAPSHOT rows are all still there and in order. The three new rows sit above main's 5 Oct 07:51 row, newest first.
+- HELD (new #1142 empty-vec clause; README L56 / JSON L57): "Decoding also maps an empty vector to the zero hash, an extra compatibility path for placeholder states written by earlier binaries (`virtual_state.rs` at `644baafe`, test `decodes_empty_vec_as_zero_hash`)". I checked kaspanet/rusty-kaspa `644baafe340e97cdf8e8bb53042a78e75a983f1f`, `consensus/src/model/stores/virtual_state.rs`. L33–L36 say: "Decoding also accepts an empty sequence and maps it to the zero hash: the placeholder state written while a pruning point is applied (`..VirtualState::default()`) was persisted that way by earlier binaries". The test `decodes_empty_vec_as_zero_hash` (L358–L362) deserializes `Vec::<Hash>::new()` to `SeqCommit::default()` and asserts `SeqCommit::default().hash() == ZERO_HASH`. `encodes_as_one_element_vec` (L344–L349) still backs the one-element claim. #1142 is open and unmerged, with head `644baafe`. The board scopes all of this to the PR's tests and does not call it live.
+- HELD (SNAPSHOT 6 Oct 08:02 row): the text matches the merge. "KGI wording … (same on both sides)" holds, because `9c2d222` and `cb9c7a9` both carry the corrected 45-file wording.
+
+Totals at 624fa9f: HELD 22 · FAILED 0 · UNVERIFIABLE 1 (the X credit figures, which appear only in the analysis). No FAILED item is open, so this branch is clear to merge once stp OKs it.
+
+Trial merge onto `master/weekly-fixes-2026-10-06` @ `4eda365` (which contains `master/sweep-2026-10-06` @ `04e579e`): master.json merges automatically. There are two textual conflicts:
+- README L81–L82: the rows are adjacent. Take this branch's L81 (#1140 desk test, #914 spot-check) and the sweep's L82 (KGI at kaspa-live `95be668f`).
+- SNAPSHOT L11: both sides insert at the top. Keep all five rows, newest first: 08:02 `8deb931`, 08:02 `adb4934`, 07:55 `0aef9a2`, 5 Oct 08:05 `e388f6c`, 5 Oct 08:02 `05f97ee`. Order the two 08:02 rows by commit time.
+
+No facts contradict between the two sides.

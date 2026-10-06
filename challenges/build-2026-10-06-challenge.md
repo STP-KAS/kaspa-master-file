@@ -1,0 +1,55 @@
+# Challenge: build/2026-10-06 (kaspa-master-file)
+
+- Reviewed tip: `aa3e3c1` (live after `git fetch`, 6 Oct ~08:24 CEST; same as given). Commits: content `2f5253b` (parent main `cb9c7a9`), history-row link `2758773`, api-tn10 wording `aa3e3c1`.
+- Owner: kaspa master prompt build. Analysis: `/workspace/artifacts/kaspa-master-reports/grok-build-analysis-2026-10-06.md`. Raws: `raw-2026-10-06/`. The owner scores 33 claims: 30 held, 1 wrong, 1 stale, 1 not verified.
+- Writer: kaspa master challenge, under PROCESS.md. Read-only. Sources: GitHub API and raw files, a crates.io download, 5 cache-busted api-tn10 reads, and shallow public clones (argent, KagenC, argent-xai) under `nice -n 19`. No cargo build. No X calls. No public action. TN10 untouched.
+- **Totals: 21 HELD, 0 FAILED, 0 UNVERIFIABLE.**
+
+## Process
+
+1. HELD: main `cb9c7a9` is an ancestor. All three commits are authored and committed by `STP-KAS <227352643+STP-KAS@users.noreply.github.com>`.
+2. HELD: master.json parses, is canonical (indent 2, `ensure_ascii=False`, trailing newline) and has 0 `\u` escapes. `updated` is still `2026-10-05` (see A2).
+3. HELD: leak scan of the diff. No email, home path, key or token. No private repo names beyond the six approved on main: two appear in rewritten lines, +2/−2 each, with unchanged text. The new STP-KAS links go only to KagenC and argent-xai, and both are public (`private=false`).
+4. HELD: net diff README +6/−6 (L53, L68, L71, L72, L74, L82), master.json +6/−6 (L39, L99, L117, L123, L159, L189), and SNAPSHOT +1 row. This matches the owner's figures. Each changed line keeps main's old text unchanged as its prefix (append-only), and all other lines are byte-identical.
+5. HELD: the SNAPSHOT L11 row `2026-10-06 08:17` links to `2f5253b` (via `2758773`) and sits above main's 5 Oct 07:51 row, newest first.
+6. HELD: master scope. No new row and no third-party product status. The desk notes sit in existing core or catalog cells (TN10 public API, vProgs, Argent, Launch proof, SilverScript holes, KGI v2). KagenC and argent-xai are used only as grep targets. The argent-playground `multiapp_badge` remark is caveated as "desk reading of a demo; not tested". The SNAPSHOT row says third-party finds stay out of the master.
+7. HELD: the owner's wrong and stale items did not land. Wrong #11, the P2SH post framed as a thread reply, is not on this branch: no Sutton thread text is added, and the fix is on the sweep, `04e579e`. Stale #29, main's api-tn10 pool sentence, is refreshed by L53 (item 8). Not-verified #31 (X credit history) is not on the board.
+
+## Claims
+
+8. HELD: README L53 / JSON L39, api-tn10. Owner raws `api-tn10-health-1..6.json` (written 08:10:39–08:10:57): five reads are kaspad 2.1.0 `82c70f33` and one is 2.0.0 `e13cc6c8`. All have `isSynced` and `isUtxoIndexed` true, `database.isSynced` true, and `acceptedTxBlockTimeDiff` 1–2. The raws hold bodies only, so "HTTP 200, Cloudflare `MISS`" rests on my own reads: 08:26:26–08:26:40 CEST, 5 cache-busted `/info/health` reads, all `HTTP/2 200` and `cf-cache-status: MISS`, two 2.0.0 `e13cc6c8` and three 2.1.0 `82c70f33`. "Also seen 3 Oct" holds: main SNAPSHOT L28 and L30 list 2.0.0 `e13cc6c8`. "Still a mixed pool; no ratio is claimed" holds. api-tn10 is never proof of payment.
+9. HELD: README L68 / JSON L99, vprogs. Commit `672e7318` edits `zk/aggregate-prover/tests/reorg_boundary_compaction.rs` (hunk @@ -440): `gate(5)` becomes a wait for one park, with the comment "Waiting for one park (not five)". So the 4 Oct "3 passed" result applies to `055ae28a` only, and the board says so. Not re-run.
+10. HELD: README L71 / JSON L117, Argent #67. At `232c6ee6`, `src/compiler/codegen/sil/body.rs` L2659–L2660 holds the comment "Parenthesize the comparison to preserve operator precedence, e.g. when negated with `!`" and `format!("(OpCovInputCount({}) > 0)", …)`.
+11. HELD: the PR's file list has 10 files: 7 `.sil` (six under `examples/build/…` and `tests/fixtures/emit/capsule_route_context/ReserveAsset.sil`) plus `body.rs` and two test files. Every changed `.sil` line, 8 lines in all (the fixture has two), goes from `require(OpCovInputCount(x) > 0);` to `require((OpCovInputCount(x) > 0));`. None is negated and none changes beyond the parentheses. No artifact files are in the diff. The board's "fits … (not recompiled)" is correctly hedged.
+12. HELD: SilverScript `3ed97333`. In `type_check.rs`, L88–L92 handle `UnaryOp::Not` by checking the operand against `scalar_type(TypeBase::Bool)`, and L663 is `Err(CompilerError::TypeMismatch)`. In `builtin_types.rs`, L78–L81 type `OpCovInputCount` (with `OpCovInputIdx`, `OpCovOutputCount`, `OpCovOutputIdx`) as `scalar(TypeBase::Int)`. "Would most likely have failed to compile … (reading, not compiled)" is fair.
+13. HELD: `!…co_spent()` grep. In argent `232c6ee6`, the only hits are #67's new tests (`src/builder/tests.rs` L3847–L3851, `src/compiler/codegen/emitter/tests.rs` L5136–L5142). In argent-playground `908c0a7e`, the only negated uses are `ag/dex/dex.ag` L238 and L241. Playground `ci.yaml` checks out `argent-lang/argent` `ref: master`. Desk repos: KagenC `48a8c77a` and argent-xai `5c959d31` have 0 `.ag` files and 0 `co_spent` hits.
+14. HELD: argent `docs/argent-design.md` L502 reads "An `observes` clause currently describes the complete observed covenant input". `examples/build/icc_minter/sil/Minter.sil` L56 is `require(OpCovInputCount(gen__asset_cov_id) == 1);`, an exact count.
+15. HELD (as a desk reading): playground `ag/multiapp_badge/badge_asset.ag` L10 is `require(controller_id.co_spent());`. `badge_controller.ag` L8–L9 are `entry mint(cov_id asset_id, int amount)` / `observes asset by asset_id {`. The cited lines say what the board says, and the board marks the gap as "desk reading of a demo; not tested".
+16. HELD: README L72 / JSON L123, lineage at rusty-kaspa `01b532e8`. In `crypto/txscript/src/covenants.rs`, L124–L136 are the continuation arm (`Some(input_covenant_id) if input_covenant_id == covenant_id`). L137–L160 are the genesis arm plus the recompute loop ending in `CovenantsError::WrongGenesisCovenantId`. `consensus/core/src/hashing/covenant_id.rs` L16–L30 is `covenant_id(outpoint, auth_outputs)`, which hashes the outpoint, then each output's index, value, spk version and script. The cell is labelled "desk reading, not a KIP".
+17. HELD: `tx_validation_in_utxo_context.rs` L58 is `let covenants_ctx = self.check_covenant_info(tx, block_daa_score)?;`. `opcodes/mod.rs` L1333–L1341 is `opcode OpCovInputCount<0xd0, 1>`, which calls `num_covenant_inputs`. `covenants.rs` L78–L80 is `num_covenant_inputs`, and L107–L111 fill `input_indices` from each input's UTXO `covenant_id`.
+18. HELD: README L82 / JSON L189, KGI at kaspa-live `95be668f`. `Cargo.toml` L26–L29 pin `kaspa-consensus-core`, `kaspa-core`, `kaspa-hashes` and `kaspa-math` with `tag = "v2.0.1"`. `crates/kgi-model/src/block.rs` L6 is `BlockHash = kaspa_hashes::Hash` and L9 is `BlueWork = kaspa_math::Uint192`. `crates/kgi/src/config.rs` L14–L15 import `NetworkId`/`NetworkType` and `kaspa_core::log::LevelFilter`. `crates/kgi-api-ingress/Cargo.toml` depends only on `kgi-model`, `thiserror` and `tokio`. Across all 32 `.rs`/`Cargo.toml` files there is no wRPC or gRPC client crate or call; only `grpc://` URL strings appear in config and tests. "No wRPC or gRPC node client yet" holds.
+19. HELD: README L74 / JSON L159, crates.io. I downloaded `kaspa-txscript-2.1.0.crate` from static.crates.io and diffed it against `crypto/txscript` from the tag `01b532e8` tarball. `diff -r src` shows the trees are identical, and `Cargo.toml.orig` equals the tag's `Cargo.toml` byte for byte. The tag's extra directories (`errors`, `examples`, `test-data`, `zk-sdk`) are separate crates or test data, not part of this crate. `.cargo_vcs_info.json` gives `"sha1": "ba5ddcd9a059fd90e163254eb07b3dedba9208f9"`, and `gh api repos/kaspanet/rusty-kaspa/commits/ba5ddcd9a059…` returns 422 "No commit found". `EngineFlags` (`src/lib.rs` L123–L125) has only `sigop_script_units`. The only `covenants_enabled` hits are a deprecated JS option in `src/wasm/builder.rs`, so "`EngineFlags.covenants_enabled` is gone" holds.
+20. HELD: crates.io max_version is 2.1.0 for kaspa-consensus (created 19:53:28Z), kaspa-addresses (19:40:28Z), kaspa-muhash (19:44:39Z) and kaspa-txscript-zk-sdk (19:49:16Z), all on 4 Oct.
+21. HELD: the SNAPSHOT L11 row's restated sweep facts match my 6 Oct sweep pass (vprogs, tictactoe, Argent, KGI, crates.io, Kas-Smiths 48/379/113 and post 402). research.kas.pa `latest.json?order=created` still shows newest topic 522.
+
+## Advisories (do not block)
+
+- A1 (merge order): the desk notes assume the sweep's context. If this branch merged onto main alone, L74 would still say rusty-kaspa 2.1.0 is "**not** on crates.io yet" (weekly W-F1, fixed only on the sweep) right next to the new "published kaspa-txscript 2.1.0 crate". L71 would still open with "Master `03d67021`" before a #67 desk read, and L82 would still name tiram88 `247d69a7` as main before a kaspa-live `95be668f` read. So merge it only after master/sweep-2026-10-06, or onto `4eda365` using the resolution below.
+- A2: `updated` stays `2026-10-05` although the content changed on 6 Oct. The sweep's `2026-10-06` takes over at merge. If this branch ever goes in alone, bump it.
+- A3: the api-tn10 raws keep no response headers. Saving the headers would make "HTTP 200 / MISS" checkable from the raws.
+
+## Overlap and trial merges
+
+Overlap with master/sweep-2026-10-06 @ `04e579e` and master/weekly-fixes-2026-10-06 @ `4eda365` (a merge of `8deb931` with `04e579e`). Both are unmerged and await stp's OK.
+- Same cells as the sweep: vProgs, Argent, Launch proof, SilverScript holes, KGI v2. No facts contradict: both give RC `5da27851` as tests/CI only, #67 `232c6ee6`, crates.io 2.1.0 published 4 Oct, and KGI upstream kaspa-live `95be668f`. The build adds desk reads only.
+- **Trial `git merge --no-commit` of build/2026-10-06 (`aa3e3c1`) onto `4eda365`:**
+  - README has 2 conflict blocks. The first spans L66–L74 (9 rows). The build changes only L68, L71, L72 and L74, but its edits sit next to the sweep/weekly edits at L66, L67 and L70. The second is L82 (KGI).
+  - master.json has 5 conflicts: L99 (vProgs), L121 (Argent), L131 (Launch proof), L171 (SilverScript holes), L205 (KGI).
+  - SNAPSHOT has 1 conflict at L11.
+  - L53 / JSON L39 (api-tn10) merge automatically.
+  - Resolution: in each conflicting row, take the `4eda365` text and append this branch's added sentences unchanged. In SNAPSHOT, keep all rows newest first: 08:17 `2f5253b`, 08:02 `8deb931`, 07:55 `0aef9a2`.
+- **Trial merge of build/2026-10-05 (`624fa9f`) onto `4eda365`:**
+  - README has 1 conflict at L81–L82 (adjacent rows): take the build's L81 and the sweep's L82.
+  - SNAPSHOT has 1 conflict at L11: keep all rows.
+  - master.json merges automatically.
+- If both build branches land, merge build/2026-10-05 first, then build/2026-10-06. Their only shared region is SNAPSHOT L11, plus README L81/L82, which sit next to each other.

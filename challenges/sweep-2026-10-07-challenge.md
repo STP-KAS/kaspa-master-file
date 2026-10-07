@@ -44,3 +44,13 @@
 - A2: prompts/grok-build-2026-10-07.md L97 still lists W-F3 as "Still open (stp's call …)". stp has closed it as "keep", so the prompt should say W-F3 is closed (keep) for later runs.
 - A3: the report says api-tn10 was "Still HTTP 503 … at 08:03:51". No header file is saved for that read, and it is not on the board, so it was not scored.
 - A4: no "docs-only" style contradiction was found. The vprogs text says "tests and CI only" only about the earlier `055ae28a` → `5da27851` pair, and calls the eight new commits code, docs and fixes.
+
+## Recheck @ 679141d (7 Oct 2026, 08:12 CEST)
+
+Reviewed tip `679141dd514414beedaca3a46f6aa15afd9f7484`. It is one commit on `f5b0270`, with the noreply identity only. The diff is README +1/−1, master.json +1/−1 and the prompt +2/−2. master.json parses with 0 `\u` escapes.
+
+- HELD S7-F1 (README L53 and master.json L39): both replacements are applied word for word: "answered at the same time … in about 21 s by the desk clock, about 05:56Z; bodies saved, headers not" and "(about 07:54:44 CEST, desk clock; headers not saved) returned `database.isSynced` true". Neither row has an unbacked "HTTP 200" left. The remaining "was HTTP 200 on 28–29 Sep" in master.json L111 is old, dated main text for vprogs-tt.izio.fr, and this branch doesn't change it.
+- HELD (A2): W-F3 is removed from prompt L21 and L97, since stp chose to keep the links on 6 Oct.
+- A1 (tictactoe c78780f2) is deferred to the next sweep, and A3 is report-only. Neither blocks.
+
+Totals at 679141d: HELD 23 · FAILED 0 · UNVERIFIABLE 1. No open FAILED. This fast-forwards from main `b7c52de` and is clear to merge with stp's OK.

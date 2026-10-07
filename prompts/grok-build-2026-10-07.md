@@ -18,7 +18,7 @@ If a SendToAgent message is missing, the same prompt is also at `prompts/grok-bu
 - Follow AGENTS.md and PROCESS.md: README **Now** cells rewritten in place (short); dated text in SNAPSHOT-HISTORY; RECEIPTS frozen; validate `master.json`.
 - Git identity: `STP-KAS <227352643+STP-KAS@users.noreply.github.com>`. Plain push of your `build/` branches only. Never force main.
 - Before adding a fact: `git fetch --prune` and search **main and every open origin branch** (including `master/sweep-2026-10-07`) so you do not duplicate this sweep or other open work.
-- Weekly reread W-F3 (waits on stp) and W-F4 (TN10 ops' area) stay with their owners; W-F2/W-F6/W-F8/W-F10 are fixed on main.
+- Weekly reread W-F4 (TN10 ops' area) stays with its owner; W-F2/W-F6/W-F8/W-F10 are fixed on main.
 - **X credits are at $0.00 (prepaid −$1.68).** Do not make any X call.
 - Never share seeds/keys. TN10 never goes to a mainnet kaspa bot. Do not touch TN10 processes (TN10 ops owns them); any TN10 test is read-only or on your own wallet, never the mining address.
 
@@ -94,7 +94,7 @@ Commits (kaspa-master-file): content [`2e8fb00`](https://github.com/STP-KAS/kasp
 ## Carry-overs
 
 - Nothing applied today (none of the open items is a daily-row fix).
-- Still open: W-F3 (stp's call: 17 SNAPSHOT links to a now-private repo), W-F4 (DESK-BOT TN10 status; TN10 ops), old out-of-order SNAPSHOT pairs (dedicated pass), item 13 (waits on stp), core_replies paused, tag scan (done today; unchanged). kaspa-builders advisories from cbab972 wait for the next builders sweep.
+- Still open: W-F4 (DESK-BOT TN10 status; TN10 ops), old out-of-order SNAPSHOT pairs (dedicated pass), item 13 (waits on stp), core_replies paused, tag scan (done today; unchanged). kaspa-builders advisories from cbab972 wait for the next builders sweep.
 - Note: carry-over W-F2/W-F6/W-F8/W-F10 were fixed on `master/weekly-fixes-2026-10-06`, which is merged into main; carryover.md updated to say so.
 
 ## Open questions for Build (`build/2026-10-07`)

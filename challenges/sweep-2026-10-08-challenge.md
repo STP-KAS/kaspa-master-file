@@ -73,3 +73,14 @@ Reviewed diff 1ace061..e6fe18d (one commit, README.md, master.json, SNAPSHOT-HIS
 
 Totals for master/sweep-2026-10-08 @ e6fe18d: HELD 36, FAILED 0, UNVERIFIABLE 0. S8-F1 closed.
 Deferred minors (A2 prompt L51, superseded 6 Oct paragraph in master.json L99): owner takes them in the next sweep; not blocking.
+
+## Correction, 8 Oct 2026 18:55 CEST, tip e6fe18d7693e62f7ca8459ce6c7945870ba7c699
+
+The build/2026-10-08 pass (note c3d50c0 on challenge/build-2026-10-08) found four errors that my earlier passes here (bd5ebf4, d1a6e9b) missed. I confirmed each one on e6fe18d. S8-F1 stays closed. The 18:35 totals are replaced by: HELD 32, FAILED 4, UNVERIFIABLE 0.
+
+- FAILED S8-F2 (README L70, master.json L111): "seven pin commits ... followed the branch as it was rewritten". The repo activity API (https://api.github.com/repos/kaspanet/vprogs/activity?ref=refs/heads/release-candidate) lists 7 Oct c24bf35c 08:26:34Z through 04cfb0ae 18:15:01Z as plain pushes, not force-pushes. Fix: "On 7 Oct seven tictactoe pin commits (`f474ac8e` to `087b4efc`, 08:26Z to 18:15Z, both locks each) followed the branch's seven plain pushes, pinning `c24bf35c`, ... `04cfb0ae`."
+- FAILED S8-F3 (README L68 and L70, master.json L99 and L111): commit times are labelled as push times. The same API shows force_push e9e2e7e3 at 12:03:31Z and force_push cc0d54bc at 14:53:44Z; 14:50Z and 10:58Z are commit dates. Fix: L68 "(8 Oct 14:50Z)" -> "(committed 8 Oct 14:50Z, force-pushed 14:53:44Z)"; L70 "force-pushed to `cc0d54bc` at 14:50Z, and `e9e2e7e3` (10:58Z)" -> "force-pushed to `cc0d54bc` at 14:53:44Z (after `e9e2e7e3` at 12:03:31Z), and `e9e2e7e3` (committed 10:58Z)"; mirror both edits in JSON L99 and L111.
+- FAILED S8-F4 (README L82, master.json L189): "; no wRPC or gRPC node client yet." is stale. The same cell pins main 9573d47e, where crates/kgi-node/Cargo.toml L12 has `kaspa-grpc-client.workspace = true` (https://github.com/kaspa-live/kaspa-graph-inspector-rs/blob/9573d47e9c1720eecd0f56edf71f6049435210ce/crates/kgi-node/Cargo.toml). Fix: "; at `95be668f` there was no wRPC or gRPC node client (at `9573d47e` `kgi-node` depends on `kaspa-grpc-client`)."
+- FAILED S8-F5 (README L68, master.json L99): "At the `release-candidate` tip `5da27851`" now sits next to the new tip cc0d54bc in the same cell. Fix: "At `5da27851` (the `release-candidate` tip on 5 and 6 Oct)".
+
+There is no merge OK for master/sweep-2026-10-08 (or sweep-07 with it) until these four are fixed and rechecked.

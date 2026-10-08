@@ -42,3 +42,16 @@ Disagreeing facts:
 
 ## Totals
 14 HELD, 1 FAILED (B7-F1: #127 "no review yet"), 0 UNVERIFIABLE.
+
+## Recheck after main merge, 8 Oct 2026 23:52 CEST, tip b8e98d2d80b82bff256ec416018aef04aca4de80
+
+Reviewed: merge 7bac754 (main a559ccb into 84f45ad) and link commit b8e98d2. Net diff against main a559ccb is README +1/-1, master.json +1/-1 and SNAPSHOT-HISTORY +3.
+
+- HELD vProgs #127 sentence (README vProgs cell and the master.json vprogs note), checked live through the GitHub API: https://github.com/kaspanet/vprogs/pull/127 is open at head 9df7d14f. The timeline has review_requested hmoog at 2026-10-06T16:41:26Z. The only review is hmoog COMMENTED 2026-09-01T11:30:57Z at commit 05173ff0. B7-F1 stays closed.
+- HELD: main's text is kept everywhere else. The word-diff against main shows only the #127 addition, and the stale "Open #68 (not merged)" Argent sentence is dropped in favour of main's merged #68.
+- HELD: SNAPSHOT keeps all rows from both sides, newest first (8 Oct 23:49, 23:41, 23:29, 18:33, 18:08, then 7 Oct 08:23, 08:12, 08:00, then 6 Oct). The 7 Oct rows are historical records.
+- HELD: canonical JSON (indent 2, 0 \u escapes), `updated` 2026-10-08.
+- HELD leak check: the private repo name count matches main, so there are no private repo names beyond those approved on main.
+- HELD: main a559ccb is an ancestor of b8e98d2, so this is a fast-forward merge.
+
+Totals at b8e98d2: HELD 6, FAILED 0, UNVERIFIABLE 0. Ready to merge.

@@ -84,3 +84,18 @@ The build/2026-10-08 pass (note c3d50c0 on challenge/build-2026-10-08) found fou
 - FAILED S8-F5 (README L68, master.json L99): "At the `release-candidate` tip `5da27851`" now sits next to the new tip cc0d54bc in the same cell. Fix: "At `5da27851` (the `release-candidate` tip on 5 and 6 Oct)".
 
 There is no merge OK for master/sweep-2026-10-08 (or sweep-07 with it) until these four are fixed and rechecked.
+
+## Recheck, 8 Oct 2026 19:00 CEST, tip d00c116077a039e71e1c5c14e94ab7c60e3bb773
+
+Reviewed diff e6fe18d..d00c116 (one commit, README.md and master.json), and grepped all four changed files for leftover wording.
+
+- HELD S8-F2: README L70 and JSON L111 now say the 7 Oct moves were seven plain pushes and list all seven revisions, matching the activity API.
+- HELD S8-F3 in README L68 and L70 and JSON L99 and L111: commit times and push times are labelled apart (force-pushes at 12:03:31Z and 14:53:44Z).
+- HELD S8-F4: README L82 and JSON L189 now limit "no node client" to 95be668f and note kaspa-grpc-client in kgi-node at 9573d47e.
+- HELD S8-F5: 5da27851 is now dated as the 5 and 6 Oct tip.
+- HELD: the #172 head force-pushes at 11:25Z and 14:51Z are labelled as #172's own branch.
+- HELD: the JSON is canonical (indent 2, 0 \u escapes), and there are no private repo names beyond those approved on main.
+- FAILED S8-F6 (SNAPSHOT-HISTORY.md L11): the same S8-F3 error survives in the 8 Oct row, which says "`release-candidate` force-pushed to [`cc0d54bc`](...) (8 Oct 14:50Z)". Fix: change "(8 Oct 14:50Z)" to "(committed 8 Oct 14:50Z, force-pushed 14:53:44Z)".
+- Advisory, not blocking: prompts/grok-build-2026-10-08.md L57 has the same "(8 Oct 14:50Z)". That prompt has already been used, and build/2026-10-08 labels its times correctly.
+
+Totals @ d00c116: HELD 36, FAILED 1, UNVERIFIABLE 0.

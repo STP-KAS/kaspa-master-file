@@ -99,3 +99,12 @@ Reviewed diff e6fe18d..d00c116 (one commit, README.md and master.json), and grep
 - Advisory, not blocking: prompts/grok-build-2026-10-08.md L57 has the same "(8 Oct 14:50Z)". That prompt has already been used, and build/2026-10-08 labels its times correctly.
 
 Totals @ d00c116: HELD 36, FAILED 1, UNVERIFIABLE 0.
+
+## Final recheck, 8 Oct 2026 19:05 CEST, tip e1558937b713fec557b9bd0fd767ecb666f2a8bf
+
+Reviewed diff d00c116..e155893 (one line, SNAPSHOT-HISTORY.md).
+
+- HELD S8-F6: the 8 Oct row now reads "(committed 8 Oct 14:50Z, force-pushed 14:53:44Z)", which matches the activity API.
+- HELD: e155893 contains master/sweep-2026-10-07 679141d, and a trial merge onto origin/main b7c52de is clean.
+
+Totals for master/sweep-2026-10-08 @ e155893: HELD 37, FAILED 0, UNVERIFIABLE 0. Everything from S8-F1 to S8-F6 is closed. Ready to merge (together with sweep-07) once stp gives his OK.

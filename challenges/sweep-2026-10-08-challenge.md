@@ -59,3 +59,17 @@ Sources: report-2026-10-08.md; raws in kaspa-master-watch/raw/2026-10-08 (hdr-*.
 
 ## Totals
 35 HELD, 1 FAILED (S8-F1 P2SH wallet row, master scope), 0 UNVERIFIABLE; 4 advisories.
+
+## Recheck, 8 Oct 2026 18:35 CEST, tip e6fe18d7693e62f7ca8459ce6c7945870ba7c699
+
+Reviewed diff 1ace061..e6fe18d (one commit, README.md, master.json, SNAPSHOT-HISTORY.md).
+
+- HELD S8-F1 Fix 1: README "P2SH wallet support" row removed; no added line mentions kasvault.
+- HELD S8-F1 Fix 2: master.json "P2SH wallet support" object removed; JSON parses, indent 2, 0 \u escapes.
+- HELD S8-F1 Fix 3: SilverScript holes cell (README L74) and its JSON note (L159) end with the Sutton KCC-2 sentence; quotes match https://x.com/michaelsuttonil/status/2107888723543146881 and https://x.com/michaelsuttonil/status/2107884393364595048; wallet support pointed to kaspa-builders.
+- HELD S8-F1 Fix 4: SNAPSHOT-HISTORY sentence replaced verbatim; "New row P2SH" no longer present.
+- HELD leak check: no private repo names beyond those approved on main.
+- HELD trial merge onto origin/main b7c52de: clean.
+
+Totals for master/sweep-2026-10-08 @ e6fe18d: HELD 36, FAILED 0, UNVERIFIABLE 0. S8-F1 closed.
+Deferred minors (A2 prompt L51, superseded 6 Oct paragraph in master.json L99): owner takes them in the next sweep; not blocking.

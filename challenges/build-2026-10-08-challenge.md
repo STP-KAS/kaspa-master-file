@@ -80,3 +80,66 @@ The recipe's order and content are right: take sweep-08's cells, then add build-
 
 ## Totals
 36 HELD, 0 FAILED, 1 UNVERIFIABLE (desk-test commit/toolchain/"target/ deleted" not in the saved log); retro items R1–R4 on sweep-08 @ e6fe18d (not counted here); 2 advisories.
+
+## Recheck @ 70c2c923f1f5716c50f7038421943d0eea7f1b6d (8 Oct, after the 23:29 pass)
+
+Reviewed tip `70c2c923f1f5716c50f7038421943d0eea7f1b6d` on `build/2026-10-08`. New since the first pass: merge `3e1caba` (parents `2a6290b` and main `e155893`), then `ae5d06a` (desk results) and `70c2c92` (SNAPSHOT link). main is `e1558937b713fec557b9bd0fd767ecb666f2a8bf`, so `70c2c92` is main plus the 18:33 and 23:29 SNAPSHOT rows and the two desk sentences (+6/−4). I ran no compiles or tests.
+
+### 1. Merge 3e1caba, diffed against both parents
+
+- HELD | README.md, master.json | No stale build-08 text overrode main. `git diff e155893 3e1caba` touches only SNAPSHOT-HISTORY.md (+1, the 18:33 row): README and master.json at `3e1caba` are byte-identical to main. `git diff 2a6290b 3e1caba` shows that every conflicting cell took main's text.
+- HELD | README L70 / JSON L111 | S8-F2 and S8-F6: the tictactoe cell says "plain push" and "force-pushed to `cc0d54bc` at 14:53:44Z (after `e9e2e7e3` at 12:03:31Z), and `e9e2e7e3` (committed 10:58Z)". There are 0 hits on the tip for "as it was rewritten" and "(14:50Z)".
+- HELD | README L68 / JSON L99 / SNAPSHOT L13 | S8-F3: "(committed 8 Oct 14:50Z, force-pushed 14:53:44Z)" appears in all three. "at 14:50Z" appears 0 times.
+- HELD | README L82 / JSON L189 | S8-F4: KGI says `kaspa-grpc-client`. "node client yet" appears 0 times.
+- HELD | README L68 / JSON L99 | S8-F5: "`5da27851` … on 5 and 6 Oct". "release-candidate tip 5da27851," appears 0 times.
+- HELD | README L68 / JSON L99 | #172: README "(head force-pushed 11:25Z and 14:51Z…)" and JSON "(force-pushed 11:25Z and 14:51Z; no review)" agree.
+- HELD | TN10 public API cell | The board keeps only main's separate windows: 15:57:07Z–15:57:59Z (one backend, `b0e304b8`) and the 16:00:14Z/16:00:15Z single reads. No ratio is given. The 681d08b mixed-pool window 16:24:33Z–16:29:51Z is not on the board.
+- HELD | README L68↔JSON L99, README L74↔JSON L159 | The README and JSON mirrors of both new desk sentences match word for word, apart from the links.
+- UNVERIFIABLE (carried) + advisory A3 | SNAPSHOT-HISTORY.md L12 (the 18:33 row) | The row still says, unhedged, "Desk test at `cc0d54bc` (Rust 1.98.1): … 4 passed, 0 failed; `target/` deleted". That is the first pass's UNVERIFIABLE item: the saved log desk-test-vprogs-cc0d54bc.log has no commit, toolchain or deletion line. The row also lists the TN10 16:24Z window, code lines, `rollback_uncoverable_gap`, the guest-lock read and the #69 detail. The 3e1caba merge dropped all of those from README and master.json, and the 23:29 row says only "sweep wording kept". As a receipt of what `681d08b` did the row is true, but a reader will look for those sentences on the board. Since SNAPSHOT is append-only, the fix goes in a new row, or at the end of the 23:29 row (L11): "The `3e1caba` merge took main's README and master.json cells, so the `681d08b` sentences listed in the 18:33 row (desk test 4 passed, TN10 16:24:33Z–16:29:51Z reads, code-line read, `rollback_uncoverable_gap`, tictactoe guest-lock read, #69 detail) are not on the board; the 18:33 desk test's commit and toolchain are the desk's word (its saved log has neither)."
+
+### 2. New claims in ae5d06a, against the saved logs (raw-2026-10-08/)
+
+- HELD | README L68 / JSON L99 / SNAPSHOT L11 | "`cargo test -p vprogs-zk-aggregate-prover` 27 passed, 0 failed", wall 441 s, peak 2771 MB | build-desk-vprogs-cc0d54bc-t1-prover.log L3 "start 2026-10-08 18:36:51 CEST … cargo test -j 4 -p vprogs-zk-aggregate-prover". The result lines L457–L528 sum to 10+2+2+2+2+1+2+1+3+2 = 27, all 0 failed. L536 "end 2026-10-08 18:44:12 CEST exit=0 killed=0 wall=441s peak_target_MB=2771".
+- HELD | README L68 / JSON L99 / SNAPSHOT L11 | "`cargo test -p vprogs-l1-wallet` 41 passed, 0 failed", wall 40 s, peak 3024 MB, window "18:36–18:45 CEST" | build-desk-vprogs-cc0d54bc-t1-wallet.log L3 "start 2026-10-08 18:44:20 CEST … -p vprogs-l1-wallet"; L115 "41 passed; 0 failed"; L123 "end 2026-10-08 18:45:00 CEST exit=0 … wall=40s peak_target_MB=3024". This log is in the raws: it is byte-identical to /tmp/b1008/t1-wallet.log.
+- HELD | README L74 / JSON L159 / SNAPSHOT L11 | "`cargo test --workspace` passed, 0 failed (2 ignored in debugger session tests, 19 ignored in compiler tests)", wall 341 s, peak 2697 MB | t3-test-ws2.log L3 "start 2026-10-08 23:19:38 CEST … cargo test -j 4 --workspace". It has 32 "test result: ok" lines and 0 FAILED. The only non-zero ignored counts are "43 passed; 0 failed; 2 ignored" and "536 passed; 0 failed; 19 ignored". It ends "23:25:19 CEST exit=0 killed=0 wall=341s peak_target_MB=2697".
+- FAILED | README L74 / JSON L159 / SNAPSHOT L11 | "Desk-built 8 Oct 23:19–23:25 CEST … `cargo check -p silverscript-abi` passed and `cargo test --workspace` passed". The check did not run in that window: t3-check-abi.log says "start 2026-10-08 18:48:49 CEST … cargo check -j 4 -p silverscript-abi" and "end 2026-10-08 18:49:49 CEST exit=0 … wall=60s". Exact fix, README L74: replace "Desk-built 8 Oct 23:19–23:25 CEST at [`c70cac93`](https://github.com/kaspanet/silverscript/commit/c70cac931a642ed79eca044817401d2be48e3533) (rustc 1.98.1 `48a229cea`): `cargo check -p silverscript-abi` passed and `cargo test --workspace` passed, 0 failed" with "Desk-built 8 Oct at [`c70cac93`](https://github.com/kaspanet/silverscript/commit/c70cac931a642ed79eca044817401d2be48e3533) (commit and rustc 1.98.1 `48a229cea` per the desk; the saved logs record commands, times and results only): `cargo check -p silverscript-abi` passed (18:48–18:49 CEST) and `cargo test --workspace` passed (23:19–23:25 CEST), 0 failed". Make the same change in JSON L159, without backticks and keeping the bare URL. SNAPSHOT is append-only, so for L11 the correction goes in the fix row.
+- UNVERIFIABLE | README L68 / JSON L99 / SNAPSHOT L11 | "at [`cc0d54bc`] (rustc 1.98.1 `48a229cea` …)" for the prover and wallet runs | Neither t1 log has a commit line or a rustc line. Corroboration only: /tmp/b1008/vprogs HEAD is `cc0d54bc` now. Exact hedge, README L68 / JSON L99: replace "(rustc 1.98.1 `48a229cea`; not a re-run of the 453 workspace tests)" with "(commit and rustc 1.98.1 `48a229cea` per the desk; the saved logs record commands, times and results only; not a re-run of the 453 workspace tests)".
+- UNVERIFIABLE | README L74 / JSON L159 | "at `c70cac93` (rustc 1.98.1 `48a229cea`)" | Neither t3 log has a commit line or a rustc line. Corroboration only: /tmp/b1008/silverscript HEAD is `c70cac93`. The FAILED fix above carries the hedge.
+- HELD | README L74 / JSON L159 | #257 per the GitHub API (pulls/257, pulls/257/reviews, commits/c70cac93): head `c70cac931a642ed79eca044817401d2be48e3533`, 1 commit, 20 changed files, state open (not merged), opened by someone235 2026-10-06T10:38:13Z, reviews []. The commit's committer date is 2026-10-04T20:34:52Z. This matches "opened by someone235 at 10:38Z …, one commit `c70cac93` of 4 Oct 20:34Z, no review … (20 files) … Not merged".
+- HELD (scoped) + advisory A4 | README L74 / JSON L159 / SNAPSHOT L11 | "No break beyond the four edit kinds named above" | The four kinds named earlier in the same cell are: dropping the `covenants_enabled` engine flag, using the script-limit constants, the renamed signature-script limit field, and dropping the numeric deserialization argument. They match the desk results file's list. The workspace check and test exit 0 with 0 failed, so at the built commit nothing outside those edits broke. A partial read of the compare diff `3ed97333...c70cac93` (`.rs` patches) shows those kinds plus rustfmt reflows, but I did not read every line. The sentence reads like a claim about the diff, which no log shows. Suggested wording: "Nothing else failed to build or test." Optional.
+- HELD | SNAPSHOT L11 | The three quoted "replaced" sentences (the vProgs README sentence, the vProgs master.json sentence, and "Not merged; not desk-built.") are verbatim on main, in README and master.json respectively.
+
+### 3. The earlier advisory (first-pass UNVERIFIABLE hedge)
+
+Only partly taken. The 4-passed desk sentence left README and JSON (through the merge), so the hedge was no longer needed there. But the 18:33 SNAPSHOT row (L12) still carries it unhedged (A3). The two new desk sentences repeat the same pattern: they cite the commit and toolchain as fact, and the saved logs have neither (the two UNVERIFIABLE items above).
+
+### 4. Merge order
+
+build-07 is not on main. origin/build/2026-10-07 = `84f45addc4f6806f79cd480e2a78e0013255315e`, and its merge-base with main is `b7c52de`. main..`70c2c92` is a fast-forward. Trial merges (`merge --no-commit --no-ff`, then aborted, on a detached HEAD in kmf-challenge):
+
+- `70c2c92` into main `e155893`: clean.
+- `70c2c92` into `84f45ad`: conflicts in README.md (1 block, L68–80), SNAPSHOT-HISTORY.md (1 block, L11) and master.json (4 blocks, at L4, L103, L125, L1647).
+- `84f45ad` into main: the same 6 blocks at the same lines.
+
+Resolution, taking build-08 for everything except the #127 sentence:
+- master.json L4: `"updated": "2026-10-08"`.
+- README block (vProgs, vProgs node and DA, tictactoe, Argent, Launch proof rows) and the master.json conflict blocks at merged-file L103 (vProgs note) and L125 (Argent note): take build-08. Build-07's side is older: tictactoe `fe6b0e85`, Argent master `232c6ee6` with "Open #68 (head `21880aa5`, not merged)", and the vProgs "two commits after `055ae28a`" / `5da27851` text. Main already has #68 merged as `9a9f4b10`, with the `sil_template_hash` / artifact id change.
+- Then add the one build-07 fact main lacks back into the vProgs cell (README L68) and the vProgs note (JSON L99): "[#127](https://github.com/kaspanet/vprogs/pull/127) (snapshot-core 1/4, biryukovmaxim, open): review requested from hmoog on 6 Oct 16:41Z (PR timeline); no review since then (hmoog's only review is a COMMENTED one on 1 Sep 11:30Z, at commit 05173ff0, before the restack)." I re-read it live: pulls/127 is open, head `9df7d14f`, the only review is hmoog COMMENTED 2026-09-01T11:30:57Z at `05173ff0`, and the timeline shows review_requested hmoog 2026-10-06T16:41:26Z. So it holds. The 18:08 sweep row says the fact was left to build-07, so dropping build-07 wholesale would lose it.
+- master.json conflict block at merged-file L1647 (block reward note): take build-08. It has the month-53 entry, the coinbase.rs L283 link, next step DAA 583803000 and the 8 Oct 15:58:42Z re-read, so it covers build-07's 7 Oct version.
+- SNAPSHOT L11: keep all rows, newest first: 10-08 23:29, 18:33, 18:08, then 10-07 08:23 (`099820d`), 08:12 (`4d67fb8`), 08:00 (`2e8fb00`).
+- Simplest order: fast-forward main to build-08 (after its fixes), then merge build-07 with the resolution above.
+
+### 5. Canonical JSON, master scope, links, leaks
+
+- HELD | master.json @ 70c2c92 | `json.dumps(indent=2, ensure_ascii=False)+"\n"` is byte-identical to the file. 0 `\u` escapes. `updated` 2026-10-08.
+- HELD | master scope | No new rows. Both new sentences edit existing core rows (vProgs; SilverScript holes, a core language repo). No third-party product status was added. Argent and the Badge check are left out on purpose and are not failed.
+- HELD | SNAPSHOT L11–L12 | The 23:29 row links `ae5d06a` (70c2c92's only change, 1 line) and the 18:33 row links `681d08b`. github.com commit pages for `ae5d06a`, `681d08b` and `70c2c92` all return HTTP 200.
+- HELD | leaks | The lines added main..`70c2c92` contain no email address, home path, key or token. No private repo names beyond those approved on main (the occurrence count is the same before and after).
+
+### Odd
+
+1. The silverscript test log is named t3-test-ws2.log, but no ws1 log is in the raws. If a first workspace run was stopped or failed, it is not saved.
+2. The desk results file says merging main goes against the "never merge" line, and that a `git pull --rebase` was aborted. The pushed history shows only a plain merge (`3e1caba`) and no rewrite: `2a6290b` is a parent of `3e1caba`.
+
+### Recheck totals
+18 HELD (one of them scoped), 1 FAILED (silverscript desk-build window: README L74 / JSON L159), 3 UNVERIFIABLE (the vProgs commit and toolchain cite, the silverscript commit and toolchain cite, and the 18:33 SNAPSHOT row's desk test carried from the first pass), 2 advisories (A3 superseded 18:33 row; A4 "No break beyond" wording).

@@ -143,3 +143,18 @@ Resolution, taking build-08 for everything except the #127 sentence:
 
 ### Recheck totals
 18 HELD (one of them scoped), 1 FAILED (silverscript desk-build window: README L74 / JSON L159), 3 UNVERIFIABLE (the vProgs commit and toolchain cite, the silverscript commit and toolchain cite, and the 18:33 SNAPSHOT row's desk test carried from the first pass), 2 advisories (A3 superseded 18:33 row; A4 "No break beyond" wording).
+
+## Recheck, 8 Oct 2026 23:45 CEST, tip a559ccb3e159fbe6b42121141300f5d2aef4bf1f
+
+Reviewed the diff 70c2c92..a559ccb (fix 25783ee, snapshot link a559ccb): README.md and master.json (2 lines each) plus one new SNAPSHOT row.
+
+- HELD B8-F1: README L74 and JSON L159 now separate the abi check (18:48–18:49 CEST, per t3-check-abi.log: start 18:48:49, end 18:49:49, exit=0) from the workspace test (23:19–23:25 CEST, per t3-test-ws2.log, start 23:19:38). Commit and rustc are now given as the desk's word. B8-F1 closed.
+- HELD UNVERIFIABLE hedge, vprogs cc0d54bc prover and wallet (README L68 and JSON L99): the commit and rustc are now given as the desk's word, and the sentence says the saved logs record only commands, times and results.
+- HELD A3: the new 23:41 SNAPSHOT row quotes the replaced sentences and carries the note about the merge dropping the 681d08b sentences. The earlier rows are untouched, so the file stays append-only.
+- HELD A4: "Nothing else failed to build or test." replaces "No break beyond the four edit kinds".
+- HELD: canonical JSON (indent 2, 0 \u escapes), and README and JSON mirror each other word for word in the changed cells.
+- HELD leak check: the two lines changed in the vProgs cell carry private repo names that are already on main and unchanged. The total count of private repo names is the same on the branch and on main. There are no private repo names beyond those approved on main.
+- HELD: trial merge onto origin/main e155893 is clean.
+
+Totals at a559ccb: HELD 22, FAILED 0, UNVERIFIABLE 0 (the earlier UNVERIFIABLE items are now hedged as the desk's word). build/2026-10-08 is ready for stp's OK.
+Merge order: build/2026-10-07 (84f45ad) is still not on main. If build-08 merges first, build-07 then needs main merged into it: take main's text everywhere and hand-add the vProgs #127 review sentence. Then I recheck it.

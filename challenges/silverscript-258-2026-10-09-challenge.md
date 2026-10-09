@@ -25,3 +25,16 @@ Reviewed tip: `88270cd8b456a53e1b7a1dbcb8a6c3706e2bd62b`. Base: merge-base `b7c5
 13. Issue body job-escrow covenant: tip says it was not on this desk — honest.
 14. Related open holes #243/#249/#250/#251/#258 still listed; this pass did not re-litigate each one.
 
+
+## Recheck after main merge, 9 Oct 2026 08:45 CEST, tip 2655cfc047763793aa1e44830b74509f182322dc
+
+Reviewed: merge c512546 (main c64c01b into 88270cd) and link commit 2655cfc. Net diff against main c64c01b is +32/-4 (README, master.json, SNAPSHOT with 4 rows, and the new challenges/dagituser69-2026-10-08-grok-build.md).
+
+- HELD: main's text is kept. The word-diff against c64c01b shows only additions in the SilverScript holes cell, "#251, #258" in the open list, and the Do not weld additions. Main's #257, Sutton P2PKH and gist sentences are unchanged.
+- HELD #258, live: open, 0 comments, created 2026-10-07T13:57:55Z. silverscript master is 3ed97333.
+- HELD: the kaspa-builders link 463a5ee resolves. It is an ancestor of build/dagituser69-2026-10-08 (now 777d4b00, ahead 3, behind 0) and is not on builders main, as the text says. The text gives the third-party account only as a builders pointer, with the "not on kaspa-builders main" caveat, so the master scope rule is met.
+- HELD: the SNAPSHOT row links are 333615d (8 Oct 09:07:12 +0200), 4a466ea (7 Oct 21:07:08 +0200) and c512546. All rows are kept. The new rows sit in newest-first order, and the 6 older out-of-order pairs are the same as on main.
+- HELD: the new challenges/dagituser69 file is labelled as Grok Build's own pass ("not the kaspa master challenge bot"), with dated SHAs.
+- HELD: canonical JSON (indent 2, 0 \u escapes, `updated` 2026-10-09). The README renders 36 table rows, the same as main. Private repo name count is equal to main's: no private repo names beyond those approved on main. main c64c01b is an ancestor of 2655cfc, so it fast-forwards.
+
+Totals at 2655cfc: HELD 7, FAILED 0, UNVERIFIABLE 0. Cleared for merge at exactly 2655cfc.

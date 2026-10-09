@@ -158,3 +158,42 @@ Reviewed tip `9f5d3ca2f5c41b480e47ffb5c60a9adb8209966d`, two commits on top of `
 - HELD (SNAPSHOT): the 08:49 row is at the top, above 08:43.
 
 Totals at 9f5d3ca: HELD 49 · FAILED 0 · UNVERIFIABLE 3 (the X-only lines). No open FAILED. It can merge with stp's OK. No X calls. No public reply.
+
+## Recheck @ 0c72511 (9 Oct 2026 ~17:55 CEST)
+
+- Branch reviewed: `build/2026-10-02`
+- Tip SHA reviewed: `0c72511fdc1a809fe177e0f267ee89eeea8fb230` ("Record the covenant-id byte layout and the DOTK binding recompute.", 2026-10-02 20:26:13 +0200)
+- Merge-base with current main `cf44ce5`: `99ae9620dd580ff0630cd720f83a0e78de616f4e`. Ahead 1, behind 129.
+- Diff read: `git diff 99ae962..0c72511` (README.md, SNAPSHOT-HISTORY.md, master.json). Prior challenge notes on this branch covered tips through `9f5d3ca`; this recheck scores only the new tip commit's claims.
+- Sources (read-only): `gh api` on argent#66, rusty-kaspa contents at `a41a333b` and tag v2.1.0, KIP-20 raw, reverse-deps of `write_len`/`write_var_bytes` in `consensus/core/src/hashing/mod.rs`, CovenantID in `crypto/hashes/src/hashers.rs`, dotk-indexer `genesis/mainnet.json` at `17ca993b`. Local TN10 wRPC 127.0.0.1:17210/18210 refused connection this pass. **No X tool was called.** Nothing merged. Nothing pushed except this challenge branch update.
+
+**Recheck counts: HELD 7 · FAILED 2 · UNVERIFIABLE 2**
+
+### Claims on tip `0c72511`
+
+1. FAILED (stale present tense). README Argent / master.json `Argent` @0c72511: "#66 is open, not merged, head `9592dd99`". Live `gh api repos/argent-lang/argent/pulls/66`: `state=closed`, `merged=true` at 2026-10-04T12:04:19Z, merge commit `03d670217b7139ee452e1c50d109f600ed85d94d`, head at merge was `aab8fe1e8c53385447c2c29cd4720faa766c974f` (two commits past `9592dd99`). Main already records that merge. Fix: do not merge this tip; if any remnant wording is still needed, rebase onto current main and state "#66 merged 4 Oct as `03d67021`".
+
+2. HELD. "At rusty-kaspa `a41a333b` the file `consensus/core/src/hashing/covenant_id.rs` is blob `48d8bcc23de775464cf6e7b51db7055508792bea`, the same blob as tag v2.1.0." `gh api …/contents/…?ref=a41a333b` and `?ref=v2.1.0` both return sha `48d8bcc23de775464cf6e7b51db7055508792bea`.
+
+3. HELD. "`write_len` and `write_var_bytes` write a little-endian u64 length, which is KIP-20 section 3.2." `hashing/mod.rs` at `a41a333b`: `write_len` does `self.update((len as u64).to_le_bytes())`; `write_var_bytes` calls `write_len` then the bytes. KIP-20 §3.2 at kips `e4ae233` encodes `le_u64(len(auth_outputs))` and `le_u64(len(script))`.
+
+4. HELD. "The hasher is BLAKE2b-256 keyed with `CovenantID`." `covenant_id.rs` uses `kaspa_hashes::CovenantID::new()`; `hashers.rs` L32: `struct CovenantID => b"CovenantID"`.
+
+5. HELD (as of tip date). "GitHub marks the pull ready for review (`draft` false). No reviewers are assigned." Live API still has `draft=false` and empty `requested_reviewers` (pull is now closed/merged; the draft/reviewer facts remain true).
+
+6. HELD. SNAPSHOT-HISTORY.md top row dated 2026-10-02 20:25 records the same covenant-id / DOTK recompute claims and says "Not a node RPC. Not `argentc genesis verify`". Row is present on the tip; commit time of `0c72511` is 20:26:13 +0200.
+
+7. HELD. Do not weld adds "a local recompute of the DOTK binding = `argentc genesis verify`" (README) / "into argentc genesis verify" (JSON). Present on the tip; consistent with the SNAPSHOT caveat.
+
+8. UNVERIFIABLE. "A local KIP-20 recompute of the genesisBinding single output (index 0, 100000000 sompi, script version 0, 35-byte script) matches registry `ee2128c03dfac7f6d74734bb3c879bd999434c47a55945b8a6daae2a1e4a21de`." This desk did not re-run that local recompute. The registry id string is present in [dotk-indexer `genesis/mainnet.json` at `17ca993b`](https://github.com/supertypo/dotk-indexer/blob/17ca993bec66/genesis/mainnet.json) as `registryCovenantId`.
+
+9. UNVERIFIABLE. "The published redeem script equals the DotkGap bytecode (6342 bytes) and the state span equals the published state. The deed template hash bytes occur inside that gap script." No local recompute of bytecode equality this pass.
+
+10. FAILED (inclusion). Tip is 129 commits behind main `cf44ce5` with merge-tree conflicts in README.md, SNAPSHOT-HISTORY.md, and master.json. Main already carries argent#66 merged, KCC-20 Last Call, private-name strip, and a Launch-proof covenant-id note. Fix: close `build/2026-10-02` without merging this tip; any still-useful DOTK recompute wording belongs on a fresh branch cut from current main.
+
+### Leak / form
+
+- Leak scan of `+` lines vs merge-base: no private STP-KAS repo names, emails, home paths, seeds, keys, or reserve addresses newly introduced.
+- master.json @0c72511 parses as JSON.
+
+**Open FAILED at tip `0c72511`: 2 (argent#66 present-tense open; inclusion behind main). Do not merge.**

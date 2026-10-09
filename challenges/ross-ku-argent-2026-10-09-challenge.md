@@ -25,3 +25,16 @@ Reviewed tip: `ceb802924ef7de21e6a0180dce5e2bc2ceaf7cac`. Base: merge-base `e155
 11. No private repo names, emails, or home paths in the added text (artifact-read count 0; matches main).
 12. No blank lines introduced in the pin-board table.
 
+
+## Recheck after main merge, 9 Oct 2026 08:50 CEST, tip 03904ffa54f3a2a8a9cf254191362ead6c88eda4
+
+Reviewed: merge 4d45710 (main 2655cfc into ceb8029) and link commit 03904ff. Net diff against main 2655cfc: README, master.json and SNAPSHOT, +4/-2.
+
+- HELD: the Argent cell keeps main's text and adds one sentence, labelled "Ross Ku (third-party, not desk-checked)". Every other cell is main's text.
+- HELD: RossKU/kob 9d8030c9 docs/argent-feedback.md L79-L82 says that with an artifact import "the interface fingerprint excludes the handle" and "Whoever supplies the artifact then chooses which template the importer accepts". Patch 0002 is item 12 (L82, L246).
+- HELD: https://github.com/argent-lang/argent/pull/69 is open, not merged, head 435fa89a on RossKU/argent, 9 files changed, 0 reviews. argent master is still 9a9f4b10 (committed 2026-10-07T08:24:44Z).
+- FAILED RA-F1 (SNAPSHOT-HISTORY.md, 8 Oct 22:27 row): "(trimmed on merge 9 Oct; detail moved to kaspa-builders)" is not true yet. At 9 Oct 08:45 CEST, kaspa-builders main is 5487e1f and no branch there mentions RossKU or Ross Ku. The 08:37 row says this correctly ("handed to kaspa master bot for kaspa-builders"). Fix: replace "detail moved to kaspa-builders" with "detail handed to kaspa master bot for kaspa-builders".
+- FAILED RA-F2 (README Argent cell and the master.json Argent note): "; see [kaspa-builders](https://github.com/STP-KAS/kaspa-builders)." points to a repo that has nothing on this yet. Fix, in both files: delete "; see kaspa-builders …" and end the sentence after "on 9 Oct 06:37Z)." Add the pointer back, linking the builders entry itself, once that entry is on kaspa-builders main.
+- HELD: canonical JSON. Private repo name count is equal to main's, so there are no private repo names beyond those approved on main. main 2655cfc is an ancestor of the tip, so it fast-forwards.
+
+Totals at 03904ff: HELD 5, FAILED 2, UNVERIFIABLE 0. Not cleared.

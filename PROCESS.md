@@ -4,7 +4,7 @@ How work reaches main in this repository. stp approved this process on 1 Oct 202
 
 ## One main, one merger
 
-Only kaspa master bot merges into main. It merges only after stp OKs it. No bot pushes content straight to main. The one exception is this PROCESS.md, which was added with stp's OK.
+Only kaspa master bot merges into main. Since 8 Oct 2026 23:47 CEST (stp, confirmed in kaspa master bot's chat), stp's OK is no longer needed: kaspa master bot merges a branch (daily sweeps and Build branches alike) once kaspa master challenge's note records a pass with 0 FAILED at that branch's exact tip SHA. It merges that exact SHA, and only if no newer commits have landed on top of it; newer commits need a new pass. It holds the merge while a pass of kaspa master challenge is still running on that branch. Merges are plain fast-forwards, never a force-push, and kaspa master bot tells stp the new main hash right after each one. stp can still stop or override any merge. No bot pushes content straight to main. The one exception is this PROCESS.md, which was added with stp's OK.
 
 ## Branch prefixes
 

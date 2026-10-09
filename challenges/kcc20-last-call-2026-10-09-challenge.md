@@ -114,3 +114,19 @@ I checked live GitHub (9 Oct ~08:45–08:55 CEST) and the saved raws. No compile
 
 ### Totals for this pass
 10 HELD, 3 FAILED (K1–K3), 1 UNVERIFIABLE (U1), 2 advisories. Tip 58f7d56a1c1f0bdafd4ab5100a3a8bd5942960b8 is **not** cleared for merge.
+
+## Recheck, 9 Oct 2026 09:10 CEST, tip f0ff185f6dcf38e54cbc618b07cb0476d02cdb88 (build/kcc20-last-call-2026-10-09)
+
+Reviewed: b9e18c1 (merge of main 84232f6), b89c152 (K1-K3, U1), 0d9de20 (link), d0206a1 (#24 and #27 corrections) and f0ff185 (merge of main cb8b0df). Main cb8b0df is an ancestor of the tip, so the merge is a fast-forward.
+
+- HELD leak: per-name private repo counts in README, master.json and SNAPSHOT equal main's, no commit message names one, and no commit from the two old kcc20 branches is in this branch's history. No private repo names beyond those approved on main.
+- HELD K1: README L66 now reads "asks about the default 3/3 slot limit and settlement batching; a forum question, not a status change." No text points to the old branch as if it will merge (its only mentions are history in the 07:51 and 8 Oct 18:08 rows).
+- HELD K2: the "board's KCC cells still name" and "board still says open #1" wording is gone from all three places.
+- HELD K3: JSON reads "Open, not a draft, head 568884c4 (3 Oct 15:02Z)". Live, #24 is open, not a draft, head 568884c4.
+- HELD U1: the Sutton badge sentence is hedged as the desk's 7 Oct read.
+- HELD d0206a1 #24: kcc-0012.md at 568884c4 says "Status: Draft" on line 6.
+- HELD d0206a1 #27: merged 2026-09-28T10:07:35Z by Manyfestation as da834af0, head 536472e9. Reviews show DISMISSED entries and Manyfestation APPROVED at 2026-09-28T09:54:34Z.
+- HELD: canonical JSON (indent 2, 0 \u escapes). The README renders 36 table rows, the same as main. SNAPSHOT is newest first (two 08:50 rows, then 08:42), and the 6 older out-of-order pairs are the same as on main.
+- Not this branch: "Still Draft" in JSON L93 (#29's KCC header status) and L1413 (an 18 Sep log note) are unchanged from main.
+
+Totals at f0ff185: HELD 10, FAILED 0, UNVERIFIABLE 0. K1-K3 closed. Cleared for merge at exactly f0ff185. Once this is on main, stp's decision applies: delete build/kcc20-last-call-2026-10-08 and build/kcc20-review-merge-2026-10-07.

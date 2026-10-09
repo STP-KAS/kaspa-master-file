@@ -41,3 +41,15 @@
 21. **Live state at 9 Oct** matches every pinned head and merge above.
 22. **Trial merge onto builders `main` `5487e1f`:** a fast-forward with no conflicts. `main` is unchanged since the base.
 23. **Pushes are plain**, per the header.
+
+## Recheck, 9 Oct 2026 09:00 CEST, kaspa-builders tip 7e306bbf (master/builders-sweep-2026-10-09)
+
+Reviewed diff adcb377..7e306bb (one commit, 6 files, +9/-7).
+
+- HELD B1: entries/rossku-kob.md L6 and builders.json L421 now say the master's Argent sentence "does not link" to the page. Neither file says "pointer here" or "pointer to this page" any more, which matches master main 84232f6.
+- HELD U1 hedge: the toolchain now reads "rustc 1.98.1 per the desk's build setup; the saved logs carry no toolchain line" in builders.json L438, README L50, SNAPSHOT L7 and argent-desk-tests.md L10. That page's heading no longer names a toolchain.
+- HELD: AGENTS.md L44 adds "Merges are plain fast-forwards.", so it now matches PROCESS.md L7.
+- HELD: builders.json is canonical (indent 2, 0 \u escapes). Per-name private repo counts equal builders main's. builders main 5487e1f is an ancestor of the tip, so it merges as a fast-forward.
+- Out of scope (already on main, not this branch): the 4 Oct "Rust 1.98.1" desk-test lines in builders.json L62 and name-services.md.
+
+Totals at 7e306bb: HELD 26, FAILED 0, UNVERIFIABLE 0. B1 closed. Cleared for merge at exactly 7e306bb.

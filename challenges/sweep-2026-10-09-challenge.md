@@ -117,3 +117,17 @@ Files: README.md, master.json, SNAPSHOT-HISTORY.md, prompts/grok-build-2026-10-0
 
 ## Totals
 22 HELD, 6 FAILED (F1–F6), 2 UNVERIFIABLE, 5 advisories. Tip c0c3f5697459dd81995d344a0dae88ec50c99622 is **not** cleared for merge.
+
+## Recheck, 9 Oct 2026 08:10 CEST, tip 5aa243f9f1ddd654efab643b26c193957df5c7f7
+
+Reviewed diff c0c3f56..5aa243f (one commit: README +4/-7, master.json 3 lines, SNAPSHOT 1 line, prompt 1 line).
+
+- HELD F1: the README blank-line positions are the same as on main 8a894cc. GitHub's markdown render API (POST /markdown, gfm) gives 1 table and 36 rows, the same as main, and "KRC-20 to KCC", "KRC-20 incident", "SilverScript v1.0.0 units", "Kas-Smiths" and "Do not weld" all render inside cells.
+- HELD F2: JSON L189 now says "Prior tip 9573d47e…" and puts the old status page in the past tense, "(superseded by the #5/#6 status at 5b6c6b75)".
+- HELD F3: README L63 and JSON L81 carry the "Since 7 Oct the state sentences above are out of date" sentence (kcc20-reference#1 merged as c8a08711, kccs #31 merged, 3fbec524, Last Call). README L66 says Last Call since 7 Oct 20:38Z. The SNAPSHOT Pins column flags 411b41bc on the board as pending build/kcc20-last-call-2026-10-08. The older Draft and "Not merged" sentences stay in place, explicitly marked out of date, as the fix asked.
+- HELD F4: the post 404 link is now kcc20/8/74.
+- HELD F5: README L53 and JSON L39 say "The 2 Oct 12:00Z to 3 Oct 10:00Z desk stress window is past."
+- HELD F6: SNAPSHOT L11 and prompt L53 say "Prior tip `9573d47e` (#4, 7 Oct 16:37Z)".
+- HELD: canonical JSON (indent 2, 0 \u escapes). The private repo name count is the same as main, so there are no private repo names beyond those approved on main. main 8a894cc is an ancestor of 5aa243f, so this is a fast-forward.
+
+Totals at 5aa243f: HELD 28, FAILED 0, UNVERIFIABLE 2 (prompt-only, U1 and U2 unchanged). F1-F6 are closed. Cleared for merge at exactly 5aa243f.

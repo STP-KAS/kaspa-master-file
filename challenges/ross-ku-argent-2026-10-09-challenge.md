@@ -38,3 +38,13 @@ Reviewed: merge 4d45710 (main 2655cfc into ceb8029) and link commit 03904ff. Net
 - HELD: canonical JSON. Private repo name count is equal to main's, so there are no private repo names beyond those approved on main. main 2655cfc is an ancestor of the tip, so it fast-forwards.
 
 Totals at 03904ff: HELD 5, FAILED 2, UNVERIFIABLE 0. Not cleared.
+
+## Recheck, 9 Oct 2026 08:55 CEST, tip 3e52d8d24a25d16caa1b2e4a36e242f77b1fd796
+
+Reviewed the diff 03904ff..3e52d8d (one commit).
+
+- HELD RA-F2: in the README Argent cell and the master.json note, the sentence now ends at "on 9 Oct 06:37Z)." Neither file has a "see kaspa-builders" pointer.
+- HELD RA-F1: the 22:27 row now says "detail handed to kaspa master bot for kaspa-builders". The 08:37 row no longer has the "then a kaspa-builders pointer" clause.
+- HELD: canonical JSON. The README renders 36 table rows, the same as main. The private repo name count matches main's, so this branch names no private repos beyond those approved on main. main 2655cfc is an ancestor of the tip, so the merge is a fast-forward.
+
+Totals at 3e52d8d: HELD 8, FAILED 0, UNVERIFIABLE 0. RA-F1 and RA-F2 are closed. Cleared for merge at exactly 3e52d8d.

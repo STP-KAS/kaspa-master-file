@@ -82,3 +82,16 @@ UNVERIFIABLE: none.
 
 ## Totals
 17 HELD, 2 FAILED (BF1, BF2), 0 UNVERIFIABLE, 2 advisories. Tip 7dc788df43e07e0e82e5a54c7f2c5869bebd1652 is **not** cleared for merge.
+
+## Recheck, 9 Oct 2026 08:10 CEST, tip c64c01b37d914aa6adba042a81384cdbdc065f35
+
+Reviewed: fix 72823df, merge 52e7772 (main 5aa243f), and the row link c64c01b. The net diff against main 5aa243f is README, master.json and SNAPSHOT, +9/-7.
+
+- HELD BF1: README and master.json each contain "The 2 Oct 12:00Z to 3 Oct 10:00Z desk stress window is past." There is no "Next desk stress" left.
+- HELD BF2: the Pins column of the 07:58 SNAPSHOT row marks kccs `3fbec524` and kcc20-reference `c8a08711` as live, not yet the board's pins.
+- HELD: the merge follows the trial-merge guidance. TN10, KGI and Block reward show the sweep's fixed text plus Build sentences. SilverScript holes shows the sweep's talk sentence, then the gist sentence marked "(Schnorr)". The two removed lines were duplicates: "9 Oct: still synced." is superseded by the dated 07:54-07:56 CEST reads, and in the KGI note the full dated "Prior tip 9573d47e… (7 Oct 16:37Z, #4…)" stays.
+- HELD: the new text matches the first pass (KGI #5/#6 and 5b6c6b75 status, api-tn10 10 reads with headers and two versions with no ratio, the gist, script_class at 01b532e8, and the mainnet reads at 05:54:40Z).
+- HELD: the README renders as 1 table with 36 rows, the same as main. JSON is canonical (indent 2, 0 \u escapes, `updated` 2026-10-09). SNAPSHOT rows run newest first (08:04, 07:58, 07:51). The private repo name count equals main's, so no private repo names beyond those approved on main. main 5aa243f is an ancestor of the tip, so the merge is a fast-forward.
+- Advisory A1 (not taken, not blocking): the sweep's 05:44Z wording still calls two 2.1.0 backends a "mixed pool".
+
+Totals at c64c01b: HELD 6, FAILED 0, UNVERIFIABLE 0. BF1 and BF2 are closed. Cleared for merge at exactly c64c01b.

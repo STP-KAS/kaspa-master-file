@@ -1757,8 +1757,8 @@
         {
           "name": "kccs#27",
           "url": "https://github.com/kaspanet/kccs/pull/27",
-          "chip": "open",
-          "note": "kcc-1: kcc0 compliance. Open ready head fa845057 (18 Sep). Large kcc-0001/vectors/conformance.json; variable-length canonical state fields discussed; deeper transition rules deferred. Approvals: Manyfestation ~15:41Z 18 Sep; saefstroem ~16:08Z 20 Sep. Not Final."
+          "chip": "merged",
+          "note": "kcc-1: kcc0 compliance. Merged 2026-09-28T10:07:35Z by Manyfestation as da834af024b235171cd154fdfde16c0cadf8854f; final head 536472e9 (28 Sep 09:53Z), 11 commits. Earlier head fa845057 (18 Sep) is history. Large kcc-0001/vectors/conformance.json; variable-length canonical state fields discussed; deeper transition rules deferred. Reviews by Manyfestation (18 Sep 15:41Z, 27 Sep 14:52Z) and saefstroem (20 Sep 16:08Z), recorded here earlier as approvals, now show as DISMISSED; Manyfestation approved 2026-09-28T09:54:34Z. Not Final."
         },
         {
           "name": "rusty DK cluster",
@@ -1818,7 +1818,7 @@
           "name": "kccs#24",
           "url": "https://github.com/kaspanet/kccs/pull/24",
           "chip": "open",
-          "note": "KCC-0012 wallet provider/discovery. Open, not a draft, head 568884c4 (3 Oct 15:02Z); 7159d48 was the 20 Sep amend (was 06400c3). Still Draft. 22 Sep 09:44Z Izio said KIP-12 is superseded by this pull. The file says no previous standard exists and that KIP-12 was a draft this KCC continues. No kip-0012 in kaspanet/kips. Not a status change. Desk comment 5774902587: PSKB JSON-number amounts contradict Section 7.2, and kaspa_signTransaction display asks for an output address the serialized output does not have. No public implementation."
+          "note": "KCC-0012 wallet provider/discovery. Open, not a draft, head 568884c4 (3 Oct 15:02Z); 7159d48 was the 20 Sep amend (was 06400c3). The KCC file in that head, kcc-0012.md at 568884c4, still says Status: Draft (header line 6; the README index row added by the pull also says Draft). 22 Sep 09:44Z Izio said KIP-12 is superseded by this pull. The file says no previous standard exists and that KIP-12 was a draft this KCC continues. No kip-0012 in kaspanet/kips. Not a status change. Desk comment 5774902587: PSKB JSON-number amounts contradict Section 7.2, and kaspa_signTransaction display asks for an output address the serialized output does not have. No public implementation."
         },
         {
           "name": "silverscript#223",

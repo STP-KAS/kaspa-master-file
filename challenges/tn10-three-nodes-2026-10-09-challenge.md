@@ -17,3 +17,13 @@ Reviewed tip: `a9ae9e5b17a06102689295eb0b8ed74b8aa4d2d8`. Base: merge-base `b7c5
 5. No private repo names, emails, home paths, seeds, or keys in the added text.
 6. No blank lines breaking the pin-board table; TN10-only (no mainnet claims).
 
+
+## Recheck after main merge, 9 Oct 2026 08:50 CEST, tip 84232f6e482c34a06e8923cf2b9f69a61ebd6463
+
+Reviewed: merge ffecbe7 (main 3e52d8d into a9ae9e5) plus the link commit. The net diff against main 3e52d8d is +4/-2 across README, master.json and SNAPSHOT.
+
+- HELD: the Do not weld line is main's text with the branch's five items appended (README and the master.json mirror agree). No other cell changed.
+- HELD: the 7 Oct 13:20 row links a9ae9e5 (committed 7 Oct 13:17:45 +0200) and sits in newest-first order between 7 Oct 21:04 and 08:23. The 08:40 merge row is at the top. The 6 older out-of-order pairs are the same as on main.
+- HELD: canonical JSON (indent 2, 0 \u escapes, `updated` 2026-10-09). The README renders 36 table rows, the same as main. The private repo name count equals main's, so no private repo names beyond those approved on main. main 3e52d8d is an ancestor of the tip, so the merge is a fast-forward.
+
+Totals at 84232f6: HELD 3, FAILED 0, UNVERIFIABLE 0. The branch content was passed at a9ae9e5 in the 08:30 run. Cleared for merge at exactly 84232f6.

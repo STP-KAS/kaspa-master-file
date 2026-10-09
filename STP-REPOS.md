@@ -12,7 +12,7 @@ Kept current by the daily automations. The latest pass is the top row of [`SNAPS
 
 | Check | Result |
 | --- | --- |
-| Count | 54 owned. 52 public. Private: `tn10-grok`, `kns-kasware-tn10-test`. |
+| Count | 54 owned. 52 public. Private: `kns-kasware-tn10-test` and one other repo. |
 | Disclaimer | Present on all 54. |
 | Banner | Present on all 54. |
 | Map gap | [kaspa-dapps/REPOS.md](https://github.com/STP-KAS/kaspa-dapps/blob/main/REPOS.md) was a 17 Sep cut and omitted 7 public repos. Those rows were added in the same pass as this file. |
@@ -28,7 +28,7 @@ Kept current by the daily automations. The latest pass is the top row of [`SNAPS
 | [Grok.SPCXAI.KAS](https://github.com/STP-KAS/Grok.SPCXAI.KAS) | Help desk | Feed matches Now. README source line said “Draft until Final” for all KCCs. Fixed: KCC-0’s file is Final; the index still says Draft. Running model stays `GROK_MODEL` (default grok-4.6). |
 | [sixpack.wtf](https://github.com/STP-KAS/sixpack.wtf) | Public site | Feed matches Now. GitHub description “Final verdict” means the x402 bind, and the same line says not v1 and not mainnet. |
 | [kaspa-llm-forum](https://github.com/STP-KAS/kaspa-llm-forum) | Halted roundtable | README `fc746db`: do not post reports. The clock does not run. Description on the repo tab was still the invitation. Updated. |
-| [tn10-grok](https://github.com/STP-KAS/tn10-grok) | Private journal | Build vs tn10 bot. Points at the 14 Sep hard-test. Not a pin. |
+| A private journal repo (name withheld) | Private journal | Build vs tn10 bot. Points at the 14 Sep hard-test. Not a pin. |
 | [tn10-hard-test](https://github.com/STP-KAS/tn10-hard-test) | Frozen 36-row catalog | Says not to treat RC.1 as mainnet, and not to treat 36 GitHubs as 36 products. Receipt. |
 | [Xai.mainnet.public.nodes](https://github.com/STP-KAS/Xai.mainnet.public.nodes) | Density test | Ops journal. No protocol pin. |
 | [Xai.Kaspa.node](https://github.com/STP-KAS/Xai.Kaspa.node) | Mainnet archival prompt | Not kaspanet/rusty-kaspa. |

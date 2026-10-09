@@ -4,7 +4,7 @@
 
 The board is README **Now** and `master.json` section `now`. A repo agrees when its current sentences state that board, refuse the opposite, or are dated as a receipt. A repo drifts when an undated sentence states a pin the board has retired.
 
-Count rechecked this pass: **54** owned repos. **52** public, **2** private (`tn10-grok`, `kns-kasware-tn10-test`). Same set as [github.com/STP-KAS?tab=repositories](https://github.com/STP-KAS?tab=repositories) plus the two private repos that tab hides.
+Count rechecked this pass: **54** owned repos. **52** public, **2** private (`kns-kasware-tn10-test` and one other). Same set as [github.com/STP-KAS?tab=repositories](https://github.com/STP-KAS?tab=repositories) plus the two private repos that tab hides.
 
 ## Rubric taken from Now
 
@@ -87,7 +87,7 @@ The master file’s own morning receipt still printed host pin `da2a7f26` in the
 | [stp-kachat](https://github.com/STP-KAS/stp-kachat) | Agree | One of three KaChat copies. Not a wallet kit. |
 | [STP-KAS](https://github.com/STP-KAS/STP-KAS) | Agree | Profile points at the front door. No L1 stable. |
 | [three-x-reviews](https://github.com/STP-KAS/three-x-reviews) | Agree | 14 Sep journal. Not a pin. |
-| [tn10-grok](https://github.com/STP-KAS/tn10-grok) | Agree | Private journal. Not the public hard-test. |
+| A private journal repo (name withheld) | Agree | Private journal. Not the public hard-test. |
 | [tn10-hard-test](https://github.com/STP-KAS/tn10-hard-test) | Agree | Frozen **36-row** snapshot. The “36 GitHubs = 36 products” row is the claim it refuses. Live count is 54. |
 | [wallet-integration](https://github.com/STP-KAS/wallet-integration) | Agree | Withdrawn. Inject throws. |
 | [windows-p2p-node-guide](https://github.com/STP-KAS/windows-p2p-node-guide) | Agree | v2.0.1. `releases/latest` is that tag. |

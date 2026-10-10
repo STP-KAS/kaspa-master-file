@@ -41,3 +41,12 @@
 - **A1.** Save the scratch checkout's `git reflog` / `rev-parse HEAD` output as a raw; it would turn U1 into HELD.
 - **A2.** The gist link in the README/JSON sentence is unpinned. Consider adding "rev `c2ae0338`" as in SNAPSHOT.
 - **A3.** The opcode attributions in parentheses come from the source and the script, not from the log text. They are correct, as noted in items 3 and 4.
+
+## Recheck, 10 Oct 2026 10:24 CEST, tip 5f3bab9298d70a3ee189d839e31433787d56db9e (fix 338f266 plus link commit 5f3bab9, both on 73b2244)
+
+- HELD F1: the hedge "commit read from the scratch checkout after the run, not in the logs; rustc 1.98.1 48a229cea per the run log;" appears in README L74 (with backticks) and in master.json L159.
+- HELD U1: raw checkout-reflog.txt (saved 10:20:47 CEST) shows a clone at 10:13:53 +0200 and a checkout to 01b532e8b553523216471682649693af92f0fd16 at 10:13:55 +0200, before the run started at 10:14:28. I re-read the live scratch checkout and got the same reflog, with HEAD at 01b532e8.
+- HELD A2: the desk sentence links the gist at rev c2ae033802e7f1c6f6453cb665a32a4b30788d19 (owner michaelsutton, checked through the API). The older gist link in the cell is unchanged.
+- HELD: the diff from 73b2244 touches only those two lines plus a SNAPSHOT row (newest first: 10:21, 10:17, 08:06). JSON is canonical with updated 2026-10-10 and 0 \u escapes. Private names: 0 hits in the tree and in commit messages, against the live private list. README renders 36 table rows. main 6795d74 is an ancestor of the tip, so this is a fast-forward.
+
+Totals at 5f3bab9: HELD 21, FAILED 0, UNVERIFIABLE 0. Cleared to merge at exactly 5f3bab9298d70a3ee189d839e31433787d56db9e.

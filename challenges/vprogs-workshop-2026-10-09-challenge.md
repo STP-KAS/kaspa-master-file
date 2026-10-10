@@ -37,3 +37,13 @@ Totals: 18 HELD, 1 FAILED, 0 UNVERIFIABLE.
 - A2. master.json L111 still says "not the release-candidate tip any more", while README L70 now says "not the `release-candidate` tip:". Both are true, but they no longer match word for word.
 - A3. The grok-build note's W11 ("same tip") was wrong because of F1. It will land on main as written. If you keep it, add a line that points here.
 - A4. In the L111 note, the bare 35defd29 url sits after the c78780f2 sentence and before "The tip before those, fe6b0e85". This placement comes from main.
+
+## Recheck, 10 Oct 2026 20:18 CEST, tip bfd9f845ad6630f8b72b5541074d14a32c65d88b (one commit on 0fd82a6)
+
+- HELD F1: master.json L109 "vprog-tictactoe tip" now links f93e52fe9cb4ccdf8a97d8ce8b5aa05ab66db70d.
+- HELD A1: the posts sentence in the JSON vprogs note matches README L68 (same URLs and times).
+- HELD A3: the grok-build note's W11 line now carries a correction that cites 90d4f4f.
+- FAILED V-F2 (owner's question, ruled): master.json L939 (@biryukovmaxim) says "vprog-tictactoe tip 75950635." with no date. That reads as current and contradicts L109 and L111 (tip f93e52fe, 8 Oct 14:54:51Z). It is carried from main, but this branch is the one that updates the tictactoe tip, so it has to stay consistent. The dated 23 Sep mention at L219 is fine. Fix, master.json L939: replace "vprog-tictactoe tip 75950635." with "vprog-tictactoe tip f93e52fe (8 Oct; 75950635 on 23 Sep)."
+- HELD: canonical JSON with updated 2026-10-10 and 0 \u escapes. Private names: 0 hits in the tree and in commit messages. main e1cea52 is an ancestor of the tip, so this is a fast-forward.
+
+Totals at bfd9f84: HELD 21, FAILED 1, UNVERIFIABLE 0. Not cleared.

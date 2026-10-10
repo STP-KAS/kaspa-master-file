@@ -62,3 +62,12 @@ The challenger note on the sweep (`5de15b3`) covers `308f338` only. `a113960` ne
 - **A1.** #991: IzioDev left 5 inline COMMENTED reviews on `77d9a2e8`, 9 Oct 14:52 to 14:57Z ("keep this file untouched…", "Ord and PartialOrd seems unused"). They are not recorded on either branch. Suggest one sentence in Not live.
 - **A2.** The SNAPSHOT 08:00 row says "sweep tip `308f338`". That is dated by the row's time but superseded (`a113960`).
 - **A3.** "L188 to L195": the `delegate transfer_delegator` block spans L189 to L195. L188 is the comment above it.
+
+## Recheck, 10 Oct 2026 08:33 CEST, tip 6795d7462af1e8efcea0f3da9b76a83066a4d027 (merge 3f0acf3 of main a113960 into 98f81ad, plus link commit 6795d74)
+
+- HELD merge resolution: main's #1141 wording (someone235 CHANGES_REQUESTED 10 Oct 05:03:19Z on 11aca108) is there once in README and once in JSON, the same as on main. The #1135 force-push wording appears R1/J3, the same as main. "no review yet (atharaldsen)" has 0 hits. The Kas-Smiths README row is byte-identical to main. The Sutton quote is verbatim ("should only be an optional...").
+- HELD #991 sentence (new): the live reviews API shows 5 COMMENTED reviews by IzioDev on 77d9a2e8 at 9 Oct 14:52:52Z, 14:53:37Z, 14:56:33Z, 14:57:01Z and 14:57:45Z, with no state change. The inline comments are on ci.yaml (2), script_public_key.rs (2, including "Ord and PartialOrd seems unused") and indexes/core/Cargo.toml (1). Comment r4231432853 is the first one (14:52:52Z, ci.yaml). The pull is open, not merged, mergeable_state blocked, head 77d9a2e8.
+- HELD #L189-L195: at c8a08711, kcc20.ag L189 is `delegate transfer_delegator(` and L195 is its closing brace; L192 is `leader: KCC20`.
+- HELD: SNAPSHOT is newest first (08:06, 08:00, 07:52), and the 08:00 row names sweep tip a113960. JSON is canonical with 0 \u escapes. Private names: 0 hits in the tree and in commit messages, against the live private list. README renders 36 table rows. main a113960 is an ancestor of the tip, so this is a fast-forward.
+
+Totals at 6795d74: HELD 24, FAILED 0, UNVERIFIABLE 0. Cleared to merge at exactly 6795d7462af1e8efcea0f3da9b76a83066a4d027. The 98f81ad clearance is superseded.

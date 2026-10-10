@@ -65,3 +65,12 @@ Fixes:
 - **A3.** TN10 cell: "Build read of the issue (05:56:04Z …): 0 comments" is dated, but the issue now has 1 comment (08:29:44Z). Consider appending "(before atharaldsen's 08:29Z comment)".
 - **A4.** "Still open on v1.0.0: #243, #249, #250, #251" could now say "still open (master `a0dd7448`)".
 - **A5.** For atharaldsen's diagnosis, consider "his reading; not confirmed by maintainers or the desk", since "Author's account" now follows two authors.
+
+## Recheck, 10 Oct 2026 20:12 CEST, tip e1cea52dba084880f90e05e84da7399c60878550 (one commit on d923833)
+
+- HELD F1: all four replacement texts are present word for word (README L52 and L71, master.json L33 and L117), and none of the old "on/moved to crates.io v2.1.0" wording remains. README L52 now says "it does not fix it" right after the #256 workaround. Re-confirmed: Cargo.toml at a0dd7448 has version 1.0.1 and depends on kaspa-* 2.1.0; crates.io silverscript-lang max_version is 1.0.1.
+- HELD F2: the "no maintainer review on a7c8ef0c" wording is in README, master.json and SNAPSHOT L11, and the old wording is gone. The live reviews API matches: someone235 CHANGES_REQUESTED at 05:03:19Z (11aca108) and 12:09:41Z (36c72bf3), and atharaldsen COMMENTED at 15:20:15Z (a7c8ef0c).
+- HELD A5: the #1146 diagnosis is hedged in both files as "atharaldsen's reading of the code, not confirmed by a maintainer or the desk".
+- HELD: JSON is canonical with updated 2026-10-10 and 0 \u escapes. Private names: 0 hits in the tree and in commit messages, against the live list. README renders 36 table rows. SNAPSHOT is newest first. main 5f3bab9 is an ancestor of the tip, so this is a fast-forward.
+
+Totals at e1cea52: HELD 22, FAILED 0, UNVERIFIABLE 0. Cleared to merge at exactly e1cea52dba084880f90e05e84da7399c60878550. A1-A3 are deferred to the 11 Oct sweep.

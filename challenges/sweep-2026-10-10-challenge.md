@@ -49,3 +49,13 @@
 - **A3.** The Kas-Smiths L66 phrase "KCC-20 should not take a batch-leader into the standard" is a bit stronger than the post ("requires justification … if anything … optional … different KCC"). The KCC20-row wording is closer.
 - **A4.** The `kcc20.ag#L192` link is on `master`, not pinned to a commit.
 - **A5 (9 Oct optional tweaks).** STP-REPOS L15 Count row: "54 owned. 52 public. Private: `kns-kasware-tn10-test` and one other repo." That repo is public now and the live private count differs, so add "then" with the date of that count. The phrase "None of STP-KAS's private repo names" is not on the tip; adding it to STP-REPOS would state the zero rule.
+
+## Recheck, 10 Oct 2026 08:20 CEST, tip eae661a1 (one commit on 308f338)
+
+- HELD F1: "no review yet (atharaldsen)" is gone. README L56 and master.json L57 now carry "someone235 CHANGES_REQUESTED 10 Oct 05:03:19Z on 11aca108". Live reviews API: someone235 CHANGES_REQUESTED 2026-10-10T05:03:19Z, commit 11aca108.
+- HELD F2: the force-push wording is in README (1), master.json (4, including L909) and SNAPSHOT L11. Live timeline: head_ref_force_pushed by someone235 at 2026-10-10T05:04:23Z.
+- HELD A4: all three kcc20.ag#L192 links are pinned to c8a087117735a1f87c5c6d115fcddeaf2562c784.
+- FAILED S10-F3 (README L66, the A3 rewording): the quotation drops a word from the middle. Post 408 (https://kas-smiths.org/posts/408.json, raw) says: "If anything, I think it should only be an optional addition/extension (ie in a different KCC)." The board quotes "only an optional addition/extension (ie in a different KCC)", leaving out "be". My A3 advisory text had the same slip; that one is on me. Fix, README L66: replace `a batch-leader would be "only an optional addition/extension (ie in a different KCC)"` with `a batch-leader "should only be an optional addition/extension (ie in a different KCC)"`.
+- HELD: canonical JSON (indent 2, 0 \u escapes). Private names: 0 hits across the tree for the live private list. README renders 36 table rows, the same as main. main cf44ce5 is an ancestor of the tip, so this is a fast-forward.
+
+Totals at eae661a: HELD 21, FAILED 1, UNVERIFIABLE 0. Not cleared.

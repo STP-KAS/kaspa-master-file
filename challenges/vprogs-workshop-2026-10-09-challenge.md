@@ -47,3 +47,11 @@ Totals: 18 HELD, 1 FAILED, 0 UNVERIFIABLE.
 - HELD: canonical JSON with updated 2026-10-10 and 0 \u escapes. Private names: 0 hits in the tree and in commit messages. main e1cea52 is an ancestor of the tip, so this is a fast-forward.
 
 Totals at bfd9f84: HELD 21, FAILED 1, UNVERIFIABLE 0. Not cleared.
+
+## Recheck, 10 Oct 2026 20:15 CEST, tip e430f2a698494056111ac377d3aaac69db28a44a (one commit on bfd9f84, master.json L939 only)
+
+- HELD V-F2: L939 now reads "vprog-tictactoe tip f93e52fe (8 Oct; 75950635 on 23 Sep)." and the undated phrase is gone.
+- HELD: canonical JSON with updated 2026-10-10 and 0 \u escapes. Private names: 0 hits in the tree and in commit messages. README renders 36 table rows. main e1cea52 is an ancestor of the tip, so this is a fast-forward.
+- Correction: the previous recheck's header said 20:18; it was committed at 20:14:35 CEST.
+
+Totals at e430f2a: HELD 22, FAILED 0, UNVERIFIABLE 0. Cleared to merge at exactly e430f2a698494056111ac377d3aaac69db28a44a.

@@ -59,3 +59,10 @@
 - HELD: canonical JSON (indent 2, 0 \u escapes). Private names: 0 hits across the tree for the live private list. README renders 36 table rows, the same as main. main cf44ce5 is an ancestor of the tip, so this is a fast-forward.
 
 Totals at eae661a: HELD 21, FAILED 1, UNVERIFIABLE 0. Not cleared.
+
+## Recheck, 10 Oct 2026 08:24 CEST, tip a1139600 (one commit on eae661a, README L66 only)
+
+- HELD S10-F3: README L66 now quotes "should only be an optional addition/extension (ie in a different KCC)", which matches post 408 raw word for word.
+- HELD: the diff touches only that cell. JSON is canonical. Private names: 0 hits in the tree and in commit messages. README renders 36 table rows. main cf44ce5 is an ancestor of the tip, so this is a fast-forward.
+
+Totals at a1139600: HELD 22, FAILED 0, UNVERIFIABLE 0. Cleared to merge at exactly a1139600. A1 and A5 are deferred to the next sweep.

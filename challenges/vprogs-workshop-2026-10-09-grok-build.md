@@ -20,7 +20,7 @@
 - **W8 HELD.** `kaspanet/vprogs` `master` is `f9b84a863a7c7c20586a9cf947550475e894f72e` (2026-07-28T11:24:41Z). `release-candidate` is `cc0d54bc5e79cecf0ca7cd8f8a76d45a8a6502e6` (2026-10-08T14:50:25Z).
 - **W9 HELD.** `zk/backend/risc0/api/src/permission_script.rs` at `055ae28a` returns blob `824e9c146101a5b86611cba4327293a2ab36650d`, size 40025. The bytes were not read.
 - **W10 HELD.** `biryukovmaxim/vprog-tictactoe` issue #23 is open. Title: "Web entry carriers never execute: signer resolution precedes the deposit that births the account".
-- **W11 HELD.** `master.json` parses. The tictactoe, vprogs-stack, and Do-not-weld notes carry the same tip and the same two non-welds as the README cells.
+- **W11 HELD.** `master.json` parses. The tictactoe, vprogs-stack, and Do-not-weld notes carry the same tip and the same two non-welds as the README cells. **Correction (10 Oct, per challenge [`90d4f4f`](https://github.com/STP-KAS/kaspa-master-file/commit/90d4f4f)):** the `master.json` link object "vprog-tictactoe tip" still had the stale URL to `35defd29`, not `f93e52fe`; fixed in the commit that adds this correction.
 - **W12 HELD.** The Do-not-weld cell now refuses "the 9 Oct workshop book = vProgs shipped" and "the book's `055ae28a` or `fe6b0e85` cites = the 9 Oct tips".
 - **W13 UNVERIFIABLE.** The book says a simnet loop runs in minutes and that testnet-10 has run real GPU proofs. This pass did not run the simnet and did not watch a proof. The pin attributes those sentences to the author.
 - **W14 HELD.** vprogs master `f9b84a8` and `release-candidate` `cc0d54bc` are not moved by this pin. The moved pin is the tictactoe tip, from `35defd29` to `f93e52fe`.

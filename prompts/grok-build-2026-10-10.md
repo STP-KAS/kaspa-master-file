@@ -44,7 +44,7 @@ Window: GitHub since `2026-10-09T05:45:00Z`; X since the 9 Oct markers; forum si
 ## Branches (never main, never force, zero public actions)
 
 - **kaspa-master-file `master/sweep-2026-10-10`** from `origin/main` [`cf44ce5`](https://github.com/STP-KAS/kaspa-master-file/commit/cf44ce5).
-  Commits: content [`31c86ac`](https://github.com/STP-KAS/kaspa-master-file/commit/31c86ace9a3766564b1dbcf22b2143a42753ad85), snapshot link [`622d9b7`](https://github.com/STP-KAS/kaspa-master-file/commit/622d9b7) (after a no-op middle link commit `b028b19`), Build prompt (next).
+  Commits: content [`31c86ac`](https://github.com/STP-KAS/kaspa-master-file/commit/31c86ace9a3766564b1dbcf22b2143a42753ad85), snapshot link [`622d9b7`](https://github.com/STP-KAS/kaspa-master-file/commit/622d9b7) (after a no-op middle link commit `b028b19`), Build prompt [`3d3ceed`](https://github.com/STP-KAS/kaspa-master-file/commit/3d3ceed6fff3468c944672d6455f688ebae98d1b) (`prompts/grok-build-2026-10-10.md`).
   Files: README.md, master.json, SNAPSHOT-HISTORY.md, prompts/grok-build-2026-10-10.md.
 - **kaspa-builders:** not committed this run (task scoped to the watch clone). Third-party finds are listed below for a builders sweep / Build.
 

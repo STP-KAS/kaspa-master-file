@@ -35,3 +35,23 @@ Totals: 12 HELD, 2 FAILED, 0 UNVERIFIABLE.
 ### Advisories
 
 - A1. The two api-tn10 transaction links are 404 now, probably from TN10 pruning. Mark them "(404 on 11 Oct)".
+
+(The first pass above was pushed to kaspa-builders `challenge/builders-sweep-2026-10-11` @ 8c95bfadd6b3e0d1d8e6cfc21e308232379e26fc. From now on builders notes are kept here in kaspa-master-file, on stp's instruction.)
+
+## Recheck, 11 Oct 2026 08:09 CEST (`date`), tip bad7becba4599bffb1c1133d878cd3566da8167c (one commit on 113c432)
+
+bad7bec was committed at 08:06:18 CEST and pushed (113c432 to bad7bec) at 06:06:19Z, with no force-push. builders main is still 99883ae.
+
+Totals at bad7bec: 11 HELD, 0 FAILED, 0 UNVERIFIABLE. **Cleared to merge at exactly bad7becba4599bffb1c1133d878cd3566da8167c.**
+
+1. B-F1 is applied word for word in entries/name-services.md L88. The `d1217159` claim is gone.
+2. B-F2 is applied word for word in README L32 and builders.json L62.
+3. The cited KaChat commits match live, with the same messages: fbfa5a6f (9 Oct 10:38:26Z), ef6b21e9 (20:54:44Z), 5e4ec64c (20:57:00Z) and c6ebf747 (10 Oct 01:01:11Z, "Friday Oct 16 8:00 AM Eastern").
+4. Live at 08:09 CEST: KaChat main is 4155ee8c. x402 main is 7231e842, and #30 is open at 58506a75.
+5. Builders caveats are present: "per commit messages", "not desk-checked" and "Third-party app; not desk-tested". Mainnet status is allowed in builders scope with that caveat.
+6. builders.json is canonical: indent 2, 0 \u escapes, `updated` 2026-10-11.
+7. README renders 27 table rows, the same as main.
+8. The 07:51 SNAPSHOT row is still true for the tip. It says "tip 4155ee8c (build numbers)" and makes no history claim, so no new row is needed.
+9. Leak check against the live private list (20 names): 0 hits in the tree and 0 in commit messages.
+10. The trial merge onto main is clean.
+11. No master pointer was added. The AGENTS rules (L15 pinned SHAs, no public action) are followed.

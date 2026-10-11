@@ -75,3 +75,41 @@ Revised totals at 06b5850: 20 HELD, 5 FAILED, 0 UNVERIFIABLE. F1–F3 stand. N1 
   - After "the CHANGES_REQUESTED reviews stand" insert " (IzioDev 25 Aug, biryukovmaxim 11 Sep)".
   - The L1+ε sentence was **not** dropped: it is reworded in L123 ("**8 Oct, L1+ε ladder (Sutton):** agrees with maxibitcat's L1+ε framing …"). Build's report is wrong on that one item. The TN10 note's missing tokens are all in the 10 Oct cell, which F2 covers.
 - **HELD 20. #850 attribution is correct.** The sweep says "#850 (optimize utxo write, open since Jan, head `b53879ab`) got a 10 Oct 20:22:47Z supertypo comment with his own batch-write timings". It does not call supertypo the author. Live, the author is Psalmuel01 and the PR was opened 28 Jan. The SNAPSHOT row and the prompt also say only "supertypo batch-write timings".
+
+## Recheck, 11 Oct 2026 08:09 CEST (`date`), tip 05e314607faa2dd8846edf67ef1da76d2183834f (one commit on 06b5850)
+
+05e3146 was committed at 08:05:55 CEST and pushed (06b5850 to 05e3146) at 06:05:57Z, with no force-push. main is still e430f2a.
+
+Totals at 05e3146: 19 HELD, 1 FAILED, 0 UNVERIFIABLE.
+
+### FAILED
+
+- **F6. Two more JSON-only facts were silently dropped from the master.json L57 Not live note.** Both are true live. They were already missing at 06b5850, and my addendum's F5 list missed them.
+  - (a) The time of #991 commit 2e05b7cd. Main said "Four commits after 2e05b7cd (05:49Z)", and the committer date is 2026-10-03T05:49:09Z. Fix, L57: replace "Four commits after 2e05b7cd https://github.com/kaspanet/rusty-kaspa/commit/2e05b7cd:" with "Four commits after 2e05b7cd https://github.com/kaspanet/rusty-kaspa/commit/2e05b7cd (3 Oct 05:49Z):".
+  - (b) The kaspad prompt detail. Main said "kaspad asks y/n (or --yes), deletes and rebuilds". At 1f15c618, kaspad/src/daemon.rs L640-642 has "Do you confirm rebuilding the UTXO index DB? (y/n)" followed by get_user_approval_or_exit(msg, args.yes), and args.rs L373 defines --yes. Fix, L57: replace "it would delete and rebuild a legacy utxoindex after a prompt." with "it would delete and rebuild a legacy utxoindex after a y/n prompt (or --yes)."
+  - The README does not need these changes.
+
+### HELD
+
+1. F1 is applied word for word: README L53, master.json L39, SNAPSHOT L11 and prompt L58.
+2. F2 is applied word for word. The pointer is correct. The "Moved from README on 11 Oct 2026" header text matches the fix. The cell body is byte-identical to main e430f2a README L53 (without the table pipes) and to build/2026-10-11's copy. It sits at the end of the file, after the 10 Oct section. The 07:51 row now carries the "moved" sentence.
+3. F3 is applied word for word: prompt L8, L20 and L70, and L110 is deleted.
+4. F4: no string anywhere in master.json contains `[x](y)`, a backtick or `**`. A mechanical conversion of the README cells (`[label](url)` to `label url`, relative links to blob/main, and the markers stripped) word-diffs as follows:
+   - TN10 (L39) and Launch proof (L123) are identical to their README cells.
+   - Not live (L57) differs from README only in the F5 restores.
+   - Every one of main's tokens is present, apart from F6 and the moved TN10 cell.
+5. Internal links: three blob/main SNAPSHOT anchors (26 Sep, 10 Oct and 11 Oct). Main's master.json uses blob/main for every internal repo file (10 of 10), so this follows main's style. The "Moved from README on …" headings are append-only, so the anchors do not move. The 11 Oct anchor resolves only after merge. Every other new URL returns HTTP 200, and the X posts were checked through the API.
+6. F5: all six restores are present. The #1104 and #991 restores sit next to their URLs ("#1104 https://… a5888da (updated 24 Sep 11:03Z)", "#991 https://… (D-Stacks; …)"), with the wording unchanged. "No 100 BPS network. … No mainnet x402.", the four heads, "(old pin 703e1639)" and "(IzioDev 25 Aug, biryukovmaxim 11 Sep)" are all there.
+7. The #1146 hedge is restored: "That is atharaldsen's reading of the code, not confirmed by a maintainer or the desk." "No maintainer has replied" holds live: 2 comments, atharaldsen (author_association CONTRIBUTOR) and oskrcl (NONE).
+8. OriNewman's parent post. aglovale0x 2108927151642660977, by user 54452544 (@aglovale0x), is dated 2026-10-10T14:26:29Z. OriNewman 2108969274832273564 has referenced_tweets replied_to that ID. "One deterministic … standard that wallets, hardware wallets and exchanges all support" matches the post ("-one- standard implementation", "deterministic amongst wallets", "kaspa:p addresses"). "Reference implementation" is now quoted correctly. It fits master scope: it is talk about a request, not wallet or product status.
+9. "Opened 28 Jan by its author Psalmuel01" holds live.
+10. No new SNAPSHOT row was added, and the 07:51 row still describes the tip accurately. Every statement in it is still true, including "(Psalmuel01's PR)", the corrected window and the moved sentence. The fix commit only adds the hedge and the parent-post detail, which the row does not contradict. Ruling: no row is needed.
+11. master.json is canonical: indent 2, 0 \u escapes, `updated` 2026-10-11.
+12. README renders 36 table rows, the same as main.
+13. SNAPSHOT is newest first, with 07:51 on top.
+14. Leak check against the live private list (20 names): 0 hits in the tree and 0 in commit messages.
+15. Trial merges: `main ← sweep` is clean. `sweep ← build/2026-10-11` and `build ← sweep` both still conflict in README, SNAPSHOT and master.json.
+16. The prompt is consistent with the content: the vprogs-workshop lines, the window and #850 (author Psalmuel01).
+17. Live recheck at 08:09 CEST: #1146 is still open with 2 comments.
+18. Push timeline: the commit and push are 2 seconds apart.
+19. The 10 Oct moved cell matches Build's copy, so the two branches agree on SNAPSHOT content. They differ only in the position conflict.

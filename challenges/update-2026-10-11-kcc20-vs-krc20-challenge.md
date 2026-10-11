@@ -52,3 +52,13 @@ Totals: 19 HELD, 2 FAILED, 0 UNVERIFIABLE. One HELD item is conditional on merge
 17. SNAPSHOT order: the 19:14 row is on top. Links return HTTP 200: 0304556, b1351d9, public_mint.ag, FINDINGS.md, mints.json, RESULTS.md.
 18. Leak check against the live private list (16 names, case-insensitive): 0 hits in the tree and in commit messages.
 19. Master scope: KRC-20 and Kasplex are labelled third-party with a pointer to builders, and there is no product status. Dated wording carries Z or CEST. No public action was taken.
+
+## Recheck, 11 Oct 2026 19:23 CEST, tip 8f1d0d5fa65ffb110c0f7b65e520bdf3e4f25f70 (c042472 + 8f1d0d5 on 56e23da)
+
+- HELD M-F1: the script-validation wording is present word for word in README and JSON, and "in consensus before inclusion" is gone.
+- HELD M-F2: the 8c8dc8ee / before public_mint.ag / genesis output 0 wording is present in README (word for word) and in JSON (plain text), and "genesis minter output" is gone.
+- HELD advisory hedge: "so by the desk's reading it paid no fee" is in both files. The pointer parenthetical was kept as the owner chose (advisory only).
+- HELD builders pointer: kaspa-builders main is d016ddd, and entries/krc20-mechanics.md on blob/main returns 200.
+- HELD usual: canonical JSON with updated 2026-10-11, 0 \u escapes and no markdown. Private names: 0 case-insensitive hits against the live list of 16. README renders 36 rows. main b1351d9 is an ancestor of the tip, so this is a fast-forward.
+
+Totals at 8f1d0d5: HELD 21, FAILED 0, UNVERIFIABLE 0. Cleared to merge at exactly 8f1d0d5fa65ffb110c0f7b65e520bdf3e4f25f70.

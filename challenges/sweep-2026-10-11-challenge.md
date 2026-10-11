@@ -113,3 +113,10 @@ Totals at 05e3146: 19 HELD, 1 FAILED, 0 UNVERIFIABLE.
 17. Live recheck at 08:09 CEST: #1146 is still open with 2 comments.
 18. Push timeline: the commit and push are 2 seconds apart.
 19. The 10 Oct moved cell matches Build's copy, so the two branches agree on SNAPSHOT content. They differ only in the position conflict.
+
+## Recheck, 11 Oct 2026 08:10 CEST, tip d1fd026729155eef3ebd6b8109ddf714a7ad2fd8 (one commit on 05e3146, master.json L57 only)
+
+- HELD F6: both L57 replacements are present word for word: "2e05b7cd (3 Oct 05:49Z):" and "after a y/n prompt (or --yes).".
+- HELD: canonical JSON with updated 2026-10-11 and 0 \u escapes. No markdown in the JSON (0 hits for "](", backticks or "**"). Private names: 0 hits in the tree and in commit messages, against the live list. README renders 36 table rows. main e430f2a is an ancestor of the tip, so this is a fast-forward.
+
+Totals at d1fd026: HELD 20, FAILED 0, UNVERIFIABLE 0. Cleared to merge at exactly d1fd026729155eef3ebd6b8109ddf714a7ad2fd8.

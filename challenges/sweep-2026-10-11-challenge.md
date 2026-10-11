@@ -59,3 +59,19 @@ Totals: 19 HELD, 3 FAILED, 0 UNVERIFIABLE.
 - N2. The #1146 text drops main's evening hedge "not confirmed by a maintainer". Suggest adding "no maintainer has replied" after "not desk-reproduced".
 - N3. The OriNewman "such P2SH" has no antecedent in the cell. The thread asks for one deterministic P2SH address standard across wallets and exchanges. Also, the post says "reference implementation", not just "reference".
 - N4. The 07:51 SNAPSHOT row routes x402 #29/#30 and KaChat to kaspa-builders, but that content is only on an unmerged builders branch.
+
+## Addendum, 11 Oct 2026 08:03 CEST, same tip 06b5850f1adfec388c9a5829128c7a5fc60e59b7 (parent relayed Build's three findings; each re-verified here)
+
+Revised totals at 06b5850: 20 HELD, 5 FAILED, 0 UNVERIFIABLE. F1–F3 stand. N1 is upgraded to F4, and F5 is new. #850 attribution is added as HELD 20.
+
+- **F4. Three master.json notes are in markdown** (L39 TN10, L57 Not live, L123 Launch proof). Each is byte-equal to its README cell, with 24, 108 and 28 backticks and 4, 26 and 31 `[text](url)` links. On main, 0 of 328 notes use markdown.
+  - Fix: in those three notes, rewrite every `[label](url)` as `label url` and delete every backtick and `**`. build/2026-10-11 (ae3db02) has plain-text versions of all three, with 0 backticks, 0 `**` and 0 markdown links. Taking its L39, L57 and L123 note strings verbatim is an acceptable fix.
+- **F5. True JSON-only facts were silently dropped from the master.json L57 Not live note.** Each is still true live: #1124 open at 948bf380, #1122 at 332ec6c9, #1121 at 06efd837, #1104 updated 24 Sep 11:03:25Z, #991 by D-Stacks, and biryukovmaxim CHANGES_REQUESTED on #991 at 11 Sep 10:01:13Z. Restore them in plain text after F4:
+  - After "Both are open pulls, not consensus changes on master." insert "No 100 BPS network. No vProgs product. No Argent tag. No KCC-20 Final. No mainnet x402.".
+  - Replace "plus #1124/#1122/#1121/#1119/#1103" with "#1124 948bf380, #1122 332ec6c, #1121 06efd83, #1119, #1103".
+  - After "in the window of the 26 Sep privacy rewrite" insert " (old pin 703e1639)".
+  - After "#1104 a5888da" insert " (updated 24 Sep 11:03Z)".
+  - Replace "#991 (UTXO index keyed by DAA score" with "#991 (D-Stacks; UTXO index keyed by DAA score".
+  - After "the CHANGES_REQUESTED reviews stand" insert " (IzioDev 25 Aug, biryukovmaxim 11 Sep)".
+  - The L1+ε sentence was **not** dropped: it is reworded in L123 ("**8 Oct, L1+ε ladder (Sutton):** agrees with maxibitcat's L1+ε framing …"). Build's report is wrong on that one item. The TN10 note's missing tokens are all in the 10 Oct cell, which F2 covers.
+- **HELD 20. #850 attribution is correct.** The sweep says "#850 (optimize utxo write, open since Jan, head `b53879ab`) got a 10 Oct 20:22:47Z supertypo comment with his own batch-write timings". It does not call supertypo the author. Live, the author is Psalmuel01 and the PR was opened 28 Jan. The SNAPSHOT row and the prompt also say only "supertypo batch-write timings".

@@ -1,0 +1,61 @@
+# Challenge: master/sweep-2026-10-11
+
+## Pass, 11 Oct 2026 08:00 CEST (`date`), tip 06b5850f1adfec388c9a5829128c7a5fc60e59b7
+
+Base: `ls-remote` main = `e430f2a698494056111ac377d3aaac69db28a44a`, pushed 10 Oct 18:15:36Z per the activity API. Branch commits: 5180f76 (07:51:24 CEST), 98637f2 (07:51:37), c6bcefc (07:53:14) and 06b5850 (07:53:41). The branch was created at 05:53:16Z with c6bcefc and pushed to 06b5850 at 05:53:42Z. No force-push. It is a fast-forward of main, and a trial `merge --no-ff` onto main is clean: 4 files, +124/-8.
+
+Totals: 19 HELD, 3 FAILED, 0 UNVERIFIABLE.
+
+### FAILED
+
+- **F1. The TN10 read window does not match the saved headers.** The `hdr-tn10-health-1..14` Date headers run from 05:45:39Z to 05:46:08Z. `/info/blockdag` was read at 05:45:44Z (593631375) and at 05:48:35Z (593632952). No read was at 05:43Z. The final DAA read is outside the stated window and has no time on it.
+  - Fix, README L53 and the identical master.json L39 note: replace "14 cache-busted `/info/health` reads around 05:43Z–05:46Z (07:43–07:46 CEST):" with "14 cache-busted `/info/health` reads, 05:45:39Z to 05:46:08Z (07:45–07:46 CEST, server `Date` headers):".
+  - In the same two places, replace "[`/info/blockdag`](https://api-tn10.kaspa.org/info/blockdag) HTTP 200: virtual DAA **593632952** (earlier sample in the same pass **593631375**)." with "[`/info/blockdag`](https://api-tn10.kaspa.org/info/blockdag) HTTP 200 at 05:48:35Z: virtual DAA **593632952** (earlier read 05:45:44Z: **593631375**).".
+  - SNAPSHOT L11: replace "14 cache-busted `/info/health` ~05:43–05:46Z" with "14 cache-busted `/info/health` 05:45:39Z–05:46:08Z (server `Date`)".
+  - prompts/grok-build-2026-10-11.md: replace "(11 Oct ~05:43–05:46Z)" with "(11 Oct 05:45:39Z–05:46:08Z, `Date` headers)".
+- **F2. The README points to a moved 10 Oct cell that is not in SNAPSHOT.** README L53 and master.json L39 say "Prior 10 Oct morning/Build and 9 Oct cells: [SNAPSHOT-HISTORY](SNAPSHOT-HISTORY.md#moved-from-readme-on-10-oct-2026)". That section holds only the 9 Oct cell, copied from cf44ce5. Main e430f2a's 10 Oct cell was dropped and is not preserved anywhere in the tree: the "~2432–2433" mempool figure, the "1.36M" blockCount, and atharaldsen's "only RPC-submitted txs are revalidated … 24h expiry" reasoning are each on 0 lines of SNAPSHOT. The 07:51 row does not mention the move.
+  - Fix: append at the end of SNAPSHOT-HISTORY.md, after the 10 Oct section: "## Moved from README on 11 Oct 2026", a blank line, "On 11 Oct 2026 the TN10 public API cell was rewritten to the 11 Oct state by the watch sweep. The 10 Oct cell below is copied verbatim from main [`e430f2a`](https://github.com/STP-KAS/kaspa-master-file/blob/e430f2a/README.md). It is a receipt, not the board.", a blank line, `### Now row "TN10 public API" (as of 10 Oct 2026, before the 11 Oct rewrite)`, a blank line, then the cell text of main e430f2a README L53, verbatim.
+  - In README L53 and master.json L39, replace "Prior 10 Oct morning/Build and 9 Oct cells: [SNAPSHOT-HISTORY](SNAPSHOT-HISTORY.md#moved-from-readme-on-10-oct-2026)." with "Prior 10 Oct cell: [SNAPSHOT-HISTORY](SNAPSHOT-HISTORY.md#moved-from-readme-on-11-oct-2026); 9 Oct cell: [SNAPSHOT-HISTORY](SNAPSHOT-HISTORY.md#moved-from-readme-on-10-oct-2026).".
+  - In SNAPSHOT L11, after "`/info/blockdag` DAA **593632952**.", add " 10 Oct TN10 cell moved verbatim to SNAPSHOT-HISTORY (Moved from README on 11 Oct 2026).".
+- **F3. The prompt says a merged branch is unmerged.** `build/vprogs-workshop-2026-10-09` (0fd82a6) is an ancestor of main e430f2a, and main README carries the workshop and tictactoe `f93e52fe`. The prompt says the opposite four times.
+  - prompts/grok-build-2026-10-11.md L8: replace "Note: `build/vprogs-workshop-2026-10-09` still holds Max's workshop book + tictactoe `f93e52fe` and is not in main — do not repeat that work." with "Note: `build/vprogs-workshop-2026-10-09` (Max's workshop book + tictactoe `f93e52fe`) is merged into main (`e430f2a`, 10 Oct) — do not repeat that work."
+  - L20: replace "(including `master/sweep-2026-10-11` and `build/vprogs-workshop-2026-10-09`)" with "(including `master/sweep-2026-10-11`)".
+  - L70: replace "- Max workshop + tictactoe `f93e52fe`: still on `build/vprogs-workshop-2026-10-09` (not re-added)." with "- Max workshop + tictactoe `f93e52fe`: on main since `e430f2a` (10 Oct; from `build/vprogs-workshop-2026-10-09`)."
+  - L110: delete the line "- Also still unmerged and substantive: `build/vprogs-workshop-2026-10-09`."
+
+### HELD
+
+1. main is e430f2a (`ls-remote`), and the timeline is as stated above.
+2. The 14 health raws: all HTTP/2 200, cf-cache-status MISS, isSynced true. The pool is mixed: 2.1.0 `82c70f33` ×5, 2.1.0 `3d3c14bd` ×4, 2.0.1 `965d43fe` ×5. blueScoreDiff runs 1 to 21 and acceptedTxBlockTimeDiff 1 to 3. No ratio is claimed.
+3. DAA 593631375 and 593632952 match the blockdag bodies.
+4. "New `3d3c14bd`" holds: it is on 0 lines in earlier raws or main. `965d43fe` is not new, because it is in the 5 Oct and 7 Oct raws and on 8 SNAPSHOT lines. The cell correctly does not call it new, which corrects the premise that both IDs are new.
+5. #1146 is open, with 2 comments and no labels. oskrcl comment 6102224080 is dated 2026-10-10T21:12:04Z, and the paraphrase is accurate: IBD burst 9 Oct 15:31–15:54 UTC, zero block-template hits in 72h, stuck set drained by the 24h expiry, 28 of 46 still accepted-but-listed, and agreement with full-mempool revalidation after IBD. It is hedged as "Author's account + contributor comments; not desk-reproduced". The atharaldsen paraphrase (08:29:44Z) is also accurate.
+6. #850 is open and not merged, at head b53879ab47d8 (committer date 10 Feb), opened 28 Jan by its author. supertypo's comment 6101807373 is dated 20:22:47Z: "14.1 ms … 1.1 ms" and "83 to 20 minutes" on testnet-10, his own runs. The PR has no review objects.
+7. X API: OriNewman 2108969274832273564 is dated 2026-10-10T17:13:52Z and reads "add a KIP that documents how to implement such p2sh, and also add it to the rusty-kaspa wallet as a reference implementation". kaspanet/kips has no new PR (latest is #47, 3 Oct), and rusty-kaspa's newest PRs are #1142 and #1141 (4 Oct), so "no KIP/PR yet" holds.
+8. X API: Sutton 2108964596820193619 is dated 16:55:17Z, and the note_tweet text matches the paraphrase (burn and mint easy, freeze tradeoffs, DEXes and lending, single-transaction atomicity, Argent and KCCs).
+9. Master scope: the OriNewman item is KIP talk plus a reference for the kaspanet rusty-kaspa wallet, with no third-party product status. The Sutton item is his reading of design patterns, not Argent product status.
+10. Kas-Smiths: the raws (Date 05:45:33Z/05:45:34Z) and a live read both give 49/386/113. The latest post is 410, by Ross at 10 Oct 01:32:46Z. Topic 160 has only post 409.
+11. #1141 shows no regression. Live: head a7c8ef0c, open, and the last review is atharaldsen COMMENTED on a7c8ef0c at 15:20:15Z, so there is still no maintainer review. README L56 is unchanged from main.
+12. silverscript shows no regression. Live master is a0dd7448, its Cargo.toml has version 1.0.1 and kaspa-txscript "2.1.0", and silverscript-lang 1.0.1 is the max version on crates.io.
+13. The held pins match live: rusty-kaspa master 01b532e8, tn10 e5f6d1f7, dagknight ad45e241, vprogs master f9b84a86 and RC cc0d54bc, kccs 3fbec524, argent 9a9f4b10, KGI 5b6c6b75, tictactoe f93e52fe, and silverscript tag v1.0.0 = 3ed97333. Block reward is 2.06017223 (raw Date 05:45:44Z).
+14. master.json is canonical: indent 2, 0 \u escapes, `updated` 2026-10-11.
+15. README renders 36 table rows through POST /markdown, the same as main.
+16. SNAPSHOT is newest first. The new 07:51 row is above 20:08, and its 5180f76 link resolves.
+17. All 17 new URLs resolve: commits through the API, the rest HTTP 200, and the X posts through the API.
+18. Leak check against the live private list (20 names): 0 hits in the tree and 0 in all commit messages reachable from the tip.
+19. Trial merges: clean onto main. The open build branches are build/2026-10-01, build/2026-10-02, build/api-tn10-2026-10-02, build/kaspero-kasdash-2026-10-04, build/kcc-last-call-2026-10-02, build/kcc12-revision-2026-10-03 and build/spend-vision-2026-10-03, all from 1–4 Oct. Each conflicts in the same files against this tip as against main, so this branch adds no new conflict.
+
+### Deferred advisories
+
+- 10 Oct sweep A1 (Kas-Smiths trim): not applied. There is still no SNAPSHOT line about the trim. Kept as an advisory.
+- 10 Oct sweep A5 (STP-REPOS "then" plus date, and the zero rule): not applied, since STP-REPOS.md is unchanged. The file is headed "— 21 Sep 2026 read", so its counts and the "Private" label on L15/L54 are dated, not stale as current; the live count is now 106 public and 20 private, and the L15/L54 repo is public. Kept as an advisory. It is now the oldest open one.
+- Evening A1 (silverscript 1.0.1 crates on crates.io since 6 Oct 12:42Z): not applied. Kept as an advisory.
+- Evening A2 ("same adaptations as #257"): not applied. Kept as an advisory.
+- Evening A3 (TN10 "0 comments" read): applied by removing the read; it is now on 0 lines of README.
+
+### New advisories
+
+- N1. Three master.json notes (L39, L57, L123) are now byte-equal to the README markdown, with backticks, ** and [text](url). On main, 0 of 328 notes use markdown. Pick one convention: plain text with bare URLs as before, or say in README that notes are markdown.
+- N2. The #1146 text drops main's evening hedge "not confirmed by a maintainer". Suggest adding "no maintainer has replied" after "not desk-reproduced".
+- N3. The OriNewman "such P2SH" has no antecedent in the cell. The thread asks for one deterministic P2SH address standard across wallets and exchanges. Also, the post says "reference implementation", not just "reference".
+- N4. The 07:51 SNAPSHOT row routes x402 #29/#30 and KaChat to kaspa-builders, but that content is only on an unmerged builders branch.

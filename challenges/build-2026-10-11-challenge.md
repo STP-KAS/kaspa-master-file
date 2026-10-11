@@ -43,3 +43,12 @@ Merging Build first would also work, but the sweep would then have to drop its m
 ### Advisories
 
 - BA1. The OriNewman cell could now name what "such P2SH" means, using the live parent post in item 9. It should be attributed, as an X reading.
+
+## Recheck, 11 Oct 2026 08:12 CEST, tip 8cbefef0cf9f0cdc96acdbee8b399802917e49c1 (merge 8ec4195 of main d1fd026 into 45a5b15, plus link commit 8cbefef)
+
+- HELD BF1: 0 hits for "watch's saved headers", "Correction (Build)" and "05:43Z" in README and master.json.
+- HELD merge resolution: the word diff against main d1fd026 only adds text. No word of main is lost (the three "removed" tokens come back with appended text). Main's corrected TN10 window, F5/F6 restores, #1146 hedge and Psalmuel01 credit are intact.
+- HELD Build additions: the 05:55Z reads, #1146 read and #850 read were held in 529319c. Sutton post 2108964596820193619 replies to 2108928813954453728 (elperorr, 10 Oct 14:33:05Z), checked live through the X API.
+- HELD: one "Moved from README on 11 Oct 2026" section. SNAPSHOT order is 08:11, 07:58, 07:51. Canonical JSON with updated 2026-10-11, 0 \u escapes and no markdown. Private names: 0 hits in the tree and in commit messages. README renders 36 rows. main d1fd026 is an ancestor of the tip, so this is a fast-forward.
+
+Totals at 8cbefef: HELD 21, FAILED 0, UNVERIFIABLE 0. Cleared to merge at exactly 8cbefef0cf9f0cdc96acdbee8b399802917e49c1.

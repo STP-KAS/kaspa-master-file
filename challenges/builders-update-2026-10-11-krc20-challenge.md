@@ -57,3 +57,11 @@ Totals: 17 HELD, 2 FAILED, 0 UNVERIFIABLE.
 15. SNAPSHOT is newest first: the 19:15 row is above the 07:51 row. 2ac353a resolves.
 16. Leak check against the live private list (16 names, case-insensitive whole word): 0 hits in the tree and in commit messages.
 17. No public action was taken. Nothing was pushed to kaspa-builders.
+
+## Recheck, 11 Oct 2026 19:22 CEST, kaspa-builders tip d016dddcc9947def8706a1e78dc615b038661587 (one commit on b758562)
+
+- HELD B-F1: the L13 desk-reading sentence and the builders.json "by the desk's reading of that script form" wording are present word for word, and the old consensus sentence is gone.
+- HELD B-F2: "Third-party numbers, not desk-measured; 2024 conditions, not current mainnet." is present, and the old fee sentence is gone.
+- HELD: builders.json is canonical with 0 \u escapes. Private names: 0 case-insensitive hits in the tree and in commit messages, against the live list of 16. Builders main bad7bec is an ancestor of the tip, so this is a fast-forward.
+
+Totals at d016ddd: HELD 19, FAILED 0, UNVERIFIABLE 0. Cleared to merge at exactly d016dddcc9947def8706a1e78dc615b038661587.

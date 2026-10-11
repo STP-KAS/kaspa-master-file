@@ -64,3 +64,14 @@ Totals: 16 HELD, 3 FAILED, 0 UNVERIFIABLE.
 14. The trial merge is clean.
 15. Dated wording: every new time carries "11 Oct", Z and CEST.
 16. Master scope: the cell records a core contributor's own words about covenants, Argent and KCC-20. There is no third-party product status and no Solana claim beyond his. No public action was taken.
+
+## Recheck, 11 Oct 2026 18:43 CEST, tip b1351d9826fcc993281acd23f76a38afd36042c3 (fix 3314493 on fedc6e1, plus merge of main e84cc13)
+
+- HELD F1: "its content was not read here, so it is not described." is in README and JSON, and "its content was not read, so it is not described" is in the SNAPSHOT row. "HTTP 403" has 0 hits in all three files.
+- HELD F2: the full replacement Desk reading is present word for word in README and JSON (plain text), and "by design smaller and less expressive" is gone.
+- HELD F3: main e84cc13 is merged in. 0 case-insensitive hits in the tree and in commit messages against the live list of 16.
+- HELD A1, A3 and A4: the conversation-root sentence with the two further Sutton replies is in the SNAPSHOT row, "see Argent" is gone, and "The earlier post where he called them…" replaces "first used".
+- HELD merge: the README and JSON from 3314493 to b1351d9 are unchanged (word diff 0), so main's edit touched only other files. The trial result is a fast-forward onto main e84cc13.
+- HELD usual: canonical JSON with updated 2026-10-11, 0 \u escapes and no markdown. README renders 36 table rows. SNAPSHOT is newest first (18:38, 14:24, 09:02).
+
+Totals at b1351d9: HELD 21, FAILED 0, UNVERIFIABLE 0. Cleared to merge at exactly b1351d9826fcc993281acd23f76a38afd36042c3.

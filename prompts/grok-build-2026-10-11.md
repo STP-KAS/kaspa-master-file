@@ -45,7 +45,7 @@ Window: GitHub since `2026-10-10T05:45:00Z`; X since the 10 Oct markers; forum s
 ## Branches (never main, never force, zero public actions)
 
 - **kaspa-master-file `master/sweep-2026-10-11`** from `origin/main` [`e430f2a`](https://github.com/STP-KAS/kaspa-master-file/commit/e430f2a).
-  Commits: content [`5180f76`](https://github.com/STP-KAS/kaspa-master-file/commit/5180f76963d894794d873ef6de67797603f7e940), snapshot link [`98637f2`](https://github.com/STP-KAS/kaspa-master-file/commit/98637f2e622856e4c55b05a97dbf5ca31b2cda00), Build prompt (after this file lands).
+  Commits: content [`5180f76`](https://github.com/STP-KAS/kaspa-master-file/commit/5180f76963d894794d873ef6de67797603f7e940), snapshot link [`98637f2`](https://github.com/STP-KAS/kaspa-master-file/commit/98637f2e622856e4c55b05a97dbf5ca31b2cda00), Build prompt [`c6bcefc`](https://github.com/STP-KAS/kaspa-master-file/commit/c6bcefc88170365617373f31f1fa051c9864e8c2) (`prompts/grok-build-2026-10-11.md`).
   Files: README.md, master.json, SNAPSHOT-HISTORY.md, prompts/grok-build-2026-10-11.md.
 - **kaspa-builders `master/builders-sweep-2026-10-11`** from `origin/main` [`99883ae`](https://github.com/STP-KAS/kaspa-builders/commit/99883ae).
   Commits: content [`be07b48`](https://github.com/STP-KAS/kaspa-builders/commit/be07b4893e82a6f806e56d1a7bd883284cf06202), snapshot link [`113c432`](https://github.com/STP-KAS/kaspa-builders/commit/113c43201df7a9b9ad37dc0cc7b107e298552593).

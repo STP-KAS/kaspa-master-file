@@ -5,7 +5,7 @@ You are Grok Build working for stp (STP-KAS). Below is a daily report from the k
 ## Branch for your work
 Use branch **`build/2026-10-11`** (create from current `origin/main`). Do not push to main. Do not touch `master/*`, `challenge/*`, `grokbot/*`, or `ask/*`.
 
-Note: `build/vprogs-workshop-2026-10-09` still holds Max's workshop book + tictactoe `f93e52fe` and is not in main — do not repeat that work. Other open build branches are not merged; do not repeat what they already hold. Evening `master/update-2026-10-10-evening` (silverscript `a0dd7448`, #1141/`#1146` atharaldsen) is already on main.
+Note: `build/vprogs-workshop-2026-10-09` (Max's workshop book + tictactoe `f93e52fe`) is merged into main (`e430f2a`, 10 Oct) — do not repeat that work. Other open build branches are not merged; do not repeat what they already hold. Evening `master/update-2026-10-10-evening` (silverscript `a0dd7448`, #1141/`#1146` atharaldsen) is already on main.
 
 If a SendToAgent message is missing, the same prompt is also at `prompts/grok-build-2026-10-11.md` on `master/sweep-2026-10-11`.
 
@@ -17,7 +17,7 @@ If a SendToAgent message is missing, the same prompt is also at `prompts/grok-bu
 - Merged Active KIP is law. An open PR, a branch, a demo, or a tweet is not. Do not weld objects (`release-candidate` tip ≠ release; KCC-20 Last Call ≠ Final; a StorageService slice ≠ full KGI; Sutton's KTL vision ≠ a shipped lib; a P2PKH gist ≠ wallet support; api-tn10 200 ≠ proof a payment landed; `/info/halving` time ≠ the consensus step; an APPROVED PR ≠ merged; #1146 author's mempool report ≠ a confirmed consensus bug; OriNewman P2SH-KIP talk ≠ a KIP).
 - Follow AGENTS.md and PROCESS.md: README **Now** cells rewritten in place (short); dated text in SNAPSHOT-HISTORY; RECEIPTS frozen; validate `master.json`.
 - Git identity: `STP-KAS <227352643+STP-KAS@users.noreply.github.com>`. Plain push of your `build/` branches only. Never force main.
-- Before adding a fact: `git fetch --prune` and search **main and every open origin branch** (including `master/sweep-2026-10-11` and `build/vprogs-workshop-2026-10-09`).
+- Before adding a fact: `git fetch --prune` and search **main and every open origin branch** (including `master/sweep-2026-10-11`).
 - X credits ~$6.75 at sweep end (measured delta $0; estimate ~$0.18–0.20). Do not make X calls unless stp asks; the sweep covers X.
 - Never share seeds/keys. TN10 never goes to a mainnet kaspa bot. Do not touch TN10 processes (TN10 ops owns them); any TN10 test is read-only or on your own wallet, never the mining address.
 - Main merges: kaspa master bot merges on a challenger pass with 0 FAILED at the exact tip (stp OK not required since 8 Oct).
@@ -55,9 +55,9 @@ Window: GitHub since `2026-10-10T05:45:00Z`; X since the 10 Oct markers; forum s
 
 | Item | Source | Cell |
 | --- | --- | --- |
-| **api-tn10 still synced, mixed pool** (11 Oct ~05:43–05:46Z): 14× HTTP 200, Cloudflare MISS; backends **2.1.0** `82c70f33`/`3d3c14bd` and **2.0.1** `965d43fe` (yesterday's `82e9e396`/`ba36f18d` not seen); DAA **593632952**. | api-tn10 | TN10 public API |
+| **api-tn10 still synced, mixed pool** (11 Oct 05:45:39Z–05:46:08Z, `Date` headers): 14× HTTP 200, Cloudflare MISS; backends **2.1.0** `82c70f33`/`3d3c14bd` and **2.0.1** `965d43fe` (yesterday's `82e9e396`/`ba36f18d` not seen); DAA **593632952**. | api-tn10 | TN10 public API |
 | **#1146** oskrcl follow-up 10 Oct 21:12:04Z: confirms IBD burst + zero templates; accepts post-IBD full mempool revalidate direction (atharaldsen already on evening update). | GitHub issue comments | TN10 / Not live |
-| **#850** open (`b53879ab`): supertypo 10 Oct 20:22Z batch-write timings (1k UTXO 14.1→1.1 ms; TN10 UTXO download 83→20 min). | PR comment | Not live |
+| **#850** open (`b53879ab`, author Psalmuel01): supertypo 10 Oct 20:22Z batch-write timings (1k UTXO 14.1→1.1 ms; TN10 UTXO download 83→20 min). | PR comment | Not live |
 | **OriNewman** [2108969274832273564](https://x.com/OriNewman/status/2108969274832273564): propose KIP documenting P2SH + rusty-kaspa wallet reference — talk only. | X | Not live |
 | **Sutton** [2108964596820193619](https://x.com/michaelsuttonil/status/2108964596820193619): burn/mint easy; freeze tradeoffs; DEX/lending possible via single-tx atomicity; Argent/KCCs patterns. | X | Launch proof |
 | **Kas-Smiths** recheck still 49 / 386 / 113; latest post 410. | about.json | Kas-Smiths |
@@ -67,7 +67,7 @@ Window: GitHub since `2026-10-10T05:45:00Z`; X since the 10 Oct markers; forum s
 
 - silverscript master `a0dd7448` / #259 / #256–#258 closes: on main via evening `master/update-2026-10-10-evening`.
 - #1141 head `a7c8ef0c` / CHANGES_REQUESTED: evening.
-- Max workshop + tictactoe `f93e52fe`: still on `build/vprogs-workshop-2026-10-09` (not re-added).
+- Max workshop + tictactoe `f93e52fe`: on main since `e430f2a` (10 Oct; from `build/vprogs-workshop-2026-10-09`).
 - core_replies: paused since 5 Oct verdict.
 
 ## kaspa-builders (committed this run)
@@ -107,7 +107,6 @@ Window: GitHub since `2026-10-10T05:45:00Z`; X since the 10 Oct markers; forum s
 
 - Ask **kaspa master challenge** for a pass on `master/sweep-2026-10-11` and `master/builders-sweep-2026-10-11` (tips after prompt commit).
 - Do **not** merge here; parent merges after 0 FAILED.
-- Also still unmerged and substantive: `build/vprogs-workshop-2026-10-09`.
 - **TN10 FYI:** mixed pool now shows 2.0.1 `965d43fe` and 2.1.0 `3d3c14bd` (plus `82c70f33`); #1146 still open with IBD explanation.
 
 ## State

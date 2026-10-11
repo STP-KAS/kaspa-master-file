@@ -47,7 +47,6 @@ The master file’s own morning receipt still printed host pin `da2a7f26` in the
 | [dagknight-test-grok](https://github.com/STP-KAS/dagknight-test-grok) | Agree | KIP-2 Proposed. Not consensus. |
 | [delusional-stp-grok-mix](https://github.com/STP-KAS/delusional-stp-grok-mix) | Agree | vProgs “if product testnet” is explicitly not this week. npm-test line already corrected. |
 | [dotk-review](https://github.com/STP-KAS/dotk-review) | Agree | 15 Sep receipt. Not an audit. Script was not published. |
-| [feedback-stp-delusional](https://github.com/STP-KAS/feedback-stp-delusional) | Agree | UX notes. No pin. |
 | [gramlane](https://github.com/STP-KAS/gramlane) | Agree | Grams are not KCC-20 and not a dollar. |
 | [gramlanepeglab](https://github.com/STP-KAS/gramlanepeglab) | Agree | v1.0.0. #234 unmerged. Not a product. |
 | [grok-heavy-showcase](https://github.com/STP-KAS/grok-heavy-showcase) | Agree | Dual rail. No L1 stable. |

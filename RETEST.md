@@ -56,7 +56,7 @@ Referee: [kaspaexplained.com/status](https://kaspaexplained.com/status) (sources
 | kns | `go test ./...` | **FAIL** `TestContractSourcesDoNotReadForeignState` — comment grep. Same as 14 Sep. House rule stands. |
 | argent-xai | `check.ps1` | **FAIL / DRIFT** argent `master` pin `867b080` (PR #60) vs live `e76ee07` (PR #63). Silverscript pin still matches. **This is the only pin-checker that lagged the master file.** |
 
-Skipped on purpose: `rusty-kaspa` rebuild (use kaspanet v2.0.1), `mixer-concept` / `kaspaexplained-delusional-stp` (huge overlays), `feedback-stp-delusional` (UX dump), funded x402 live proof, PegLab `--submit`, mnemonic print, mainnet send.
+Skipped on purpose: `rusty-kaspa` rebuild (use kaspanet v2.0.1), `mixer-concept` / `kaspaexplained-delusional-stp` (huge overlays), funded x402 live proof, PegLab `--submit`, mnemonic print, mainnet send.
 
 ---
 
@@ -72,7 +72,6 @@ Vs master: **match** (honest vs pins) · **lag** (docs older than 17 Sep pins) �
 | [dagknight-test-grok](https://github.com/STP-KAS/dagknight-test-grok) | runnable | 8/8 | **match** — not consensus |
 | [delusional-stp-grok-mix](https://github.com/STP-KAS/delusional-stp-grok-mix) | docs | read | **match** |
 | [dotk-review](https://github.com/STP-KAS/dotk-review) | docs | read | **match** — not official KNS |
-| [feedback-stp-delusional](https://github.com/STP-KAS/feedback-stp-delusional) | docs | skip-heavy | **match** — not Kaspa law |
 | [gramlane](https://github.com/STP-KAS/gramlane) | runnable | go **pass** | **match** — grams ≠ dollar |
 | [gramlanepeglab](https://github.com/STP-KAS/gramlanepeglab) | docs | static | **match** |
 | [grok-heavy-showcase](https://github.com/STP-KAS/grok-heavy-showcase) | runnable | 10/10 | **match** — dual-rail constitution |

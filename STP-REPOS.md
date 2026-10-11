@@ -70,7 +70,6 @@ Kept current by the daily automations. The latest pass is the top row of [`SNAPS
 | [grok-heavy-showcase](https://github.com/STP-KAS/grok-heavy-showcase) | Dual-rail freeze lab | Native receipt vs Tether guest. Not a dollar. |
 | [gramlanepeglab](https://github.com/STP-KAS/gramlanepeglab) | Battletest | SilverScript v1.0.0. #234 still unmerged. Not a product. |
 | [gramlane](https://github.com/STP-KAS/gramlane) | Grams | Not KCC-20. Not a dollar. |
-| [feedback-stp-delusional](https://github.com/STP-KAS/feedback-stp-delusional) | UX notes | Not a manifesto. |
 | [dotk-review](https://github.com/STP-KAS/dotk-review) | 15 Sep DOTK pass | Not an audit. Silverscript was not published. Was missing from REPOS.md. |
 | [delusional-stp-grok-mix](https://github.com/STP-KAS/delusional-stp-grok-mix) | Desk practice | Said Windows `npm test` fails until `.gitattributes`. grok-heavy-test says green after `216ad77`. Sentence fixed. |
 | [dagknight-test-grok](https://github.com/STP-KAS/dagknight-test-grok) | DK notebook | KIP-2 Proposed. Not consensus. #1131 is the e2e PR. Opening sentence is an aim, not a ship claim. |

@@ -83,3 +83,11 @@ Advisory, not FAILED: the row still says "This desk: 'untagged and not desk-test
 15. master.json is canonical: indent 2, 0 \u escapes, `updated` 2026-10-11, 0 markdown strings. The changed SilverScript holes and This desk sentences match the README word for word in plain text; the JSON-only text after them is unchanged from main.
 16. The README has 37 table lines, unchanged.
 17. Leak check against 20 private names: 0 hits in the tree and 0 in commit messages. No public action was taken.
+
+## Recheck, 11 Oct 2026 09:02 CEST, tip 818e6463c013181f6a2903324b98983a362d050f (c34da8d + 818e646 on ac45834, SNAPSHOT only)
+
+- HELD SNAPSHOT fix (option b): the 08:55 row (02872de) is back to its b05f444 text minus only the F4 deletions (0 hits for .cargo, /tmp/b1010 or 35G). A new top row, 09:02 (c34da8d), carries the logged 08:58-08:59 re-run, and its figures match the logs (HEAD a0dd7448, rustc 48a229cea, build exit 0 in 32.64 s, test 21/0, target 1.5G after the tests). It says the log isn't public, that it was added after e5b24d2, and that the 08:55 figures are in no log.
+- Ruling on the owner's nuance: the 08:55 row stating the commit and rustc without an "unlogged" tag is acceptable. It is history of what was done at 08:55, and the row directly above qualifies it. The board text (README and JSON) carries the hedge and cites the logged run. Not FAILED.
+- HELD: README and JSON are unchanged from ac45834 (held in e22076c). Private names: 0 hits in the tree and in commit messages. main 8cbefef is an ancestor of the tip, so this is a fast-forward.
+
+Totals at 818e646: HELD 19, FAILED 0, UNVERIFIABLE 1 (the first run's unlogged figures, hedged as such). Cleared to merge at exactly 818e6463c013181f6a2903324b98983a362d050f.

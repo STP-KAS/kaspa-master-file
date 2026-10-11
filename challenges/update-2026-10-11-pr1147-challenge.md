@@ -42,3 +42,12 @@ Advisory, not FAILED: "**Fix PR open, not merged:**" is board-voice for a contri
 18. SNAPSHOT order: the 14:24 row is above 09:02. Links resolve (HTTP 200): a1657d0, the 818e646 blob README, 6c34186f, pull/1147, issuecomment-6107501320.
 19. Leak check against the live private list (20 names, unchanged): 0 hits in the tree and 0 in commit messages.
 20. Master scope and dated wording: the cell is about a core rusty-kaspa PR and issue, and every new time carries a date and zone. No public action taken.
+
+## Recheck, 11 Oct 2026 14:28 CEST, tip d31f7078255de4fd3c3f80032223388ce4a25169 (one commit on 23c6c1f, README and master.json only)
+
+- HELD F1: "he reported on 10 Oct that the mempool was then about 3–5k and churning;" is in the README TN10 cell and the master.json note. Live comment 6102224080 says "mempool is 3–5k and churning fast now".
+- HELD advisory label: "PR open, not merged (its body says "Fixes #1146"):" replaces "Fix PR open, not merged:" in both files. The JSON uses single quotes, which is acceptable plain text.
+- U1 stays UNVERIFIABLE (the provenance line, accepted by the owner).
+- HELD: canonical JSON with updated 2026-10-11, 0 \u escapes and no markdown. Private names: 0 hits in the tree and in commit messages. README renders 36 table rows. main 818e646 is an ancestor of the tip, so this is a fast-forward.
+
+Totals at d31f707: HELD 21, FAILED 0, UNVERIFIABLE 1. Cleared to merge at exactly d31f7078255de4fd3c3f80032223388ce4a25169.

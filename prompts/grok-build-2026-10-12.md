@@ -32,7 +32,7 @@ Keep the master current with the kaspa master bot. Checkout for Build: `/workspa
 3. **#1147:** read the `b4df2d8f` diff (test only?) and say whether behaviour changed vs `6c34186f`. Do not claim it fixes #1146 until a maintainer reviews or it merges. Optional, TN10 read-only: compare `getFeeEstimate` priority bucket on a synced non-mining node vs the public endpoint (n0 is TN10 ops' node — ask TN10 ops, do not touch it yourself).
 4. **Sutton KCC-20 scope:** if you can read the parent posts (frank_r2d2 2109237618928230720, TrueKaspaBeliev 2109249028953157635) through the master's existing raws or a public mirror without X spend, add what "that" refers to; otherwise leave the "not read" hedge.
 5. **Kas-Smiths topic 161:** if a KCC author answers, record the answer in the master's Kas-Smiths cell (core reasoning only); the game stays in builders.
-6. **Builders (optional verify):** KasperoLabs posts, kaskama rename/tip `dce58809`, topic 161 — on a kaspa-builders `build/` branch if you touch builders at all.
+6. **Builders (optional verify):** KasperoLabs posts and MinerDrip `b767e346` (four mainnet txs: indexer read only), kaskama rename/tip `dce58809`, topic 161 — on a kaspa-builders `build/` branch if you touch builders at all.
 7. **What to build or test next** (TN10 only, no public posting): short ordered list.
 8. Write sourced facts only to `build/2026-10-12`. After push, list commit links in chat.
 
@@ -46,10 +46,10 @@ Window: GitHub since `2026-10-11T05:45:00Z`; X since the 11 Oct markers; forum s
 ## Branches (never main, never force, zero public actions)
 
 - **kaspa-master-file `master/sweep-2026-10-12`** from `origin/main` [`8f1d0d5`](https://github.com/STP-KAS/kaspa-master-file/commit/8f1d0d5).
-  Commits: content [`5036163`](https://github.com/STP-KAS/kaspa-master-file/commit/50361636467e46c9b8145e8f5d7abdb21a37672b), snapshot link [`e93bae2`](https://github.com/STP-KAS/kaspa-master-file/commit/e93bae2061e9e5e290dd6e4e7a4386b441ca5f39), then the Build prompt commit (`prompts/grok-build-2026-10-12.md`; tip hash in the hand-off).
+  Commits: content [`5036163`](https://github.com/STP-KAS/kaspa-master-file/commit/50361636467e46c9b8145e8f5d7abdb21a37672b), snapshot link [`e93bae2`](https://github.com/STP-KAS/kaspa-master-file/commit/e93bae2061e9e5e290dd6e4e7a4386b441ca5f39), then Build prompt [`d029204`](https://github.com/STP-KAS/kaspa-master-file/commit/d0292044654ca3d3cfd14b998f4e11a0146ec4d0) (`prompts/grok-build-2026-10-12.md`). Tip **`d029204`**.
   Files: README.md, master.json, SNAPSHOT-HISTORY.md, prompts/grok-build-2026-10-12.md.
 - **kaspa-builders `master/builders-sweep-2026-10-12`** from `origin/main` [`d016ddd`](https://github.com/STP-KAS/kaspa-builders/commit/d016ddd).
-  Commits: content [`fe743dc`](https://github.com/STP-KAS/kaspa-builders/commit/fe743dc02779402f825b6b5de31b352bf1918f36), snapshot link [`ad6686e`](https://github.com/STP-KAS/kaspa-builders/commit/ad6686ebf8cec7b9d58da5efafc8d323ec635993). Tip **`ad6686e`**.
+  Commits: content [`fe743dc`](https://github.com/STP-KAS/kaspa-builders/commit/fe743dc02779402f825b6b5de31b352bf1918f36), snapshot link [`ad6686e`](https://github.com/STP-KAS/kaspa-builders/commit/ad6686ebf8cec7b9d58da5efafc8d323ec635993), MinerDrip follow-up [`9919136`](https://github.com/STP-KAS/kaspa-builders/commit/9919136) + row [`069ba14`](https://github.com/STP-KAS/kaspa-builders/commit/069ba149dadcdc3dda3785aa23771a7c7e5df383). Tip **`069ba14`**.
   Files: entries/kasperolabs-silverscript-studio.md, entries/danieliyahu1.md, entries/kas-smiths-threads.md, README.md, builders.json, SNAPSHOT-HISTORY.md.
 
 ## Added to the master branch (README Now cells rewritten in place + master.json)
@@ -75,7 +75,7 @@ Five old cells (TN10 public API, Not live, KCC-20 wording, Kas-Smiths, KGI v2 de
 
 ## kaspa-builders (committed this run)
 
-- **KasperoLabs** [2109422238277493065](https://x.com/KasperoLabs/status/2109422238277493065) (11 Oct 23:13:47Z): ZK covenant on mainnet with his own RISC Zero program; flipped public-input bit rejected by the node — claim, no txid/image id, not desk-checked; asaefstroem "Cool that you like it!" in-thread. [2109291008584540535](https://x.com/KasperoLabs/status/2109291008584540535): KCC-20 launchpad with a miner covenant, "Opens when KCC-20 goes final." elldeeone: "love the idea, this is seriously cool".
+- **KasperoLabs** [2109422238277493065](https://x.com/KasperoLabs/status/2109422238277493065) (11 Oct 23:13:47Z): ZK covenant on mainnet with his own RISC Zero program; flipped public-input bit rejected by the node — claim, no txid/image id, not desk-checked; asaefstroem "Cool that you like it!" in-thread. [2109291008584540535](https://x.com/KasperoLabs/status/2109291008584540535): KCC-20 launchpad with a miner covenant, "Opens when KCC-20 goes final." elldeeone: "love the idea, this is seriously cool". The launchpad convention is drafted in kasperolabs/silverscript-studio `MineDrip.md` at `b767e346` (11 Oct 19:38:04Z, MIT, "MinerDrip"); its four listed mainnet txs (4a3b35ba…, b45b339a…, b33fb379…, c1d8710e…) read as `is_accepted` true on api.kaspa.org at 06:03:18Z–06:03:19Z (public indexer read, not a node check; scripts not desk-checked).
 - **danieliyahu1:** onlykas renamed **kaskama** (default branch master), tip `dce58809` (pins image `3e285447`), commits `833cb340` / `3e285447` (atomic settlement, drop dead terminal state); issues #5–#7 closed; noralane #8–#13 open.
 - **Kas-Smiths threads:** topic 161 B1TCOIN S1LVER (claims: KCC-20 reference verbatim, 13 TN10 releases, template hash reproduced, 740 debugger tests).
 
@@ -89,9 +89,10 @@ Five old cells (TN10 public API, Not live, KCC-20 wording, Kas-Smiths, KGI v2 de
 
 ## Per source
 
-- **X credits.** Start **$6.75** (07:45 CEST; prepaid 6.75, free 0). Mid **$6.75** (07:53). End: see state.json (`credits_after`). Measured delta **$0.00** so far (credit reads lag, as on 11 Oct). Desk estimate ≈ **$0.22** (core 13 posts + 4 users; community 6 + 4; deshe 0; KaspaScopio 4 + 2 users + 2 included posts). At the ~$0.20 cap, so no full-text or parent-post reads.
+- **X credits.** Start **$6.75** (07:45 CEST; prepaid 6.75, free 0). Mid **$6.75** (07:53). End **$6.75** (08:01). Measured delta **$0.00** so far (credit reads lag, as on 11 Oct). Desk estimate ≈ **$0.22** (core 13 posts + 4 users; community 6 + 4; deshe 0; KaspaScopio 4 + 2 users + 2 included posts). At the ~$0.20 cap, so no full-text or parent-post reads.
 - **X core** (`since_id` 2109087029183066337 → **2109513092463747119**, newest 12 Oct 05:14:48Z): 13 posts, `next_token` present, not paginated (cap). **community** → **2109422238277493065**: 6 posts, `next_token` present, not paginated. **deshe:** 0, held 2103861631738667208. **KaspaScopio** → **2109357779953520839**: 4 posts. **core_replies:** paused, not run.
 - **GitHub (fail-loudly):** `gh auth status` OK (STP-KAS). 61 watchlist repos × (commits, pulls, issues, releases) = 244 fetches, all non-empty, **0 GAPs**; 2 orgs (no kaspanet/argent-lang repo pushed since marker); 17 user event feeds; atharaldsen 3 searches (1 PR #1147, 1 commented thread #1146, 0 commits in kaspanet). Core repos: no new commits; only rusty #1147/#850/#1146 updated. Heads held: rusty master `01b532e8` / tn10 `e5f6d1f7` / dagknight `ad45e241`; vprogs master `f9b84a86` / RC `cc0d54bc`; silverscript `a0dd7448`; kccs `3fbec524`; argent `9a9f4b10`; kcc20-reference `c8a08711`; tictactoe `f93e52fe`. KGI moved to `82dcc0e6`.
+- **Watchlist refresh:** added kasperolabs/silverscript-studio and supertypo/dotk-covenants (repos); 5 asker handles listed as candidates only (no lookup).
 - **Tags** (full ls-remote scan, 11 repos): release pins unchanged (rusty-kaspa v2.1.0, silverscript v1.0.0, python-sdk v2.1.0, x402 v1.0.0-rc.2, dotk-sdk/-tx v2.1.0, dotk-indexer v1.1.1, dotk-core v0.13.1, kastle v2.61.0). Every tag in the 11 Oct list is still present.
 - **Kas-Smiths:** 50 / 388 / 114; latest_post_id **412**. **research.kas.pa:** newest topic still 522.
 - **Cited sites** (headers + bodies saved): kaspa.org, kaspaexplained.com/status, kaspa.news, kaspa-x402.org, vprogs-tt.izio.fr, silverscriptstudio.com HTTP 200; kns-2.gitbook.io 307 (redirect, followed); blockreward 2.06017223.
@@ -116,7 +117,7 @@ Five old cells (TN10 public API, Not live, KCC-20 wording, Kas-Smiths, KGI v2 de
 
 ## Flags for stp / parent
 
-- Ask **kaspa master challenge** for a pass on `master/sweep-2026-10-12` and `master/builders-sweep-2026-10-12` (tips in the hand-off).
+- Ask **kaspa master challenge** for a pass on `master/sweep-2026-10-12` (tip `d029204` before the prompt refresh; see hand-off for the final tip) and `master/builders-sweep-2026-10-12` (tip `069ba14`).
 - Do **not** merge here; merge after 0 FAILED at the exact tip.
 
 ## State

@@ -31,7 +31,7 @@ Keep the master current with the kaspa master bot. Checkout for Build: `/workspa
 2. **api-tn10:** recheck `/info/health` (cache-busted, save headers) at least twice, an hour or more apart if you can; record **all** backend versions and p2pIds. Do not write "2.1.0-only" or "2.0.1 gone" from one sample.
 3. **#1148:** read the diff; say what `--rocksdb-preset=lowio` changes vs default; do not desk-run the author's sync table unless you choose to. Keep "his runs, not desk-run".
 4. **#260:** confirm the builtin maps to opcode `0xd6` and the test coverage claim; not desk-built unless you choose to.
-5. **#991 / #1142:** confirm review states from the API (not from who commented). biryukovmaxim's only #991 review remains CHANGES_REQUESTED of 21 Jul unless a new review exists.
+5. **#991 / #1142:** confirm review states from the API (not from who commented). biryukovmaxim submitted a new #991 CHANGES_REQUESTED review (5490183821) on 12 Oct 11:56:19Z on `77d9a2e8`; read every page of the reviews list.
 6. **Kas-Smiths topic 161:** if a KCC author answers, record the answer in the master's Kas-Smiths cell (core reasoning only); the game stays in builders.
 7. **Builders (optional verify):** x402 #30 merge `6918defe`; KasperoLabs bridge claim 2109766022790066442 — on a kaspa-builders `build/` branch if you touch builders at all.
 8. **What to build or test next** (TN10 only, no public posting): short ordered list.
@@ -47,7 +47,7 @@ Window: GitHub since `2026-10-12T05:45:00Z`; X since the 12 Oct markers; forum s
 ## Branches (never main, never force, zero public actions)
 
 - **kaspa-master-file `master/sweep-2026-10-13`** from `origin/main` [`4a23d06`](https://github.com/STP-KAS/kaspa-master-file/commit/4a23d06) (12 Oct weekly-fixes already on main).
-  Commits: content [`6e7c410`](https://github.com/STP-KAS/kaspa-master-file/commit/6e7c410744b3db2ca6bd3fd273e0dababe3727b5), snapshot link [`79a9ea7`](https://github.com/STP-KAS/kaspa-master-file/commit/79a9ea71872f45771a9574229e11d324d19ce477), then Build prompt [`09df73c`](https://github.com/STP-KAS/kaspa-master-file/commit/09df73cc7879c18d672b70895f2d058438691e44). Tip **`09df73c`**..
+  Commits: content [`6e7c410`](https://github.com/STP-KAS/kaspa-master-file/commit/6e7c410744b3db2ca6bd3fd273e0dababe3727b5), snapshot link [`79a9ea7`](https://github.com/STP-KAS/kaspa-master-file/commit/79a9ea71872f45771a9574229e11d324d19ce477), then Build prompt [`09df73c`](https://github.com/STP-KAS/kaspa-master-file/commit/09df73cc7879c18d672b70895f2d058438691e44). Tip at the first prompt commit was `09df73c` (13 Oct 07:58 CEST); this refresh is the next commit on the branch.
   Files: README.md, master.json, SNAPSHOT-HISTORY.md, prompts/grok-build-2026-10-13.md.
 - **kaspa-builders `master/builders-sweep-2026-10-13`** from `origin/main` [`069ba14`](https://github.com/STP-KAS/kaspa-builders/commit/069ba14).
   Commits: content [`a445477`](https://github.com/STP-KAS/kaspa-builders/commit/a4454772d3790d02992b6d81ef89ed0a43968182), snapshot link [`887b909`](https://github.com/STP-KAS/kaspa-builders/commit/887b9098ca8df6e869f68285abd3d602942e9e47). Tip **`887b909`**.
@@ -61,7 +61,7 @@ Window: GitHub since `2026-10-12T05:45:00Z`; X since the 12 Oct markers; forum s
 | **#1147/#1146** still open, no reviews (recheck 05:48Z). Head still `b4df2d8f`. supertypo 6124362740 already on main via weekly-fixes `4a23d06` — not re-added. | GitHub API | TN10 public API |
 | **KGI** tip still **`82dcc0e6`** (bot-mail "32-commit push" was #7 already recorded 12 Oct). | GitHub API | TN10 public API |
 | **#1148** lowio RocksDB preset (supertypo, opened 12 Oct 11:34:36Z, head `e3773118`, +115/−10, no reviews). Author claims ~50% fewer writes / ~99% fewer compactions (his runs). | GitHub API | Not live |
-| **#991** biryukovmaxim **five** 12 Oct inline comments on `77d9a2e8` (4247568710…4247720588); no new review — still CHANGES_REQUESTED of 21 Jul on `7372a815`. | GitHub API | Not live |
+| **#991** biryukovmaxim **five** 12 Oct inline comments on `77d9a2e8` (4247568710…4247720588); in CHANGES_REQUESTED review 5490183821 (12 Oct 11:56:19Z). | GitHub API | Not live |
 | **#1142** head `644baafe` → **`fc681149`**; biryukovmaxim CHANGES_REQUESTED 12 Oct 14:40:43Z; atharaldsen pushed Done replies. Still open, no maintainer review on new head. | GitHub API | Not live |
 | **silverscript #260** OpOutputAuthorizingInput builtin (aglov413, head `a2e2c0f4`, +58/−6, no reviews). | GitHub API | SilverScript holes |
 

@@ -537,3 +537,12 @@ Not yet on any branch at sweep time; Build should fold these into the matching R
 - rusty-kaspa issue [#1151](https://github.com/kaspanet/rusty-kaspa/issues/1151) (IzioDev, opened 15 Oct, open): "rpc & client: make getUtxosByAddresses (v1) deprecated". Body: "`getUtxosByAddresses` should be replaced with `getUtxosByAddressesV2`, as such next release should mark it as deprecated and client code (wallet framework) should be migrated to use the later." Follows the #991 merge (`7cc22fea`).
 - X: michaelsutton ([post](https://x.com/michaelsuttonil/status/2110743841963757655), 15 Oct 14:45:22Z): "composability between native covenants is ready (and is the key for eg all the dexs you’ll see over kcc20 tokens soon). sync composability between vprogs isn’t".
 - Not verified: posts on X on 14 Oct describe a "retroactive security disclosure for v2.1.0"; no published GitHub security advisory was found for kaspanet/rusty-kaspa (paginated advisory list empty, 15 Oct), so nothing is recorded.
+
+### Bot mail hand-off fold-in (15 Oct 2026)
+
+Bot mail listed 83 GitHub items from 13 Oct 12:19 to 15 Oct 17:46 CEST. All 83 links resolve in the GitHub API (15 Oct read). Four lines repeat an earlier item (#1142 review 5502007576 twice, #1147 review 5502542535 twice). Reviewer decisions that `build/2026-10-15` does not record:
+
+- rusty-kaspa [#1148](https://github.com/kaspanet/rusty-kaspa/pull/1148#pullrequestreview-5517402226): biryukovmaxim **APPROVED** on 14 Oct 11:49:34Z at head `35725536`, before the merge as `2ea8e9d1`.
+- kccs [#26](https://github.com/kaspanet/kccs/pull/26#pullrequestreview-5518401176) (KCC-23 MJ): IzioDev **APPROVED** on 14 Oct 13:09:37Z at head `4461c8d2`, before the merge as `1516a6c4`.
+- rusty-kaspa [#991](https://github.com/kaspanet/rusty-kaspa/pull/991#pullrequestreview-5535705448): biryukovmaxim **APPROVED** on 15 Oct 15:32:52Z at head `bc1000b6`, which replaces his CHANGES_REQUESTED of 21 Jul; merged two minutes later as `7cc22fea`.
+- argent-lang/argent [#70](https://github.com/argent-lang/argent/pull/70) "chore: ast to ast lowering" (IzioDev, opened 14 Oct 19:59:24Z, open, head `46dc4a5e`, +25926/−17711): a compiler restructure that lowers authored code into SilverScript contract syntax trees. Not merged.

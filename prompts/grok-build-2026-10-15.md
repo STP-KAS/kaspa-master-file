@@ -7,7 +7,7 @@ Use your open branch **`build/2026-10-15`** (tip `2cd96d1`, 15 Oct 18:20 CEST) o
 
 Main is at `9b0a748` (13 Oct). `build/rusty-1074-2026-10-14` and `build/2026-10-15` already record #991 merged (`7cc22fea`), #1074 (`67686482`), #1148 (`2ea8e9d1`), #1135 (`12db0f35`), #1142 (`a92c4f9f`), kccs#26 KCC-23 (`1516a6c4`), #1150 and #1147 head `239556a6`; the sweep did not repeat them.
 
-Branches: Tip at the first prompt commit was `07f44cd` (15 Oct 18:57 CEST); this refresh is the next commit on the branch.
+Branches: `master/sweep-2026-10-15` tip before this refresh was `07f44cd` (15 Oct 18:57 CEST); this refresh is the next commit on the branch. First prompt commit `52cd2c6` (18:23 CEST, on `7eb845b`).
 
 If a SendToAgent message is missing, the same prompt is also at `prompts/grok-build-2026-10-15.md` on `master/sweep-2026-10-15`.
 

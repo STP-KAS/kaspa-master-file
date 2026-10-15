@@ -1,7 +1,7 @@
 {
   "title": "Kaspa master file",
   "repo": "https://github.com/STP-KAS/kaspa-master-file",
-  "updated": "2026-10-13",
+  "updated": "2026-10-15",
   "disclaimer": "Not Kaspa core. Not official KNS. @StppStp. Merged Active KIP is law. Open PR is not. Current pins: section now (kept current by the daily sweep; see updated).",
   "sections": [
     {

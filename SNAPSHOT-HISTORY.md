@@ -545,5 +545,5 @@ Bot mail listed 83 GitHub items from 13 Oct 12:19 to 15 Oct 17:46 CEST. All 83 l
 
 - rusty-kaspa [#1148](https://github.com/kaspanet/rusty-kaspa/pull/1148#pullrequestreview-5517402226): biryukovmaxim **APPROVED** on 14 Oct 11:49:34Z at head `35725536`, before the merge as `2ea8e9d1`.
 - kccs [#26](https://github.com/kaspanet/kccs/pull/26#pullrequestreview-5518401176) (KCC-23 MJ): IzioDev **APPROVED** on 14 Oct 13:09:37Z at head `4461c8d2`, before the merge as `1516a6c4`.
-- rusty-kaspa [#991](https://github.com/kaspanet/rusty-kaspa/pull/991#pullrequestreview-5535705448): biryukovmaxim **APPROVED** on 15 Oct 15:32:52Z at head `bc1000b6`, which replaces his CHANGES_REQUESTED of 21 Jul; merged two minutes later as `7cc22fea`.
+- rusty-kaspa [#991](https://github.com/kaspanet/rusty-kaspa/pull/991#pullrequestreview-5535705448): biryukovmaxim **APPROVED** on 15 Oct 15:32:52Z at head `bc1000b6`, after his CHANGES_REQUESTED of 21 Jul, 11 Sep and 12 Oct (last 2026-10-12T11:56:19Z on `77d9a2e8`); merged two minutes later as `7cc22fea`.
 - argent-lang/argent [#70](https://github.com/argent-lang/argent/pull/70) "chore: ast to ast lowering" (IzioDev, opened 14 Oct 19:59:24Z, open, head `46dc4a5e`, +25926/−17711): a compiler restructure that lowers authored code into SilverScript contract syntax trees. Not merged.

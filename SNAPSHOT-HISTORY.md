@@ -8,7 +8,7 @@ Not a KIP. Not Kaspa core. A tweet is not a pin. This file is the agent/operator
 
 | When (Europe/Brussels) | Commit | What we did | Pins |
 | --- | --- | --- | --- |
-| 2026-10-15 18:26 | [`687a6f2`](https://github.com/STP-KAS/kaspa-master-file/commit/687a6f27095599cece57f1f951d59631ed6e9653) | Fix on `build/2026-10-15` for challenge note `067ec57` (rusty-1074 F1, F2, carried here): old Live, Covenant-id lookup and Not live cells and six master.json notes from main `9b0a748` copied verbatim under [Moved from README on 14 Oct 2026](#moved-from-readme-on-14-oct-2026), with Prior cell links; #1148 review body quoted as "LGTM!"; the 13 Oct 08:05 row restored byte for byte. Correction to the 13 Oct 08:05 row: that Build was on build/2026-10-13-r2, on main 215d532 (single commit; replaces build/2026-10-13). |
+| 2026-10-15 18:26 | [`687a6f2`](https://github.com/STP-KAS/kaspa-master-file/commit/687a6f27095599cece57f1f951d59631ed6e9653) | Fix on `build/2026-10-15` for challenge note `067ec57` (rusty-1074 F1, F2, carried here): old Live, Covenant-id lookup and Not live cells and six master.json notes from main `9b0a748` copied verbatim under [Moved from README on 14 Oct 2026](#moved-from-readme-on-14-oct-2026), with Prior cell links; #1148 review body quoted as "LGTM!"; the 13 Oct 08:05 row restored byte for byte. Also moved the prior KRC-20 incident cell and note (saved fix a) and the rusty#1135 chip under [Moved from README on 15 Oct 2026](#moved-from-readme-on-15-oct-2026). Correction to the 13 Oct 08:05 row: that Build was on build/2026-10-13-r2, on main 215d532 (single commit; replaces build/2026-10-13). |
 | 2026-10-15 18:20 | [`0c00586`](https://github.com/STP-KAS/kaspa-master-file/commit/0c00586f023f500e0f6213bf4dd3cda5be95c632) | Catch-up Build on `build/2026-10-15` from main [`9b0a748`](https://github.com/STP-KAS/kaspa-master-file/commit/9b0a7487432c83fffd2a46dd3a4d07cda6eacc9b) after the 13 to 15 Oct outage (no sweep or Build on 14 and 15 Oct). Carries the unmerged `build/rusty-1074-2026-10-14` (`926582c`) cells verbatim (README Live, Covenant-id lookup and Not live cells; six JSON rows). Adds Build reads of 15 Oct: TN10 14 reads, all 2.1.0 `821a1e6c` (mixed pool, no ratio); #991 merged `7cc22fea`; #1147 still open; #1150 new, unreviewed; KCC-23 Draft at kccs `1516a6c4`; kcc20-reference #3/#4 open; #260 still open; KGI `232eae41`. Drops "(not merged there yet)" from the KRC-20 builders pointer (builders main `ade9503`) and corrects the 13 Oct 08:05 row's branch name in the next row. Appends only; no text removed. No builds. |
 | 2026-10-13 08:10 | [`f4ecf7c`](https://github.com/STP-KAS/kaspa-master-file/commit/f4ecf7cc903bf25d613795ce25cf736d30b6edf5) | Fix on `build/2026-10-13-r2` for challenge note `c64010e` (FAILED 3): F1 single commit on main 215d532 replaces `build/2026-10-13`; F2 KRC-20 incident go-krc20d paragraph replaced by a kaspa-builders pointer; F3 08:05 row base wording. |
 | 2026-10-13 08:05 | [`ceaa94a`](https://github.com/STP-KAS/kaspa-master-file/commit/ceaa94aa036f34504772d8647a395a7994e0516d) | Daily Build on `build/2026-10-13`, on main 215d532 (single commit; replaces build/2026-10-13). Carries `master/sweep-2026-10-13` (`78c97ef`) cells for TN10 public API, Not live and SilverScript holes, and its moved section, verbatim, except two #991 sentences corrected from the reviews API (biryukovmaxim CHANGES_REQUESTED 5490183821, 12 Oct 11:56:19Z). Adds Build reads: TN10 14 reads (all 2.1.0, mixed pool), #1148 diff, #1142, #260 diff; KCC20 reference gets kcc20-reference#2; KRC-20 incident gets the go-krc20d fix release. Appends only on those two rows; no text removed. No builds. |
@@ -568,3 +568,19 @@ Ori Newman. GitHub someone235. Tagged SilverScript v1.0.0. Authored rusty-kaspa 
 ### Prior cell: master.json sections/16/rows/13 "rusty#1135" note (to 14 Oct 2026)
 
 Require explicit opt-in for non-SIG_HASH_ALL PSKB signing (someone235, opened 20 Sep, head aaa5f25f). IzioDev APPROVED 9 Oct 14:36:19Z; someone235 force-pushed the head 10 Oct 05:04:23Z (aaa5f25f committer date 05:04:20Z, after the approval). Not merged.
+
+## Moved from README on 15 Oct 2026
+
+Verbatim copies of cells that `build/2026-10-15` changed other than by appending, copied from main `9b0a748`.
+
+### Prior cell: KRC-20 incident (to 15 Oct 2026)
+
+**Not an L1 exploit.** 20 Sep: the ZealousSwap post-mortem, as relayed by Recon [2101642546803863779](https://x.com/ReconProtocol/status/2101642546803863779), traces it to a signature bypass in the off-chain Kasplex KRC-20 indexer, not Kaspa L1. KRC-20 token state is interpreted by indexers, not by L1 consensus. Third-party report. The desk did not read the post-mortem itself. Kasplex's indexer fix release (go-krc20d) and later commits are third-party product status: kaspa-builders [entries/krc20-incident.md](https://github.com/STP-KAS/kaspa-builders/blob/main/entries/krc20-incident.md) (not merged there yet).
+
+### Prior cell: master.json sections/0/rows/19 "KRC-20 incident" note (to 15 Oct 2026)
+
+20 Sep. Recon relays the ZealousSwap post-mortem: root cause a signature bypass in the off-chain Kasplex KRC-20 indexer, not Kaspa L1 (https://x.com/ReconProtocol/status/2101642546803863779). KRC-20 token state is interpreted by indexers, not L1 consensus. Third-party report; the desk did not read the post-mortem itself. Kasplex's indexer fix release (go-krc20d) and later commits are third-party product status: kaspa-builders entries/krc20-incident.md https://github.com/STP-KAS/kaspa-builders/blob/main/entries/krc20-incident.md (not merged there yet).
+
+### Prior chip: master.json sections/16/rows/13 "rusty#1135" (to 14 Oct 2026)
+
+chip: "open"

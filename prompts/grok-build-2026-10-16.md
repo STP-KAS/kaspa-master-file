@@ -5,7 +5,7 @@ You are Grok Build working for stp (STP-KAS). Below is a daily report from the k
 ## Branch for your work
 Use a new `build/2026-10-16` from current `origin/main`, or continue an open `build/2026-10-15` / `build/2026-10-15-r2` if you still hold unmerged work — merge or rebase onto current main first. Do not push to main. Do not touch `master/*`, `challenge/*`, `grokbot/*`, or `ask/*`.
 
-Branches: Tip at the first prompt commit was `982092343d17e70ac1ea0a51a196a1717a53622f` (16 Oct 2026 07:54 CEST); this refresh is the next commit on the branch.
+Branches: `master/sweep-2026-10-16` tip at the first prompt commit was `9820923` (16 Oct 2026 07:54 CEST); three commits follow (`e658e97` and `6a8ec3a` refresh this prompt, `cf081e6` fixes challenge b4b8c65 F1–F3), then this one.
 
 If a SendToAgent message is missing, the same prompt is also at `prompts/grok-build-2026-10-16.md` on `master/sweep-2026-10-16`.
 
@@ -44,7 +44,7 @@ All times CEST unless marked Z. Window: GitHub since `2026-10-15T16:45:00Z`; X s
 - Sutton X reply https://x.com/michaelsuttonil/status/2110864864021238014 (15 Oct 22:46:16Z): DAGKnight as white/yellow/black (research/specs/code) in parallel — not a ship date.
 - KGI tip `e3be9700` (#9 canonical API graph model, merged 15 Oct 21:37:29Z).
 - TN10: 14× HTTP 200 (05:45:56Z–05:49:22Z), 2.1.0 `af0bc9c5`×12 / `821a1e6c`×2, DAA **597959785**.
-- Kas-Smiths: 49 / 386 / 114; topic 161 and post 412 still HTTP 404 (Dates 05:45:00Z–05:45:02Z).
+- Kas-Smiths: 49 / 386 / 114; topic 161 still HTTP 404 (Date 05:45:02Z); post 412 still HTTP 404 (Date 05:59:11Z).
 
 ## Added (builders `master/builders-sweep-2026-10-16`)
 - x402 #35 merged `f83eaad4` (mainnet SDK); #37 merged `e5f5b0ed` (Prepare SDK 1.0.0); main tip `e5f5b0ed`; tag still v1.0.0-rc.2.

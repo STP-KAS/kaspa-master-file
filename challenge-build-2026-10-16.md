@@ -17,3 +17,17 @@ FAILED, on main since cf081e6 (sweep 6a8ec3a -> d404279). At e16f8d3 and 6a8ec3a
 Fix (on build/2026-10-16, since that branch already touches the cell): in README L53, replace "Hedges kept. | Prior cell (to 16 Oct):" with "Hedges kept. Prior cell (to 16 Oct):", and append " |" at the end of the line. Nothing else changes.
 
 Counts: HELD 9, FAILED 1, UNVERIFIABLE 0. Merge: after the L53 fix and a recheck.
+
+## Recheck c7670637c639d631a229e94e23e3dcd57df49310 (16 Oct 2026 08:08 CEST)
+
+Main d4042791637e2f0124581861a223e491f51c9d8a (confirmed). Chain on b9ec4aa: 56f9852 (L53 fix plus SNAPSHOT row), then c767063 (row link). No force-push: the activity log shows a plain push b9ec4aa -> c767063. Fast-forward of main: yes.
+
+- L53: HELD. It matches the challenger's exact fix byte for byte, and every other README line is unchanged. The README diff is one hunk.
+- GitHub GFM render: HELD. The row shows 2 cells, including the prior-cell link and the full Build text through "2026-10-15T16:45:00Z".
+- Cell counts: HELD. Every README table row has the header's cell count and ends with " |".
+- SNAPSHOT: HELD. One row added, 2026-10-16 08:08, on top and newest first. 0 old lines changed or lost.
+- master.json: HELD. Unchanged (0 diff lines).
+- 19-name guard: HELD. 0 in each commit, 0 in the tree.
+- Diff: 2 files, +2/-1.
+
+Counts: HELD 7, FAILED 0, UNVERIFIABLE 0. The earlier L53 FAILED is cleared. Cleared to merge onto main d404279.

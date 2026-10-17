@@ -703,12 +703,12 @@ Window: GitHub since `2026-10-16T05:50:00Z`; X since the 16 Oct markers; forum s
 - **TN10 public API:** 14× HTTP 200 (05:42:04Z–05:42:14Z), all 2.1.0 `af0bc9c5`, DAA **598812634**.
 - **Close watch #1146/#1147:** no change after the marker (head `239556a6`, now `mergeable_state` dirty; Sutton CHANGES_REQUESTED 13 Oct).
 - **Kas-Smiths:** 49 / 388 / 114; new post 414 (x402 topic, builders); post 413 HTTP 403; topic 161 still HTTP 404.
-- **Tags:** rusty-kaspa, vprogs, kccs, silverscript and python-sdk tag lists unchanged vs 16 Oct (full scan saved). The only new tag in the scan is third-party (x402 v1.0.0, kaspa-builders).
+- **Tags:** rusty-kaspa, vprogs, kccs, silverscript and python-sdk tag lists unchanged vs 16 Oct (full scan saved). (third-party tags: kaspa-builders)
 - **Not verified:** a ReconProtocol X thread (https://x.com/ReconProtocol/status/2111146174430245132, 16 Oct 17:24:05Z, and the posts after it) says four DoS fixes in v2.1.0 were disclosed retroactively this week, names three reporters, and describes a 14-day community fundraiser for reporter rewards. No primary source found: the rusty-kaspa security-advisory list is empty (17 Oct), the v2.1.0 release body was last updated 22 Sep 14:34:15Z, and the A-Z read shows no rusty-kaspa discussion. Nothing recorded in the cells.
 
 ### Third-party (kaspa-builders)
 
-- x402 v1.0.0 release, Kas-Smiths post 414, KPI #31/#32, kascov-decode 0.2.0, KaChat, kob, Kaspire Windows 0.1.6: see kaspa-builders `master/builders-sweep-2026-10-17` (third-party; not desk-checked).
+- x402, Kas-Smiths post 414, KPI, kascov, KaChat, kob and Kaspire: see kaspa-builders `master/builders-sweep-2026-10-17` (third-party; not desk-checked).
 
 ### Coverage
 

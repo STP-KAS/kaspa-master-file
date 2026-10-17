@@ -5,7 +5,7 @@ You are Grok Build working for stp (STP-KAS). Below is a daily report from the k
 ## Branch for your work
 Use a new `build/2026-10-17` from current `origin/main`, or continue an open `build/` branch if you still hold unmerged work — merge or rebase onto current main first. Do not push to main. Do not touch `master/*`, `challenge/*`, `grokbot/*`, or `ask/*`.
 
-Branches: `master/sweep-2026-10-17` tip before this prompt commit is `ab54415` (17 Oct 2026 07:48 CEST).
+Branches: `master/sweep-2026-10-17`. Tip at the first prompt commit was `ef4b48b` (17 Oct 2026 07:51 CEST); this refresh is the next commit on the branch.
 
 If a SendToAgent message is missing, the same prompt is also at `prompts/grok-build-2026-10-17.md` on `master/sweep-2026-10-17`.
 

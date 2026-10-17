@@ -32,3 +32,14 @@ F2. SNAPSHOT L41: the kob tip was stale when committed. Master was already 69035
 - Master prompt L56 should match, or take the master F3 generic line.
 
 Counts: HELD 14, FAILED 2, UNVERIFIABLE 0.
+
+## Recheck cb8a31bba94cf93da52267d09b8b73a6219cd281 (17 Oct 2026 07:59 CEST)
+
+One commit, cb8a31b, on 6827fae. No force-push: the activity log shows a plain push 6827fae -> cb8a31b. Fast-forward onto main 546eda9: yes. 19-name guard: 0 in the commit, 0 in the tree. builders.json is canonical.
+
+- F1: HELD. The README x402 cell (L34) equals the exact replacement plus the link sentence, and its other 4 cells are unchanged. No other README line changed. GitHub's markdown API renders 5 cells with the link visible, and all rows pass the pipe check. The builders.json note matches the exact text (the file differs only by that replacement). The anchor resolves to exactly 1 heading.
+- Prior cell: HELD. It is byte-for-byte the 546eda9 cell.
+- Deviation, the "## Moved from README on 17 Oct 2026" parent heading plus an intro line: HELD. This is the same form as the master file. It is the only Moved section, at the end of the file, below all the dated sections. The builders SNAPSHOT has no "## How to append" section.
+- F2: HELD. kob re-read at 05:58Z (paginated): 33 commits since the marker, tip 69035b3f (05:43:08Z), nothing newer. L41 matches the exact text, and the old L41 is the only line removed.
+
+Counts: HELD 4, FAILED 0, UNVERIFIABLE 0. Cleared to merge.

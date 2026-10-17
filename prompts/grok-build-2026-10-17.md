@@ -5,7 +5,7 @@ You are Grok Build working for stp (STP-KAS). Below is a daily report from the k
 ## Branch for your work
 Use a new `build/2026-10-17` from current `origin/main`, or continue an open `build/` branch if you still hold unmerged work — merge or rebase onto current main first. Do not push to main. Do not touch `master/*`, `challenge/*`, `grokbot/*`, or `ask/*`.
 
-Branches: `master/sweep-2026-10-17`. Tip at the first prompt commit was `ef4b48b` (17 Oct 2026 07:51 CEST); this refresh is the next commit on the branch.
+Branches: `master/sweep-2026-10-17`. Commits in order: `97158dc` (content), `ab54415` (SNAPSHOT row), `ef4b48b` (first prompt commit, 17 Oct 2026 07:51 CEST), `f19cb38` (prompt Branches refresh), `52e8822` (challenge F1/F2 fix: prior-cell links, third-party wording); this prompt fix (challenge F3) is the next and last commit on the branch.
 
 If a SendToAgent message is missing, the same prompt is also at `prompts/grok-build-2026-10-17.md` on `master/sweep-2026-10-17`.
 
@@ -14,7 +14,7 @@ If a SendToAgent message is missing, the same prompt is also at `prompts/grok-bu
 - **Master is core-only (stp, 4 Oct 2026).** Third-party projects (x402, KPI, KasperoLabs, KaChat, kascov, Kastle, …) live in STP-KAS/kaspa-builders; cite it only with its caveat.
 - Cite a URL for every claim. Times with zone (CEST in chat; Z fine in the master), from saved server `Date` headers or API timestamps.
 - No fabrication. If you cannot verify, say "not verified". Never claim an HTTP status without saved headers. Quotes character for character from saved raw. Every review/comment fact from a fully paginated read.
-- Do not weld objects: #1152 open ≠ merged; #1060 merged on master ≠ a release (tag still v2.1.0); "stable (and secure) testnet this year" ≠ a DAGKnight mainnet date or a TN13 genesis; x402 v1.0.0 ≠ mainnet or audited; a CHANGES_REQUESTED review is not a close; an X thread is not a security advisory.
+- Do not weld objects: #1152 open ≠ merged; #1060 merged on master ≠ a release (tag still v2.1.0); "stable (and secure) testnet this year" ≠ a DAGKnight mainnet date or a TN13 genesis; a CHANGES_REQUESTED review is not a close; an X thread is not a security advisory.
 - Follow AGENTS.md and PROCESS.md: README **Now** cells rewritten in place (old cell copied verbatim to SNAPSHOT-HISTORY "Moved from README on <date>"); dated text in SNAPSHOT-HISTORY; RECEIPTS frozen; `master.json` notes plain text, absolute links, validated.
 - Git identity: `STP-KAS <227352643+STP-KAS@users.noreply.github.com>`. Plain push of your `build/` branches only. Never force main.
 - Before adding a fact: `git fetch --prune` and search **main and every open origin branch** (including `master/sweep-2026-10-17`).
@@ -30,7 +30,7 @@ If a SendToAgent message is missing, the same prompt is also at `prompts/grok-bu
 4. **KGI #10/#11** (main `8e175b76`): read status.md at `8e175b76` and say which increments are now in.
 5. **Close watch #1147/#1146:** re-read reviews and comments (paginated); confirm still open at `239556a6` (now `mergeable_state` dirty) with no new activity after `2026-10-16T05:50:00Z`.
 6. **v2.1.0 disclosure claim (Recon thread):** look for a primary source (advisory, release-note edit, maintainer post, Kas-Smiths). If none, leave it out.
-7. **Builders (optional):** x402 v1.0.0 (tag peels to `e5f5b0ed`; RC2 bind-tag text in the entry needs a decision); Kas-Smiths post 414 fee vs relay floor (could be desk-checked against a v2.1.0 node's mempool rules, TN10 only, no broadcast needed); KPI #31/#32 into the KPI entry; kascov-decode 0.2.0.
+7. **Builders (optional):** third-party items are in kaspa-builders `master/builders-sweep-2026-10-17` (x402, Kas-Smiths post 414, KPI #31/#32, kascov); work them only on a kaspa-builders branch, with the caveat.
 8. **What to build or test next** (TN10 only, no public posting): short ordered list.
 9. Write sourced facts only to your `build/` branch. After push, list commit links in chat.
 
@@ -51,10 +51,8 @@ All times CEST unless marked Z. Window: GitHub since `2026-10-16T05:50:00Z`; X s
 - Commits: content [`97158dc`](https://github.com/STP-KAS/kaspa-master-file/commit/97158dcf6203b1dc2377eaf0c858e92b08165f90), SNAPSHOT row [`ab54415`](https://github.com/STP-KAS/kaspa-master-file/commit/ab54415).
 
 ## Added (builders `master/builders-sweep-2026-10-17`)
-- x402 release **v1.0.0** published 16 Oct 06:06:05Z (tag `09411aa7` → `e5f5b0ed`); `releases/latest` HTTP 200 (Date 05:44:55Z); main `ee6670c6`. Kas-Smiths post 414 (Ross): `standardNative` vector fee 200000 sompi vs a 203600 relay floor he saw on a v2.1.0 node (his test).
-- KPI #31/#32 merged (main `335fbca8`): author's TN10 deposit 10 / withdraw 4 cycle with real proofs; forged-state receipt rejected by the node (author's report).
-- kascov-decode 0.2.0 (`c5a1aaa9`, KCC conventions at kccs `1516a6c`); KasperoLabs bridge superblock claim (X relay); KasSigner candidate (X); KaChat `b5bbd97b`; kob `08f1cae3`; Kaspire Windows 0.1.6 (`31148025`).
-- Commits: content [`fb1c4f9`](https://github.com/STP-KAS/kaspa-builders/commit/fb1c4f9), row `6827fae`.
+- x402, KPI, kascov, KasperoLabs, KasSigner, KaChat, kob and Kaspire: see kaspa-builders `master/builders-sweep-2026-10-17` (third-party; not desk-checked).
+- Commits: content [`fb1c4f9`](https://github.com/STP-KAS/kaspa-builders/commit/fb1c4f9), row `6827fae`, challenge fix `cb8a31b`.
 
 ## Held / unchanged
 - Close watch: #1147 open, head `239556a6`, `mergeable_state` dirty, 1 review (Sutton CHANGES_REQUESTED 13 Oct), 7 comments (last 13 Oct); #1146 open, 4 comments (last 13 Oct). atharaldsen: no new issues, comments or commits in kaspanet since 16 Oct.
@@ -74,4 +72,4 @@ All times CEST unless marked Z. Window: GitHub since `2026-10-16T05:50:00Z`; X s
 - Kas-Smiths: HTTP 200 headers saved; 413 HTTP 403; 161 HTTP 404.
 - Sites: TN10 healthy; kaspa.org `Date` still 9 Oct (CDN cache); api.kaspa.org, api-tn10 root and kns-2.gitbook.io 307; others 200. Bodies and headers in `raw/2026-10-17/sites/`.
 - Bot mail: no hand-off file in the watch raws in the last 24h.
-- Tags: full scan saved; only new tag is x402 v1.0.0 (builders).
+- Tags: full scan saved; core tag lists unchanged (third-party tags: kaspa-builders).

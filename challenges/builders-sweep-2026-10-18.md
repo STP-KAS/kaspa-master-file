@@ -44,3 +44,14 @@ Counts: HELD 5, FAILED 1, UNVERIFIABLE 0.
 ### Addendum: builders SNAPSHOT frozen row (16 Oct 07:55; L8 on main, L9 on this branch)
 It has 4 cells under the 3-column header "| When (CEST) | Commit | What we did |". GFM drops the 4th cell, "Entries + README index updated." Nothing else is hidden.
 Recommendation: do not edit the frozen row; an edit would break byte-freeze for a five-word cell. If you want the text visible, add one sentence to the next new top row instead: "Render note: the 16 Oct 07:55 row has a hidden 4th cell: Entries + README index updated." A render-only edit to a frozen row would need your explicit exception.
+
+## Recheck 6eb8c5143c9bba4da3e9f07dd87784cd1f40cf42 (18 Oct 2026 08:22 CEST)
+
+One commit, 6eb8c51, on 94b2d8e. No force-push: the activity log shows a plain push 94b2d8e -> 6eb8c51. Fast-forward onto main cb8a31b: yes. run.sh guard (23 live + 2 old): 0/0/0.
+
+- JSON mirror: HELD. The x402 note keeps its old text as prefix. The appended text equals the README 18 Oct sentence in JSON form (markdown links -> "text URL", no bold or backticks): it starts "18 Oct: #38 https://github.com/elldeeone/kaspa-x402/pull/38 ..." and ends "Not desk-run. Not mainnet.", with no prior-cell sentence. Only this entry changed. builders.json is canonical.
+- Sources: HELD. Exactly the 3 sources were added (pull/38, releases/tag/v1.0.1, commit 8d575de1), and none were removed.
+- Render note: HELD. It is only in the 18 Oct 07:57 top row (L7), which is not on main yet. 0 main SNAPSHOT lines changed or lost.
+- README: unchanged. The pipe check (pipes inside code spans counted) passes on all rows.
+
+Counts: HELD 4, FAILED 0, UNVERIFIABLE 0. The prior F1 is cleared. Cleared to merge.

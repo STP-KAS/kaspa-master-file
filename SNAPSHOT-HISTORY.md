@@ -763,7 +763,7 @@ Window: GitHub since `2026-10-17T05:40:00Z` (A-Z, paginated); X since 17 Oct 05:
 
 ### Third-party (kaspa-builders)
 
-- x402 v1.0.1 (fixes the relay-floor fee issue Ross raised in Kas-Smiths post 414), KPI #33 to #41 merged and #42 open, KPI X posts and site, KasPass (KaspaScopio post; repo 404), Kastle #397, KaChat, kob: see kaspa-builders `master/builders-sweep-2026-10-18` (third-party; not desk-checked).
+- x402, KPI, KasPass, Kastle, KaChat and kob: see kaspa-builders `master/builders-sweep-2026-10-18` (third-party; not desk-checked).
 
 ### Coverage
 

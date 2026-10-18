@@ -5,7 +5,7 @@ You are Grok Build working for stp (STP-KAS). Below is a daily report from the k
 ## Branch for your work
 Use a new `build/2026-10-18` from current `origin/main`, or continue an open `build/` branch if you still hold unmerged work — merge or rebase onto current main first. Do not push to main. Do not touch `master/*`, `challenge/*`, `grokbot/*`, or `ask/*`.
 
-Branches: `master/sweep-2026-10-18`. Commits in order: `dcc0fd5` (content), `d555afd` (SNAPSHOT row); this prompt commit is the next and last commit on the branch.
+Branches: `master/sweep-2026-10-18`. Commits in order: `dcc0fd5` (content), `d555afd` (SNAPSHOT row), `df49649` (first prompt commit), `9129f5e` (challenge F1/F2 fix: escaped pipes in the KCC still open cell, third-party bullet); this prompt fix (challenge F3) is the next and last commit on the branch.
 
 If a SendToAgent message is missing, the same prompt is also at `prompts/grok-build-2026-10-18.md` on `master/sweep-2026-10-18`.
 
@@ -14,7 +14,7 @@ If a SendToAgent message is missing, the same prompt is also at `prompts/grok-bu
 - **Master is core-only (stp, 4 Oct 2026).** Third-party projects (x402, KPI, KasperoLabs, KaChat, kascov, Kastle, KasPass, …) live in STP-KAS/kaspa-builders; cite it only with its caveat.
 - Cite a URL for every claim. Times with zone (CEST in chat; Z fine in the master), from saved server `Date` headers or API timestamps.
 - No fabrication. If you cannot verify, say "not verified". Never claim an HTTP status without saved headers. Quotes character for character from saved raw. Every review/comment fact from a fully paginated read.
-- Do not weld objects: a KCC PR comment is not a review or a status change; an open PR (argent #71) is not a merge; crates.io 1.0.1 is not a silverscript repo tag; KGI #13 open is not merged; x402 v1.0.1 is third-party and Testnet-only.
+- Do not weld objects: a KCC PR comment is not a review or a status change; an open PR (argent #71) is not a merge; crates.io 1.0.1 is not a silverscript repo tag; KGI #13 open is not merged.
 - Follow AGENTS.md and PROCESS.md: README **Now** cells rewritten in place (old cell copied verbatim to SNAPSHOT-HISTORY "Moved from README on <date>"); dated text in SNAPSHOT-HISTORY; RECEIPTS frozen; `master.json` notes plain text, absolute links, validated.
 - Git identity: `STP-KAS <227352643+STP-KAS@users.noreply.github.com>`. Plain push of your `build/` branches only. Never force main.
 - Before adding a fact: `git fetch --prune` and search **main and every open origin branch** (including `master/sweep-2026-10-18`).
@@ -29,7 +29,7 @@ If a SendToAgent message is missing, the same prompt is also at `prompts/grok-bu
 3. **KGI #12/#13:** read status.md at `7059deb4` and say which increment #12 completes; keep #13 as open.
 4. **TN10 public API:** today two backends answered (`821a1e6c` 11 reads, `af0bc9c5` 3 reads); yesterday one. Keep "no pool size or ratio".
 5. **Close watch #1147/#1146/#1150/#1152:** re-read reviews and comments (paginated); confirm no new activity after `2026-10-17T05:40:00Z` except #1150's merge-of-master head `3f7d591a`.
-6. **Builders (optional):** x402 v1.0.1 / #38 (the relay-floor fix for Ross's post 414) and KPI #33–#41 are on kaspa-builders `master/builders-sweep-2026-10-18`; KasPass repo answered 404. Work them only on a kaspa-builders branch, with the caveat.
+6. **Builders (optional):** third-party items are in kaspa-builders `master/builders-sweep-2026-10-18` (x402, KPI, KasPass); work them only on a kaspa-builders branch, with the caveat.
 7. **What to build or test next** (TN10 only, no public posting): short ordered list.
 8. Write sourced facts only to your `build/` branch. After push, list commit links in chat.
 
@@ -47,9 +47,8 @@ All times CEST unless marked Z. Window: GitHub since `2026-10-17T05:40:00Z`; X s
 - Commits: content [`dcc0fd5`](https://github.com/STP-KAS/kaspa-master-file/commit/dcc0fd599edb79b8ef0b564572f9bfd673be7e2f), SNAPSHOT row [`d555afd`](https://github.com/STP-KAS/kaspa-master-file/commit/d555afd).
 
 ## Added (builders `master/builders-sweep-2026-10-18`)
-- x402 #38 relay-floor fee fix (the issue Ross raised in Kas-Smiths post 414) and release v1.0.1 (18 Oct 02:33:31Z, tag peels to `56221913`; notes thank Ross), main `8d575de1` (entry x402.md).
-- Dated section: KPI #33–#41 merged 17 Oct (main `c2037893`), #42 open; WellerOlaf X "feasibility PoC on TN10 is now complete" (not a privacy protocol yet, not audited) and the kpi.cash site; KasPass (KaspaScopio X post; github.com/kaspass/kaspass HTTP 404, not verified); Kastle #397; KaChat `d27f1a2c`; kob `cdd12405`.
-- Commits: content [`0c3d236`](https://github.com/STP-KAS/kaspa-builders/commit/0c3d2369d00d3d88655c9e9cb9dc99fd0238ca8f), row `360a68c`.
+- x402, KPI, KasPass, Kastle, KaChat and kob: see kaspa-builders `master/builders-sweep-2026-10-18` (third-party; not desk-checked).
+- Commits: content [`0c3d236`](https://github.com/STP-KAS/kaspa-builders/commit/0c3d2369d00d3d88655c9e9cb9dc99fd0238ca8f), row `360a68c`, challenge fix `94b2d8e`.
 
 ## Held / unchanged
 - Close watch: rusty-kaspa #1147 open, head `239556a6`, dirty, 7 comments, last update 15 Oct; #1146 open, 4 comments, last update 13 Oct. #1150 head moved to `3f7d591a` (merge of master, 17 Oct 08:24Z; catch-up, no review). #1152 still draft at `b58e51e4`, no reviews. rusty-kaspa master `f7d78773`; tag v2.1.0.
@@ -64,6 +63,6 @@ All times CEST unless marked Z. Window: GitHub since `2026-10-17T05:40:00Z`; X s
 - GitHub A-Z: 88 repos (watchlist, 20 active linked repos added, org repos pushed since the marker in kaspanet/argent-lang/tetsuo-ai, repos from 17 user event feeds), 88 GraphQL + 327 REST page calls. One gap: `Knitser/kascov-decode` does not exist (404); kascov lives in `Knitser/kascov` (read). Raw: `raw/2026-10-18/az/`.
 - X: free public reads, $0 spent; balance $6.75 (unchanged). core 3 (page 2 empty), community 7 (page 2 empty), deshe 0, 2 full texts.
 - Kas-Smiths: about/posts/latest HTTP 200 at 05:51:13Z–05:51:15Z; headers saved.
-- Sites: kaspa.org Date still 11 Oct (CDN cache); api.kaspa.org, api-tn10 root and kns-2.gitbook.io 307; others 200; kpi.cash 200. Bodies and headers in `raw/2026-10-18/sites/`.
+- Sites: kaspa.org Date still 11 Oct (CDN cache); api.kaspa.org, api-tn10 root and kns-2.gitbook.io 307; others 200. Bodies and headers in `raw/2026-10-18/sites/`.
 - Bot mail: no hand-off in the last 24h.
 - Note: the watch's local working files (state, raws, reports) for 11–17 Oct are missing on this computer (the folder holds a 10 Oct copy). Markers were rebuilt from the repo's 17 Oct record; the X window used a start time (17 Oct 05:40Z) instead of since-ids. Nothing in the repos was affected.

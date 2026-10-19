@@ -27,3 +27,15 @@ README L72 (Launch proof and binding) and the matching master.json note: replace
 with
 '2111906108600467489 ("sounds like a very good idea") is not in that file: not verified there. The KasperoLabs post 2111754328557961279 is in it, and the summary matches it.'
 (in master.json with the inner quotes escaped as \").
+
+## Recheck @ a3c51abec9cb21807d1b9c9e0f7b2325c2be0434 (19 Oct 2026 08:19 CEST)
+b46fec1 (fix) + a3c51ab (row link) on 9d15257; one plain push 06:18:41Z (9d15257->a3c51ab), no force-push; main still ea89b6e; fast-forward; guard 0 hits on both commits.
+Counts: 8 HELD, 0 FAILED, 0 UNVERIFIABLE. CLEARED.
+1. README L72: F1 text word for word; the only README change.
+2. master.json note: F1 text word for word with inner quotes escaped; the only JSON change; canonical.
+3. threads-fulltext.txt: 2111754328557961279 is under includes.posts (author id 1883537666429313025, mapped to KasperoLabs by the file's mentions; 18 Oct 09:40:41Z); text matches the summary (two KCC-20 tokens differing only in covenant id).
+4. New SNAPSHOT row 08:18 accurate, on top, newest first (08:18, 08:12, 07:53); 0 old lines changed.
+5. Nothing else changed (3 files, +3/-2).
+6. Pipe check 0 bad rows; markdown API renders the 36-row table with the new sentence inside its cell.
+7. Anchors 50/50 resolve once.
+8. Merge order: build fast-forwards onto main ea89b6e.

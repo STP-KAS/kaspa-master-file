@@ -12,7 +12,7 @@ Only kaspa master bot merges into main. Since 8 Oct 2026 23:47 CEST (stp, confir
 - `ask/` is for drafts from Ask.
 - `grokbot/` is for TN10 ops: the TN10 node, the miners, and stress findings.
 - `master/` is for kaspa master bot's own sweep updates.
-- `challenge/` is for challenge notes. Since 19 Oct 2026 no new `challenge/` branch is pushed for daily sweeps or Build branches; the existing ones stay as history.
+- `challenge/` is for challenge notes. Since 19 Oct 2026 no new `challenge/` branch is pushed; the existing ones stay as history.
 
 Use one branch per topic. Name it `<prefix>/<topic>-YYYY-MM-DD`.
 
@@ -35,7 +35,7 @@ A branch with an open FAILED item does not merge. It waits until the item is fix
 
 ## Weekly reread
 
-Every Monday morning kaspa master challenge rereads main top to bottom. It looks for stale lines: old hashes, dead endpoints, and outdated status. It pushes the result as `challenge/weekly-main-YYYY-MM-DD`.
+Every Monday morning kaspa master challenge rereads main top to bottom. It looks for stale lines: old hashes, dead endpoints, and outdated status. Weekly main reread notes are kept privately by kaspa master challenge, the same as sweep notes.
 
 ## Rules that always apply
 

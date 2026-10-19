@@ -5,7 +5,7 @@ You are Grok Build working for stp (STP-KAS). Below is a daily report from the k
 ## Branch for your work
 Use a new `build/2026-10-19` from current `origin/main` (`69f83cd` at sweep time), in a fresh clone (the shared checkout `/workspace/repos/kaspa-master-file` is in a restored, unborn-branch state). Do not push to main. Do not touch `master/*`, `challenge/*`, `grokbot/*`, or `ask/*`. Do not touch or merge the parked `build/2026-10-15`.
 
-Branches: `master/sweep-2026-10-19`. Commits in order: `2c67785` (content), `a18387b` (SNAPSHOT row); this prompt commit is the next and last commit on the branch.
+Branches: `master/sweep-2026-10-19`. Commits in order: `2c67785` (content), `a18387b` (SNAPSHOT row), `386fc2a` (first prompt commit), `f25fd57` (challenge F1-F3 fix in SNAPSHOT-HISTORY: linked-repo read, Kas-Smiths header time, third-party pointers); this prompt fix (challenge F3) is the next and last commit on the branch.
 
 If a SendToAgent message is missing, the same prompt is also at `prompts/grok-build-2026-10-19.md` on `master/sweep-2026-10-19`.
 
@@ -15,7 +15,7 @@ If a SendToAgent message is missing, the same prompt is also at `prompts/grok-bu
 - **Master is core-only (stp, 4 Oct 2026).** Third-party projects (x402, KPI, KasperoLabs, KaChat, kascov, Kastle, KasPass, KaspaHub, …) live in STP-KAS/kaspa-builders; cite it only with its caveat (third-party, not audited, demo, not desk-tested).
 - Cite a URL for every claim. Times with zone (CEST in chat; Z fine in the master), from saved server `Date` headers or API timestamps.
 - No fabrication. If you cannot verify, say "not verified". Never claim an HTTP status without saved headers. Quotes character for character from saved raw. Every review/comment fact from a fully paginated read.
-- Do not weld objects: an APPROVED review followed by CHANGES_REQUESTED (#1141) is not an approval or a merge; D-Stacks' COMMENTED reviews on #1152 are not an approval, and #1152 is still a draft; Sutton's name-service replies are X posts, not a KCC; a kaspa.org page is not a release pin; KPI GPU proofs are offline fixtures, not TN10 transactions.
+- Do not weld objects: an APPROVED review followed by CHANGES_REQUESTED (#1141) is not an approval or a merge; D-Stacks' COMMENTED reviews on #1152 are not an approval, and #1152 is still a draft; Sutton's name-service replies are X posts, not a KCC; a kaspa.org page is not a release pin.
 - Follow AGENTS.md and PROCESS.md: README **Now** cells rewritten in place (old cell copied verbatim to SNAPSHOT-HISTORY "Moved from README on <date>"); dated text in SNAPSHOT-HISTORY; RECEIPTS frozen; `master.json` notes plain text, absolute links, validated. Count cells per README row WITHOUT stripping code spans; confirm with the GitHub markdown API render. Stage files by name; no global sed; never edit old SNAPSHOT rows.
 - Git identity: `STP-KAS <227352643+STP-KAS@users.noreply.github.com>`. Plain merges and plain pushes of your `build/` branch only; no rebase, no `git pull --rebase`. Never force main.
 - Before adding a fact: `git fetch --prune` and search **main and every open origin branch** (including `master/sweep-2026-10-19`).
@@ -54,16 +54,14 @@ All times CEST unless marked Z. Window: GitHub since `2026-10-18T05:46:00Z`; X s
 - Commits: content [`2c67785`](https://github.com/STP-KAS/kaspa-master-file/commit/2c67785cd657ccbe319260b5a96b7f54aa1ab9a1), SNAPSHOT row [`a18387b`](https://github.com/STP-KAS/kaspa-master-file/commit/a18387b), prompt commit next.
 
 ## Added (builders `master/builders-sweep-2026-10-19`)
-- KPI #42–#51 merged 18 Oct 12:18Z – 19 Oct 05:38Z, main `98ee0e48`: L40S GPU proofs with CPU verification, private-note proofs, four-batch local lifecycle (#51: four Succinct receipts in 379.676 s). WellerOlaf X "4 minutes and 16 seconds", ~$0.12. elldeeone RTX 3070 reproductions in issue #11 ("Offline fixtures; no testnet transactions."). (entry olafweller-kpi.md)
-- x402: Kas-Smiths posts 415 (v1.0.1 relay-policy fix, CI checks, funded TN10 rerun) and 416 (fixed per-request charge, escrow + vouchers, USD conversion left to the app). No new release; main `8d575de1`. (entry x402.md)
-- Dated section: KasperoLabs identical KCC-20 tokens question + Kozmic Bridge video; KaspaScopio says the KasPass repo is no longer public; KaspaHub listing updates; danieliyahu1 kas-odds/kticket.
-- Commits: content [`08bc54f`](https://github.com/STP-KAS/kaspa-builders/commit/08bc54f93efabc8919f519d74197c7b66f25104c), row `99c97c5`.
+- Third-party items (two projects plus a dated section): see kaspa-builders `master/builders-sweep-2026-10-19`, with its caveat.
+- Commits: content [`08bc54f`](https://github.com/STP-KAS/kaspa-builders/commit/08bc54f93efabc8919f519d74197c7b66f25104c), row `99c97c5`, challenge fix `d02453b`.
 
 ## Held / unchanged
 - Close watch: #1147 open, head `239556a6`, dirty, 7 comments, last update 15 Oct; #1146 open, 4 comments, last update 13 Oct. #1150 head `3f7d591a`, no reviews. #863 head `41a9f4e6` (merge of master, catch-up). rusty-kaspa master `f7d78773`; tag v2.1.0.
 - kccs main `1516a6c4`; kccs #24 open at `8e1053ec`, still no reply to noralane. argent #71 open at `187e462e`, unreviewed; argent master `9a9f4b10`. kcc20-reference #4 (KAS-backed KAST) still open at `d51ac4c2`.
 - No kaspanet org repo was pushed in the window (orgs API).
-- Core tag lists (rusty-kaspa, python-sdk, vprogs, kccs, silverscript) and dotk-*/x402 unchanged.
+- Core tag lists (rusty-kaspa, python-sdk, vprogs, kccs, silverscript) unchanged; third-party tags: see kaspa-builders.
 - Kas-Smiths 49 / 390 / 114; highest post 416.
 
 ## Skipped

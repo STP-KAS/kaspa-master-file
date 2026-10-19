@@ -37,3 +37,13 @@ F3. Third-party product status in the master and prompt.
 - Prompt L57-L59: replace the three lines with '- Third-party items (two projects plus a dated section): see kaspa-builders `master/builders-sweep-2026-10-19`, with its caveat.'
 - Prompt L66: replace with '- Core tag lists (rusty-kaspa, python-sdk, vprogs, kccs, silverscript) unchanged; third-party tags: see kaspa-builders.'
 Then refresh prompt L8 to the real commit sequence.
+
+## Recheck @ ea89b6eca5418f3727c0f67bb7325a5ca42c387c (19 Oct 2026 08:07 CEST)
+Range 386fc2a -> f25fd57 (F1, F2, F3 SNAPSHOT) -> ea89b6e (F3 prompt); one push 06:06:09Z (386fc2a->ea89b6e), no force-push; fast-forwards onto main 69f83cd; guard 0 hits on both commits.
+Counts: 6 HELD, 0 FAILED, 0 UNVERIFIABLE. CLEARED.
+1. F1 (L821), F2 (L812), F3 (L813, L817, L823): word for word; no other SNAPSHOT line changed; line count unchanged.
+2. F3 prompt L18, L57-59 (now one line), L66: word for word; nothing else changed except L8 and the Commits line.
+3. L8 lists 2c67785, a18387b, 386fc2a, f25fd57, then this fix as last: matches the range.
+4. Builders Commits line names d02453b: that commit is the tip of kaspa-builders master/builders-sweep-2026-10-19.
+5. README and master.json unchanged since 386fc2a (pipe check 0 bad; render and anchors as in the first pass).
+6. SNAPSHOT top row's 'A-Z 97 repos' is accurate as of commit; F1 now records the later reads.

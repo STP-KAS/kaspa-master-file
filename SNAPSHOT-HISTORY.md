@@ -809,18 +809,18 @@ Window: GitHub since `2026-10-18T05:46:00Z` (A-Z, paginated); X since the 18 Oct
 - **KRC-20 incident framing (X):** Ori Newman https://x.com/OriNewman/status/2112050585004306646 (19 Oct 05:17:54Z): "L1 was poisoned" implies an L1 bug, which emdin says was not the case. KRC-20 incident cell.
 - **TN10 public API:** 14x HTTP 200 (05:49:40Z to 05:49:49Z), all 2.1.0; p2pId `821a1e6c` (9) and `af0bc9c5` (5); DAA **600539306**. TN10 public API cell.
 - **Close watch:** #1147 and #1146 unchanged after the marker. #1150 head still `3f7d591a`, no reviews. #863 head `41a9f4e6` (merge of master; catch-up). rusty-kaspa master still `f7d78773`; tag still v2.1.0. kccs main still `1516a6c4`; kccs #24 still open at `8e1053ec`, no reply to noralane. argent #71 still open at `187e462e`, unreviewed; argent master still `9a9f4b10`.
-- **Kas-Smiths:** 49 / 390 / 114 (about.json HTTP 200 at 05:44:41Z); two new posts, 415 and 416 (elldeeone, x402 topic, third-party: see kaspa-builders).
-- **Tags:** rusty-kaspa (latest v2.1.0), kaspa-python-sdk (v2.1.0), silverscript (v1.0.0), vprogs and kccs (none), dotk-* and x402 unchanged; full lists saved.
+- **Kas-Smiths:** 49 / 390 / 114 (about.json HTTP 200 at 05:44:39Z); two new posts, 415 and 416 (elldeeone, x402 topic, third-party: see kaspa-builders).
+- **Tags:** rusty-kaspa (latest v2.1.0), kaspa-python-sdk (v2.1.0), silverscript (v1.0.0), vprogs and kccs (none); third-party tags: see kaspa-builders; full lists saved.
 
 ### Third-party (kaspa-builders)
 
-- KPI #42 to #51 merged (main `98ee0e48`; GPU proofs, offline fixtures), elldeeone's RTX 3070 reproductions in KPI #11, x402 Kas-Smiths posts 415/416, KasperoLabs' identical-token question and Kozmic Bridge video, KaspaScopio's KasPass repo note: see kaspa-builders `master/builders-sweep-2026-10-19` (third-party; not desk-checked).
+- Third-party items from this window are on kaspa-builders `master/builders-sweep-2026-10-19` (third-party; not desk-checked).
 
 ### Coverage
 
-- A-Z: 97 repos (the watchlist, active repos linked from either repo, org repos pushed since the marker in kaspanet, argent-lang and tetsuo-ai, and repos from 17 user event feeds), 97 GraphQL + 215 REST page calls. Two gaps: `Knitser/kascov-decode` is not a repo (known; kascov read in `Knitser/kascov`), and `trillskillz/clawdmarket` now answers HTTP 404 (not Kaspa; skipped on 18 Oct). Raw under the watch's `raw/2026-10-19/az/`.
+- A-Z: 97 repos (the watchlist, active repos linked from either repo, org repos pushed since the marker in kaspanet, argent-lang and tetsuo-ai, and repos from 17 user event feeds), 97 GraphQL + 215 REST page calls. Two gaps: `Knitser/kascov-decode` is not a repo (known; kascov read in `Knitser/kascov`), and `trillskillz/clawdmarket` now answers HTTP 404 (not Kaspa; skipped on 18 Oct). Raw under the watch's `raw/2026-10-19/az/`. Three more linked repos were read after this commit (07:57 CEST, 45 REST + 3 GraphQL calls, no gaps; raw `raw/2026-10-19/az-linked/`); nothing from them is on the board.
 - X: free `x` namespace, $0 user credits spent; balance $6.75. core 19 (page 2 empty), community 15 (page 2 empty), deshe 3 (12 to 13 Oct, not technical; page 2 empty), 17 full texts.
-- Sites: kaspa.org, kaspaexplained.com/status, research.kas.pa, kaspa.news, kaspa-x402.org, vprogs-tt.izio.fr, silverscriptstudio.com and kpi.cash HTTP 200; kns-2.gitbook.io, api.kaspa.org and api-tn10 root HTTP 307. Bodies and headers in `raw/2026-10-19/sites/`.
+- Sites: kaspa.org, kaspaexplained.com/status, research.kas.pa, kaspa.news and vprogs-tt.izio.fr HTTP 200 (third-party sites: see kaspa-builders); kns-2.gitbook.io, api.kaspa.org and api-tn10 root HTTP 307. Bodies and headers in `raw/2026-10-19/sites/`.
 - Bot mail: no hand-off found in the last 24h.
 
 ## Moved from README on 19 Oct 2026

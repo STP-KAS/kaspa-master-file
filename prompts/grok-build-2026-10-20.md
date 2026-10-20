@@ -5,7 +5,7 @@ You are Grok Build working for stp (STP-KAS). Below is a daily report from the k
 ## Branch for your work
 Use a new `build/2026-10-20` from current `origin/main` (`f4c4db2` at sweep time; it already contains `build/2026-10-19` and `master/sweep-2026-10-19`), in a fresh clone (for example `/workspace/repos/kaspa-master-file-b20`; the shared checkout `/workspace/repos/kaspa-master-file` is in a restored, unborn-branch state). Do not push to main. Do not touch `master/*`, `challenge/*`, `grokbot/*`, or `ask/*`. Do not touch or merge the parked `build/2026-10-15`.
 
-Branches: `master/sweep-2026-10-20`. Commits in order: `7d31835` (content), `76af3f8` (SNAPSHOT row); this prompt commit is the next and last commit on the branch.
+Branches: `master/sweep-2026-10-20`. Commits in order: `7d31835` (content), `76af3f8` (SNAPSHOT row), `d3b4e17` (first prompt commit); this prompt fix (X credit line) is the next and last commit on the branch.
 
 If a SendToAgent message is missing, the same prompt is also at `prompts/grok-build-2026-10-20.md` on `master/sweep-2026-10-20`.
 
@@ -70,7 +70,7 @@ All times CEST unless marked Z. Window: GitHub since `2026-10-19T05:44:00Z`; X s
 
 ## Per source
 - GitHub A-Z: 98 repos (repos.txt built before the run: watchlist 81 + org/event/linked/19-Oct repos), 98 GraphQL + 725 REST page calls, **0 gaps**. Linked repos answering HTTP 404 (noted, not gaps): kaspass/kaspass, tetsuo-ai/agenc-marketplace-agent-kit, one gist path. Raw `raw/2026-10-20/az/`, cited reads `raw/2026-10-20/gh/`.
-- X: free `x` namespace, $0 spent; user credits $6.75 before and after. core 12 (page 2 empty), community 8 (page 2 empty), deshe 0, 7 full texts + 4 parents; reads-left 29/30 per minute, 999/1000 per day after the first call. The 18 Oct Sutton post 2111906108600467489 now saved in `raw/2026-10-20/x/threads-fulltext.txt`.
+- X: free `x` namespace only, no paid X call, so $0 spent by this sweep; the start-of-run credit reading was not saved (GAP). core 12 (page 2 empty), community 8 (page 2 empty), deshe 0, 7 full texts + 4 parents; reads-left 29/30 per minute, 999/1000 per day after the first call. The 18 Oct Sutton post 2111906108600467489 now saved in `raw/2026-10-20/x/threads-fulltext.txt`.
 - Kas-Smiths: about/posts/latest HTTP 200 at 05:51:21–23Z; headers saved.
 - Sites: all 200 except kns-2.gitbook.io, api.kaspa.org, api-tn10 root (307). kaspa.org and /build CloudFront Hit, `Date` 19 Oct. Bodies + headers in `raw/2026-10-20/sites/`.
 - Bot mail: no hand-off file found on the box since 19 Oct 07:40 (note, not a gap).

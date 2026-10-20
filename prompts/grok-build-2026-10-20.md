@@ -5,7 +5,7 @@ You are Grok Build working for stp (STP-KAS). Below is a daily report from the k
 ## Branch for your work
 Use a new `build/2026-10-20` from current `origin/main` (`f4c4db2` at sweep time; it already contains `build/2026-10-19` and `master/sweep-2026-10-19`), in a fresh clone (for example `/workspace/repos/kaspa-master-file-b20`; the shared checkout `/workspace/repos/kaspa-master-file` is in a restored, unborn-branch state). Do not push to main. Do not touch `master/*`, `challenge/*`, `grokbot/*`, or `ask/*`. Do not touch or merge the parked `build/2026-10-15`.
 
-Branches: `master/sweep-2026-10-20`. Commits in order: `7d31835` (content), `76af3f8` (SNAPSHOT row), `d3b4e17` (first prompt commit); this prompt fix (X credit line) is the next and last commit on the branch.
+Branches: `master/sweep-2026-10-20`. Commits in order: `7d31835` (content), `76af3f8` (SNAPSHOT row), `d3b4e17` (first prompt commit), `8676dcd` (prompt fix, X credit line), `8bac828` (challenge F1 fix: X spend GAP line; advisory: TN10 sentence removed); this prompt refresh is the next and last commit on the branch.
 
 If a SendToAgent message is missing, the same prompt is also at `prompts/grok-build-2026-10-20.md` on `master/sweep-2026-10-20`.
 
@@ -56,7 +56,7 @@ All times CEST unless marked Z. Window: GitHub since `2026-10-19T05:44:00Z`; X s
 
 ## Added (builders `master/builders-sweep-2026-10-20`)
 - Third-party items from this window: see kaspa-builders `master/builders-sweep-2026-10-20`, with its caveat.
-- Commits: content [`9235c1d`](https://github.com/STP-KAS/kaspa-builders/commit/9235c1d6c452f260382b09e52b09489e652e2c89), row `a6242a4`.
+- Commits: content [`9235c1d`](https://github.com/STP-KAS/kaspa-builders/commit/9235c1d6c452f260382b09e52b09489e652e2c89), row `a6242a4`, challenge fix `56089c3`.
 
 ## Held / unchanged
 - #1141 head `1d77a486` (CHANGES_REQUESTED stands, not merged). Close watch: #1147 `239556a6` dirty, 7 comments, last 15 Oct; #1146 4 comments, last 13 Oct; #1150 `3f7d591a`; #863 `41a9f4e6`. Nothing after the marker.

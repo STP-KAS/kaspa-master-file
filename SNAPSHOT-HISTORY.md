@@ -879,7 +879,7 @@ Window: GitHub since `2026-10-19T05:44:00Z` (A-Z, paginated); X since the 19 Oct
 ### Coverage
 
 - A-Z: 98 repos (the 81 watchlist repos; repos.txt built before the run from org repos pushed since the marker in kaspanet, argent-lang and tetsuo-ai, repos from 17 user event feeds, active repos linked from either repo, and six repos read on 19 Oct), 98 GraphQL + 725 REST page calls, 0 gaps. Linked repos that answer HTTP 404: kaspass/kaspass, tetsuo-ai/agenc-marketplace-agent-kit, and one gist path. Raw under the watch's `raw/2026-10-20/az/`.
-- X: free `x` namespace, $0 user credits spent. core 12 (page 2 empty), community 8 (page 2 empty), deshe 0, 7 full texts and 4 parent posts. The 18 Oct Sutton post 2111906108600467489 is now saved in `raw/2026-10-20/x/threads-fulltext.txt`.
+- X: free `x` namespace only, no paid X call, so $0 spent by this sweep; the start-of-run credit reading was not saved (GAP). core 12 (page 2 empty), community 8 (page 2 empty), deshe 0, 7 full texts and 4 parent posts. The 18 Oct Sutton post 2111906108600467489 is now saved in `raw/2026-10-20/x/threads-fulltext.txt`.
 - Sites: kaspa.org and kaspa.org/build (CloudFront Hit; `Date` still 19 Oct), kaspaexplained.com/status, research.kas.pa, kaspa.news and vprogs-tt.izio.fr HTTP 200 (third-party sites: see kaspa-builders); kns-2.gitbook.io, api.kaspa.org and api-tn10 root HTTP 307. Bodies and headers in `raw/2026-10-20/sites/`.
 - Bot mail: no hand-off file found on the box since 19 Oct 07:40.
 

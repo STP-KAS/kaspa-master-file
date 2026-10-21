@@ -36,7 +36,7 @@ Community explainer, **not core, not a KIP, not a pin.** [@kaspaunchained](https
 
 | Item in the tweet | Honest object |
 | --- | --- |
-| 1 / KCC20 “reference mostly done” | Spec [kcc-0020.md](https://github.com/kaspanet/kccs/blob/main/kcc-0020.md) is **Draft**. Manyfest [kcc20-live](https://github.com/Manyfestation/kcc20-live) is an **offline Argent demo** (last GitHub 9 Sep, argent pin `94f249a`). **Not** [argent-lang/kcc20-reference](https://github.com/argent-lang/kcc20-reference) (WIP). **Not** silverscript example `kcc20.sil`. **Not** KaspaKaha frozen template. |
+| 1 / KCC20 “reference mostly done” | Spec [kcc-0020.md](https://github.com/kaspanet/kccs/blob/main/kcc-0020.md) is **Draft**. Manyfest [kcc20-live](https://github.com/Manyfestation/kcc20-live) is an **offline Argent demo** (last GitHub 9 Sep, argent pin `94f249a`). **Not** [argent-lang/kcc20-reference](https://github.com/argent-lang/kcc20-reference) (WIP). **Not** silverscript example `kcc20.sil`. **Not** KaspaKaha frozen template. *(Superseded 21 Oct 2026: KCC-1, KCC-2 and KCC-20 are `Status: Final` on kccs main `1ed87aef` (#39, #40, #41); the KCC-20 text is unchanged from Last Call. See README Now.)* |
 | Field order | Spec: `amount, owner, owner_scheme, borrow_scheme, borrow_guard, extension_commitment`. `kcc20-live` `.ag` swaps `borrow_guard` / `borrow_scheme`. KCC-1 §8.1: declaration order **is** the ABI. Different dispatch type string. |
 | 2 / Argent template | [argent-template](https://github.com/argent-lang/argent-template) **local runtime only**. Izio 16 Sep getting-started already catalogued §4d. No tag. |
 | 3 / DAGKnight | [#1104](https://github.com/kaspanet/rusty-kaspa/pull/1104) head still `a5888da`. Merge fence: parent-order / `sort_unstable` vs paper. Outsider test [#1132](https://github.com/kaspanet/rusty-kaspa/pull/1132). **Not shipped.** |
@@ -132,7 +132,7 @@ Grok Build cross-session memory enabled. Indexed **64** Grok Build sessions on t
 | Izio getting-started | [16 Sep thread](https://x.com/IzioDev/status/2100178860700512752): Git+Rust → `git clone https://github.com/argent-lang/argent-template` → `./setup` → [video](https://www.youtube.com/watch?v=xZsuvcc9qPk). Examples: [playground/ag](https://github.com/argent-lang/argent-playground/tree/master/ag), [argent/examples](https://github.com/argent-lang/argent/tree/master/examples). PR apps to argent-playground. Discord `#development`. Docs should teach **how to use**, not how Argent operates. **Not a tag. Not product.** Catalog: §4d. |
 | Argent **PR #63** | **Merged 14 Sep** (Izio → Sutton). Leader/delegate **rules 5 and 6 now compile** into generated `.sil` (`OpCovOutputCount(c) == OpAuthOutputCount(l)`; `OpCovInputIdx(c, 0) == this.activeInputIndex`). Old “[NOT IMPLEMENTED]” pin is **stale**. Still **no tag**. README still not release-ready. Gramlane still one own-UTXO. |
 | Argent **PR #62** | **Open** (module loading rework). Next claimed step: AST-to-AST pipeline. |
-| argent-lang org | **4** public repos (was 3). New: [kcc20-reference](https://github.com/argent-lang/kcc20-reference) — README `# kcc20-reference (wip)`, [PR #1](https://github.com/argent-lang/kcc20-reference/pull/1) open. **Not** adopted KCC-20. |
+| argent-lang org | **4** public repos (was 3). New: [kcc20-reference](https://github.com/argent-lang/kcc20-reference) — README `# kcc20-reference (wip)`, [PR #1](https://github.com/argent-lang/kcc20-reference/pull/1) open. **Not** adopted KCC-20. *(Superseded 21 Oct 2026: kcc20-reference #1 merged 7 Oct; pin now `27f8403f`. KCC-20 is Final on kccs main `1ed87aef`. See README Now.)* |
 | Sil `#250` / `#251` | Rechecked **still open**. |
 | Thread noise | zKAS merge-mine / `$kasdistro` replies. **Not pins.** vProgs still a framework without a product testnet (Maksim Biriukov in-thread). |
 
@@ -178,7 +178,7 @@ Hard-tested **all 36** STP-KAS GitHubs against [groks-wallet](https://github.com
 | Luke | Follow-up in [grok-heavy-test](https://github.com/STP-KAS/grok-heavy-test). Windows `216ad77` still green. Funded live proof **not** run. |
 | KaspaSilver | Note in [kaachat-desktop](https://github.com/STP-KAS/kaachat-desktop). `npm test` 9/9. groks-wallet cannot log in (inject only). |
 
-Referee: [kaspaexplained.com/status](https://kaspaexplained.com/status) — GHOSTDAG live, 10 BPS live, Toccata live, DAGKnight not shipped, KCC-20 Draft.
+Referee: [kaspaexplained.com/status](https://kaspaexplained.com/status) — GHOSTDAG live, 10 BPS live, Toccata live, DAGKnight not shipped, KCC-20 Draft. *(Superseded 21 Oct 2026: KCC-1, KCC-2 and KCC-20 are `Status: Final` on kccs main `1ed87aef` (#39, #40, #41); the KCC-20 text is unchanged from Last Call. See README Now.)*
 
 ### What this pass did (14 Sep 2026, BankQuote)
 
@@ -215,7 +215,7 @@ Daily Grok bot (`dagknight-test-grok daily update`) + kaspa.news / GitHub / X ch
 | Wallet/UTXO paging recap | [kaspa.news 11 Sep](https://kaspa.news/articles/wallets-still-have-to-catch-up-before-kaspa-feels-easy-to-use) — paged UTXO lookup still under review; ECDSA owner display still a proposal. Argent leader/delegate rules 5/6 were unimplemented **that day**; they **compile as of 14 Sep** (#63). Still no Argent tag. |
 | L1 numbers | DAA **537,990,049**; supply **~27.696B** (27,696,135,848); reward **2.18267645**; hashrate **~347.6 PH/s**. |
 
-Pins **unchanged:** silverc **v1.0.0** (`3ed9733`); `#234` unmerged; `#243` open; `#250` open; Argent no tag; KCC-20 Draft; KCC-0012 **Draft**; Toccata live; DAGKnight not shipped. In-page inject stays Kasware/Kastle until a wallet actually ships KCC-0012.
+Pins **unchanged:** silverc **v1.0.0** (`3ed9733`); `#234` unmerged; `#243` open; `#250` open; Argent no tag; KCC-20 Draft; KCC-0012 **Draft**; Toccata live; DAGKnight not shipped. In-page inject stays Kasware/Kastle until a wallet actually ships KCC-0012. *(Superseded 21 Oct 2026: KCC-1, KCC-2 and KCC-20 are `Status: Final` on kccs main `1ed87aef` (#39, #40, #41); the KCC-20 text is unchanged from Last Call. See README Now.)*
 
 ### What this pass did (11 Sep 2026, second look)
 
@@ -232,7 +232,7 @@ Reviewed the freeze after it landed on `main` ([PR #1](https://github.com/STP-KA
 | Public intel-pack leaked `C:\Users\…` paths | Redact to `LOCAL`. Dumps stay off this repo. |
 | `#250` still unmerged | Rechecked. `State[].split()` tuples still forbidden on v1.0.0. |
 
-Pins **unchanged:** silverc **v1.0.0** (`3ed9733`); `#234` unmerged; `#243` open; Argent no tag; KCC-20 Draft; Toccata live; DAGKnight not shipped.
+Pins **unchanged:** silverc **v1.0.0** (`3ed9733`); `#234` unmerged; `#243` open; Argent no tag; KCC-20 Draft; Toccata live; DAGKnight not shipped. *(Superseded 21 Oct 2026: KCC-1, KCC-2 and KCC-20 are `Status: Final` on kccs main `1ed87aef` (#39, #40, #41); the KCC-20 text is unchanged from Last Call. See README Now.)*
 
 ### Grok heavy review (after the freeze)
 
@@ -377,7 +377,7 @@ Org: https://github.com/kaspanet — 26 public repos, rechecked 22 Sep 2026. **U
 | rusty-kaspa | https://github.com/kaspanet/rusty-kaspa | Reference node. Toccata **v2.0.0** (5 Jun 2026), **v2.0.1** (15 Jun). No newer node tag. `dagknight` still unmerged. Open DK ready cluster: [#1104](https://github.com/kaspanet/rusty-kaspa/pull/1104) head `a5888da` (20 Sep naming/review; merge fence parent-order / [#1132](https://github.com/kaspanet/rusty-kaspa/pull/1132)), [#1127](https://github.com/kaspanet/rusty-kaspa/pull/1127) (ready 12 Sep), [#1131](https://github.com/kaspanet/rusty-kaspa/pull/1131), [#1124](https://github.com/kaspanet/rusty-kaspa/pull/1124). Last `dagknight` tip still **8 Sep**. **Not shipped.** |
 | kips | https://github.com/kaspanet/kips | Improvement proposals |
 | silverscript | https://github.com/kaspanet/silverscript | Covenant language. Pin **[v1.0.0](https://github.com/kaspanet/silverscript/releases/tag/v1.0.0)** (Ori / someone235, **9 Sep 2026**, `3ed9733`). Official SemVer v1. Windows zip SHA256 `3e0d660c15a9e7ac90f3960da24d348b076b1891481bfe758db18accc8a102e1`. Language pragma in examples is still `^0.1.0`. `#234` foreign `readInputState` still **closed unmerged**. **New on this pin:** [#249](https://github.com/kaspanet/silverscript/issues/249) `State[].split()` tuple destructure fails (`__inline_*`); fix PR [#250](https://github.com/kaspanet/silverscript/pull/250) **open** (KaspaScopio, 10 Sep). [#251](https://github.com/kaspanet/silverscript/pull/251) **open** (11 Sep) indexing struct-array expressions (`#228`); independent of `#250`. `#243` compute-budget still **open**. |
-| kccs | https://github.com/kaspanet/kccs | Conventions. **KCC-0 Final** (meta process, [kccs#25](https://github.com/kaspanet/kccs/pull/25) merged `c0bb8f3` 21 Sep). KCC-1 / KCC-2 / KCC-20 / KCC-0012 still **Draft**. Not adopted as a gram token. |
+| kccs | https://github.com/kaspanet/kccs | Conventions. **KCC-0 Final** (meta process, [kccs#25](https://github.com/kaspanet/kccs/pull/25) merged `c0bb8f3` 21 Sep). KCC-1 / KCC-2 / KCC-20 / KCC-0012 still **Draft**. Not adopted as a gram token. *(Superseded 21 Oct 2026: KCC-1, KCC-2 and KCC-20 are `Status: Final` on kccs main `1ed87aef` (#39, #40, #41); the KCC-20 text is unchanged from Last Call. See README Now.)* |
 | vprogs | https://github.com/kaspanet/vprogs | Provable computation. Research. No public testnet as product. Master `f9b84a8` (28 Jul). **22 Sep:** [#148](https://github.com/kaspanet/vprogs/pull/148) closed unmerged. Stack #147 → [#153](https://github.com/kaspanet/vprogs/pull/153) → [#154](https://github.com/kaspanet/vprogs/pull/154) draft `f84525b5` → [#152](https://github.com/kaspanet/vprogs/pull/152) draft `f61b46f4` (gap retry plus #154). Guest-demo lock is `291d4f29`, which is #156, not this merge. |
 | kaspa-python-sdk | https://github.com/kaspanet/kaspa-python-sdk | Python bindings |
 | docs | https://github.com/kaspanet/docs | Documentation |
@@ -433,8 +433,8 @@ KIP-21 §2.1: `lane_id` is the 20-byte `subnetwork_id`. Valid forms are native `
 | argent-lang/argent | https://github.com/argent-lang/argent | Multi-actor layer **above** Silverscript (Sutton). [PR #59](https://github.com/argent-lang/argent/pull/59) merged **8 Sep** (state vectors in `args!`). [PR #60](https://github.com/argent-lang/argent/pull/60) merged **10 Sep** pins sil **v1.0.0**. [PR #63](https://github.com/argent-lang/argent/pull/63) merged **14 Sep** — leader/delegate **rules 5 and 6 now compile**. [PR #62](https://github.com/argent-lang/argent/pull/62) **open** (module loading). README: **not release-ready**. **No tag.** Getting-started: §4d. |
 | argent-lang/argent-playground | https://github.com/argent-lang/argent-playground | Local demos (counter, ICC, DEX-shaped `dex_asset`). Does **not** prove mainnet. PR your apps here (Izio 16 Sep). |
 | argent-lang/argent-template | https://github.com/argent-lang/argent-template | Starter. `./setup` clones sibling `argent`. **Local runtime only** — no network, no wallet, no submit. |
-| argent-lang/kcc20-reference | https://github.com/argent-lang/kcc20-reference | **WIP** (created 10 Sep). README one line. [PR #1](https://github.com/argent-lang/kcc20-reference/pull/1) open. **Not** adopted KCC-20. |
-| Manyfestation/kcc20-live | https://github.com/Manyfestation/kcc20-live | Offline Argent KCC-20 **demo** (9 Sep). Threshold-borrow example. Does **not** submit. Field order in `.ag` **swaps** `borrow_guard`/`borrow_scheme` vs Draft spec. Not the standard. Not KaspaKaha. |
+| argent-lang/kcc20-reference | https://github.com/argent-lang/kcc20-reference | **WIP** (created 10 Sep). README one line. [PR #1](https://github.com/argent-lang/kcc20-reference/pull/1) open. **Not** adopted KCC-20. *(Superseded 21 Oct 2026: kcc20-reference #1 merged 7 Oct; pin now `27f8403f`. KCC-20 is Final on kccs main `1ed87aef`. See README Now.)* |
+| Manyfestation/kcc20-live | https://github.com/Manyfestation/kcc20-live | Offline Argent KCC-20 **demo** (9 Sep). Threshold-borrow example. Does **not** submit. Field order in `.ag` **swaps** `borrow_guard`/`borrow_scheme` vs Draft spec. Not the standard. Not KaspaKaha. *(21 Oct 2026: KCC-20 is now Final on kccs main `1ed87aef`; this demo was not re-checked against it.)* |
 | KaspaKii/Portrait | https://github.com/KaspaKii/Portrait | Public 1 Sep 2026. Testnet-only, unaudited. |
 | STP-KAS/gramlane | https://github.com/STP-KAS/gramlane | This desk. Grams, kasdomain. |
 | STP-KAS/project-delusional | https://github.com/STP-KAS/project-delusional | Stack index |
@@ -583,7 +583,7 @@ Yonatan’s own “rough core” list (30 Apr 2025): michaelsutton, hashdag, cod
 | This project | [@StppStp](https://x.com/StppStp) | Gramlane / project delusional. **Never DMs you.** |
 | Luke Dunshea | [@elldeeone](https://x.com/elldeeone) | SilverScript v1 credit. GitHub [elldeeone](https://github.com/elldeeone). kaspa-x402 **v1.0.0-rc.1** TN10. Bind that envelope. |
 | Sivan Helfer | [@manyfest_](https://x.com/manyfest_) | SilverScript v1 / KCC-20. GitHub [Manyfestation](https://github.com/Manyfestation). |
-| Alexander Säfström | [@asaefstroem](https://x.com/asaefstroem) | GitHub [saefstroem](https://github.com/saefstroem). **KIP-16 author** (Active). The KIP header spells Safstrom. Also the rusty ZK SDK ([#953](https://github.com/kaspanet/rusty-kaspa/pull/953)) and `OpTxInputDaaScore` ([#861](https://github.com/kaspanet/rusty-kaspa/pull/861)). KCC-0 author. **KCC-0012** lead ([kccs#24](https://github.com/kaspanet/kccs/pull/24)). Author of the open KCC-20 Last Call proposal ([kccs#31](https://github.com/kaspanet/kccs/pull/31)). Sutton [11 Sep](https://x.com/michaelsuttonil/status/2098433221021118762): dapp-dev process + ecosystem standardization. KCC-12 and KCC-20 stay Draft. KIP-16 is law. Own experiment: [stroemnet](https://github.com/saefstroem/stroemnet), see [STP-KAS/kaspa-builders](https://github.com/STP-KAS/kaspa-builders) (entry stroemnet). |
+| Alexander Säfström | [@asaefstroem](https://x.com/asaefstroem) | GitHub [saefstroem](https://github.com/saefstroem). **KIP-16 author** (Active). The KIP header spells Safstrom. Also the rusty ZK SDK ([#953](https://github.com/kaspanet/rusty-kaspa/pull/953)) and `OpTxInputDaaScore` ([#861](https://github.com/kaspanet/rusty-kaspa/pull/861)). KCC-0 author. **KCC-0012** lead ([kccs#24](https://github.com/kaspanet/kccs/pull/24)). Author of the open KCC-20 Last Call proposal ([kccs#31](https://github.com/kaspanet/kccs/pull/31)). Sutton [11 Sep](https://x.com/michaelsuttonil/status/2098433221021118762): dapp-dev process + ecosystem standardization. KCC-12 and KCC-20 stay Draft. KIP-16 is law. Own experiment: [stroemnet](https://github.com/saefstroem/stroemnet), see [STP-KAS/kaspa-builders](https://github.com/STP-KAS/kaspa-builders) (entry stroemnet). *(Superseded 21 Oct 2026: KCC-1, KCC-2 and KCC-20 are `Status: Final` on kccs main `1ed87aef` (#39, #40, #41); the KCC-20 text is unchanged from Last Call. See README Now.)* |
 | BankQuote | [@BankQuote](https://x.com/BankQuote) | Community educator. GitHub [trillskillz](https://github.com/trillskillz) (OpenSilver). Long-form Toccata/covenant essays: §5c. **Not core.** |
 | Daniel | [danieliyahu1](https://github.com/danieliyahu1) | No X on the profile. kccs#24 and his kccs#35 draft are on the **Now** KCC row; his apps moved to [STP-KAS/kaspa-builders](https://github.com/STP-KAS/kaspa-builders) (entry danieliyahu1). [kas-odds](https://github.com/danieliyahu1/kas-odds) and [onlykas](https://github.com/danieliyahu1/onlykas) are his SilverScript apps. [kaspa-simple-mcp](https://github.com/danieliyahu1/kaspa-simple-mcp) is a read-only wrapper of api.kaspa.org, mainnet by default. He follows [ezratameno](https://github.com/ezratameno). Those public repos are not Kaspa. |
 
@@ -605,7 +605,7 @@ Source: [releases/tag/v1.0.0](https://github.com/kaspanet/silverscript/releases/
 
 **Graph (honest):** Ori writes the language → Manyfestation tools + KCC conventions with Izio + Sutton → Sutton also owns Argent (emits SilverScript) → elldeeone ZK builtin. Language grammar is **CashScript-inspired** (Rosco Kalis, MIT) — CREDITS.md, not a Kaspa person.
 
-KCC-0020 authors overlap this table: Manyfestation, Sutton, Billot. That is why Gramlane treats KCC-20 as a **draft to refuse**, not as GRAM.
+KCC-0020 authors overlap this table: Manyfestation, Sutton, Billot. That is why Gramlane treats KCC-20 as a **draft to refuse**, not as GRAM. *(Superseded 21 Oct 2026: KCC-1, KCC-2 and KCC-20 are `Status: Final` on kccs main `1ed87aef` (#39, #40, #41); the KCC-20 text is unchanged from Last Call. See README Now.)*
 
 ---
 
@@ -672,13 +672,13 @@ Telegram Bot API (platform, not Kaspa): https://core.telegram.org/bots/api · ht
 - `#234` foreign `readInputState` framing guard still **closed unmerged**. Own-UTXO `validateOutputState` only.
 - `#243` compiled artifact has **no compute-budget estimate** — still **open**.
 - **New compiler hole on v1.0.0:** [#249](https://github.com/kaspanet/silverscript/issues/249) `State[].split()` tuple destructure emits undefined `__inline_*`. `.0`/`.1` access works; `byte[].split()` tuple works. Fix PR [#250](https://github.com/kaspanet/silverscript/pull/250) **open**, not merged. Do not write `(State[] a, State[] b) = states.split(n)` on this pin.
-- KCC-0020 **Draft**. Issue [#14](https://github.com/kaspanet/kccs/issues/14) supply-split still open. Vectors [#20](https://github.com/kaspanet/kccs/pull/20) still open. Not a gram token.
+- KCC-0020 **Draft**. Issue [#14](https://github.com/kaspanet/kccs/issues/14) supply-split still open. Vectors [#20](https://github.com/kaspanet/kccs/pull/20) still open. Not a gram token. *(Superseded 21 Oct 2026: KCC-1, KCC-2 and KCC-20 are `Status: Final` on kccs main `1ed87aef` (#39, #40, #41); the KCC-20 text is unchanged from Last Call. See README Now.)*
 - Portrait (Kii) public **1 Sep 2026**, testnet-only.
 - DAGKnight: KIP-2 still Proposed. [#1127](https://github.com/kaspanet/rusty-kaspa/pull/1127) (FreshAir: bounded UMC / k^4 depth) **ready for review 12 Sep**. Security write-up still pending. Last `dagknight` commit **8 Sep**. **Not shipped.** Notebook: [dagknight-test-grok](https://github.com/STP-KAS/dagknight-test-grok).
 - kaspa.org rebuilt around “real-time decentralization” (2026). 10 BPS live. 100 BPS is a target, not a spec.
 - Official Toccata guide: https://docs.kaspa.org/toccata — consensus live; SilverScript v1 is tagged; Argent/vProgs tooling still early.
 - @kaspaunchained **17 Sep**: [covenants/SilverScript/Argent](https://x.com/kaspaunchained/status/2100571472561586192) + [docs pointer](https://x.com/kaspaunchained/status/2100572500442980776) → https://docs.kaspa.org/programmability/covenants. Community explainer. **Not a tag.**
-- @kaspaunchained **20 Sep**: [intern roundup](https://x.com/kaspaunchained/status/2101676311244915028) — KCC20 / Argent / DAGKnight / vProgs / x402. Catalog. **Do not weld.** Manyfest `kcc20-live` is offline and **field-order-swapped** vs Draft KCC-20. x402 is elldeeone **v1.0.0-rc.1** TN10, not KCC-20 borrow. DK #1104 still `a5888da`. vprogs #148 draft.
+- @kaspaunchained **20 Sep**: [intern roundup](https://x.com/kaspaunchained/status/2101676311244915028) — KCC20 / Argent / DAGKnight / vProgs / x402. Catalog. **Do not weld.** Manyfest `kcc20-live` is offline and **field-order-swapped** vs Draft KCC-20. x402 is elldeeone **v1.0.0-rc.1** TN10, not KCC-20 borrow. DK #1104 still `a5888da`. vprogs #148 draft. *(21 Oct 2026: KCC-20 is now Final on kccs main `1ed87aef`; this demo was not re-checked against it.)*
 - research.kas.pa: newest thread is **optional privacy / MWEB-like** (JackKas, 8 Sep, [522](https://research.kas.pa/t/optional-privacy-layer-for-kaspa-similar-to-litecoin-mweb/522)). Not a KIP. Kurrent (23 Jun) still not product.
 - STP-KAS implementer kit: https://stp-kas.github.io/kns-spec/ — KasWare/Kastle inscriptions + proven covenant txs. `KasName.sil` on silverc v1.0.0 with **value conservation** (v1 tutorial: `validateOutputState` does not lock amount).
 - Ori v1 post: https://x.com/OriNewman/status/2097731203503640976 — “Silverscript will evolve, Argent will add higher layers.”
@@ -706,7 +706,7 @@ Telegram R&D is observer-only for most people. Discord `#development` / `#resear
 | --- | --- | --- |
 | 27 Aug 2026 | PQ vault spend on **TN10** (ordinary script, no ZK opcode). Repo `kaspa-pqv`. | Posted in Core R&D; [kaspa.news](https://kaspa.news/articles/post-quantum-vault-spends-on-kaspa-testnet-using-existing-script) |
 | 22–23 Aug | Argent synced to current SilverScript (Sutton merge). | kaspa.news |
-| 23 Aug | KaspaKaha testnet AMM against **draft** KCC-0020. Experiment, not a standard. | kaspa.news |
+| 23 Aug | KaspaKaha testnet AMM against **draft** KCC-0020. Experiment, not a standard. | kaspa.news *(Historical: KCC-20 was Draft then; Final since 21 Oct 2026.)* |
 | 3 Sep | `@KASPAglobal`: Toccata is live (DAA 474,165,565). Not coming soon. | X |
 | 3–4 Sep | Framing / foreign-state reads: Sutton says `#234` closed because history assumptions; Scopio/supertypo tests still show slide on unmodified silverc. **Gramlane still never `readInputState`s a foreign UTXO.** | kaspa.news 4 Sep |
 | 4 Sep | rusty-kaspa `dagknight` PRs still **open/draft**. | GitHub |
@@ -751,12 +751,12 @@ Yonatan (digital cash, cohesive tooling, core ≠ product) → Sutton (L1 covena
 | [argent-lang/argent](https://github.com/argent-lang/argent) | Sutton multi-actor frontend. **#59** 8 Sep, **#60** 10 Sep, **#63 merged 14 Sep** (rules 5/6 compile). **#62 open**. Unaudited. No tag. README: not release-ready. |
 | [argent-lang/argent-playground](https://github.com/argent-lang/argent-playground) | Local demos. PR target for community apps (Izio 16 Sep). |
 | [argent-lang/argent-template](https://github.com/argent-lang/argent-template) | Getting-started starter. Local runtime only. |
-| [argent-lang/kcc20-reference](https://github.com/argent-lang/kcc20-reference) | WIP. Not adopted KCC-20. |
-| [Manyfestation/kcc20-live](https://github.com/Manyfestation/kcc20-live) | Offline Argent demo. Field order ≠ Draft spec. Not the standard. |
+| [argent-lang/kcc20-reference](https://github.com/argent-lang/kcc20-reference) | WIP. Not adopted KCC-20. *(Superseded 21 Oct 2026: kcc20-reference #1 merged 7 Oct; pin now `27f8403f`. KCC-20 is Final on kccs main `1ed87aef`. See README Now.)* |
+| [Manyfestation/kcc20-live](https://github.com/Manyfestation/kcc20-live) | Offline Argent demo. Field order ≠ Draft spec. Not the standard. *(21 Oct 2026: KCC-20 is now Final on kccs main `1ed87aef`; this demo was not re-checked against it.)* |
 | [kaspanet/vprogs#139](https://github.com/kaspanet/vprogs/pull/139) | **Open.** ExitLeaf + claim kit. Also #138/#140. **#142** bridge lane-anchor (10 Sep). No product testnet. |
 | [biryukovmaxim/vprog-tictactoe](https://github.com/biryukovmaxim/vprog-tictactoe) | **Guest demo, not a public product.** Tip `75950635` (23 Sep 14:33Z). `Cargo.toml` names branch `fix/g2-access-read-enforcement`. Both `Cargo.lock` files pin `ea7b823`, draft [vprogs#163](https://github.com/kaspanet/vprogs/pull/163). The lock is the pin. [vprogs#152](https://github.com/kaspanet/vprogs/pull/152) HEAD is `f61b46f4`. The guest fork pin is gone. [#24](https://github.com/biryukovmaxim/vprog-tictactoe/issues/24). |
 | [elldeeone/kaspa-x402](https://github.com/elldeeone/kaspa-x402) | TN10 x402 v2 binding. Bind this. Not a fourth envelope. |
-| [kaspanet/kccs#20](https://github.com/kaspanet/kccs/pull/20) | **Open draft.** KCC-20 vectors. Transfer sig unconfirmed. |
+| [kaspanet/kccs#20](https://github.com/kaspanet/kccs/pull/20) | **Open draft.** KCC-20 vectors. Transfer sig unconfirmed. *(Superseded: KCC-20 vectors are in `kcc-0020/vectors/conformance.json` on kccs main; KCC-20 Final since 21 Oct 2026.)* |
 | [kaspanet/kccs#24](https://github.com/kaspanet/kccs/pull/24) | **Open ready / still Draft status.** KCC-0012 wallet provider/discovery (head `7159d48`, 20 Sep amend). No public implementation. |
 | [kaspanet/silverscript#223](https://github.com/kaspanet/silverscript/pull/223) | **Merged.** Dispatch tags ↔ KCC-1 (IzioDev). |
 | [supertypo/simply-kaspa-indexer](https://github.com/supertypo/simply-kaspa-indexer) | L1 Postgres indexer. KNS docs: the KNS resolver uses this. Not api.knsdomains.org. Last push 8 Jul 2026. |

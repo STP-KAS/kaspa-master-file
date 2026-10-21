@@ -5,7 +5,7 @@ You are Grok Build working for stp (STP-KAS). On 21 Oct kccs merged KCC-1 (#39),
 ## Branch for your work
 Use a new `build/2026-10-21-r4` from current `origin/main` (`a762c5e` at prompt time, or later if `master/cleanup-2026-10-21` is merged), in a fresh clone (for example `/workspace/repos/kaspa-master-file-b21r4`; not the shared checkout). Do not push to main. Do not touch `master/*`, `challenge/*`, `grokbot/*`, or `ask/*`.
 
-Branches: `master/cleanup-2026-10-21` (from main `a762c5e`). Commits in order: `6daf1b7` (Do not weld cleanup, prior cell), `faaaf83` (SNAPSHOT row), `e12181a` (first prompt commit), `f752f3d` (prompt: task 12, stp mini), `55a67cd` (master.json URL periods), then this prompt fix (the tip). On main already: `5bafa7a` (KCC-20 Final update), `3eba534` (row), `a762c5e` (challenge F5/F8/F13).
+Branches: `master/cleanup-2026-10-21` (from main `a762c5e`). Commits in order: `6daf1b7` (Do not weld cleanup, prior cell), `faaaf83` (SNAPSHOT row), `e12181a` (first prompt commit), `f752f3d` (prompt: task 12, stp mini), `55a67cd` (master.json URL periods), `db42e12` (prompt fix: KCC Final wording), then this prompt fix (URL count; the tip). On main already: `5bafa7a` (KCC-20 Final update), `3eba534` (row), `a762c5e` (challenge F5/F8/F13).
 
 If a SendToAgent message is missing, the same prompt is also at `prompts/grok-build-2026-10-21-r3.md` on `master/cleanup-2026-10-21`.
 
@@ -42,4 +42,4 @@ If a SendToAgent message is missing, the same prompt is also at `prompts/grok-bu
 - kccs main `1ed87aef`: #41 KCC-20 Final `9dec4a04` (14:50:46Z), #39 KCC-1 Final `1ed87aef` (14:50:49Z), #40 KCC-2 Final `6f271b7b` (11:32:06Z), all merged by saefstroem. KCC-23 Draft since #26 (`1516a6c4`, 14 Oct).
 - kcc20-reference master `27f8403f` (#3 `b7824660` 09:31:51Z, #5 09:51:49Z); #4 KAS-backed example open.
 - manyfest on X 2112920461176655927 (14:54:28Z) links the spec, the reference and three walkthroughs (kcc20.manyfest.dev, /hash-chain, kcc23.manyfest.dev). Explainers, not spec.
-- Cleanup today: "KCC-1 or KCC-2 Last Call = Final" removed from Do not weld. The five kaspa-builders URLs in `master.json` that had captured a sentence period are fixed (`55a67cd`).
+- Cleanup today: "KCC-1 or KCC-2 Last Call = Final" removed from Do not weld. The 11 kaspa-builders URLs (5 file links and 6 bare repo links) in `master.json` that had captured a sentence period are fixed (`55a67cd`).

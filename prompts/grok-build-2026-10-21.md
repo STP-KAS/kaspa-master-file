@@ -5,7 +5,7 @@ You are Grok Build working for stp (STP-KAS). Below is a daily report from the k
 ## Branch for your work
 Use a new `build/2026-10-21` from current `origin/main` (`b180500` at sweep time; it already contains `master/sweep-2026-10-20` and `build/2026-10-20-r2`), in a fresh clone (for example `/workspace/repos/kaspa-master-file-b21`; do not use the shared checkout `/workspace/repos/kaspa-master-file`). Do not push to main. Do not touch `master/*`, `challenge/*`, `grokbot/*`, or `ask/*`. Do not touch or merge the parked `build/2026-10-15` or `build/2026-10-20` (`4c29707`).
 
-Branches: `master/sweep-2026-10-21`. Commits in order: `4af8643` (content), `692a269` (SNAPSHOT row), then this prompt commit (the tip).
+Branches: `master/sweep-2026-10-21`. Commits in order: `4af8643` (content), `692a269` (SNAPSHOT row), `7666dcc` (first prompt commit), `020c16e` (challenge F1/F4 fix: KIPs pointer, #1152 force-push timeline); this prompt fix (challenge F2/F3/F4) is the next and last commit on the branch (the tip).
 
 If a SendToAgent message is missing, the same prompt is also at `prompts/grok-build-2026-10-21.md` on `master/sweep-2026-10-21`.
 
@@ -34,7 +34,7 @@ If a SendToAgent message is missing, the same prompt is also at `prompts/grok-bu
 7. **TN10 public API:** two rounds, recording each backend; the watch saw only `41d9296c` (7/7). No pool size or ratio.
 8. **Close watch #1141/#1147/#1146/#1150/#863/#1156:** every page; confirm nothing after `2026-10-20T05:49:15Z`.
 9. **KGI `58fff562`** status.md increment 11 text; **kaspa.org/build** with saved headers (today CloudFront Hit, `Date` 19 Oct).
-10. **Builders (optional):** third-party items are on kaspa-builders `master/builders-sweep-2026-10-21` (KPI #61, Kaspire and KaChat KIP-22 addresses). Work them only on a kaspa-builders branch, with the caveat.
+10. **Builders (optional):** third-party items are on kaspa-builders `master/builders-sweep-2026-10-21` (third-party items; see kaspa-builders). Work them only on a kaspa-builders branch, with the caveat.
 11. **What to test next** (TN10 only, read-only, no builds, no public posting): short ordered list.
 12. Write sourced facts only to your `build/` branch. After push, list commit links in chat.
 
@@ -42,26 +42,22 @@ If a SendToAgent message is missing, the same prompt is also at `prompts/grok-bu
 
 # Kaspa master watch report — 2026-10-21
 
-All times CEST unless marked Z. Window: GitHub since `2026-10-20T05:49:15Z`; X since the 20 Oct since_ids (core `2112341897549373855`, community `2112402191390847260`, deshe `2109964501059608710`); forum since post 417; bot mail hand-offs since 19 Oct 07:40. core_replies paused. Yesterday's branches (`master/sweep-2026-10-20` @ `8676dcd`, `master/builders-sweep-2026-10-20` @ `a6242a4`) are merged: both are ancestors of today's mains (`b180500`, `1940877`).
+All times CEST unless marked Z. Window: GitHub since `2026-10-20T05:49:15Z`; X since the 20 Oct since_ids (core `2112341897549373855`, community `2112402191390847260`, deshe `2109964501059608710`); forum since post 417; bot mail hand-offs since 19 Oct 07:40. core_replies paused. Yesterday's branches (`master/sweep-2026-10-20` @ `e71560b`, `master/builders-sweep-2026-10-20` @ `1940877`) are merged: `e71560b` is an ancestor of main `b180500`, and `1940877` is kaspa-builders main.
 
 ## Added (master `master/sweep-2026-10-21`, from main `b180500`)
 - **KIP-20 covenant-id hash keying:** kips [#49](https://github.com/kaspanet/kips/pull/49) (Silentpartnercoding, 20 Oct 12:57:22Z, head `7a383b9c`, `kip-0020.md` +11/−1): §3.1 now says the `"CovenantID"` tag is the BLAKE2b key (raw 10 bytes), plus the KCC-23 fixture as a test vector (`c86366ce…394e`); "No consensus change". 0 reviews. Paired with rusty-kaspa [#1157](https://github.com/kaspanet/rusty-kaspa/pull/1157) (Silentpartnercoding, `8d2cac87`, +125 lines of covenant-id test vectors in `covenant_id.rs`; 0 reviews). (KIPs, Covenant-id lookup cells)
 - **KCC-3 contested:** kccs [#38](https://github.com/kaspanet/kccs/pull/38) (IzioDev, 20 Oct 12:14:21Z, head `299f6a0b`, +564/−0) adds `kcc-0003.md` "Segregated Hierarchy for HD Wallets" (authors Ori Newman, Romain Billot; Draft; Interface; path `m / purpose' / coin_type' / sig_scheme' / account' / change / address_index`, purpose 44 P2PK / 45 multisig). It has no P2PKH-via-P2SH purpose. #29, #37 and #38 all ask for 3; #37 still 0 files at `8088f5c5`. Ori Newman X [2112430254941978741](https://x.com/OriNewman/status/2112430254941978741): "I wrote kip22 (now KCC-3) …". kips #48 unchanged at `b031344f`. (KCC-3/4/5, KIPs cells)
-- **Covenant-id index:** #1152 rewritten 20 Oct (8 commits re-committed 11:17Z–13:50Z; heads `e143243a` → `689211bb` → `7222a188`); 45 files, +2771/−67, still draft, no new review or reply since D-Stacks' 18 Oct comments. (Covenant-id lookup cell)
+- **Covenant-id index:** #1152 rewritten 20 Oct (8 commits re-committed 11:17Z–13:50Z; five force-pushes, heads `ebcd0641` → `e143243a` → `e3b89502` → `689211bb` → `7222a188`); 45 files, +2771/−67, still draft, no new review or reply since D-Stacks' 18 Oct comments. (Covenant-id lookup cell)
 - **vprogs snapshot stack:** hmoog CHANGES_REQUESTED on [#128](https://github.com/kaspanet/vprogs/pull/128) (22:53:45Z, 13 inline), [#129](https://github.com/kaspanet/vprogs/pull/129) (23:29:39Z, 4) and [#130](https://github.com/kaspanet/vprogs/pull/130) (23:49:46Z, 3), 20 Oct. Key point on #129: restore compares only `new_state` and `tx_id`, so "A crafted header can pin a genuine settlement to any chain block between the real `block_prove_to` and the containing block". #127 (1/4) no new review. (vProgs cell)
 - **KCC-20 status:** saefstroem X [2112516625186574491](https://x.com/asaefstroem/status/2112516625186574491): "KCC-20 is final on October 21" (14 days after #31). At 05:57:38Z today `kcc-0020.md` on main `1516a6c4` says `Status: Last Call` (no `Last-Call-Deadline` line). KCC-0 §4 also requires every `Requires` entry to be Final; KCC-1 and KCC-2 are still Last Call. Recorded as: not Final on main. (KCC still open cell)
 - **Native PQ signatures (belief):** Ori Newman X [2112432692549788127](https://x.com/OriNewman/status/2112432692549788127): "I believe we will eventually add native pqdsa support, but this is only the first step", linking biryukovmaxim/kaspa-xmss. (kaspa-xmss cell)
 - **KGI:** [#14](https://github.com/kaspa-live/kaspa-graph-inspector-rs/pull/14) merged 21:31:14Z as `58fff562` (increment 11, SSE client registry; 0 reviews). (KGI v2 design cell)
 - **TN10 public API:** 7 reads 05:49:33Z–05:49:40Z, all HTTP 200, Cloudflare MISS, 2.1.0, isSynced true, blueScoreDiff 3–21; one backend `41d9296c` (same as 20 Oct). DAA **602266816** at 05:49:40Z. (TN10 public API cell)
-- One pointer line in the KIPs cell: Kaspire and KaChat already ship the Draft KIP-22 `m / 22' / …` P2SH addresses (see kaspa-builders).
 - Commits: content [`4af8643`](https://github.com/STP-KAS/kaspa-master-file/commit/4af864377869717865af14d6cda33455c38ffef5), SNAPSHOT row [`692a269`](https://github.com/STP-KAS/kaspa-master-file/commit/692a269), prompt commit next.
 
 ## Added (builders `master/builders-sweep-2026-10-21`, from main `1940877`)
-- **KPI:** #56–#61 merged 20 Oct, main `7ffe8353`; [#61](https://github.com/olafweller/kaspa-privacy-initiative/pull/61) (merge `35f6a91a`) is the author's TN10 recovery and full-withdrawal trial ("All 17 trial transactions were accepted"; one owner runs both users; "not an anonymity or production-privacy claim"). WellerOlaf X [2112660896136994874](https://x.com/WellerOlaf/status/2112660896136994874). elldeeone fork branch `shielded-kas-research` (27 commits, titles only). Index cell rewritten, entry updated.
-- **Kaspire:** Android 0.11.53 / extension 0.5.11 (20 Oct 12:37Z) add a Mainnet P2SH account "Use KIP-22 derivation"; 0.11.54 / 0.5.14 fixes; main `57f99426` "KCC20 consolidation". Wallets entry.
-- **KaChat:** `bba1b1e9` KIP-22 spending addresses at `m/22'/111111'/0'/0/<i>`; 28 more commits to `6e938ff7`. Name-services entry.
-- Dated section only: CAIP [#193](https://github.com/ChainAgnostic/namespaces/pull/193) (reviewer "waiting on second review"), KOB `734664b2` (KasWare and Kaspire PASS on TN10, Kastle 2.61.0 cannot connect; author's record), KasperoLabs MinerDrip in its launchpad (claim), kastle #398 closed unmerged.
-- Commits: content [`2d6eb64`](https://github.com/STP-KAS/kaspa-builders/commit/2d6eb64d06eb4b3160d6f0edb011011abe80ffdd), row [`46a0efb`](https://github.com/STP-KAS/kaspa-builders/commit/46a0efb).
+- Third-party items are on kaspa-builders `master/builders-sweep-2026-10-21` (third-party, not audited, not desk-tested); not in the master.
+- Commits: content [`2d6eb64`](https://github.com/STP-KAS/kaspa-builders/commit/2d6eb64d06eb4b3160d6f0edb011011abe80ffdd), row [`46a0efb`](https://github.com/STP-KAS/kaspa-builders/commit/46a0efb), challenge fix `2074b8a`.
 
 ## Held / unchanged
 - rusty-kaspa master `4edcbbcc`, tag v2.1.0; #1141 `1d77a486` (CHANGES_REQUESTED stands); #1147, #1146, #1150, #863, #1156: no update after the marker.
@@ -89,5 +85,5 @@ All times CEST unless marked Z. Window: GitHub since `2026-10-20T05:49:15Z`; X s
 - None new. Still waiting on stp: whether core_replies should run again (paused since 5 Oct), and item 13 (private desk repo names on main).
 
 ## Challenge pass requested
-- kaspa-master-file `master/sweep-2026-10-21`: base main `b180500`, commits `4af8643` (content), `692a269` (row), prompt commit (tip in the hand-off). Files: README.md, master.json, SNAPSHOT-HISTORY.md, prompts/grok-build-2026-10-21.md.
-- kaspa-builders `master/builders-sweep-2026-10-21`: base main `1940877`, tip `46a0efb` (`2d6eb64` content, `46a0efb` row). Files: README.md, SNAPSHOT-HISTORY.md, builders.json, entries/olafweller-kpi.md, entries/wallets-kcc20.md, entries/name-services.md.
+- kaspa-master-file `master/sweep-2026-10-21`: base main `b180500`, commits `4af8643` (content), `692a269` (row), `7666dcc` (prompt), `020c16e` (challenge fix), then the prompt fix (tip in the hand-off). Files: README.md, master.json, SNAPSHOT-HISTORY.md, prompts/grok-build-2026-10-21.md.
+- kaspa-builders `master/builders-sweep-2026-10-21`: base main `1940877`, tip `2074b8a` (`2d6eb64` content, `46a0efb` row, `2074b8a` challenge fix). Files: README.md, SNAPSHOT-HISTORY.md, builders.json, entries/olafweller-kpi.md, entries/wallets-kcc20.md, entries/name-services.md.

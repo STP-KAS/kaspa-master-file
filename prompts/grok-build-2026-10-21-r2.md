@@ -5,7 +5,7 @@ You are Grok Build working for stp (STP-KAS). Below is the report from the kaspa
 ## Branch for your work
 Use a new `build/2026-10-21-r3` from current `origin/main` (`a77c6a3` at sweep time), in a fresh clone (for example `/workspace/repos/kaspa-master-file-b21r3`; do not use the shared checkout). Do not push to main. Do not touch `master/*`, `challenge/*`, `grokbot/*`, or `ask/*`.
 
-Branches: `master/sweep-2026-10-21-r2`. Commits in order: `de0c309` (content), `a8e029f` (SNAPSHOT row), then this prompt commit (the tip). Builders: `84033b7` (content), `296ecf2` (row, tip).
+Branches: `master/sweep-2026-10-21-r2`. Commits in order: `de0c309` (content), `a8e029f` (SNAPSHOT row), `330c322` (first prompt commit), `1ead2dc` (challenge F1/F2 fix), then this prompt fix (the tip). Builders: `84033b7` (content), `296ecf2` (row), `2238bcd` (challenge F1 fix, tip).
 
 If a SendToAgent message is missing, the same prompt is also at `prompts/grok-build-2026-10-21-r2.md` on `master/sweep-2026-10-21-r2`.
 
@@ -27,7 +27,7 @@ If a SendToAgent message is missing, the same prompt is also at `prompts/grok-bu
 ## Tasks
 1. **KCC Final status:** re-read `kcc-0001.md`, `kcc-0002.md`, `kcc-0020.md` on kccs main with saved headers. Confirm #40 merged as `6f271b7b` and KCC-2 says Final; confirm #39 and #41 are open with dismissed approvals (every page of reviews and timeline). Does KCC-0 §4 let KCC-20 go Final while KCC-1 is Last Call? Quote the text.
 2. **kccs #38:** read every inline comment of someone235's CHANGES_REQUESTED review (06:24:02Z) and say what KCC-3 must change. Any author reply or new commit?
-3. **#1152 at `0ef728a2`:** confirm the two 21 Oct force-pushes from the timeline; say what the new CLI command does (read code; "not verified" where unsure). Keep "draft, not merged".
+3. **#1152 at `0ef728a2`:** confirm the two 21 Oct force-pushes from the timeline; say what the new CLI command does (read code; "not verified" where unsure). Keep "not merged"; it left draft at 13:58:41Z.
 4. **vprogs #149 / #131:** confirm hmoog's reviews; check `zk/backend/risc0/runtime-processor/Cargo.toml` at `51b56aab` for the two `branch = "master"` dev-dependencies.
 5. **kcc20-reference #4 (`2f7cc78f`) and Kas-Smiths topic 164:** what does the KAS-backed example claim (one base unit = one sompi in the token UTXO)? Text read only; no builds.
 6. **TN10 public API:** two rounds, recording each backend. No pool size or ratio.
@@ -46,15 +46,15 @@ All times CEST unless marked Z. Window: GitHub since `2026-10-21T05:36:55Z`; X s
 - **KCC-1 and KCC-20 are not Final:** [#39](https://github.com/kaspanet/kccs/pull/39) and [#41](https://github.com/kaspanet/kccs/pull/41) were approved at 11:31:30Z/11:31:34Z. Manyfestation then merged main into both (12:46Z; heads `463267e7`, `51e707a8`), and the approvals were dismissed at 12:46:59Z. #39 asks for review again (13:37:15Z). Both are open; `kcc-0001.md` and `kcc-0020.md` still say `Status: Last Call`. The bot mail's "approved" for these two is out of date.
 - **KCC-3:** someone235 CHANGES_REQUESTED on [#38](https://github.com/kaspanet/kccs/pull/38) at 06:24:02Z (5 inline): only show `m/3'`, not purpose 44/45; move the multisig parts to KCC-4; "avoid rejection". No author reply.
 - **kcc20-reference:** #3 merged 09:31:51Z (`b7824660`), #5 .gitattributes merged 09:51:49Z (`27f8403f`, tip). #4 is now "Add KAS-backed KAS20 example" (`2f7cc78f`, +18153/−4), open, not reviewed. Kas-Smiths [topic 164](https://kas-smiths.org/t/a-kas-backed-kcc-20-token/164) (post 418, Manyfest, 11:01:10Z) proposes it as the canonical KAS-backed token. On X Michael Sutton (2112884389042332079): KCC-20 conceptually allows one transfer per tx per covenant, with a leader-delegator design; manyfest_ (2112836103086788933): a KCC20↔KRC bridge would be a third-party app with trust assumptions.
-- **Covenant id:** rusty-kaspa #1152 force-pushed at 11:18:40Z (`21330df4`) and 13:18:41Z, head [`0ef728a2`](https://github.com/kaspanet/rusty-kaspa/pull/1152/commits/0ef728a2eb14020737e03d2cc7989e09b885feb1) ("feat(cli): get-utxos-by-covenant-ids command"). 45 files, +2735/−72, draft, no review. The bot mail's `21330df` is already replaced. #1157 unchanged.
+- **Covenant id:** rusty-kaspa #1152 force-pushed at 11:18:40Z (`21330df4`) and 13:18:41Z, head [`0ef728a2`](https://github.com/kaspanet/rusty-kaspa/pull/1152/commits/0ef728a2eb14020737e03d2cc7989e09b885feb1) ("feat(cli): get-utxos-by-covenant-ids command"). 45 files, +2735/−72, out of draft since 13:58:41Z (review requested from D-Stacks), not merged, no review. The bot mail's `21330df` is already replaced. #1157 unchanged.
 - **vprogs:** [#149](https://github.com/kaspanet/vprogs/pull/149) CHANGES_REQUESTED by hmoog at 11:21:10Z: two dev-dependencies in runtime-processor still on `branch = "master"`. [#131](https://github.com/kaspanet/vprogs/pull/131) APPROVED at 12:05:23Z. Neither is merged. The vProgs row and its json note now link the public new names of the two renamed STP-KAS repos (API: public; guard passed).
 - **TN10 public API:** 7 reads 13:47:13Z–13:47:19Z, all HTTP 200, synced, 2.1.0, backends `884e1eaf` (3) and `41d9296c` (4); DAA 602553612.
 - **Kas-Smiths:** 51 / 392 / 114.
 - Commits: content [`de0c309`](https://github.com/STP-KAS/kaspa-master-file/commit/de0c309eb684f219b041da35898fb555c61ff925), SNAPSHOT row `a8e029f`; the prompt commit is next and last.
 
 ## Added (builders `master/builders-sweep-2026-10-21-r2`, from main `bad7625`)
-- Kastle v2.61.2 (#397 validation hardening) and v2.61.3 (#401 Chrome Web Store upload fix); KPI: KASPAglobal X 2112820036695974389 retells the 20 Oct operator-off test, plus elldeeone fork commit `7d63e5b6`; RossKU/kob 5 commits to `a02345f8`. Third-party, not desk-checked.
-- Commits: content [`84033b7`](https://github.com/STP-KAS/kaspa-builders/commit/84033b7), row `296ecf2` (tip).
+- Third-party items are on kaspa-builders `master/builders-sweep-2026-10-21-r2` (third-party, not audited, not desk-tested); not in the master.
+- Commits: content [`84033b7`](https://github.com/STP-KAS/kaspa-builders/commit/84033b7), row `296ecf2`, challenge fix `2238bcd` (tip).
 
 ## Held / unchanged
 - rusty-kaspa master `4edcbbcc`; kips #49 `7a383b9c`; kips master `e4ae233`; vprogs master `f9b84a86`, #127–#130 unchanged; research.kas.pa newest topic 545; all 11 tag lists unchanged.

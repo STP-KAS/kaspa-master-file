@@ -5,7 +5,7 @@ You are Grok Build working for stp (STP-KAS). Below is a daily report from the k
 ## Branch for your work
 Use a new `build/2026-10-21` from current `origin/main` (`b180500` at sweep time; it already contains `master/sweep-2026-10-20` and `build/2026-10-20-r2`), in a fresh clone (for example `/workspace/repos/kaspa-master-file-b21`; do not use the shared checkout `/workspace/repos/kaspa-master-file`). Do not push to main. Do not touch `master/*`, `challenge/*`, `grokbot/*`, or `ask/*`. Do not touch or merge the parked `build/2026-10-15` or `build/2026-10-20` (`4c29707`).
 
-Branches: `master/sweep-2026-10-21`. Commits in order: `4af8643` (content), `692a269` (SNAPSHOT row), `7666dcc` (first prompt commit), `020c16e` (challenge F1/F4 fix: KIPs pointer, #1152 force-push timeline); this prompt fix (challenge F2/F3/F4) is the next and last commit on the branch (the tip).
+Branches: `master/sweep-2026-10-21`. Commits in order: `4af8643` (content), `692a269` (SNAPSHOT row), `7666dcc` (first prompt commit), `020c16e` (challenge F1/F4 fix: KIPs pointer, #1152 force-push timeline); `39bcdf3` (prompt fix, challenge F2/F3/F4); this builders-tip refresh is the next and last commit (the tip).
 
 If a SendToAgent message is missing, the same prompt is also at `prompts/grok-build-2026-10-21.md` on `master/sweep-2026-10-21`.
 
@@ -57,7 +57,7 @@ All times CEST unless marked Z. Window: GitHub since `2026-10-20T05:49:15Z`; X s
 
 ## Added (builders `master/builders-sweep-2026-10-21`, from main `1940877`)
 - Third-party items are on kaspa-builders `master/builders-sweep-2026-10-21` (third-party, not audited, not desk-tested); not in the master.
-- Commits: content [`2d6eb64`](https://github.com/STP-KAS/kaspa-builders/commit/2d6eb64d06eb4b3160d6f0edb011011abe80ffdd), row [`46a0efb`](https://github.com/STP-KAS/kaspa-builders/commit/46a0efb), challenge fix `2074b8a`.
+- Commits: content [`2d6eb64`](https://github.com/STP-KAS/kaspa-builders/commit/2d6eb64d06eb4b3160d6f0edb011011abe80ffdd), row [`46a0efb`](https://github.com/STP-KAS/kaspa-builders/commit/46a0efb), challenge fix `bad7625`.
 
 ## Held / unchanged
 - rusty-kaspa master `4edcbbcc`, tag v2.1.0; #1141 `1d77a486` (CHANGES_REQUESTED stands); #1147, #1146, #1150, #863, #1156: no update after the marker.
@@ -86,4 +86,4 @@ All times CEST unless marked Z. Window: GitHub since `2026-10-20T05:49:15Z`; X s
 
 ## Challenge pass requested
 - kaspa-master-file `master/sweep-2026-10-21`: base main `b180500`, commits `4af8643` (content), `692a269` (row), `7666dcc` (prompt), `020c16e` (challenge fix), then the prompt fix (tip in the hand-off). Files: README.md, master.json, SNAPSHOT-HISTORY.md, prompts/grok-build-2026-10-21.md.
-- kaspa-builders `master/builders-sweep-2026-10-21`: base main `1940877`, tip `2074b8a` (`2d6eb64` content, `46a0efb` row, `2074b8a` challenge fix). Files: README.md, SNAPSHOT-HISTORY.md, builders.json, entries/olafweller-kpi.md, entries/wallets-kcc20.md, entries/name-services.md.
+- kaspa-builders `master/builders-sweep-2026-10-21`: base main `1940877`, tip `bad7625` (`2d6eb64` content, `46a0efb` row, `bad7625` challenge fix). Files: README.md, SNAPSHOT-HISTORY.md, builders.json, entries/olafweller-kpi.md, entries/wallets-kcc20.md, entries/name-services.md.

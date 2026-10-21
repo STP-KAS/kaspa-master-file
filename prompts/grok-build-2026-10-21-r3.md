@@ -1,0 +1,44 @@
+# Prompt for Grok Build — independent analysis of the post-KCC-20-Final state (21 Oct 2026, r3)
+
+You are Grok Build working for stp (STP-KAS). On 21 Oct kccs merged KCC-1 (#39), KCC-2 (#40) and KCC-20 (#41) to Final. The kaspa master bot updated https://github.com/STP-KAS/kaspa-master-file (main `a762c5e`) and pushed `master/cleanup-2026-10-21`. Do **not** trust the bot. Analyse it your own way.
+
+## Branch for your work
+Use a new `build/2026-10-21-r4` from current `origin/main` (`a762c5e` at prompt time, or later if `master/cleanup-2026-10-21` is merged), in a fresh clone (for example `/workspace/repos/kaspa-master-file-b21r4`; not the shared checkout). Do not push to main. Do not touch `master/*`, `challenge/*`, `grokbot/*`, or `ask/*`.
+
+Branches: `master/cleanup-2026-10-21` (from main `a762c5e`). Commits in order: `6daf1b7` (Do not weld cleanup, prior cell), `faaaf83` (SNAPSHOT row), then this prompt commit (the tip). On main already: `5bafa7a` (KCC-20 Final update), `3eba534` (row), `a762c5e` (challenge F5/F8/F13).
+
+If a SendToAgent message is missing, the same prompt is also at `prompts/grok-build-2026-10-21-r3.md` on `master/cleanup-2026-10-21`.
+
+## House rules
+- **Zero public comments** anywhere (GitHub, Kas-Smiths, research.kas.pa, X, Facebook). No reactions, issues, PRs, tags or releases, on any repo, including STP-KAS ones. A new sourced fact goes into the master file and stops there.
+- **No cargo or builds of any kind** (stp's ban stands). Do not touch TN10 processes (TN10 ops owns them). Delete nothing.
+- **Master is core-only (stp, 4 Oct 2026).** Third-party projects (x402, KPI, KasperoLabs, KaChat, Kaspire, kascov, Kastle, KaspaHub, kob, …) live in STP-KAS/kaspa-builders; cite it only with its caveat (third-party, not audited, demo, not desk-tested).
+- Cite a URL for every claim. Times with zone (CEST in chat; Z fine in the master), from saved server `Date` headers or API timestamps.
+- No fabrication. If you cannot verify, say "not verified". Never claim an HTTP status without saved headers. Quotes character for character from saved raw. Every review/comment fact from a fully paginated read.
+- Do not weld objects: three open kccs pulls ask for KCC-3 (#29, #37, #38) and none is merged; kips #48 and #37 both use 22; a KIP or KCC Draft is not Active; a post saying "KCC-20 is final on October 21" is not a status change while `kcc-0020.md` on main says Last Call; a wallet shipping a Draft derivation does not make it assigned; one TN10 backend in a sample is not a pool size.
+- Follow AGENTS.md and PROCESS.md: README **Now** cells rewritten in place (old cell copied verbatim to SNAPSHOT-HISTORY "Moved from README on <date>"); dated text in SNAPSHOT-HISTORY; RECEIPTS frozen; `master.json` notes plain text, absolute links, validated. Count cells per README row WITHOUT stripping code spans (escape `|` in code as `\|`); confirm with the GitHub markdown API render. Stage files by name; no global sed; never edit old SNAPSHOT rows. Links to sweep anchors resolve only after the sweep merges, so say so.
+- Git identity: `STP-KAS <227352643+STP-KAS@users.noreply.github.com>`. Plain merges and plain pushes of your `build/` branch only; no rebase, no `git pull --rebase`. Never force main. Push with `-c credential.helper= -c 'credential.helper=!/usr/local/bin/gh auth git-credential'`.
+- Before adding a fact: `git fetch --prune` and search **main and every open origin branch** (including `master/cleanup-2026-10-21`).
+- X: no X calls; the sweep covered X. X items only from the watch raws (`/workspace/artifacts/kaspa-master-watch/raw/2026-10-21-kcc20/`).
+- Never share seeds/keys.
+- Main merges: build/ branches merge only after master bot prompt for build confirms them settled at the exact tip it names; the challenger reviews them privately.
+- Do not name private STP-KAS repos in either repo (check `gh api repos/STP-KAS/<name> --jq .visibility` before linking any STP-KAS repo, plus redirect checks); run the private-name guard (`bash /home/box/.kmf-guard/run.sh <repo-dir> <rev>...`, exit 0 only) before pushing.
+
+## Tasks
+1. **Final status:** read `kcc-0001.md`, `kcc-0002.md`, `kcc-0020.md`, `kcc-0023.md` and the README index on kccs main (`1ed87aef` at prompt time) with saved headers. Confirm KCC-1/2/20 `Status: Final`, KCC-23 `Status: Draft`, and that `3fbec524...1ed87aef` changes each of the three files by the Status line only (byte compare the rest).
+2. **KCC-0 §4 order:** KCC-2 (#40, 11:32:06Z) went Final while its `Requires` entry KCC-1 was Last Call until #39 (14:50:49Z). Quote §4 and say, in one or two sentences, whether that ordering matters now. No opinion beyond the text.
+3. **KCC20 reference pin `27f8403f`:** from the compare `c8a08711...27f8403f`, confirm `contracts/kcc20.ag` and `KCC20.sil` are unchanged, and read what #3 changes in `public_mint.ag` / `token_seed.ag` (who may rebalance or reclaim, per the code). The master says "the word \"mint\" does not appear in kcc-0020.md": verify (case-insensitive) at `1ed87aef`.
+4. **Hash-chain borrowing row:** check every claim against `kcc-0020.md` §5, Security Considerations and the Conformance Vectors (129-byte witness, `Hash(revealed_guard || one_time_pubkey) == borrow_guard`, `next_borrow_guard = revealed_guard`, KAS value, total amount preserved). Re-fetch kcc20.manyfest.dev and /hash-chain with headers; quote only from the saved bundle.
+5. **KCC-23 metadata row:** check §3.1–§3.3, §4 and §6 claims (prefix `0x00`, `{}` = `007b7d`, decimals 8→9 must fail, version 0 must fail, the declaration table). Compare the fixture ids with rusty-kaspa #1157 and kips #49 (text only).
+6. **Stale wording:** search README **Now** and `master.json` `now` notes for any present-tense "Last Call" claim about KCC-1, KCC-2 or KCC-20 that is not dated history. List each with line numbers; fix on your `build/` branch with the prior-cell convention.
+7. **RECEIPTS.md:** the 16 italic "Superseded 21 Oct 2026" notes are a stp-approved exception to the frozen rule. Check each targets the right line; add nothing else there.
+8. **kaspaexplained.com/status** with headers: does it still say "KCC-20 is Draft"? Report only.
+9. **Open pulls after Final:** kccs #29, #37, #38 (KCC-3), #24 (KCC-0012), kcc20-reference #4, rusty-kaspa #1152 / #1157, kips #49: every page; any change after 21 Oct 14:50Z?
+10. **What to test next** (TN10 only, read-only, no builds, no public posting): short ordered list.
+11. Write sourced facts only to your `build/` branch. After push, list commit links in chat.
+
+## Context (from the bot; verify)
+- kccs main `1ed87aef`: #41 KCC-20 Final `9dec4a04` (14:50:46Z), #39 KCC-1 Final `1ed87aef` (14:50:49Z), #40 KCC-2 Final `6f271b7b` (11:32:06Z), all merged by saefstroem. KCC-23 Draft since #26 (`1516a6c4`, 14 Oct).
+- kcc20-reference master `27f8403f` (#3 `b7824660` 09:31:51Z, #5 09:51:49Z); #4 KAS-backed example open.
+- manyfest on X 2112920461176655927 (14:54:28Z) links the spec, the reference and three walkthroughs (kcc20.manyfest.dev, /hash-chain, kcc23.manyfest.dev). Explainers, not spec.
+- Cleanup today: "KCC-1 or KCC-2 Last Call = Final" removed from Do not weld. The earlier "five STP-KAS links that return 404" were URLs with a trailing sentence period in `master.json` notes; every STP-KAS repo name in the tree resolves via the API, so no repo was removed and nothing was scrubbed. If you want, propose (on your branch) a fix that keeps the period out of those URLs.

@@ -5,7 +5,7 @@ You are Grok Build working for stp (STP-KAS). Below is the daily report from the
 ## Branch for your work
 Use a new `build/2026-10-22` from current `origin/main` (`e5eb2a2` at sweep time; it already contains both 21 Oct sweeps, the KCC-20 Final update and the 21 Oct cleanup), in a fresh clone (for example `/workspace/repos/kaspa-master-file-b22`; do not use the shared checkout `/workspace/repos/kaspa-master-file`). Do not push to main. Do not touch `master/*`, `challenge/*`, `grokbot/*`, or `ask/*`.
 
-Branches: `master/sweep-2026-10-22`. Commits in order: `df6a8e2` (content), `00a8d5d` (SNAPSHOT row), then this prompt commit (the tip).
+Branches: `master/sweep-2026-10-22`. Commits in order: `df6a8e2` (content), `00a8d5d` (SNAPSHOT row), `797b1aa` (first prompt commit), `23fbfb5` (challenge fix F1/F2: #1152 comments, verbatim quotes), then this prompt fix (the tip).
 
 If a SendToAgent message is missing, the same prompt is also at `prompts/grok-build-2026-10-22.md` on `master/sweep-2026-10-22`.
 
@@ -34,7 +34,7 @@ If a SendToAgent message is missing, the same prompt is also at `prompts/grok-bu
 7. **KCC Final X posts:** check the master's quotes of @kccforum 2112922357979603258 and Hans Moog 2113053125154160767 against `raw/2026-10-22/x/fulltext.txt` (note: the master renders the inner "on-chain" quotes as single quotes; say whether that is acceptable or should be exact).
 8. **TN10 public API:** two cache-busted rounds with saved headers; record each backend p2pId (22 Oct sweep: `41d9296c` only, 7/7; 21 Oct afternoon also `884e1eaf`). No pool size or ratio; a 200 is not payment proof.
 9. **Close watch:** rusty-kaspa #1141/#1147/#1146 (issue)/#1150/#863/#1156/#1157, kips #48/#49, kccs #29/#37, kcc20-reference #4: every page, any change after `2026-10-21T13:37:15Z`?
-10. **Builders (optional):** third-party items are on kaspa-builders `master/builders-sweep-2026-10-22` (Kaspire KaspaRocket Mainnet, Kastle #389 KRON rules, KaChat 13 commits, KasSigner claim). Work them only on a kaspa-builders branch, with the caveat.
+10. **Builders (optional):** third-party items are on kaspa-builders `master/builders-sweep-2026-10-22`. Work them only on a kaspa-builders branch, with the caveat.
 11. **What to test next** (TN10 only, read-only, no builds, no public posting): short ordered list.
 12. Write sourced facts only to your `build/` branch. After push, list commit links in chat.
 13. **Not from this prompt:** the 21 Oct r3 prompt's task 12 ("stp mini" TN10 node and CPU miners) still waits on stp's go-ahead and TN10 ops; nothing here changes or starts it. Never touch or merge `build/2026-10-15`, `build/2026-10-20` (`4c29707`), `build/2026-10-21` (`15a9ce1`).
@@ -46,21 +46,18 @@ All times CEST unless marked Z. Sweep ran 22 Oct 07:42–08:00 CEST. Window: Git
 
 ## Added (master `master/sweep-2026-10-22`, from main `e5eb2a2`)
 - **rusty-kaspa #1158 (new draft):** [#1158](https://github.com/kaspanet/rusty-kaspa/pull/1158) freshair18, "Batch IBD UTXO import writes with bounded buffers", opened 21 Oct 14:57:54Z, head `09713b69`, 4 files +220/−4, 0 reviews. The IBD import of the new UTXO set into the pruning-point and virtual stores uses a batch writer flushed every 1000 entries or ~1 MB. Body: "Codex suggested optimization"; tentative "~16% speedup during virtual utxo importing" on a fresh DB (his figure, "not extensively tested"). Not live cell.
-- **#1152 changes requested:** IzioDev [CHANGES_REQUESTED](https://github.com/kaspanet/rusty-kaspa/pull/1152#pullrequestreview-5602502951) 16:59:20Z on `0ef728a2` with 8 inline comments (CLI help args, init naming, iterator validity, two "db consistency error" cases, no-cache rationale, where secondary-index mutations belong). Every page: 11 reviews, 18 review comments in total. Open, not draft, behind. Covenant-id lookup cell.
+- **#1152 changes requested:** IzioDev [CHANGES_REQUESTED](https://github.com/kaspanet/rusty-kaspa/pull/1152#pullrequestreview-5602502951) 16:59:20Z on `0ef728a2` with 8 inline comments (CLI help args, init naming, iterator validity, one "db consistency error" case, no-cache rationale, where secondary-index mutations belong). Every page: 11 reviews, 18 review comments in total. Open, not draft, behind. Covenant-id lookup cell.
 - **KCC-3 (#38) multisig path:** InKasWeRust [comment](https://github.com/kaspanet/kccs/pull/38#issuecomment-6327175253) (21 Oct 21:41:08Z): rusty-kaspa wallet multisig = `m/45'/111111'/account'/cosigner/change/address_index`. **Desk code read** of rusty-kaspa tag v2.1.0 (`01b532e8`) `wallet/keys/src/derivation/gen1/hd.rs` L197–L204 and `wallet/core/src/wallet/mod.rs` L733–L738 matches (purpose 45, coin 111111', cosigner index = position in sorted xpub strings). His "not re-sorted per address" point is not checked. #38 still CHANGES_REQUESTED, `mergeable_state` dirty. KCC-3/4/5 cell.
-- **KCC Final on X:** @kccforum [2112922357979603258](https://x.com/kccforum/status/2112922357979603258) (15:02:00Z) "KCC-1, KCC-2 and KCC-20 are now Final, meaning they are ready for full adoption across the ecosystem"; Hans Moog [2113053125154160767](https://x.com/hus_qy/status/2113053125154160767) (23:41:38Z): KCCs are a shared "common language"; "this doesn't introduce new 'on-chain' features". KCC still open cell. kccs main still `1ed87aef`.
+- **KCC Final on X:** @kccforum [2112922357979603258](https://x.com/kccforum/status/2112922357979603258) (15:02:00Z) "KCC-1, KCC-2 and KCC-20 are now Final, meaning they are ready for full adoption across the ecosystem"; Hans Moog [2113053125154160767](https://x.com/hus_qy/status/2113053125154160767) (23:41:38Z): KCCs are a shared "common language"; "this doesn't introduce new "on-chain" features". KCC still open cell. kccs main still `1ed87aef`.
 - **vprogs #134 approved:** hmoog [APPROVED](https://github.com/kaspanet/vprogs/pull/134#pullrequestreview-5600558774) 19:38:18Z (app-kit host-only issuer crate, head `add37bed`, +1134/−0; "TN10 behavior is unchanged"). Not merged. vProgs cell.
-- **Argent:** #70 head `a5840f4a` (17:27:25Z, "review: fix const shadowing"), open. Sutton X [2112947156369985892](https://x.com/michaelsuttonil/status/2112947156369985892): "i'm working with @IzioDev on Argent's release"; will "eventually share a whole lot of work going on with DK". Argent cell.
+- **Argent:** #70 head `a5840f4a` (17:27:25Z, "review: fix const shadowing"), open. Sutton X [2112947156369985892](https://x.com/michaelsuttonil/status/2112947156369985892): "i’m working with @IzioDev on Argent’s release"; will "eventually share a whole lot of work going on with DK". Argent cell.
 - **KGI:** [#15](https://github.com/kaspa-live/kaspa-graph-inspector-rs/pull/15) merged 19:13:37Z as `c9bfe864` ("increment 12 only": API database generation binding). KGI v2 design cell.
 - **TN10 public API:** 7 reads 05:45:51Z–05:45:59Z, all HTTP 200, Cloudflare MISS, 2.1.0, synced, blueScoreDiff 0–18, acceptedTxBlockTimeDiff 2–4; one backend `41d9296c` in all 7 (the `884e1eaf` seen 21 Oct afternoon is absent from this sample; no pool size inferred). DAA **603131503** at 05:46:01Z. TN10 public API cell.
 - **Kas-Smiths:** 51 / 392 / 115 (users +1), no post after 418. Kas-Smiths cell.
 - Commits: content [`df6a8e2`](https://github.com/STP-KAS/kaspa-master-file/commit/df6a8e293a5b1d4a58011e03dab7ff0078d6123e), SNAPSHOT row [`00a8d5d`](https://github.com/STP-KAS/kaspa-master-file/commit/00a8d5d), prompt commit last (tip in the hand-off).
 
 ## Added (builders `master/builders-sweep-2026-10-22`, from main `2238bcd`)
-- **Kaspire:** [v0.11.58](https://github.com/KaspaHUB21/Kaspire-Kaspa-Wallet/releases/tag/v0.11.58) / [extension-v0.5.21](https://github.com/KaspaHUB21/Kaspire-Kaspa-Wallet/releases/tag/extension-v0.5.21) KaspaRocket swaps on Mainnet; [v0.11.59](https://github.com/KaspaHUB21/Kaspire-Kaspa-Wallet/releases/tag/v0.11.59) recovery hotfix. Wallets entry.
-- **Kastle [#389](https://github.com/forbole/kastle/pull/389):** KCC-20 curve submit aligned with KRON's sequencer rules (`seq.kron.technology`; resend/rebuild/direct matrix; 2-token-input cap for curve trades "500k compute-mass consensus cap", his claim), head `e07cfa8a`, open. Wallets entry.
-- **KaChat:** 13 commits to `48f0dce2` (payment sender from verified inputs only, quantum-address chain, KaPosts key resolution, binary media frame). Name-services entry.
-- Dated section only: KasSigner claims the rusty-kaspa multisig layout since v1.0.6, used on mainnet (from kccs #38; not checked).
+- Third-party items are on kaspa-builders `master/builders-sweep-2026-10-22` (third-party, not audited, not desk-tested); not in the master.
 - Commits: content [`b7fa340`](https://github.com/STP-KAS/kaspa-builders/commit/b7fa340e26ee0e32615b5d48e6459fe013219632), row [`2984ad1`](https://github.com/STP-KAS/kaspa-builders/commit/2984ad1cc08cf1a7a363494b4873bfd7cd5cb045) (tip).
 
 ## Held / unchanged
@@ -91,7 +88,7 @@ All times CEST unless marked Z. Sweep ran 22 Oct 07:42–08:00 CEST. Window: Git
 - Nothing to act on. Public API healthy (7/7 HTTP 200, synced, 2.1.0, one backend `41d9296c`). vprogs #134's approval says TN10 behaviour of the app-kit example is unchanged; #1158 (IBD UTXO import batching) is a draft, not on any release.
 
 ## Open questions for stp
-- None new. Still waiting: core_replies (paused since 5 Oct); item 13 (private desk repo names on main); new X handles seen in links and not queried (kccforum is now active on KCC news; also GabrielNico21, HuseyinSivridag, aKaspamaxi, aglovale0x, brt2412, kasperopay, xximpod, zelcore_io plus the older candidates) — whether to add @kccforum to the core query (free reads).
+- None new. Still waiting: core_replies (paused since 5 Oct); new X handles seen in links and not queried (kccforum is now active on KCC news; also GabrielNico21, HuseyinSivridag, aKaspamaxi, aglovale0x, brt2412, kasperopay, xximpod, zelcore_io plus the older candidates) — whether to add @kccforum to the core query (free reads). Item 13 (private desk repo names on main) is closed for current main: the private-name guard finds 0 there.
 - Build's r3 prompt (21 Oct) has no `build/2026-10-21-r4` branch yet; its task 12 ("stp mini") still waits on stp's go-ahead.
 
 ## Challenge pass requested

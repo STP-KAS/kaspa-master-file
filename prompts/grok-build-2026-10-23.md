@@ -5,9 +5,22 @@ You are Grok Build working for stp (STP-KAS). Below is the daily report from the
 ## Branch for your work
 Use a new `build/2026-10-23` from current `origin/main` (`2238d0d` at sweep time; it already contains the 22 Oct sweep, Build r2 and the facts-only pass), in a fresh clone (for example `/workspace/repos/kaspa-master-file-b23`; do not use the shared checkout `/workspace/repos/kaspa-master-file`). Do not push to main. Do not touch `master/*`, `challenge/*`, `grokbot/*`, or `ask/*`.
 
-Branches: `master/sweep-2026-10-23`. Commits in order: `b77c71f` (content), `5aaeab0` (SNAPSHOT row), then this prompt commit (the tip).
+Branches: `master/sweep-2026-10-23`. Commits in order: `b77c71f` (content), `5aaeab0` (SNAPSHOT row), `ac5503d` (first prompt commit), `5789e61` (rerun content, 10:31 CEST), `3677fd6` (rerun SNAPSHOT row), then this prompt update (the tip).
 
 If a SendToAgent message is missing, the same prompt is also at `prompts/grok-build-2026-10-23.md` on `master/sweep-2026-10-23`.
+
+## Standing role (every 24 hours)
+You're part of the team that keeps the Kaspa master file current, together with the kaspa master bot and the kaspa master prompt build bot. Master file: https://github.com/STP-KAS/kaspa-master-file (checkout `/workspace/repos/kaspa-master-file`; if that checkout is broken, work in a fresh clone).
+- Every 24 hours, read the whole master file (`AGENTS.md`, `DESK-PROMPT.md`, `master.json` and every section). Look for stale, contradictory or unsourced entries and fix them against the live sources.
+- The master file is facts only. A fact is a checkable statement with its own URL: a state, a SHA, a version, a date, a quoted line from code or a spec, an HTTP answer with saved headers, or an exact quote. Interpretation, rule-conflict readings, implications, recommendations and "what to build or test" are not facts and never go in the master.
+- Output has two parts:
+  - A. Facts: sourced sentences, `master.json` notes and a SNAPSHOT-HISTORY row, on a master `build/YYYY-MM-DD` branch.
+  - B. Analysis: your readings, implications for stp's projects, test ideas and open questions, each citing the A facts or URLs it rests on. B goes only to stp's private reasoning repo, which the prompt bot gives you outside this prompt. Never name or link that repo in any public repo, commit message or branch.
+- Test things yourself (builds, TN10 transactions, SDK checks) when a claim can only be settled by testing. Skip testing when reading the source is enough. For Rust builds use `~/.cargo/bin/cargo` (1.98.1); `/usr/bin/cargo` is 1.85.1 and too old for rusty-kaspa.
+- Public posts are forbidden. That covers GitHub comments, issues and PRs on other people's repos, X, Kas-Smiths and Facebook. Create no new repos.
+- Sources (stp, 4 Oct 2026): the master file is the default source for every task. Use https://github.com/STP-KAS/kaspa-builders only when a task names a third-party project, alongside the master, and carry its caveat (third-party, not audited, demo, not desk-tested). Don't add third-party builder rows to the master; send those finds to the kaspa master bot for kaspa-builders.
+- Before every push: `git fetch` and a plain merge of `origin/main`; never rebase. Follow `AGENTS.md` style, keep `master.json` valid, add a SNAPSHOT-HISTORY row, and never force-push. Every fact needs a URL. Never fabricate.
+- Where this section and the House rules below differ (for example on builds), the House rules below apply to this prompt.
 
 ## House rules
 - **Zero public comments** anywhere (GitHub, Kas-Smiths, research.kas.pa, X, Facebook). No reactions, issues, PRs, tags or releases, on any repo, including STP-KAS ones. A new sourced fact goes into the master file and stops there.
@@ -39,6 +52,8 @@ If a SendToAgent message is missing, the same prompt is also at `prompts/grok-bu
 11. **What to test next** (TN10 only, read-only, no builds, no public posting): short ordered list.
 12. Write sourced facts only to your `build/` branch. After push, list commit links in chat.
 13. **Not from this prompt:** the 21 Oct r3 prompt's task 12 ("stp mini" TN10 node and CPU miners) still waits on stp's go-ahead and TN10 ops; nothing here changes or starts it. Never touch or merge `build/2026-10-15`, `build/2026-10-20` (`4c29707`), `build/2026-10-21` (`15a9ce1`).
+
+14. **Rerun items (23 Oct 10:31 CEST, commits `5789e61`, `3677fd6`):** confirm argent #70 approved by michaelsutton 07:27:57Z and merged 07:28:06Z as `5a7744bc` (head `25e8f48c`), now argent master; argent-playground default branch `86d5453e` ("Use crates.io Kaspa and Silverscript dependencies", files `Cargo.toml`, `Cargo.lock`) and playground #8 closed unmerged 08:00:46Z; rusty-kaspa #1153 comment 07:25:49Z ("patched: …") and crates.io `kaspa-hashes` 2.1.1 (created 07:06:18Z, save headers; does the 2.1.1 crate contain `src/asm/keccakf1600_x86-64-msvc.asm`?); #1152 D-Stacks 9 COMMENTED reviews 07:39:53Z–08:20:19Z, every inline quote character for character, and the two commit comments on `fd577f07`. Facts to A; any reading of what these mean goes to B only.
 
 ## Report from the bot (verify)
 
@@ -93,3 +108,6 @@ All times CEST unless marked Z. Sweep ran 23 Oct 07:37–08:30 CEST. Window: Git
 ## Challenge pass requested
 - kaspa-master-file `master/sweep-2026-10-23`: base main `2238d0d`, commits `b77c71f`, `5aaeab0`, prompt commit (tip). Files: README.md, master.json, SNAPSHOT-HISTORY.md, prompts/grok-build-2026-10-23.md.
 - kaspa-builders `master/builders-sweep-2026-10-23`: base main `2984ad1`, tip `3e94611`. Files: SNAPSHOT-HISTORY.md, entries/wallets-kcc20.md, entries/name-services.md, entries/rossku-kob.md, entries/covenant-id-tooling.md, entries/olafweller-kpi.md.
+
+## Rerun (23 Oct 10:31 CEST)
+- Same branch, base main `2238d0d`. Content `5789e61`: Argent cell (#70 merged as `5a7744bc`; argent-playground `86d5453e`; playground #8 closed unmerged), Covenant-id lookup cell (#1152 D-Stacks review round 23 Oct 07:39:53Z–08:20:19Z), rusty-kaspa cell (#1153 comment; `kaspa-hashes` 2.1.1). Row `3677fd6`. Raw reads `raw/2026-10-23/r2/`. #1153 itself merged 19 Oct 14:08:23Z (`24854ef8`), already in the master.

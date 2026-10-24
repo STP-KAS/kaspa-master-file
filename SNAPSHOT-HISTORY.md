@@ -1246,7 +1246,7 @@ Window: GitHub since `2026-10-23T08:20:19Z` (A-Z: 136 repos, 136 GraphQL + 411 R
 
 ### Core (master)
 
-- **rusty-kaspa:** [#1152](https://github.com/kaspanet/rusty-kaspa/pull/1152) second D-Stacks round (18 inline comments 23 Oct 08:39:51Z–15:08:30Z) and 16 biryukovmaxim "fixed in" replies; head `416ac7d9` (16 commits, 42 files, +2897/−80), open, behind, no approval. Covenant-id lookup cell. Master `4edcbbcc`, tags unchanged.
+- **rusty-kaspa:** [#1152](https://github.com/kaspanet/rusty-kaspa/pull/1152) second D-Stacks round (18 inline comments 23 Oct 08:39:51Z–15:08:30Z) and 16 biryukovmaxim replies (15 "fixed in", one "Moot after 416ac7d92"); head `416ac7d9` (16 commits, 42 files, +2897/−80), open, behind, no approval. Covenant-id lookup cell. Master `4edcbbcc`, tags unchanged.
 - **vprogs:** hmoog CHANGES_REQUESTED on [#142](https://github.com/kaspanet/vprogs/pull/142) (`9c2d078a`): the unit test named in the description is not in the diff. vProgs cell.
 - **kips:** new issue [#51](https://github.com/kaspanet/kips/issues/51) (KIP-21 §5.3 purge condition vs rusty-kaspa, one blue score) and new PR [#50](https://github.com/kaspanet/kips/pull/50) (LtHash `kip-XXXX.md`, RandomBacon1597). KIPs cell.
 - **Argent:** argent-template master [`d1a61219`](https://github.com/argent-lang/argent-template/commit/d1a61219c10fe266f8e2f19c91fef0b8cbceb134) (Sutton, 23 Oct 07:34:39Z) moves to crates.io Kaspa and Silverscript dependencies (bot mail hand-off, before the GitHub marker; found by a 05:40Z–08:20Z gap-fill read). Argent cell.

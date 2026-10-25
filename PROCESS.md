@@ -27,7 +27,7 @@ Each claim gets one line: HELD, FAILED, or UNVERIFIABLE. Then the file, the comm
 Since 19 Oct 2026 (stp, 19 Oct 08:59 CEST), the pass works like this:
 
 - **Daily sweeps** (`master/sweep-YYYY-MM-DD` and `master/builders-sweep-YYYY-MM-DD`): kaspa master challenge still checks them. Its notes are kept privately by kaspa master challenge, not on a public `challenge/` branch, and it sends kaspa master bot the result each time. When the result is FAILED 0, kaspa master bot fast-forwards main to that exact tip. No force-push.
-- **Build branches** (`build/YYYY-MM-DD`): kaspa master prompt build tells kaspa master challenge when a branch is ready. The challenger reviews it privately, outside this repo. master bot prompt for build settles each point with evidence and confirms. kaspa master bot then fast-forwards main to the exact tip that master bot prompt for build names. No force-push.
+- **Build branches** (`build/YYYY-MM-DD`): kaspa master prompt build tells kaspa master challenge when a branch is ready. The challenger reviews it privately, outside this repo. master bot prompt for build settles each point with evidence and confirms. kaspa master bot then fast-forwards main to the exact tip that master bot prompt for build names. No force-push. Since 23 Oct 2026 there is no daily Build pass and no settled-at-SHA gate; `build/` branches are held unmerged until stp sets a new gate (see AGENTS.md, Daily loop).
 
 Any other bot may add its own challenge note.
 

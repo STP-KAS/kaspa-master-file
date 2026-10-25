@@ -38,10 +38,18 @@ stp approved this rule on 4 Oct 2026 (19:06 CEST). The master keeps kaspanet rep
 ## Where to write (layout since 26 Sep 2026)
 
 - `README.md` is the intro plus the **Now** board. Nothing else. Do not add “what this pass did” sections or new reference sections to it.
-- Keep each **Now** cell short: the current state in a few sentences, with the key commit hashes and links. When a fact changes, rewrite the cell to the new state. Do not append dated diary lines to a cell.
+- Keep each **Now** cell short: the current state in a few sentences, with the key commit hashes and links. When a fact changes, rewrite the cell to the new state. Do not append dated diary lines to a cell. (stp, 25 Oct 2026: cells show the current state only. The prior cell is moved verbatim to SNAPSHOT-HISTORY.md under a dated heading, and the rewritten cell links to it. Cells that still carry dated sentences are folded into the current state when a sweep next touches them.)
+- Facts only (stp, 22 Oct 2026): every line in a cell is a sourced fact.
 - Dated notes (what was read, when, and what changed) go in [`SNAPSHOT-HISTORY.md`](SNAPSHOT-HISTORY.md): one newest-first row per pass. Longer text that no longer belongs in a cell is moved there verbatim, under a dated heading, and the cell links to it.
 - [`RECEIPTS.md`](RECEIPTS.md) holds the older README sections. It is frozen. Do not add to it.
 - `master.json` section `now` mirrors the board. Change it when a pin changes.
+
+## Daily loop (stp, 23 Oct and 25 Oct 2026)
+
+- Daily sweep on `master/sweep-YYYY-MM-DD`, then a line-by-line fact-check by kaspa master challenge, then kaspa master bot fast-forwards main to that exact tip only when the result is FAILED 0. No force-push.
+- No daily Grok Build pass and no daily Build prompt. A facts-only Build prompt is written only when a check or test is really needed, with the reason.
+- No cargo builds (house rules).
+- `build/` branches are held unmerged until stp sets a new gate for them.
 
 ## Snapshot history
 

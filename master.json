@@ -147,6 +147,12 @@
           "note": "saefstroem authored KIP-16 (Active; the header spells Safstrom), opcode OpZkPrecompile 0xa6. Merged rusty-kaspa #775 (KIP-16), #953 (ZK SDK; crate kaspa-txscript-zk-sdk is in the v2.1.0 tag) and #861 (OpTxInputDaaScore). KCC-0 is his kccs#17, Final via #25. Open (not a draft): kccs#24. kccs#31 merged 2026-10-07T20:38:09Z (3fbec524). Of his nine follows, the Kaspa-relevant accounts are aspect, biryukovmaxim, and 1bananagirl. Reasoning kept from a moved project: his stroemnet (e60dc3e https://github.com/saefstroem/stroemnet/commit/e60dc3e815c6) shows a cross-chain HTLC hand-built in kaspa_txscript without SilverScript: SHA256 hashlock, CLTV with the timelock passed as an argument, exactly 2 inputs and 2 outputs. Project: see STP-KAS/kaspa-builders https://github.com/STP-KAS/kaspa-builders (entry stroemnet)."
         },
         {
+          "name": "KaspaDollar",
+          "url": "https://x.com/KaspaDollar/status/2113601328975098237",
+          "chip": "claim",
+          "note": "@KaspaDollar 2113601328975098237 (23 Oct 12:00:00Z): \"an initiative led by core developer @asaefstroem to build the first decentralized stablecoin on the $KAS network\"; \"The design we intend to follow is the decentralized, overcollateralized stablecoin\"; \"With the support of the core team, we consider the conditions right to bring it to Kaspa.\" Fundraiser \"with a target of 5,000,000 KAS\"; \"Should the target not be reached by 1 January 2027, every contribution will be returned to the address from which it was sent.\" asaefstroem 2113970020598632570 https://x.com/asaefstroem/status/2113970020598632570 (24 Oct 12:25:03Z), asked who will issue it: \"Covenants will issue it.\" Michael Sutton 2114040191719444646 https://x.com/michaelsuttonil/status/2114040191719444646 (24 Oct 17:03:53Z), quoting the announcement: \"i’ll do everything in my power on the technical side to help this initiative move forward and navigate any protocol-level obstacles along the way.\" No code, repo, contract or fundraising address in these posts. Project entry: STP-KAS/kaspa-builders https://github.com/STP-KAS/kaspa-builders/blob/main/entries/kaspadollar.md"
+        },
+        {
           "name": "kaspanet org cut",
           "url": "https://github.com/kaspanet",
           "chip": "org",

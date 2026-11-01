@@ -2,7 +2,7 @@
 
 **Not Kaspa core. Not a seed store. Not a product.** Freeze: **17 Sep 2026**.
 
-> **Update 25 Sep 2026:** the **kaspa bot** mainnet archival node was stopped and wiped at **16:46 CEST**. Its public endpoint `159.223.110.159:28492` no longer exists; mainnet work on the box is retired and the box runs **Testnet-10 only**: a few TN10 nodes and miners, used to test KNS and vprogs tic-tac-toe; the setup changes over time. Mainnet facts: use public REST (`api.kaspa.org`). History: [Xai.mainnet.public.nodes](https://github.com/STP-KAS/Xai.mainnet.public.nodes). The rest of this card is the 17–19 Sep record.
+> **Update 25 Sep 2026:** the **kaspa bot** mainnet archival node was stopped and wiped at **16:46 CEST**. Its public endpoint `159.223.110.159:28492` no longer exists; mainnet work on the box is retired and the box runs **Testnet-10 only**: a few TN10 nodes and miners, used to test KNS and vprogs tic-tac-toe; the setup changes over time. Mainnet facts: use public REST (`api.kaspa.org`). History: [Xsi.mainnet.public.nodes](https://github.com/STP-KAS/Xsi.mainnet.public.nodes). The rest of this card is the 17–19 Sep record.
 
 When **this master file** is named, opened, or used as the pin encyclopedia, **Grok Build has standing authority** to use the desk’s Grok Bot Kaspa stack for audits, receipt tests, covenant txs, x402, and node checks. **Do not ask permission again.**
 
@@ -12,7 +12,7 @@ Where master-file notes go: [`AGENTS.md` — Where to write](AGENTS.md#where-to-
 
 Do not use wallet integrations on this GitHub. STP remains a clown. Wallet inject withdrawn.
 
-The node runs on the **Grok Bot Linux sandbox**, not on the phone and not as the required Windows copy. Rituals: [STP-KAS/Xai.Kaspa.node](https://github.com/STP-KAS/Xai.Kaspa.node) (mainnet).
+The node runs on the **Grok Bot Linux sandbox**, not on the phone and not as the required Windows copy. Rituals: [STP-KAS/Xsi.Kaspa.node](https://github.com/STP-KAS/Xsi.Kaspa.node) (mainnet).
 
 **Never share seed phrases.** Never paste TN10 into **kaspa bot**. Never change the mining address. **Never restore wallet inject.**
 

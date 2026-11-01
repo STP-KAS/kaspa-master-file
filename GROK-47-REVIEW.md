@@ -28,7 +28,7 @@ Count rechecked this pass: **54** owned repos. **52** public, **2** private (`kn
 
 Every README was fetched again after the earlier sentence fixes. Lines were scored against the rubric. Most “hits” were the repo **refusing** the false claim (“Argent is not production-ready”, “not a product testnet”, “RC ≠ v1”). Those agree.
 
-One file fought the board in its own body. [argent-xai](https://github.com/STP-KAS/argent-xai) had just gained a sentence that #63 compiles rules 5 and 6, and the next paragraph still said those rules were **[NOT IMPLEMENTED]**. That is fixed ([8d9c9ec](https://github.com/STP-KAS/argent-xai/commit/8d9c9ecd72)).
+One file fought the board in its own body. [argent-xsi](https://github.com/STP-KAS/argent-xsi) had just gained a sentence that #63 compiles rules 5 and 6, and the next paragraph still said those rules were **[NOT IMPLEMENTED]**. That is fixed ([8d9c9ec](https://github.com/STP-KAS/argent-xsi/commit/8d9c9ecd72)).
 
 [grok-kaspa-collab](https://github.com/STP-KAS/grok-kaspa-collab) told the reader Kaspa Till’s README “still said” v1-rc1. Till’s README now names v1.0.0. Parenthetical updated ([4c2d671](https://github.com/STP-KAS/grok-kaspa-collab/commit/4c2d671d54)).
 
@@ -43,7 +43,7 @@ The master file’s own morning receipt still printed host pin `da2a7f26` in the
 | Repo | Verdict | Checked against |
 | --- | --- | --- |
 | [402-is-not-x402](https://github.com/STP-KAS/402-is-not-x402) | Agree | Bind rc.1. kccs#4 not adopted. Ishum is not x402. |
-| [argent-xai](https://github.com/STP-KAS/argent-xai) | Agree, after this pass | Rules 5 and 6 compile at `e76ee07`. Still no tag. `pins.json` stays the 11 Sep freeze (`867b080`). |
+| [argent-xsi](https://github.com/STP-KAS/argent-xsi) | Agree, after this pass | Rules 5 and 6 compile at `e76ee07`. Still no tag. `pins.json` stays the 11 Sep freeze (`867b080`). |
 | [dagknight-test-grok](https://github.com/STP-KAS/dagknight-test-grok) | Agree | KIP-2 Proposed. Not consensus. |
 | [delusional-stp-grok-mix](https://github.com/STP-KAS/delusional-stp-grok-mix) | Agree | vProgs “if product testnet” is explicitly not this week. npm-test line already corrected. |
 | [dotk-review](https://github.com/STP-KAS/dotk-review) | Agree | 15 Sep receipt. Not an audit. Script was not published. |
@@ -53,7 +53,7 @@ The master file’s own morning receipt still printed host pin `da2a7f26` in the
 | [grok-heavy-test](https://github.com/STP-KAS/grok-heavy-test) | Agree | Bind rc.1. Tests green after `216ad77`. Funded settle was not run. |
 | [grok-kaspa-collab](https://github.com/STP-KAS/grok-kaspa-collab) | Agree, after this pass | Compiler pin v1.0.0. Supply figures in the essay stay dated. |
 | [grok-test-cascade](https://github.com/STP-KAS/grok-test-cascade) | Agree | Archived `kaspahttp402` client is not the binding. |
-| [Grok.SPCXAI.KAS](https://github.com/STP-KAS/Grok.SPCXAI.KAS) | Agree | KCC-0 file Final, index still Draft. vProgs not a product. Refuses “KCC-20 is Final”. |
+| [Grok.SPCXSI.KAS](https://github.com/STP-KAS/Grok.SPCXSI.KAS) | Agree | KCC-0 file Final, index still Draft. vProgs not a product. Refuses “KCC-20 is Final”. |
 | [groks-wallet](https://github.com/STP-KAS/groks-wallet) | Agree | TN10 node on rusty-kaspa v2.0.1. Ops, not an inject kit. |
 | [ishum](https://github.com/STP-KAS/ishum) | Agree | Till. Settle KAS. USDT is a labeled guest. Not x402. |
 | [iziodev-build-a-kaspa-l1-grok-reveieuw](https://github.com/STP-KAS/iziodev-build-a-kaspa-l1-grok-reveieuw) | Agree | Argent is not general-production. No tag. Do not quote the dated price in that file. |
@@ -92,8 +92,8 @@ The master file’s own morning receipt still printed host pin `da2a7f26` in the
 | [windows-p2p-node-guide](https://github.com/STP-KAS/windows-p2p-node-guide) | Agree | v2.0.1. `releases/latest` is that tag. |
 | [x402-ishum](https://github.com/STP-KAS/x402-ishum) | Agree | Till is not x402. Corrects 1 BPS wording to 10 BPS. |
 | [x402-vs-grok](https://github.com/STP-KAS/x402-vs-grok) | Agree | Says RC ≠ v1. Bind rc.1. Dated to the 13 Sep freeze. |
-| [xai-reasoning-3](https://github.com/STP-KAS/xai-reasoning-3) | Agree | Typed rate. Not an oracle. Not a dollar. |
-| [Xai.Kaspa.node](https://github.com/STP-KAS/Xai.Kaspa.node) | Agree | Archival prompt. Not the kaspanet repo. |
-| [Xai.mainnet.public.nodes](https://github.com/STP-KAS/Xai.mainnet.public.nodes) | Agree | Density test. No protocol pin. |
+| [xsi-reasoning-3](https://github.com/STP-KAS/xsi-reasoning-3) | Agree | Typed rate. Not an oracle. Not a dollar. |
+| [Xsi.Kaspa.node](https://github.com/STP-KAS/Xsi.Kaspa.node) | Agree | Archival prompt. Not the kaspanet repo. |
+| [Xsi.mainnet.public.nodes](https://github.com/STP-KAS/Xsi.mainnet.public.nodes) | Agree | Density test. No protocol pin. |
 
 Catalog of what each repo is for: [`STP-REPOS.md`](STP-REPOS.md).

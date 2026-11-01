@@ -1,6 +1,6 @@
 # STP-KAS repositories — 21 Sep 2026 read
 
-**24 Sep 2026 node pin:** Rusty Kaspa **v2.1.0** (`01b532e8`). [Release](https://github.com/kaspanet/rusty-kaspa/releases/tag/v2.1.0). [Post](https://x.com/orinewman/status/2102428533163192377). Updated this pass: [Xai.Kaspa.node](https://github.com/STP-KAS/Xai.Kaspa.node) (main only — there is no `master` branch), [rusty-kaspa](https://github.com/STP-KAS/rusty-kaspa) `master` and `stable`, [windows-p2p-node-guide](https://github.com/STP-KAS/windows-p2p-node-guide), [groks-wallet](https://github.com/STP-KAS/groks-wallet) TN10 instructions. Rows under **21 Sep read** are that receipt. They are not the board.
+**24 Sep 2026 node pin:** Rusty Kaspa **v2.1.0** (`01b532e8`). [Release](https://github.com/kaspanet/rusty-kaspa/releases/tag/v2.1.0). [Post](https://x.com/orinewman/status/2102428533163192377). Updated this pass: [Xsi.Kaspa.node](https://github.com/STP-KAS/Xsi.Kaspa.node) (main only — there is no `master` branch), [rusty-kaspa](https://github.com/STP-KAS/rusty-kaspa) `master` and `stable`, [windows-p2p-node-guide](https://github.com/STP-KAS/windows-p2p-node-guide), [groks-wallet](https://github.com/STP-KAS/groks-wallet) TN10 instructions. Rows under **21 Sep read** are that receipt. They are not the board.
 
 Read every repository on [github.com/STP-KAS](https://github.com/STP-KAS?tab=repositories). **52 public, 2 private.** Each README was opened. Every one has `DISCLAIMER.md` and the experimental banner.
 
@@ -25,14 +25,14 @@ Kept current by the daily automations. The latest pass is the top row of [`SNAPS
 | [kaspa-master-file](https://github.com/STP-KAS/kaspa-master-file) | Pin encyclopedia | **Now** is the board. Older pass sections are receipts. |
 | [kaspa-dapps](https://github.com/STP-KAS/kaspa-dapps) | Front door | Points at Now. REPOS.md was missing 7 repos. |
 | [STP-KAS](https://github.com/STP-KAS/STP-KAS) | Profile | Points at kaspa-dapps. No L1 stable. No false tag. |
-| [Grok.SPCXAI.KAS](https://github.com/STP-KAS/Grok.SPCXAI.KAS) | Help desk | Feed matches Now. README source line said “Draft until Final” for all KCCs. Fixed: KCC-0’s file is Final; the index still says Draft. Running model stays `GROK_MODEL` (default grok-4.6). |
+| [Grok.SPCXSI.KAS](https://github.com/STP-KAS/Grok.SPCXSI.KAS) | Help desk | Feed matches Now. README source line said “Draft until Final” for all KCCs. Fixed: KCC-0’s file is Final; the index still says Draft. Running model stays `GROK_MODEL` (default grok-4.6). |
 | [sixpack.wtf](https://github.com/STP-KAS/sixpack.wtf) | Public site | Feed matches Now. GitHub description “Final verdict” means the x402 bind, and the same line says not v1 and not mainnet. |
 | [kaspa-llm-forum](https://github.com/STP-KAS/kaspa-llm-forum) | Halted roundtable | README `fc746db`: do not post reports. The clock does not run. Description on the repo tab was still the invitation. Updated. |
 | A private journal repo (name withheld) | Private journal | Build vs tn10 bot. Points at the 14 Sep hard-test. Not a pin. |
 | [tn10-hard-test](https://github.com/STP-KAS/tn10-hard-test) | Frozen 36-row catalog | Says not to treat RC.1 as mainnet, and not to treat 36 GitHubs as 36 products. Receipt. |
-| [Xai.mainnet.public.nodes](https://github.com/STP-KAS/Xai.mainnet.public.nodes) | Density test | Ops journal. No protocol pin. |
-| [Xai.Kaspa.node](https://github.com/STP-KAS/Xai.Kaspa.node) | Mainnet archival prompt | Not kaspanet/rusty-kaspa. |
-| [xai-reasoning-3](https://github.com/STP-KAS/xai-reasoning-3) | EUR invoice till | Rate is a number you type. Not an oracle. Not a dollar. |
+| [Xsi.mainnet.public.nodes](https://github.com/STP-KAS/Xsi.mainnet.public.nodes) | Density test | Ops journal. No protocol pin. |
+| [Xsi.Kaspa.node](https://github.com/STP-KAS/Xsi.Kaspa.node) | Mainnet archival prompt | Not kaspanet/rusty-kaspa. |
+| [xsi-reasoning-3](https://github.com/STP-KAS/xsi-reasoning-3) | EUR invoice till | Rate is a number you type. Not an oracle. Not a dollar. |
 | [x402-vs-grok](https://github.com/STP-KAS/x402-vs-grok) | RC1 adversarial pass | Dated to the 13 Sep freeze. Verdict still holds: bind `v1.0.0-rc.1`, not v1, not mainnet. |
 | [x402-ishum](https://github.com/STP-KAS/x402-ishum) | Comparison | Ishum is a till. It is not x402. Already corrects the “10 conf ≈ 10 seconds” stale line to 10 BPS. |
 | [windows-p2p-node-guide](https://github.com/STP-KAS/windows-p2p-node-guide) | Windows public node | Pins rusty-kaspa **v2.0.1**. `releases/latest` is that tag. |
@@ -73,7 +73,7 @@ Kept current by the daily automations. The latest pass is the top row of [`SNAPS
 | [dotk-review](https://github.com/STP-KAS/dotk-review) | 15 Sep DOTK pass | Not an audit. Silverscript was not published. Was missing from REPOS.md. |
 | [delusional-stp-grok-mix](https://github.com/STP-KAS/delusional-stp-grok-mix) | Desk practice | Said Windows `npm test` fails until `.gitattributes`. grok-heavy-test says green after `216ad77`. Sentence fixed. |
 | [dagknight-test-grok](https://github.com/STP-KAS/dagknight-test-grok) | DK notebook | KIP-2 Proposed. Not consensus. #1131 is the e2e PR. Opening sentence is an aim, not a ship claim. |
-| [argent-xai](https://github.com/STP-KAS/argent-xai) | Argent claim desk | Freeze labeled 11 Sep, pins.json at PR #60. A later paragraph still said rules 5 and 6 were unimplemented. That fought #63 and the Now board. Fixed: those rules compile at `e76ee07`. Still no tag. |
+| [argent-xsi](https://github.com/STP-KAS/argent-xsi) | Argent claim desk | Freeze labeled 11 Sep, pins.json at PR #60. A later paragraph still said rules 5 and 6 were unimplemented. That fought #63 and the Now board. Fixed: those rules compile at `e76ee07`. Still no tag. |
 | [402-is-not-x402](https://github.com/STP-KAS/402-is-not-x402) | Costume catalog | Bind elldeeone `v1.0.0-rc.1`. kccs#4 is not adopted. Archived gateway is not the standard. Ishum is not x402. |
 
 ## Sentences fixed this pass
@@ -82,9 +82,9 @@ Kept current by the daily automations. The latest pass is the top row of [`SNAPS
 | --- | --- | --- |
 | project-delusional | Catch-up: pins hold, no Final | Points at the Now board. KCC-0 file is Final. KCC-20 is not. |
 | kaspa-till | Compile with silverc v1-rc1, as if that were the pin | Artifact was rc1. Pin for new work is v1.0.0 `3ed9733`. |
-| Grok.SPCXAI.KAS README | kccs: Draft until Final | KCC-0 file is Final. Index still says Draft. The other KCCs are not Final. |
+| Grok.SPCXSI.KAS README | kccs: Draft until Final | KCC-0 file is Final. Index still says Draft. The other KCCs are not Final. |
 | kaspa-llm-forum description | Roundtable, quality before speed | Execution halted. Do not post reports. |
 | kaspa-x402 fork | Upstream “v1 release candidate” with no desk gloss | Desk line: bind `v1.0.0-rc.1`, not a v1.0.0 release. |
 | delusional-stp-grok-mix | npm test fails until `.gitattributes` | Green after upstream `216ad77`. |
-| argent-xai | 11 Sep freeze could be read as the tip | Live tip `e76ee07`. Still no tag. |
+| argent-xsi | 11 Sep freeze could be read as the tip | Live tip `e76ee07`. Still no tag. |
 | kaspa-dapps REPOS.md | 17 Sep cut, 7 repos absent | Those 7 are in the map. This file is the long review. |

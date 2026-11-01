@@ -16,7 +16,7 @@ Front door for dApp developers: [STP-KAS/kaspa-dapps](https://github.com/STP-KAS
 | **Grok Ask (grok.com)** | Public shares already pinned: [X share](https://x.com/i/grok/share/c59cba827c574d028607693855b2e5fc), [grok.com share](https://grok.com/share/bGVnYWN5_13075cb2-2ed7-48ac-9e88-861102ca4b4b), KaspaSilver share in the KaChat session. | This machine has **no grok.com transcript dump**. Ask chats that were never shared are not here. |
 | **Grok Bot** | Daily Kaspa/DAGKnight review session; TN10 wallet bot prompt in [STP-KAS/groks-wallet](https://github.com/STP-KAS/groks-wallet). | Bot memory is per-bot, not this encyclopedia. Do not paste a bot seed into a prompt. |
 
-Sessions that fed this file (titles only): Kaspa dApp map; PoW stablecoin vs Tether PoC; BitCoffee KUSD + Ishum till; PegLab vs Parker; groks-wallet TN10 hard audit; kaspa-x402 / sixpack.wtf; BankQuote essays; Argent tweet rewrite + argent-xai; KNS overlay; Gramlane Darwin; KaChat Silver; DAGKnight notebook; kaspa.org vs kaspaexplained; cyberstp (seeds called out as *not* the risk — cold wallets). Full pin list stays in the README.
+Sessions that fed this file (titles only): Kaspa dApp map; PoW stablecoin vs Tether PoC; BitCoffee KUSD + Ishum till; PegLab vs Parker; groks-wallet TN10 hard audit; kaspa-x402 / sixpack.wtf; BankQuote essays; Argent tweet rewrite + argent-xsi; KNS overlay; Gramlane Darwin; KaChat Silver; DAGKnight notebook; kaspa.org vs kaspaexplained; cyberstp (seeds called out as *not* the risk — cold wallets). Full pin list stays in the README.
 
 ---
 
@@ -66,4 +66,4 @@ If a session log ever contained a seed, it does **not** belong in memory topics 
 
 Argent org (4 public, 17 Sep): `argent` · `argent-playground` · `argent-template` · `kcc20-reference` (WIP). Details: [`RECEIPTS.md`](RECEIPTS.md) §4 and §4d.
 
-This desk: kaspa-dapps (front door) · kaspa-master-file (this encyclopedia) · groks-wallet (TN10, public address only) · Xai.Kaspa.node (kaspa bot mainnet ritual; the desk's own node retired 25 Sep 2026) · peglab-poc · ishum · argent-xai · grok-kaspa-collab · xai-reasoning-3 · kaspa-x402 tracking via sixpack.wtf.
+This desk: kaspa-dapps (front door) · kaspa-master-file (this encyclopedia) · groks-wallet (TN10, public address only) · Xsi.Kaspa.node (kaspa bot mainnet ritual; the desk's own node retired 25 Sep 2026) · peglab-poc · ishum · argent-xsi · grok-kaspa-collab · xsi-reasoning-3 · kaspa-x402 tracking via sixpack.wtf.

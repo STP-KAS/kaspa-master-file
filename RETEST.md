@@ -51,10 +51,10 @@ Referee: [kaspaexplained.com/status](https://kaspaexplained.com/status) (sources
 | ishum | `go test ./...` | **pass** |
 | kaspa-till | `go test ./...` | **pass** |
 | kns-spec | `go test ./...` | **pass** |
-| xai-reasoning-3 | `go test ./...` | **pass** |
+| xsi-reasoning-3 | `go test ./...` | **pass** |
 | grok-kaspa-collab/desk | `go test ./...` | **pass** |
 | kns | `go test ./...` | **FAIL** `TestContractSourcesDoNotReadForeignState` — comment grep. Same as 14 Sep. House rule stands. |
-| argent-xai | `check.ps1` | **FAIL / DRIFT** argent `master` pin `867b080` (PR #60) vs live `e76ee07` (PR #63). Silverscript pin still matches. **This is the only pin-checker that lagged the master file.** |
+| argent-xsi | `check.ps1` | **FAIL / DRIFT** argent `master` pin `867b080` (PR #60) vs live `e76ee07` (PR #63). Silverscript pin still matches. **This is the only pin-checker that lagged the master file.** |
 
 Skipped on purpose: `rusty-kaspa` rebuild (use kaspanet v2.0.1), `mixer-concept` / `kaspaexplained-delusional-stp` (huge overlays), funded x402 live proof, PegLab `--submit`, mnemonic print, mainnet send.
 
@@ -68,7 +68,7 @@ Vs master: **match** (honest vs pins) · **lag** (docs older than 17 Sep pins) �
 | Repo | Kind | Test | Vs master file |
 | --- | --- | --- | --- |
 | [402-is-not-x402](https://github.com/STP-KAS/402-is-not-x402) | docs | read | **match** — no fourth envelope |
-| [argent-xai](https://github.com/STP-KAS/argent-xai) | docs | `check.ps1` **DRIFT** | **lag** — still documents rules 5/6 unimplemented; live #63 compiled |
+| [argent-xsi](https://github.com/STP-KAS/argent-xsi) | docs | `check.ps1` **DRIFT** | **lag** — still documents rules 5/6 unimplemented; live #63 compiled |
 | [dagknight-test-grok](https://github.com/STP-KAS/dagknight-test-grok) | runnable | 8/8 | **match** — not consensus |
 | [delusional-stp-grok-mix](https://github.com/STP-KAS/delusional-stp-grok-mix) | docs | read | **match** |
 | [dotk-review](https://github.com/STP-KAS/dotk-review) | docs | read | **match** — not official KNS |
@@ -111,9 +111,9 @@ Vs master: **match** (honest vs pins) · **lag** (docs older than 17 Sep pins) �
 | [windows-p2p-node-guide](https://github.com/STP-KAS/windows-p2p-node-guide) | docs | read | **match** — mainnet 16111, not kaspa bot |
 | [x402-ishum](https://github.com/STP-KAS/x402-ishum) | docs | read | **match** — till ≠ 402 |
 | [x402-vs-grok](https://github.com/STP-KAS/x402-vs-grok) | docs | read | **match** |
-| [xai-reasoning-3](https://github.com/STP-KAS/xai-reasoning-3) | runnable | go **pass** | **match** — dual-rail EUR |
-| [Xai.Kaspa.node](https://github.com/STP-KAS/Xai.Kaspa.node) | docs | read | **match** — kaspa bot ritual |
-| [Xai.mainnet.public.nodes](https://github.com/STP-KAS/Xai.mainnet.public.nodes) | docs | no local | **match** — ops journal |
+| [xsi-reasoning-3](https://github.com/STP-KAS/xsi-reasoning-3) | runnable | go **pass** | **match** — dual-rail EUR |
+| [Xsi.Kaspa.node](https://github.com/STP-KAS/Xsi.Kaspa.node) | docs | read | **match** — kaspa bot ritual |
+| [Xsi.mainnet.public.nodes](https://github.com/STP-KAS/Xsi.mainnet.public.nodes) | docs | no local | **match** — ops journal |
 
 ---
 
@@ -123,7 +123,7 @@ Vs master: **match** (honest vs pins) · **lag** (docs older than 17 Sep pins) �
 
 **Broke / lagged vs this encyclopedia:**
 
-1. **argent-xai** `check.ps1` — expected DRIFT after PR #63. Update `pins.json` to `e76ee07` and drop the unimplemented-rules sentence.
+1. **argent-xsi** `check.ps1` — expected DRIFT after PR #63. Update `pins.json` to `e76ee07` and drop the unimplemented-rules sentence.
 2. **kaspa-dapps / tn10-hard-test / STP-KAS profile** — still count 36 or 44 repos. Live is **48**.
 3. **kns** `go test` — same comment-grep fail. Not a `#234` covenant bug.
 

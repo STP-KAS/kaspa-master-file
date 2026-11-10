@@ -44,9 +44,9 @@ stp approved this rule on 4 Oct 2026 (19:06 CEST). The master keeps kaspanet rep
 - [`RECEIPTS.md`](RECEIPTS.md) holds the older README sections. It is frozen. Do not add to it.
 - `master.json` section `now` mirrors the board. Change it when a pin changes.
 
-## Daily loop (stp, 23 Oct and 25 Oct 2026)
+## Daily loop (stp, 23 Oct, 25 Oct and 9 Nov 2026)
 
-- Daily sweep on `master/sweep-YYYY-MM-DD`, then a line-by-line fact-check by kaspa master challenge, then kaspa master bot fast-forwards main to that exact tip only when the result is FAILED 0. No force-push.
+- Daily sweep on `master/sweep-YYYY-MM-DD`, then an independent line-by-line fact-check that kaspa master bot runs itself after the sweep (since 9 Nov 2026; kaspa master challenge is no longer used). Slips are fixed with new commits only, and kaspa master bot fast-forwards main to the checked tip only when the result is FAILED 0. No force-push.
 - No daily Grok Build pass and no daily Build prompt. A facts-only Build prompt is written only when a check or test is really needed, with the reason.
 - No cargo builds (house rules).
 - `build/` branches are held unmerged until stp sets a new gate for them.

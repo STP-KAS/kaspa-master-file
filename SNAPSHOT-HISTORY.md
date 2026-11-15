@@ -1539,6 +1539,20 @@ The matching `master.json` `now` note before this pass (verbatim):
 
 Master 5a7744bc https://github.com/argent-lang/argent/commit/5a7744bc244ac254929225791832d102b87a2b16 (23 Oct 07:28Z): michaelsutton merged #70 https://github.com/argent-lang/argent/pull/70 (head 25e8f48c, 152 files, +27838/−17748). 0 tags, 0 releases. Open #72 https://github.com/argent-lang/argent/pull/72 "Support static cross-app actor handle values" (michaelsutton, 25 Oct 19:34:22Z, head 62ef76c0, 31 files, +3106/−134, no review): per its body, app-qualified actors become statically linked handle values (require(token_type == tokens::TokenApp::Token);), static values use the linked actor's exported actor_type_handle, and in-app selection now requires an explicit actor-enum type, which "tightens previously accepted selector syntax". His comment (20:32:16Z): "62ef76c addresses two related review findings": incompatible actor-handle types "could pass through helpers, constants, and reassignment", and valid copies from fields and indexed arrays were rejected; "The fix replaces that initializer whitelist with shared source-type resolution." Open #73 https://github.com/argent-lang/argent/pull/73 "Fix output temporary collisions across covenant groups" (Manyfestation, from Manyfestation/argent, opened 27 Oct 08:32:59Z, 0 reviews): per its body it fixes "a #70 https://github.com/argent-lang/argent/pull/70 regression that gives variables in different groups the same name and causes compilation to fail". Head is now 1b3b06f7 (28 Oct 23:19:17Z, "regen artifacts"), 5 commits, 35 files, +839/−156; IzioDev listed the added fixes (23:14:27Z, https://github.com/argent-lang/argent/pull/73#issuecomment-6483161795): 3aeade2 "use unique state names in expansion proofs so imported states resolve correctly", 14d0239 "make abi state references point to the correct declarations when local and imported states share a name", 98a8008 "give each output route unique generated variable names, fix output state types, and add regression tests". Open #69 https://github.com/argent-lang/argent/pull/69 "Load pinned app artifacts through module imports" (RossKU, 8 Oct, head 7ace5625 of 26 Oct 08:54:46Z, 0 reviews). argent-playground default branch 86d5453e and argent-template master d1a61219, both "Use crates.io Kaspa and Silverscript dependencies" (23 Oct). Ross Ku's port notes are third-party: kaspa-builders.
 
+## Moved from README on 15 Nov 2026
+
+### Prior cell: TN10 public API (to 15 Nov 2026)
+
+| TN10 public API | Synced on 14 Nov: 7 cache-busted `/info/health` reads (06:50:58Z–06:51:07Z; headers saved under raw/2026-11-14/tn10/), all HTTP 200 (cf MISS), isSynced true, kaspad 2.1.0 with UTXO index. Two backends answered: `e5d884a5` (5 reads) and `1ae8edf7` (2 reads); blueScoreDiff 5–23, acceptedTxBlockTimeDiff 1–2. `/info/blockdag` HTTP 200: virtual DAA `623028819`, network `kaspa-testnet-10`. Open: rusty-kaspa [#1146](https://github.com/kaspanet/rusty-kaspa/issues/1146) and [#1147](https://github.com/kaspanet/rusty-kaspa/pull/1147) (mempool revalidation after IBD), not merged. Prior cell (to 14 Nov): [SNAPSHOT-HISTORY](SNAPSHOT-HISTORY.md#moved-from-readme-on-14-nov-2026). |
+
+### Prior JSON notes (to 15 Nov 2026)
+
+#### TN10 public API
+
+```
+Synced on 14 Nov: 7 cache-busted /info/health reads (06:50:58Z–06:51:07Z; headers saved under raw/2026-11-14/tn10/), all HTTP 200 (cf MISS), isSynced true, kaspad 2.1.0 with UTXO index. Two backends answered: e5d884a5 (5 reads) and 1ae8edf7 (2 reads); blueScoreDiff 5–23, acceptedTxBlockTimeDiff 1–2. /info/blockdag HTTP 200: virtual DAA 623028819, network kaspa-testnet-10. Open: rusty-kaspa #1146 https://github.com/kaspanet/rusty-kaspa/issues/1146 and #1147 https://github.com/kaspanet/rusty-kaspa/pull/1147 (mempool revalidation after IBD), not merged. Prior cell (to 14 Nov): SNAPSHOT-HISTORY SNAPSHOT-HISTORY.md#moved-from-readme-on-14-nov-2026.
+```
+
 ## Moved from README on 14 Nov 2026
 
 ### Prior cell: vProgs (to 14 Nov 2026)
